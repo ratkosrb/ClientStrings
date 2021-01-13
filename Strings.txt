@@ -72,7 +72,7 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 3702 (Jun 15 2004 11:12:49)
+WoW [Release Assertions Enabled] Build 3712 (Jun 25 2004 23:07:56)
 \a\b\t\n\v
 NoName
 NoName
@@ -84,7 +84,7 @@ NoName
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 3702 (Jun 15 2004)
+WoW [Release Assertions Enabled] Build 3712 (Jun 25 2004)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -889,7 +889,8 @@ false
 \b3OP\v
 ltuo
 cinu
-ltuo
+ltuo@;
+ltuo@;
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -1127,7 +1128,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 3702)
+World of WarCraft: Assertions Enabled Build (build 3712)
 SendErrorLogs
 Data\\
 World of Warcraft
@@ -1730,8 +1731,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jun 15 2004
-11:10:10
+Jun 25 2004
+23:05:16
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -2538,8 +2539,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-3702
-0.7.1
+3712
+0.7.6
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -2736,7 +2737,7 @@ left
 0x%016I64X: Turn stop at (%g,%g,%g), (%g)\n
 0x%016I64X: Switching to %s mode\n
 walk
-0x%016I64X: Teleporting (0x%X) from (%g,%g,%g) (%g) to (%g,%g,%g)\n
+0x%016I64X: Teleporting from (%g,%g,%g) (%g) to (%g,%g,%g)\n
 m_spline->time > 0
 count >= 4
 IsSplineMover()
@@ -5367,7 +5368,7 @@ cameraDistanceD
 cameraAngleD
 cameraDistanceC
 13.88
-ameraAngleC
+cameraAngleC
 cameraDistanceB
 cameraAngleB
 cameraDistanceA
@@ -6944,6 +6945,7 @@ CGxDeviceOpenGl::DeviceSetFormat():
 m_ownhwnd
 A game in progress
 windowRect.Width() * windowRect.Height() > 1.0f
+rowcount >= 1
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxDeviceOpenGl.cpp
 mMaxBytesLg2 < 24
 CGxVboBroker::GetGLError(): stuck loop aborted
@@ -7423,6 +7425,7 @@ account id [%d:%d] unlock received, but it was out of date
 account id [%d:%d] unlocked
 received kick message for account id [%d:%d]
 Sending PING
+/tmp/stacks.txt
 Closing connection - PING TIMEOUT
 Unlock timed out for account id [%d:%d]
 Prove sesion timed out, expiring
@@ -9262,9 +9265,7 @@ The wtf files are :
 Unable to open wtfDir.txt
 wtfdir.txt
 .?AUCONSOLECOMMAND@@
-@d#pw
-@d$hw
-UTXD
+@d$xw
 ���>
 ?fff?
 HWSoundIdx
@@ -19090,7 +19091,7 @@ C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Version.cpp
 // SCENE_FILENAME \"%s\"\n
  by %s
 // Exported on %s
-// MDLFile version\tJun 15 2004 11:09:49\n
+// MDLFile version\tJun 25 2004 23:04:55\n
 C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\TSet.cpp
 count != 64
 TSet::Found: found unregistered token 0x%x
