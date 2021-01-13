@@ -147,7 +147,7 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 3988 (Oct 10 2004 16:18:42)
+WoW [Release Assertions Enabled] Build 3980 (Oct  8 2004 00:27:04)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -155,7 +155,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 3988 (Oct 10 2004)
+WoW [Release Assertions Enabled] Build 3980 (Oct  8 2004)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -458,10 +458,11 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo0Cz
+ltuopDz
 cinu
 ltuop
-ltuop
+ltuo0
+ltuo0
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -620,7 +621,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 3988)
+World of WarCraft: Assertions Enabled Build (build 3980)
 SendErrorLogs
 Data\\
 World of Warcraft
@@ -1065,8 +1066,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Oct 10 2004
-16:15:16
+Oct  8 2004
+00:23:31
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1846,8 +1847,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-3988
-0.12.0
+3980
+1.0.0
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
