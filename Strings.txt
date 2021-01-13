@@ -148,7 +148,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 5059 (Jan 31 2006 16:28:05)
+WoW [Release] Build 5086 (Feb  9 2006 19:53:26)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -157,7 +157,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 5059 (Jan 31 2006)
+WoW [Release] Build 5086 (Feb  9 2006)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -464,9 +464,7 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuoP
 cinu
-ltuoP
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -609,7 +607,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5059)
+World of WarCraft (build 5086)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -933,8 +931,8 @@ C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jan 31 2006
-16:26:05
+Feb  9 2006
+19:51:26
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1448,8 +1446,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5059
-1.9.3
+5086
+1.9.4
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
