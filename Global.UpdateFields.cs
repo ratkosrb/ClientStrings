@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.7.6
-// Build: 3712
+// Patch: 0.8.0
+// Build: 3734
 
 Public Enum EObjectFields
 {
@@ -127,19 +127,29 @@ Public Enum EPlayerFields
     PLAYER_FIELD_STAT2 = EUnitFields.UNIT_END + 0x299,                            // 0x329 - Size: 1 - Type: INT - Flags: PRIVATE
     PLAYER_FIELD_STAT3 = EUnitFields.UNIT_END + 0x29A,                            // 0x32A - Size: 1 - Type: INT - Flags: PRIVATE
     PLAYER_FIELD_STAT4 = EUnitFields.UNIT_END + 0x29B,                            // 0x32B - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BASESTAT0 = EUnitFields.UNIT_END + 0x29C,                        // 0x32C - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BASESTAT1 = EUnitFields.UNIT_END + 0x29D,                        // 0x32D - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BASESTAT2 = EUnitFields.UNIT_END + 0x29E,                        // 0x32E - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BASESTAT3 = EUnitFields.UNIT_END + 0x29F,                        // 0x32F - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BASESTAT4 = EUnitFields.UNIT_END + 0x2A0,                        // 0x330 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_RESISTANCES = EUnitFields.UNIT_END + 0x2A1,                      // 0x331 - Size: 6 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE = EUnitFields.UNIT_END + 0x2A7,       // 0x337 - Size: 6 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE = EUnitFields.UNIT_END + 0x2AD,       // 0x33D - Size: 6 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_DAMAGE_DONE = EUnitFields.UNIT_END + 0x2B3,                  // 0x343 - Size: 6 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BYTES = EUnitFields.UNIT_END + 0x2B9,                            // 0x349 - Size: 1 - Type: BYTES - Flags: PRIVATE
-    PLAYER_FIELD_ATTACKPOWER = EUnitFields.UNIT_END + 0x2BA,                      // 0x34A - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_ATTACKPOWERMODIFIER = EUnitFields.UNIT_END + 0x2BB,              // 0x34B - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_END = EUnitFields.UNIT_END + 0x2BC                                     // 0x34C
+    PLAYER_FIELD_POSSTAT0 = EUnitFields.UNIT_END + 0x29C,                         // 0x32C - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_POSSTAT1 = EUnitFields.UNIT_END + 0x29D,                         // 0x32D - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_POSSTAT2 = EUnitFields.UNIT_END + 0x29E,                         // 0x32E - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_POSSTAT3 = EUnitFields.UNIT_END + 0x29F,                         // 0x32F - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_POSSTAT4 = EUnitFields.UNIT_END + 0x2A0,                         // 0x330 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_NEGSTAT0 = EUnitFields.UNIT_END + 0x2A1,                         // 0x331 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_NEGSTAT1 = EUnitFields.UNIT_END + 0x2A2,                         // 0x332 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_NEGSTAT2 = EUnitFields.UNIT_END + 0x2A3,                         // 0x333 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_NEGSTAT3 = EUnitFields.UNIT_END + 0x2A4,                         // 0x334 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_NEGSTAT4 = EUnitFields.UNIT_END + 0x2A5,                         // 0x335 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_RESISTANCES = EUnitFields.UNIT_END + 0x2A6,                      // 0x336 - Size: 6 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE = EUnitFields.UNIT_END + 0x2AC,       // 0x33C - Size: 6 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE = EUnitFields.UNIT_END + 0x2B2,       // 0x342 - Size: 6 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_DAMAGE_DONE_POS = EUnitFields.UNIT_END + 0x2B8,              // 0x348 - Size: 6 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_DAMAGE_DONE_NEG = EUnitFields.UNIT_END + 0x2BE,              // 0x34E - Size: 6 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_DAMAGE_DONE_PCT = EUnitFields.UNIT_END + 0x2C4,              // 0x354 - Size: 6 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_BYTES = EUnitFields.UNIT_END + 0x2CA,                            // 0x35A - Size: 1 - Type: BYTES - Flags: PRIVATE
+    PLAYER_FIELD_ATTACKPOWER = EUnitFields.UNIT_END + 0x2CB,                      // 0x35B - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_ATTACKPOWERMODPOS = EUnitFields.UNIT_END + 0x2CC,                // 0x35C - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_ATTACKPOWERMODNEG = EUnitFields.UNIT_END + 0x2CD,                // 0x35D - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_AMMO_ID = EUnitFields.UNIT_END + 0x2CE,                                // 0x35E - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_PADDING = EUnitFields.UNIT_END + 0x2CF,                          // 0x35F - Size: 1 - Type: INT - Flags: NONE
+    PLAYER_END = EUnitFields.UNIT_END + 0x2D0                                     // 0x360
 }
 Public Enum EGameObjectFields
 {

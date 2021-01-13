@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.7.6
-// Build: 3712
+// Patch: 0.8.0
+// Build: 3734
 
 Public Enum OPCODES
 {
@@ -599,5 +599,26 @@ Public Enum OPCODES
     SMSG_RESURRECT_FAILED=592,                                      // 0x250
     CMSG_ENABLE_PVP=593,                                            // 0x251
     SMSG_ZONE_UNDER_ATTACK=594,                                     // 0x252
-    NUM_MSG_TYPES=595,                                              // 0x253
+    MSG_AUCTION_HELLO=595,                                          // 0x253
+    CMSG_AUCTION_SELL_ITEM=596,                                     // 0x254
+    CMSG_AUCTION_REMOVE_ITEM=597,                                   // 0x255
+    CMSG_AUCTION_LIST_ITEMS=598,                                    // 0x256
+    CMSG_AUCTION_LIST_OWNER_ITEMS=599,                              // 0x257
+    CMSG_AUCTION_PLACE_BID=600,                                     // 0x258
+    SMSG_AUCTION_COMMAND_RESULT=601,                                // 0x259
+    SMSG_AUCTION_LIST_RESULT=602,                                   // 0x25A
+    SMSG_AUCTION_OWNER_LIST_RESULT=603,                             // 0x25B
+    SMSG_AUCTION_BIDDER_NOTIFICATION=604,                           // 0x25C
+    SMSG_AUCTION_OWNER_NOTIFICATION=605,                            // 0x25D
+    SMSG_PROCRESIST=606,                                            // 0x25E
+    SMSG_STANDSTATE_CHANGE_FAILURE=607,                             // 0x25F
+    SMSG_DISPEL_FAILED=608,                                         // 0x260
+    SMSG_SPELLORDAMAGE_IMMUNE=609,                                  // 0x261
+    CMSG_AUCTION_LIST_BIDDER_ITEMS=610,                             // 0x262
+    SMSG_AUCTION_BIDDER_LIST_RESULT=611,                            // 0x263
+    SMSG_SET_FLAT_SPELL_MODIFIER=612,                               // 0x264
+    SMSG_SET_PCT_SPELL_MODIFIER=613,                                // 0x265
+    CMSG_SET_AMMO=614,                                              // 0x266
+    SMSG_CORPSE_RECLAIM_DELAY=615,                                  // 0x267
+    NUM_MSG_TYPES=616,                                              // 0x268
 }

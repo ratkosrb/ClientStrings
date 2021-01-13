@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.7.6
-// Build: 3712
+// Patch: 0.8.0
+// Build: 3734
 
 Public Enum SpellFailedReason
 {
@@ -101,6 +101,9 @@ Public Enum SpellFailedReason
     SPELL_FAILED_TARGET_IN_COMBAT = 0x5E,                           // 0x05E
     SPELL_FAILED_CANT_BE_DISENCHANTED = 0x5F,                       // 0x05F
     SPELL_FAILED_NOT_WHILE_GHOST = 0x60,                            // 0x060
-    SPELL_FAILED_UNKNOWN = 0x61,                                    // 0x061
+    SPELL_FAILED_AUTOTRACK_INTERRUPTED = 0x61,                      // 0x061
+    SPELL_FAILED_CANT_CAST_ON_TAPPED = 0x62,                        // 0x062
+    SPELL_FAILED_ITEM_GONE = 0x63,                                  // 0x063
+    SPELL_FAILED_UNKNOWN = 0x64,                                    // 0x064
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }
