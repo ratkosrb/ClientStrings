@@ -72,7 +72,7 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 3694 (Jun 11 2004 20:33:55)
+WoW [Release Assertions Enabled] Build 3702 (Jun 15 2004 11:12:49)
 \a\b\t\n\v
 NoName
 NoName
@@ -84,7 +84,7 @@ NoName
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 3694 (Jun 11 2004)
+WoW [Release Assertions Enabled] Build 3702 (Jun 15 2004)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -1127,7 +1127,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 3694)
+World of WarCraft: Assertions Enabled Build (build 3702)
 SendErrorLogs
 Data\\
 World of Warcraft
@@ -1730,8 +1730,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jun 11 2004
-20:31:26
+Jun 15 2004
+11:10:10
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -2538,8 +2538,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-3694
-0.7.0
+3702
+0.7.1
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -2680,6 +2680,7 @@ Mover at invalid position
 !initialized || (int(time - lastUpdateTime) >= 0)
 ___END IDLE EVENT\n
 ___IDLE EVENT: timeNow(0x%X)\n
+!m_moveQueue.HasEntries() || !MovementIsWorldServer()
 0x%016I64X: No more movement and player not in motion\n
 0x%016I64X: update time(0x%08X) last update(0x%08X) moving for (%u) ms, falling for (%u) ms, time used(%u)\n
 0x%016I64X: no events, consuming(%u)\n
@@ -2702,7 +2703,6 @@ IsPitching()
 0x%016I64X: Want to move (%g,%g,%g) arcing for %g secs\n
 0x%016I64X: Plotting move for %u ms\n
 move
-HasSpline()
 0x%016I64X: Bogus position (%g,%g,%g), teleporting\n
 0x%016I64X: Tried moving bogus speed (%g), from (%g,%g,%g), teleporting\n
 0x%016I64X: Tried moving bogus distance (%g) in zero time, from (%g,%g,%g), teleporting\n
@@ -2763,6 +2763,10 @@ CMath::fnotequal_(runSpeed,0)
 0x%016I64X: setting time fallen (%d ms) from elevation (%g), jump velocity (%g)\n
 int(update.timeFallen) >= 0
 0x%016I64X: time (0x%08X) updating from (%g,%g,%g) (%g) to (%g,%g,%g) (%g)\n
+!m_moveQueue.HasEntries()
+timeDelta >= 0
+(int((eventTime)-(globals->GetLastUpdateTime())) >= 0)
+!IsSplineMover()
 0x%016I64X: Receive move
 0x%016I64X: ___INIT EVENT: time(0x%X) pos(%g,%g,%g)\n
 0x%016I64X: resetting move time\n
@@ -3675,7 +3679,6 @@ Usage: SplitMoney(\"gold silver copper\")
 Usage: CheckInteractDistance(\"unit\", distIndex)
 .?AVC2iVector@NTempest@@
 %dx%d
-.?AUCGxMonitorMode@@
 %d%c%d
 gxResolution
 gxRestart
@@ -3758,6 +3761,7 @@ C:\\build\\buildWoW\\WoW\\Source\\Ui\\TabardModelFrame.h
 ..\\UIUtil/Tooltip.h
 %s%s%d
 errorType < GERR_NUM_TYPES
+.?AUCGxMonitorMode@@
 SetChatWindowShown
 SetChatWindowDocked
 SetChatWindowLocked
@@ -5363,7 +5367,7 @@ cameraDistanceD
 cameraAngleD
 cameraDistanceC
 13.88
-cameraAngleC
+ameraAngleC
 cameraDistanceB
 cameraAngleB
 cameraDistanceA
@@ -8572,7 +8576,7 @@ textureName
 !m_deferredProcImpacts.Count()
 m_impactEffectsDesc.IsEmpty()
 !m_namePlate
-!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1982)) != 0
+!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1981)) != 0
 .?AUBLOODSPLATNODE@@
 ../..\\Ui/WorldFrame.h
 m_modelData
@@ -8605,7 +8609,7 @@ OBSOLETEANIMEVENT|%s
 ShowBreath
 INVALIDDISPLAYMODELRECORD|%d|%d
 NOCREATUREDISPLAYIDFOUND|%d
-closest_index > 1
+messageId < NUM_MSG_TYPES
 numPoints > 0
 0x%016I64X: Immobilized\n
 0x%016I64X: Stunned\n
@@ -9258,10 +9262,9 @@ The wtf files are :
 Unable to open wtfDir.txt
 wtfdir.txt
 .?AUCONSOLECOMMAND@@
-==\a= g
-EQ10 e
-UTXDX
-tcsgD\\
+@d#pw
+@d$hw
+UTXD
 ���>
 ?fff?
 HWSoundIdx
@@ -17880,24 +17883,21 @@ control structure too long
 function or expression too complex
 code size overflow
 arg0
+unpack
+assert
+pairs
+ipairs
+setmetatable
+getmetatable
+debuginfo
+getglobal
+setglobal
 _ERRORMESSAGE
 C:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameScript\\FrameScript.cpp
 !lua_registered
 __framescript_meta
 lua_registered > 0
 !entry
-Error executing compat script
-compat.lua
-Interface\\FrameXML\\compat.lua
-debuginfo
-getmetatable
-setmetatable
-getglobal
-setglobal
-!s_context
-cannot change a protected metatable
-__metatable
-nil or table expected
 debuginfo[%d]
 this
 // DEBUGINFO - %s:%d\n
@@ -17912,6 +17912,15 @@ this
 %s%s = %s\n
 %s%s = <nil>\n
 %s%s = <userdata>\n
+__metatable
+cannot change a protected metatable
+nil or table expected
+assertion failed!
+table too big to unpack
+Error executing compat script
+compat.lua
+Interface\\FrameXML\\compat.lua
+!s_context
 s_context
 GetText
 GetPluralIndex
@@ -19081,7 +19090,7 @@ C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Version.cpp
 // SCENE_FILENAME \"%s\"\n
  by %s
 // Exported on %s
-// MDLFile version\tJun 11 2004 20:31:05\n
+// MDLFile version\tJun 15 2004 11:09:49\n
 C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\TSet.cpp
 count != 64
 TSet::Found: found unregistered token 0x%x
