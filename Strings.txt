@@ -1,3 +1,4 @@
+<lx{
 CyrixInsteadCentaurHalls
 0\aw,a
 Qkkbal
@@ -138,7 +139,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 4442 (Jun  3 2005 17:02:31)
+WoW [Release] Build 4449 (Jun  9 2005 11:59:43)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -147,7 +148,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 4442 (Jun  3 2005)
+WoW [Release] Build 4449 (Jun  9 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -455,10 +456,9 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo`
+ltuo
 cinu
-ltuo0
-ltuo0
+ltuo
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -609,7 +609,7 @@ Bad SMSG_NEW_WORLD\n
 Notification received: %s
 login
 charselect
-World of WarCraft (build 4442)
+World of WarCraft (build 4449)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -925,8 +925,8 @@ advapi32.dll
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jun  3 2005
-16:59:33
+Jun  9 2005
+11:56:49
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1431,8 +1431,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4442
-1.5.0
+4449
+1.5.1
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -2214,9 +2214,9 @@ ERR_FISH_ESCAPED
 ERR_FISH_NOT_HOOKED
 ERR_IGNORING_YOU_S
 ERR_INVALID_ITEM_TARGET
-ERR_ZONE_EXPLORED_XP
 ERR_PETITION_DECLINED_S
 igPlayerInviteAccept
+ERR_ZONE_EXPLORED_XP
 ERR_ZONE_EXPLORED
 ERR_NOEMOTEWHILERUNNING
 ERR_DEATHBIND_SUCCESS_S
@@ -7251,7 +7251,7 @@ CryptAcquireContextA
 .?AUAUDIOSTREAM@SFile@Storm@@
 HSARCHIVE
 HSFILE
-OSTREAM
+AUDIOSTREAM
 .?AUARCHIVEREC@SFile@Storm@@
 (block table)
 (hash table)
@@ -7277,7 +7277,7 @@ HSLOG
 .?AURECTF@@
 .?AV?$TSExplicitList@URGN@@$0?CCCCCCCD@@@
 C:\\build\\buildWoW\\Storm\\Source\\SComp.cpp
-unknown>
+<unknown>
 bzip2Compress:%d
 .?AVBigData@@
 TryEnterCriticalSection
@@ -7848,9 +7848,7 @@ World\\Maps\\
 .PAVCMapLight@@
 .?AUCGxVertexPT0T1@@
 .?AVCMapFootprintTexture@@
-? Ny
 .?AVFogQ@@
-? Ny
 .?AUCChunkTex@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapMem.cpp
 .?AVCMapDoodadDef@@
@@ -8018,7 +8016,6 @@ NOCONTINENTNAME|%d
 CORPSE_RED
 C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\Minimap.cpp
 .?AUMINIMAPMD5NAME@@
-? Ny
 .?AV?$TSExplicitList@URACECLASSINFO@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USKILLCOSTSINFO@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USKILLLINEREC@@$0?CCCCCCCD@@@
@@ -8636,7 +8633,6 @@ alpha
 assertion expected after (?(
 6^\a@
 1\x1B\a@
-F Ny
 .?AUNodeBlock@CDataRecycler@@
 C:\\build\\buildWoW\\engine\\Source\\Base\\CDataAllocator.cpp
 %s%*d.%0*d
@@ -9640,7 +9636,7 @@ afii57397
 afii57396
 afii57395
 afii57394
-afii57393
+fii57393
 afii57392
 afii57388
 afii57381
