@@ -1,9 +1,10 @@
-<\bj~
 CyrixInsteadCentaurHalls
 0\aw,a
 Qkkbal
 wn>Jj
 WUAMOS
+true
+false
 cvzl]
 =f^D./6\ak
 ?{Q}<
@@ -17,6 +18,10 @@ World of Warcraft\\Client
 AccountName
 LastCharacter
 LastAccount
+AUTH_BANNED_URL
+AUTH_DB_BUSY_URL
+AUTH_NO_TIME_URL
+AUTH_SUSPENDED_URL
 World of Warcraft\\Client
 AccountName
 World of Warcraft\\Client
@@ -89,7 +94,8 @@ SPELL_AURA_GONE_PARTY
 SPELL_AURA_GONE_OTHER
 SPELL_ITEM_ENCHANTMENTS
 SPELL_BREAK_AURA
-SPELL_PERIODIC_SELF_DAMAGE
+SPELL
+_PERIODIC_SELF_DAMAGE
 SPELL_PERIODIC_SELF_BUFFS
 SPELL_PERIODIC_PARTY_DAMAGE
 SPELL_PERIODIC_PARTY_BUFFS
@@ -141,7 +147,7 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 3925 (Sep 29 2004 15:38:28)
+WoW [Release Assertions Enabled] Build 3988 (Oct 10 2004 16:18:42)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -149,7 +155,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 3925 (Sep 29 2004)
+WoW [Release Assertions Enabled] Build 3988 (Oct 10 2004)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -241,6 +247,8 @@ GetWindowLongA
 SetWindowLongA
 CallWindowProcA
 GetClipboardData
+SetWindowTextW
+MessageBoxW
 CreateProcessW
 advapi32.dll
 RegQueryValueExW
@@ -283,7 +291,6 @@ EnumPropsA
 EnumPropsExA
 IsClipboardFormatAvailable
 IsWindowUnicode
-MessageBoxW
 MessageBoxExW
 ExtTextOutW
 GetCharWidthW
@@ -371,88 +378,6 @@ D3DX: (WARN) D3DX relies upon this behavior.\r\n
 D3DX: (WARN) least zero bytes. Deletion of a null pointer should quietly do nothing.\r\n
 D3DX: (WARN) An allocation of zero bytes should return a unique non-null pointer to at\r\n
 D3DX: (WARN) Overloaded ::new and ::delete operators do not conform to C++ standards:\r\n
-true
-false
-\b3OP\v
-ltuop.y
-cinu
-   !
-} ~ % $ 0
-[!\\!]!^!S!T!p t u v w x y
-%<%,%4%
-%a%b%V%U%c%Q%W%]%\\%[%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%Z
-!, - .
- \")#*#
-%B&2 j&k&D
-<\":&`&\v\"<&
-cinu
-���          \r\a\t\v
-����
-xml=http://www.w3.org/XML/1998/namespace
-CDATA
-IDREF
-IDREFS
-ENTITY
-ENTITIES
-NMTOKEN
-NMTOKENS
-NOTATION(
- !\"#$%
-DATA[
- !\"#\x1B
-\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
-\a\a\a\a\a
- !\"#\x1B
-\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
-\a\a\a\a\a
- !\"#\x1B
-\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
-\a\a\a\a\a
- !\"#\x1B
-\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
-\a\a\a\a\a
- !\"#\x1B
- !\"#\x1B
- !\"#\x1B
- !\"#\x1B
-DATA[
- !\"#\x1B
- !\"#\x1B
- !\"#\x1B
- !\"#\x1B
-DATA[
- !\"#\x1B
- !\"#\x1B
-version
-encoding
-standalone
-ISO-8859-1
-US-ASCII
-UTF-8
-UTF-16
-UTF-16BE
-UTF-16LE
-ATTLIST
-CDATA
-DOCTYPE
-ELEMENT
-EMPTY
-ENTITIES
-ENTITY
-FIXED
-IDREF
-IDREFS
-IGNORE
-IMPLIED
-INCLUDE
-NDATA
-NMTOKEN
-NMTOKENS
-NOTATION
-PCDATA
-PUBLIC
-REQUIRED
-SYSTEM
 \twn8\tI
 2G\x1B0Mx\x1B4c
 \r \r0>
@@ -532,6 +457,88 @@ D\bGa%\b
 0@.B-
 \r`?D\r`1
 SP\vPZ
+\b3OP\v
+ltuo0Cz
+cinu
+ltuop
+ltuop
+   !
+} ~ % $ 0
+[!\\!]!^!S!T!p t u v w x y
+%<%,%4%
+%a%b%V%U%c%Q%W%]%\\%[%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%Z
+!, - .
+ \")#*#
+%B&2 j&k&D
+<\":&`&\v\"<&
+cinu
+���          \r\a\t\v
+����
+xml=http://www.w3.org/XML/1998/namespace
+CDATA
+IDREF
+IDREFS
+ENTITY
+ENTITIES
+NMTOKEN
+NMTOKENS
+NOTATION(
+ !\"#$%
+DATA[
+ !\"#\x1B
+\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
+\a\a\a\a\a
+ !\"#\x1B
+\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
+\a\a\a\a\a
+ !\"#\x1B
+\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
+\a\a\a\a\a
+ !\"#\x1B
+\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
+\a\a\a\a\a
+ !\"#\x1B
+ !\"#\x1B
+ !\"#\x1B
+ !\"#\x1B
+DATA[
+ !\"#\x1B
+ !\"#\x1B
+ !\"#\x1B
+ !\"#\x1B
+DATA[
+ !\"#\x1B
+ !\"#\x1B
+version
+encoding
+standalone
+ISO-8859-1
+US-ASCII
+UTF-8
+UTF-16
+UTF-16BE
+UTF-16LE
+ATTLIST
+CDATA
+DOCTYPE
+ELEMENT
+EMPTY
+ENTITIES
+ENTITY
+FIXED
+IDREF
+IDREFS
+IGNORE
+IMPLIED
+INCLUDE
+NDATA
+NMTOKEN
+NMTOKENS
+NOTATION
+PCDATA
+PUBLIC
+REQUIRED
+SYSTEM
 MSVCRT.dll
 KERNEL32.dll
 COMCTL32.dll
@@ -613,10 +620,23 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 3925)
+World of WarCraft: Assertions Enabled Build (build 3988)
 SendErrorLogs
 Data\\
 World of Warcraft
+.PAVStartup_StringsRec@@
+%s: Cannot read string table
+C:\\build\\buildWoW\\WoW\\Source\\DB/WowClientDB.h
+%s has wrong row size (found %i, expected %i)
+%s has wrong number of columns (found %i, expected %i)
+Unable to open %s
+%s already loaded! Aborting to prevent memory leak!
+%s%s
+Country
+Language
+WoW Config
+Region
+Wow.ini
 Config.wtf
 run autoexec.wtf
 M2UseShaders
@@ -730,7 +750,6 @@ Local Zone:
 %s %s
 WowErrorAE.exe
 InstallPath
-GamePath
 lootpass
 lootroll
 raidassistant
@@ -1046,8 +1065,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Sep 29 2004
-15:35:37
+Oct 10 2004
+16:15:16
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1161,7 +1180,6 @@ C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsGui.cpp
 success
 .?AUOsGuiMenuHotkey@@
 inPos >= 0 && inPos < (int) mHotkeys.Count()
-%s%s
 Right
 Left
 Down
@@ -1330,6 +1348,22 @@ maxSeverity < SYSMSG_NUMTYPES
 Error cannot create directory %s
 %sSysMsgLog%03d.txt
 curDir
+.?AUSTRINGBLOCK@ProfileInternal@@
+string
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Profile.cpp
+stringBlock
+.?AUPROFILE@ProfileInternal@@
+path
+[%s]\n
+section
+%I64d
+value
+pSection
+profilePtr
+.?AUSECTION@ProfileInternal@@
+.?AUKEYVALUE@ProfileInternal@@
+.?AV?$TSExplicitList@UKEYVALUE@ProfileInternal@@$0?CCCCCCCD@@@
+.?AV?$TSExplicitList@USECTION@ProfileInternal@@$0?CCCCCCCD@@@
 GxTex_Unknown
 GxTex_Argb8888
 GxTex_Argb4444
@@ -1519,6 +1553,15 @@ pos.y
 pos.x
 .?AUFOOTSTEPSNDCACHE@@
 ..\\..\\..\\storm\\h\\stpl.h
+DBFilesClient\\Startup_Strings.dbc
+Error reading Startup_StringsRec
+Sound\\Music\\CityMusic\\Ironforge\\tinkertownintro_moment.mp3
+Sound\\Music\\CityMusic\\Thunderbluff\\Thunderbluff Intro.mp3
+Sound\\Music\\CityMusic\\Ironforge\\IronForge Intro.mp3
+Sound\\Music\\CityMusic\\Undercity\\undercityintro-moment.mp3
+Sound\\Music\\CityMusic\\Darnassus\\Darnassus Intro.mp3
+Sound\\Music\\CityMusic\\Orgrimmar\\orgrimmar_intro-moment.mp3
+Sound\\Music\\CityMusic\\Stormwind\\Stormwind_intro-moment.mp3
 C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterfaceGlueMusic.cpp
 !s_glueMusic
 .?AUREVERBINFO@@
@@ -1699,11 +1742,6 @@ LOGIN_STATE_CONNECTING
 LOGIN_STATE_INITIALIZED
 PetAttachment
 CharacterAttachment
-Country
-Language
-WoW Config
-Region
-Wow.ini
 .?AUConsoleString@@
 Logs\\connection.log
 Interface\\GlueXML\\GlueXML.toc
@@ -1727,8 +1765,7 @@ REALM_LIST_CONNECTED
 LOGIN_STATE_CONNECTED
 LOGIN_STATE_CHECKSUM
 LOGIN_STATE_PATCH_REQUIRED
-NET_CONNECTION_URL
-OKAY_WITH_URL
+CONNECTION_HELP
 GAME_SERVER_LOGIN
 CHAR_LIST_RETRIEVING
 REALM_LIST_IN_PROGRESS
@@ -1737,6 +1774,7 @@ op == COP_GET_REALMS
 op == COP_GET_CHARACTERS
 C:\\build\\buildWoW\\WoW\\Source\\Glue\\CGlueMgr.cpp
 op == COP_AUTHENTICATE || op == COP_WAIT_QUEUE
+OKAY_WITH_URL
 QUEUE_TIME_LEFT_UNKNOWN
 %s\n%s
 QUEUE_TIME_LEFT_SECONDS
@@ -1778,6 +1816,7 @@ GetLastAccountName
 LaunchURL
 GetMovieResolution
 StopGlueMusic
+PlayCreditsMusic
 PlayGlueMusic
 QuitGame
 SetCurrentScreen
@@ -1807,8 +1846,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-3925
-0.11.0
+3988
+0.12.0
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -1826,6 +1865,7 @@ Usage: DisableAddOn(index)
 Usage: DeleteAddOn(index)
 ..\\..\\..\\engine\\source\\Frame/CSimpleTop.h
 s_instance
+SortRealms
 SetPreferredInfo
 GetRealmCategories
 ChangeRealm
@@ -1840,6 +1880,9 @@ Usage: GetRealmInfo(category, index)
 Usage: ChangeRealm(category, index)
 UNKNOWN
 Usage: SetPreferredInfo(index, pvp)
+characters
+load
+Usgae: SortRealms(\"type\")
 CreateCharacter
 GetRandomName
 SetCharacterCreateFacing
@@ -1903,6 +1946,7 @@ Usage: SetCharacterSelectFacing(degrees)
 wow-patch.mpq
 Patch
 patchdownload
+delete
 execute
 extract
 prepatch.lst
@@ -2074,7 +2118,8 @@ CMath::fnotequal_(init.turnRate,0)
 CMath::fnotequal_(init.swimBackSpeed,0)
 CMath::fnotequal_(init.swimSpeed,0)
 CMath::fnotequal_(init.walkSpeed,0)
-CMath::fnotequal_(init.runBackSpeed,0)
+CMath::fnotequal_(init.r
+unBackSpeed,0)
 CMath::fnotequal_(init.runSpeed,0)
 __fall
 0x%016I64X:
@@ -2082,12 +2127,14 @@ Changing run speed from (%g) to (%g)\n
 CMath::fnotequal_(speed,0)
 Changing run backwards speed from (%g) to (%g)\n
 Changing walk speed from (%g) to (%g)\n
-Changing swim speed from (%g) to (%g)\n
+Changing swim speed from
+ (%g) to (%g)\n
 Changing swim backwards speed from (%g) to (%g)\n
 Changing turn rate from (%g) to (%g)\n
 CMath::fnotequal_(rate,0)
 Set Facing at (%g,%g,%g), (%g degrees), changed facing to (%g degrees)\n
 Set Pitch at (%g,%g,%g), (%g degrees), changed facing to (%g degrees)\n
+!IsInMotion()
 !m_moveQueue.HasEntries()
 Swim start from (%g,%g,%g), (%g)\n
 Swim stop from (%g,%g,%g), (%g)\n
@@ -2199,7 +2246,6 @@ PLAYER_FIELD_BANKBAG_SLOT_1
 PLAYER_FIELD_BANK_SLOT_1
 PLAYER_FIELD_PACK_SLOT_1
 PLAYER_FIELD_INV_SLOT_HEAD
-PLAYER_FIELD_PAD_0
 PLAYER_GUILD_TIMESTAMP
 PLAYER_DUEL_TEAM
 PLAYER_BYTES_3
@@ -2207,10 +2253,16 @@ PLAYER_BYTES_2
 PLAYER_BYTES
 PLAYER_GUILDRANK
 PLAYER_GUILDID
+PLAYER_FLAGS
 PLAYER_DUEL_ARBITER
 PLAYER_SELECTION
 UNIT_FIELD_PADDING
-UNIT_ATTACK_POWER_MODS
+UNIT_FIELD_MAXRANGEDDAMAGE
+UNIT_FIELD_MINRANGEDDAMAGE
+UNIT_FIELD_RANGED_ATTACK_POWER_MODS
+UNIT_FIELD_RANGEDATTACKPOWER
+UNIT_FIELD_BYTES_2
+UNIT_FIELD_ATTACK_POWER_MODS
 UNIT_FIELD_BASE_MANA
 UNIT_FIELD_ATTACKPOWER
 UNIT_FIELD_RESISTANCES
@@ -2238,6 +2290,7 @@ UNIT_FIELD_NATIVEDISPLAYID
 UNIT_FIELD_DISPLAYID
 UNIT_FIELD_COMBATREACH
 UNIT_FIELD_BOUNDINGRADIUS
+UNIT_FIELD_RANGEDATTACKTIME
 UNIT_FIELD_BASEATTACKTIME
 UNIT_FIELD_AURASTATE
 UNIT_FIELD_AURAFLAGS
@@ -2263,6 +2316,7 @@ UNIT_FIELD_POWER2
 UNIT_FIELD_POWER1
 UNIT_FIELD_HEALTH
 UNIT_FIELD_CHANNEL_OBJECT
+UNIT_FIELD_PERSUADED
 UNIT_FIELD_TARGET
 UNIT_FIELD_CREATEDBY
 UNIT_FIELD_SUMMONEDBY
@@ -2303,11 +2357,18 @@ blockID < (sizeof(s_itemDescriptors) / sizeof(s_itemDescriptors[0]))
 blockID < (sizeof(s_objDescriptors) / sizeof(s_objDescriptors[0]))
 .?AUCFacet@NTempest@@
 numVerts < 9
-numVerts > 0
 index < numVerts
 C:\\build\\buildWoW\\WoW\\Source\\Object\\Collide.cpp
 poly
-count < 9
+Found %d facets in requested box\n
+CWorld::GetFacets() bombed out\n
+Box off by %g on max Z\n
+Box off by %g on max Y\n
+Box off by %g on max X\n
+Box off by %g on min Z\n
+Box off by %g on min Y\n
+Box off by %g on min X\n
+Tested outside facet box, requesting facets in b:(%g,%g,%g) t:(%g,%g,%g) new AA box\n
 No obstacles hit\n
     (%g,%g,%g)\n
 Obstacle hit (%d) sides of box, (%g) away\n
@@ -2319,8 +2380,6 @@ Fallen far\n
 Hit obstacle overhead, cancelling step-up and requesting fall\n
 Found walkable surface close to apex, landing\n
 (mapPos.x >= 0.0f) && (mapPos.x < ((64*16)*((150.0f/36.0f)*8))) && (mapPos.y >= 0.0f) && (mapPos.y < ((64*16)*((150.0f/36.0f)*8)))
-Found %d facets in requested box\n
-CWorld::GetFacets() bombed out\n
 Requesting facets in b:(%g,%g,%g) t:(%g,%g,%g) AA box\n
 Falling for %u ms, start elevation (%g), sim time (%u)\n
 (0x%08X) Requesting fall facets: from (%g,%g,%g), wants to fall (%g), move vector (%g,%g,%g)\n
@@ -2368,8 +2427,8 @@ Wanted to move (%g) in (%g,%g,%g) direction, actually moved (%g) to (%g,%g,%g)\n
 ====| Starting new move: from (%.7g,%.7g,%.7g), want to move (%g) in (%g,%g) direction, for (%u) ms\n
 Interface\\SpellShadow\\Spell-Shadow-Unacceptable.blp
 Interface\\SpellShadow\\Spell-Shadow-Acceptable.blp
-FFX disabled
-FFX enabled
+disabled
+enabled
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\WorldFrame.cpp
 hitTestResult
 Spell_C_CanTargetItems() || Spell_C_WaitingForStringInput() || (hitFilter != HIT_TEST_NOTHING)
@@ -2382,6 +2441,10 @@ Shaders\\Pixel\\FFXBlur_2.bls
 Shaders\\Pixel\\FFXGlow_2.bls
 tone
 Shaders\\Pixel\\FFXMidtoneMap.bls
+ffxDeath
+full screen death effect
+ffxGlow
+full screen glow effect
 full screen effects
 s_spellShadowTexture[i] == 0
 PlayerFadeOutAlpha
@@ -2396,12 +2459,17 @@ m_camera
 !s_currentWorldFrame || !\"Error, why is there more than one world frame being created?\"
 debugobjectpathing
 pWorldFrame
+player
 inputControl
 IDLE_MESSAGE
 data
 rsStackOffset == GxRsStackOffset()
 ..\\WowServices/BitField.h
 bitNum < m_numBits
+GetVideoCaps
+RestoreVideoDefaults
+GetBindLocation
+RestartGx
 DropItemOnUnit
 GetGMTicketCategories
 SetPortraitToTexture
@@ -2442,6 +2510,7 @@ GetCurrentPosition
 GetBuildVersion
 GetDate
 SplitMoney
+GetInstanceBootTimeRemaining
 GetCorpseRecoveryDelay
 GetReleaseTimeRemaining
 GetDamageBonusStat
@@ -2484,6 +2553,7 @@ RequestTimePlayed
 PromoteByName
 PromoteToPartyLeader
 UninviteByName
+UninviteFromRaid
 UninviteFromParty
 InviteByName
 InviteToParty
@@ -2594,6 +2664,8 @@ INVTYPE_NECK
 INVTYPE_HEAD
 .?AV?$TSExplicitList@USAVEDVARIABLE@@$0?CCCCCCCD@@@
 .?AUNearestEnemyData@@
+ERR_TARGET_LOGGING_OUT
+ERR_LOGGING_OUT
 ERR_NOT_IN_RAID
 ERR_LOOT_PLAYER_NOT_FOUND
 ERR_LOOT_ROLL_PENDING
@@ -2627,6 +2699,7 @@ ERR_AUCTION_SOLD_S
 ERR_AUCTION_WON_S
 ERR_AUCTION_OUTBID_S
 ERR_AUCTION_STARTED
+ERR_AUCTION_REPAIR_ITEM
 ERR_AUCTION_MIN_BID
 ERR_AUCTION_HIGHER_BID
 ERR_AUCTION_BID_INCREMENT
@@ -2697,16 +2770,16 @@ ERR_EMBLEMERROR_NOTABARDGEOSET
 ERR_GUILDEMBLEM_INVALIDVENDOR
 ERR_GUILDEMBLEM_NOTENOUGHMONEY
 ERR_GUILDEMBLEM_NOTGUILDMASTER
-ERR_GUILDEMBLEM_COLORSPRESENT
+ERR_GUILDEMBLEM_NOGUILD
 ERR_GUILDEMBLEM_INVALID_TABARD_COLORS
 ERR_GUILDEMBLEM_SUCCESS
 ERR_INVALID_FOLLOW_TARGET
 ERR_UNIT_NOT_FOUND
 ERR_AUTOFOLLOW_TOO_FAR
 ERR_MOUNT_FORCEDDISMOUNT
-ERR_GUILDEMBLEM_NOGUILD
 ERR_LOOT_GONE
 ERR_OUT_OF_HEALTH
+ERR_GUILDEMBLEM_COLORSPRESENT
 ERR_OUT_OF_ENERGY
 ERR_OUT_OF_FOCUS
 ERR_OUT_OF_RAGE
@@ -2757,6 +2830,7 @@ ERR_NOTYOURPET
 ERR_NO_PET
 TaxiNodeDiscovered
 ERR_NEWTAXIPATH
+ERR_CHAT_PLAYER_NOT_FOUND_S
 ERR_CHAT_WRONG_FACTION
 ERR_CHAT_WHILE_DEAD
 ERR_TAME_FAILED
@@ -2856,6 +2930,7 @@ ERR_QUEST_MUST_CHOOSE
 ERR_QUEST_REWARD_MONEY_S
 ERR_QUEST_REWARD_ITEM_S
 ERR_QUEST_REWARD_EXP_I
+ERR_QUEST_ALREADY_ON
 ERR_QUEST_NEED_PREREQS
 ERR_QUEST_ONLY_ONE_TIMED
 ERR_QUEST_FAILED_NOT_ENOUGH_MONEY
@@ -3073,6 +3148,7 @@ Usage: NotifyInspect(unit)
 Usage: InviteToParty(\"unit\")
 Usage: InviteByName(\"name\")
 Usage: UninviteFromParty(\"unit\")
+Usage: UninviteFromRaid(index)
 Usage: UninviteByName(\"name\")
 Usage: PromoteToPartyLeader(\"unit\")
 Usage: PromoteByName(\"name\")
@@ -3104,6 +3180,7 @@ contested
 hostile
 friendly
 Usage: DropItemOnUnit(\"unit\")
+HOME_INN
 worldFramePtr
 !m_cinematic.sequenceMusic
 !m_cinematic.cameraMusic
@@ -3127,6 +3204,8 @@ Toogles ubertips
 UnitNameRenderMode
 sets unitname mode (0=none,1=lockedunits/lockedplayers, 2=playersalways+lockedunits, 3=all units always
 targetNearestDistance
+useUiScale
+uiScale
 combatLogOn
 minimapInsideZoom
 minimapZoom
@@ -3136,7 +3215,6 @@ FrameLevel:
 Frame:
 bytesRead == fileSize
 TargetNearestDistance must be between 1 and %f
-player
 worldFrame
 H: %d\n
 W: %d\n
@@ -3311,11 +3389,11 @@ SYSTEM
 .?AUPENDINGUSERLIST@@
 .?AUChatColorInfo@@
 .?AV?$TSExplicitList@UWORDLIST@@$0?CCCCCCCD@@@
-C:\\build\\buildWoW\\WoW\\Source\\Ui\\ChatFrame.cpp
-rec->GetID() < 32
 CHANNEL%d
-Warning: invalid profanity filter expression: \"%s\"
+Warning: invalid profanity filter expression: \"%s\"\n
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\ChatFrame.cpp
 .?AUPENDINGCHAT@@
+rec->GetID() < 32
 SHOWN
 DOCKED
 LOCKED
@@ -3350,6 +3428,7 @@ type < NUM_SLASH_CMDS
 %s%s%s%s%s%s%d%d%s
 numWords
 maxlen
+PLAYER_INVITE_BANNED
 PLAYER_INVITED
 NOT_MODERATED
 INVALID_NAME
@@ -3529,6 +3608,7 @@ AUCTION_SOLD_MAIL_SUBJECT
 AUCTION_WON_MAIL_SUBJECT
 AUCTION_OUTBID_MAIL_SUBJECT
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\MailInfo.cpp
+mailID
 Usage: SetSendMailMoney(amount)
 Usage: SetSendMailCOD(amount)
 Usage: GetStationeryInfo(index)
@@ -3588,6 +3668,7 @@ Usage: CastSpellByName(name)
 ResetTutorials
 ClearTutorials
 FlagTutorial
+TutorialPopup
 (byteCount & (m_array.SizeOfElement() - 1)) == 0
 Usage: FlagTutorial(\"tutorial\")
 SaveBindings
@@ -3670,10 +3751,35 @@ C:\\build\\buildWoW\\WoW\\Source\\Ui\\UIBindings.h
 .?AV?$TSExplicitList@UKEYBINDING@@$0?CCCCCCCD@@@
 .?AUKEYCOMMAND@@
 .?AV?$TSExplicitList@UKEYCOMMAND@@$0?CCCCCCCD@@@
+DemoteAssistant
+PromoteToAssistant
+ConvertToRaid
+SwapRaidSubgroup
+SetRaidSubgroup
+SortRaidRoster
+IsRaidOfficer
+IsRaidLeader
+GetRaidRosterSelection
+SetRaidRosterSelection
+GetRaidRosterInfo
+GetNumRaidMembers
+.?AURaidMemberInfo@@
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\RaidInfo.cpp
+count <= (sizeof(m_members) / sizeof(m_members[0]))
+PLAYER_OFFLINE
+Usage: GetRaidRosterInfo(index)
+Usage: SetRaidRosterSelection(index)
+zone
+class
+level
+Usage: SortRaidRoster(\"type\")
+Usage: SetRaidSubgroup(index, subgroup)
+Usage: SwapRaidSubgroup(index1, index2)
+Usage: PromoteToAssistant(name)
+Usage: DemoteAssistant(name)
 GetPetIcon
 GetPetFoodTypes
-GetPe
-tHappiness
+GetPetHappiness
 GetPetExperience
 GetPetTrainingPoints
 GetPetLoyalty
@@ -3777,32 +3883,6 @@ Usage: GetLootRollItemInfo(id)
 Usage: GetLootRollTimeLeft(id)
 Usage: RollOnLoot(id [,roll])
 .?AUFrameScriptObject_Variable@@
-DemoteAssistant
-PromoteToAssistant
-ConvertToRaid
-SwapRaidSubgroup
-SetRaidSubgroup
-SortRaidRoster
-IsRaidOfficer
-IsRaidLeader
-GetRaidRosterSelection
-SetRaidRosterSelection
-GetRaidRosterInfo
-GetNumRaidMembers
-.?AURaidMemberInfo@@
-C:\\build\\buildWoW\\WoW\\Source\\Ui\\RaidInfo.cpp
-count <= (sizeof(m_members) / sizeof(m_members[0]))
-PLAYER_OFFLINE
-Usage: GetRaidRosterInfo(index)
-Usage: SetRaidRosterSelection(index)
-zone
-class
-level
-Usage: SortRaidRoster(\"type\")
-Usage: SetRaidSubgroup(index, subgroup)
-Usage: SwapRaidSubgroup(index1, index2)
-Usage: PromoteToAssistant(name)
-Usage: DemoteAssistant(name)
 GetStablePetFoodTypes
 SetPetStablePaperdoll
 GetSelectedStablePet
@@ -4055,7 +4135,6 @@ Usage: CollapseTrainerSkillLine(index)
 Bad skill line in ExpandTrainerSkillLine
 Usage: ExpandTrainerSkillLine(index)
 TaxiNodeGetType
-TaxiGetTexCoords
 CloseTaxiMap
 TakeTaxiNode
 TaxiNodeCost
@@ -4063,18 +4142,23 @@ TaxiNodePosition
 TaxiNodeName
 NumTaxiNodes
 SetTaxiMap
+.?AUTAXILINE@@
+s_numNodes <= ( 4 * sizeof(ULONGLONG) * 8 )
+s_currentNode->m_ID == (int)node
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\TaxiMapFrame.cpp
+s_currentNode
+Interface\\TaxiFrame\\TAXIMAP%d.blp
+count == s_lines.Count()
+INVALID
 DISTANT
 REACHABLE
 CURRENT
-.?AUTaxiNode@@
-node == m_startNode
-C:\\build\\buildWoW\\WoW\\Source\\Ui\\TaxiMapFrame.cpp
-slot < NumTaxiNodes()
-Invalid taxi node slot
 Usage: TaxiNodeName(slot)
+Invalid taxi node slot
 Usage: TaxiNodeTaxiNodeLocation(slot)
 Usage: TaxiNodeCost(slot)
 Usage: TakeTaxiNode(slot)
+Usage: TaxiNodeGetType(slot)
 GetQuestGreenRange
 ExpandQuestHeader
 CollapseQuestHeader
@@ -4112,9 +4196,10 @@ reward
 n < QUESTLOG_FLAGS_NUM_COUNTS
 Usage: GetQuestLogTitle(index)
 Usage: SelectQuestLogEntry(index)
-QUEST_ITEMS_NEEDED
 reputation
 QUEST_FACTION_NEEDED
+FACTION_STANDING_LABEL%d
+QUEST_ITEMS_NEEDED
 monster
 QUEST_MONSTERS_KILLED
 QUEST_OBJECTS_FOUND
@@ -4162,6 +4247,7 @@ ItemTextGetMaterial
 ItemTextGetCreator
 ItemTextGetItem
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\ItemTextFrame.cpp
+CancelTrackingBuff
 GetTrackingTexture
 CancelPlayerBuff
 GetPlayerBuffTimeLeft
@@ -4205,15 +4291,14 @@ Usage: HasAction(slot)
 Usage: UseAction(slot, [checkCursor])
 Usage: PickupAction(slot)
 Usage: PlaceAction(slot)
-Usage: I
-sAttackAction(slot)
+Usage: IsAttackAction(slot)
 Usage: IsCurrentAction(slot)
 Usage: IsAutorepeatAction(slot)
 Usage: IsUsableAction(slot)
 GetMacroIndexByName
 PickupMacro
 GetMacroIconInfo
-umMacroIcons
+GetNumMacroIcons
 EditMacro
 DeleteMacro
 GetMacroInfo
@@ -4352,7 +4437,13 @@ Invalid slot in SetBagPortaitTexture
 Usage: SetBagPortaitTexture(texture, slot)
 BACKPACK_TOOLTIP
 Usage: GetBagName(index)
+RepairAllItems
+GetRepairAllCost
+InRepairMode
+HideRepairCursor
+ShowRepairCursor
 ShowMerchantSellCursor
+CanMerchantRepair
 BuybackItem
 BuyMerchantItem
 PickupMerchantItem
@@ -4528,6 +4619,7 @@ Usage: SelectActiveQuest(index)
 Invalid reward choice in GetQuestReward([choice])
 Invalid quest item in GetQuestItemInfo(\"type\", index)
 Usage: GetQuestItemLink(\"type\", index)
+OffhandHasWeapon
 GetInventoryAlertStatus
 GetGuildInfo
 SetInventoryPortaitTexture
@@ -4543,6 +4635,7 @@ GetInventoryItemLink
 GetInventoryItemCooldown
 GetInventoryItemQuality
 GetInventoryItemCount
+GetInventoryItemBroken
 GetInventoryItemTexture
 GetInventorySlotInfo
 .?AW4INV_ALERT_STATUS@@
@@ -4552,6 +4645,8 @@ item->IsA(TYPE_CONTAINER)
 Invalid inventory slot in GetInventorySlotInfo
 Invalid inventory slot in GetInventoryItemTexture
 Usage: GetInventoryItemTexture(unit, slot)
+Invalid inventory slot in GetInventoryItemBroken
+Usage: GetInventoryItemBroken(unit, slot)
 Invalid inventory slot in GetInventoryItemCount
 Usage: GetInventoryItemCount(unit, slot)
 Invalid inventory slot in GetInventoryItemQuality
@@ -4640,13 +4735,12 @@ minimapArrowModel
 %s%f%f
 party%d
 Usage: SetZoom(level)
-.?AUTAXILINE@@
+.?AUTAXIROUTELINE@@
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\TaxiRouteFrame.cpp
 !s_routeFrame
 s_routeFrame == this
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestTextParser.cpp
 spell
-HOME_INN
 SPELL_DURATION_UNTIL_CANCELLED
 SPELL_DURATION
 INT_SPELL_DURATION
@@ -5030,6 +5124,7 @@ Taxi
 Swim
 Jump
 Fall
+Fear
 Turn
 Strafe
 Move
@@ -5058,43 +5153,55 @@ cameraSmoothTimeMin
 0.001
 cameraYawSmoothMax
 cameraYawSmoothMin
-cameraTargetOffsetSmoothMax
-cameraTargetOffsetSmoothMin
 cameraPitchSmoothMax
 cameraPitchSmoothMin
-cameraGroundOffsetPitchMax
-60.0
-cameraGroundOffsetPitchMin
--15.0
+cameraSurfacePitch
+cameraDivePitchMax
+18.0
+cameraDivePitchMin
+-18.0
+cameraDive
 cameraPivotDYMin
 0.00
 cameraPivotDXMax
 0.05
 cameraPivot
+cameraHeightIgnoreStandState
+cameraWaterCollision
 cameraTerrainTiltTimeMax
 cameraTerrainTiltTimeMin
 cameraTerrainTilt
 cameraSmoothViewData
 cameraSmooth
 cameraCustomViewSmoothing
+cameraSmoothTrackingStyle
 cameraSmoothStyle
+cameraSmoothYaw
+cameraSmoothPitch
 camerasmooth
+Last
 camera
 cameraView
 cameraViewBlendStyle
 cameraYawSmoothSpeed
 cameraTargetSmoothSpeed
 cameraPitchSmoothSpeed
+45.0
 cameraHeightSmoothSpeed
 cameraGroundSmoothSpeed
 cameraDistanceSmoothSpeed
+cameraFoVSmoothSpeed
+cameraBobbingSmoothSpeed
 cameraYawMoveSpeed
 180.0
-cameraTargetMoveSpeed
 cameraPitchMoveSpeed
 90.0
 cameraDistanceMoveSpeed
 8.33
+cameraBobbingFrequency
+cameraBobbingUDAmplitude
+cameraBobbingLRAmplitude
+cameraBobbing
 mouseInvertPitch
 mouseInvertYaw
 nearclip
@@ -5110,11 +5217,16 @@ CMath::fnotequal_(bestTime, 0.0f)
 !\"Unknown smooth data\"
 !IsTracking()
 IsTracking()
+!IsBobbing()
+IsBobbing()
+IsUncontrolled()
+!IsUncontrolled()
 transport->IsTransport()
 transport->IsA(TYPE_GAMEOBJECT)
 transport
 m_relativeTo
 CMath::fnotequal_(m_zoomTime, 0.0f)
+CMath::fnotequal_(m_fovTime, 0.0f)
 CMath::fnotequal_(m_groundTime, 0.0f)
 CMath::fnotequal_(m_heightTime, 0.0f)
 CMath::fnotequal_(m_pitchTime, 0.0f)
@@ -5173,8 +5285,10 @@ UnitBuff
 UnitCharacterPoints
 UnitArmor
 UnitDefense
+UnitRangedAttackPower
 UnitAttackPower
 UnitAttackSpeed
+UnitRangedDamage
 UnitDamage
 UnitAttackBothHands
 UnitStat
@@ -5188,6 +5302,7 @@ UnitIsConnected
 UnitIsDeadOrGhost
 UnitIsGhost
 UnitIsDead
+UnitOnTaxi
 UnitPowerType
 UnitManaMax
 UnitMana
@@ -5253,6 +5368,7 @@ Usage: UnitHealthMax(\"unit\")
 Usage: UnitMana(\"unit\")
 Usage: UnitManaMax(\"unit\")
 Usage: UnitPowerType(\"unit\")
+Usage: UnitOnTaxi(\"unit\")
 Usage: UnitIsDead(\"unit\")
 Usage: UnitIsGhost(\"unit\")
 Usage: UnitIsDeadOrGhost(\"unit\")
@@ -5266,6 +5382,7 @@ Usage: UnitStat(\"unit\", statIndex)
 Invalid stat index in UnitStat
 statNumber < (sizeof(m_unit->stats) / sizeof(m_unit->stats[0]))
 Usage: UnitAttackBothHands(\"unit\")
+Usage: UnitRangedDamage(\"unit\")
 Usage: UnitDamage(\"unit\")
 Usage: UnitAttackSpeed(\"unit\")
 Usage: UnitAttackPower(\"unit\")
@@ -5280,6 +5397,8 @@ Usage: SetPortraitTexture(texture, \"unit\")
 Usage: UnitCreatureType(\"unit\")
 Usage: UnitCreatureFamily(\"unit\")
 Usage: UnitFacing(\"unit\")
+INSTANCE_BOOT_STOP
+INSTANCE_BOOT_START
 CANCEL_LOOT_ROLL
 START_LOOT_ROLL
 UPDATE_MASTER_LOOT_LIST
@@ -5378,6 +5497,7 @@ REPLACE_ENCHANT
 PLAYER_UNGHOST
 UPDATE_GM_STATUS
 CORPSE_OUT_OF_RANGE
+CORPSE_IN_INSTANCE
 CORPSE_IN_RANGE
 CONFIRM_XP_LOSS
 UPDATE_CHAT_WINDOWS
@@ -5591,8 +5711,10 @@ UNIT_SPELLMISS
 UNIT_COMBAT
 UNIT_LOYALTY
 UNIT_PET_TRAINING_POINTS
-UNIT_ATTACK_POWER
+UNIT_RANGEDDAMAGE
+UNIT_RANGED_ATTACK_POWER
 UNIT_PET_EXPERIENCE
+UNIT_ATTACK_POWER
 UNIT_FLAGS
 UNIT_AURASTATE
 UNIT_LEVEL
@@ -5634,6 +5756,7 @@ Interface\\FrameXML
 Interface\\AddOns\\%s
 .?AUUIADDON@@
 UnableItem
+UnableRepair
 UnableLootAll
 UnableMail
 UnablePickLock
@@ -5651,6 +5774,7 @@ UnableBuy
 UnableCast
 UnablePoint
 Item
+Repair
 LootAll
 Mail
 PickLock
@@ -5725,6 +5849,7 @@ C:\\build\\buildWoW\\WoW\\Source\\Net\\NetClient\\NetClient.cpp
 m_netState == NS_UNINITIALIZED
 Client net stats: %Lu bytes sent, %Lu bytes received, %Lu msec elapsed
 m_netState == NS_INITIALIZED
+m_netState
 hostName
 ..\\..\\..\\..\\engine\\source\\Base/CDataStore.h
 m_handlers[msgId] == 0
@@ -5766,11 +5891,6 @@ s_unarmedWeaponSubclass
 .PAVAreaTableRec@@
 .PAVAreaPOIRec@@
 .PAVAnimationDataRec@@
-%s: Cannot read string table
-%s has wrong row size (found %i, expected %i)
-%s has wrong number of columns (found %i, expected %i)
-Unable to open %s
-%s already loaded! Aborting to prevent memory leak!
 .PAVAttackAnimKitsRec@@
 .PAVAttackAnimTypesRec@@
 .PAVAuctionHouseRec@@
@@ -5796,6 +5916,8 @@ Unable to open %s
 .PAVCreatureSoundDataRec@@
 .PAVCreatureTypeRec@@
 .PAVDeathThudLookupsRec@@
+.PAVDurabilityCostsRec@@
+.PAVDurabilityQualityRec@@
 .PAVEmotesRec@@
 .PAVEmotesTextDataRec@@
 .PAVEmotesTextRec@@
@@ -5899,6 +6021,14 @@ Unable to open %s
 .PAVZoneIntroMusicTableRec@@
 .PAVZoneMusicRec@@
 .PAVWMOAreaTableRec@@
+SUneRKokRFrfEDedNChzWThzYYxxYYxx
+xxYY
+zhTW
+zhCN
+deDE
+frFR
+koKR
+enUS
 creaturecache.wdb
 gameobjectcache.wdb
 itemcache.wdb
@@ -5910,14 +6040,6 @@ pagetextcache.wdb
 petnamecache.wdb
 petitioncache.wdb
 itemtextcaxhe.wdb
-SUneRKokRFrfEDedNChzWThzYYxxYYxx
-xxYY
-zhTW
-zhCN
-deDE
-frFR
-koKR
-enUS
 .?AUDBCACHEHASH@?$DBCache@VCreatureStats_C@@HVHASHKEY_INT@@@@
 .?AUDBCACHECALLBACK@@
 ..\\..\\Object/CreatureStats.h
@@ -5953,6 +6075,7 @@ C:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
 .?AUDBCACHEHASH@?$DBCache@VItemTextCache_C@@HVHASHKEY_INT@@@@
 .?AV?$TSExplicitList@UDBCACHEHASH@?$DBCache@VItemTextCache_C@@HVHASHKEY_INT@@@@$0?CCCCCCCD@@@
 ..\\..\\..\\..\\storm\\h\\stpl.h
+Unit(s) unsheathe their range weapons
 Spawn (forced)
 Object(s) play a sound
 Object(s) play music
@@ -5978,7 +6101,7 @@ All units continually emote
 Unit(s) wait until they finish casting
 Unit(s) cancel an aura on themselves
 Unit(s) cancel casting a spell
-Unit(s) unsheathe their weapons
+Unit(s) unsheathe their melee weapons
 Unit(s) sheathe their weapons
 Reset the item in the ranged slot for unit(s)
 Set the item in the ranged slot for unit(s)
@@ -6133,6 +6256,10 @@ DBFilesClient\\CreatureType.dbc
 Error reading CreatureTypeRec
 DBFilesClient\\DeathThudLookups.dbc
 Error reading DeathThudLookupsRec
+DBFilesClient\\DurabilityCosts.dbc
+Error reading DurabilityCostsRec
+DBFilesClient\\DurabilityQuality.dbc
+Error reading DurabilityQualityRec
 DBFilesClient\\Emotes.dbc
 Error reading EmotesRec
 DBFilesClient\\EmotesTextData.dbc
@@ -6351,17 +6478,7 @@ rect.Width() >= 0 && rect.Height() >= 0
 override <= GxOverrides_Last
 lightInfo.m_isEnabled
 whichLight < Gx_MaxLights
-!(\"GxRsSet(): inappropriate render state set\")
 which < GxRenderStates_Last
-value >= 0.0f && value <= 128.0f
-value >= 0.0f && value <= 16.0f
-value >= GxTS_PassThru && value <= GxTS_Proj
-value >= GxCmp_LEqual && value < GxCmps_Last
-value >= 0 && value <= 255
-value >= GxBlend_Opaque && value < GxBlends_Last
-value >= GxFog_Linear && value < GxFogStyles_Last
-value >= GxTexGen_Disable && value < GxTexGens_Last
-value >= GxTexBlend_Opaque && value < GxTexBlends_Last
 itemSize * itemCount <= GxPoolSize(pool)
 itemSize * itemCount <= Gx_MaxBufSize
 pool
@@ -6423,8 +6540,6 @@ BlizzardCursor.cur
 BlizzardIcon.ico
 CGxDeviceOpenGl::DeviceSetFormat():
 m_ownhwnd
-A game in progress
-windowRect.Width() * windowRect.Height() > 1.0f
 VBO KB total = %d\n
 VBO broker created %d slots at size %d => %d bytes on row, %d running total\n
 rowcount >= 1
@@ -6464,11 +6579,10 @@ EmergencyMem::Lock(): %d\n
 !locked
 locked
 .?AUCGxPushedRenderState@@
-.?AW4EGxRenderState@@
 .?AUCGxAppRenderState@@
 .?AVCGxStateBom@@
-m_poolList.IsEmpty()
-m_bufList.IsEmpty()
+.?AUCGxPool@@
+.?AUCGxBuf@@
 !tex->m_apiSpecificData
 CGxDevice::DeviceOverride(): %d set to %d
 (buf->m_base / buf->m_itemSize) * buf->m_itemSize == buf->m_base
@@ -6482,11 +6596,9 @@ mStackOffsets.Count() < Gx_MaxRsStackDepth
 topOfStk_ == ndx_ + 1
 mStackOffsets.Count() > 0
 m_usage == GxPoolUsage_Stream
-.?AUCGxBuf@@
 size <= buf->m_size && size <= buf->m_pool->m_size
 m_bufLocked[buf->m_pool->m_target] == 0
 m_bufLocked[buf->m_pool->m_target] == buf
-.?AUCGxPool@@
 pool->m_bufList.IsEmpty()
 .?AVCGxTex@@
 .?AVCGxShaderParam@@
@@ -6508,6 +6620,7 @@ CGxDevice::Log(): %s\n
 Caps:
 \tFormat %d x %d @ %d Fullscreen, %s, %s
 \tFormat: %d x %d Window, %s
+.?AW4EGxRenderState@@
 .?AVCGxPixelShader@@
 .?AV?$TSExplicitList@VCGxPixelShader@@$0?CCCCCCCD@@@
 .?AVCGxVertexShader@@
@@ -6527,10 +6640,8 @@ CGxDeviceD3d::DeviceSetFormat():
 !\"CGxDeviceD3d::DeviceReadDepth() not coded\"
 value >= CGxPixelShader::Target_ps_1_1 && value <= CGxPixelShader::Target_ps_2_0
 IBufLock(): D3D FSCKED us
-ibDesc.Size >= buf->m_base + buf->m_size
-ibDesc.Type == D3DRTYPE_INDEXBUFFER
-ibDesc.Format == D3DFMT_INDEX16
 m_caps.m_streamByteOffset ? 1 : (buf->m_base / buf->m_itemSize) * buf->m_itemSize == buf->m_base
+Access violation in Gx silently handled. %s : %d\n
 CGxDeviceD3d::GetD3dError(): D3DOK_NOAUTOGEN
 CGxDeviceD3d::GetD3dError(): unhandled error
 CGxDeviceD3d::GetD3dError(): D3DERR_INVALIDCALL
@@ -6651,10 +6762,14 @@ m_primIndexBuf->m_base == 0
 SetPixelFormat failed, color = %d, alpha = %d, depth = %d, fmt = %d\n
 SetupPixelFormat(): pfd does not match requested
 ChoosePixelFormat failed, color = %d, alpha = %d, depth = %d\n
+OPTION ARB_fog_exp2;\n
+OPTION ARB_fog_exp;\n
+OPTION ARB_fog_linear;\n
+!!ARBfp1.0
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglShader.cpp
 glARBFragmentProgram
 PARAM c%u[%u]={program.env[%u..%u]}
-
+PARAM c
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglTexture.cpp
 DsGet(Ds_ActiveTexture) == tmuToUse
 texId->m_needsFlagUpdate
@@ -6673,7 +6788,6 @@ C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dTexture.cpp
 w == (texId->m_width >> startLevel) && h == (texId->m_height >> startLevel)
 Gx: (ERROR): Texture creation failure.\n
 gxTex->m_format != GxTex_Unknown
-Access violation in Gx silently handled. %s : %d\n
 Gx: (ERROR): Texture lock failure.\n
 lockRect.Width() > 0 && lockRect.Height() > 0
 Gx: (ERROR): Unable to get mip level.\n
@@ -6703,7 +6817,6 @@ compressed != 0
 uncompressed != 0
 m_colorMap
 m_addlHeaderData
-path
 C:\\build\\buildWoW\\ENGINE\\Source\\Images\\funcs.cpp
 !\"GetBitDepth(): unhandled format\"
 offset == levelDataSize
@@ -6774,6 +6887,11 @@ REALM_LIST_REALM_NOT_FOUND
 REALM_LIST_INVALID
 REALM_LIST_FAILED
 REALM_LIST_SUCCESS
+AUTH_SUSPENDED
+AUTH_DB_BUSY
+AUTH_NO_TIME
+AUTH_ALREADY_ONLINE
+AUTH_BANNED
 AUTH_WAIT_QUEUE
 AUTH_LOGIN_SERVER_NOT_FOUND
 AUTH_ALREADY_LOGGING_IN
@@ -6839,6 +6957,11 @@ client
 .?AVClientLink@Grunt@@
 .?AVRealmList@@
 m_statusComplete == 1
+RealmList: Grunt::WOW_FAIL_SEQUENCE_MISMATCH
+RealmList: Grunt::WOW_SUCCESS
+RealmList: Grunt::WOW_FAIL_VERSION_INVALID
+RealmList: Grunt::WOW_FAIL_VERSION_UPDATE
+RealmList: Grunt::%d
 msgId == SMSG_AUTH_CHALLENGE
 msgId == SMSG_AUTH_RESPONSE
 password
@@ -6953,12 +7076,12 @@ socket() returned %d, reason: %s
 can't create socket (No network connection available?)
 m_refCount == 0
 C:\\build\\buildWoW\\WoW\\Source\\WowServices\\WowConnection.h
-s <= 0x7fffffff
+s <= 0x7fffff
 m_sock >= 0
 m_sendDepth >= 0
 m_sendDepthBytes >= 0
 w < writeLen
-writeLen > 0
+writeLen >= 0
 sizeToRead <= sizeWanted - m_readBytes
 sizeToRead <= m_readBufferSize - m_readBytes
 %d.%d.%d.%d:%u
@@ -7031,6 +7154,7 @@ m_state == STATE_CONNECT_VERSION || m_state == STATE_RECONNECT_VERSION
 C:\\build\\buildWoW\\WoW\\Source\\WowServices\\Linux\\WowConnectionNetSelect.cpp
 ret == 0
 .PAVWowConnection@@
+l >= 0
 pipes[0] >= 0
 b >= 0
 127.0.0.1
@@ -7090,7 +7214,6 @@ GxuT
 g_FTLibrary
 C:\\build\\buildWoW\\engine\\Source\\Gxu\\GxuFontMain.cpp
 !error
-.?AUSTRINGVIEWMATRICES@@
 .?AUIGXUTEXTLINE@@
 .?AUCGxStringBatch@@
 .?AUCGxFont@@
@@ -7109,7 +7232,6 @@ font->m_cellHeight <= ( 32 + ( 4 * 1 ) )
 font->m_cellHeight
 bufferSize
 |C%2.2x%2.2x%2.2x%2.2x
-string
 *text
 .PAUTEXTLINETEXTURE@@
 .?AUBATCHEDRENDERFONTDESC@@
@@ -7175,8 +7297,6 @@ textureNumber < (sizeof(m_currentFace->m_textureCache) / sizeof(m_currentFace->m
 code->dataValid
 texturePagesUsedFlag
 currentText
-viewPtr
-projPtr
 info.hyperlinkParseMode != HYPERLINKHREF
 ! ( numVerts % 4 )
 GxuF
@@ -7352,7 +7472,7 @@ Non-unit
 Unknown Unit
 None
 craftType < NUM_SPELL_CAST_UI_TYPES
-MARKED_AFK
+MARKED_AFK_MESSAGE
 CLEARED_AFK
 slot < MAX_LOOT_ITEMS
 LOOT_MONEY_SPLIT
@@ -7366,7 +7486,6 @@ CHAT_FLAG_AFK
 CHAT_FLAG_DND
 CHAT_FLAG_GM
 [%02d]: %s
-ERR_TOO_FAR_TO_ATTACK
 standState < UNIT_NUMSTANDSTATES
 VOICEMACRO_%d_%s_%d
 [MISSING VOICEMACRO STRING race %d nativesex %d category %d variation %d]
@@ -7378,7 +7497,6 @@ Petition error
 Reserved for future use
 r < NUM_DAMAGE_CLASSES
 PVP_RANK_%d_%d
-victimPtr && victimPtr->IsA(TYPE_UNIT)
 .?AUTRADESKILLLINE@@
 .?AV?$TSExplicitList@UTRADESKILLLINE@@$0?CCCCCCCD@@@
 .?AUPROFICIENCYSPELL@@
@@ -7397,7 +7515,7 @@ Unable%s
 lock
 CanUseNow()
 Unknown Object Type
-newState < (sizeof(s_stateAnimInfo) / sizeof(s_stateAnimInfo[0]))
+newState < (sizeof(s_stateAnimSequence) / sizeof(s_stateAnimSequence[0]))
 Unhandled anim state: (%d)
 m_animState < (sizeof(s_statusString) / sizeof(s_statusString[0]))
 !m_objectId
@@ -7408,11 +7526,13 @@ m_shipSpeed
 Found ship path with no points! Path ID (%d)
 Attaching to transport (0x%016I64X) at position(%g,%g).  Synced time is (0x%08X)\n
 passenger
+( slots && ( slots <= MAX_CHAIR_SLOTS ) )
 No key frames found for transport (entry ID: %d)
 .?AVC4Plane@NTempest@@
 m_numKeys > 1
 m_baseObj
 BADBASEGAMEOBJECT|%d
+.?AVCGGameObject_C_Type_MeetingStone@@
 .?AVCGGameObject_C_Type_SpellCaster@@
 .?AVCGGameObject_C_Type_AuctionHouse@@
 .?AVCGGameObject_C_Type_Mailbox@@
@@ -7443,8 +7563,8 @@ m_baseObj && m_baseObj->CanUse()
 pathPoints.Count() > 0
 .?AUSegment@?$ShipPath@V?$WowClientDB@VTaxiPathNodeRec@@@@@@
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\GameObject_C.h
-RESIST
 DEFLECTED
+RESIST
 StandHigh
 Interface\\Buttons\\TalkToMeQuestionMark.mdx
 Interface\\Buttons\\TalkToMeBlue.mdx
@@ -7460,7 +7580,7 @@ mover && mover->IsA(TYPE_UNIT)
 Textures\\BakedNpcTextures\\
 textureName
 GetCharacterModel()
-!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1580)) != 0
+!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1691)) != 0
 .?AVCEffect@@
 s_showFootPrintParticles
 m_modelData
@@ -7502,11 +7622,13 @@ rec->m_reputationIndex < MAX_REPUTATION_FACTIONS
 srec && drec
 player1->GetDuelTeam() != player2->GetDuelTeam()
 player1 && player1->IsA(TYPE_PLAYER) && player2 && player2->IsA(TYPE_PLAYER)
-type < WORLDTEXTMISS_NUMTYPES
+reason < (sizeof(s_worldTextInfo) / sizeof(s_worldTextInfo[0]))
 %s: %d
 status < QUEST_GIVER_NUMITEMS
+Model %s is missing Interact Icon attachment\n
 s_interactIconModelInfo[index].model
 index < INTERACTICON_NUMITEMS
+\n*** WARNING NAN in AnimEventCallback position\neventId %x eventData %d\nmodel %s unitname %s\nxyz = %x %x %x\n
 size
 modelData
 displayInfo
@@ -7527,7 +7649,7 @@ ZEROSCALEUNIT|%d|%s
 talkAnim < TALKANIM_NUMTALKANIMS
 m_displayInfoExtra
 ../..\\WowServices/BitField.h
-m_missleList->m_caster == GetGUID()
+m_missileList->m_caster == GetGUID()
 MOUNTDISPLAYIDNOMOUNTATTACHMENT|%d
 spellRec
 CanMove()
@@ -7594,9 +7716,9 @@ type < NUM_HIGHLIGHTTYPES
 Textures\\UnitSelectTexture.blp
 DebugTargetPath
 ObjectSelectionCircle
-m_lockCount > 0
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Missile_C.cpp
 m_speed >= 0
+m_model
 Spells\\Resist_Immune_Effect.M2
 .?AUPendingLootRoll@@
 LOOT_ROLL_ALL_PASSED
@@ -7625,9 +7747,11 @@ HARDCODED Footstep Water Run Spray
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Effect_C.cpp
 m_effectRec
 **** CEffect::AddEffect called with ATTACH_NONE\n
-pole
+m_fishingPoleModel
 **** %s doesn't have attachement point for effect %i\n
 Unknown Model
+*** trouble in facing: \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \nbadmask=%d - model \"%s\" caster 0x%016I64X type %d entryID %d
+m_refCount > 0
 Close + Lock
 Make Active
 Make Inert
@@ -7642,6 +7766,7 @@ Animate Custom2
 Animate Custom1
 Animate Custom0
 -NONE-
+meetingStone
 spellCaster
 guardPost
 auctionHouse
@@ -7662,6 +7787,7 @@ questgiver
 button
 door
 true
+large
 partyOnly
 invisible
 stopEventID
@@ -7710,17 +7836,16 @@ C:\\build\\buildWoW\\WoW\\Common\\GameObjectDefs.cpp
 propId >= 0 && propId < NUM_PROP
 typeId >= 0 && typeId < NUM_GAMEOBJECT_TYPE
 propNum >= 0 && propNum < s_objectInfo[typeId].numProperties
-.?AUDEATTHUDSOUNDINFO@@
-C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitSound_C.cpp
-soundType < NUM_UNITSOUNDTYPES
-soundType < 4
-FootstepSounds
-!attacker || attacker->IsA(TYPE_UNIT)
-attacker->GetEntryID()
-roundInfo
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Movement_C.cpp
 !s_transports.IsLinked(transport)
 s_transports.IsLinked(transport)
+.?AUDEATTHUDSOUNDINFO@@
+FootstepSounds
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitSound_C.cpp
+soundType < NUM_UNITSOUNDTYPES
+!attacker || attacker->IsA(TYPE_UNIT)
+attacker->GetEntryID()
+roundInfo
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
 func
 slot < (int)NumSlots()
@@ -7918,6 +8043,8 @@ OPEN_LOCK_SELF
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\GuildStats_C.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\PlayerSound_C.cpp
 SPELLVISUALIDNOTFOUND|%d
+NEVERCRUSH
+NEVERGLANCE
 ALWAYSCRUSH
 ALWAYSGLANCE
 NEVERBLOCKMELEE
@@ -7979,7 +8106,6 @@ attacker
 size < NUM_MONSTERSIZECLASSES
 size >= MONSTERSIZECLASS_SMALL
 !\"Error, unrecognized message ID!\"
-attackerPtr
 victim
 unit->GetEntryID()
 COMBATLOG_XPGAIN_EXHAUSTION5
@@ -8016,6 +8142,7 @@ fontsize
 highlightcolor
 bgcolor
 fontcolor
+..\\DB/WowClientDB.h
 C:\\build\\buildWoW\\WoW\\Source\\Console\\ConsoleClient.cpp
 .?AUCONSOLELINE@@
 node->fontPointer
@@ -8036,10 +8163,17 @@ Invalid number of parameters
 Please specify how many lines to display
 .ttf
 %d %d %d %d
-World of Warcraft was unable to start up 3D acceleration.World of Warcraft
-World of Warcraft was unable to start up 3D acceleration.\n\nPlease make sure DirectX 9.0c is installed and your video drivers are up-to-date.
-ConsoleDeviceInitialize(): no output device available!
+unable to set fallback mode
+unable to set default format
+unable to set last good mode
+unable to set requested display mode
+ValidateFormatMonitor(): invalid refresh rate %d, set to %d
+ValidateFormatMonitor(): unable to find monitor refresh
+fmt.colorFormat < (sizeof(s_FormatTobpp) / sizeof(s_FormatTobpp[0]))
 Your 3D accelerator card is not supported by World of Warcraft. Please install a 3D accelerator card with dual-TMU support.
+World of Warcraft was unable to start up 3D acceleration.
+World of Warcraft was unable to start up 3D acceleration. Please make sure DirectX 9.0c is installed and your video drivers are up-to-date.
+ConsoleDeviceInitialize(): no output device available!
 ConsoleDeviceInitialize(): output device does not have dual TMUs!
 OpenGl
 ConsoleDeviceInitialize(): hwDetect = %d, hwChanged = %d
@@ -8071,13 +8205,6 @@ Depth bits must be 16, 24, or 32
 unsupported refresh rate, must be one of
 TripleBuffer must be 0 or 1
 unsupported api, must be one of
-unable to set fallback mode
-unable to set default format
-unable to set last good mode
-unable to set requested display mode
-ValidateFormatMonitor(): invalid refresh rate %d, set to %d
-ValidateFormatMonitor(): unable to find monitor refresh
-fmt.colorFormat < (sizeof(s_FormatTobpp) / sizeof(s_FormatTobpp[0]))
 Unknown command
 .?AV?$TSExplicitList@UCVar@@$0?CCCCCCCD@@@
 C:\\build\\buildWoW\\WoW\\Source\\Console\\ConsoleVar.cpp
@@ -8099,7 +8226,6 @@ run %s
 SET %s \"%s\"\n
 WTF\\
 !setCommand
-value
 CVar \"%s\" is \"%s\"
 cvar
 .?AUCVar@@
@@ -8152,7066 +8278,22 @@ The wtf files are :
 Unable to open wtfDir.txt
 wtfdir.txt
 .?AUCONSOLECOMMAND@@
-UTXDT
-tcsg@
 ���>
 ?fff?
 HWSoundIdx
 HWVideoIdx
 HWMemIdx
 HWCpuIdx
-Reserved 9&10
-Slow Devsel Speed
-Medium Devsel Speed
-Fast Devsel Speed
-Detected Parity Error
-Signalled System Error
-Received Master Abort
-Received Target Abort
-Signalled Target Abort
-Data Parity Reported
-User-Defined Features
-66 MHz Capable
-Reserved 4
-Reserved 3
-Reserved 2
-Reserved 1
-Reserved 0
-Reserved 15
-Reserved 14
-Reserved 13
-Reserved 12
-Reserved 11
-Reserved 10
-Fast Back-To-Back
-System Errors
-Wait Cycles
-Parity Errors
-Palette Snoop
-Memory Write & Invalidate
-Special Cycles
-Bus Mastering
-Memory Access
-I/O Access
-Device Does Not Fit in a Defined Class
-DPIO
-Signal Processing
-Entertainment
-Network/Computing
-Encryption
-Data
-Voice
-Satellite
-Intelligent IO
-RF Controller
-Consumer IR Controller
-iRDA-compatible Controller
-Wireless
-SMBus
-Device
-Non-specific Controller
-Open Host Controller
-Universal Host Controller
-USB (Universal Serial Bus)
-SSA (Serial Storage Archetecture)
-ACCESS.bus
-OpenHCI
-Firewire
-IEEE 1394
-Serial Bus Controller
-MIPS
-Power PC
-Alpha
-Pentium
-i486
-i386
-Processor
-Docking Station
-Legacy
-Scanner
-Mouse
-Digitizer (Pen)
-Keyboard
-Input Device
-PCI Hot-Plug Controller
-Generic
-RTC (Real Time Clock)
-Generic 8254
-System Timer
-Generic 8237
-DMA (Direct Memory Access)
-I/O(x) APIC
-EISA
-Generic 8259
-PIC (Programmable Interrupt Controller)
-Base Systems Peripheral
-16750
-16650
-16550
-16450
-Hayes-Compatible Modem
-Generic Modem
-Multiport Serial
-IEEE 1284 target
-IEEE 1284 controller
-ECP 1.X Compliant
-Bidirectional
-Standard
-Parallel
-16950 Compatible
-16850 Compatible
-16750 Compatible
-16650 Compatible
-16550 Compatible
-16450 Compatible
-Generic XT Compatible
-Serial
-Simple Communications Controller
-End-Point
-Transparent
-PCI/RACEway
-PCI/CardBus
-PCI/NuBus
-PCI/PCMCIA
-Subtractive
-PCI/PCI
-PCI/MCA
-PCI/EISA
-PCI/ISA
-Host/PCI
-Bridge Device
-Flash
-Telephony
-Multimedia Device
-8514
-PC Compatible
-Display Controller
-ISDN
-Floppy
-Mass Storage Controller
-VGA Compatible
-Non-VGA
-Pre-2.0 PCI Specification Device
-No device on PCI bus
-NO-DEVICE
-OEM Chip for 10meg/s over phone line
-BCM4210
-Pattern Matching Chip
-ARK2000MI+
-Quadro645 GUI Accelerator
-ARK2000MI
-Stingray 64
-ARK2000MT
-ARK2000PV
-Stingray GUI Accelerator
-ARK1000PV
-Dual Gigabit Ethernet
-DAG 4.2E
-DAG 4.2
-DAG 4.11
-OC-48
-DAG 4.10
-DAG 3.5ECM
-DAG 3.5
-DAG 3.41E
-DAG 3.4E
-DAG 3.2E
-DAG 3.2x
-OC-3/OC-12
-DAG 3.10
-Tiger 600
-Sedlbauer Speed PCI
-PCI interface
-Tiger 300/320
-W89C940
-PC Weasel PCI
-PC Weasel PCI Serial Comm. Device
-PC Weasel PCI VGA Device
-PCI Mezzanine Card
-High speed stereo correlation chip
-DeepSea 1
-DeepSea 1 Board
-QZ0022
-62802-5
-62802
-Dreadnought x16 Lite
-Dreadnought x16 Pro
-IC 138 PCI
-Ironclad x8 Pro
-Ironclad x8
-Gunboat x4 Pro
-Gunboat x4
-PCI Parallel Port (LPT)
-IC128
-POST Diagnostics Card
-IC80+PCI
-CharKey
-9400-0931
-6 port serial switch /PCI-to-PCI bridge
-SG1010
-PCI to high speed serial bridge
-SG2010
-Parallel/Serial Port Adapter
-Nm9855
-PCI Bridge with Dual UART
-Nm9845
-PCI + Dual UART and 1284 Printer Port
-Nm9835
-Nm9825
-Single PCI UART
-Nm9820
-Nm9715CV
-PCI + 1284 Printer Port
-Nm9805
-PCI Bridge with 1284 Parallel Port
-Nm9755
-Dual UART and PCI-ISA Bridge
-Nm9745
-Nm9735
-PCI Dual 1284 Printer Ports
-Nm9715
-Parallel Port Adapter
-Nm9705
-IDE Controller?
-HT6565
-IDE-2015PL
-Ultra320 SCSI Controller
-AIC-7902
-RAID Controller
-AAC-RAID
-AIC-7899
-RAID Subsystem HBA
-AIC-7899D
-AIC-7899B
-AIC-7899A
-AIC-7892
-AIC-7892D
-Ultra160 SCSI Controller
-AIC-7892B
-Ultra160/m PCI SCSI Controller
-AIC-7892A
-Ultra2 SCSI Controller
-AIC-7896/7
-AIC-7896
-AHA-3950U2x Ultra2 SCSI Adapter
-AHA-3940U2x/3950U2x Ultra2 SCSI Adapter
-Ultra2-Wide SCSI controller
-AIC-7890/1
-AHA-2930U2 Ultra2 SCSI Host Adapter
-AHA-2940U2W/U2B,2950U2W Ultra2 SCSI
-AIC-7890AB
-ABA-1030
-AIC-7888?
-Ultra-Wide SCSI Ctrlr
-AIC-788x
-QuadChannel Ultra-Wide Diff. SCSI Ctrlr
-AHA-4944UW
-Fast-Wide/Ultra-Wide Diff. SCSI Ctrlr
-AHA-3944U/3944UWD
-Ultra-Wide Diff. SCSI Ctrlr
-AHA-2944UW
-AIC-7883U
-AHA-3940U/3940UW/3940UWD SCSI Ctrlr
-AHA-3940Uxx
-Ultra/Ultra-Wide SCSI Ctrlr
-AHA-2940U/2940UW
-Ultra Wide SCSI
-AIC-7880
-Ultra-Wide SCSI Ctrlr on AHA-2940 AHA-394x
-AIC-7895
-AIC-789x
-SCSI controller
-AIC-7890
-Fast 20 SCSI
-aic7880
-Differential SCSI
-aha 2944
-aha 3980
-Multiple SCSI channels
-aha 3940
-SCSI
-aha 2940
-Single channel SCSI Host Adapter
-AHA-2930
-Fast/Wide SCSI-2 Controller
-aic-7850
-RAID + Memory Controller IC
-AIC-7515
-Memory control IC
-aic 7810
-AIC-787x
-Multichannel Fast/Fast-Wide Diff. SCSI Ctrlr
-AHA-3944/3944W
-AHA-2944
-4-chan RAID SCSI Ctrlr
-AHA-3985
-Multichannel Fast/Fast-Wide SCSI Ctrlr
-AHA-3940/3940W
-Fast/Fast-Wide SCSI Ctrlr
-AHA-2940/2940W
-Fast and Wide SCSI Ctrlr
-AIC-7870
-ANA620xx/69011A
-AIC-786x
-AIC-7861
-PCI SCSI Controller
-AIC-7860
-CardBus Ultra SCSI Controller
-AIC-7560?
-Ultra SCSI Adpater (VAR)
-AHA-2930C
-ATM Adpater
-ANA-5910A/30A/40A
-ATM155 & 25 LAN Controller
-ANA-5910/30/40
-PCI-to-1394 Ctrlr
-AIC-5800
-AIC-7856
-AIC-7855
-AVA-2930
-Fast SCSI Ctrlr
-FAST-SCSI Ctrlr
-AIC-7850
-Fast/Wide SCSI Controller
-AIC-7850P
-AIC-755x
-QuadChannel Fast-Wide/Ultra-Wide Diff. SCSI Ctrlr
-AHA-4944W/4944UW
-AIC-2930U Ultra SCSI Ctrlr
-AIC-7821
-AIC-1160
-RAID Coprocessor
-AIC-7810C
-AHA-2940UW/CN
-aic-7880p
-Et32/Px
-video assistant component
-Non-Transparent PCI-to-PCI Bridge
-21555
-S21154AE/BE
-S21152BB
-SRCU31L
-SRCU31
-SRCUxx
-SRCU21
-I2O RAID PCI to PCI Bridge
-AGP Bridge (GXB function 1)
-82460GX
-Wide and fast PCI eXpander Bridge
-Memory Data Controller
-82464GX
-Memory Address Controller
-82463GX
-Graphics Expander Bridge
-82465GX
-System Data Controller
-82462GX
-System Address controller
-82461GX
-PCI Expander Bridge
-82454NX/82467GX
-450NX PCIset Memory & I/O Controller
-82451NX
-450KX/GX Memory Controller (Orion)
-82453KX/GX
-450KX/GX PCI Bridge (Orion)
-82454KX/GX
-82740
-IEEE1394 OpenHCI Host Controller
-82372FB
-SM Bus Controller
-LPC/FWH Interface
-82372FB/82468GX
-82443GX
-USB Universal Host Controller
-AC97 Modem Controller (Winmodem)
-82440 - 443MX
-82443MX?
-I/O Controller?
-82443MX
-440BX/ZX chipset Host-to-PCI Bridge
-440BX/ZX AGPset PCI-to-PCI bridge
-440BX/ZX AGPset Host Bridge
-82443BX/ZX
-440LX/EX
-AGP device in 440LX/EX AGP chipset
-Host/PCI bridge in 440LX/EX AGP chipset
-82443LX/EX (PAC)
-82810-M DC-133
-82810-M DC-100
-Graphics Device (FSB 133 MHz)
-Host Bridge and Memory Controller Hub
-82810-DC133
-Intel Direct AGP 810 Chipset
-82810E
-82810-DC100
-Graphics Device
-82810
-PIIX4/4E/4M Power Management Controller
-PIIX4/4E/4M USB Interface
-PIIX4/4E/4M IDE Controller
-PIIX4/4E/4M ISA Bridge
-82371AB/EB/MB
-System Controller (MTXC), part of 430TX chipset
-82439TX
-Intel Business Video Conferencing Card
-PB 642365-003
-82437VX
-PIIX3 USB Host Controller (Triton II)
-PIIX3 IDE Interface (Triton II)
-PIIX3 PCI-to-ISA Bridge (Triton II)
-82371SB
-EHCI 960 emulator
-I/O Companion Unit Address Translation
-I/O Processor Address Translation Unit
-Network Controller
-Modem - PPPoA
-PRO/DSL 2200
-Modem - PPP
-PRO/DSL 2100
-V.90 HaM Modem
-Creatix
-Configuration Process
-System Memory Controller
-852GM
-CPU to I/O Bridge
-82830M/MG
-Host-AGP Bridge
-82830M/MP
-Host-Hub I/F Bridge / SDRAM Controller
-82830[MP]
-PCI-X to Serial ATA Controller
-31244
-I2O 1.5 RAID Controller
-SRCU32
-Integrated Graphics Device
-Host-to-AGP Bridge
-DRAM Controller / Host-Hub I/F Bridge
-82845G/GL/GV/GE/PE
-E7205
-Hub I/F_B PCI-to-PCI Bridge Error Report
-Hub Interface_B PCI-to-PCI Bridge
-PCI-to-AGP Bridge
-Host RAS Controller
-E7205/E7505
-E7505
-Host Controller
-E7501
-HI_D PCI-to-PCI Bridge Error Reporting
-HI_D Virtual PCI-to-PCI Bridge
-HI_C PCI-to-PCI Bridge Error Reporting
-HI_C Virtual PCI-to-PCI Bridge
-HI_B PCI-to-PCI Bridge Error Reporting
-HI_B Virtual PCI-to-PCI Bridge
-DRAM Controller Error Reporting
-E7500/E7501
-Host-HI Bridge & DRAM Controller
-E7500
-(Quad Processor mode)
-Hub Interface_C Bridge
-Hub Interface_B Bridge
-82850/850E/860
-Host-Hub Interface_A Bridge (DP mode)
-82860
-82850/850E
-Memory Repeater Hub for SDRAM (MRH-S)
-82804AA
-Memory Translator Hub (MTH)
-82805AA
-Host Bridge (MCH)
-82820
-USB EHCI Controller
-IDE Controller (UltraATA/100)
-82801DBM
-USB UHCI Controller #3
-USB UHCI Controller #2
-USB UHCI Controller #1
-82801DB/DBM
-USB 2.0 EHCI Contoroller
-82801??
-LPC Interface or ISA bridge: see Notes
-UltraATA/100 IDE Controller
-UltraATA IDE Controller
-AC 97 Modem Controller
-82801CA/CAM
-82801CA
-LAN1 Controller
-LAN0 Controller
-82801E
-82801BA/CA/DB
-LPC Interface Bridge
-82801BAM
-LAN Controller
-82801BA/BAM/CA
-82801BAM/CAM/DBM
-Avance AC97 Audio Controller
-USB Controller, USB-B
-USB Controller, USB-A
-82801BA/BAM
-LPC Interface Bridge, ICH2
-82801BA
-IDE Controller (UltraATA/33)
-AC97 Modem Controller
-IDE Controller (UltraATA/66)
-LPC Interface
-82801AA
-82801AB
-82845[MP/MZ]
-Host-Hub Interface Bridge
-82845[E/MP/MZ]
-Hub Interface B Bridge
-Host to I/O Hub Bridge (Quad PCI)
-Host-Hub Interface A Bridge / DRAM Ctrlr
-82840
-Hot Plug Controller
-I/OxAPIC Interrupt Controller
-Hub Interface-to-PCI Bridge
-82870P2
-Advanced Interrupt Controller
-Hub Interface to PCI Bridge
-System Controller (TXC)
-82439HX
-Mobile PCI-to-PCI Bridge (MPCI2)
-82380FB
-AGP Graphics Accelerator
-82752
-Integrated Hot-Plug Controller (IHPC)
-82466GX
-Programmable Interrupt Device
-683053
-Mobile PCI-to-ISA Bridge (MISA)
-82380AB
-PCI to PCI Docking Bridge
-82380PB
-PCI & Memory Controller (PMC)
-82441FX
-Mobile System Controller (MTSC)
-82437MX
-Mobile PCI I/O IDE Xcelerator (MPIIX)
-82371MX
-DSVD Modem
-IDE Interface (Triton)
-PCI to ISA Bridge (Triton)
-82371FB
-System Controller (TSC)
-82437FX
-Fast Ethernet LAN Controller
-82557/8/9/0/1
-Intelligent 10/100 Fast Ethernet Adapter
-EE PRO/100 Smart
-EtherExpress PRO100
-82865
-EtherExpress PRO/10
-82596
-Orion Extended Express CPU to PCI Bridge
-82452KX/GX
-SAA7116
-82092AA
-82559ER
-XScale 80200 Companion Chip (FPGA)
-BECC
-I/O APIC Device
-82806AA
-82815/82815EM/EP
-Internal Graphics Device
-Host-Hub Interface Bridge / DRAM Ctrlr
-82815
-PRO/100 M Mobile Connection
-82551QM
-PRO/Wireless 2011 LAN PCI Card
-V.92 PCI (DSP) Data Fax Modem
-536EP
-LAN Controller with 82562EM/EX (CNR) PHY
-LAN Controller with 82562EM/EX PHY
-LAN Controller with 82562ET/EZ (CNR) PHY
-LAN Controller with 82562ET/EZ PHY
-82801DB
-Networking device
-82559 PRO/100 VM
-Phoneline Network Connection
-82562EH
-PRO/100 VM Network Connection
-PRO/100 VE Network Connection
-82801CAM
-PCI Networking device
-Fast Ethernet PCI/CardBus Controller
-82559
-PRO/1000 MT Mobile Connection
-82540EM
-Gigabit Ethernet Controller (fiber)
-82546EB
-Gigabit Ethernet Controller (copper)
-82545EM
-82544XT
-82544GC
-82544 T
-82544EI
-Gigabit Ethernet Controller (Copper)
-82544EI/GC
-Pro 100 LAN+Modem 56 CardBus II
-10/100/1000 Ethernet Controller
-82543GC
-82542
-i960 RP Microprocessor Bridge
-i960RM/RN Microprocessor/Bridge
-80960RM/RN
-i960 RP Microprocessor/Bridge
-Storage RAID Controller
-Interleave Configuration Registers
-Scalability Port Switch Global Registers
-Scalability Port
-E8870SP
-Reliabilty, Availability, Serviceability
-Server I/O Hub (SIOH)
-Hub Interface Port 4
-Hub Interface Port 3
-Hub Interface Port 2
-Hub Interface Port 1
-Hub Interface Port 0 (8-bit compatible)
-E8870IO
-Scalability Port 1 / Glob. Perf. Monitor
-Scalability Port 0
-Processor Bus Controller
-E8870
-CPU (Pentium) Bridge (Mercury)
-82434LX
-PCI System Controller (PSC) for i486 (Aries)
-82425EX
-SIO ISA Bridge
-82378ZB/IB
-CPU (i486) Bridge (Saturn)
-82424TX/ZX
-PCI-EISA Bridge (PCEB)
-82375EB
-I/O Companion Unit PCI-to-PCI Bridge
-80312
-I/O Processor PCI-to-PCI Bridge Unit
-80303
-Extended Express System Support Ctrlr
-POPTOLCA
-PAD16
-PAD12
-PAD16DAC4
-PAD12DAC4
-PDAC4
-PUNIREL
-PTTL24IO
-POPTO16IN
-POPTOREL16
-PREL16
-PREL8
-PROTO2
-Watchdog2/PCI
-PCI-Watchdog 1
-PWDOG1/2
-PCI-decoder
-PCCOM8
-PCCOM4
-PCI Interface
-GPPCI
-UNISYS CP150P
-UNISYS DCHA5
-TURBOstor HFP-832 HiPPI NIC
-Scanner Interface
-I-30xx
-PCI-MyBus-Bridge
-Upgrade Card Adapter
-AcceleraPCI
-Wireless LAN PCI Card
-DSSS
-ULTRA24 SCSI Host
-SonicVibes PCI Audio Accelerator
-86C617
-Savage 2000
-86C410
-ProSavage DDR
-P4M266
-Twister-K
-SuperSavage/IXC DDR
-86C594
-SuperSavage/IXC SDRAM
-86C584
-SuperSavage/IX DDR
-86C573
-SuperSavage/IX
-86C564
-SuperSavage 128/IX DDR
-86C553
-SuperSavage 128/IX
-86C544
-SuperSavage 128/MX
-86C508
-Savage MX/IX/MX+MV/IX+MV
-86C270/274/290/294
-ViRGE /MX+ Macrovision
-86C280
-ViRGE/MXC
-86C240
-ViRGE/M5 (ViRGE/MX)
-86C260
-ViRGE/M3 (ViRGE/MX)
-85C260
-ProSavage
-86C395B
-Savage4
-86C370
-Savage 4
-86C394-397
-Savage3D/MV
-86C390
-Savage3D
-86C390/391
-Trio3D2x & Trio3D2x+ AGP
-86C362/86C368
-ViRGE /GX2+
-ViRGE /GX2+ Macrovision
-86C359
-ViRGE /GX2 & /GX2+
-86C357/86C359
-ViRGE /DX & /GX
-86C375/86C385
-86C765 Trio64V+ compatible
-Trio3D
-86C365/366
-TrioV Family
-SMA Family
-Trio 64V2 DX/GX
-86C775/86C785
-Trio64V2/DX
-86C775
-Vision 968 GUI Accelerator VRAM rev. 3
-Vision 968 GUI Accelerator VRAM rev. 2
-Vision 968 GUI Accelerator VRAM rev. 1
-Vision 968 GUI Accelerator VRAM rev. 0
-86C968
-Vision 964-P GUI Accelerator VRAM rev. 3
-Vision 964-P GUI Accelerator DRAM rev 2
-Vision 964-P GUI Accelerator VRAM rev. 1
-Vision 964 GUI Accelerator VRAM rev. 0
-86C964
-Vision 864 GUI Accelerator DRAM rev. 3
-Vision 864 GUI Accelerator DRAM rev. 2
-Vision 864 GUI Accelerator DRAM rev. 1
-Vision 864 GUI Accelerator DRAM rev. 0
-86C864
-Vision 928 GUI Accelerator VRAM rev. 3
-Vision 928 GUI Accelerator VRAM rev. 2
-Vision 928 GUI Accelerator VRAM rev. 1
-Vision 928 GUI Accelerator VRAM rev. 0
-86C928
-Vision 868 GUI Accelerator VRAM rev. 3
-Vision 868 GUI Accelerator VRAM rev. 2
-Vision 868 GUI Accelerator VRAM rev. 1
-Vision 868 GUI Accelerator VRAM rev. 0
-86C868
-Fire GL
-ViRGE/VX 3D GUI Accelerator
-86C988
-Aurora128
-86CM66
-Trio 64UV+ GUI Accelerator
-86C767
-Trio 32/64 GUI Accelerator v3
-86C764
-Aurora 64V+
-86CM65?
-Trio 64/64V+ GUI Accelerator
-86C764/765
-Trio 32 GUI Accelerator rev. 0
-86C732
-Vision 964 GUI Accelerator
-Vision 866 GUI Accelerator
-Virge 3D GUI Accelerator
-86C325
-Plato/PX
-86C551
-ProMotion aT3D
-Concert
-Intelligent Dias Master
-DCP401
-Daytona Audio Adapter
-Radio FM
-MQ-200
-Diagnostics Device
-PLUSTEST
-Fast/wide SCSI-2
-RPTI RT8029-based Ethernet Adapter
-NV5000
-PCI-AI/1216(M)
-ADC Card
-PCI-AI/1216
-Watchdog
-WDT500
-PLX9054
-MPEG Coder
-iTVC15
-MPEG Encoder Card
-iTVC12
-AlladinCARD
-Virtex-II Pro Bridge
-ADM-XPL
-DEC 21143PD
-10/100Mbps Fast Ethernet Controller
-Audio Chipset
-ALS4000
-ALG2464
-ALG2364
-AVG2302
-<DELETE>
-ALG2064
-PCI Input Controller
-ALS300+
-ALS300
-GLint VGA
-Permedia IIv
-Wildcat III 6210
-Wildcat III 6110
-3D+3D Accelerator
-Wildcat 5xxx series
-Wildcat 5xxx
-Wildcat 4xxx series
-Wildcat 4xxx
-Permedia II
-GLINT Gamma G2
-GLINT R4
-Permedia 3
-2d+3d chipset, integrated ramdac
-Permedia2v
-GLint Gamma G1
-Permedia II 2D+3D Accelerator
-3D Extreme
-GLint MX
-2D+3D Accelerator
-3C0SX
-Delta Geometry processor
-GLint
-Sapphire 3D Accelerator
-GLint 500TX
-GLint 300SX
-PCI Measurement bus controller for EPSI
-fieldbus-master
-HB1-SE33
-UNIVERSAL PCI-PCI BRIDGE
-100VG/AnyLAN
-8142
-PCI to Private Bus Bridge for Primary Ra
-0xff8000
-PCI Master Target
-aa551234
-PCI Frame Grabber
-0x2003
-Lasentec PVM Controller
-701-1429
-Lasentec FBRM Counter
-701-1350
-Slave PCI protyting board
-Bus Master IDE PCI 2 controllers
-DC290M
-IDE Cache Controller
-DC-690C
-DC-390
-SCSI ASIC
-SCSI Adapter
-PM2x24/3224
-82C101
-SC15064
-DVB Receiver Card
-VGA Geforce4 Ti4200
-VGA Geforce4 MX440
-nVidia NV28
-Bt881
-MD8820
-MD5628D-L
-LonWorks Network Interface Card
-XLON PCI
-Fast Ethernet Adapter with ROL
-ROL/F-100
-AC1000
-Solid State Disk
-Rocket Drive
-EPONINE MTM120 PCI Board
-Motorola MPC8245
-EPONINE ESR-PCI Board
-PLX PCI9054
-802.11a Wireless Adapter
-FOB-TDC Card
-FOB-SD Card
-L2B PCI Board
-FOB-IO Card
-PIXCI D3X
-PCI digital video capture board
-PIXCI D2X
-PCI camera link video capture board
-PIXCI CL1
-Aztech CNR V.92 Modem
-WL11000P
-Matrix Card
-TS-PMA
-General Purpose Relay Card
-TS-PRL1
-Reprographics Controller
-Repeographics controller
-Fast Universal Data Output
-Format Synchronizer v3.0
-FarSync T4U
-FarSync T2U
-One Port Intelligent Sync Comms Card
-FarSync T1U
-Four Port Intelligent Sync Comms Card
-FarSync T4P
-Two Port Intelligent Sync Comms Card
-FarSync T2P
-Spot Insight Interface Board
-Spot Insight
-Spot RT #2
-Spot RT Interface Board
-Spot RT
-ATA controller
-NetStaQ ADMA-100
-InstantWave HR PCI card
-Prism II
-Wireless NIC
-NCP130
-Internet PhoneJack PCI Card
-PCI Cryptography Module
-Argus 300
-TE3-SPICCE 6 Port Integrated Comm Ctrlr
-PEB 3454 E v1.1
-6 Port Optimized Comm Ctrlr (SPOCC)
-PEB 20544 E v1.1
-4 Channel Serial Comm Controller (DSCC4)
-PEB 20535 E v3.1
-TriCore 32-bit Single-chip Microctrlr
-TC11IB
-64 Bit, 133MHz PCI-X Exerciser/Analyzer
-E2929A
-64 Bit, 133MHz PCI-X Exerciser/Observer
-E2922A
-Remote Management Card - BMC
-Agilent N2530A etc.
-Agilent N2530A Service Processor
-Remote Management Card
-N2530A
-DX2+ FC-AL Adapter
-DX2 FC-AL Adapter
-n2530a
-InfiniBridge
-MT21108
-2BD0
-Pctel
-FM-1789
-Virtual SVGA
-PCI Bus Analyzer/Exerciser
-TA700
-Multi-IO Card 2 series
-winbond w83787if
-TC32001 PCI I/O
-Dual Parallel Port Card (EPP)
-Multi-IO Card
-PCI Y2K Compliance Card
-Fix2000
-CCSI PCI22-THB
-CCSI PCI22-FOG-ST
-CCSI PCI22-CHB
-CCSI PCI22-485X
-CCSI PCI22-485D
-10 Mbit ARCnet
-CCSI PCI22-485
-CCSI PCI20-5-FOG-SMA
-CCSI PIC20-5-FOG-ST
-CCSI PCI20-5-485X
-CCSI PCI20-5-485D
-5 Mbit ARCnet
-CCSI PCI20-5-485
-CCSI PCI20-TB5
-CCSI PCI20-FOG-ST
-CCSI PCI20-FOG-SMA
-CCSI PCI20-CXS
-CCSI PCI20-CXB
-CCSI PCI20-485X
-CCSI PCI20-485D
-ARCnet
-CCSI PCI20-485
-Spectrum24 Wireless LAN PCI Card
-LA-41x3
-Easylon PCI Bus Interface
-PLX PCI 9050
-PCI/ISA Bus Bridge
-PCI-ISA-001
-CS4614/22/24
-PCI Interface Chip
-PBridge+
-56K Data/Fax/Voice/Speaker Phone Modem
-TP560i
-CardDeluxe Analog + Digital Audio
-Xilinx PLD
-PCI-1008
-PCI-1004
-PCI-1002
-PCI Ethernet controller
-803 series
-KTI829c 100VG
-MPC145575 HFC-PCI
-MPC8240 Kahlua
-MPC106 Grackle
-MPC105 Eagle
-DEC21143PD
-10/100 Mbps PCI Fast Ethernet Controller
-RTL8139A
-10/100M PCI Fast Ethernet Controler
-10/100M PCI Fast Ethernet Controller
-SIS900
-PCI PS/2 Mouse Port
-PCI PS/2 Keyboard Port
-PCI Serial Port
-Merlin Split Bridge
-Capilano Split Bridge
-Moselle Split Bridge
-2047-channel HDLC Controller
-CX28560
-1024-channel HDLC Controller
-676-channel HDLC Controller
-CX28500
-256-channel HDLC Controller
-CN8478
-CN8474A
-64-channel HDLC Controller
-CN8472A
-32-channel HDLC Controller
-CN8471A
-ATM OC2 ServiceSAR+ controller
-CN8237
-56K PCI Software Modem
-HSF Data/Fax/Voice (USA)
-USRobotics  56k Soft FCC PCI Faxmodem
-E124327.1
-E30965.1
-HSF 56k Data/Fax/Voice/Sp CardBus Modem
-HSF 56k Data/Fax/Voice CardBus Modem
-HSF 56k Data/Fax CardBus Modem
-HSF 56k Data/Fax/Voice/Spkr/Cell Modem
-HSF 56k Data/Fax/Voice/Cell Modem
-HSF 56k Data/Fax/Cell Modem
-HSF 56k Modem
-HSF Data/Fax/Voice/Speakerphone
-HSF Data/Fax/TAM
-HSF Data/Fax
-1456VQH-R4
-SoftK56 Modem Controller
-HSF 56k Data/Fax/Voice Modem
-smarthsf+11242-11
-HSF 56k Data/Fax Modem
-1049144F
-HSF Data/Fax/TAM/Speakerphone
-SoftK56 Winmodem/HSF GENERIC
-8850155D
-SoftK56 Speakerphone Winmodem
-SoftK56 RemoteTAM Winmodem
-SoftK56 Winmodem
-HCF Data/Fax/Voice (Worldwide)
-HCF Data/Fax/Voice (USA)
-HCF Data/Fax (Worldwide)
-HCF Data/Fax (USA)
-HomePNA2
-HPNA 1
-ADSL modem
-11627-xx
-HSF modem
-20463-xx
-ARM controller
-P5100-xx
-HCf 56k Data/Fax/Voice/Spkrphone Modem
-HCf 56k Data/Fax Modem
-HCF 56k Data/Fax/Voice Modem
-HCF Data/Fax/Remote TAM/Speakerphone
-HCF Data/Fax/Voice/Speakerphone
-HCF Data/Fax/Remote TAM
-HCF Data/Fax
-SmartHSF Mobile Modem
-CX11250
-HCF 56k Daat/Fax/Voice Modem
-HCF 56k Data/Fax Modem
-HCF P96 Data/Fax/Voice/Spkp Modem
-HCF 56k Data/Fax/Voice/Spkrphone Modem
-HCF 56k Data/Fax/Voice Modem (Worldwide)
-HCF 56k Data/Fax Modem (Worldwide)
-PCI Modem Enumerator
-R6795-11
-Single Chip Controllerless V.90 56k
-56k Winmodem
-ce0682x
-r6793-15
-HCF 56k Modem   FCCID=H4TFM-PIB3PC
-11242-11
-HCF 56k Modem
-3251
-Embedded Memory Display Controller
-S1D13808
-PCI to S5U13xxxB00B Bridge Adapter
-BEMx.x
-10/100 Fast Ethernet CardBus (RTL8139)
-FNW-3603-TX
-Crypto Accelerator
-BCM5820
-10/100 Integrated Ethernet Controller
-BCM440x
-802.11g NIC
-BCM94306
-IEEE 802.11b WLAN client chipset
-BCM4301 802.11b
-BCM V.90
-10Mb/s NIC
-BCM HPNA
-BCM5703X
-BCM5702X
-NetXtreme Fast Ethernet Controller
-BCM5702FE
-BCM5703
-BCM5702
-NetXtreme Gigabit Ethernet
-BCM5701
-NetXtreme Gigabit Ethernet Controller
-BCM5700
-16-channel reed relay output
-PCI263
-48-channel digital I/O (w/ 6 timers)
-PCI215
-72-channel digital I/O
-PCI272
-24-channel digital I/O
-PCI236
-4-chan 16-bit analog output (w/ timers)
-PCI234
-16-chan 12-bit analog output (w/ timers)
-PCI224
-16-channel analog input (with timers)
-PCI260
-2-port high speed RS-232 and RS-422/485
-PCI249H
-2-port high speed RS-422/485
-PCI248H
-2-port high speed RS-232
-PCI247H
-8-port high speed RD-232
-PCI244H
-4-port high speed RS-232
-PCI242H
-PCI230
-PCI IO 8S-850
-PCI IO 8S-654
-PCI IO 8S
-PCI IO 2S1P-850
-PCI IO 2S1P-650
-PCI IO 2S1P
-PCI IO 4S-850
-PCI IO 4S-654
-PCI IO 4S
-PCI IO 2P2S-850
-PCI IO 2P2S-650
-PCI IO 2P2S
-PCI IO 2P1S-850
-PCI IO 2P1S-650
-PCI IO 2P1S
-PCI IO 2S-850
-PCI IO 2S-650
-2 Port PCI Serial Card
-PCI IO 2S
-PCI IO 2P
-TK9902
-PCI IO 1S1P-850
-PCI IO 1S1P-650
-PCI IO 1S1P
-PCI IO 1S-850
-PCI IO 1S-650
-PCI IO 1S
-Panacom 7
-Dummy Controller
-Visual Systems VScom PCI-200HV2
-Visual Systems VScom PCI-100HV2
-Visial Systems VScom PCI-010HV2
-Visual Systems VScom PCI-200H Controller
-Visual Systems VScom PCI-400HF1 Ctrlr
-Visual Systems VScom PCI-400H Controller
-16PCI954
-Visual Systems VScom PCI-110H Controller
-Visual Systems VScom PCI-010H Controller
-Visual Systems VScom PCI-800L Controller
-Visual Systems VScom PCI-420L Controller
-Visual Systems VScom PCI-410L Controller
-Visual Systems VScom PCI-400L Controller
-Visual Systems VScom PCI-210L Controller
-Visual Systems VScom PCI-200L Controller
-Visual Systems VScom PCI-110L Controller
-Visual Systems VScom PCI-100L Controller
-Visual Systems PCI-020L Controller
-Visial Systems VScom PCI-010L Contoller
-PCI-010L
-MyriNet
-LANai 9.2 0129
-PC4800 DS
-PC4500 DS
-PC3500 FH
-PC3100 FH
-Wireless PCI LAN Adapter
-PC2500 DS
-AiroNet 350 PCI
-AIR-PCI352
-Cisco Systems 340 PCI Wireless LAN Adptr
-PC4800
-Symphony 4110
-DSP-Board
-Pulsar 2
-Pulsar SRB
-Pulsar
-Scope
-DSL NIC
-Creative ModemBlaster V.90 PCI DI5635
-Rockwell HCF chipset
-ADSL PCI
-RoadRunner 10
-Audio controller
-NextMove PCI
-PCI-9114
-PCI-9113
-PCI-9111
-PCI-8554
-PCI-8133
-PCI-7841
-PCI-7434
-PCI-7433
-PCI-7432
-PCI-7296
-PLX PCI9052
-PCI-7250
-PCI-7248
-PCI-6208
-Audio Editing
-ADAT/EDIT
-MPEG decoder
-KFIR
-Integrated Parallel Port
-Dual UART
-OX12PCI952
-PCI Interface to 32-bit bus
-PCI Interface to 8-bit local bus
-OX9160
-PCI Interface (disabled)
-Integrated High Performance UART
-OXCB950
-Quad UART (disabled)
-OX16PCI954
-Parallel Port
-PCI Interface to local bus
-OX9162
-Envy24 PCI Multi-Channel I/O Ctrlr
-ICE1712
-BOCA Research IOPPAR
-Lava Dual Parallel port B
-Lava Dual Parallel port A
-Lava Parallel
-COM Port Accelerator
-Lava Port 650 PCI
-Lava SP BIDIR Parallel PCI
-Lava SP Serial 550 PCI
-Lava Single Serial 550 PCI
-Lava 8255 PIO PCI
-LavaPort Quad-650 PIC C/D
-LavaPort Quad-650 PCI A/B
-LavaPort Dual-650 PCI
-Lava Octopus PCI Ports 5-8
-Lava Octopus PCI Ports 1-4
-Lava DSerial PCI Port B
-Lava DSerial PCI Port A
-Lava Quatro PCI C/D
-Lava Quatro PCI A/B
-Lava Dual Serial 550 PCI
-9432 TX
-Opto Isolated Digital I/O Card w/Counter
-PCI-1750
-4-Axis Stepping/Servo Motor Card
-PCI-1240-A
-Audiomodem Riser
-HSP56
-CMI-8378B/PCI-6CH
-CMI8738/PCI C3DX
-PCI Audio Device
-CMI8338-031
-PCI Audio Chip
-CMI8338/PCI C3DX
-Fast Ehternet Adapter
-ST201
-Chateau Channelized T1/E1/HDLC Controller
-DS3134
-BoSS Bit Synchronous HDLC Controller
-DS3131
-PCI56RVP
-CardBus /Atelco Fibreline Ethernet Adptr
-FE2000VX
-B2C2 Sky2PC Core Chip
-T228502
-Multi-Function Analogue/Digital IO card
-ATA-100 Storage Controller
-7000 series
-ATA-RAID Controller
-SyncLink Multiport Adapter
-SyncLink SCC Adapter
-SyncLink PCI WAN Adapter
-Eight Channel PCI Bus UART (5V)
-XR17C158
-Four Channel PCI Bus UART
-XR17C154
-Two channel PCI UART (5V)
-XR17C152
-7951
-7811
-Public Key Processor
-6500
-Security Processor
-7751
-B100
-B00C
-B00B
-B00A
-B009
-B008
-B007
-B006
-B000
-HFC-4S ISDN 8B4D4S0
-HFC-PCI A ISDN 2BDS0
-ISDN HDLC FIFO Controller
-HFC-8S 16B8D8S0
-LXT1001
-C320
-Intellio Turbo PCI
-C218
-Intellio
-CP-204J
-C168H/PCI
-Industio
-CP-132
-Smartio
-C104H/PCI
-Intelligent fieldbus Adapter
-PCI1500PFB
-FA311
-GA630
-GA622
-GA620
-802.11b Wireless Adapter
-MA301
-Prodif Plus sound card
-HYSDN
-Digital I/O Adapter
-8001
-Eight Port RS-232 Interface
-Four Port RS-422/485 Interface
-Four Port RS-232 Interface
-Dual Port RS-232 Interface
-Dual Port RS-232/422/485 Interface
-Single Port RS-232/422/485/520
-Route 56
-5101
-2-port RS232 card, r 5
-2-port RS232 card, r 4
-PLX PCI Bus Logic
-PLX9050
-2-port RS232 card with printer port, r 4
-2-port RS232 card with printer port, r 3
-2-port RS232 card with printer port
-PLX PCI9050 + 16C552
-PLX PCI9050 + 16C554
-pctel 56k modem
-pct388p-a
-PCT 288-1A
-HSP MicroModem 56/PCT789T
-97860963
-pct789t-c1
-FT13
-S911 K017
-PCT 789T-A
-PCT 789T
-HSP MicroModem 56
-PCT789T-C1
-V.92 MDC Modem
-2304WT
-Domex DMX3192U/3194UP SCSI Adapter
-Domex DMX 3191 PCI SCSI Controller
-F01 2ASV17184.1
-CopperHead CopperTail SC1 USB Controller
-CopperHead CopperTail SC1 IDE Controller
-MT7LLN22NCNE
-MT8LLN21PADF
-CopperHead CopperTail SC1 AMC AC97
-Industrial I/O Card
-SST-5136-PFB-PCI
-PCI Memory Module with Battery Backup
-MM-5415CN
-Trio 1S(16850)+2P
-Trio 1S(16650)+2P
-Trio 1S(16550)+2P
-CyberSerial 16550/PCI SERIAL 8000 IO1875
-CyberParallel
-Duet 1S(16850)+1P
-Duet 1S(16650)+1P
-Trio 2S(16850)+1P
-Trio 2S(16650)+1P
-Trio 2S(16550)+1P
-CyberSerial 16850
-CyberSerial 16650
-CyberSerial 16550
-CyberParallel PCI Card
-Duet 1S(16550)+1P
-Duet1S(16550)+1P
-CyberSerial 16850 (1-port)
-CyberSerial 16550 (1-port)
-PCI Serial Card
-PCI Joystick
-Xwave PCI Joystick
-Xwave PCI audio controller
-FM801
-1000BT Network Interface Card
-G-NIC II
-ADM9513
-cardbus ethernet-modem controller
-ADM9511
-10/100 cardbus ethernet controller
-ADM985
-fast ethernet controller
-ADM983
-AM981
-FPGA PCI Bridge
-CompactPCI Interface
-9060
-NetCelerator Adapter
-PCI-DAS1000
-PCI-DAS64/M3/16
-PCI-DAS64/M2/16
-PCI-DAS64/M1/16
-PCI-DAS-TC
-PCI-DUAL-AC5
-PCI-INT32
-PCI-DAS08
-24 Bit Digital Input/Output Board
-CIO-DIO24
-PCI-DAC04/16-HS
-PCI-DAC04/12-HS
-PCI-DDA08/16
-PCI-DDA04/16
-PCI-DDA02/16
-PCI-DDA08/12
-PCI-DDA04/12
-PCI-DDA02/12
-PCI-DAS16/M1
-PCI-DAS6402/12
-PCI-DAS6402/16
-PCI-DAS1602JR/16
-PCI-DAS1002
-PCI-DAS1001
-PCI-DAS1200/JR
-PCI-CTR05
-PCI-DIO96H
-PCI-DIO24H/CTR16
-PCI-DIO24H/CTR3
-PCI-DIO24H
-PCI-DAS1602/12
-PCI-DAS1200
-PCI-PDISO16
-PCI-PDISO8
-PCI-DIO48H
-PCI-DAS1602/16
-cM67 CompactPCI DSP Card
-VideoMaker
-Vortex 56k Software Modem
-Vortex Digital Audio Processor
-AU8810
-Vortex 2 3D Digital Audio Processor
-AU8830
-Vortex 1 Digital Audio Processor
-AU8820
-Quad UART
-ST16C654
-Cryptoswift 200
-FoxFire II
-2-Port PCI to PCI Bridge
-PI7C8150
-3 Port PCI to PCI bridge
-PI7C7300
-Digital Signal Processor
-MAP-1000
-Broadband Signal Processor
-MAP-CA
-Riva TNT2 Aladdin
-NVA0
-Vanta
-Riva TNT2 Model 64
-NVM64
-Vanta / Vanta LT
-NVVANTA
-Riva TNT2 Ultra
-NVULTRA
-Riva TNT2 /TNT2 Pro
-Riva TNT GUI+3D Accelerator
-2D/3D GUI Accelerator
-RIVA 128ZX
-128-bit 3D Multimedia Accelerator
-RIVA 128
-EDGE 3D
-DAC64
-EDGE 3D Accelerator
-BX-12e
-BX-8
-LX-22M
-20-bit 2-in, 4-out audio card w/MPEG-2
-LX-24M
-BX-44
-SC-22
-LX-44
-SC-2000
-BX-12
-StudioCard
-D/160JCT (Resource Only) Card
-D/320JCT (Resource Only) Card
-Dialogic 2E1 - JCT series
-D/600JCT-2E1
-D/600JCT-2E1 (75 Ohm) Card
-D/480JCT-2T1 Card
-D/41JCT Card
-BRI/80-PCI Card
-BRI/120-PCI Card
-BRI/160-PCI Card
-MSI PCI Card
-D/300JCT-E1 Card
-D/240JCT-T1 Card
-BRI/2 Type Card (Voice Driver)
-D120JCT-LS Card
-Multi-scale Thresholder
-THR2
-Video Simulator/Sender
-PCI Thresholding Engine
-PCIVST
-PEI Imaging Subsystem Engine
-Ethernet Adapter (NE2000-compatible)
-HT80229
-LAN Adapter (NE2000-compatible)
-HT80232
-Communications Processor
-Sync4hs/CCP/PCI/MP
-128Kbit Dual-Port SRAM w PCI Bus Ctrlr
-CY7C09449PV-AC
-CO-MEM PCI Bus Interface and Cache
-AN3041Q
-DSP Prototyping & Development Card
-Hammerhead-Lite-PCI
-USR 56k Internal Modem
-USR 56k Internal DF GWPCI PC99
-ERL3263A-0
-USR 56k Internal Voice WinModem
-3cp803598
-usr 56k internal modem
-erk41926a-0.6
-Copper Gigabit Ethernet Adapter
-3C986-T
-ACEnic 1000 BASE-SX Ethernet adapter
-3C986
-PCI TV (and DVD Decoder?) Card
-TUN-200/MPG-200C
-NAI HSSI Sniffer PCI Adapter
-WANic 400 series
-PCI 66MHz and PCI-X 100MHz Bus Analyzer
-PBT-615
-PCI 66MHz Analyzer and Exerciser
-PBT-515
-PCI 66MHz Analyzer and 33MHz Exerciser
-PBT-415
-Control Port
-MPU Port
-SAM9407
-WSS/SB
-ST128
-AsanteFAST 10/100 PCI Ethernet Adapter
-Ethernet 10/100
-MPEG/DVD video decoder
-LS242
-LS220C
-LS220D
-Maestro-1 AudioDrive
-ES1849
-PCI I/O CARD
-IT8889F
-PCI to ISA Bridge with SMB
-IT8888F
-PCI Parallel Port
-IT8875F
-PCI to ISA I/O chip
-IT8871/72
-Ultra RISC (MIPS, SH4) Companion Chip
-IT8172G
-Advanced RISC-to-PCI Companion Chip
-IT8330G
-Audio Digital Controller
-IT8152F/G
-GFast Ethernet Adapter
-DM9102/A/AF
-DM9009
-ATM ServiceSAR Plus
-RS8234
-Network Adapter
-Harmonic DVB
-Riptide HCF 56k PCI Modem
-RLVDL56DPF/SP
-Riptide PCI Audio Controller
-810E
-Riptide PCI Game Controller
-Conexant PCI Modem Enumerator
-V1456VQH-R6
-Master Riptide PCI Audio Device
-123456
-HSF 56k HSFi
-cx11252-11
-Soft 56K Data, Fax, PCI modem
-R6793-11
-HSF 56k Data/Fax/Voice/Spkrphone Modem
-Conexant SoftK56 Speakerphone Modem
-PCI modem
-rs56 sp-pci
-Volcano SoftK56 PCI modem
-Single chip 56K V90 modem/spkrphone
-RS56/SP-PCI11P1
-K56 modem
-SoftK56VB2.1V2.08.02
-Volcano SoftK56 Data,Fax,Speak PCI Modem
-r6793-11
-HCF 56k Speakerphone Modem
-RH56D/SP-PCI
-HCF P85 DATA/FAX PCI Modem
-R6795 12
-HCF 56k V.90 Speakerphone Modem
-1456VQH-R1
-HCF 56k PCI Modem (Amquest)
-V.90 Modem
-HCF V.90 Modem
-1456VQH20E
-HSF 56k V.90 Speakerphone/Voice Modem
-r6793-17
-R6795-12
-HCF 56k V.90 Modem
-65785467
-Modem enumerator
-RH56D-PCI
-BIOS scratchpad
-SDRAM Controller
-LongRun
-Virtual Northbridge
-PowerPC Node
-TPE3/TM3
-ES1370
-Sound Blaster Audio(PCI)
-ES1373
-AudioPCI
-ES1371
-multimedia audio device
-5880
-DirecPC
-Lynx
-SM910
-Lynx3D
-SM820
-SM811
-LynxE
-SM810
-Lynx3DM
-SM720
-LynxEM+
-SM712
-LynxEM
-SM710
-e-mobility 802.11b Wireless LAN PCI Card
-telsatturbo
-PCR2101
-Satellite receiver board / MPEG2 decoder
-NICCY PCI card
-NE2000Plus (RT8029) Ethernet Adapter
-NE10/100 Adapter (i82557B)
-HMP8131
-NTSC/PAL Video Decoder
-HMP8130
-PRISMII.5 IEE802.11B Wireless LAN
-ISL3874A
-TelDrive ES56T-PI family V.90 PCI modem
-ES2898S
-SuperLink-MLP 10  Voice Modem
-SuperLink-MLP Voice Modem
-ES2838/2839
-SuperLink PCI Fax Modem V.90
-ES2838S/2839
-PCI Fax Modem (later model)
-ES336H
-ES1938
-Maestro-3.COMM PCI Voice+Fax Modem
-ES1983
-Maestro-3 PCI Audio Accelerator
-ES1980
-Allegro-1.COMM PCI Voice+Fax Modem
-ES56CVM-PI
-Allegro-1 Audiodrive
-ES1989
-Maestro-2 PCI Audio Accelerator
-ES1978
-Solo-1 PCI AudioDrive family
-ES1938/41/46
-Maestro-2 PCI audio accelerator
-ES1968
-PCI Fax Modem (early model)
-ESS336H
-AT-2560 Fast Ethernet Adapter (i82557B)
-Realtek 8139b
-IntelliCache SCSI Adapter
-PCI-2000
-Dale EIDE Adapter
-PCI-2220i
-EIDE Adapter
-PCI-2240i
-VideoQuest
-VideoPlex CC
-VideoPlex
-MPEG Fusion
-MPEG Forge
-PCI RAID Controller
-IFT-2000
-EasyIO PCI
-EasyConnect 8/64
-EasyConnect 8/32
-Four Slot IndustryPack Carrier
-cPCI-200
-Fritz!PCI 2.0 ISDN Controller
-ISDN controller
-Dual Channel 2 Gb/s Fibre Channel-PCI-X
-JNIC-1560
-2-Gb/s Fibre Channel-PCI 64-bit 66 MHz
-JNIC-1460
-3.0 DVD Decoder
-DVD device
-MPEG
-PCI-DV Digital Video Interface
-PCI-DV
-REALmagic64/GX
-SD6425
-RealMagic64/GX
-PCI168/3328
-AMR 56K modem
-MR2800W
-368DSP
-AMCC 5933 TMS320C80 DSP/Imaging Board
-Avenger
-Voodoo 3/3000
-Rev.A AGPx4, 0.25�m, 200/2x200 core/RAM
-Rampage
-Voodoo5
-Voodoo4
-All Voodoo3 chips, 3000
-Voodoo3
-Voodoo Banshee (Velocity 100)
-Voodoo Banshee
-Voodoo 2 3D Accelerator
-Voodoo2
-Voodoo 3D Acceleration Chip
-Voodoo
-OZ6912
-OZ6933
-OZ6922
-OZ6812
-OZ6836/6860
-OZ6832/3
-OZ6730
-PCI to PCMCIA Bridge
-OZ6729
-Roadrunner
-PC300 TE 1
-PC300 TE 2
-PC300 RX 1
-PC300 RX 2
-Intelligent Multiport Serial
-Cyclom-Z
-Cyclom-8Y
-Cyclom-4Y
-Multiport Serial Card
-Cyclom-Y
-HS-Link Device
-PCI ATM Adapter
-NAIATMPCI
-4-port UART 16954
-RocketPort
-FREEDM-84P672 Frm Engine & Datalink Mgr
-PM7384
-FREEDM-32P256 Frm Engine & Datalink Mgr
-PM7382
-FREEDM-32P672 Frm Engine & Datalink Mgr
-PM7380
-LASAR-155 ATM SAR
-PM7375
-FREEDM-32P32 Frame Engine & Datalink Mgr
-PM7367
-FREEDM-8 Frame Engine & Datalink Manager
-PM7366
-FREEDM-32 Frame Engine & Datalink Mgr
-PM7364
-RL100TX
-ReadyLink 100TX (Winbond W89C840)
-RL100-ATX
-ReadyLink RL2000 (Winbond W89C940)
-832AE28030680
-FreedomLine 100
-ReadyLink ENET100-VG4
-2915
-GIGAline
-FASTline-II FO
-FASTline-II UTP
-FASTline UTP
-FASTline FO
-FASTline UTP Quattro
-DVD Decoder
-ZR36120/5
-AV PCI Controller
-ZR36057/36067
-Dreamcast Broadband Adapter
-10117
-Greensheet
-10115
-SafeNet Crypto Accelerator chip
-ADSP-2141
-DSP Microcomputer (function #2)
-DSP Microcomputer (function #1)
-DSP Microcomputer (function #0)
-ADSP-2192
-Sound Chip
-AD1889
-3Com winmodem chip
-AD1807JS
-erl3227a-0.8
-62412-51
-Blackfin DSP PCI Bus Interface
-ADSP-21535
-erl3227a-0,8
-ad1807js
-PCI Video Processor
-VxP524
-Bridge RIO Host
-T225
-XIO/SIO Host
-SUPI-1
-Target Interface
-PCI-9050
-4-line serial port w/DMA
-16-line serial port w/DMA
-64 bit , 66 Mhz PCI-SCI Bridge. (D33x)
-PSB66
-64 bit , 33 Mhz PCI-SCI Bridge
-PSB64
-32 bit , 33 Mhz PCI-SCI Bridge
-PSB 32
-VM-1200 Opto Unit Controller
-PCI Wireless LAN Adapter
-WaveLAN
-1394A PCI PHY/Link Open Host Ctrlr I/F
-FW322/323
-USB Advanced Host Controller
-QuadraBus 4-port USB OpenHCI Host Ctrlr
-USS-344
-2-port PCI-to-USB OpenHCI Host Ctrlr
-USS-312
-FPGA w embedded PCI core
-Lucent OR3TP12 FPSC
-SV92P-T00
-AC-Link Soft Modem Chip Set - 56Kbps
-LU97
-Venus Winmodem
-Audio PCI Legacy Resources
-Riptide
-56K.V90/ADSL Wildfire Modem
-V90 Wildfire Modem
-LT WinModem
-Mars 3 Mercury v.92 v.44
-1648C
-LT WinModem 56k Data+Fax+Voice+DSVD
-LT Winmodem 56K
-1456VQH19R-1(INT)
-LT V.90+DSL WildFire Modem
-90094-1
-LT WinModem 56k Data+Fax
-lucent 1646T00
-LT Winmodem
-V.90 Lucent Modem
-1646T00
-Data+Fax
-Data+Fax+Voice+DSVD
-LT Winmodem 56k
-PCI FDDI
-NPI NuCard
-SSA Ctrlr
-Quad PeerMaster
-CHANNEL-OUT (BT) Rev 2
-CHANNEL-IN (BT) Rev 2
-SYNC MAX PCI
-CHANNEL-IN (ES)
-CHANNEL-OUT (BT) Rev 1
-CHANNEL-IN (BT) Rev 1
-i960 Dual PCI Bridge
-V96DPC
-i960 Bridges for i960 Processors
-V96xPBC
-PCI System Ctrlr for 64-bit MIPS CPU
-V340HPC
-Am29030/40 Bridge
-V292PBC
-High Performance PCI SDRAM Controller
-V370PDC
-PCI System Ctrlr for Super-H SH4 CPU
-PCI System Ctrlr for Super-H SH3 CPU
-PCI System Ctrlr for 32-bit MIPS CPU
-V320USC
-i960Sx Local Bus to PCI Bridge
-V363EPC
-Am29K Local Bus to PCI Bridge
-V292PBC/PSC
-i960Cx/Hx Local Bus to PCI Bridge
-V962PBC/PSC
-i960Jx Local Bus to PCI Bridge
-V961PBC/PSC
-i960 Local Bus to PCI Bridge
-V960PBC/PSC
-Bridge Controller
-PNIC II 10/100 PCI MAC/PHY
-LC82C115
-10/100 Ethernet (NetGear FA310TX)
-NGMC169B
-Primary Image Cruncher Geometry Acclrtr
-GT64120A
-Primary Image Barracuda Image Generator
-Primary Image Piranha Image Generator
-GT-64010
-Advanced Communication Controller
-GT-96100A
-GT-64260A
-System Controller for PowerPC Processors
-GT-64130/131
-Evaluation board for the GT-48300
-EV-48300
-8 port switched ethernet ctrlr
-GT-48001
-System Ctrlr for R5K & R7K w/64bit PCI
-GT64120
-System Ctrlr for R4xxx/5000 Family CPUs
-GT-64010/A
-Intelligent Serial Card
-AMCC S5933Q
-NTX-8023-PCI 8MB Short Card
-NTX-8023-PCI 2MB Short Card
-NTX-8023-PCI 8MB Long Card
-NTX-8023-PCI 2MB Long Card
-FireStream 50 ATM adapter
-MB86695
-FireStream 155 ATM adapter
-MB86697
-PCI PCMCIA bridge
-82C092G
-SDLC PCI Adapter
-Advanced ISCA PCI Adapter
-IRMA 3270 PCI Adapter
-ZN1225
-ZN1221
-PCI Ultra160 LVD/SE SCSI Adapter
-AEC-67160
-AEC671x
-Ultra Wide SCSI Controller
-ATP870
-SCSI-2 Host Adapter (AEC6710L/F)
-ATP850S
-SCSI-2 RAID (cache?) Adapter (AEC6820U)
-ATP8600
-ATP865
-UltraDMA66 EIDE Controller (AEC6260)
-ATP860R
-UltraDMA66 EDIE Controller (AEC6260)
-ATP860A
-UltraDMA33 EIDE Controller
-ATP8400
-SCSI-2 cache Cntrlr
-UltraDMA33 EIDE Controller (AEC6210UF)
-ATP850UF
-PCI Ultra (Wide) SCSI Adapter
-TP-910/920/940
-Single Chip Ultra (Wide) SCSI Processor
-TC-2550
-Model 44
-Model 24
-Model 14
-Road Runner Frame Grabber
-Model 12
-Raptor-PCI framegrabber
-Corollary/Intel Memory Controller Chip
-MAC-94C201B3
-C-bus II to PCI bus host bridge chip
-PCIB
-VL/PCI Bridge
-D Link Fast Ethernet PCMCIA Card
-DFE-650TX
-Gigabit Ethernet Adapter
-DL2000
-DRP-32TXD
-CardBus PC Card
-DFE-690TXD
-DFE-530TX+
-DFE-550TX
-SD-Card Interface
-FireWire (IEEE1394) Controller. IBM A31p
-RL5c552
-IEEE1394 Controller
-1394 Host Controller
-R5C521
-RLc478
-RLc477
-RL5C476 II
-RL5C475
-RL5C466
-CardBus controller
-RL5C465
-Printer Host
-Multi-channel PCI UART
-XR17C158/154/152
-FIR Port Type-DO
-SD Card Controller
-PCI Communication Device
-CPU to PCI and PCI to ISA Bridge
-PCI to CardBus Bridge with ZV support
-ToPIC100
-ToPIC97
-Toshiba ToPIC95 CardBus Controller
-ToPIC95B
-PCI to PCI Bridge for Notebooks
-PCI to CardBus Bridge for Notebooks
-ToPIC95
-PCI to ISA Bridge for Notebooks
-Toshiba CPU to PCI bridge
-Video Capture device
-Tecra
-Extended PCI IDE Controller Type-B
-Extended PCI IDE Controller
-Escon Channel
-Bus/Tag Channel
-PCI to C-DAC RTU bus interface FPGA
-Ql5032-33APQ208C
-OpenHCI Compliant USB Controller
-IDE interface
-CSB5
-OSB4
-CIOB-X2
-CMIC-SL
-CMIC-GC
-Hostbridge and MCH
-CNB20-HE
-CMIC-LE
-CMIC-HE
-CIOB30
-Hostbridge & MCH, bus/dev/func 0/0/0
-NB6635 (CNB20-LE/HE)
-Host Bridge, function 2 and function 3
-NB6536 (CNB20-HE)
-PCI to PCI Bridge, bus/dev/func 0/0/1
-NB6536 (CNB20-LE)
-Motion JPEG rec/play w/audio
-Verite 2x00
-3D Blaster
-Verite 1000
-CardBus Ehternet + 56k Modem
-CardBus 56k Modem
-Modem 56k
-MPCI
-Xircom MPCI Modem 56
-Xircom MPCI3B-56G (Lucent SCORPIO) Soft
-Winmodem built into NEC Versa VXi
-Mini-PCI V.90 56k Modem
-MPCI 3A56GSP-100 PA
-CardBus Ethernet 10/100
-MV-1500
-MV1000
-Lanfleet/Truevalue
-Tokenet/vg 1001/10m anylan
-486 CPU/PCI Bridge
-Avanstar
-DataFire Micro V
-AccelePort 2p PCI
-AccelePort Xp
-T1/E1/PRI, Compact PCI
-DataFire DSP
-AccelePort 2r 920
-DigiClassic PCI
-AccelePort 8r 920
-AccelePort 4r 920
-DataFire RAS B4 ST/U
-AccelePort RAS
-ClydeNonCsu2
-ClydeNonCsu4
-ClydeNonCsu6032
-ClydeNonCsu6034
-T1/E1/PRI
-DataFire RAS
-AccelePort C/X (IBM)
-DataFirePRIme E1
-DataFire PCI 1 U
-AccelePort EPC/X
-AccelePort8r EIA-422
-AccelePort8r EIA-232
-X.25/FR 2-port
-SyncPort
-DataFirePRIme T1
-AccelePort EPC/J
-AccelePort Xr/J
-DataFire PCI 1 S/T
-AccelePort C/X
-AccelePort Xr
-AccelePort Xem
-RightSwitch SE-6
-AccelePort EPC
-VMIVME-7587
-Timer/SRAM FPGA
-VMICPCI5588 Reflective Memory Card
-VMICPCI5588
-Reflective Memory Card
-VMIPCI-5579
-SK-NET Gigabit Ethernet Adapter
-SK-984x
-SK-NET
-CardBus ATAPI Host Adapter
-Noservo Cntrlr
-ProMotion-AT3D
-AT25
-bbu67b 9811
-ProMotion AT25
-ProMotion AT24 GUI Accelerator
-ProVideo 6424
-ProMotion-6422
-Provideo 6422
-6410 6422
-VGA/AVI Playback Accelerator
-ProMotion 3210
-EIDE/ATAPI super adapter
-SST-128P
-Adapter
-SST-64P
-I/O Controller with secondary PCI bus
-PCI914
-i960Hx I/O Controller
-PCI913
-i960Cx I/O Controller
-PCI912
-i960Jx I/O Controller
-PCI911
-i960 Bridge / Evaluation Platform
-i960 Bridge
-STD 32 Bridge
-8905
-Printer Cntrlr
-Raceway Bridge
-DIVA Server BRI-2M/-2F
-Diva Server PRI-30M PCI v.2
-DIVA Server PRI-30M
-MaestraP
-DIVA Server 4BRI/PCI
-MaestraQ-U
-DIVA Server BRI-8M
-MaestraQ
-DIVA Server BRI-2M
-Maestra
-Eicon ISDN card using Infineon chip
-DIVA ISDN 2.02 PCI
-Eicon ISDN card using Siemens IPAC chip
-DIVA 2.01 S/T
-DIVA 2.0 U
-DIVA Pro 2.0 U
-DIVA 2.0 S/T
-DIVA Pro 2.0 S/T
-EiconCard P92
-EiconCard S94
-EiconCard S90
-EiconCard C91
-SAA9730
-Multi Media Bridge Scaler
-SAA7146
-Multimedia PCI Bridge
-SAA7145
-SAA7134HL
-SAA7135HL
-Multi Media Capture Device
-SAA7130HL
-TriMedia TM-1300
-Multimedia processor
-TriMedia TM1000/1100
-Multimedia Audio Device
-UCB1500
-TV deflection controller
-TDA2780AQ
-ISP1561
-SSL Accelerator
-PTD3210
-VPN IPSEC coprocessor
-PTD3000
-PCVisionPlus Image Capture Device
-video frame grabber/processor
-ICPCI
-EIDE/hdd and IDE/cd-rom Ctrlr
-ForeRunner HE
-PCA-200E
-PCA-200PC
-FireRunner PCA-200
-Frame Capture Bus Interface
-Video engine interface
-Precision MX
-IDT77V252
-MICRO ABR SAR PCI ATM Controller
-IDT77222/252
-NICStAR ATM Adapter
-IDT77201/211
-Powerbus Bridge
-SpeedStream ADSL Adapter
-ENI-30x0
-ENI-25P
-166P-MF1
-155P-MF1
-GDT Rx
-GDT7529RN/7629RN
-64-bit PCI Fibre Channel HBA
-GDT7519RN/7619RN
-GDT6529RD/6629RD
-Fibre Channel HBA
-GDT6519RD/6619RD
-GDT 8x63RZ
-GDT 8x53RZ
-GDT 8x43RZ
-GDT 8x33RZ
-GDT 8x23RZ
-GDT 8x13RZ
-GDT 4x23RZ
-GDT 4x13RZ
-GDT 7x63RN
-GDT 7x53RN
-GDT 7x43RN
-GDT 7x33RN
-GDT7558RN/7658RN
-GDT7538RN/7638RN
-64-bit PCI Wide Ultra2 SCSI HBA
-GDT7x28RN
-64-bit PCI Wide Untra2 SCSI HBA
-GDT7x18RN
-GDT 7x23RN
-GDT 7x13RN
-GDT 6x63RS
-GDT 6x53RS
-GDT 6x43RS
-GDT 6x33RS
-GDT 6x58RS
-GDT 6x38RS
-GDT 6x28RS
-GDT 6x18RS
-Disk Array Controller
-GDT 6x23RS
-GDT 6x13RS
-GDT6111RP2/6511RP2
-GDT6557RP2
-GDT6537RP2
-GDT6127RP2/6527RP2
-GDT6117RP2/6517RP2
-GDT6558RD/6658RD
-GDT6538RD/6638RD
-GDT6x28RD
-Wide Ultra2 SCSI HBA
-GDT6x18RD
-GDT6111RD/6511RD
-GDT6557RD
-GDT6537RD
-GDT6127RD/6527RD
-GDT6117RD/6517RD
-GDT6121RP/6521RP
-Ultra SCSI HBA
-GDT6111RP/6511RP
-GDT6557RP
-GDT6537RP
-Wide Ultra SCSI HBA
-GDT6127RP/6527RP
-2 Channel Wide Ultra SCSI
-GDT6117RP/6517RP
-GDT6555/6555-ECC
-GDT6535
-Wide SCSI Controller
-GDT6125/6525
-Ultra SCSI Controller
-GDT6115/6515
-GDT6557/6557-ECC
-GDT6537
-GDT6127/6527
-Wide Ultra SCSI Controller
-GDT6117/6517
-PCI 5-channel SCSI RAID Controller
-GDT6550
-PCI 3-channel SCSI RAID Controller
-GDT6530
-PCI 2-channel SCSI RAID Controller
-GDT6120/6520
-GDT6110/6510
-PCI 1-channel SCSI RAID Controller
-GDT6000/6010
-PCI SCSI RAID Controller
-GDT6000/6020/6050
-MaxPCI image processing board
-max-lc SVGA card
-DT3003-PGL
-DT3001-PGL
-Dt3005
-DT3004
-DT3003
-DT3002
-DT3001
-EN-1660
-EN-1217
-EN5251
-EN-1207D
-2400
-4 Port 10/100 UTP Fast Ethernet Adapter
-2340
-Fast Ethernet adapter
-2300
-FDDI adapter
-2200
-Powerized SMP I/O ASIC
-Firepower
-MPACT DVD decoder.
-GM90C7110VX
-Media Processor
-Mpact
-Multimedia Adapter
-SZB6120
-I-Bus Tracer for MBD
-FPGA-IBTR
-Pentium-PCI Host Bridge Core ASIC
-MCCA
-MUNICH256FM Multichnl NIC for HDLC/PPP
-PEB 20256M E
-MUNICH256 (NIC HDLC/PPP w/256 channels)
-PEB 20256 E
-PCI I/F for Telephony/Data Apps (PITA)
-PSB 4600/4610
-MUNICH128X NIC for HDLC + extensions
-PEB 20324
-DSCC4 Multiprotocol HDLC Controller
-PEB/PEF 20534
-MUNICH32X Multichannel NIC for HDLC
-PEB 20321
-Hardware Tracer for CP113E
-FPGA-CPTRE
-Hardware Tracer for CP113C / CP113D
-FPGA-CPTR
-Management Controller
-Copernicus
-PCI-WAN Adapter (SiemensCard PWAN)
-20534
-Multiprocessor Interrupt Ctrlr (MINT)
-PINC
-Tulip-Ctrlr, Power-Mgmt, Switch Extender
-SAB 82C206-N
-PCI-EIDE Adapter (2-port)
-Piranha
-EX110TX PCI Fast Ethernet Adapter
-EM110TX
-P1690Plus
-2-Port Token Ring Adapter
-p1690plus-AB
-p1690plus-AA
-PCI Host Bridge
-PCI-to-PCI Bridge (AGP 2.0/3.0)
-vt686b
-CPU to AGP Controller
-VT8363/65
-I/O APIC
-VT8366/A
-2D/3D Graphics Accelerator
-PCI-to-PCI Bridge(AGP)
-CPU to AGP Bridge
-VT82C601
-VT82C598MVP/694X
-PCI-to-PCI Bridge (AGP)
-VT8363A/65
-VT8231
-VT82C596
-VT8377
-VT8235
-VT8372
-VT8751
-VT3133
-VT8753
-VT8623
-CPU-to-PCI Bridge
-VT8375
-VT8361
-VT8233C
-Rhine III PCI Fast Ethernet Controller
-VT6105M/LOM
-VT6202
-VT8615
-VT8362
-VT8653
-VT8366/66A/67
-VT8633
-Power management
-VT82C686
-VT8233
-AC97 Modem Codec
-Rhine II PCI Fast Ethernet Controller
-VT6102
-AC97 Enhanced Audio Controller
-VT8233/33A
-AC97 Audio Codec
-VT82C686A/B
-ACPI Power Management Controller
-VT82C686A
-Rhine III Management Adapter
-VT6105M
-Power Management and SMBus Controller
-VT82C596/596A/596
-VIA Fire II 1394a OHCI Link Layer Ctrlr
-VT6306
-Rhine 10/100 Ethernet Adapter
-VT86C100A
-VT83C572
-VT82C595/97
-VT82C416
-ISA Bridge w/IDE
-82C570MV
-Amazon PCI Ethernet Controller
-VT86C926
-VT82C693
-VT82C691/693A/694X
-PCI-to-ISA bridge
-VT82C686/686A/686B
-Apollo P6
-VT82C680
-PM133 System Controller
-VT8605
-VT8601
-VT82C598
-Host Bridge (Apollo VP3)
-VT82C597
-PCI ISA Bridge
-VT82C596/596A/596B
-Apollo VP2 PCI North Bridge
-VT82C595
-VT82C586VP
-Host Bus-PCI Bridge
-VT82C585VP/VPX
-P54 Ctrlr
-82C576
-VT82C586/596/686
-82C570 MV
-VLB to PCI Bridge
-82C505
-VT8501
-VT8363/71
-VT8363A/8365
-VIA Fire 1394.A OHCI Link Layer Ctrlr
-VT6305
-MPEG-4 Decoder
-EM8475
-EM8400
-EM8300
-HPT374
-HPT371
-UDMA/ATA133 EIDE Controller
-HPT302
-UDMA/ATA133 RAID Controller
-HPT372A
-UDMA66/100 EIDE Controller
-HPT366/368/370/372
-UDMA EIDE Controller
-HPT343/345/363
-EV1938
-Audigy Gameport
-Game Port
-Audigy IEEE1394 Firewire Controller
-3D Blaster Annihilator 2
-3D Blaster Banshee PCI CT6760
-Banshee
-Soundblaster Live! 5.1
-emu10k1x
-Audigy Audio Processor
-EMU10K2
-AWE64D OEM (CT4600)
-EMU8008
-Sound Blaster Live!
-EMU10000
-Fast Wide SCSI
-INIC-950
-INIC-935
-INIC-940
-INI-9010/9010W
-Orchid Ultra-2 SCSI Controller
-INI-A100U2W
-Ultra SCSI Adapter
-INI-920
-TH6255
-Video Capture & Editing card
-Targa 1000
-NR4600 Bridge
-NDR4000
-PCI to S5U13x06B0B Bridge Adapter
-rev1.1
-Multimedia
-IDE/SCSI
-graphics board
-VCL-M
-Graphics board
-VCL-P
-Token Ring Adapter
-M815x
-Virtex-II Bridge, XC2V1000-4FG456C
-Durango PMC
-Security Adapter
-Seamont SC100
-Hammerfall
-Digi9652
-RME Digi96/8 Pad
-RME Digi 96/8 Pro
-RME Digi96/8
-RME Digi96
-PCI to H.100 audio interface
-8343176
-VGA Video Overlay Adapter
-V7310
-RT8139A/B/C
-CardBus Fast Ethernet Adapter
-RT8139B/C
-10/100 Fast Ethernet Controller
-RTL8129
-NE2000 compatible Ethernet
-RTL8029
-Frame Grabber
-Twist3
-64 bit graphics processor
-CyberPro 5050
-CyberPro 5000
-CyberPro 20xx/2000A
-TV output ram 2MB  Cyberpro2010
-CyberPro 2010
-IGA-1683
-IGA-1682
-svga
-IGA-1680
-AJAVideo NTV ITU-R.601 video stillstore
-S5933 / NTV
-Matchmaker PCI Chipset Development Tool
-PCI-IEEE1355-DS-DE interface
-PCI-DSlink
-PCI-9118
-PCI-7200
-PCI-9112
-Traquair HEPC3
-Kingsberg Spacetec Serial Output Board
-Kingsberg Spacetec Format Synchronizer
-PCI44
-Parastation
-Myrinet LANai interface chip
-LANai4.x
-Transputer Link Interface
-BBK-PCI light
-Daktronics VMax Transmitter Card
-S5933
-32-Bit PCI Bus Target Interface
-S5920
-PCI MatchMaker
-S5930/33/35
-Video Capture/Edit board
-Q-Motion pci 200
-PowerSpan II PowerPC-to-PCI Bus Switch
-CA91L8200/8260
-QSpan II PCI-to-Motorola CPU Bridge
-CA91L862A
-QSpan Motorola Processor Bridge
-CA91C860
-Power PC Single PCI Host Bridge
-Power PC Dual PCI Host Bridge
-Tsi850
-Dual-Mode PCI-to-PCI Bus Bridge
-Tsi320
-Universe/II VMEbus Bridge
-CA91C042/142
-DC-290
-DC-690c
-TRM-S1040
-IMS9129
-ATM Network Adapter
-IMS8853
-IMS8849/48
-IMS5028
-IMS5027
-IMS5026/27/28
-LP8000
-LP7000
-LP6000
-Light Pulse
-QuadroFX
-NV30GL
-GeForceFX 5800
-NV30
-GeForce3 Integrated GPU
-NV2A
-Quadro4 780 XGL
-Quadro4 980 XGL
-NV28GL
-GeForce4 Ti 4800 SE
-GeForce4 Ti 4200 with AGP8X
-GeForce4 Ti 4600 with AGP 8X
-NV28
-Quadro4 700 XGL
-NV25GL.4
-Quadro4 750 XGL
-NV25GL.2
-Quadro4 900 XGL
-NV25GL.1
-GeForce4 Ti 4200
-NV25.4
-NV25.3
-GeForce4 Ti 4400
-NV25.2
-GeForce4 Ti 4600
-NV25.1
-Quadro DCC
-NV20DCC
-GeForce3 Ti 500
-NV20BR
-GeForce3 Ti 200
-NV20DDR
-GeForce3
-NV20
-GeForce4 MX Integrated GPU
-nForce2 IGP
-Memory Controller 5
-Memory Controller 4
-Memory Controller 3
-Memory Controller 2
-Memory Controller 1
-Memory Controller 0
-AGP Host to PCI Bridge
-nForce2
-OHCI USB Controller
-ATA Controller
-Host to PCI Bridge
-nForce AGP
-HUB Interface
-nForce MCP
-Memory Controller
-nForce 2x0/415/4x0
-nForce 415/420/430
-Memory Controller (DDR)
-nForce 220/230
-nForce 420
-Memory Controller (SDR)
-nForce 220
-AGP Controller
-GeForce2 Integrated graphics
-Crush11
-Quadro4 380 XGL
-Quadro4 280 NVS
-Quadro4 580 XGL
-NV18GL
-GeForce4 MX 460?
-GeForce4 MX 420 with AGP8X
-GeForce4 MX 440SE with AGP8X
-GeForce4 MX 440 with AGP8X
-NV18
-Quadro4 500 GoGL
-NV17M-GL
-Quadro4 550 XGL
-NV17GL.3
-Quadro4 200/400 NVS
-NV17GL.2
-GeForce4 440 Go 64M
-Quadro4 500/550 XGL
-NV17GL.1
-GeForce4 460 Go
-GeForce4 420 Go 32M
-GeForce4 420 Go
-GeForce4 440 Go
-NV17M
-NV17
-GeForce4 MX 420
-NV17.3
-GeForce4 MX 440
-NV17.2
-GeForce4 MX 460
-NV17.1
-Quadro2 Pro
-NV15GL
-GeForce2 Ultra (BladeRunner)
-NV15BR
-GeForce2 Ti�(DDR)
-NV15 DDR
-GeForce2 GTS / Pro
-NV15
-Quadro2 MXR / EX / Go
-NV11GL
-GeForce2 Go / MX Ultra
-GeForce2 MX 100/200� (DDR)
-NV11DDR
-GeForce2 MX / MX 400
-NV11
-Quadro (GeForce 256 GL)
-NV10GL
-GeForce 256 Ultra
-GeForce 256 DDR
-GeForce 256
-NV10
-nForce MCP3
-nForce MCP3?
-Aladdin TNT2
-OHCI Compliant IEEE 1394 Controller
-nForce
-Audio Processing Unit (Dolby Digital)
-Audio Codec Interface
-EHCI USB 2.0 Controller
-OpenHCI USB Controller
-Networking Adapter
-SMBus Controller
-nForce MCP-T?
-nForce MCP2
-VANTA
-TNT2 Model 64 / TNT2 Model 64 Pro
-Vanta/Vanta LT
-Riva TNT2
-TNT2
-TNT2 Ultra
-TNT2 / TNT2 Pro
-Riva TNT
-Riva 128ZX
-Riva 128
-Mutara V08
-Edge 3D
-3D graphics processor
-ALICE DDL PCI adapter card (RORC)
-HIPPI source
-HIPPI destination
-32-bit S-LINK to 64-bit PCI interface
-S32PCI64
-Simple S-LINK to PMC/PCI interface
-680-1110-200/450
-Simple PMC/PCI to S-LINK interface
-680-1110-150/400
-SCI bridge  on PCI 5 Volt card
-ATT 2C15-3 (FPGA)
-SCSI (PMC)
-STAR/RD24
-Tl3c3x9
-TC4048
-lc82c115
-9619E
-MX86200
-MX86251
-MX86250
-MX987x5
-PCI/CardBus Fast Ethernet Controller
-MX98723/727
-Single Chip Fast Ethernet NIC Controller
-MX98715/725
-Fast Ethernet Adapter
-MX98713
-MX86101P
-MPEG2 R-Engine (MPEG2 Hardware Encoder)
-OHCI FireWire Controller
-IEEE1394 OpenHCI Controller
-10/100 Fast Ethernet Adapter
-MB86974
-Fast Wide SCSI Controller
-MB86606
-PCI SCSI Host Adapter (Fast Wide SCSI-2)
-MB86605
-Serial Parallel Card
-FMV-103
-IEEE-1394 OHCI PCI Controller
-ASC30C0400
-PCI Ultra 80/160 SCSI Controllers
-ASC38C0800/1600
-PCI Ultra Wide SCSI-2 Host Adapter
-ASC2300
-ASC-3150
-ASC-3050
-ASC1200
-PCI SCSI Host Adapter
-ASC1100
-RISC chipset with PCIX, AGP2X, DDR, DMA
-Articia Sa
-RISC chipset with AGP2X
-Articia S
-MagicMedia 256XL+ Audio Device
-MagicMedia 256ZX Audio Device
-MagicMedia 256AV Audio Device
-Graphic Controller NeoMagic MagicGraph128ZV+
-NM2097
-MagicMedia 256AV+
-NM2230
-MagicMedia 256XL+
-NM2380
-MagicMedia 256ZX/256M6D
-NM2360
-MagicMedia 256AV
-NM2200
-MagicGraph 128XD
-NM2160
-MagicGraph 128ZV Video Controller
-NM2093
-MagicGraph 128V
-NM2090
-MagicGraph 128
-NM2070
-Graphics Cntrlr
-SmartEther100 LAN Adapter (i82557B)
-SC1100
-FCD Cntrlr
-Bus Cntrlr
-General Purpose Cntrlr
-IDE Cntrlr
-Ethernet Adapter (NE2000 PCI clone)
-NE34
-PCI Soft Modem V92 NetoDragon
-MDV92XP NetoDragon
-ALI N5457
-PCI AC-link Controller Modem Device
-PCI AC-link Controller Audio Device
-Agere Systems AC97 Modem
-M6VLR
-M5253
-IEEE P1394 OpenHCI 1.0 Controller
-M5251
-HyperTransport to PCI Bridge
-M5249
-Aladdin V built-in PCI-to-PCI bridge
-Aladdin V PCI-to-PCI Bridge
-M1541A
-M1543 Southbridge
-PCI Bus Master IDE Controller
-m5219
-I/O (?)
-m5217h
-MS4803
-K8 North Bridge with HyperTransport
-M1687
-P4 Nouth Bridge with HyperTransport
-M1681
-Super P4 Nouth Bridge
-M1671
-M1667
-M1661
-M1651
-M1647
-M1646
-AGP System Controller
-M1644
-M1632
-Aladdin Pro III Northbridge
-Aladdin-Pro II Northbridge
-South Bridge with Hypertransport Support
-M1563
-Aladdin V AGPset South Bridge
-M1543
-Aladdin V AGPset Host Bridge
-M1535x
-ALi Aladdin IV Host Bridge
-M1531B
-Alladin III CPU to PCI Bridge
-Aladdin 2 South Bridge
-Aladdin 2 Host Bridge
-Pentium CPU to PCI Bridge
-CPU to PCI & PCI to ISA Bridge w/EIDE
-C-Media Audio Device (OEM)
-CMI8738/C3DX
-SMC34C90
-Fast ethernet controller
-83C170QF
-37C665
-EPIC/C Ethernet CardBus Integrated Ctrlr
-LAN83C175
-EPIC/XF 10/100 Mbps Fast Ethernet Ctrlr
-LAN83C170QF/171
-3CR990SVR97
-EtherLink 10/100 Server PCI with 3XP
-3CR990SVR95
-3CR990-TX-97
-EtherLink 10/100 PCI with 3XP Processor
-3CR990-TX-95
-Python-T 10/100baseTX NIC
-Fast EtherLink XL Server Adapter
-3C980-TX
-Fast EtherLink for PC Management NIC
-3C905C-TX
-Fast EtherLink 100 Fiber NIC
-3C905B-FX
-Deluxe EtherLink 10/100 PCI Combo NIC
-3C905B-COMBO
-Fast EtherLink XL 10/100
-3C905B-T4
-Fast Etherlink 10/100 PCI TX NIC
-3C905B-TX
-Fast Etherlink XL 10/100
-3C905-T4
-Fast Etherlink XL PCI 10/100
-3C905-TX
-EtherLink PCI Fiber NIC
-3C900B-FL
-EtherLink XL TPC
-3C900B-TPC
-Fast Etherlink 10Mbps Combo NIC
-3C900B-COMBO
-EtherLink XL TPO 10Mb
-3C900B-TPO
-Fast Etherlink XL PCI Combo NIC
-3C900-COMBO
-Fast Etherlink PCI TPO NIC
-3C900-TPO
-Token Ring
-Hurricane
-3CSOHO100-TX
-Global 10/100 Fast Ethernet+56K Modem
-3CCFEM656C
-FEM656B
-3CCFEM656
-10/100 LAN+56K Modem CardBus PC Card
-FEM656
-Cyclone CardBus PC Card
-3CCFE656
-MiniPCI 10/100 Ethernet+Modem56k (see devid:1007)
-3CN3AC1556B
-10/100 Fast Ethernet MiniPCI Adapter
-Megahertz 10/100 LAN CardBus
-PCI/EISA Fast Demon/Vortex
-3C597
-Fast EtherLink PCI MII
-Fast EtherLink PCI T4
-Fast EtherLink PCI TX
-3C595
-PCI/EISA 10Mbps Demon/Vortex
-3C592
-Ethernet III Bus Fast PCI
-3C590
-Cyclone Fast Ethernet CardBus PC Card
-3CCFE575CT
-3C575B
-Megahertz 10/100 LAN CardBus PC Card
-3C575
-Laptop Hurricane
-3C555
-3C450
-TokenLink Velocity XL Adapter
-3C359
-Token Link Velocity
-3C339
-AirConnect Wireless LAN PCI Card
-3CRWE777A
-V.90 Mini-PCI Modem
-3C556
-Mini-PCI 56K V.90 Modem
-0038TA <- AC101 - TF
-3COM 3C905CX-TXNM with 40-0664-003 ASIC
-3C905CX-TXNM
-1000BaseSX Gigabit Etherlink
-3C985
-Ambassador
-ATM adapter
-Horizon
-16/4 CardBus  Adapter Mk2
-Smart 100/16/4 PCI Ringnode
-Smart 100/16/4 PCi-HS Ringnode
-Presto PCI
-16/4 CardBus Adapter (Eric 2)
-Smart 16/4 Ringnode Mk1 (PCIBM1)
-Ringnode
-Ringnode (PCIBM2/CardBus)
-Ringnode (PCI1b)
-Smart 16/4
-CompactPCI Reference Design Kit for 9054
-cPCI 9054RDK-860
-CompactPCI Rapid Development Kit
-cPCI 9656RDK-860
-64-bit 66 MHz PCI Master I/O Accelerator
-PCI 9656
-PCI Rapid Development Kit for PCI 9656
-PCI 9656RDK-Lite
-High performance PCI to Local Bus chip
-PCI 9080
-PCI 9060ES
-PCI 9060SD
-PCI Bus Master Interface Chip
-PCI9060
-32-bit, 66MHz PCI Master I/O Accelerator
-PCI 9056
-PCI I/O Accelerator
-PCI 9054
-PCI 9052 Target PCI Interface Chip
-PCI 9052
-Target PCI Interface Chip
-Interface chip
-PCI9036
-PCI SMARTarget I/O Accelerator
-PCI 9030
-PCI 9080RDK-SH3
-PCI Adaptive Switch Fabric Controller
-GBP32
-CompactPCI Rapid Design Kit for PCI 9056
-cPCI 9056RDK-860
-PCI 9056 Rapid Development Kit
-PCI 9056RDK-Lite
-PCI Bus Master Prototyping Kit for 9054
-PCI 9054RDK-LITE
-Rapid Development Kit for ISA to PCI
-PCI 9052RDK-LITE
-CompactPCI Reference Design Kit for 9030
-cPCI 9030RDK-LITE
-PCI Reference Design Kit for PCI 9030
-PCI 9030RDK-LITE
-Thales PCSM Security Card
-Chrislin Industries Memory
-Daktronics VMax Quad Transmitter Card
-PCI9080
-Reference Design Kit for PCI 9054
-PCI 9054RDK-860
-Gazel R753
-Vision Systems VScom PCI-020S
-Vision Systems VScom PCI-010S
-Vision Systems VScom PCI-200
-Vision Systems VScom PCI-210
-Vision Systems VScom 400
-Vision Systems VScom 800
-PCI 9050
-ISDN card
-Gazel R685
-PCI 9080RDK-960
-PCI 9080RDK-860
-Integrated PowerPC I/O Processor
-IOP 480
-PCI 9080RDK-401B
-PCI Reference Design Kit for PCI 9080
-PCI 9080RDK-RC32364
-Velocity 128 3D
-PCI-to-CardBus bridge
-DB87144
-Graphics Controller
-W83C553F/554F
-Sonata bus master PCI-IDE controller
-W83789F
-PCI-ide mode 4.5 Cntrlr
-sl82c103
-EIDE Busmaster Controller
-SL82C103
-Laptop Chipset ISA Bridge
-Laptop Chipset CPU Bridge
-CPU to PCI Bridge (Pentium)
-ACC 2056/2188
-G-net NT
-O2 1394
-ASDE
-Fibre Channel
-Cesium
-Dual JPEG 5
-Dual JPEG 4
-Dual JPEG 3
-Dual JPEG 2
-Dual JPEG 1
-Lithium
-Magic Carpet
-SGH PSHAC GSN
-GRIP
-Video I/O
-Gigabit Ethernet
-DiVO VIP
-RPCEX
-HPCEX
-RAD Audio
-O2 MACE
-IOC3
-Linc
-Crosstalk to PCi Bridge
-64-bit GUI Accelerator
-128-channel HDLC Controller
-Bt8474
-32/64-channel HDLC Controllers
-Bt8471/72
-ATM Segment/Reassembly Controller (SRC)
-BtV 8230
-BtV 2165
-Display Adapter
-BtV 2164
-BtV 2125
-BtV Mediastream Controller
-BtV 2115
-Video Capture (Audio Section)
-Video Capture (10 bit High qualtiy cap)
-Bt880
-Bt879
-MediaStream Controller
-Bt879KHF
-Bt878
-Video Capture
-Bt849
-TV/PCI with DMA Push
-BT848
-QD8580
-QD8500
-EIDE Controller (single FIFO)
-SATARaid Controller
-SiI 3112
-UltraATA/133 EIDE Controller
-SiI 0680
-USB0673
-PCI-USB ASIC
-USB0670
-Fast SCSI-II Ctrlr
-PBC0650A
-Ultra ATA/100 PCI to IDE/ATA Controller
-PCI-649
-Bus Master Ultra DMA PCI-IDE/ATA Chip
-PCI-648
-PCI0647
-bus master IDE
-PCI0646
-PCI EIDE controller
-PCI0643
-IDE Cntrlr w/RAID 1
-PCI0642
-PCI EIDE Adapter with RAID 1
-PCI0640
-PCI0640A/B
-2-port RS-232 Serial Interface Board
-PCI-232/2
-GPIB Controller Interface Board
-PCI-GPIB
-IMAQ-PXI-1411
-IMAQ-PXI-1422
-IMAQ-PCI-1422
-IMAQ-PCI-1411
-IMAQ-PXI-1407
-IMAQ-PCI-1407
-IMAQ-PCI-1413
-IMAQ-PCI-1424
-IMAQ-PXI-1408
-IMAQ-PCI-1408
-PCI-6035E
-PCI-6025E
-PCI-6024E
-PCI-6023E
-PCI-6503
-PCI-6071E
-PCI-6033E
-PCI-6031E
-Data Acquisition Device
-PCI-6602
-Multifunction Data Acquisition Card
-PCI-6032E
-PCI-MIO-16E-4
-PCI-MIO-16E-1
-PCI-MIO-16XE-10
-High Speed Digital I/O Board
-PCI-DIO-32HS
-24MIO  6-03-2
-PCI-MIO-16XE-50
-Multifunction data acquisition board
-PCI-1200
-data adquisition input and output
-PCI-DIO-96
-Diamand Technology DT0398
-Monster Sound
-Supra Express 56i Pro CW #2
-Stealth 64
-Stealth 64 Video
-Stealth Video
-Stealth 64/SE
-Stealth SE
-Maximum
-Viper V330
-SupraExpress 56i Pro VCC
-SUP2760
-SupraExpress 56i Pro
-WinModem
-Supra 2260
-Viper V550
-SpeedStar 64
-SpeedStar Pro SE
-Motion JPEG Codec
-Powerstorm 4D50T
-Proprietary bus Bridge
-3D graphics frame buffer
-3D graphics processor w/texturing
-3D Graphics Processor
-Hummingbird
-UltraSPARC IIe
-Sabre
-UltraSPARC IIi
-PCI Bus Module
-Schizo
-UPA to PCI Interface (UPA)
-STP2223BGA
-Co-processor
-SunPCI
-UltraSPARC-IIi Advanced PCI Bridge
-SME2411
-Sun Gigabit Ethernet Card
-RIO USB
-RIO 1394
-RIO GEM
-RIO EBUS
-Happy Meal Ethernet
-PCI Input/Output Controller
-PCIO
-SPARC EBUS
-ATM Adapter
-155 Mbit ATM Adapter
-OC-6151/52
-10/100 Ethernet Controller
-OC-2327/50
-OC-2326
-PCI/II Ethernet Controller
-OC-2183/85
-Ethernet PCI/II 10/100 Controller
-OC-2325
-OC-2805
-RapidFire Token-Ring 16/4 PCI Adapter
-OC-3150
-RapidFire HSTR 100/16/4 Adapter
-OC-3540
-OC-3141
-RapidFire Token Ring 100 Adapter
-OC-3530
-GoCard Token Ring 16/4 Adapter
-OC-3250
-RapidFire Token Ring 16/4 Adapter
-OC-3139/40
-Fastload 16/4 PCI/III Token Ring Adapter
-OC-3139f
-Token-Ring 16/4 PCI Adapter
-OC-3136/37
-Model 2106
-dataBLIZZARD
-VME Bridge
-Model 618
-PCI-VME Bus Adapter
-Model 617
-Datalaster Interface for OBD automotive
-UsbDgn
-PCI Enhanced IDE Adapter
-FR710
-Radius PCI to NuBUS Bridge
-82C693
-Cypress CY82C691
-82C596/9
-1138
-EIDE Bus Master Controller
-EIDE Ctrlr
-SL82C105
-PMC Quad T1/E1/J1 Communications Ctrlr
-4539
-PMC ATM Over T3/E3 Communications Ctrlr
-4531S-000/001
-4532-000/003
-4532-001/004
-PMC ATM Over OC-3/STM-1 Comm Controller
-4532-002/005
-PMC T1/E1/J1 Communications Controller
-4538
-CompactPCI T1/E1/J1Communications Ctrlr
-6535
-5536-2P-PRI
-5536-4P-BRI-U
-5535-2P-PRI
-5535-1P-PRI
-5535-1P-SR-U
-5535-1P-SR-ST
-5535-1P-SR
-5535-4P-BRI-U
-5535-4P-BRI-ST
-(i)chipSAR+ 155 MBit ATM controller
-4575/5525/5575/6575
-x526
-Fibre Channel Host Adapter
-5526
-100 vg anylan Cntrlr
-FRED Local Bus I/F to PCI Peripheral
-FLIPPER
-Graphic GLU-Logic
-P86C850
-Expansion Bus
-Video Controller
-XpressAUDIO
-SMI status and ACPI timer
-ISA bridge
-Cx5530
-Cyrix Integrated CPU
-MediaGXm MMX
-Cx5520
-Fibre Channel Adapter
-ISP 2312
-64-bit PCI FC-AL Adapter
-ISP 2300
-PCI Fibre Channel Adapter
-QLA2200
-64-bit Fibre Channel Adapter
-QLA2100
-Fast!SCSI Basic Adapter
-ISP2020A
-ISP1280
-ISP1240
-Dual Channel Ultra3 SCSI Processor
-ISP12160
-SCSI Host Adapter
-ISP1080
-ISP1022A
-Fast-wide SCSI - Sparc PCI
-ISP1040B/1020A
-Single Channel Ultra3 SCSI Processor
-ISP10160
-Nx586 Chipset
-82C500/1
-Digital Mixing Card
-DS2416
-Sound system
-SW1000XG
-DS-1 Audio
-DS-1E PCI Audio Controller
-YMF754B
-DS-1 PCI audio controller
-YMF744B-V
-Yamaha Onboard Sound System
-YMF724F
-DS-1L PCI audio controller
-YMF740C
-DS-1L PCI Audio Controller
-DS1 Audio
-PCI Audio Controller
-YMF724
-YMF740
-RPA3 3D-Graphics Controller
-YGV615
-3D graphics Cntrlr
-100-BaseT LAN Controller
-PCI LAN Controller
-Dual Window Graphics Accelerator
-PowerPC ISA/PCI Motherboard
-Dual Pentium ISA/PCI Motherboard
-UniNorth/Pangea
-Internal PCI
-UniNorth 1.5
-USB Interface
-Pangea
-GMAC
-Mac I/O controller
-Ethernet controller
-UniNorth GMAC
-AGP interface
-USB controller
-KeyLargo
-FireWire Controller
-UniNorth
-Paddington
-Heathrow
-Mac I/O Controller
-Hydra
-Host-PCI bridge
-OHare
-Video-in
-PlanB
-Control Video
-Grand Central
-PowerPC Host-PCI Bridge
-Bandit
-eXtremeRAID Disk Array
-eXtremeRAID support device
-1100
-AcceleRAID 170
-i960
-DAC960PJ 3 ch SCSI RAID Controller
-DAC960PJ
-DAC960PD 3 ch SCSI RAID Controller
-DAC960PD
-DAC960P 3 ch SCSI RAID Controller
-DAC960P
-VolumePro Volume Rendering Accelerator
-VG500
-PC87550
-Nile-II PCI to PCI Bridge
-PT80C525
-Nile PCI to PCI Bridge
-PT80C524
-Vesuvius V3-LS ISA Bridge
-PT86C523
-Vesuvius V1-LS System Controller
-PT86C521
-VL Bridge
-PT80C826
-Realtek 8139C Network Card
-IIT3204/3501
-AGX013/016
-UM8891N
-PCI / ISA Bridge
-ISA Bridge w/EIDE
-UM8886N
-Fast Ethernet
-UM9026
-UM9018
-Ethernet
-UM9017F
-586 Chipset
-UM8891
-ISA Bridge (w/o IDE support)
-UM8886
-UM8881F
-ISA Bridge with EIDE
-UM8886A
-Pentium CPU/ISA Bridge
-Pentium CPU/PCI Bridge
-PCI/ISA Bridge
-CPU/PCI Bridge
-VGA Cntrlr
-UM8710
-EIDE Master/DMA
-UM8886BF
-IDE Cntrlr (dual function)
-UM886A
-Pentium CPU to PCI bridge
-UM82C891
-UM8886F
-HB4 486 PCI Chipset
-UM8881
-UM8673F
-UM82C886
-486 Chipset
-UM82C881
-Revolution IV
-Revolution 3D
-Imagine 128 Series 2
-I128s2
-Imagine 128
-SBFastTrak SX6000 EIDE Controller
-PDC20277
-FastTrak TX4000 Controller
-FastTrak TX2000 EIDE controller
-PDC20271
-FastTrak100 TX2/TX4/LP EIDE controller
-PDC20268R
-DC5300
-MBUltra133 EIDE Controller
-PDC20276
-Ultra133TX2 EIDE Controller
-PDC20269
-PDC20268
-Ultra66 EIDE Controller
-PDC20262
-FastTrak Ultra ATA RAID controller
-PDC20246
-Ultra100 EIDE Controller
-PDC20267
-FastTrak 376 Controller
-PDC20376
-PDC20375?
-FastTrak SATA150 TX2plus Controller
-PDC20371?
-PDC20319?
-FastTrak SATA150 TX4 Controller
-PDC20318?
-FastTrack TX EIDE Controller
-PDC20275
-FastTrak66 EIDE Controller
-PDC20263
-Ultra100 EIDE controller (on M/B)
-PDC20265
-Security Co-Processor
-MPC190
-PCI Fax Voice Modem
-PCI Modem
-PCI Speakerphone/Data,Fax  Modem
-SM56
-HotSwap Controller
-CPX8216T
-CPX8216
-Hawk
-Falcon
-PowerPC Chipset
-Raven
-56IVMR/Phoenix 56ISM
-PowerQUICC II PCI Bridge
-MPC8265A/66
-24-Bit Digital Signal Processor
-DSP56305
-24-bit Digital Signal Processor
-DSP56301
-100VG Ethernet Controller
-KTI829c
-HCF-PCI
-MC145575
-MPC8245
-PCI Bridge/Memory Controller for PPC
-MPC107
-Integrated Processor
-MPC8240
-PCI Bridge/Memory Controller (PCIB/MC)
-MPC106
-PCI Bridge / Memory Controller (PCIB/MC)
-MPC105
-Victory66 Power Management Controller
-Victory66 USB Host Controller
-Victory66 UDMA EIDE Controller
-Victory66 PCI to ISA Bridge
-Ultra ATA/66 IDE Controller
-SLC90E66
-Pentium/p54c host Bridge
-EFAR 486 host Bridge
-SuperH (SH) 32-Bit RISC MCU/MPU Series
-SH7751
-PCI bus Cntrlr
-Motorola MC145575
-Video Graphics Controller With TV Encode
-W9971CF
-VGA controller
-W9970CF
-H.263/H.261 Video Codec
-W9961CF
-W9960CF
-ISDN Controller
-W9922PF
-PCI BusISDN S/T-Controller
-W6692/92A/92CF
-ELANC-PCI Twisted-pair Ether-LAN Ctrlr
-W89C940F
-winbond pci ethernet
-w89c940f
-100/10Mbps Ethernet Controller
-W89C840F
-PCI to ISA Bridge Set
-W83628F/629D
-W82C105
-Ethernet Adapter
-W83769F
-Ethernet Controller (NE2000 compatible)
-004005-34c8c8
-Multi I/O
-iatca8392
-OTI-610
-OTI-64317
-OTI-64217
-Video Adapter
-Spitfire VGA Accelerator
-OTI107
-OTI-64017
-Modem
-Rockwell HCF 56K
-OHCI i.LINK (IEEE 1394) PCI Host Ctrlr
-CXD3222
-i.LINK FireWire PCI Host Controller
-CXD1947
-12C01A
-FireWire Host Controller
-PCI-DSP Bridge Controller
-PCI2040
-PCI1610
-PCI1621
-PCI1515
-PCI1530
-PCI1510
-PCI1520
-PCCard CardBus Controller w/UltraMedia
-PCI1620
-PCI1421
-PCI1451
-PCI1420
-PC card cardBus Controller
-PCI1410
-PCCard CardBus Controller
-PCI4520
-PCI4510
-PCI4550
-PCI2050/2050I
-PCI2250
-PCI2032
-PCI2031
-PCI2030
-PCI1251B
-High Performance PC Card Controller
-PCI1211
-PCI1251A
-PCI1225 GHK/PDV
-PCI1450
-PCI1210
-PCI1221
-PCI1260
-PCI1220
-PC Card CardBus Controller
-PCI1250
-Dual Socket PCI CardBus Controller
-PCI1131
-PCI-TO-PC CARD16 CONTROLLER UNIT
-PCI1031
-PC card CardBus Controller
-PCI1130
-PCI1030/1053
-PC Card Controller
-PCI1050
-HyperSAR Plus w/PCI host & UTOPIA i/f
-TNETA1575
-32-bit PCI ATM SAR
-TDC1561
-64-bit PCI ATM SAR
-TDC1570
-802.11b+ 22Mbps Wireless Adapter
-PCI4451
-TSB43AB21
-IEEE 1394a-2000 OHCI PHY/Link Layer Ctrl
-TSB43AB23
-IEEE1394a-2000 OHCI PHY/Link-Layer Ctrlr
-TSB43AB22/A
-1394a-2000 OHCI PHY/Link Layer Ctrlr
-TSB43AA22
-TSB12LV26
-TSB12LV23
-PCI4410
-OHCI-Lynx IEEE 1394 Controller
-PCI4450
-OHCI-Lynx PCI IEEE 1394 Host Controller
-TSB12LV22
-LYNX IEEE1394 FireWire Host Controller
-TSB12LV21
-AGP Permedia 2
-TVP4020
-Permedia
-TVP4010
-TI PCI Eagle i/f AS
-PCI interface for TI380 compressors
-TI380PCI
-ThunderLAN 100 Mbit LAN Controller
-TNETE100A/110A/211
-Flashpoint LT/DL/LW/DW Ultra (Wide) SCSI
-BT-930/32/50/52
-Multimaster
-BA80C30
-Multimaster NC (SCSI-2)
-BT-946C
-MPEG-II Video Decoder
-PCI 10/100 Ethernet Controller
-STE10/100A
-STG 1746X
-ADSL
-ST70137
-STPC Consumer-II
-STPC Consmr-S/Elite
-STPC Atlas
-STPC Atlas/Elite
-North/South Bridges
-STPC Consmr/Indstrl
-PowerVR KYRO series 3 graphics processor
-STG4000
-STG 1764X
-STG 2000X
-ELSA GLoria XL
-QuickStep 3000
-Quick Step 1000
-NVidia Geforce 2 MX
-Elsa Gladiac MX
-Ultra DMA IDE controller
-PCI bus master IDE controller
-82C825
-MachOne integrated PCI audio processor
-82C935
-82C895
-FireLink 1394 OHCI Link Controller
-82C881
-FireLink PCI-to-USB Bridge
-82C861/2/3
-CPU-to-PCI and PCI-to-ISA Bridge
-82C832
-PCI-to-ISA Bridge
-82C825 function 0
-FireFox 32-Bit PC Card Controller
-82C824
-CPU to PCI & PCI to ISA PnP bridge
-82C822
-FireBridge II Docking Station Controller
-82C814
-FireStar mobile chipset: host bridge
-FireStar chipset, PCI-ISA bridge???
-82C700
-PCI IDE Controller (PIC)
-82C621
-Pentium to PCI Bridge
-82C579
-Vendetta chipset: ISA bridge
-Vendetta chipset: host bridge
-82C558
-CPU Bridge (Viper)
-82C557
-Viper
-82C556
-LCD GUI Accelerator
-82C178
-82C264
-PCI USB Controller
-82C750
-SmartRAID Controller
-Raptor
-I2O SmartRAID V Controller
-SmartCache III/RAID SCSI Controller
-2124A/9X
-RAID Engine
-Domino
-Cologne Chip
-HFC-S PCI A
-AGP controller
-CPU to PCI bridge
-Samurai-DDR
-Samurai 64M2
-MT82P664
-Samurai IDE device
-Samurai device 1
-Samurai device 0
-37C922
-IDE Ctrlr
-RZ1000
-EIDE
-FDC 37C665
-64 bit, 66/50MHz CompactPCI Analyzer&Exerciser
-E2940A
-64Bit, 66MHz PCI Exerciser/Analyzer
-E2928A
-64 Bit, 66/50MHz PCI Analyzer & Exerciser
-E2927A
-64 bit PCI Bus Exerciser and Analyzer
-E2926A
-32 bit PCI Bus Exerciser and Analyzer
-E2925A
-PCI Host Interface Adapter
-E2924A
-Fast Host Interface
-PCI Bus Exerciser
-E2910A
-Local Bus Adapter
-System Bus Adapter
-NetServer PCI COM Port Decoder
-NetServer Legacy COM Port Decoder
-NetServer SMIC Controller
-NetServer PCI Hot-Plug Controller
-10/100 NIC
-82557B
-Remote Control
-TopTools
-NetServer Smart IRQ Router
-PCnet Ethernet Controller
-79C970
-EL-10 Ethernet Adapter
-J3242A
-DIVA2
-DIVA1
-DeskDirect 10BaseT/2 NIC
-J2970A
-DeskDirect 10/100VG NIC
-DeskDirect 10BaseT NIC
-J2973A
-DeskDirect 10/100 NIC
-J2585B
-DeskDirect 10/100VG LAN Adapter
-J2585A
-Tachyon TS Fibre Channel Host Adapter
-Tach TS
-Tachyon XL2 Fibre Channel Adapter
-HPFC-5200B
-Tachyon TL Fibre Channel Adapter
-Hewlett-Packard VisualizeFX Series Video
-hpVisualizeFX
-Donner GFX
-Visialize EG
-A4977A
-SiS730
-Hardware Audio
-SiS7018
-10/100 Ethernet Adapter
-SiS7016
-Software Audio
-56k Modem
-SiS7013
-PCI Audio Accelerator
-SiS7012
-OHCI Compliant FireWire Controller
-Memory Stick Controller
-SiS551/2
-USB 2.0 Enhanced Host Controller
-SiS7002
-AGP/PCI Graphics & Video Accelerator
-SiS 86C326
-GUI 2D/3D Accelerator
-SiS650/651/740
-Integrated 3D VGA Controller
-SiS530/620
-SiS630/730
-Graphics
-SiS6236
-SiS 6225
-PCI VGA Controller
-SiS6205
-video decoder/mpeg interface
-SiS6204
-SiS600
-Host to PCI bridge
-SiS5597
-PCI, Memory & VGA Controller
-SiS5596
-PCI AGP & CPU Memory Controller
-SiS 5591/5592
-SiS5582
-p5 chipset
-SiS 5581
-Memory/PCI bridge
-SiS5571
-SiS5517
-PCI IDE Controller
-PCI/ISA System Memory Controller
-SiS5511/5512
-486 PCI Chipset
-SiS5401
-Hot Docking Controller
-SiS5107
-IDE Controller
-SiS83C602
-SiS963
-Fast Ethernet/Home Networking Ctrlr
-SiS900
-SiS746
-SiS745
-SiS 740
-SiS 735
-SiS 730
-SiS655
-SiS651
-SiS 650
-SiS648
-SiS645DX
-SiS 645
-SiS 640
-SiS 635
-SiS630
-SiS620
-PCI EIDE Controller
-SiS83C601
-EIDE Controller (step C)
-SiS5513
-Pentium PCI chipset with IDE
-SiS596
-SiS550/1/2
-Host-to-PCI Bridge
-SiS540
-Host-to-PCI bridge
-SiS530
-85C496
-85C501
-Xabre 2D/3D Accelerator
-SiS330
-2D/3D Accelerator
-SiS325
-SiS 315
-2D/3D/Video/DVD Accelerator
-SiS305
-GUI Accelerator+3D
-SiS300/305/630
-SiS 6205
-PCI Graphics & Video Accelerator
-SiS 6215
-Onboard Graphics Controller
-SiS5597/98
-PCI to ISA Bridge (LPC Bridge)
-SiS950
-Power Management Unit (PMU)
-SiS 5595
-PCI System I/O (PSIO)
-SiS 85C503
-PCI/ISA Cache Memory Controller (PCMC)
-SiS 85C501
-Pentium chipset
-PCI True-Color Graphics Accelerator
-SiS 6201/02
-Virtual PCI-to-PCI bridge (AGP)
-SiS 530
-TMC-18C30
-IEEE1394 OHCI 1.1 3-port PHY-Link Ctrlr
-uPD72874
-IEEE1394 OHCI 1.1 2-port PHY-Link Ctrlr
-uPD72873
-USB 2.0 Host Controller
-uPD720100A
-uPD72871/2
-IEEE1394 1-Chip OHCI Host Controller
-uPD72870
-64-bit CPU with Northbridge
-VR4122
-Vrc5476
-56k Voice Modem
-PowerVR series II graphics processor
-PowerVR Neon 250
-Firewarden IEEE1394 OHCI Host Controller
-uPD72862
-Nile 4
-Vrc5074
-PoverVR PCX2
-NAPCCARD CardBus Controller
-uPD66369
-NEASCOT-S40C ATM Light SAR Controller
-uPD98409
-USB Host Controller
-uPD9210FGC-7EA
-PoverVR
-3D Accelerator
-PoverVR PCX1
-Nile I
-Vrc4373
-NEASCOT-S20 ATM Integrated SAR Ctrlr
-uPD98405
-Nile II
-graphic Cntrlr for 98
-GUI Accelerator (vga equivalent)
-PCI to ux-bus Bridge
-PCI to 486 like peripheral bus Bridge
-PCI bus Bridge
-R4000
-PCI to VL98 Bridge
-PCI to 486 like bus Bridge
-upD98409
-MiroVIDEO DC10/DC30
-Media 3D
-video in and out with motion jpeg compression and deco
-I/O & JPEG
-MiroVIDEO DC20
-ATM PCI Adapter
-Meteor 155
-r4x00
-3328
-69030
-PCI Flat Panel/CRT VGA Accelerator
-65560
-68555
-HiQVision Flat Panel/CRT GUI Controller
-GUI Controller
-68554
-VGA GUI Accelerator
-65555
-Flat Panel/LCD CRT GUI Accelerator
-65554
-LCD/CRT controller
-65550
-65548
-Flat Panel/CRT VGA Controller
-65540
-Flat panel/crt VGA Cntrlr
-65545
-AGP/PCI Flat Panel/CRT VGA Accelerator
-69000
-Wingine DGX - DRAM Graphics Accelerator
-64310
-10/100 Multiport Switch NIC
-Shark
-Video Capture Card
-Meteor 2 STD/MC/Dig
-AGP Chipset
-MGA-G550
-GUI+3D Accelerator
-Fusion Plus G800 AGP
-Fusion G450 AGP
-Twister AGP
-Twister
-MGA-G100
-Athena GUI accelerator
-Parhelia AGP
-Toucan/Condor
-MGA-G400/450
-MGA-G200
-Eclipse/Calao
-MGA-G200B
-MGA2164WA-B
-Chinook
-MGA-1164SG
-Mistral
-MGA-21164W
-Hurricane/Cyclone 64-bit graphics chip
-MGA 1064SG
-Strorm GUI Accelerator
-MGA-2064W
-Atlas GUI Accelerator
-MGA-PX2085
-Impression?
-MGA-I
-ATMizer II+ ATM SAR Chip
-L64364
-i486 Chipset
-ASPEN
-P5 Chipset
-HYDRA
-Embedded Systems Management Device 4
-Remote Assistant Card 3
-PowerEdge 3/Si
-PowerEdge 3/Di
-Expandable RAID Controller
-PowerEdge 2 /Si
-PCI PMU Power Management Controller
-M7101
-M5453 AC-Link Controller Modem Device
-M5453
-PCI AC-Link Controller Audio Device
-M5451
-Floppy Disk Controller
-General Purpose Controller
-PCMCIA Bridge
-PCI USB Host Controller
-M5237
-M5235
-M5229
-M5225
-M5219
-I/O Controller
-M5217
-M4803
-MPEG Decoder
-M3309
-MPEG-1 Decoder
-M3307
-M3151
-M3149
-M3147
-M3145
-M3143
-M3141
-PCI North Bridge Aladdin Pro IV
-M1641
-PCI North Bridge Aladdin Pro III
-M1631
-PCI North Bridge Aladdin Pro II
-M1621
-Northbridge
-M1561
-PCi South Bridge Aladdin IV+/V
-M1543C
-AGP+PCI North Bridge
-M1542
-AGP PCI North Bridge Aladdin V/V+
-M1541
-PCI South Bridge
-M1535
-ISA South Bridge
-M1533
-M1531
-M1523
-M1521
-M1513
-M1512
-M1511
-M1489
-P54C Chipset
-M1461
-Pentium Chipset
-M1451
-M1449
-VL Bridge & EIDE
-M1445
-CPU to PCI & PCI to ISA Bridge
-M1435
-HCF 56k PCI Modem
-R6785-61
-CyberBlade XPm
-CyberBlade XP
-Blade 3D 9880
-3D Image 9850 AGP
-TGUI9785
-TGUI9783
-Image GUI Accelerator
-TGUI975?
-Wave Video Accelerator
-TGUI9753
-trident dgi
-3DImage 9750 PCI/AGP
-ProVIDIA 9685
-TGUI9683
-Multimedia Accelerator
-TGUI9682
-TGUI9680
-TGUI9660XGi
-Video Acclerator
-Cyber9540
-Cyber9525
-Cyber9520
-TGUI9470
-TGUI9460
-DGi GUI Acclerator
-TGUI9440
-TGUI9430
-DGi GUI Accelerator
-TGUI9420
-Cyber9397DVD
-Cyber9397
-Cyber9388
-Video Accelerator
-Cyber9386
-Cyber9385
-Cyber9383
-Cyber9382
-Flat panel Cntrlr
-TGUI9350
-32-bit GUI Accelerator
-TGUI9320
-CyberBlade XPAi1
-CyberBlade-A i1
-CyberBlade i1 AGP
-AGP 51 (77?)
-CyberBlade i1
-CyberBlade i7 AGP
-CyberBlade i7
-PCI Audio
-4DWAVE-NX
-advanced PCI DirectSound accelerator
-4DWAVE-DX
-CardBus Controller
-82C194
-AC97 Audio Controller
-ACPI Controller
-SMBus 2.0 Controller
-UltraATA/133 Controller
-OpenHCI USB Host Controller
-Enhanced USB Controller
-Ethernet Controller
-USB 2.0 Controller
-AMD-8111
-AGP Bridge
-System Controller
-AMD-8151
-AC97 Modem
-AC97 Audio
-System Management
-LPC Bridge
-AMD-768
-USB OpenHCI Host Controller
-Enhanced IDE Controller
-PCI to ISA/LPC Bridge
-AMD-766
-Power Management
-PCI-ISA Bridge
-AMD-756
-PCI to USB Open Host Controller
-Power Management Controller
-Bus Master IDE Controller
-AMD-755
-CPU to AGP Bridge  (AGP 4x)
-North Bridge
-AMD-761
-CPU to PCI Bridge (AGP 4x)
-CPU to PCI Bridge (SMP chipset)
-AMD-762
-AGP and PCI-to-PCI Bridge (1x/2x AGP)
-Processor-to-PCI Bridge / Memory Ctrlr
-AMD-751
-ELAN SC520 Rev. B0
-Ethernet & SCSI Ctrlr
-79C974
-SCSI Ctrlr
-53C974
-PCnet-Home Networking Ctrlr (1/10 Mbps)
-Am79C978
-PCnet LANCE PCI Ethernet Controller
-Am79C970/1/2/3/5/6
-MegaRAC
-Ultra GT RAID Controller
-MegaRAID 434
-Multimedia card
-SCSI Controller
-IDE and SCSI Cntrlr
-EIDE Controller
-Ultra Wide SCSI RAID Controller
-MegaRAID 428
-i960RP Microprocessor
-80960RP
-Pipeline 9712
-Pipeline 9710
-Wide Fast-20 Bridge
-WD34C296
-Fast Wide SCSI bridge
-Fast-wide SCSI-II
-WD7197
-Fast SCSI-II
-WD7193
-high perf 16-bit SCSI Cntrlr
-WD33C296A
-16-bit SCSI Cntrlr
-WD33C197A
-PCI-SCSI Bridge
-WD33C196A
-8-bit SCSI Cntrlr
-WD33C193A
-??? Raid Controller ???
-Altera FLEX
-100VG/AnyLAN Adapter
-8156
-SPEA 3D Accelerator
-MPIC 2
-PCI-X Host Bridge
-PLB to PCI-X Bridge
-440GP
-Morpheus SCSI RAID Controller
-ServeRAID 4/5
-PCI-X Bridge R1.1
-IBM 133
-Rasterizer/IBM GT1000 Geometr
-RC1000
-PLB to PCI Bridge
-405GP
-Video Compositor Output
-Video Compositor Input
-Yotta
-Raid controller
-Remote Supervisor+Serial Port+Mouse/Keyb
-PCI-32 Bridge
-PCI-64 Bridge
-CPC710
-Memory Controller and PCI Bridge
-CPC700
-Adapter 2 Token Ring Card
-02li537
-ATM 622Mbps Controller
-256-bit Graphics Rasterizer
-GXT2000
-ATM 155Mbps MM Controller
-ATM support device
-PowerNP NPr2.7
-Chukar chipset SCSI Controller
-PCI Docking Bridge
-20H2999
-GXT-3000P
-MPEG-2 Decoder
-3780IDSP
-TCP/IP networking device
-05J3506
-10/100 PCI Ethernet Adapter
-i82557B
-MPEG PCI Bridge
-25 MBit ATM controller
-ATM Controller
-Warhead SCSI Controller
-Interrupt Controller
-MPIC
-SSA Adapter
-16/4 Token Ring PCI IBM UTP/STP Ctrlr
-85H9533
-PowerPC to PCI Bridge and Memory Ctrlr
-IBM27-82660
-32-bit LocalBus Bridge
-Miami/PCI
-Coppertime RAID SCSI Adapter
-ServeRAID I/II/3x/4H
-Python
-82351/2
-scsi-2 fast pci adapter
-82G2675
-Graphics Adapter
-GXT-150P
-TR Auto LANStreamer
-Auto LANStreamer
-ISA Bridge w/PnP
-Fire Coral
-Alta MP
-Alta Lite
-MCA Bridge
-CrystalClear PCI Audio Interface
-CS4281
-CS4615
-CS4610/14/22/24/30
-CrystalClear SoundFusion PCI Audio Accel
-CS4610
-Communications Controller
-CL-CD4400
-Nordic-lite VGA Cntrlr
-CL-GD7541
-Viking GUI Accelerator
-CL-GD7543
-Nordic GUI Accelerator
-CL-GD7542
-PCI-to-CardBus Host Adapter
-CL-PD6833
-CL-PD6834
-PCMCIA/CardBus Controller
-CL-PD6832
-PCI-to-PC Card host adapter
-CL-PD6729
-CL-GD5436U
-CL-GD5465
-Laguna BD
-Laguna 3D VisualMedia Graphics Accel
-CL-GD5464
-Laguna VisualMedia graphics accelerator
-CL-GD5462
-64-bit SGRAM GUI accelerator
-CL-GD5480
-64-bit VisualMedia Accelerator
-CL-GD5446
-CL-GD5436
-CL-GD5434
-Alpine GUI Accelerator
-CL-GD5432
-CL-GD5340
-64-bit Accelerated LCD/CRT Controller
-CL-GD7556
-Flat Panel GUI Accelerator
-CL-GD7555
-GUI-Accelerated XGA/SVGA LCD Controller
-CL-GD7548
-Core Logic for SA-110 Microprocessor
-21285
-PCI-to-PCI Bridge
-21554
-DC21553
-CardBus
-Modem56
-21154
-21153
-DC21151/2
-DC21150
-DC21150-AA
-21052[-AB]
-PCI/CardBus 10/100 Mbit Ethernet Ctlr
-DC21142/3
-DGLPB
-Tulip Plus Ethernet Adapter
-DC21041
-FDDI
-DEFPA
-TGA2 PDXGB
-TGA2
-PCI Integrated Graphics & Video Accel
-DC21130
-Video Codec
-DC21230
-Fast Ethernet Ctrlr
-DC21140
-SCSI to SCSI Adapter
-KZPSA
-NV-RAM
-Zephyr
-PCI Graphics Accelerator
-DC21030
-Tulip Ethernet Adapter
-DC21040
-PCI-PCI Bridge
-DC21050
-P9100
-WeitekPower GUI Accelerator
-P9000
-South Bridge
-STPC Client
-ET6300
-Graphics/Multimedia Engine
-ET6000
-ET4000W32P-D
-ET4000W32P-C
-ET4000W32P-B
-ET4000W32P-A
-PCI-IDE Interface
-PC87410
-XBus
-Video
-Audio
-Bridge
-SCx200
-10/100/1000 Mb/s PCI Ethernet NIC
-DP83820/1
-PC87200
-MacPhyter 10/100 Mb/s Ethernet MAC & PHY
-DP83815/16
-Advanced PCI Audio Accelerator
-LM4560
-PCI System I/O
-IEEE 1394 OHCI Controller
-CS4210
-Legacy I/O Controller
-PC87560
-PCI-IDE DMA Master Mode Interface Ctrlr
-PC87415
-10/100 Ethernet MAC
-DP83810
-ALG2564A/25128A
-AL2364
-ALG2302
-ALG2301
-ALG2364A
-alg2032  63067s1
-ALG2032/2064
-Golden Gate II
-VAS96011
-Philips PSC705 GamePort Enumerator
-Philips Seismic Edge 705
-ThunderBird 16650 UART
-ThunderBird joystick port
-ThunderBird PCI Audio Accelerator
-SAA7785
-82C925
-RISC GUI Accelerator
-82C975
-IrDA Controller
-82C147
-Host Bridge
-82C535
-82C538
-PCI to PCI Bridge
-82C534
-Peripheral Controller
-82C532
-CPU to PCI Bridge for notebook
-82C543
-82C541
-82C597-AFC2
-Wildcat ISA Bridge
-82C596/597
-Wildcat System Controller
-82C594
-82C593
-CPU Bridge
-82C591/2-FC1
-US201
-PCI to AGP Bridge
-Mach 64 VT4 PCI
-Mach 64 VT3
-Mach 64 VT VIDEO XPRESSION
-215VT222
-Rage 128 Pro Ultra TU
-Rage 128 Pro TR
-Rage 128 Pro TL
-Rage 128 PRO ULTRA
-Mach 64 ST
-Rage 128 4x
-Rage 128 4x SM AGP 4x
-Rage 128 SM AGP 4x
-Rage 128 4x SL AGP 2x
-Rage 128 SL AGP 2x
-Rage 128 4x SK PCI
-Rage 128 SK PCI
-Rage 128 4x SH
-Rage 128 SG 4x AGP 4x
-Rage 128 SF 4x AGP 2x
-Rage 128 4x SE PCI
-Rage 128 VR RL AGP 2x
-Rage 128 VR RK PCI
-Rage 128 RG
-Rage Fury 16/32MB
-Rage 128 GL AGP 2x
-Rage 128 GL PCI
-Redeon 9100 Series - Secondary
-Radeon R200 Qk
-Radeon R200 Qj
-Radeon R200 Qi
-Radeon R200 Qh
-Radeon VE QZ
-Radeon 7000 / Radeon VE
-RV100
-Radeon 7500 QX
-Radeon 7500
-RV200
-Radeon R200 QN
-Radeon R200 QM
-Redeon 9100 Series
-Radeon 8500 / 8500LE
-Radeon R200 QK
-Radeon R200 QJ
-Radeon R200 QI
-Radeon R200 QH
-R200
-Radeon QG
-Radeon QF
-Radeon QE
-Radeon 7200 QD SDR/DDR
-Rage 128 Pro PX AGP 4x (TMDS)
-Rage 128 Pro PX AGP
-Rage 128 Pro PW AGP 2x (TMDS)
-Rage 128 Pro PW AGP
-Rage 128 Pro PV PCI (TMDS)
-Rage 128 Pro PV PCI
-Rage 128 Pro PU AGP 4x
-Rage 128 Pro PU AGP
-Rage 128 Pro PT AGP 2x
-Rage 128 Pro PT AGP
-Rage 128 Pro PS PCI
-Rage 128 Pro PR AGP 4x (TMDS)
-Rage 128 Pro PR AGP
-Rage 128 Pro PQ AGP 2x (TMDS)
-Rage 128 Pro PQ AGP
-Rage 128 Pro PP PCI (TMDS)
-Rage 128 Pro PP PCI
-Rage 128 Pro PO AGP 4x
-Rage 128 Pro PO AGP
-Rage 128 Pro PN AGP 2x
-Rage 128 Pro PN AGP
-Rage 128 Pro PM PCI
-Rage 128 Pro PL AGP 4x (TMDS)
-Rage 128 Pro PL AGP
-Rage 128 Pro PK AGP 2x (TMDS)
-Rage 128 Pro PK AGP
-Rage 128 Pro PJ PCI (TMDS)
-Rage 128 Pro PJ PCI
-Rage 128 Pro PI AGP 4x
-Rage 128 Pro PI AGP
-Rage 128 Pro PH AGP 2x
-Rage 128 Pro PH AGP
-Rage 128 Pro PG PCI
-Rage 128 Pro PF AGP 4x
-Rage 128 Pro PE AGP 2x
-Rage 128 Pro PD PCI
-Rage 128 Pro PC AGP 4x
-Rage 128 Pro PB AGP 2x
-Rage 128 Pro PA PCI
-Fire GL X1/Z1 AGP [Pro] Secondary Video
-Radeon 9600TX - Secondary
-Radeon 9700/9500 Series - Secondary
-ATI Fire GL X1/Z1 Video Accelerator
-Radeon 9600TX
-Radeon 9700/9500 Series
-Rage Mobility 128 AGP
-Rage Mobility 128 AGP 4x
-Radeon Mobility M9
-Radeon Mobility M9-GL
-Radeon Mobility M6 LZ
-Radeon Mobility M6 LY
-Mobility 6
-FireGL Mobility
-Radeon Mobility M7 LW
-Mach 64 LT
-Rage L Mobility PCI
-Rage P/M Mobility PCI
-Rage L Mobility AGP 2x
-Rage P/M Mobility AGP 2x
-01541014
-Rage 3D LT Pro PCI
-Rage 3D LT-G
-Mobility M3 AGP 2x
-Rage Mobility M3 AGP
-Rage 3D LT Pro AGP 66 MHz
-Rage 3D LT Pro AGP 133 MHz
-Radeon 9000 - Secondary
-Radeon 9000/9000 Pro - Secondary
-Radeon 9000
-Radeon 9000/9000 Pro
-RV250
-Rage 3D IIC
-Mach 64 GX (WinTurbo)
-210888GX
-Rage 3D IIC AGP
-3D 11C AGP
-Rage 3D IIC PCI
-Rage 3D II+
-Rage 3D II Graphics Accelerator
-Mach 64 GT
-Rage XC PCI
-Rage XL PCI
-Graphics Accelerator
-Rage 3D Pro PCI
-Rage XL PCI-66
-Rage XC AGP 2x
-Rage XL AGP 2x
-Rage XC PCI-66
-ATI ALL IN WONDER PRO (8MB)
-Rage Pro Turbo PCI
-Rage 3D Pro
-Rage 3D Pro AGP 1x
-ATI 3D Rage Pro Turbo AGP 2X
-ATI GTC (GT-C2U2)
-Mach64 VT
-Mach64 ET
-Mach64 CX
-210888CX
-Mach 64 CT
-215CT222
-Mobility M6 (U2)
-RS200M
-Radeon IGP 320M
-Lucent OHCI IEEE1394 Host Controller
-All-In-Wonder 8500DV
-R200AIW
-ATI Fire GL Z1 4P SECONDARY Video
-Fire GL Z1/Z1 Pro Video Accelerator
-Mach 32
-68800AX
-ATI Fire GL Z1 4P Video Accelerator
-Radeon 9500 Series
-R300
-Radeon Mobility A3
-Universal digital I/O PCI-Interface
-PROTO-3 PCI, digital I/O with chipselect
-PCI-MFB high-speed analog I/O
-PCI-DAC416, 4 channel D/A16bit precision
-Timer, Pulse & Counter-card 16..32 bit
-PCI-OptoRel, PCI-Relais 16 Relais & Opto
-PCI-AD, PCI-ADDA analog I/O-card
-OPTO-PCI, 16 IN / 16 OUT 24 VDC
-PCI 1616, 16 TTL-IN, 16 TTL-OUT
-ispLSI1032E
-Symbios Ultra2 SCSI controller
-53C895
-Fast SCSI Controller
-63C815
-61C102
-Gigabit Ethernet Controller
-Yellowfin G-NIC
-10/100 MBit Ethernet
-LSIFC920
-LSIFC919
-Dual Channel Fibre Channel I/O Processor
-Dial Channel Fibre Channel I/O Processor
-LSIFC929
-Fibre Channel I/O Processor
-LSIFC909
-LSI 53C8xx SCSI host adapter chip
-53C810
-LSI53C1035
-PCI-X SCSI Controller
-LSI53C1030ZC
-PCI-X to Ultra320 SCSI Controller
-LSI53C1020/1030
-PCI to Ultra160 SCSI Controller
-LSI53C1000/1010-66
-PCI to Dual Channel Ultra3 SCSI Ctrlr
-LSI53C1010-33
-PCI to Ultra SCSI Controller
-LSI53C875A
-PCI to Ultra2 SCSI Controller
-LSI53C895A
-I2O-Ready PCI RAID Ultra2 SCSI Ctrlr
-53C875/875E/876/876E
-Ultra Wide SCSI, Ethernet
-53C885
-PCI to Ultra2 SCSI I/O Processor
-LSI53C895
-LSI53C896/897
-PCI Dual Channel Wide Ultra2 SCSI Ctrlr
-LSI53C1510
-PCI to Ultra SCSI I/O Processor
-LSI53C860/860E
-53C810AP
-Fast SCSI
-53C815
-PCI to SCSI I/O Processor
-LSI53C825/825A/825AE
-Fast-wide SCSI
-53C820
-PCI-SCSI I/O Processor
-LSI53C810/810A/810AE
-LP8000 Compaq/Emulex Fibre Channel HBA
-LP7000 Compaq/Emulex Fibre Channel HBA
-ThunderLAN 2.3 NetFlex-3/P with BNC
-ThunderLAN 1.0 NetFlex-3/P
-Remote Insight Controller
-Integrated Lights Out Processor
-NC7131
-Conexant SoftK56 Modem
-CISSB
-Fast Ethernet Upgrade Module
-NC3135
-NC3134
-NC3123
-NC3162
-NC3163
-Gigabit NIC
-NC6134
-Fast Ethernet Module
-NC3133
-NC6133
-Gigabit Module
-NC6132
-NC3132
-NC3131
-NC3121 rev. A & B
-NC3160
-Fast Ethernet Embedded Controller w/ WOL
-NC3161
-SMART2 Array Controller
-CISS
-10/100TX WOL UTP Controller
-10/100TX Embedded UTP/Coax Controller
-Netelligent WS 1500
-Ethernet NIC
-NC1120
-NC3122
-Fast Ethernet NIC
-NC3120
-UTP/Coax PCI
-Netelligent 10 T/2
-Dual Port Netelligent 10/100 TX
-NorthStar
-PCI Bridge
-DRACO
-CETUS-L
-Integrated Netelligent 10/100 TX PCI
-Dual Port Netelligent 10/100 TX PCI TLAN
-Integrated NetFlex 3/P TLAN 2.3
-Netelligent 10 T PCI UTP TLAN 2.3
-Dual EIDE Controller
-Triflex
-Netelligent 10/100 TX PCI UTP TLAN 2.3
-System Management Controller
-PCI to ISA PnP Bridge
-MIS-E
-CPU to PCI Bridge
-PCI to ISA Bridge
-MIS-L
-Smart-2 Array Controller
-Tachyon TL 64-bit/66-Mhz FC HBA
-HPFC-5166A
-USB Open Host Controller
-ZFMicro
-PCI Hotplug Controller
-Triflex PCI to ISA PnP Bridge
-Advanced System Management Controller
-Original Compaq fibre Channel HBA
-USB Controller
-HotPlug PCI Bridge
-Model 6010
-Triflex Model 4000
-QVision 1280/p v2
-QVision 1280/p v1
-GUI Accelerator
-QVision 1280/p v0
-Triflex Model 2000
-Pentium Bridge
-Triflex Model 1000
-PCI UTP/STP Controller
-Neteligent 4/16 TR
-64Bit,66MHz,Dual Channel WideUltra3 SCSI
-Adaptec AIC-7899G
-Gigabit Server Adapter
-NC6136
-Gigabit Upgrade Module
-NC7132
-StorageWorks Library Adapter (HVD)
-CPQB1A9
-ISA Bridge
-PCI to EISA Bridge
-Cable Modem
-CM 200E
-64bit pci gnic
-83821
-32bit pci mac
-83820
-T-Concept
-HCF-PCI card
-ELKA SO-PCI
-LavaPort PCI
-ISDN Adapter
-IS64PH
-i740 PCI
-ILLEGITIMATE VENDOR ID
-BAD!
-3com US Robotics
-Ultraview Corp.
-Ultraview
-Interagon AS
-Interagon
-F5 Networks Inc.
-AJA Video
-ARK Logic, Inc
-ARK Logic
-Echo Digital Audio Corporation
-Echo
-Belkin Components
-Belkin
-Endace Measurement Systems Ltd.
-Endace
-Aashima Technology B.V.
-Aashima
-Eagle Technology
-EKF Elektronik GMBH
-Tiger Jet Network Inc
-Tiger Jet
-Aivea Corporation
-Middle Digital, Inc
-Indigita Corporation
-Indigita
-Dawicontrol
-Exsys
-I+ME ACTIA GmBH
-I+ME ACTIA
-DY4 Systems Inc.
-Tyzx Inc.
-Tyzx
-Catapult Communications
-Chrysalis-ITS
-Varian Australia Pty. Ltd.
-Varian
-Hudson Soft Co Ltd
-Motion Engineering Inc.
-Mot Engrg
-Micron/Crucial Technology
-Micron/Crucial
-TSI Telsys
-Mindstream Computing
-Brown & Sharpe Mfg. Co.
-Shiva Europe Ltd.
-IC Book Labs
-IC Book
-Adrienne Electronics Corporation
-Digital Receiver Technology Inc
-PROGSTAR
-Scitex Digital Video
-3com Corporation
-Hewlett Packard GmbH PL24-MKT
-Hewlett Packard
-NEC Corp.
-Aopen Inc.
-Aopen
-StarGen, Inc.
-StarGen
-pan asia superitendence corp
-surveyors
-wouteronline
-NetMos Techology
-NetMos
-Omni Media Technology Inc.
-Gigapixel Corp
-Atronics
-SAGEM SA
-Adaptec
-Computone Corporation
-Computone
-Woopy systems
-Sil Magic
-T-Square Design Inc.
-T-Square
-Trigem Computer
-Intel Corporation
-Intel
-ARS Technologies
-QUANCOM Informationssysteme GmbH
-QUANCOM
-Beyertone AG - Germany
-BEYERTONE
-PowerTV
-MIDAC Corporation
-MIDAC
-DaoGuo Technology Co.,Ltd
-DaoGuo
-O.N. Electric Co. Ltd.
-O.N.
-Decision Computer International Co.
-Decision
-Logitec Corp.
-ct Magazin fuer Computertechnik
-UltraStor
-Sabtech Industries
-Sabtech
-Unisys Corporation
-Genroco Inc.
-Genroco
-Dunord Technologies
-Dunord
-Cnet Technoliges, Inc.
-Cnet
-Technische Universtiaet Berlin
-TU-Berlin
-Teralogic Inc
-Evergreen Technologies Inc.
-Evergreen
-Ericsson
-S3 Incorporated
-Alliance Semicondutor Corp.
-ENSONIQ
-Qualcomm Inc.
-Qualcomm
-S S Technologies
-Sigmatek GmbH & CoKG
-Sigmatek
-TBS/Voyetra Technologies
-TBS/Voyetra
-Guillemot
-ILC Data Device Corp.
-Microtechnica Co Ltd
-Mediaq Inc.
-Mediaq
-Seanix Technology Inc
-SBS-OR Industrial Computers
-Lung Hwa Electronics
-Lung Hwa
-Buslogic Inc
-Buslogic
-Applied Biosystems Division
-NetVin
-Axil Computer Inc.
-Axil
-Integral Technologies
-Integral
-Growth Networks
-Hercules Computer Technology
-UMAX Computer Corp.
-UMAX Comp
-Cogetec Informatique Inc.
-Tucker-Davis Technologies
-Conexant Inc.
-Aladdin Knowledge Systems
-Acco Europe
-Alpha Data
-Digital Equipment Corp.
-Allied Telesyn
-Addtron Technology Co., Inc.
-Addtron
-3Dlabs, Inc. Ltd
-3DLabs
-4links
-MFP GmbH
-ARCOM Control Systems Ltd.
-ARCOM
-Quantum Designs (H.K.) Inc.
-Hint Corp.
-Hint
-Bertin Technologies
-Bertin
-Post Impressions Systems
-PostImpressions
-Hansol Electronics Inc.
-Hansol
-Zenic Inc
-ChainTech Computer Co. Ltd.
-ChainTech
-Kingston Technology Co.
-NONTECH Nonnenmacher GmbH
-NONTECH
-Automation Technology GmbH
-Temporal Research Ltd
-Lasentec
-A/DHOC Syst�mes
-A/DHOC
-Distributed Processing Technology
-Symphony
-Jaton Corporation
-HARPO sp. z o.o.
-DIC INFORMATION TECHNOLOGY ,LTD
-DICIT
-Varisys Limited
-Elan Digital Systems Ltd
-Elan
-Primagraphics Ltd.
-Primagraphics
-InfiniCon Systems, Inc.
-InfiniCon
-devolo AG
-devolo
-Modem Silicon Operation
-Connect Components, Ltd.
-DH electronics GmbH
-Movita Technologies, Inc
-Wistron Corp.
-Wistron
-Hightech Information Systems, Ltd.
-Hightech
-Phillips Components
-Legend Ltd. (Beijing)
-Legend
-Start Network Technology Co., Ltd.
-Start Network
-Unitech Electronics Co., Ltd
-Unitech
-Ennyah Technologies Corp
-Ennyah
-General Dynamics Canada
-Alchemy Semiconductor Inc.
-Alchemy
-Global Brands Manufacture Ltd.
-PC Partner Limited
-PC Partner
-Peppercon AG
-Peppercon
-Altima
-Fujitsu-Siemens Computers GmbH
-Fujitsu-Siemens
-TOPCON Corp.
-TOPCON
-NICE Systems Inc.
-NICE
-NetScreen Technologies, Inc.
-NetScreen
-Pelago Networks
-Pelago
-Cyberdyne Inc.
-Cyberdyne
-San Valley Systems, Inc.
-San Valley
-SensoMotoric Instruments GmbH
-YottaYotta Inc.
-YottaYotta
-NetOctave Inc.
-NetOctave
-Alpine Electronics Inc.
-Alpine
-Zarlink Semiconductor
-Zarlink
-Harris Corp.
-Harris
-Cogency Semiconductor Inc.
-Cogency
-Pacific Broadband Communications
-Digital First
-Clearwater Networks
-Clearwater
-Desana Systems
-Desana
-Internet Machines Corp.
-Interactive Computer Products Inc.
-Antara LLC
-Antara
-VideoTele.com Inc.
-VideoTele.com
-Jetway Information Co., Ltd
-Jetway
-Adicti Corp.
-Adicti
-TLA Inc.
-U.S. Robotics
-Third Millenium Test Solutions, Inc.
-3MTS
-Systemax
-Inari Inc.
-Inari
-Minolta Co. Ltd.
-Minolta
-Cenatek Inc.
-Cenatek
-CNF Mobile Solutions
-SafeNet Inc.
-SFNT
-EPoX Computer Co., Ltd.
-EPoX
-FERMA
-NetContinuum, Inc.
-NetContinuum
-KDS Innotech Corp.
-KDSI
-Hyundai MultiCAV Computer Co. Ltd.
-Hyundai MultiCAV
-NMI Electronics Ltd.
-Atheros Communications Inc.
-Atheros
-Circut Assembly Corp.
-Utimaco Safeware AG
-CastleNet Technology Inc.
-CastleNet
-PINE Technology, Ltd.
-PINE
-Hercules
-Dunti Corp.
-Dunti
-Ingenieurbuero Anhaus GmbH
-Tokyo Electron Device Ltd.
-INH Semiconductor
-Bernecker + Rainer
-Emachines Inc.
-Square Wave Technology
-Connex
-Unitec Co. Ltd.
-Atan Technology Inc.
-Rearden Steel
-Televox Software Inc.
-Schneider Automation Inc.
-Sibyte Inc.
-Shade Ltd.
-Supernet Inc.
-Komatsu Ltd.
-Actiontec Electronics Inc.
-Actiontec
-CoSystems Inc.
-Norpak Corporation
-Edax Inc.
-Fastfame Technology Co. Ltd.
-Elmec Inc. Ltd.
-Int Labs
-Worldspace Corp.
-Network Security Technologies Inc. (Net
-Add One Company
-Hyunju Computer Co. Ltd.
-Hsing Tech. Enterprise Co. Ltd.
-Gidel Ltd.
-Real-Time Digital Inc.
-Epix Inc.
-Shiba Denshi Systems Inc.
-Med Associates Inc.
-Brocade Communications Systems
-Insyde Software Corp
-Dazzle Multimedia Inc.
-Sonicwall Inc
-Nature Worldwide Technology Corp
-Spectrum Digital Inc.
-Chaparral Network Storage
-Admore Technology Inc.
-Datavoice (Pty) Ltd.
-Micrel Inc.
-Ishoni Networks
-Department Of Defense
-Aiwa Co. Ltd
-Jupiter Systems
-MeltDown Systems LLC
-Hertz Systemtechnik GMBH
-Nippon Systemware Co Ltd
-Quick-Serv. Computer Co. Ltd
-Western Avionics Ltd
-Hajime Industries Ltd
-Bitland
-MKNet Corporation
-Intelliworxx Inc
-Renishaw PLC
-3dpower
-Heidelberg Digital LLC
-Smart Link
-Glotrex Co Ltd
-Air Prime Inc
-Eumitcom Technology Inc
-Jean Company Ltd
-Decros
-Visionglobal Network Corp.
-Adac Corporation
-Verisys Inc
-NEC Computer International
-Sky Computers Inc
-Rohde & Schwarz GMBH & Co KG
-Margi Systems Inc
-Reprosoft Co Ltd
-C&H Technologies Inc
-Shanghai Bell Company Limited
-Sejin Computerland Co Ltd
-Kongsberg Spacetec a.s.
-BCom Electronics Inc
-TDK Semiconductor Corp.
-Warp Nine Engineering
-CE Infosys GMBH
-KRF Tech Ltd
-Nokia Home Communications
-Lynx Studio Technology Inc
-Sigmacom Co Ltd
-Arima Computer Co
-Kyoei Sangyo Co Ltd
-Gatec
-Berkshire Products
-Mobilian Israel Ltd
-Wvinten Ltd
-FarSite Communications Limited
-FarSite
-Esec SA
-Rapidstream Inc
-Iotech Inc.
-Equus Computer Systems Inc
-Jace Tech Inc.
-System Craft Inc.
-Telesynergy Research Inc.
-Bel Fuse Inc.
-Tottori Sanyo Electric Co Ltd
-ITEC Co Ltd
-CML Emergency Services
-Aaeon Electronics Inc
-Oregon Micro Systems Inc.
-Onkyo Corp.
-Kollmorgen Servotronix
-Sciemetric Instruments Inc
-Automated Wagering International
-Lava Semiconductor Manufacturing Inc.
-Europop AG
-Pairgain Technologies
-Central System Research Co Ltd
-Nokia Wireless Business Communications
-Prosys-TEC Inc.
-Tenta Technology
-Northrop Grumman - Canada Ltd
-Fastpoint Technologies Inc.
-Kinpo Electronics Inc
-N-Cubed.Net
-Techsan Electronics Co Ltd
-Zilog Inc.
-J.P. Axzam Corporation
-Zenith Electronics Corporation
-Koga Electronics Co
-Banctec
-Extreme Packet Device Inc
-Power Micro Research
-Valuesoft
-Digitmedia Corp.
-Diagnostic Instruments Inc
-Times N Systems Inc
-B-Tree Systems Inc
-Intelligent Paradigm Inc
-IN Win Development Inc.
-Macrolink Inc
-Beckhoff GMBH
-Drsearch GMBH
-Tokyo Denshi Sekei K.K.
-Pacific Digital Corp.
-National Datacomm Corp.
-GET Engineering Corp.
-Agere Inc.
-Valley Technologies Inc
-VSN Systemen BV
-Networth Technologies Inc
-Quicknet Technologies Inc
-Voice Technologies Group
-Cacheflow Inc
-Infinilink Corp.
-Malleable Technologies Inc
-Sigmatel Inc.
-Litronic Inc.
-Litronic
-Applied Computing Systems Inc.
-Cyberfirm Inc.
-Super Micro Computer Inc
-Cybernetics Technology Co Ltd
-Rockwell-Collins Inc
-Entridia Corporation
-Tatung Co.
-Iwill Corporation
-NDS Technologies Israel Ltd
-FIC (First International Computer Inc)
-Infineon Technologies AG
-Hilscher GMBH
-Genrad Inc.
-Dreamtech Co Ltd
-Hotrail Inc.
-AG Electronics Ltd
-Bitboys OY
-Serome Technology Inc
-Penta Media Co. Ltd
-Tateyama System Laboratory Co Ltd
-Technical University Of Budapest
-Procomp Informatics Ltd
-EVSX Inc
-Taiwan Mycomp Co Ltd
-Newer Technology Inc
-Quantel
-BVM Limited
-High Tech Computer Corp (HTC)
-Sola Electronics
-Agilent Technologies
-Agilent
-Portwell Inc
-Impacct Technology Corp
-Maestro Digital Communications
-Addi-Data GMBH
-Sandisk Corp.
-Texas Memory Systems Inc
-Cimetrics Inc
-CCI/Triad
-Mellanox Technology
-Mosaid Technologies Inc.
-Source Technology Inc
-Zoltrix International Limited
-Amersham Pharmacia Biotech
-VMware Inc.
-VMware
-North Atlantic Instruments
-Bluesteel Networks Inc
-Moreton Bay
-Shanghai Communications Technologies Cen
-SSE Telecom Inc
-Sunlight Ultrasound Technologies Ltd
-Toyota MACS Inc
-X-Net OY
-Italtel
-Catalyst Enterprises Inc
-Geocast Network Systems Inc
-Compumaster SRL
-Galea Network Security
-A-Max Technology Co Ltd
-Ningbo Harrison Electronics Co Ltd
-Stratus Computer Systems
-Faraday Technology Corp
-General Instrument
-Delta Electronics Inc
-Granite Microsystems
-Memec Design Services
-Folsom Research Inc
-Diva Systems Corp.
-Netgame Ltd
-Bops Inc
-Syba Tech Ltd.
-Syba
-3pardata Inc.
-Ditect Coop
-Lara Technology Inc
-Point Multimedia Systems
-Hitachi Semiconductor & Devices Sales Co
-Allied Data Technologies
-Digalog Systems Inc
-Atlantek Microsystems Pty Ltd
-Solidum Systems Corp
-Konica Corporation
-Lancast Inc
-Marconi Commerce Systems SRL
-Uniwill Computer Corp.
-Inet Technologies Inc
-Cytec Corporation
-SEH Computertechnik GMBH
-Primex Aerospace Co.
-PX Instruments Technology Ltd
-Transition Networks
-Gemflex Networks
-Eurosoft (UK)
-Eurosoft
-Star Multimedia Corp.
-Japan Elecronics Ind. Inc
-Dual Technology Corporation
-Hitt
-Viewcast Com
-Voltaire Advanced Data Security Ltd
-Fairchild Semiconductor
-Lattice - Vantis
-Otis Elevator Company
-Contemporary Controls
-Lecroy Corporation
-M-Systems Flash Disk Pioneers Ltd
-Alfa Inc.
-Alpha-Top Corp
-Vidac Electronics GMBH
-2wire Inc
-Avtec Systems
-Palit Microsystems Inc
-DDK Electronics Inc
-Jungsoft
-Ardent Technologies Inc
-Biostar Microtech Intl Corp
-Yamakatsu Electronics Industry Co Ltd
-A-Trend Technology Co Ltd
-Symbol Technologies
-Viewgraphics Inc
-Terayon Communications Systems
-Perle Systems Limited
-LP Elektronik GMBH
-MAC System Co Ltd
-Cemax-Icon Inc
-Protac International Corp
-Innomedia Inc
-SI Logic Ltd
-Clevo/Kapok Computer
-Mediastar Co. Ltd
-PLD Applications
-Gesytec GmbH
-Gesytec
-Prolink Microsystems Corp.
-Chicony Electronics Co Ltd
-Racal Airtech Ltd
-Smart Electronic Development GMBH
-Open Network Co Ltd
-Stratabeam Technology
-Servotest Ltd
-PAN International Industrial Corp
-Visual Technology Inc.
-Computex Co Ltd
-Max Technologies Inc.
-Interconnect Systems Solutions
-Jet Propulsion Laboratory
-Mitutoyo Corporation
-IOI Technology Corp.
-VisionTek
-Visiontek
-DCM Technologies Ltd.
-Silicon Laboratories
-Vivid Technology Inc
-Telocity Inc.
-Provideo Multimedia Co Ltd
-MIPS Denmark
-Techwell Inc
-Filanet Corporation
-Antal Electronic
-Terratec Electronic GMBH
-ONO Sokki
-Atelier Informatiques et Electronique Et
-Aralion Inc.
-Datalex Communcations
-Evergreen Technologies Inc
-Road Corporation
-Baltimore
-Echelon Corporation
-Philips - Crypto
-Melec Inc
-Quanta Computer Inc
-Macraigor Systems LLC
-Flytech Technology Co Ltd
-Quickturn Design Systems
-American Microsystems Inc
-Acksys
-Solectron
-ISS Inc
-Impact Technologies
-ENE Technology Inc
-Music Semiconductors
-Mainpine Limited
-Mainpine
-Bell Corporation
-Chaplet System Inc
-Topic Semiconductor Corp
-Matrix Corp.
-Fujitsu Computer Products Of America
-Digital Audio Labs Inc
-Combox Ltd
-Globetek Inc.
-Globetek
-Telefon Aktiebolaget LM Ericsson
-PEP Modular Computers GMBH
-Echotek Corporation
-Myson Technology Inc
-ICS Advent
-TFL LAN Inc
-Raychem
-Rosun Technologies Inc
-Centillium Technology Corp
-Behavior Tech Computer Corp
-Intec GMBH
-C-Port Corporation
-Warpspped Inc
-Kyopal Co Ltd
-Yamashita Systems Corp
-First International Computer Inc
-Htec Ltd.
-Htec
-Chameleon Systems Inc
-Kaiser Electronics
-Kawasaki LSI USA Inc
-Mitsubishi Electric Logistics Support Co
-Banksoft Canada Ltd
-DELTA Electronics, Inc.
-DELTA
-Twinhead International Corp.
-Archtek Telecom Corp.
-Japan Computer Industry Inc.
-Quadrics Supercomputers World
-Transas Marine (UK) Ltd
-AG Communications
-Audiocodes Inc
-Wolf Technology Inc
-Coyote Technologies LLC
-Sopac Ltd
-Tokyo Electronic Industry Co. Ltd.
-Mobility Electronics, Inc.
-Mobility
-Conexant Systems, Inc.
-Carry Computer Eng. Co Ltd
-Datakinetics Ltd
-Acqiris
-Planex Communications, Inc.
-Planex
-Broadcom Corporation
-Broadcom
-Amtelco
-Applied Integration Corporation
-Imodl Inc.
-Amplicon Liveline Limited
-Amplicon
-Avlab Technology Inc.
-Avlab
-Alpha Processor Inc
-Hopf Elektronik GMBH
-Hirakawa Hewtech Corp
-Accusys Inc
-Nitsuko Corporation
-Panacom Technology Corporation
-PANACOM
-Oxford Semiconductor
-TEK Microsystems Inc.
-Universal Scientific Ind.
-Billionton Systems Inc./Cadmus Micro Inc
-Odin Telesystems Inc
-Turbocomm Tech Inc
-Turbocomm
-Modular Technology Ltd.
-Modtech
-Data Race Inc
-ABB Automation Products AB
-Iwasaki Information Systems Co Ltd
-DTK Computer
-Myricom Inc.
-Compal Electronics, Inc.
-Compal
-L3 Communications
-Semtech Corporation
-Internix Inc.
-Aironet Wireless Communication
-Aironet
-Proxim Inc.
-Proxim
-Quantum Data Corp.
-Creamware GmbH
-Creamware
-Philips Business Electronics B.V.
-Xpeed Inc.
-Xpeed
-Nextcom K.K.
-Mentor Graphics Corp.
-Hivertec Inc.
-Xionics Document Technologies Inc.
-GVC/BCM Advanced Research
-Millennium Engineering Inc
-Softing GMBH
-Lectron Co Ltd
-Mapletree Networks Inc.
-Seiko Instruments Inc
-Andor Technology Ltd
-Micro-Technology Co Ltd
-Tews Technologies
-Tews
-SMA Regelsysteme GMBH
-Joytech Computer Co. Ltd.
-Tokai Communications Industry Co. Ltd
-Maker Communications
-TC Labs Pty Ltd.
-Plant Equipment Inc.
-OSI Plus Corporation
-Digicom Systems Inc.
-C.P. Technology Co. Ltd
-Innomedialogic Inc.
-Opto 22
-KYE Systems Corporation
-Erma - Electronic GMBH
-Labway Coporation
-Isytec - Integrierte Systemtechnik Gmbh
-Nihon Unisys Ltd.
-Abit Computer Corp.
-Diatrend Corporation
-Net Insight
-Doug Carson & Associates
-Zapex Technologies Inc
-Integrated Telecom Express Inc
-WMS Gaming
-Tachyon Inc.
-Ruby Tech Corp.
-Cleveland Motion Controls
-Ambit Microsystems Corp.
-GN Nettest Telecom Div.
-Interactive Circuits & Systems Ltd
-Fast Corporation
-Micro-Star International Co Ltd
-Dynarc Inc
-Baldor Electric Company
-Baldor
-Cryptek
-Giga-Byte Technologies
-Giga-Byte
-Logic Plus PLUS Inc
-Mycom Inc
-SP3D Chip Design GMBH
-Octave Communications Ind.
-Samsung Electronics Co Ltd
-Loronix Information Systems, Inc.
-Loronix
-ADLINK Technology Inc
-ADLINK
-Alesis Studio
-Alesis
-Aim GMBH
-Graphin Co. Ltd
-Logical Co Ltd
-Agie SA.
-Lightwell Co Ltd - Zax Division
-Atmel-Dream
-Nissin Inc Co
-CIS Technology Inc
-Real Time Devices USA, Inc.
-RTD-USA
-Eltec Elektronik AG
-ITT Aerospace/Communications Division
-Pixstream Inc
-Minton Optic Industry Co Ltd
-Radiolan
-Kingmax Technology Inc
-Unex Technology Corp.
-Edec Co Ltd
-ASIC Designers Inc
-Psion Dacom PLC
-Visiontech Ltd
-Fanuc Co. Ltd
-Zoom Telephonics, Inc
-Zoom
-Zoom Telephonics Inc
-Excel Switching Corp
-Kyushu Electronics Systems Inc
-Oxford Semiconductor Ltd
-Oxford
-Addonics
-IC Ensemble, Inc.
-IC Ensemble
-Salient Systems Corp
-Matsushita Electric Works Ltd
-Ramix Inc
-DSP Research Inc
-eTIMedia Technology Co Ltd
-Aloka Co. Ltd
-Oc� Printing Systems
-Fundamental Software Inc
-Meilhaus Electronic GmbH Germany
-Meilhaus Electronic
-ArtX Inc
-ArtX
-Silicon Spice Inc.
-Advantech Co., Ltd.
-Advantech
-Micro Science Inc
-Aydin Corp
-Pentland Systems Ltd.
-Pentland
-NTT Advanced Technology Corp.
-C-Media Electronics Inc.
-C-Media
-Troika Networks Inc
-OCE - Industries S.A.
-Sundance Technology Inc
-Dallas Semiconductor
-Intraserver Technology Inc
-Telesoft Design Ltd
-Calculex Inc
-Nest Inc
-GVC Corporation
-E-Tech Inc.
-E-Tech
-ABB Robotics Products AB
-Netboost Corporation
-Apex Inc
-Phobos Corporation
-Toshiba Engineering Corporation
-K.I. Technology Co Ltd
-Graphics Microsystems Inc
-AboCom Systems, Inc
-AboCom
-B2C2 Inc
-Studio Audio & Video Ltd
-Metheus Corporation
-Blue Chip Technology Ltd
-Janz Computer AG
-Technotrend Systemtechnik GMBH
-3ware Inc.
-3ware
-Microgate Corp.
-Microgate
-Sharewave Inc
-Sharp Corporation
-SHARP
-Nokia Telecommunications OY
-DLoG GMBH
-ARM Ltd
-Wellbean Co Inc
-Tamura Corporation
-T.Sqware
-Nortel Networks - BWA Division
-Siemens Medical Solutions
-Exar Corp.
-Teles AG
-Rascom Inc
-HI-FN Inc.
-HI-FN
-Kawasaki Heavy Industries Ltd
-Crystal Group Inc
-Echostar Data Networks
-Xstreams PLC/ EPL Limited
-Alacritech Inc
-Clarion Co. Ltd
-Cologne Chip Designs GmbH
-Cologne
-Cipher Systems Inc
-Ambicom Inc
-Level One Communications
-Level One
-Moxa Technologies Co Ltd
-Concept Development Inc.
-Patapsco Designs Inc
-Basler GMBH
-Tokimec Inc
-Applicom International
-Applicom
-Hitachi Information Technology Co Ltd
-Systran Corp
-Netgear
-Stellar Semiconductor Inc
-Marian - Electronic & Software
-Marian
-Brains Co. Ltd
-Sanritz Automation Co LTC
-Patriot Scientific Corp.
-PTSC
-Dynachip Corporation
-Iwatsu Electric Co Ltd
-PPT Vision
-Mark Of The Unicorn Inc
-GMBH
-Boeing - Sunnyvale
-Adtek System Science Co Ltd
-Kawasaki Steel Corporation
-Digigram
-Skyware Corporation
-Hitachi Zosen Corporation
-Teijin Seiki Co. Ltd.
-Teijin
-Hypercope Corp.
-Hypercope
-Phoenix Technologies Ltd
-Soliton Systems K.K.
-Meinberg Funkuhren
-I-Data International A-S
-Sealevel Systems Inc.
-Sealevel
-ABB Network Partner AB
-ABB Network Partn
-Quatech Inc
-Giganet Inc.
-Brain Boxes Limited
-PCTEL Inc.
-PCTEL
-Chori Joho System Co. Ltd
-ARK Research Corp.
-DTC Technology Corp.
-Odetics
-Micron Technology, Inc.
-Micron
-Promax Systems Inc
-SCM Microsystems
-Prisa Networks
-Videomail Inc.
-Videomail
-Micro Memory, LLC
-Micro Memory
-RadiSys Corporation
-RadiSys
-Quadrant International
-Seachange International
-Salix Technologies Inc
-SIIG
-Forte Media, Inc.
-Forte Media
-Packet Engines, Inc.
-Packet Engines
-ADMtek Inc
-ADMtek
-Teradyne Inc.
-Yaskawa Electric Co.
-Robotic Vision Systems Incorporated
-RVSI
-Gespac
-Advanet Inc.
-Colorgraphic Communications Corp
-Mitsubishi Electric Microcomputer
-Jato Technologies Inc.
-Jato
-ComputerBoards
-Juniper Networks Inc.
-Innovative Integration
-esd Electronic System Design GmbH
-Capital Equipment Corp
-Spectrum Signal Processing
-FourFold Technologies
-Electronic-Design GmbH
-Electronic-Design
-Cognex
-Dawson France
-Dawson Fr
-Megatel
-Gammagraphx Inc.
-Sorenson Vision Inc.
-Sorenson
-Pentek
-Vienna Systems
-Vienna
-Orange Micro, Inc.
-Orange Micro
-Optivision Inc.
-Optivision
-3A International Inc.
-3A Intl
-Aureal Semiconductor
-Aureal
-Zuken
-GE Spacenet
-CRISC Corp.
-CRISC
-Sebring Systems Inc
-Sebring
-Cirel Systems
-Cirel
-Brooktrout Technology Inc.
-Brooktrout
-Imation Corp. - Medical Imaging Syst
-Imation
-Datum Inc. Bancomm-Timing Division
-Datum
-Nintendo Co. Ltd.
-Nintendo
-Chase Research PLC
-Chase
-SBS Technologies Inc.
-SBS Tech
-Rainbow Technologies
-Rainbow
-Management Graphics Inc.
-Symicron Computer Communication Ltd.
-Symicron
-Annapolis Micro Systems Inc.
-Annapolis
-TrueTime
-Aculab Plc.
-Aculab
-Pericom Semiconductor
-Pericom
-Biotronic SRL
-Biotronic
-Analogic Corp.
-Analogic
-Equator Technologies
-Equator
-DGM & S
-DGM&S
-Vingmed Sound A/S
-Vingmed
-NVidia / SGS Thomson
-NVidia
-PsiTech
-GDE Systems Inc.
-GDE Sys
-Prophet Systems Inc.
-Prophet
-Netspeed Inc.
-Netspeed
-Aims Lab
-Pluto Technologies International
-Pluto
-Antex Electronics Corp.
-Antex
-Integrated Computing Engines, Inc.
-Gigi Operations
-Gigi Ops
-G Force Co. Ltd.
-G Force
-Dialogic Corp.
-Dialogic
-Mitani Corp.
-Mitani
-Picture Elements Inc.
-PicturEl
-Connect Tech Inc.
-Connect Tech
-Holtek Microelectronics Inc.
-Holtek
-Mentec Ltd.
-Mentec
-GMM Research Corp.
-GMM Res
-Infimed
-Fujifilm Microdevices
-Anchor Chips Inc.
-Anchor Chips
-Computerm Corp.
-Computerm
-Array Microsystems
-Array Micro
-Nippon Unisoft Corp.
-Nippon Uni
-Bittware, Inc
-Bittware
-US Robotics
-Korg
-Acumen
-Natural Microsystems
-Nat Micro
-Granite Systems Inc.
-Granite
-Future Tel Inc.
-Future Tel
-Inter-Face Co. Ltd.
-Inter-Face
-General Signal Networks
-Gen Signal
-GammaLink
-Jorge Scientific Corp.
-Jorge Sci
-TDK USA Corp.
-TDK USA
-Alteon Networks Inc.
-Alteon
-Multidata GmbH
-Multidata
-MeasureX Corp.
-MeasureX
-Yuan Yuan Enterprise Co. Ltd.
-Yuan Yuan
-SDL Communications Inc.
-Xiotech Corp.
-Xiotech
-News Datacom
-AMO GmbH
-Scalable Networks Inc.
-Scalable
-Vision Dynamics Ltd.
-Vision Dyn
-NTT Electronics Technology Co.
-NTT Elect
-Lucent Technologies AMR
-Lucent
-NewGen Systems Corp.
-NewGen
-Simpact Inc
-Simpact
-Allen Bradley Co.
-OEC Medical Systems Inc.
-OEC Med
-Victor Co. of Japan Ltd.
-Victor Jpn
-CompCore Multimedia Inc.
-CompCore
-Image Access
-Img Access
-VMETRO Inc.
-VMETRO
-Knowledge Technology Laboratories
-Know Tech
-Spellcaster Telecommunications Inc.
-Spellcaster
-Holco Enterprise
-Holco
-Kofax Image Products
-Kofax
-Imagenation Corp.
-Imagenation
-Rhetorex Inc.
-Rhetorex
-Media Reality Technology
-M Reality
-Tritech Microelectronics Intl PTE
-Tritech
-NCS Computer Italia
-NCS Comp
-Sord Computer Corp.
-Sord
-Tateno Dennou Inc.
-Tateno
-Samho Multi Tech Ltd.
-Samho
-G2 Networks Inc.
-G2 Net
-Retix Corp.
-Retix
-Transwitch Corp.
-Transwitch
-Asant� Technologies Inc.
-Asant�
-AVC Technology Inc.
-AVC Tech
-Timestep Corp.
-Timestep
-LuxSonor Inc.
-LuxSonor
-Mazet GmbH
-Mazet
-Platform Technologies Inc.
-Plat Tech
-Sahara Networks Inc.
-Sahara
-Integrated Technology Express Inc.
-ITExpress
-Davicom Semiconductor Inc.
-Davicom
-Yokogawa Electronic Corp.
-Yokogawa
-Photoscript Group Ltd.
-Photoscript
-Fujifilm
-Winnov L.P.
-Winnow
-Vela Research
-Vela Res
-Crosspoint Solutions Inc.
-Crosspoint
-Pixera Corp
-Pixera
-Conexant Systems
-Conexant
-Transmeta Corp.
-Transmeta
-Transtech Parallel Systems
-Transtech
-Comstream
-Switched Network Technologies Inc.
-Sw Net Tech
-Network Appliance
-NetApp
-Ensoniq
-Hughes Network Systems
-Hughes
-Telematics International
-Telematics
-GW Instruments
-GW Instr.
-Olympus Optical Co. Ltd.
-Olympus
-Silicon Motion
-Sil Motion
-Sumitomo Metal Industries Ltd.
-Sumitomo
-Splash Technology Inc.
-Splash
-Nortel Networks Corp.
-Nortel
-Adax Inc.
-Adax
-Lexmark International Inc.
-Lexmark
-Thomson-CSF/TTM
-Thomson-CSF
-Tektronix
-S.A. Telecommunications
-SA Telecom
-Microdyne Corp.
-Microdyne
-Casio Computer Co. Ltd.
-Casio
-Aval Nagasaki Corp.
-Aval Nag.
-Sonic Solutions
-Sonic Sol.
-ES Computer Co. Ltd.
-ES Comp.
-Matsushita-Kotobuki Electronics Indu
-Intersil Corporation
-Intersil
-Concurrent Technologies Inc.
-Concurrent
-Specialvideo Engineering SRL
-Specvideo
-ESS Technology
-Aurora Technologies Inc.
-Aurora
-Asix Electronics Corp.
-Asix
-ABB Power Systems
-ABB Pwr
-Allied Telesyn International
-Allied Tsyn
-Gilbarco Inc.
-Gilbarco
-Vertex Networks Inc.
-Vertex
-Perceptive Solutions Inc.
-Perceptive
-Optibase Ltd.
-Optibase
-Linear Systems Ltd.
-Linear Systems
-Guzik Technical Enterprises
-Guzik
-VLSI Solution OY
-VLSI Sol.
-Hitachi Microcomputer System Ltd.
-Infortrend Technology Inc
-Infortrend
-Cylink
-Stallion Technologies
-Stallion
-Solitron Technologies Inc.
-Solitron
-GreenSpring Computers
-GreenSpring
-AEG Electrocom GmbH
-Central Data Corp.
-Central Data
-Xylon Research Inc.
-Xylon
-Dipix Technologies Inc
-Dipix
-APD S.A.
-AVM AUDIOVISUELLES MKTG & Computer GmbH
-Delphax
-JNI Corporation
-DSC Communications
-Marathon Technologies Corp.
-Marathon
-C-Cube Microsystems
-C-Cube
-Engineering Design Team Inc.
-Century Systems Inc.
-Century Sys
-Seeq Technology Inc.
-Seeq
-Visicom Laboratories Inc.
-Visicom
-The 3DO Company
-Adtran
-Alta Technology Corp.
-Alta Tech
-Sigma Designs, Inc
-Sigma Designs
-Risq Modular Systems Inc.
-Risq Mod
-Technical Corp
-Technical
-Bus-Tech Inc.
-Bus-Tech
-GPT Ltd.
-Woodward McCoach Inc.
-Fishcamp Engineering
-Fishcamp
-Andrew Corp.
-Andrew
-Xyratex
-Aztech System Ltd
-Aztech
-sci-worx GmbH
-sci-worx
-LG Industrial Systems Co. Ltd.
-LG Ind.
-Integrated Telecom
-Int. Telecom
-Data Kinesis Inc.
-Data Kin
-Norsk Elektro Optikk A/S
-Norsk
-Tech-Source
-Power I/O Inc.
-Power IO
-Interactive Images
-Int. Img.
-Heurikon/Computer Products
-Heurikon
-Ancor Communications Inc
-Ancor
-Contec Co Ltd
-Contec
-Ariel Corporation
-Ariel
-Arcus Technology Inc
-Arcus
-CSPI
-Lippert Automationstechnik GmbH
-Lippert
-Nippon Texa Co Ltd
-Nippon Texa
-Advanced Telecommunications Modules
-3dfx Interactive Inc
-3dfx
-First Virtual Corp
-First Virtual
-Hybricon Corp
-Hybricon
-O2Micro Inc
-O2Micro
-Purup-Eskofot A/S
-Purup Eskofot
-Interware Co Ltd
-Interware
-Performance Technologies Inc
-Perf Tech
-Applied Intelligent Systems Inc
-AISI
-Kingston Technology Corp
-Kingston
-Braintech Inc
-Braintech
-Hyperparallel Technologies
-Hyperparallel
-Essential Communications
-Essential
-Cyclades Corporation
-Cyclades
-Compression Labs Inc.
-Comp Labs
-Adaptive Solutions
-Adaptive
-Synaptel
-Sci Systems Inc
-Sci Sys
-Parsytec GmbH
-Parsytec
-Amdahl Corp
-Amdahl
-Array Corp
-Array
-Lattice Semiconductor Corp
-Lattice
-Bayer Corporation Agfa Div
-Agfa
-Network General Corp
-Network Gen
-Vista Controls Corp
-Vista
-CSS Corp
-Scion Corp
-Scion
-Comtrol Corp
-Comtrol
-High Street Consultants
-High Street
-Silicon Magic
-Datel Inc
-Datel
-Kasan Electronics Co Ltd
-Kasan
-I-Cube Inc
-I-Cube
-PMC-Sierra Inc.
-PMC-Sierra
-Scientific Atlanta
-Powermatic Data Systems Ltd
-Powermatic
-Computing Devices Intl
-Comp Dev
-Kinetic Systems Corporation
-Kinetic
-Keithley Metrabyte
-Keithley
-Picture Tel Japan KK
-Pic-Tel
-Symbios Logic Inc
-Symbios
-Compu-Shack GmbH
-Compu-Shack
-Nicolet Technologies BV
-Nicolet
-Dome Imaging Systems Inc
-Dome
-Mediamatics
-Coreco Inc
-Coreco
-Formation, Inc
-Formation
-Elsag Bailey
-Elsag
-Highwater Designs Ltd
-Highwater
-Digital Processing Systems Inc
-DPSI
-Toshiba America Elec. Co
-Mitsui-Zosen System Research
-Mitsui
-IIX Consulting
-Second Wave Inc
-Second Wave
-Quicklogic Corp
-Quicklogic
-Samsung Information Systems America
-Gec Plessey Semi Inc
-Gec Plessey
-Cray Communications A/S
-Cray
-New Wave Pdg
-New Wave
-Zoran Corporation
-Zoran
-Crosfield Electronics Ltd
-Crosfield
-Questra Corp
-Questra
-Sega Enterprises Ltd
-Sega
-Novell
-Tec Corporation
-Image Technologies Development
-Trenton Terminals Inc
-Trenton
-Tekelec Technologies
-Tekelec
-Ikon Corp
-Ikon
-Analog Devices, Inc.
-Trancell Systems Inc
-Trancell
-Intercom Inc.
-Intercom
-AuraVision Corporation
-AuraVision
-BAE SYSTEMS - Manassas
-Pioneer Electronic Corporation
-Primary Rate Inc
-HAL Computer Systems Inc.
-Michels & Kleberhoff Computer GmbH
-Specialix International Ltd.
-Specialix
-LSI Systems Inc
-LSI Sys.
-MAGMA
-Dolphin Interconnect Solutions
-Dolphin
-D.C.M. Data Systems
-D.C.M.
-Dainippon Screen Mfg. Co
-Dainippon
-Shiva Corporatin
-Shiva
-Document Technologies Ind.
-Doc. Tech.
-Sand Microelectronics
-Sand
-Agere Systems
-Agere
-Hewlett-Packard
-Astrodesign Inc.
-Astrodesign
-International Microcircuits Inc
-Pinnacle Systems Inc.
-Pinnacle
-Network Peripherals Inc
-Net. Periph.
-Pyramid Technology
-Pyramid
-Videotron Corp
-Videotron
-Pathlight Technology Inc.
-Pathlight
-Xpoint Technologies Inc
-Xpoint
-United Video Corp
-United Video
-Radstone Technology Plc
-Radstone
-Leitch Technology International
-Leitch
-Barr Systems Inc.
-Barr
-Eastman Kodak
-Kodak
-Apricot Computers
-Apricot
-V3 Semiconductor Inc.
-Avid Technology Inc.
-Avid
-Scitex Corporation Ltd
-Scitex
-Lite-On Communications Inc
-Lite-On
-Canon Information Systems
-Canon
-Marvell Semiconductor, Inc.
-Marvell
-Actel
-InnoSys Inc.
-InnoSys
-Systech Corp.
-Systech
-Power Computing Corp.
-Power Comp.
-Pure Data
-MicroUnity Systems Engineering Inc.
-MicroUnity
-Barco
-Deuretzbacher GmbH & Co. Eng. KG
-Deuretzbacher
-Sierra Research and Technology
-Hamamatsu Photonics K.K.
-Hamamatsu
-Convex Computer Corporation
-Convex
-Bull Hn Information Systems
-Bull
-Fujitsu Microelectronics Ltd.
-Bug Sapporo Japan
-Information Technology Inst.
-Omega Micro Inc.
-Omega
-Mind Share Inc.
-Mind Share
-Attachmate Corp.
-Attachmate
-Lambda Systems Inc
-Lambda
-Gage Applied Sciences Inc.
-Gage
-Hytec Electronics Ltd
-Hytec
-Ratoc System Inc
-Ratoc
-Toucan Technology
-Toucan
-Zeitnet Inc.
-Zeitnet
-Densan Co. Ltd
-Densan
-ACARD Technology
-ACARD
-Tripace
-Green Logic
-Green
-Hermstedt AG
-Hermstedt
-BitFlow Inc
-BitFlow
-Corollary Inc
-Corollary
-Hypertec Pty Ltd
-Hypertec
-Hilevel Technology
-Hilevel
-Matsushita Electronics
-Shima Seiki Manufacturing Ltd.
-Shima
-Advanced Technology Laboratories
-D-Link System Inc
-D-Link
-Dataworld
-Forks Inc
-Forks
-Fujikura Ltd
-Fujikura
-Telmatics International
-Telmatics
-Communication Automation Corporation
-Integrated Circuit Systems
-T/R Systems
-Becton & Dickinson
-Atto Technology
-Atto
-LG Electronics Inc.
-LG Elec.
-A-Trend Technology
-A-Trend
-Toshiba America Info Systems
-Alfa Inc
-Alfa
-Silicon Engineering
-Silicon Eng.
-Mitron Computer Inc.
-Mitron
-Bridgeport Machines
-Bridgeport
-Adobe Systems
-Adobe
-Altera Corporation
-Altera
-Loughborough Sound Images
-Lough. Sound
-Inventec Corporation
-Inventec
-Workstation Technology
-WkSta. Tech.
-Electronics for Imaging
-Intelligent Resources
-Int Res.
-Connectware Inc
-Connectware
-Polaris Communications
-Polaris
-Centre f/Dev. of Adv. Computing
-CDAC
-Thine Electronics Inc
-Thine
-Mutoh Industries Inc
-Mutoh
-Reliance Computer Corp./ServerWorks
-RCC/ServerWorks
-Imagraph Corporation
-Imagraph
-Advanced Peripherals Tech
-Rendition Inc
-Rendition
-OA Laboratory Co Ltd
-OA Lab
-PFU Ltd
-Megasoft Inc
-Megasoft
-Maxtor Corporation
-Maxtor
-Peer Protocols Inc
-Peer
-Xircom
-Photron Ltd.
-Photron
-Parallax Graphics
-Parallax
-Harlequin Ltd
-Harlequin
-Mutech
-Voarx R&D Inc
-Voarx
-Avsys Corporation
-Avsys
-Periscope Engineering
-Periscope
-Pine Technology Ltd
-Pine
-Melco Inc
-Melco
-Land Win Electronic Corp
-Land Win
-Megatek
-JAE Electronics Inc.
-Thinking Machines Corporation
-Digi International
-Digi
-Nikon Systems Inc
-Nikon
-IC Corporation
-IC Corp.
-Annabooks
-Canopus Co. Ltd
-Canopus
-VMIC
-Win System Corporation
-Win System
-Schneider & Koch
-Interface Corp
-Interface
-Force Computers
-Force
-Workbit Corp
-Workbit
-Cincinnati Milacron
-Cinn. Mil.
-Netpower Inc
-Netpower
-Alliance Semiconductor CA - USA
-Crest Microsystem Inc
-Crest
-Intervoice Inc
-Intervoice
-Equinox Systems
-Equinox
-Sanyo Electric Co
-Sanyo
-Leading Edge Products Inc
-Leading Edge
-Cyclone Microsystems Inc.
-Cyclone
-Network Computing Devices
-FWB  Inc
-Dynamic Pictures Inc
-Dyn. Pict.
-Ziatech Corporation
-Ziatech
-Cisco Systems Inc
-Cisco
-Momentum Data Systems
-Momentum
-Fuji Xerox Co Ltd
-Fuji
-Mercury Computer Systems Inc.
-Eicon Networks Corporation
-Mitel Corp.
-Mitel
-Philips Semiconductors
-Philips
-Computervision
-Imaging Technology
-ImagTech
-Infomedia
-Ravicad
-Linotype - Hell AG
-Linotype
-Hermes Electronics Co. Ltd.
-Hermes
-Firmworks
-FORE Systems
-FORE
-Vigra
-Eurocore/Vigra
-Eurocore
-Leutron Vision AG
-Leutron
-Excellent Design Inc.
-Multi-Tech Systems Inc.
-Multi-Tech
-Zilog
-EMC Corp.
-Precision Digital Images
-Eldec Corp.
-Eldec
-Integrated Device Technology Inc.
-Tricord Systems Inc.
-Tricord
-Teledyne Electronic Systems
-Teledyne
-Efficent Networks
-Eff. Net.
-ICP vortex Computersysteme GmbH
-Vortex
-Berg Electronics
-Berg
-Datacube Inc.
-Datacube
-Media 100, Inc.
-Media 100
-Dupont Pixel Systems Ltd.
-Dupont
-Atmel Corp.
-Atmel
-Accton Technology Corporation
-Accton
-Osicom Technologies Inc.
-Osicom
-SCO Group
-Powerhouse Systems
-Powerhouse
-Ross Technology
-Ross
-CPU Technology
-CPU Tech.
-ZNYX Corporation
-ZNYX
-Mini-Max Technology Inc.
-Mini-Max
-Chromatic Research Inc
-Chromatic
-Infineon Technologies
-Infineon
-Adaptec/Cogent Data Technologies
-Cogent
-Proteon Inc.
-Proteon
-Stratus Computer
-Stratus
-VIA Technologies Inc
-Sigma Designs Inc.
-Sigma
-Rasterops
-HighPoint Technologies Inc.
-HighPoint
-Creative Labs
-Initio Corporation
-Initio
-Jazz Multimedia
-Jazz
-Ncube
-Fast Electronic GmbH
-Fast
-Soyo Technology Corp. Ltd.
-Soyo
-I-O Data Device Inc.
-Thesys Microelectronic's
-Thesys
-Truevision
-PC Direct
-PC-Direct
-Altos India Ltd.
-Altos
-Matsushita Electric Industrial Corp.
-Matsushita
-Creative Electronic Systems SA
-Creative
-NKK Corporation
-S-Mos Systems
-S-Mos
-Alaris Inc.
-Alaris
-Achme Computer Inc.
-Achme
-Tyan Computer
-Tyan
-Peritek Corporation
-Peritek
-Racore Computer Products
-Racore
-Xilinx Corporation
-Xilinx
-Ascii Corporation
-Ascii
-Realtek Semiconductor
-Realtek
-Artist Graphics
-Artist
-Tvia, Inc.
-Tvia
-Alps Electronic Corp. Ltd.
-Alps
-Applied Micro Circuits Corp.
-AMCC
-Vadem
-Gainbery Computer Products Inc.
-Gainbery
-Micro Industries Corporation
-Tandem Computers
-Tandem
-Tundra Semiconductor Corp.
-Tundra
-Aptix Corporation
-Aptix
-Tekram Technology Corp. Ltd.
-Tekram
-Integrated Micro Solutions
-Emulex Corporation
-Emulex
-NVIDIA Corporation
-NVIDIA
-Evans & Sutherland
-CERN-European Lab. for Particle Physics
-CERN
-Rohm Research
-Rohm
-Thomas-Conrad Corporation
-Macronix International Co. Ltd.
-Macronix
-Advanced Peripherals Labs
-BCM Advanced Research
-Cetia
-Autologic Inc.
-Autologic
-Hualon Microelectronics
-Hualon
-Jabil Circuit Inc.
-Jabil
-Molex Incorporated
-Molex
-Future+ Systems
-Future+
-Fujitsu Limited
-Fujitsu Ltd.
-Radius
-Advanced System Products
-AdvanSys
-Mai Logic Incorporated
-Omron Corporation
-Omron
-Fujitsu
-Dataexpert Corporation
-Dataexpert
-Neomagic Corporation
-Neomagic
-Media Vision
-Rambus Inc.
-Rambus
-Xerox Corporation
-Xerox
-Award Software Int'l Inc.
-Award
-Samsung Semiconductors
-Auspex Systems Inc.
-Auspex
-ICM Corp. Ltd.
-Boca Research Inc.
-Boca
-MOST Corp.
-MOST
-Tsenglabs International Corp.
-Surecom Technology
-Surecom
-Advanced Logic Research Inc.
-Dapha Electronics Corporation
-Dapha
-Mitsubishi Electronics Corp.
-Acer Labs Inc.
-Standard Microsystems Corporation
-3Com Corporation
-3Com
-Madge Networks
-Madge
-PLX Technology
-STB Systems
-Databook Inc.
-Databook
-Raytheon Company
-Raytheon
-Cabletron Systems Inc.
-Cabletron
-CardExpert Technology
-CardExpert
-Micro Computer Systems Inc.
-Cornerstone Technology
-Cornerstone
-Winbond Systems Labs
-Honeywell IASD
-Honeywell
-Digicom
-ACC Microelectronics
-Silicon Graphics
-Sierra Semiconductor
-Sierra
-Benchmarq Microelectronics
-Benchmarq
-Informtech Industrial Ltd.
-Informtech
-Racal Interlan
-Racal
-Globe Manufacturing Sales
-Globe
-Everex Systems Inc.
-Everex
-Quantum Corporation
-Juko Electronics Inc. Ltd.
-Juko
-Meidensha Corporation
-Meidensha
-Trigem Computer Inc.
-Trigem
-Brooktree Corporation
-Brooktree
-Zida Technologies Ltd.
-Zida
-Megachips Corporation
-Megachips
-Gemlight Computer Ltd.
-Gemlight
-Packard Bell
-Packard-Bell
-Samsung Electronics Co. Ltd.
-Samsung
-Quantum Designs Ltd.
-Quantum
-Appian Graphics
-Appian
-Alacron
-Silicon Image, Inc.
-Silicon Image
-First Int'l Computers
-National Instruments
-Nat. Inst.
-Diamond Computer Systems
-Diamond
-Intergraph Corporation
-Intergraph
-Encore Computer Corporation
-Encore
-Systemsoft Corporation
-Systemsoft
-Sun Microsystems
-Olicom
-Oakleigh Systems Inc.
-Oakleigh
-SBS  Operations
-Bit3
-Data General Corporation
-Microcomputer Systems (M) Son
-MS Son
-Cache Computer
-Cache
-J. Bond Computer Systems
-J. Bond
-Tulip Computers Int'l BV
-Tulip
-Parador
-Forex Computer Corporation
-Forex
-EFA Corporation Of America
-Radius Inc.
-Cypress Semiconductor
-Cypress
-Data Technology Corporation
-Interphase Corporation
-Interphase
-Leadtek Research
-Leadtek
-Goldstar Co. Ltd.
-Goldstar
-Gateway 2000
-Gateway
-Networth
-I-Bus
-Cyrix Corporation
-Cyrix
-QLogic Corporation
-QLogic
-Chaintech Computer Co. Ltd.
-Chaintech
-Advanced Integration Research
-Nexgen Microsystems
-Nexgen
-Yamaha Corporation
-Yamaha
-GIT Co. Ltd.
-Mitac
-Daewoo Telecom Ltd.
-Daewoo
-City Gate Development LTD
-CityGate
-DFI Inc.
-Sequent Computer Systems
-Sequent
-Hyundai Electronics America
-Hyundai
-Apple Computer Inc.
-Apple
-Aten Research Inc.
-Aten
-IBM Corporation
-Diversified Technology
-Div. Tech.
-Mitsubishi Electronics
-Mitsubishi
-Picopower Technology
-Picopower
-Texas Microsystems
-Alcatel Cit
-Alcatel
-Ocean Office Automation
-Maspar Computer Corp.
-Maspar
-8x8 Inc.
-United Microelectronics
-Infotronic America Inc.
-Infotronic
-Vtech Engineering Canada Ltd.
-Vtech
-Number Nine Visual Technology
-Number-Nine
-Wipro Infotech Limited
-Wipro
-Foxconn International Inc.
-Foxconn
-Promise Technology
-Promise
-Kontron Canada
-Kontron
-Electronics & Telecommunication Res
-E&TR
-Motorola
-Standard Microsystems Corp.
-SMSC
-Hitachi Ltd
-Young Micro Systems
-Young
-Anigma Corp.
-Anigma
-Winbond Electronics Corp.
-Winbond
-Co-Time Computer Ltd.
-Co-Time
-Oak Technology
-Sony Corporation
-Sony
-Texas Instruments
-Mylex Corporation
-Mylex
-STMicroelectronics
-Fountain Technology
-Fountain
-ELSA GmbH
-ELSA
-Genoa Systems Corp.
-Genoa
-IPC Corporation LTD
-OPTi Inc.
-OPTi
-Distributed Processing Tech
-Asustek Computer Inc.
-Asustek
-PC Technology Inc.
-PC Tech.
-Computrend
-Kubota Pacific Computer Inc.
-Kubota
-Logic Modeling
-Logic Mod.
-Solliday Engineering
-Solliday
-Hewlett-Packard Company
-Tatung Corp. Of America
-Tatung
-Seiko Epson Corporation
-Seiko
-Silicon Integrated System
-AMP Incorporated
-Hitachi Micro Systems Inc
-Future Domain
-FDomain
-Computer&Communication Research Lab
-C&CRL
-Burndy Corporation
-Burndy
-NEC Corporation
-miro Computer Products AG
-miro
-TMC Research
-Toshiba America
-Toshiba
-Olivetti Advanced Technology
-Olivetti
-Wyse Technologies
-Wyse
-Asiliant (Chips And Technologies)
-Matrox
-LSI Logic Headland Division
-Siemens Nixdorf AG
-Siem-Nix
-Dell Computer Corporation
-Dell
-Acer Incorporated
-Acer
-Zenith Data Systems
-Zenith
-Trident Microsystems
-Trident
-Advanced Micro Devices
-Oki Electric Industry
-Hitachi Computer Electronics
-Hitachi
-PictureTel Corp.
-PictureTel
-American Megatrends Inc.
-Western Digital
-Vitesse Semiconductor
-Vitesse
-NCR/AT&T GIS
-Elitegroup Computer Sys
-Unisys Systems
-Unisys
-Spea Software AG
-Spea
-Fujitsu ICL Computers
-Fujitsu ICL
-LSI Logic Corp of Canada
-LSIL
-International Business Machines Corp.
-Cirrus Logic
-Cirrus
-Micronics Computers Inc.
-Micronics
-Digital Equipment Corporation
-Video Logic Ltd.
-VLogic
-Weitek
-AST Research
-Tseng Labs
-Tseng
-National Semiconductor
-Phoenix Technologies Ltd.
-Phoenix
-Epson
-Netframe Systems Inc.
-NetFrame
-Reply Group
-Reply
-Avance Logic Inc.
-Avance
-VLSI Technology
-VLSI
-ULSI
-ATI Technologies
-Kolter Electronic - Germany
-KOLTER
-LSI Logic
-Compaq Computer Corp.
-Compaq
-BREA Technologies Inc.
-BREA
-Arris
-Shanghai Dare Technologies Ltd.
-Berkom
-LinTech GmbH
-LinTech
-Vivitar Corporation
-Lava Computer MFG Inc.
-Lava
-Dynalink
-SK - Electronics Co., Ltd.
-us robotics
-General Dynamics
-Ncipher Corp. Ltd
-Hauppauge Computer Works Inc.
-Hauppauge
-Lockheed Martin Corp
-Lockheed Martin
-Paradyne Corp.
-Gammagraphx, Inc.
-Gammagraphx
-..\\DB/WowClientDB.h
 \tmemIdx: %d
 \tsoundIdx: %d
 \tvideoIdx: %d
 \tcpuIdx: %d
 DetectHardware():
 .PAVVideoHardwareRec@@
-Send to Tim
-Device name =
-Vendor name =
-Vendor id = 0x%04X\nDevice id = 0x%04X\n\n
 Hardware changed.  Reload default settings?
 You must type 'y' to confirm overwrite. Process aborted!
 Canceled File Creation
+ABSORBED
 TEMPIMMUNE
 BLOCKED
 PARRIED
@@ -15453,8 +8535,8 @@ AUDIOSTREAM
 archivename
 *pathPrefix
 pathPrefix
-hashEntry < archiveptr->header.hashcount
 block < archiveptr->header.blockcount
+hashEntry < archiveptr->header.hashcount
 (block table)
 (hash table)
 (attributes)
@@ -15524,7 +8606,7 @@ C:\\build\\buildWoW\\Storm\\Source\\SBig.cpp
 m_used < SIZE
 count <= m_used
 d <= SMALL_BOUND
-<= SMALL_BOUND
+c <= SMALL_BOUND
 .?AVBigData@@
 SBIG
 C:\\build\\buildWoW\\Storm\\Source\\SMsg.cpp
@@ -15724,13 +8806,13 @@ mapObjDef->mapObj
 entity
 missile
 effect
-doodad
-entity->GetType() & CMapBaseObj::Type_DoodadDef
-doodad->GetType() & CMapBaseObj::Type_DoodadDef
+entity->GetType() & (CMapBaseObj::Type_Entity | CMapBaseObj::Type_DoodadDef)
 CMath::fnotequal_(baseObj->scale,0.0f)
 baseObj->scale
-baseObj->GetType() & (CMapBaseObj::Type_Entity | CMapBaseObj::Type_DoodadDef)
-!(\"CWorld::RemoveObject(): unhandled type\")
+baseObj->GetType() & CMapBaseObj::Type_Entity
+doodadDef->GetType() & CMapBaseObj::Type_DoodadDef
+CMath::fnotequal_(doodadDef->scale,0.0f)
+doodadDef->scale
 *dist >= 0.0f && *dist <= 1.0f
 radius > 0.0f && radius < 16
 ldelta
@@ -15740,6 +8822,7 @@ chunkRect.miny <= (64*16)
 chunkRect.maxy > 0
 chunkRect.minx <= (64*16)
 chunkRect.maxx > 0
+.?AVCWModelFadeout@@
 Detail doodads enabled.
 Detail doodads disabled.
 BSP render enabled.
@@ -15824,6 +8907,7 @@ mapObjDefGroup
 pointPool - sPointPool < (sizeof(sPointPool) / sizeof(sPointPool[0]))
 oframe->count < POOL_SIZE
 p_inCount < POOL_SIZE
+Land
 EmoteEatNoSheathe
 Deflect
 EmoteDanceOnce
@@ -16084,7 +9168,7 @@ Pixel shaders disabled.
 Pixel shaders unsupported on current API/HW.
 Pixel shaders enabled.
 Value must be between 0.3 and 1.0.
-Value must be between 20 and 300.
+Value must be between 100 and 300.
 waterLOD fixed to 0
 BaseMip must be 0 or 1
 BaseMip level changed to %d
@@ -16194,12 +9278,12 @@ dist
 scPtr
 queryFlags & (CWorld::WQF_doodadMask | CWorld::WQF_gameObjMask | CWorld::WQF_terrain)
 sub < (sizeof(corners) / sizeof(corners[0]))
-!(queryFlags & CWorld::WQF_liquid)
-Request for facets off edge of map: (%g,%g,%g,%g)
-facetData
 tLocation.maxy < ((64*16)*((150.0f/36.0f)*8)) && tLocation.maxy < ((64*16)*((150.0f/36.0f)*8))
 tLocation.minx >= 0.0f && tLocation.miny >= 0.0f
 s_vertexIndex[2][2] == 18
+!(queryFlags & CWorld::WQF_liquid)
+Request for facets off edge of map: (%g,%g,%g,%g)
+facetData
 facet
 nodeFaceIndices
 nodes
@@ -16249,8 +9333,6 @@ bActive
 mapObjDef == 0
 mapObjDefGroup->aaBox.b != mapObjDefGroup->aaBox.t
 mapObjGroup
-C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\CMapLight.h
-!CMath::fequalz_(start, end, 0.001f)
 Environments\\Stars\\stars.mdl
 CMap::Unload() mapObjDefHash not empty
 CMap::Unload() doodadDefHash not empty
@@ -16345,6 +9427,7 @@ C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapPurge.cpp
 .PAUHTEXTURE__@@
 adtFile
 neighbor[i]->neighbor[backwardsNeighbor] == this
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapDoodadDef.cpp
 .PAVCGxTex@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapChunk.cpp
 gxTexture==0
@@ -16411,7 +9494,6 @@ list.IsEmpty()
 !freeList.IsEmpty()
 areaLow
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapLight.cpp
-C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapDoodadDef.cpp
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapChunkRender.cpp
 (GxBufValid(m_vtxBuf) ^ GxBufValid(m_idxBuf)) == 0
 asyncObject == 0
@@ -16479,19 +9561,12 @@ BloodSpurtSmall01_Medium.blp
 BloodSpurtSmall01_Low.blp
 violenceLevel
 Sets the violence level of the game
-C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\ViolenceLevels.cpp
-newLevel >= 0 && newLevel < VIOLENCELEVEL_NUMVIOLENCELEVELS
 C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\GameTime_C.cpp
 Gamespeed set from %.03f to %.03f
 Malformed message recieved: Id = %d, Len = %d, Read = %d\n
 Time set to %s
 Server game time is %s
 !\"Warning, not enough free callback slots, add to MAX_GAMETIMECHANGECALLBACKS!\"
-C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\TaxiMap.cpp
-TaxiMap
-TAXIMAPFILEWRONGSIZE|%s|%d|%d|%d|%d
-Textures\\TaxiMaps\\TaxiMap%02d
-src && dst
 denomination >= 0 && denomination < MAX_CURRENCY_TYPES
 C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\Loot.cpp
 s_lootInitialized
@@ -16534,7 +9609,6 @@ index < (sizeof(s_cvarInfo) / sizeof(s_cvarInfo[0]))
 PlayerNames
 .?AVPLAYERNAMEDESC@@
 s_unitShowMode
-Warning: invalid profanity filter expression: \"%s\"\n
 C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\WorldText.cpp
 s_critHeights[i].startProgress <= s_critHeights[i].endProgress
 m_type < NUM_WORLDTEXTTYPES
@@ -16601,7 +9675,7 @@ Textures\\Minimap
 .PBVAreaPOIRec@@
 .?AV?$TSExplicitList@UMINIMAPMD5NAME@@$0?CCCCCCCD@@@
 dir:
-%s\\md5translate.txt
+%s\\md5translate.trs
 minimapVisRadius > 0.0f
 C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\Minimap.cpp
 s_currentZoom < NUM_ZOOMS
@@ -16646,11 +9720,6 @@ MANA
 %s_PET
 ..\\..\\Object/ObjectClient/Player_C.h
 SPELL_FAILED_UNKNOWN
-SPELL_FAILED_NOT_IN_CONTROL
-SPELL_FAILED_POSSESSED
-SPELL_FAILED_FOOD_LOWLEVEL
-SPELL_FAILED_NOT_ON_TAXI
-SPELL_FAILED_IMMUNE
 SPELL_FAILED_WRONG_PET_FOOD
 SPELL_FAILED_UNIT_NOT_INFRONT
 SPELL_FAILED_UNIT_NOT_BEHIND
@@ -16685,6 +9754,7 @@ SPELL_FAILED_ROOTED
 SPELL_FAILED_REQUIRES_SPELL_FOCUS
 SPELL_FAILED_REQUIRES_AREA
 SPELL_FAILED_REAGENTS
+SPELL_FAILED_POSSESSED
 SPELL_FAILED_PACIFIED
 SPELL_FAILED_OUT_OF_RANGE
 SPELL_FAILED_ONLY_UNDERWATER
@@ -16701,8 +9771,8 @@ SPELL_FAILED_NO_PET
 SPELL_FAILED_NO_MOUNTS_ALLOWED
 SPELL_FAILED_NO_ITEMS_WHILE_SHAPESHIFTED
 SPELL_FAILED_NO_FISH
-SPELL_FAILED_NO_DUELING
 SPELL_FAILED_NO_ENDURANCE
+SPELL_FAILED_NO_DUELING
 SPELL_FAILED_NO_COMBO_POINTS
 SPELL_FAILED_NO_CHARGES_REMAIN
 SPELL_FAILED_NO_AMMO
@@ -16713,8 +9783,10 @@ SPELL_FAILED_NOT_TRADEABLE
 SPELL_FAILED_NOT_STANDING
 SPELL_FAILED_NOT_SHAPESHIFT
 SPELL_FAILED_NOT_READY
+SPELL_FAILED_NOT_ON_TAXI
 SPELL_FAILED_NOT_MOUNTED
 SPELL_FAILED_NOT_KNOWN
+SPELL_FAILED_NOT_IN_CONTROL
 SPELL_FAILED_NOT_INFRONT
 SPELL_FAILED_NOT_HERE
 SPELL_FAILED_NOT_FISHABLE
@@ -16735,8 +9807,10 @@ SPELL_FAILED_ITEM_GONE
 SPELL_FAILED_ITEM_ALREADY_ENCHANTED
 SPELL_FAILED_INTERRUPTED_COMBAT
 SPELL_FAILED_INTERRUPTED
+SPELL_FAILED_IMMUNE
 SPELL_FAILED_HUNGER_SATIATED
 SPELL_FAILED_HIGHLEVEL
+SPELL_FAILED_FOOD_LOWLEVEL
 SPELL_FAILED_FLEEING
 SPELL_FAILED_FIZZLE
 SPELL_FAILED_ERROR
@@ -16748,6 +9822,8 @@ SPELL_FAILED_CHEST_IN_USE
 SPELL_FAILED_CASTER_DEAD
 SPELL_FAILED_CASTER_AURASTATE
 SPELL_FAILED_CANT_STEALTH
+SPELL_FAILED_CANT_DUEL_WHILE_STEALTHED
+SPELL_FAILED_CANT_DUEL_WHILE_INVISIBLE
 SPELL_FAILED_CANT_CAST_ON_TAPPED
 SPELL_FAILED_CANT_BE_DISENCHANTED
 SPELL_FAILED_CANT_BE_CHARMED
@@ -16755,11 +9831,12 @@ SPELL_FAILED_BAD_TARGETS
 SPELL_FAILED_BAD_IMPLICIT_TARGETS
 SPELL_FAILED_AUTOTRACK_INTERRUPTED
 SPELL_FAILED_AURA_BOUNCED
-SPELL_FAILED_ALREADY_AT_FULL_POWER
-SPELL_FAILED_ALREADY_AT_FULL_HEALTH
 SPELL_FAILED_ALREADY_OPEN
 SPELL_FAILED_ALREADY_HAVE_SUMMON
 SPELL_FAILED_ALREADY_HAVE_CHARM
+SPELL_FAILED_ALREADY_BEING_TAMED
+SPELL_FAILED_ALREADY_AT_FULL_POWER
+SPELL_FAILED_ALREADY_AT_FULL_HEALTH
 SPELL_FAILED_AFFECTING_COMBAT
 Unknown Spell '%s'
 !s_spellWorldModel
@@ -17185,6 +10262,7 @@ scene
 .?AUM2ModelCamera@@
 .?AUM2ModelLight@@
 .?AUM2ModelEvent@@
+.?AUM2ModelAttachment@@
 .?AUM2ModelTextureTransform@@
 .?AUM2ModelTextureFlipbook@@
 .?AUM2ModelTextureWeight@@
@@ -17197,9 +10275,6 @@ scene
 (int) m_refCount > 0
 Model2: CM2Model::%s stalled: %s\n
 m_loaded
-m_world.Row2AsVec3()->SquaredMag() > 0
-m_world.Row1AsVec3()->SquaredMag() > 0
-m_world.Row0AsVec3()->SquaredMag() > 0
 ../../source\\Tempest/cmath.h
 color.z >= 0.0f && color.z <= 1.0f
 color.y >= 0.0f && color.y <= 1.0f
@@ -17273,8 +10348,8 @@ model->m_loaded
 .?AUM2SceneCallback@@
 C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Scene.cpp
 .?AVCM2Model@@
-!m_hitTest
 !m_hitList
+!m_hitTest
 .?AUM2HitRec@@
 m_hitTest
 sequenceId != (0xffffffff)
@@ -17305,6 +10380,7 @@ Model2
 Model2: M2Initialize called mode than once\n
 C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Cache.cpp
 m_freeTail == &m_freeList
+Model2: Invalid file extension: %s\n
 .?AVCM2Shared@@
 Model2: File not found: %s\n
 .mdx
@@ -17315,58 +10391,28 @@ Model2: File not found: %s\n
 CDataAllocator@0x%08x: leaked %u: %s(%d) [%u][%u]
 C:\\build\\buildWoW\\engine\\Source\\Base\\CDataAllocator.cpp
 m_dataUsed > 0
+C:\\build\\buildWoW\\engine\\Source\\Base\\CUnreal.cpp
+(a.bits & (0xff << 23)) != 0
+%s%*d.%0*d
+-inf
+a >= u_n1_01 && a <= u_1_01
 .?AVCFrameStrata@@
 C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleTop.cpp
 !s_instance
 C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleTop.h
 m_eventqueue[i][strata].Count() == 0
-.?AUSIMPLEFRAMENODE@@
-.PAVCFrameStrataNode@@
-levels[i]->frames.IsLinked(frame)
 !frames.IsLinked(frame)
 .?AVCFrameStrataNode@@
-frames.IsLinked(frame)
 .?AVFRAMEPRIORITY@@
 event < NUM_SIMPLE_EVENTS
 frame->IsVisible()
 frame->IsInitialized()
 index < m_count
 renderList.IsLinked(batch)
+levels[i]->frames.IsLinked(frame)
+frames.IsLinked(frame)
+.PAVCFrameStrataNode@@
 .PAVFRAMEPRIORITY@@
-Shaders\\Pixel\\Desaturate.bls
-$parent
-Texture named '%s' already registered
-alphaMode
-Gradient
-Color
-TexCoords
-C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRender.cpp
-m_texture
-rect.miny <= rect.maxy
-rect.minx <= rect.maxx
-CMath::fequal_(m_texCoord[1].y, m_texCoord[3].y)
-CMath::fequal_(m_texCoord[0].y, m_texCoord[2].y)
-CMath::fequal_(m_texCoord[2].x, m_texCoord[3].x)
-CMath::fequal_(m_texCoord[0].x, m_texCoord[1].x)
-FontString named '%s' already registered
-Offset
-Shadow
-wraponspaces
-justifyH
-justifyV
-bytes
-monochrome
-THICK
-outline
-Missing font height in %s element
-FontHeight
-okay
-height > 0
-!m_text || !*m_text
-m_font
-.?AUCSimpleBatchedTexture@@
-m_stringbatch
-.?AURENDERCALLBACKNODE@@
 %s:OnAnimFinished
 %s:OnUpdateModel
 FogColor
@@ -17377,6 +10423,29 @@ scale
 Bad model file: %s
 OnAnimFinished
 OnUpdateModel
+Offset
+Frame anchored to itself: %s
+Couldn't find relative frame: %s
+relativeTo
+Invalid anchor point in frame: %s
+relativePoint
+point
+SETALLPOINTS set to true in frame with anchors (ignored)
+Anchors
+setAllPoints
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.cpp
+Size
+Couldn't find inherited node: %s
+inherits
+.?AVCFramePointAbsolute@@
+.?AVCFramePointRelative@@
+relative != this
+relative
+.?AUFRAMENODE@CLayoutFrame@@
+!IsResizeDependency( frame )
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.h
+whichPoint < (sizeof(m_points) / sizeof(m_points[0]))
+!\"Unhandled frame point\"
 %s:OnReceiveDrag
 %s:OnDragStop
 %s:OnDragStart
@@ -17393,6 +10462,7 @@ OnUpdateModel
 C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleFrame.cpp
 m_drawlayers[i].IsEmpty()
 m_initialized_state != STATE_DELETED
+$parent
 Frame named '%s' already registered
 Frames
 An unnamed frame cannot have a 'Scripts' element
@@ -17450,6 +10520,7 @@ C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRender.h
 drawlayer < NUM_SIMPLEFRAME_DRAWLAYERS
 .?AUREGIONNODE@@
 region
+.?AUSIMPLEFRAMENODE@@
 frame->frame
 region->region
 event < sizeof(m_eventmask)*8
@@ -17462,28 +10533,6 @@ Button4
 RightButton
 MiddleButton
 LeftButton
-Frame anchored to itself: %s
-Couldn't find relative frame: %s
-relativeTo
-Invalid anchor point in frame: %s
-relativePoint
-point
-SETALLPOINTS set to true in frame with anchors (ignored)
-Anchors
-setAllPoints
-C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.cpp
-Size
-Couldn't find inherited node: %s
-inherits
-.?AVCFramePointAbsolute@@
-.?AVCFramePointRelative@@
-relative != this
-relative
-.?AUFRAMENODE@CLayoutFrame@@
-!IsResizeDependency( frame )
-C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.h
-whichPoint < (sizeof(m_points) / sizeof(m_points[0]))
-!\"Unhandled frame point\"
 SetBackdropBorderColor
 SetBackdropColor
 EnableKeyboard
@@ -17547,6 +10596,38 @@ Error: %s is anchored to itself
 Couldn't find frame named '%s'
 Unknown frame point
 Usage: SetAllPoints(\"frame\")
+Shaders\\Pixel\\Desaturate.bls
+Texture named '%s' already registered
+alphaMode
+Gradient
+Color
+TexCoords
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRender.cpp
+m_texture
+rect.miny <= rect.maxy
+rect.minx <= rect.maxx
+CMath::fequal_(m_texCoord[1].y, m_texCoord[3].y)
+CMath::fequal_(m_texCoord[0].y, m_texCoord[2].y)
+CMath::fequal_(m_texCoord[2].x, m_texCoord[3].x)
+CMath::fequal_(m_texCoord[0].x, m_texCoord[1].x)
+FontString named '%s' already registered
+Shadow
+wraponspaces
+justifyH
+justifyV
+bytes
+monochrome
+THICK
+outline
+Missing font height in %s element
+FontHeight
+okay
+height > 0
+!m_text || !*m_text
+m_font
+.?AUCSimpleBatchedTexture@@
+m_stringbatch
+.?AURENDERCALLBACKNODE@@
 %s:OnDoubleClick
 %s:OnClick
 PushedTextOffset
@@ -17762,9 +10843,7 @@ AVI
 RIFF
 %s.avi
 %s.sbt
-Logs\\movies.log
-Total dropped frames: %d
-Frame drop on frame %d
+EnableSubtitles
 StopMovie
 StartMovie
 Usage: StartMovie(\"filename\")
@@ -17967,28 +11046,6 @@ instanceNumber < MAX_FILE_INSTANCES
 baseHandle < MAX_FILES
 .?AUSoundFileDataCacheBlock@@
 .?AV?$TSExplicitList@USoundFileObjectCacheNode@@$0?CCCCCCCD@@@
-.?AUSTRINGBLOCK@ProfileInternal@@
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Profile.cpp
-stringBlock
-.?AUPROFILE@ProfileInternal@@
-[%s]\n
-section
-%I64d
-pSection
-profilePtr
-.?AUSECTION@ProfileInternal@@
-.?AUKEYVALUE@ProfileInternal@@
-.?AV?$TSExplicitList@UKEYVALUE@ProfileInternal@@$0?CCCCCCCD@@@
-.?AV?$TSExplicitList@USECTION@ProfileInternal@@$0?CCCCCCCD@@@
-cameraPtr
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Camera.cpp
-HCAMERA
-.PAVCBaseManaged@@
-srcPtr
-x >= 0 && x <= 1.0f
-y >= 0 && y <= 1.0f
-data == saved
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\DataMgrInt.h
 dataTypeId < CBaseManaged::DATATYPEIDS
 fieldId < m_managedArray.Count()
 C:\\build\\buildWoW\\ENGINE\\Source\\Services\\DataMgr.cpp
@@ -17999,6 +11056,15 @@ fieldId < mgrPtr->m_managedArray.Count()
 mgrPtr
 result
 !(mgrPtr->m_managedArray[fieldId]->m_flags & CBaseManaged::READONLY)
+cameraPtr
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Camera.cpp
+HCAMERA
+.PAVCBaseManaged@@
+srcPtr
+x >= 0 && x <= 1.0f
+y >= 0 && y <= 1.0f
+data == saved
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\DataMgrInt.h
 C:\\build\\buildWoW\\ENGINE\\Source\\Services\\GfxSingletonManager.cpp
 manager
 .?AVParticleSystemManager@@
@@ -18060,11 +11126,11 @@ C:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleSystem.cpp
 m_hmodel
 .?AVCParticle@@
 p.m_timeToLive >= 0
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c34matrix.cpp
+CMath::fequal_(axis_.Mag(), 1.0f)
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c33matrix.cpp
 CMath::fequal_(det, 0.0f) == false
-CMath::fequal_(axis_.Mag(), 1.0f)
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c44matrix.cpp
-C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c34matrix.cpp
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmemblock.cpp
 (body & 0x3) == 0
 (size & 0x3) == 0
@@ -18703,6 +11769,7 @@ Theta
 Tcommaaccent
 Tcaron
 Tbar
+Sigma
 Scommaaccent
 Scircumflex
 Sacute
@@ -18765,6 +11832,7 @@ Macron
 Ldot
 Lcommaaccent
 Lcaron
+Lambda
 Lacute
 Kcommaaccent
 Kappa
@@ -18812,6 +11880,7 @@ Aringacute
 Aogonek
 Amacron
 Alphatonos
+Alpha
 Acute
 Abreve
 AEacute
@@ -19131,6 +12200,7 @@ nbspace
 Delta
 approxequal
 radical
+Omega
 integral
 product
 summation
@@ -19244,8 +12314,3 @@ invalid option in `format'
 invalid format (width or precision too long)
 [-+ #0]*(%d*)%.?(%d*)
 \\000
-C:\\build\\buildWoW\\engine\\Source\\Base\\CUnreal.cpp
-(a.bits & (0xff << 23)) != 0
-%s%*d.%0*d
--inf
-a >= u_n1_01 && a <= u_1_01
