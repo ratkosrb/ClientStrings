@@ -148,7 +148,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 5230 (Apr  5 2006 16:21:37)
+WoW [Release] Build 5302 (Apr 26 2006 15:58:20)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -157,7 +157,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 5230 (Apr  5 2006)
+WoW [Release] Build 5302 (Apr 26 2006)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -464,7 +464,6 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuop`z
 cinu
    !
 } ~ % $ 0
@@ -608,7 +607,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5230)
+World of WarCraft (build 5302)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -934,8 +933,8 @@ C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Apr  5 2006
-16:19:34
+Apr 26 2006
+15:55:50
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1451,8 +1450,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5230
-1.10.1
+5302
+1.10.2
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -2820,6 +2819,8 @@ WorldFrame
 .?AVCGTooltip@@
 %s%s%d
 .?AUSAVEDVARIABLE@@
+SetGuildRecruitmentMode
+GetGuildRecruitmentMode
 RequestRaidInfo
 EnumerateServerChannels
 SetChatWindowShown
@@ -2865,6 +2866,7 @@ GetDefaultLanguage
 GetLanguageByIndex
 GetNumLaguages
 SendChatMessage
+OPTION_GUILD_RECRUITMENT_CHANNEL
 MONEY
 COMBAT_FACTION_CHANGE
 COMBAT_HONOR_GAIN
@@ -2950,6 +2952,8 @@ SIZE
 NAME
 %s%f%f%f
 MESSAGES
+AUTO
+STANDARD
 ZONECHANNELS
 WINDOW
 COLORS
@@ -2969,6 +2973,7 @@ COLORS\n
 ZONECHANNELS %d\n\n
 END\n\n
 CHANNELS\n
+%s %s\n\n
 ADDEDVERSION %d\n\n
 VERSION %d\n\n
 CHAT_%s_GET
@@ -3044,6 +3049,8 @@ Usage: GetLanguageByIndex(index)
 Usage: DoEmote(\"emote\"[, \"target\"])
 Usage: JoinChannelByName(\"name\")
 Usage: LeaveChannelByName(\"name\")
+SetGuildRecruitmentMode: invalid mode
+Usage: SetGuildRecruitmentMode(mode)
 Usage: %s(\"channel\")
 [%d. %s]
 Usage: SetChannelPassword(\"name\", \"password\")
@@ -7886,6 +7893,7 @@ textures\\Weather\\WeatherMistGrainy01.blp
 .?AU?$Packet@UGrain@Sand@@$0BIAA@$00@@
 Sand packet lifetime was too long.  curTime: %g, baseTime: %g, lastTime: %g, buildTime: %g\n
 .?AUMist@Mists@@
+force-weather-type-on
 weatherDensity
 Value out of range (%d - %d)\n
 .?AUPosDelta@@
@@ -9299,6 +9307,8 @@ Hide
 Show
 DisableDrawLayer
 EnableDrawLayer
+IsToplevel
+SetToplevel
 SetID
 GetID
 SetScale
@@ -9767,6 +9777,8 @@ SoundDopplerFactor
 SoundDistanceFactor
 .?AUSound@@
 Blizzard Web Client
+<unknown %08X>
+<null>
 .?AUW32Joystick@@
 C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsClipboard.cpp
 %02X
