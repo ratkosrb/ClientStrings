@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.8.0
-// Build: 3734
+// Patch: 0.9.0
+// Build: 3807
 
 Public Enum OPCODES
 {
@@ -620,5 +620,23 @@ Public Enum OPCODES
     SMSG_SET_PCT_SPELL_MODIFIER=613,                                // 0x265
     CMSG_SET_AMMO=614,                                              // 0x266
     SMSG_CORPSE_RECLAIM_DELAY=615,                                  // 0x267
-    NUM_MSG_TYPES=616,                                              // 0x268
+    CMSG_SET_ACTIVE_MOVER=616,                                      // 0x268
+    CMSG_PET_CANCEL_AURA=617,                                       // 0x269
+    CMSG_PLAYER_AI_CHEAT=618,                                       // 0x26A
+    CMSG_CANCEL_AUTO_REPEAT_SPELL=619,                              // 0x26B
+    MSG_GM_ACCOUNT_ONLINE=620,                                      // 0x26C
+    MSG_LIST_STABLED_PETS=621,                                      // 0x26D
+    CMSG_STABLE_PET=622,                                            // 0x26E
+    CMSG_UNSTABLE_PET=623,                                          // 0x26F
+    CMSG_BUY_STABLE_SLOT=624,                                       // 0x270
+    SMSG_STABLE_RESULT=625,                                         // 0x271
+    CMSG_STABLE_REVIVE_PET=626,                                     // 0x272
+    CMSG_STABLE_SWAP_PET=627,                                       // 0x273
+    MSG_QUEST_PUSH_RESULT=628,                                      // 0x274
+    SMSG_PLAY_MUSIC=629,                                            // 0x275
+    SMSG_PLAY_OBJECT_SOUND=630,                                     // 0x276
+    CMSG_REQUEST_PET_INFO=631,                                      // 0x277
+    CMSG_FAR_SIGHT=632,                                             // 0x278
+    SMSG_SPELLDISPELLOG=633,                                        // 0x279
+    NUM_MSG_TYPES=634,                                              // 0x27A
 }
