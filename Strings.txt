@@ -1,5 +1,5 @@
-<lx{
-CyrixInsteadCentaurHalls
+GenuineIntel
+AuthenticAMDCyrixInsteadCentaurHalls
 0\aw,a
 Qkkbal
 wn>Jj
@@ -139,7 +139,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 4449 (Jun  9 2005 11:59:43)
+WoW [Release] Build 4470 (Jun 23 2005 18:56:06)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -148,7 +148,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 4449 (Jun  9 2005)
+WoW [Release] Build 4470 (Jun 23 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -207,6 +207,9 @@ O*9y]
 \a\b\b\t\t\n\n\v\v
 \x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B
 ���=���=
+1\r&�Ug�
+-*}zg!!
+;'zGv
 ���<��L=���=���=
 >333>
 /d?=m\a
@@ -220,7 +223,6 @@ a $ a4A
 \b\b\b\b\b\b
 \b\b\b\b\b\b
 kernel32.dll
-GetProcAddress
 CreateFileW
 GetFileAttributesW
 SetFileAttributesW
@@ -235,6 +237,7 @@ FindNextFileW
 FindFirstFileW
 GetDiskFreeSpaceExW
 GetModuleFileNameW
+GetProcAddress
 MultiByteToWideChar
 user32.dll
 GetPropA
@@ -456,9 +459,8 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo
+ltuop
 cinu
-ltuo
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -564,6 +566,7 @@ uptodate
 1024x768
 800x600
 640x480
+speech2
 speech2.MPQ
 dbc.MPQ
 speech.MPQ
@@ -609,7 +612,7 @@ Bad SMSG_NEW_WORLD\n
 Notification received: %s
 login
 charselect
-World of WarCraft (build 4449)
+World of WarCraft (build 4470)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -618,7 +621,6 @@ World of Warcraft
 %s has wrong row size (found %i, expected %i)
 %s has wrong number of columns (found %i, expected %i)
 Unable to open %s
-%s already loaded! Aborting to prevent memory leak!
 Country
 Language
 WoW Config
@@ -669,6 +671,8 @@ Check interface addon version number
 movieSubtitle
 Show movie subtitles
 Show movie on startup
+accountName
+Saved account name
 FontPerf
 Note
 Suggestion
@@ -721,6 +725,7 @@ DepthTest
 light
 .PAD
 C:\\build\\buildWoW\\WoW\\Source\\WowServices/PatchFiles.h
+Failed to open archive %s
 patch.MPQ
 patch-?.MPQ
 Data\\%s
@@ -829,12 +834,6 @@ Warning, trying to add duplicate string \"%s\" in context %d!
 .?AUSIMPLEFONTSTRINGREGHASH@@
 .?AV?$TSExplicitList@USIMPLEFONTSTRINGREGHASH@@$0?CCCCCCCD@@@
 %m%d%y_%H%M%S
-CallNtPowerInformation
-powrprof.dll
-OsTime
-Internal
-CpuTicksPerSecond
-.?AVOsTimeManager@@
 \\shell\\open\\command
 lpt9
 lpt8
@@ -859,6 +858,12 @@ com1
 fonts\\
 %s\\%s
 Fonts
+.?AVOsTimeManager@@
+OsTime
+Internal
+CpuTicksPerSecond
+CallNtPowerInformation
+powrprof.dll
 C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsIME.cpp
 .?AUOsIMECandidate@@
 SCROLLBAR
@@ -912,6 +917,16 @@ Win98SE
 Win98
 Win95OSR2
 Win95
+s_CheckCpu
+extended (%d): 1c=%08X 1d=%08x 4a=%08X 8c=%08X
+standard (%d): 1b=%08X 1d=%08x 4a=%08X
+chip = %s
+processors: %d
+cores: %d
+sockets: %d
+features: %08X
+vendor: %d
+Logs\\cpu.log
 %sTempHTMLFile%x.html
 file://
 open
@@ -925,8 +940,8 @@ advapi32.dll
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jun  9 2005
-11:56:49
+Jun 23 2005
+18:49:33
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1310,7 +1325,6 @@ CharacterAttachment
 SERVER_ALERT_URL
 ModelFFX
 .?AUConsoleString@@
-Logs\\connection.log
 .?AVEffectDeath@@
 .?AVEffectGlow@@
 GlueXML is modified or corrupt
@@ -1401,6 +1415,8 @@ PlayCreditsMusic
 PlayGlueMusic
 QuitGame
 SetCurrentScreen
+SetSavedAccountName
+GetSavedAccountName
 GetLocale
 GetBuildInfo
 INTERFACE_VERSION
@@ -1431,10 +1447,11 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4449
-1.5.1
+4470
+0.6.0
 RELEASE_BUILD
 BETA_BUILD
+Usage: SetSavedAccountName(\"accountName\")
 Usage: SetCurrentScreen(\"screen\")
 Usage: PlayGlueMusic(\"filename\")
 %dx%d
@@ -1615,11 +1632,14 @@ GAMEOBJECT_FLAGS
 GAMEOBJECT_DISPLAYID
 OBJECT_FIELD_CREATED_BY
 PLAYER_FIELD_PADDING
+PLAYER_FIELD_BYTES2
 PLAYER_FIELD_LAST_WEEK_RANK
 PLAYER_FIELD_LAST_WEEK_CONTRIBUTION
 PLAYER_FIELD_YESTERDAY_CONTRIBUTION
 PLAYER_FIELD_LIFETIME_DISHONORBALE_KILLS
 PLAYER_FIELD_LIFETIME_HONORBALE_KILLS
+PLAYER_FIELD_THIS_WEEK_CONTRIBUTION
+PLAYER_FIELD_THIS_WEEK_KILLS
 PLAYER_FIELD_LAST_WEEK_KILLS
 PLAYER_FIELD_YESTERDAY_KILLS
 PLAYER_FIELD_SESSION_KILLS
@@ -1630,6 +1650,7 @@ PLAYER_FIELD_BUYBACK_SEED
 PLAYER_FIELD_BUYBACK_RANDOM_PROPERTIES_ID
 PLAYER_FIELD_BUYBACK_ITEM_ID
 PLAYER_FIELD_PVP_MEDALS
+PLAYER_SELF_RES_SPELL
 PLAYER_AMMO_ID
 PLAYER_FIELD_BYTES
 PLAYER_FIELD_MOD_DAMAGE_DONE_PCT
@@ -1670,64 +1691,82 @@ PLAYER_FIELD_BANKBAG_SLOT_1
 PLAYER_FIELD_BANK_SLOT_1
 PLAYER_FIELD_PACK_SLOT_1
 PLAYER_FIELD_INV_SLOT_HEAD
-PLAYER_FIELD_PAD_0
-PLAYER_VISIBLE_ITEM_19_CREATOR
+PLAYER_VISIBLE_ITEM_19_PAD
 PLAYER_VISIBLE_ITEM_19_PROPERTIES
 PLAYER_VISIBLE_ITEM_19_0
-PLAYER_VISIBLE_ITEM_18_CREATOR
+PLAYER_VISIBLE_ITEM_19_CREATOR
+PLAYER_VISIBLE_ITEM_18_PAD
 PLAYER_VISIBLE_ITEM_18_PROPERTIES
 PLAYER_VISIBLE_ITEM_18_0
-PLAYER_VISIBLE_ITEM_17_CREATOR
+PLAYER_VISIBLE_ITEM_18_CREATOR
+PLAYER_VISIBLE_ITEM_17_PAD
 PLAYER_VISIBLE_ITEM_17_PROPERTIES
 PLAYER_VISIBLE_ITEM_17_0
-PLAYER_VISIBLE_ITEM_16_CREATOR
+PLAYER_VISIBLE_ITEM_17_CREATOR
+PLAYER_VISIBLE_ITEM_16_PAD
 PLAYER_VISIBLE_ITEM_16_PROPERTIES
 PLAYER_VISIBLE_ITEM_16_0
-PLAYER_VISIBLE_ITEM_15_CREATOR
+PLAYER_VISIBLE_ITEM_16_CREATOR
+PLAYER_VISIBLE_ITEM_15_PAD
 PLAYER_VISIBLE_ITEM_15_PROPERTIES
 PLAYER_VISIBLE_ITEM_15_0
-PLAYER_VISIBLE_ITEM_14_CREATOR
+PLAYER_VISIBLE_ITEM_15_CREATOR
+PLAYER_VISIBLE_ITEM_14_PAD
 PLAYER_VISIBLE_ITEM_14_PROPERTIES
 PLAYER_VISIBLE_ITEM_14_0
-PLAYER_VISIBLE_ITEM_13_CREATOR
+PLAYER_VISIBLE_ITEM_14_CREATOR
+PLAYER_VISIBLE_ITEM_13_PAD
 PLAYER_VISIBLE_ITEM_13_PROPERTIES
 PLAYER_VISIBLE_ITEM_13_0
-PLAYER_VISIBLE_ITEM_12_CREATOR
+PLAYER_VISIBLE_ITEM_13_CREATOR
+PLAYER_VISIBLE_ITEM_12_PAD
 PLAYER_VISIBLE_ITEM_12_PROPERTIES
 PLAYER_VISIBLE_ITEM_12_0
-PLAYER_VISIBLE_ITEM_11_CREATOR
+PLAYER_VISIBLE_ITEM_12_CREATOR
+PLAYER_VISIBLE_ITEM_11_PAD
 PLAYER_VISIBLE_ITEM_11_PROPERTIES
 PLAYER_VISIBLE_ITEM_11_0
-PLAYER_VISIBLE_ITEM_10_CREATOR
+PLAYER_VISIBLE_ITEM_11_CREATOR
+PLAYER_VISIBLE_ITEM_10_PAD
 PLAYER_VISIBLE_ITEM_10_PROPERTIES
 PLAYER_VISIBLE_ITEM_10_0
-PLAYER_VISIBLE_ITEM_9_CREATOR
+PLAYER_VISIBLE_ITEM_10_CREATOR
+PLAYER_VISIBLE_ITEM_9_PAD
 PLAYER_VISIBLE_ITEM_9_PROPERTIES
 PLAYER_VISIBLE_ITEM_9_0
-PLAYER_VISIBLE_ITEM_8_CREATOR
+PLAYER_VISIBLE_ITEM_9_CREATOR
+PLAYER_VISIBLE_ITEM_8_PAD
 PLAYER_VISIBLE_ITEM_8_PROPERTIES
 PLAYER_VISIBLE_ITEM_8_0
-PLAYER_VISIBLE_ITEM_7_CREATOR
+PLAYER_VISIBLE_ITEM_8_CREATOR
+PLAYER_VISIBLE_ITEM_7_PAD
 PLAYER_VISIBLE_ITEM_7_PROPERTIES
 PLAYER_VISIBLE_ITEM_7_0
-PLAYER_VISIBLE_ITEM_6_CREATOR
+PLAYER_VISIBLE_ITEM_7_CREATOR
+PLAYER_VISIBLE_ITEM_6_PAD
 PLAYER_VISIBLE_ITEM_6_PROPERTIES
 PLAYER_VISIBLE_ITEM_6_0
-PLAYER_VISIBLE_ITEM_5_CREATOR
+PLAYER_VISIBLE_ITEM_6_CREATOR
+PLAYER_VISIBLE_ITEM_5_PAD
 PLAYER_VISIBLE_ITEM_5_PROPERTIES
 PLAYER_VISIBLE_ITEM_5_0
-PLAYER_VISIBLE_ITEM_4_CREATOR
+PLAYER_VISIBLE_ITEM_5_CREATOR
+PLAYER_VISIBLE_ITEM_4_PAD
 PLAYER_VISIBLE_ITEM_4_PROPERTIES
 PLAYER_VISIBLE_ITEM_4_0
-PLAYER_VISIBLE_ITEM_3_CREATOR
+PLAYER_VISIBLE_ITEM_4_CREATOR
+PLAYER_VISIBLE_ITEM_3_PAD
 PLAYER_VISIBLE_ITEM_3_PROPERTIES
 PLAYER_VISIBLE_ITEM_3_0
-PLAYER_VISIBLE_ITEM_2_CREATOR
+PLAYER_VISIBLE_ITEM_3_CREATOR
+PLAYER_VISIBLE_ITEM_2_PAD
 PLAYER_VISIBLE_ITEM_2_PROPERTIES
 PLAYER_VISIBLE_ITEM_2_0
-PLAYER_VISIBLE_ITEM_1_CREATOR
+PLAYER_VISIBLE_ITEM_2_CREATOR
+PLAYER_VISIBLE_ITEM_1_PAD
 PLAYER_VISIBLE_ITEM_1_PROPERTIES
 PLAYER_VISIBLE_ITEM_1_0
+PLAYER_VISIBLE_ITEM_1_CREATOR
 PLAYER_QUEST_LOG_20_2
 PLAYER_QUEST_LOG_20_1
 PLAYER_QUEST_LOG_19_2
@@ -1886,6 +1925,7 @@ fade in rate for player mouseover
 4096
 .?AVCGCamera@@
 IDLE_MESSAGE
+GetItemInfo
 GetRealmName
 GetMouseFocus
 AcceptAreaSpiritHeal
@@ -1922,7 +1962,9 @@ DeleteGMTicket
 UpdateGMTicket
 NewGMTicket
 GetGMTicket
+IsLinuxClient
 IsMacClient
+IsWindowsClient
 InCinematic
 OpeningCinematic
 RandomRoll
@@ -2003,10 +2045,11 @@ AssistByName
 AssistUnit
 AttackTarget
 TargetLastEnemy
+TargetLastTarget
+TargetNearestRaidMember
 TargetNearestPartyMember
 TargetNearestFriend
 TargetNearestEnemy
-TargetUnitsPet
 TargetUnit
 CancelPendingEquip
 EquipPendingItem
@@ -2095,7 +2138,8 @@ INVTYPE_SHOULDER
 INVTYPE_NECK
 INVTYPE_HEAD
 .?AV?$TSExplicitList@USAVEDVARIABLE@@$0?CCCCCCCD@@@
-.?AUNearestEnemyData@@
+.?AUNearestUnitData@@
+ERR_INVALID_PROMOTION_CODE
 ERR_GROUP_JOIN_BATTLEGROUND_TOO_MANY
 ERR_GROUP_JOIN_BATTLEGROUND_FAIL
 ERR_GROUP_JOIN_BATTLEGROUND_S
@@ -2155,6 +2199,7 @@ ERR_AUCTION_EXPIRED_S
 ERR_AUCTION_SOLD_S
 ERR_AUCTION_WON_S
 ERR_AUCTION_OUTBID_S
+ERR_AUCTION_REMOVED
 ERR_AUCTION_STARTED
 ERR_AUCTION_REPAIR_ITEM
 ERR_AUCTION_MIN_BID
@@ -2205,7 +2250,7 @@ ERR_SPELL_UNLEARNED_S
 ERR_PETITION_NOT_ENOUGH_SIGNATURES
 ERR_PETITION_CREATOR
 ERR_PETITION_IN_GUILD
-ERR_PETITION_ALREADY_SIGNED
+ERR_PETITION_DECLINED_S
 ERR_PETITION_SIGNED_S
 ERR_PETITION_SIGNED
 ERR_PETITION_OFFERED_S
@@ -2214,10 +2259,10 @@ ERR_FISH_ESCAPED
 ERR_FISH_NOT_HOOKED
 ERR_IGNORING_YOU_S
 ERR_INVALID_ITEM_TARGET
-ERR_PETITION_DECLINED_S
-igPlayerInviteAccept
 ERR_ZONE_EXPLORED_XP
 ERR_ZONE_EXPLORED
+ERR_PETITION_ALREADY_SIGNED
+igPlayerInviteAccept
 ERR_NOEMOTEWHILERUNNING
 ERR_DEATHBIND_SUCCESS_S
 ERR_DEATHBINDALREADYBOUND
@@ -2365,6 +2410,7 @@ ERR_ATTACK_DEAD
 ERR_ATTACK_CHARMED
 ERR_ATTACK_CONFUSED
 ERR_ATTACK_FLEEING
+ERR_ATTACK_MOUNTED
 ERR_ATTACK_PACIFIED
 ERR_ATTACK_STUNNED
 ERR_INVALID_ATTACK_TARGET
@@ -2398,8 +2444,8 @@ ERR_LOOT_WHILE_INVULNERABLE
 ERR_LOOT_NO_UI
 ERR_LOOT_STUNNED
 ERR_LOOT_NOTSTANDING
-igQuestFailed
 ERR_LOOT_BAD_FACING
+igQuestFailed
 ERR_LOOT_DIDNT_KILL
 ERR_LOOT_TOO_FAR
 ERR_LOOT_LOCKED
@@ -2465,8 +2511,8 @@ ERR_UNINVITE_YOU
 ERR_JOINED_GROUP_S
 igPlayerInviteDecline
 ERR_DECLINE_GROUP_S
-LEVELUP
 ERR_GROUP_DISBANDED
+LEVELUP
 ERR_LEFT_GROUP_YOU
 ERR_LEFT_GROUP_S
 ERR_NEW_LEADER_YOU
@@ -2525,6 +2571,7 @@ ERR_DESTROY_NONEMPTY_BAG
 ERR_BAG_FULL
 ERR_WRONG_SLOT
 ERR_PROFICIENCY_NEEDED
+ERR_CANT_EQUIP_RANK
 ERR_CANT_EQUIP_EVER
 ERR_CANT_EQUIP_SKILL
 ERR_CANT_EQUIP_LEVEL_I
@@ -2556,7 +2603,7 @@ Attempted to register too many CVars
 Usage: RegisterCVar(\"cvar\" [, default])
 Couldn't find CVar named '%s'
 Usage: GetCVar(\"cvar\")
-\"%s\" is a protected cvar
+\"%s\" is read-only
 Usage: SetCVar(\"cvar\", value [, \"scriptCvar\")
 Usage: SetCVarDefault(\"cvar\")
 smallCull
@@ -2591,7 +2638,6 @@ C:\\build\\buildWoW\\WoW\\Source\\Ui\\GameUI.cpp
 Usage: EquipPendingItem(index)
 Usage: CancelPendingEquip(index)
 Usage: TargetUnit(\"unit\")
-Usage: TargetUnitsPet(\"unit\")
 Usage: AssistUnit(\"unit\")
 Usage: AssistByName(\"name\")
 Usage: TargetByName(\"name\")
@@ -2635,6 +2681,9 @@ hostile
 friendly
 Usage: DropItemOnUnit(\"unit\")
 HOME_INN
+Usage: GetItemInfo(itemID|\"itemlink\")
+item:%d:%d:%d:%d
+item:
 run worldexec.wtf
 scaleui
 script
@@ -2689,11 +2738,11 @@ GAMEHIGHLIGHTFRIENDLYUNIT
 GAMEHIGHLIGHTHOSTILEUNIT
 igCharacterSelect
 %s%s%s%d%d
+RESIST
+ABSORB
 CRUSHING
 GLANCING
 CRITICAL
-ABSORB
-%s%s%s%d
 HEAL
 LOOTWINDOWCOINSOUND
 INTERFACESOUND_CURSORGRABOBJECT
@@ -2758,7 +2807,7 @@ GetDefaultLanguage
 GetLanguageByIndex
 GetNumLaguages
 SendChatMessage
-CHAT_SYSTEM_GET
+_SYSTEM_GET
 CHAT_TEXT_EMOTE_GET
 CHAT_EMOTE_GET
 CHAT_WHISPER_INFORM_GET
@@ -2869,6 +2918,8 @@ END\n\n
 CHANNELS\n
 VERSION %d\n\n
 [%s]
+UNIT_PVP_NAME
+PVP_RANK_%d_%d
 %d. %s
 CHAT_EMOTE_UNKNOWN
 %s%s%s%s%s%s%d%d%s
@@ -2902,7 +2953,6 @@ YOU_LEFT
 SUSPENDED
 YOU_JOINED
 YOU_CHANGED
-%c%s
 .?AUPENDINGTEXTEMOTE@@
 LAUGH_WORD%d
 ZONE_UNDER_ATTACK
@@ -2930,9 +2980,6 @@ OFFICER
 RAID
 Usage: GetLanguageByIndex(index)
 Usage: DoEmote(\"emote\"[, \"target\"])
-Chat logging disabled
-Error creating chat log..logging disabled
-Chat logging enabled
 Logs\\WOWChatLog.txt
 Usage: JoinChannelByName(\"name\")
 Usage: LeaveChannelByName(\"name\")
@@ -2966,7 +3013,6 @@ GetWorldLocMapPosition
 GetMapLandmarkInfo
 GetNumMapLandmarks
 GetCorpseMapPosition
-GetBoundMapPosition
 GetPlayerMapPosition
 UpdateMapHighlight
 ProcessMapClick
@@ -3115,7 +3161,6 @@ Invalid spell slot in PickupSpell
 Invalid spell slot in CastSpell
 Invalid spell slot in IsCurrentCast
 Invalid spell slot in IsSpellPassive
-C:\\build\\buildWoW\\WoW\\Source\\Ui\\SpellBookFrame.cpp
 Usage: GetShapeshiftFormInfo(index)
 Usage: CastShapeshiftForm(index)
 Usage: GetShapeshiftFormCooldown(index)
@@ -3137,13 +3182,8 @@ GetBindingKey
 SetBinding
 GetBinding
 GetNumBindings
-ALT-
-CTRL-
-SHIFT-
-bind
-.?AVCGUIBindings@@
-DefaultBindings.wtf
-bind %s %s\n
+MOUSEWHEELUP
+MOUSEWHEELDOWN
 NUMPADEQUALS
 CAPSLOCK
 NUMPADDECIMAL
@@ -3151,8 +3191,15 @@ NUMPADDIVIDE
 NUMPADMULTIPLY
 NUMPADMINUS
 NUMPADPLUS
-NUMPAD%d
 SPACE
+ALT-
+CTRL-
+SHIFT-
+bind
+.?AVCGUIBindings@@
+DefaultBindings.wtf
+bind %s %s\n
+NUMPAD%d
 SHIFT
 CTRL
 BUTTON%d
@@ -3161,8 +3208,6 @@ BUTTON4
 BUTTON3
 BUTTON2
 BUTTON1
-MOUSEWHEELUP
-MOUSEWHEELDOWN
 Found binding with no name in %s
 Found binding %s with no script in %s
 runOnUp
@@ -3322,6 +3367,7 @@ GetNumWorldStateUI
 .?AV?$TSExplicitList@UWORLDSTATE@@$0?CCCCCCCD@@@
 Usage: GetWorldStateUIInfo(index)
 .?AUWORLDSTATE@@
+HasWandEquipped
 GetWeaponEnchantInfo
 ClearInspectPlayer
 GetInspectHonorData
@@ -3450,6 +3496,8 @@ Usage: SetSelectedAuctionItem(\"type\", index)
 Usage: GetSelectedAuctionItem(\"type\")
 Usage: IsAuctionSortReversed(\"type\", \"sort\")
 Usage: SetSelectedAuctionItem(index)
+GetBattlefieldFlagPosition
+GetNumBattlefieldFlagPositions
 GetBattlefieldPosition
 GetNumBattlefieldPositions
 RequestBattlefieldPositions
@@ -3468,6 +3516,7 @@ ShowBattlefieldList
 CloseBattlefield
 GetBattlefieldTimeWaited
 GetBattlefieldEstimatedWaitTime
+GetBattlefieldInstanceRunTime
 GetBattlefieldInstanceExpiration
 GetBattlefieldPortExpiration
 GetBattlefieldStatus
@@ -3478,6 +3527,8 @@ JoinBattlefield
 GetBattlefieldInstanceInfo
 GetBattlefieldInfo
 GetNumBattlefields
+HordeFlag
+AllianceFlag
 .?AUBattlefieldData@@
 script message(\"PvP Won!\");
 script message(\"PvP Lost!\");
@@ -3495,6 +3546,7 @@ Usage: GetBattlefieldStatInfo(index)
 Usage: GetBattlefieldStatData(playerIndex, statIndex)
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\BattlefieldInfo.cpp
 Usage: GetBattlefieldPosition(index)
+Usage: GetBattlefieldFlagPosition(index)
 GuildRoster
 CloseGuildRoster
 GuildControlDelRank
@@ -3828,7 +3880,6 @@ EditMacro
 DeleteMacro
 GetMacroInfo
 GetNumMacros
-SaveMacros
 CreateMacro
 Interface\\Icons\\
 .?AV?$TSExplicitList@UMACRONODE@@$0?CCCCCCCD@@@
@@ -3879,7 +3930,8 @@ Usage(RenamePetition(\"name\")
 GetTabardInfo
 TurnInGuildCharter
 BuyGuildCharter
-GetGuildCharterCost
+GetGu
+ildCharterCost
 CloseGuildRegistrar
 Usage: BuyGuildCharter(guildName)
 GetTabardCreationCost
@@ -4179,16 +4231,16 @@ minimapPlayerModel
 Interface\\Minimap\\Rotating-MinimapArrow.mdx
 minimapArrowModel
 %s%f%f
+raid%d
 party%d
 Usage: SetZoom(level)
 .?AUTAXIROUTELINE@@
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestTextParser.cpp
+%.1f
 SPELL_DURATION_UNTIL_CANCELLED
 SPELL_DURATION
 INT_SPELL_DURATION
-SPELL_POINTS_SPREAD_TEMPLATE
 INT_SPELL_POINTS_SPREAD_TEMPLATE
-%.1f
 TARGET_TOKEN_NOT_FOUND
  ...hic!
 .?AVCRect@NTempest@@
@@ -4340,10 +4392,13 @@ C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.cpp
 .?AVCGInputControl@@
 Joystick
 enable joystick control
+GetInspectPVPRankProgress
+GetPVPRankProgress
 GetPVPRankInfo
 UnitPVPRank
 GetPVPLifetimeStats
 GetPVPLastWeekStats
+GetPVPThisWeekStats
 GetPVPYesterdayStats
 GetPVPSessionStats
 GetResSicknessDuration
@@ -4358,6 +4413,7 @@ IsInGuild
 GetComboPoints
 HasFullControl
 SetPortraitTexture
+UnitIsCivilian
 UnitIsTrivial
 UnitIsTappedByPlayer
 UnitIsTapped
@@ -4408,6 +4464,7 @@ UnitFactionGroup
 UnitIsPVPFreeForAll
 UnitIsPVP
 UnitPlayerControlled
+UnitInRaid
 UnitInParty
 UnitIsPartyLeader
 UnitIsCorpse
@@ -4434,7 +4491,6 @@ raidpet
 party
 partypet
 raidpet%d
-raid%d
 partypet%d
 Usage: ConsoleExec(\"console_command\")
 Usage: UnitIsUnit(\"unit\", \"otherUnit\")
@@ -4483,12 +4539,13 @@ Usage: UnitBuff(\"unit\", index)
 Usage: UnitDebuff(\"unit\", index)
 Usage: UnitIsTapped(\"unit\")
 Usage: UnitIsTappedByPlayer(\"unit\")
+Usage: UnitIsTrivial(\"unit\")
+Usage: UnitIsCivilian(\"unit\")
 Usage: SetPortraitTexture(texture, \"unit\")
 Usage: UnitCreatureType(\"unit\")
 Usage: UnitCreatureFamily(\"unit\")
 GENERIC
 Usage: UnitPVPRank(\"unit\")
-PVP_RANK_%d_%d
 Usage: GetPVPRankInfo(rank [, unit])
 AREA_SPIRIT_HEALER_OUT_OF_RANGE
 AREA_SPIRIT_HEALER_IN_RANGE
@@ -4603,7 +4660,6 @@ MAIL_CLOSED
 MAIL_SHOW
 GM_PLAYER_INFO
 GUILD_ROSTER_UPDATE
-GUILD_ROSTER_SHOW
 PLAYER_FLAGS_CHANGED
 UPDATE_EXHAUSTION
 PLAYER_UPDATE_RESTING
@@ -4713,6 +4769,7 @@ QUEST_PROGRESS
 QUEST_DETAIL
 QUEST_GREETING
 GOSSIP_CLOSED
+GOSSIP_ENTER_CODE
 GOSSIP_SHOW
 ITEM_TEXT_CLOSED
 ITEM_TEXT_READY
@@ -4822,7 +4879,6 @@ UNIT_MODEL_CHANGED
 UNIT_PORTRAIT_UPDATE
 UNIT_NAME_UPDATE
 UNIT_PVP_UPDATE
-UNIT_SPELLMISS
 UNIT_COMBAT
 UNIT_LOYALTY
 UNIT_PET_TRAINING_POINTS
@@ -5013,7 +5069,7 @@ ARMOR_TEMPLATE
 DAMAGE_TEMPLATE
 SINGLE_DAMAGE_TEMPLATE
 UNIT_SKINNABLE
-NON_AGGRESSIVE
+PVP_RANK_CIVILIAN
 RESURRECTABLE
 PVP_ENABLED
 TOOLTIP_UNIT_LEVEL
@@ -5119,9 +5175,7 @@ Usage: SetText(\"text\" [, color])
 Usage: AppendText(\"text\")
 Usage: SetHyperlink(link)
 Unknown link type
-item:
 Usage: SetAction(slot)
-USE_ITEM
 ATTACK
 Usage: SetPetAction(slot)
 Usage: SetShapeshift(slot)
@@ -5153,6 +5207,7 @@ Usage: SetLootRollItem(id)
 .?AVWowConnection@@
 .?AVNETEVENTQUEUE@@
 Client net stats: %Lu bytes sent, %Lu bytes received, %Lu msec elapsed
+Expected (m_netState == NS_INITIALIZED), got %d
 NetClient::HandleDisconnect()
 Received pong with old sequence
 .?AUNETEVENTQUEUENODE@@
@@ -5315,6 +5370,7 @@ pagetextcache.wdb
 petnamecache.wdb
 petitioncache.wdb
 itemtextcaxhe.wdb
+wowcache.wdb
 .?AUDBCACHEHASH@?$DBCache@VCreatureStats_C@@HVHASHKEY_INT@@@@
 .?AUDBCACHECALLBACK@@
 ..\\..\\Object/CreatureStats.h
@@ -5348,6 +5404,8 @@ DBCache::CancelCallback ignored for id %016I64X.
 .?AV?$TSExplicitList@UDBCACHEHASH@?$DBCache@VCGPetition@@HVHASHKEY_INT@@@@$0?CCCCCCCD@@@
 .?AUDBCACHEHASH@?$DBCache@VItemTextCache_C@@HVHASHKEY_INT@@@@
 .?AV?$TSExplicitList@UDBCACHEHASH@?$DBCache@VItemTextCache_C@@HVHASHKEY_INT@@@@$0?CCCCCCCD@@@
+.?AUDBCACHEHASH@?$DBCache@VWardenCachedModule@@VCWardenKey@@V2@@@
+.?AV?$TSExplicitList@UDBCACHEHASH@?$DBCache@VWardenCachedModule@@VCWardenKey@@V2@@@$0?CCCCCCCD@@@
 Object(s) play a sound to the zone
 Object(s) play music to the zone
 Object(s) emote something random to the zone
@@ -6228,6 +6286,7 @@ Sending HELLO to Grunt at %s
 Unable to get the information necessary to identify self to Grunt
 Unknown grunt result %d
 account id [%d] has passed authentication
+%d.%d.%d.%d
 received kick message for account id [%d:%d]
 Server name=%s
 Sending PING
@@ -6244,7 +6303,36 @@ Unlocking session for account id [%d:%d]
 Cancel request %08x
 Unknown grunt result %d @ %d
 .PAVWowConnection@@
+Unabled to permit incoming connection attempts on socket
+Unabled to establish a connection to socket
+Unabled to associates local address with socket
 127.0.0.1
+Unable to establish TCP socket
+%s: %s
+Unknown socket error %d
+The specified socket type is not supported in this address family.
+The specified protocol is the wrong type for this socket.
+The specified protocol is not supported.
+The socket is marked as nonblocking and the connection cannot be completed immediately.
+The referenced socket is not a type that supports connection-oriented service.
+Attempt to connect timed out without establishing a connection.
+The descriptor is not a socket.
+No buffer space is available. The socket cannot be created/connected.
+No more socket descriptors are available.
+A blocking Windows Sockets 1.1 call is in progress, or the service provider is still processing a callback function.
+The attempt to connect was forcefully rejected.
+The specified address family is not supported.
+The network cannot be reached from this host at this time.
+The socket is already connected (connection-oriented sockets only).
+The socket is already bound to an address, or the parameter is a listening socket.
+A nonblocking connect call is in progress on the specified socket.
+The name or namelen parameter is not a valid part of the user address space, the namelen parameter is too small, the name parameter contains an incorrect address format for the associated address family, or the first two bytes of the memory block specified by name does not match the address family associated with the socket descriptor.
+The specified address is not a valid address for this machine.
+The blocking Windows Socket 1.1 call was canceled through WSACancelBlockingCall.
+A process on the machine is already bound to the same fully-qualified address and the socket has not been marked to allow address reuse.
+An attempt was made to access a socket in a way forbidden by its access permissions.
+The network subsystem or the associated service provider has failed.
+A successful WSAStartup call must occur before using this function.
 Network
 Net Thread %d
 Network thread %d did not exit normally
@@ -6418,6 +6506,7 @@ Unknown Object Type
 .?AVC4Plane@NTempest@@
 MEETINGSTONE_LEVEL
 BADBASEGAMEOBJECT|%d
+.?AVCGGameObject_C_Type_FlagStand@@
 .?AVCGGameObject_C_Type_MeetingStone@@
 .?AVCGGameObject_C_Type_SpellCaster@@
 .?AVCGGameObject_C_Type_AuctionHouse@@
@@ -6443,8 +6532,6 @@ BADBASEGAMEOBJECT|%d
 .?AVCGGameObject_C_Type_Door@@
 NOOBJECTFILENAME|%d|%d|Game
 .?AUSegment@?$ShipPath@V?$WowClientDB@VTaxiPathNodeRec@@@@@@
-DEFLECTED
-RESIST
 StandHigh
 Interface\\Buttons\\TalkToMeQuestion_LTBlue.mdx
 Interface\\Buttons\\TalkToMeQuestionMark.mdx
@@ -6482,13 +6569,11 @@ showfootprintparticles
 toggles rendering of footprint particles
 .?AVCGNamePlateFrame@@
 %s: %d
-%s: %s
 \n*** WARNING NAN in AnimEventCallback position\neventId %x eventData %d\nmodel %s unitname %s\nxyz = %x %x %x\n
 %s%s%s%s%s%s%s
 \n<%s>
 Unknown Being
 UNKNOWNOBJECT
-UNIT_PVP_NAME
 .?AVCMissile@@
 NOUNITDISPLAYID|%d|%s
 NOCOLLISIONBOX|%s
@@ -6591,6 +6676,7 @@ Animate Custom2
 Animate Custom1
 Animate Custom0
 -NONE-
+flagStand
 meetingStone
 spellCaster
 guardPost
@@ -6613,6 +6699,10 @@ chest
 questgiver
 button
 door
+returnSpell
+returnAura
+pickupSpell
+stealthAffected
 noDamageImmune
 leaveLoot
 losOK
@@ -6674,7 +6764,6 @@ SpiritWolf (DONOTRENAME)
 FootstepSounds
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitSound_C.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombat_C.cpp
-PVP_RANK_CIVILIAN
 COMBATLOG_DISHONORGAIN
 COMBATLOG_HONORGAIN
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
@@ -6705,21 +6794,32 @@ PERIODICAURAHEALSELFOTHER
 PERIODICAURAHEALSELFSELF
 POWERGAIN_OTHER
 POWERGAIN_SELF
+SPELLPOWERDRAINOTHEROTHER
+SPELLPOWERDRAINOTHERSELF
+SPELLPOWERDRAINSELFOTHER
 SPELLPOWERLEECHOTHEROTHER
 SPELLPOWERLEECHOTHERSELF
 SPELLPOWERLEECHSELFOTHER
+SPELLHAPPINESSDRAINOTHER
+SPELLHAPPINESSDRAINSELF
 PERIODICAURADAMAGEOTHEROTHER
 PERIODICAURADAMAGEOTHERSELF
 PERIODICAURADAMAGESELFOTHER
 PERIODICAURADAMAGESELFSELF
-PERIODICAURADAMAGEABSORBEDOTHEROTHER
-PERIODICAURADAMAGEABSORBEDOTHERSELF
-PERIODICAURADAMAGEABSORBEDSELFOTHER
-PERIODICAURADAMAGEABSORBEDSELFSELF
+ABSORB_TRAILER
+BLOCK_TRAILER
+VULNERABLE_TRAILER
+RESIST_TRAILER
+CRUSHING_TRAILER
+GLANCING_TRAILER
 SPELLLOGABSORBOTHEROTHER
 SPELLLOGABSORBOTHERSELF
 SPELLLOGABSORBSELFOTHER
 SPELLLOGABSORBSELFSELF
+SPELLRESISTOTHEROTHER
+SPELLRESISTOTHERSELF
+SPELLRESISTSELFOTHER
+SPELLRESISTSELFSELF
 PARTYKILLOTHER
 PROCRESISTOTHEROTHER
 PROCRESISTOTHERSELF
@@ -6728,9 +6828,6 @@ PROCRESISTSELFSELF
 DISPELFAILEDOTHEROTHER
 DISPELFAILEDOTHERSELF
 DISPELFAILEDSELFOTHER
-SPELLREFLECTOTHEROTHER
-SPELLREFLECTOTHERSELF
-SPELLREFLECTSELFOTHER
 DURABILITYDAMAGE_DEATH
 ITEMENCHANTMENTREMOVEOTHER
 ITEMENCHANTMENTREMOVESELF
@@ -6742,12 +6839,6 @@ TRADESKILL_LOG_THIRDPERSON
 TRADESKILL_LOG_FIRSTPERSON
 FEEDPET_LOG_THIRDPERSON
 FEEDPET_LOG_FIRSTPERSON
-COMBATSPECIALOTHER
-COMBATSPECIALSELF
-BLOCK_TRAILER
-COMBATHITABSORBOTHEROTHER
-COMBATHITABSORBOTHERSELF
-COMBATHITABSORBSELFOTHER
 COMBATHITCRITOTHEROTHER
 COMBATHITCRITOTHERSELF
 COMBATHITCRITSELFOTHER
@@ -6763,6 +6854,9 @@ VSBLOCKSELFOTHER
 VSABSORBOTHEROTHER
 VSABSORBOTHERSELF
 VSABSORBSELFOTHER
+VSRESISTOTHEROTHER
+VSRESISTOTHERSELF
+VSRESISTSELFOTHER
 VSEVADEOTHEROTHER
 VSEVADEOTHERSELF
 VSEVADESELFOTHER
@@ -6803,30 +6897,38 @@ AURAADDEDOTHERHARMFUL
 AURAADDEDSELFHARMFUL
 AURAREMOVEDOTHER
 AURAREMOVEDSELF
-SPELLRESISTOTHEROTHER
-SPELLRESISTOTHERSELF
-SPELLRESISTSELFOTHER
-SPELLIMMUNEOTHEROTHER
-SPELLIMMUNEOTHERSELF
-SPELLIMMUNESELFOTHER
-SPELLEVADEDOTHEROTHER
-SPELLEVADEDOTHERSELF
-SPELLEVADEDSELFOTHER
 SPELLDODGEDOTHEROTHER
 SPELLDODGEDOTHERSELF
 SPELLDODGEDSELFOTHER
+SPELLDODGEDSELFSELF
 SPELLPARRIEDOTHEROTHER
 SPELLPARRIEDOTHERSELF
 SPELLPARRIEDSELFOTHER
+SPELLPARRIEDSELFSELF
 SPELLBLOCKEDOTHEROTHER
 SPELLBLOCKEDOTHERSELF
 SPELLBLOCKEDSELFOTHER
+SPELLBLOCKEDSELFSELF
+SPELLEVADEDOTHEROTHER
+SPELLEVADEDOTHERSELF
+SPELLEVADEDSELFOTHER
+SPELLEVADEDSELFSELF
+SPELLIMMUNEOTHEROTHER
+SPELLIMMUNEOTHERSELF
+SPELLIMMUNESELFOTHER
+SPELLIMMUNESELFSELF
 SPELLDEFLECTEDOTHEROTHER
 SPELLDEFLECTEDOTHERSELF
 SPELLDEFLECTEDSELFOTHER
+SPELLDEFLECTEDSELFSELF
+SPELLREFLECTOTHEROTHER
+SPELLREFLECTOTHERSELF
+SPELLREFLECTSELFOTHER
+SPELLREFLECTSELFSELF
 SPELLMISSOTHEROTHER
 SPELLMISSOTHERSELF
 SPELLMISSSELFOTHER
+SPELLMISSSELFSELF
 UNITDIESOTHER
 UNITDESTROYEDOTHER
 UNITDIESSELF
@@ -6852,10 +6954,6 @@ GENERICPOWERGAIN_SELF
 DAMAGESHIELDOTHEROTHER
 DAMAGESHIELDOTHERSELF
 DAMAGESHIELDSELFOTHER
-SPELLLOGHITABSORBOTHEROTHER
-SPELLLOGHITABSORBOTHERSELF
-SPELLLOGHITABSORBSELFOTHER
-SPELLLOGHITABSORBSELFSELF
 SPELLLOGCRITOTHEROTHER
 SPELLLOGCRITOTHERSELF
 SPELLLOGCRITSELFOTHER
@@ -6875,11 +6973,6 @@ AURADISPELSELF
 _SINGULAR
 SPELLEXTRAATTACKSOTHER
 SPELLEXTRAATTACKSSELF
-SPELLPOWERDRAINOTHEROTHER
-SPELLPOWERDRAINOTHERSELF
-SPELLPOWERDRAINSELFOTHER
-SPELLHAPPINESSDRAINOTHER
-SPELLHAPPINESSDRAINSELF
 OPEN_LOCK_OTHER
 OPEN_LOCK_SELF
 SPELLSPLITDAMAGEOTHEROTHER
@@ -7122,13 +7215,7 @@ Hardware changed.  Reload default settings?
 Begin Typing the commands
 You must type 'y' to confirm overwrite. Process aborted!
 Canceled File Creation
-ABSORBED
-TEMPIMMUNE
-BLOCKED
-PARRIED
-DODGED
-EVADED
-PHYSICAL
+REFLECT
 %s/%s/%s (%s) %s:%s
 %2.2i
 Not Set
@@ -7171,7 +7258,7 @@ Function:\t%s\n
 File:\t%s\nLine:\t%d\n
 Program:\t%s\n
 This application has encountered a critical error:\n\n%s\n
-ERROR #%u (0x%08x)
+ERROR #%u (0x%08x) %s
 No Minidumps
 .?AUHANDLER@@
 Error
@@ -7183,6 +7270,18 @@ KERNEL32.DLL
 %04d-%02d-%02d %02d.%02d.%02d %s.%s
 Errors\\
  Log
+Fatal Condition
+Fatal Exception
+File Corrupt
+Access Out Of Bounds
+Handle Never Released
+Memory Never Released
+Memory Invalid Block
+Memory Corrupt
+Memory Already Freed
+Version Mismatch
+Not Archive
+Assertion Failure
 0x%08X (%s) at %04X:%08X
 unknown exception
 ntdll.dll
@@ -7410,8 +7509,6 @@ need dictionary
 ^\b[^Z
 -ZI\r\v
 US]CQ
-enumTextureGxCache
-enumTextures
 detailDoodadAlpha
 showSimpleDoodads
 showLowDetail
@@ -7836,6 +7933,7 @@ layerMask
 Shaders\\Pixel\\terrainp.bls
 .?AUCChunkLayer@@
 C:\\build\\buildWoW\\WoW\\Common\\AaBsp.cpp
+CMap::SafeOpen() failed %s
 CMap::SafeOpen() failed %s\n
 CMap::SafeRead() failed %s\n
 lights.lit
@@ -7843,6 +7941,7 @@ lights.lit
 World\\Maps\\
 .?AVCMapAreaLow@@
 %s\\%s.wdl
+CMap::LoadWdt() failed %s\n
 .?AV?$TSExplicitList@VCMapDoodadDef@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@VCMapObjDef@@$0?CCCCCCCD@@@
 .PAVCMapLight@@
@@ -7931,6 +8030,38 @@ Interface\\PvPRankBadges\\PvPRank01.blp
 .?AUSWorldTextIcon@@
 DAMAGE_TEXT_FONT
 .?AUWORLDTEXTSTRING@@
+cSGCV\n
+|\a\n\nSP
+rYOFK
+3,nGU~
+z_$pw
+\"\"]aP
+!T~.a
+c5]Ry
+s)oI'
+XO!3V
+YrI\a(
+(R\vdB
+\nIjtm
+=CV)n
+/8^G,
+n^qN.u
+2><' u
+Vdky6
+cspJo
+_dchFK8
+5Q:,dx
+R\n\tyf&
+VL06R
+\rd<F.
+>8M47
+XhBcy
+GluU\"`
+j=C\t>Rh
+Vd&\t+a
+F]{(-
+\vj JX+7
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\WardenClient.cpp
 .?AUregex_t@@
 Warning: invalid reserved names filter expression: \"%s\" (record ID %d)\n
 Warning: invalid chat profanity filter expression: \"%s\" (record ID %d)\n
@@ -8037,6 +8168,9 @@ MANA
 %s_PET
 C:\\build\\buildWoW\\WoW\\Source\\Magic\\MagicClient\\Spell_C.cpp
 SPELL_FAILED_UNKNOWN
+SPELL_FAILED_ONLY_BATTLEGROUNDS
+SPELL_FAILED_NO_EDIBLE_CORPSES
+SPELL_FAILED_TARGET_FREEFORALL
 SPELL_FAILED_DISENCHANT_WHILE_LOOTING
 SPELL_FAILED_TARGET_NOT_IN_RAID
 SPELL_FAILED_NOT_WHILE_TRADING
@@ -8137,6 +8271,7 @@ SPELL_FAILED_FOOD_LOWLEVEL
 SPELL_FAILED_FLEEING
 SPELL_FAILED_FIZZLE
 SPELL_FAILED_ERROR
+SPELL_FAILED_EQUIPPED_ITEM_CLASS_MAINHAND
 SPELL_FAILED_EQUIPPED_ITEM_CLASS
 SPELL_FAILED_EQUIPPED_ITEM
 SPELL_FAILED_DONT_REPORT
@@ -8210,6 +8345,7 @@ Include
 ++ Loading file %s
 Unable to create frame type: %s
 Couldn't find frame parent: %s
+inherits
 parent
 Unknown frame type: %s
 -- Creating unnamed %s
@@ -8499,6 +8635,7 @@ compat.lua
 Interface\\FrameXML\\compat.lua
 GetText
 GetPluralIndex
+DBG:
 Model2: M2Destroy never called\n
 .?AUCGxTexFlags@@
 shaders\\pixel\\Model2.bls
@@ -8786,7 +8923,6 @@ Anchors
 setAllPoints
 Size
 Couldn't find inherited node: %s
-inherits
 .?AVCFramePointAbsolute@@
 .?AVCFramePointRelative@@
 .?AUFRAMENODE@CLayoutFrame@@
@@ -9636,7 +9772,7 @@ afii57397
 afii57396
 afii57395
 afii57394
-fii57393
+afii57393
 afii57392
 afii57388
 afii57381
