@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.12.0
-// Build: 5496
+// Patch: 1.12.0
+// Build: 5595
 
 Public Enum SpellFailedReason
 {
@@ -136,17 +136,19 @@ Public Enum SpellFailedReason
     SPELL_FAILED_TARGET_NOT_IN_RAID = 0x81,                         // 0x081
     SPELL_FAILED_DISENCHANT_WHILE_LOOTING = 0x82,                   // 0x082
     SPELL_FAILED_PROSPECT_WHILE_LOOTING = 0x83,                     // 0x083
-    SPELL_FAILED_TARGET_FREEFORALL = 0x84,                          // 0x084
-    SPELL_FAILED_NO_EDIBLE_CORPSES = 0x85,                          // 0x085
-    SPELL_FAILED_ONLY_BATTLEGROUNDS = 0x86,                         // 0x086
-    SPELL_FAILED_TARGET_NOT_GHOST = 0x87,                           // 0x087
-    SPELL_FAILED_TOO_MANY_SKILLS = 0x88,                            // 0x088
-    SPELL_FAILED_TRANSFORM_UNUSABLE = 0x89,                         // 0x089
-    SPELL_FAILED_WRONG_WEATHER = 0x8A,                              // 0x08A
-    SPELL_FAILED_DAMAGE_IMMUNE = 0x8B,                              // 0x08B
-    SPELL_FAILED_PREVENTED_BY_MECHANIC = 0x8C,                      // 0x08C
-    SPELL_FAILED_PLAY_TIME = 0x8D,                                  // 0x08D
-    SPELL_FAILED_REPUTATION = 0x8E,                                 // 0x08E
-    SPELL_FAILED_UNKNOWN = 0x8F,                                    // 0x08F
+    SPELL_FAILED_PROSPECT_NEED_MORE = 0x84,                         // 0x084
+    SPELL_FAILED_TARGET_FREEFORALL = 0x85,                          // 0x085
+    SPELL_FAILED_NO_EDIBLE_CORPSES = 0x86,                          // 0x086
+    SPELL_FAILED_ONLY_BATTLEGROUNDS = 0x87,                         // 0x087
+    SPELL_FAILED_TARGET_NOT_GHOST = 0x88,                           // 0x088
+    SPELL_FAILED_TOO_MANY_SKILLS = 0x89,                            // 0x089
+    SPELL_FAILED_TRANSFORM_UNUSABLE = 0x8A,                         // 0x08A
+    SPELL_FAILED_WRONG_WEATHER = 0x8B,                              // 0x08B
+    SPELL_FAILED_DAMAGE_IMMUNE = 0x8C,                              // 0x08C
+    SPELL_FAILED_PREVENTED_BY_MECHANIC = 0x8D,                      // 0x08D
+    SPELL_FAILED_PLAY_TIME = 0x8E,                                  // 0x08E
+    SPELL_FAILED_REPUTATION = 0x8F,                                 // 0x08F
+    SPELL_FAILED_MIN_SKILL = 0x90,                                  // 0x090
+    SPELL_FAILED_UNKNOWN = 0x91,                                    // 0x091
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }

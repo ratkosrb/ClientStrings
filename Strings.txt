@@ -12,7 +12,8 @@ R6027\r\n- not enough space for lowio initialization\r\n
 R6026\r\n- not enough space for stdio initialization\r\n
 R6025\r\n- pure virtual function call\r\n
 R6024\r\n- not enough space for _onexit/atexit table\r\n
-R6019\r\n- unable to open console device\r\n
+R6019\r\n- unable
+to open console device\r\n
 R6018\r\n- unexpected heap error\r\n
 R6017\r\n- unexpected multithread lock error\r\n
 R6016\r\n- not enough space for thread data\r\n
@@ -414,7 +415,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 5496 (Jul 12 2006 11:05:42)
+WoW [Release] Build 5595 (Aug 14 2006 13:38:51)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -423,7 +424,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 5496 (Jul 12 2006)
+WoW [Release] Build 5595 (Aug 14 2006)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -726,9 +727,10 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo 2}
+ltuo ^}
 cinu
-ltuo r}
+ltuo`
+ltuo`
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -870,7 +872,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5496)
+World of WarCraft (build 5595)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -883,6 +885,8 @@ Language
 WoW Config
 Region
 Wow.ini
+disableOptionalSpeech
+Disables the optional speech packs (forces use of primary speech pack.)
 RunOnce.wtf
 Config.wtf
 M2FasterDebug
@@ -902,6 +906,10 @@ use clip planes for sorting transparent objects
 M2UseZFill
 z-fill transparent objects
 movie
+timingModeOverride
+Select a specific timing mode (0=default 1=GetTickCount 2=RDTSC 3=QueryPerformanceCounter 4=timeGetTime)
+spamFilter
+Toggle spam filter
 profanityFilter
 Toggle profanity filter
 scriptMemory
@@ -970,6 +978,8 @@ except
 animation
 Profanity filter disabled
 Profanity filter enabled
+Spam filter disabled
+Spam filter enabled
 CacheUpdateHandler
 .PAD
 E:\\build\\buildWoW\\WoW\\Source\\WowServices/PatchFiles.h
@@ -1234,8 +1244,8 @@ E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jul 12 2006
-11:00:18
+Aug 14 2006
+13:36:17
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1747,8 +1757,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5496
-0.12.0
+5595
+1.12.0
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -2309,6 +2319,7 @@ RandomRoll
 SetMultisampleFormat
 GetCurrentMultisampleFormat
 GetMultisampleFormats
+SetupFullscreenScale
 GetRefreshRates
 SetScreenResolution
 GetCurrentResolution
@@ -2366,6 +2377,7 @@ UninviteFromParty
 InviteByName
 InviteToParty
 NotifyInspect
+CanInspect
 InitiateTrade
 GetMinimapZoneText
 GetSubZoneText
@@ -2605,13 +2617,13 @@ ERR_EXHAUSTION_TIRED
 ERR_EXHAUSTION_NORMAL
 ERR_EXHAUSTION_RESTED
 ERR_EXHAUSTION_WELLRESTED
-ERR_TICKET_NO_TEXT
+ERR_OBJECT_IS_BUSY
 ERR_TICKET_DB_ERROR
 ERR_TICKET_UPDATE_ERROR
 ERR_TICKET_CREATE_ERROR
-ERR_OBJECT_IS_BUSY
 ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
+ERR_TICKET_NO_TEXT
 ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
 ERR_PET_SPELL_TARGETS_DEAD
@@ -2628,6 +2640,7 @@ ERR_PETITION_ALREADY_SIGNED
 ERR_PETITION_DECLINED_S
 ERR_PETITION_SIGNED_S
 ERR_PETITION_SIGNED
+igPlayerInviteAccept
 ERR_PETITION_OFFERED_S
 ERR_SPELL_FAILED_NOTUNSHEATHED
 ERR_FISH_ESCAPED
@@ -2642,7 +2655,6 @@ ERR_DEATHBINDALREADYBOUND
 ERR_DUEL_CANCELLED
 ERR_DUEL_REQUESTED
 ERR_TOOBUSYTOFOLLOW
-igPlayerInviteAccept
 ERR_NOAMMO_S
 ERR_COMMAND_NEEDS_TARGET
 ERR_SPELL_OUT_OF_RANGE
@@ -2653,6 +2665,7 @@ ERR_GUILDEMBLEM_NOTGUILDMASTER
 ERR_GUILDEMBLEM_NOGUILD
 ERR_GUILDEMBLEM_INVALID_TABARD_COLORS
 ERR_GUILDEMBLEM_SUCCESS
+ERR_INVALID_INSPECT_TARGET
 ERR_INVALID_FOLLOW_TARGET
 ERR_UNIT_NOT_FOUND
 ERR_AUTOFOLLOW_TOO_FAR
@@ -2673,6 +2686,7 @@ ERR_WRONG_BAG_TYPE_SUBCLASS
 ERR_SPELL_FAILED_EQUIPPED_SPECIFIC_ITEM
 ERR_ONLY_ONE_AMMO
 ERR_ONLY_ONE_BOLT
+ERR_IGNORE_AMBIGUOUS
 ERR_IGNORE_REMOVED_S
 ERR_IGNORE_ADDED_S
 ERR_IGNORE_ALREADY_S
@@ -2994,7 +3008,6 @@ Usage: SetWorldDetail(value)
 Usage: SetWaterDetail(value)
 farclip
 Usage: SetFarclip(value)
-alphaLevel
 shadowLevel
 Usage: SetTerrainMip(value)
 doodadAnim
@@ -3025,6 +3038,7 @@ Usage: TargetByName(\"name\")
 Usage: FollowUnit(\"unit\")
 Usage: FollowByName(\"name\")
 Usage: InitiateTrade(\"unit\")
+Usage: CanInspect(unit)
 Usage: NotifyInspect(unit)
 Usage: InviteToParty(\"unit\")
 Usage: InviteByName(\"name\")
@@ -3045,6 +3059,9 @@ Usage: CheckInteractDistance(\"unit\", distIndex)
 .?AVC3iVector@NTempest@@
 gxRestart
 .?AUCGxMonitorMode@@
+Usage: SetupFullscreenScale(frame)
+SetupFullscreenScale(): Wrong object type, expected frame
+SetupFullscreenScale(): Couldn't find 'this' in frame object
 .?AUCGxFormat@@
 OpenGl
 gxApi
@@ -3091,7 +3108,6 @@ FrameXML has corrupt signature
 FrameXML missing signature
 Interface\\FrameXML\\FrameXML.toc
 Interface\\FrameXML\\Bindings.xml
-script
 BlockTrades
 UberTooltips
 Toggles ubertips
@@ -3340,6 +3356,7 @@ PVP_RANK_%d_%d
 %d. %s
 CHAT_EMOTE_UNKNOWN
 %s%s%s%s
+BATTLEGROUND
 RAID
 %s%s%s%s%s%s%d%d%s%d
 PLAYER_INVITE_BANNED
@@ -3384,6 +3401,8 @@ RAID_INSTANCE_WARNING_MIN
 RAID_INSTANCE_WARNING_HOURS
 INSTANCE_RESET_SUCCESS
 INSTANCE_RESET_FAILED
+INSTANCE_RESET_FAILED_OFFLINE
+INSTANCE_RESET_FAILED_ZONING
 .?AUregex_t@@
 Warning: invalid chat spam filter expression: \"%s\" (ID #: %d)\n
 SET_VOICE
@@ -3401,7 +3420,6 @@ DEFAULT_DND_MESSAGE
 Whisper message missing target player!
 Unknown language
 Unknown chat type
-BATTLEGROUND
 RAID_WARNING
 EMOTE
 OFFICER
@@ -3447,7 +3465,6 @@ PositionWorldMapArrowFrame
 UpdateWorldMapArrowFrames
 CreateMiniWorldMapArrowFrame
 CreateWorldMapArrowFrame
-SetupWorldMapScale
 GetMapOverlayInfo
 GetNumMapOverlays
 GetWorldLocMapPosition
@@ -3471,9 +3488,6 @@ E:\\build\\buildWoW\\WoW\\Source\\Ui\\WorldMap.cpp
 Interface\\Minimap\\MinimapArrow.mdx
 Usage: GetMapZones(continentIndex)
 Usage: SetMapZoom(continentIndex [,zoneIndex])
-Wrong object type for member function
-Attempt to find 'this' in non-framescript object
-Attempt to find 'this' in non-table object (used '.' instead of ':' ?)
 Usage: ProcessMapClick(x, y)
 Usage: UpdateMapHighlight(x, y)
 Usage: GetPlayerMapPosition(\"player\")
@@ -3851,6 +3865,9 @@ GetNumLootItems
 SetLootPortrait
 SetSlot
 Usage: SetSlot(index)
+Wrong object type for member function
+Attempt to find 'this' in non-framescript object
+Attempt to find 'this' in non-table object (used '.' instead of ':' ?)
 .?AV?$TSExplicitList@UFrameScriptObject_Variable@@$0?CCCCCCCD@@@
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\LootFrame.cpp
 YOU_LOOT_MONEY
@@ -4219,6 +4236,7 @@ TaxiNodePosition
 TaxiNodeName
 NumTaxiNodes
 SetTaxiMap
+.?AV?$TSExplicitList@UTAXIPATHNODESCLIENT@@$0?CCCCCCCD@@@
 .?AUTAXILINE@@
 .?AUTAXIROUTELINE@@
 Interface\\TaxiFrame\\TAXIMAP%d.blp
@@ -4234,6 +4252,7 @@ Usage: TaxiNodeCost(slot)
 Usage: TakeTaxiNode(slot)
 Usage: TaxiNodeGetType(slot)
 Usage: TaxiNodeSetCurrent(slot)
+.?AUTAXIPATHNODESCLIENT@@
 GetQuestIndexForWatch
 RemoveQuestWatch
 AddQuestWatch
@@ -4591,7 +4610,7 @@ Usage: GetContainerItemLink(index, slot)
 Usage: GetContainerItemCooldown(index, slot)
 Usage: PickupContainerItem(index, slot)
 Usage: SplitContainerItem(index, slot, amount)
-Usage: UseContainerItem(index, slot)
+Usage: UseContainerItem(index, slot[, onSelf])
 Usage: ShowContainerSellCursor(index, slot)
 Invalid slot in SetBagPortaitTexture
 Usage: SetBagPortaitTexture(texture, slot)
@@ -5046,7 +5065,9 @@ UnitFactionGroup
 UnitIsPVPFreeForAll
 UnitIsPVP
 UnitPlayerControlled
+UnitPlayerOrPetInRaid
 UnitInRaid
+UnitPlayerOrPetInParty
 UnitInParty
 UnitIsPartyLeader
 UnitIsCorpse
@@ -5737,6 +5758,7 @@ TOOLTIP_UNIT_LEVEL_CLASS
 TOOLTIP_UNIT_LEVEL_CLASS_TYPE
 PLAYER
 CORPSE
+%s - %s
 LOCKED_WITH_ITEM
 LOCKED_WITH_SPELL
 LOCKED_WITH_SPELL_KNOWN
@@ -7150,8 +7172,8 @@ showfootprintparticles
 toggles rendering of footprint particles
 .?AVCGNamePlateFrame@@
 %s: %d
-\n*** WARNING NAN in AnimEventCallback position\neventId %x eventData %d\nmodel %s unitname %s\nxyz = %x %x %x\n
-%s%s%s%s%s%s%s
+%s%s%s%s%s%s%s%s
+FOREIGN_SERVER_LABEL
 \n<%s>
 Unknown Being
 .?AW4MISS_REASON@@
@@ -7268,6 +7290,7 @@ Animate Custom3
 Animate Custom2
 Animate Custom1
 Animate Custom0
+auraGenerator
 capturePoint
 lotteryKiosk
 minigame
@@ -7298,14 +7321,26 @@ button
 door
 true
 false
+conditionID2
+conditionID1
+auraID2
+auraID1
+maxTime
+minTime
+maxSuperiority
+minSuperiority
+neutralPercent
+neutralEventID2
+neutralEventID1
 progressEventID2
 progressEventID1
 contestedEventID2
 contestedEventID1
 winEventID2
 winEventID1
-superiority
-quorum
+worldstate3
+worldstate2
+worldState1
 log loot
 stealthed
 gameType
@@ -7439,7 +7474,6 @@ PERIODICAURAHEALOTHEROTHER
 PERIODICAURAHEALOTHERSELF
 PERIODICAURAHEALSELFOTHER
 PERIODICAURAHEALSELFSELF
-ENERY_POINTS
 POWERGAINOTHEROTHER
 POWERGAINOTHERSELF
 POWERGAINSELFOTHER
@@ -8418,7 +8452,6 @@ Terrain frill density
 trilinear
 Enable Trilinear texture filtering
 Texture LOD Bias
-Terain alpha map mip level
 Terrain shadow map mip level
 MaxLights
 Max number of hardware lights
@@ -8759,6 +8792,7 @@ HAPPINESS
 %s_PET
 E:\\build\\buildWoW\\WoW\\Source\\Magic\\MagicClient\\Spell_C.cpp
 SPELL_FAILED_UNKNOWN
+SPELL_FAILED_MIN_SKILL
 SPELL_FAILED_REPUTATION
 SPELL_FAILED_PLAY_TIME
 SPELL_FAILED_PREVENTED_BY_MECHANIC
@@ -8770,6 +8804,7 @@ SPELL_FAILED_TARGET_NOT_GHOST
 SPELL_FAILED_ONLY_BATTLEGROUNDS
 SPELL_FAILED_NO_EDIBLE_CORPSES
 SPELL_FAILED_TARGET_FREEFORALL
+SPELL_FAILED_PROSPECT_NEED_MORE
 SPELL_FAILED_PROSPECT_WHILE_LOOTING
 SPELL_FAILED_DISENCHANT_WHILE_LOOTING
 SPELL_FAILED_TARGET_NOT_IN_RAID
@@ -9799,6 +9834,7 @@ OnEnterPressed
 > %d/%d
 
 %f%f%f%f
+BorderColor
 BackgroundInsets
 EdgeSize
 TileSize
