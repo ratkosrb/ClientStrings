@@ -146,16 +146,17 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 4147 (Dec 17 2004 18:52:23)
+WoW [Release Assertions Enabled] Build 4150 (Dec 20 2004 13:24:49)
 \a\b\t\n\v
 COPPER
 SILVER
 GOLD
 ?fff?
+UU�@
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 4147 (Dec 17 2004)
+WoW [Release Assertions Enabled] Build 4150 (Dec 20 2004)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -458,11 +459,9 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuop
+ltuo0
 cinu
-ltuop
-ltuo01{
-ltuo01{
+ltuo0
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -620,7 +619,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 4147)
+World of WarCraft: Assertions Enabled Build (build 4150)
 SendErrorLogs
 Data\\
 World of Warcraft
@@ -957,6 +956,19 @@ Warning, trying to add duplicate string \"%s\" in context %d!
 .?AV?$TSExplicitList@USIMPLETEXTUREREGHASH@@$0?CCCCCCCD@@@
 .?AUSIMPLEFONTSTRINGREGHASH@@
 .?AV?$TSExplicitList@USIMPLEFONTSTRINGREGHASH@@$0?CCCCCCCD@@@
+%m%d%y_%H%M%S
+filetime
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\Time.cpp
+filetime2
+filetime1
+fileTime
+localFileTime
+sysTime
+localSysTime
+OsTime
+Internal
+CpuTicksPerSecond
+.?AVOsTimeManager@@
 \\shell\\open\\command
 createDisposition <= OS_TRUNCATE_EXISTING
 createDisposition >= OS_CREATE_NEW
@@ -997,19 +1009,6 @@ fonts\\
 charsCopied
 %s\\%s
 Fonts
-%m%d%y_%H%M%S
-filetime
-C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\Time.cpp
-filetime2
-filetime1
-fileTime
-localFileTime
-sysTime
-localSysTime
-OsTime
-Internal
-CpuTicksPerSecond
-.?AVOsTimeManager@@
 C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsIME.cpp
 .?AUOsIMECandidate@@
 mode < OS_MOUSE_MODES
@@ -1032,8 +1031,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Dec 17 2004
-18:49:38
+Dec 20 2004
+13:22:10
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1843,8 +1842,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4147
-1.2.0
+4150
+1.2.1
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
