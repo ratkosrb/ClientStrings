@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.10.0
-// Build: 3892
+// Patch: 0.11.0
+// Build: 3925
 
 Public Enum SpellFailedReason
 {
@@ -81,39 +81,44 @@ Public Enum SpellFailedReason
     SPELL_FAILED_OUT_OF_RANGE = 0x4A,                               // 0x04A
     SPELL_FAILED_PACIFIED = 0x4B,                                   // 0x04B
     SPELL_FAILED_REAGENTS = 0x4C,                                   // 0x04C
-    SPELL_FAILED_REQUIRES_SPELL_FOCUS = 0x4D,                       // 0x04D
-    SPELL_FAILED_ROOTED = 0x4E,                                     // 0x04E
-    SPELL_FAILED_SILENCED = 0x4F,                                   // 0x04F
-    SPELL_FAILED_SPELL_IN_PROGRESS = 0x50,                          // 0x050
-    SPELL_FAILED_SPELL_LEARNED = 0x51,                              // 0x051
-    SPELL_FAILED_SPELL_UNAVAILABLE = 0x52,                          // 0x052
-    SPELL_FAILED_STUNNED = 0x53,                                    // 0x053
-    SPELL_FAILED_TARGETS_DEAD = 0x54,                               // 0x054
-    SPELL_FAILED_TARGET_AFFECTING_COMBAT = 0x55,                    // 0x055
-    SPELL_FAILED_TARGET_AURASTATE = 0x56,                           // 0x056
-    SPELL_FAILED_TARGET_DUELING = 0x57,                             // 0x057
-    SPELL_FAILED_TARGET_ENEMY = 0x58,                               // 0x058
-    SPELL_FAILED_TARGET_ENRAGED = 0x59,                             // 0x059
-    SPELL_FAILED_TARGET_FRIENDLY = 0x5A,                            // 0x05A
-    SPELL_FAILED_TARGET_IN_COMBAT = 0x5B,                           // 0x05B
-    SPELL_FAILED_TARGET_IS_PLAYER = 0x5C,                           // 0x05C
-    SPELL_FAILED_TARGET_NOT_DEAD = 0x5D,                            // 0x05D
-    SPELL_FAILED_TARGET_NOT_IN_PARTY = 0x5E,                        // 0x05E
-    SPELL_FAILED_TARGET_NOT_LOOTED = 0x5F,                          // 0x05F
-    SPELL_FAILED_TARGET_NOT_PLAYER = 0x60,                          // 0x060
-    SPELL_FAILED_TARGET_NO_POCKETS = 0x61,                          // 0x061
-    SPELL_FAILED_TARGET_NO_WEAPONS = 0x62,                          // 0x062
-    SPELL_FAILED_TARGET_UNSKINNABLE = 0x63,                         // 0x063
-    SPELL_FAILED_THIRST_SATIATED = 0x64,                            // 0x064
-    SPELL_FAILED_TOO_CLOSE = 0x65,                                  // 0x065
-    SPELL_FAILED_TOO_MANY_OF_ITEM = 0x66,                           // 0x066
-    SPELL_FAILED_TOTEMS = 0x67,                                     // 0x067
-    SPELL_FAILED_TRAINING_POINTS = 0x68,                            // 0x068
-    SPELL_FAILED_TRY_AGAIN = 0x69,                                  // 0x069
-    SPELL_FAILED_UNIT_NOT_BEHIND = 0x6A,                            // 0x06A
-    SPELL_FAILED_UNIT_NOT_INFRONT = 0x6B,                           // 0x06B
-    SPELL_FAILED_WRONG_PET_FOOD = 0x6C,                             // 0x06C
-    SPELL_FAILED_IMMUNE = 0x6D,                                     // 0x06D
-    SPELL_FAILED_UNKNOWN = 0x6E,                                    // 0x06E
+    SPELL_FAILED_REQUIRES_AREA = 0x4D,                              // 0x04D
+    SPELL_FAILED_REQUIRES_SPELL_FOCUS = 0x4E,                       // 0x04E
+    SPELL_FAILED_ROOTED = 0x4F,                                     // 0x04F
+    SPELL_FAILED_SILENCED = 0x50,                                   // 0x050
+    SPELL_FAILED_SPELL_IN_PROGRESS = 0x51,                          // 0x051
+    SPELL_FAILED_SPELL_LEARNED = 0x52,                              // 0x052
+    SPELL_FAILED_SPELL_UNAVAILABLE = 0x53,                          // 0x053
+    SPELL_FAILED_STUNNED = 0x54,                                    // 0x054
+    SPELL_FAILED_TARGETS_DEAD = 0x55,                               // 0x055
+    SPELL_FAILED_TARGET_AFFECTING_COMBAT = 0x56,                    // 0x056
+    SPELL_FAILED_TARGET_AURASTATE = 0x57,                           // 0x057
+    SPELL_FAILED_TARGET_DUELING = 0x58,                             // 0x058
+    SPELL_FAILED_TARGET_ENEMY = 0x59,                               // 0x059
+    SPELL_FAILED_TARGET_ENRAGED = 0x5A,                             // 0x05A
+    SPELL_FAILED_TARGET_FRIENDLY = 0x5B,                            // 0x05B
+    SPELL_FAILED_TARGET_IN_COMBAT = 0x5C,                           // 0x05C
+    SPELL_FAILED_TARGET_IS_PLAYER = 0x5D,                           // 0x05D
+    SPELL_FAILED_TARGET_NOT_DEAD = 0x5E,                            // 0x05E
+    SPELL_FAILED_TARGET_NOT_IN_PARTY = 0x5F,                        // 0x05F
+    SPELL_FAILED_TARGET_NOT_LOOTED = 0x60,                          // 0x060
+    SPELL_FAILED_TARGET_NOT_PLAYER = 0x61,                          // 0x061
+    SPELL_FAILED_TARGET_NO_POCKETS = 0x62,                          // 0x062
+    SPELL_FAILED_TARGET_NO_WEAPONS = 0x63,                          // 0x063
+    SPELL_FAILED_TARGET_UNSKINNABLE = 0x64,                         // 0x064
+    SPELL_FAILED_THIRST_SATIATED = 0x65,                            // 0x065
+    SPELL_FAILED_TOO_CLOSE = 0x66,                                  // 0x066
+    SPELL_FAILED_TOO_MANY_OF_ITEM = 0x67,                           // 0x067
+    SPELL_FAILED_TOTEMS = 0x68,                                     // 0x068
+    SPELL_FAILED_TRAINING_POINTS = 0x69,                            // 0x069
+    SPELL_FAILED_TRY_AGAIN = 0x6A,                                  // 0x06A
+    SPELL_FAILED_UNIT_NOT_BEHIND = 0x6B,                            // 0x06B
+    SPELL_FAILED_UNIT_NOT_INFRONT = 0x6C,                           // 0x06C
+    SPELL_FAILED_WRONG_PET_FOOD = 0x6D,                             // 0x06D
+    SPELL_FAILED_IMMUNE = 0x6E,                                     // 0x06E
+    SPELL_FAILED_NOT_ON_TAXI = 0x6F,                                // 0x06F
+    SPELL_FAILED_FOOD_LOWLEVEL = 0x70,                              // 0x070
+    SPELL_FAILED_POSSESSED = 0x71,                                  // 0x071
+    SPELL_FAILED_NOT_IN_CONTROL = 0x72,                             // 0x072
+    SPELL_FAILED_UNKNOWN = 0x73,                                    // 0x073
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }

@@ -1,4 +1,4 @@
-\\\\Guldan\\Drive2\\Projects\\WoW\\Data\\
+<\bj~
 CyrixInsteadCentaurHalls
 0\aw,a
 Qkkbal
@@ -141,19 +141,15 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 3892 (Sep 17 2004 13:34:27)
+WoW [Release Assertions Enabled] Build 3925 (Sep 29 2004 15:38:28)
 \a\b\t\n\v
-NoName
-NoName
 COPPER
 SILVER
 GOLD
-NoName
-NoName
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 3892 (Sep 17 2004)
+WoW [Release Assertions Enabled] Build 3925 (Sep 29 2004)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -212,7 +208,6 @@ O*9y]
 \a\b\b\t\t\n\n\v\v
 \x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B
 ���=���=
-���=
 ���<��L=���=���=
 >333>
 $Lua: Lua 5.0 Copyright (C) 1994-2003 Tecgraf, PUC-Rio $\n$Authors: R. Ierusalimschy, L. H. de Figueiredo & W. Celes $\n$URL: www.lua.org $\n
@@ -297,14 +292,90 @@ GetTextExtentPoint32W
 TextOutW
 SHChangeNotify
 FreeContextBuffer
+$)M?}
+qs\n>p[3?p[3?
+km>ir!>o
+=rO7>z
+=:>:\bJ?0e
+!>\n/i?
+3>-\tX?b
+?;nH>r
+/?u\"!?%?
+3L?shQ
+?EJ\v?73B
+z?\nd&>g
+yS?Z\r)?C
+2?t@R
+=Nay?
+<\tnt>
+W%?S[J>
+[yi?!;
++?[{/
+>V,>?L
+G>fgu
+O>{K)
+[>KuM?
+.?'J2
+:Yj>v
+%I?\r3T>
+>82w?1
+>5C>?
+U>J\a+
+.A?\rP
+o\r\b?r3
+%O?PrG?) ]>6
+$)M?}
+qs\n>p[3?p[3?
+km>ir!>o
+=rO7>z
+=:>:\bJ?0e
+!>\n/i?
+3>-\tX?b
+?;nH>r
+/?u\"!?%?
+3L?shQ
+?EJ\v?73B
+z?\nd&>g
+yS?Z\r)?C
+2?t@R
+=Nay?
+<\tnt>
+W%?S[J>
+[yi?!;
++?[{/
+>V,>?L
+G>fgu
+O>{K)
+[>KuM?
+.?'J2
+:Yj>v
+%I?\r3T>
+>82w?1
+>5C>?
+U>J\a+
+.A?\rP
+o\r\b?r3
+%O?PrG?) ]>6
+Software\\Microsoft\\Direct3D
+DisableMMX
+GenuineIntel
+DisableD3DXPSGP
+DisablePSGP
+AuthenticAMD
+UnknownVendr
+D3DXDoNotMute
+d3d9d.dll
+DebugSetMute
+d3d9.dll
+D3DX: (WARN) D3DX relies upon this behavior.\r\n
+D3DX: (WARN) least zero bytes. Deletion of a null pointer should quietly do nothing.\r\n
+D3DX: (WARN) An allocation of zero bytes should return a unique non-null pointer to at\r\n
+D3DX: (WARN) Overloaded ::new and ::delete operators do not conform to C++ standards:\r\n
 true
 false
 \b3OP\v
-ltuop
+ltuop.y
 cinu
-ltuop$~
-ltuo0A~
-ltuo0A~
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -476,6 +547,7 @@ DivxDecoder.dll
 WINMM.dll
 fmod.dll
 gxoverride
+console
 keepsession
 skiptos
 hwdetect
@@ -508,9 +580,10 @@ archive < NUM_DATA_ARCHIVES
 Bad zone ID %i
 realm
 facing: %g degrees, anchor: %g degrees
+Model: %s
 MOVEMENT|Movement fall logging stopped
-Local target guid (0x%016I64X)\n
-Local mover guid (0x%016I64X)\n
+Logging subject GUID (0x%016I64X)\n
+Active player GUID (0x%016I64X)\n
 MOVEMENT|Movement fall logging started
 MOVEMENT|Movement logging stopped
 MOVEMENT|Movement logging started
@@ -540,12 +613,16 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 3892)
+World of WarCraft: Assertions Enabled Build (build 3925)
 SendErrorLogs
 Data\\
 World of Warcraft
 Config.wtf
 run autoexec.wtf
+M2UseShaders
+skin models using vertex shaders
+M2UseThreads
+multithread model animations
 ErrorFileLog
 EventIsContextInteractive()
 Logs\\
@@ -571,6 +648,9 @@ ErrorLevelMax
 ErrorLevelMin
 ShowErrors
 Errors
+movieSubtitle
+Show movie subtitles
+Show movie on startup
 Note
 Suggestion
 reloadUI
@@ -649,6 +729,10 @@ Local Zone:
 %s: %s, %016I64X, (%g,%g,%g)\r\n
 %s %s
 WowErrorAE.exe
+InstallPath
+GamePath
+lootpass
+lootroll
 raidassistant
 raidconvert
 raidswapsubgroup
@@ -662,32 +746,20 @@ stablelist
 setammo
 lootMethod
 played
-motionBlend
 showplayer
-animlog
-drawlog
 worldport
 setrawpos
 port
 tloc
-showhittest
 showbounds
 dfacing
 facing
 rawdloc
 dloc
-Model render logging stopped
-Model render logging started
-RenderLog.txt
-Model animation logging stopped
-Model animation logging started
-AnimLog.txt
 player hidden
 player visible
-Motion blending enabled
-Motion blending disabled
-C:\\build\\buildWoW\\WoW\\Source\\ClientCommands.cpp
 %g, %g, %g
+C:\\build\\buildWoW\\WoW\\Source\\ClientCommands.cpp
 %016I64X: Local Pos: %g, %g, %g, facing: %g distance: %g
 Error, no unit targeted!
 pos + bytes <= m_base + m_alloc
@@ -888,227 +960,6 @@ Warning, trying to add duplicate string \"%s\" in context %d!
 .?AV?$TSExplicitList@USIMPLETEXTUREREGHASH@@$0?CCCCCCCD@@@
 .?AUSIMPLEFONTSTRINGREGHASH@@
 .?AV?$TSExplicitList@USIMPLEFONTSTRINGREGHASH@@$0?CCCCCCCD@@@
-.?AUCModelHash@@
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\ModelCreate.cpp
-modelptr->m_anim
-sharedLayer
-shared
-HMATERIALSHARED
-layer
-unique
-HMATERIAL
-.?AUCModelCreateNode@@
-.?AUCModelModItem@@
-sourcefile
-%u model(s) flushed from model cache\n
-modelFName
-s_asyncPending >= 0
-sourcefile[0]
-texture
-Textures\\ShaneCube
-Warning, model %s failed to load\n
-modelHandle
-model->shared
-HMODELSHARED
-model->asyncObject
-model
-HMODEL
-status
-.?AVCModelComplex@@
-modelptr
-.?AVCModelSimple@@
-dataDone == data
-dataDone >= data
-shapeDone == data
-data
-globalData
-sectionBytes == (numPivots * sizeof(float) * C3Vector::eComponents)
-*((ULONG *) (fileData)) == 'XLDM'
-fileData
-model->state == CMODEL_ASYNC_WAIT
-source.header.sourceFilename[0]
-.?AUCGeosetColor@@
-.PAUHMATERIAL__@@
-.?AUCModelTexture@@
-..\\Tempest/cmath.h
-geoShared
-material
-copy
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\IModel.h
-model->state != CMODEL_UNINITIALIZED
-*shared
-.?AUMDLSEQUENCESSECTION@@
-.?AUMDLGLOBALSEQSECTION@@
-.?AUMDLMATERIALSECTION@@
-.?AUMDLTEXLAYER@@
-.?AUMDLTEXTURESECTION@@
-.?AUMDLTEXANIMSECTION@@
-.?AU?$MDLKEYFRAME@VC3Vector@NTempest@@@@
-.?AU?$MDLKEYFRAME@VC4Quaternion@NTempest@@@@
-.?AUMDLGEOSETSECTION@@
-.?AV?$TSGrowableArray@VC2Vector@NTempest@@@@
-.?AVC2Vector@NTempest@@
-.?AUMDLBATCH@@
-.?AUCMdlBounds@@
-.?AUMDLGEOSETANIMSECTION@@
-.?AU?$MDLKEYFRAME@M@@
-.?AU?$MDLKEYFRAME@VC3Color@@@@
-.PAUMDLGENOBJECT@@
-.?AUMDLBONESECTION@@
-.?AUMDLLIGHTSECTION@@
-.?AUMDLGENOBJECT@@
-.?AUMDLATTACHMENTSECTION@@
-.?AUMDLPARTICLEEMITTER@@
-.?AUMDLCAMERASECTION@@
-.?AUMDLEVENTSECTION@@
-.?AUMDLEVENTKEY@@
-.?AUMDLPARTICLEEMITTER2@@
-.?AUMDLHITTESTSHAPE@@
-.?AUMDLRIBBONEMITTER@@
-.?AUMDLINTKEY@@
-.PAVCParticleEmitter2@@
-.PAVCRibbonEmitter@@
-.?AUCTexLayerShared@@
-.?AUCTexLayer@@
-.?AUCBoundsData@@
-IMod
-.?AUCHitTest@@
-.?AUCCustomGeoset@@
-.?AUCGeosetShared@@
-.?AV?$TSList@ULINKUNIQUE@@V?$TSGetLink@ULINKUNIQUE@@@@@@
-.PAUHCAMERA__@@
-.?AVC44Matrix@NTempest@@
-!extrabytes
-.?AV?$TSExplicitList@UCModelHash@@$0?CCCCCCCD@@@
-MDLF
-Grow()
-..\\Tempest/cdyntable.h
-IsValid()
-..\\Tempest/cpriorityq.h
-\"CPriorityQ<T, B>: construction of base class failed.\"
-.PAUCOpaqueLayer@@
-.PAUCTransparentObject@@
-.?AUCOpaqueLayer@@
-.?AUCTransparentObject@@
-BoundingBox
-.?AUCGxBatch@@
-Bounding Sphere
-s > (real(1.192092896e-07F))
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\ModelRender.cpp
-count > 0
-!((uint) bones & 0xf)
-s_trLayerPool.Count() == 0
-s_opLayerPool.Count() == 0
-sharedMtl
-uniqueMtl
-AddGeosetToScene: geoShared->materialId (%d) >= numMaterials (%d)
-modelptr->data
-rsStackOffset == GxRsStackOffset()
-sorted->geoShared
-sorted
-Used() > 0
-lastModel
-IsValid() && i < iused
-((uint)src & 0xf) == 0
-geoShared->numVertices == 4
-s_Project2dCallback
-count == 0
-renderData
-sphere
-complex->m_anim
-bounds
-CMath::fnotequal_(lineLength,0)
-CMath::fnotequal_(boxScale,0)
-CMath::fnotequal_(cylScale,0)
-centerDistSq
-linePos
-extents
-!(pb[offset - 1] & 3)
-pb[offset - 1] > 0
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\ModelAnim.cpp
-pb[offset - 1] <= 16
-!(pb[-1] & 3)
-pb[-1] > 0
-pb[-1] <= 16
-s_nextMatrix <= 0x10000
-array
-duration
-moveSpeed
-buffLength
-((CModel *)((CHandleObject*)(model)))
-.?AULINKUNIQUE@@
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\ModelMisc.cpp
-source.shared
-source.data
-source.state == CMODEL_LOADED
-layerIndex < uniqueMtl->layers.Count()
-materialIndex < unique->m_materials.Count()
-source
-replaceableId != 0
-dataptr
-*entriesInOut > 0
-entriesInOut
-modelList
-numLinked
-HandleObjectCompare(parent,child) != 0
-((CModel *)((CHandleObject*)(child)))
-CMath::fnotequal_(scale,0.0f)
-childptr
-index < complex->m_cameras.Count()
-.?AV?$TSGrowableArray@I@@
-srcGeoset->batches[0].m_count == srcGeoset->numPrimitiveIndices
-srcGeoset->batches[0].m_primType == GxPrim_Triangles
-srcGeoset->numBatches == 1
-newBlendMode >= GxBlend_Alpha
-x <= 255.9999f
-x >= 0.0f
-geosets
-pModel->m_flags & 0x00000020
-custGeosetId
-custGeosetId < unique->m_custGeosets.Count()
-unique->m_flags & 0x00000020
-materialShared
-materialUnique
-textureId < simple->m_textures.Count()
-textureId < complex->m_textures.Count()
-HCOLLISIONDATA
-fileData == sectionDone
-*((ULONG *) (fileData)) == 'SMRN'
-*((ULONG *) (fileData)) == ' IRT'
-numVertices <= 0xffff
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\CollisionData.cpp
-*((ULONG *) (fileData)) == 'XTRV'
-facets
-collide
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\MdlParticleEmitter2.cpp
-Particle system with 0 twinkle\n
-partMgr
-sectionBytes == 0
-sectionBytes >= bytesThisEmitter
-texData
-section
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\MdlCamera.cpp
-cameras
-sectionBytes >= bytesThisCamera
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\MdlSgLight.cpp
-.?AUCRibbonMat@@
-.PAUHTEXTURE__@@
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\MdlRibbonEmitter.cpp
-dataDone >= (data + bytesThisEmitter)
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\MdlSgModel.cpp
-%s:\n
-data != 0
-loadFlags
-modelShared
-sectionBytes == (numTextures * sizeof(MDLTEXTURESECTION))
-data == dataDone
-data <= dataDone
-modelShared->geosets[i].geosetId == i
-sectionBytes >= bytesThisAttachment
-sectionBytes >= bytesThisAnim
-File contains no geosets, lights, sound emitters, attachments, cameras, particle emitters, or ribbon emitters.\n
-C:\\build\\buildWoW\\ENGINE\\Source\\Model\\CollisionDisplay.cpp
-Collision Debug
 \\shell\\open\\command
 createDisposition <= OS_TRUNCATE_EXISTING
 createDisposition >= OS_CREATE_NEW
@@ -1195,8 +1046,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Sep 17 2004
-13:31:58
+Sep 29 2004
+15:35:37
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1282,6 +1133,7 @@ output == 0 || output == poutput
 %s 15
 conn
 %s:%u
+!extrabytes
 .?AV?$TSExplicitList@UNETSELSOCKPTR@OsNet@@$0?CCCCCCCD@@@
 .?AUNETCONNECT@OsNet@@
 mode < OS_MOUSE_MODES
@@ -1507,9 +1359,11 @@ gxTex
 Texture %s not loaded -- replaced with default.\n
 UpdateBlpTextureAsync(): GxTex_Lock loading: %s\n
 texture->mipBits
+texture
 format == GxTex_Argb8888
 systemCaps.m_maxTextureSize > 0
 g_textureMipBits
+s_asyncPending >= 0
 .?AVCMipBitsCache@@
 Error loading texure file \"%s\": unsupported image format\n
 dataFormat
@@ -1532,6 +1386,7 @@ height < 1024
 (height & (height - 1)) == 0
 (width & (width - 1)) == 0
 Unique Texture No Name
+status
 fileName[0]
 texMap
 Error loading %s file \"%s\": %s\n
@@ -1572,89 +1427,10 @@ font
 extent
 textPtr
 .?AUFONTHASHOBJ@@
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\GfxSingletonManager.cpp
-manager
-.?AVParticleSystemManager@@
-.PAVCParticleEmitter@@
-.?AVCParticleEmitter@@
-.?AVCPlaneParticleEmitter@@
-.?AVCSphereParticleEmitter@@
-.?AVCSplineParticleEmitter@@
-emitter != 0
-.?AVRibbonManager@@
-.?AVCRibbonEmitter@@
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\RibbonEmitter.cpp
-m_writePos != m_readPos || advance == 0
-amount <= m_edges.Count()
-.?AUCRibbonVertex@@
-textures.Count() == replaces.Count()
-materials.Count() == textures.Count()
-edgeLifeSpanInSec > 0
-edgesPerSec >= 1
-m_initialized == 0
-slot < m_rows * m_cols
-above >= 0.0f
-below >= 0.0f
-m_initialized
-.?AUCSortableParticleRecord@@
-..\\Services/IParticleMisc.h
-m_stackPointer < m_stack.Count()
-.?AVCParticle2@@
-.?AVCParticle2_Model@@
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleSystem2.cpp
-!m_model
-m_alloc >= m_count
-.?AVCParticleKey@@
-CMath::fnotequal_(m_frameScale,0.0f)
-count ? maxIndex < 0x10000 : 1
-..\\Gx/Gx.h
-count < 0x10000
-rows && columns
-(columns & (columns - 1)) == 0
-(rows & (rows - 1)) == 0
-m_stackPointer != 0
-m_particleKeys.Count() == 2
-childIndex != MAX_CHILD_EMITTERS
-position
-cameraPtr
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Camera.cpp
-target
-HCAMERA
-.PAVCBaseManaged@@
-srcPtr
-x >= 0 && x <= 1.0f
-y >= 0 && y <= 1.0f
-data == saved
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\DataMgrInt.h
-CMath::fnotequal_(normStartTime, normEndTime)
-normStartTime < normEndTime
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleMisc.cpp
-normStartTime >= 0.0f
-CMath::fnotequal_(m_ooSegLength,0.0f)
-m_ooSegLength
-CMath::fnotequal_(timeDelta,0.0f)
-timeDelta
-lifeSpan > (real(1.192092896e-07F * 2.0f))
-lifeSpan
-repeat >= 1.0f
-dataTypeId < CBaseManaged::DATATYPEIDS
-fieldId < m_managedArray.Count()
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\DataMgr.cpp
-manage
-typeId == mgrPtr->m_managedArray[fieldId]->m_dataTypeId
-mgrPtr->m_managedArray[fieldId]
-fieldId < mgrPtr->m_managedArray.Count()
-mgrPtr
-result
-info
-!(mgrPtr->m_managedArray[fieldId]->m_flags & CBaseManaged::READONLY)
-C:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleSystem.cpp
-m_hmodel
-.?AVCParticle@@
-p.m_timeToLive >= 0
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\crandom.cpp
 password != 0
 buf != 0
+..\\Tempest/cmath.h
 z >= -_1 && z <= _1
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\crandom.h
 sides > 0
@@ -1662,46 +1438,12 @@ sides > 0
 vtx != 0
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c3spline.cpp
 cachedSegLength[seg] > 0.0f
+x <= 255.9999f
+x >= 0.0f
+s > (real(1.192092896e-07F))
 nPoints <= count
 CMath::fnotequal_((pts[i+1] - pts[i]).SquaredMag(), 0.0f)
 count > 3
-C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmemblock.cpp
-(body & 0x3) == 0
-(size & 0x3) == 0
-mem_ != 0
-mem_ <= mem && size_ >= size
-Copy_(m) == size_
-C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmemblock.h
-m.mem_ <= m.mem && m.size_ >= m.size
-m.IsValid()
-IsValid() == false
-from.IsValid()
-to.IsValid()
-mem_ <= mem && with.mem_ <= with.mem
-size_ >= size && with.size_ >= with.size
-with.IsValid()
-this->size_ == this->size
-mem != 0
-mem == mem_ + (size_ - size)
-size_ >= size
-C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c44matrix.cpp
-CMath::fequal_(det, 0.0f) == false
-CMath::fequal_(axis_.Mag(), 1.0f)
-C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\caabox.cpp
-vectors != 0
-C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cdyntable.h
-index.IsValid() && vects.IsValid()
-C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c4vector.h
-sub < eComponents
-C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c4quaternion.cpp
-CMath::fequal_(mag, 1.0f)
-\"C4Quaternion::Inverse(): cannot invert an invalid (zero-norm) quaternion.\"
-C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c4quaternion.h
-IsUnit()
-q2.IsUnit()
-q1.IsUnit()
-q0.IsUnit()
-C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c33matrix.cpp
 s > (lreal(2.2204460492503131e-016))
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmath.cpp
 n >= 4
@@ -1746,6 +1488,8 @@ SoundOutputSystem
 sound output system
 SoundBufferSize
 sound buffer size (milliseconds)
+(DONOTRENAME)Combat Miss 2H
+(DONOTRENAME)Combat Miss 1H
 (DONOTRENAME)WrappedItemDrop
 (DONOTRENAME)WrappedItemPickup
 (DONOTRENAME)ShieldWoodImpact
@@ -1759,6 +1503,7 @@ voice macros
 weaponType < ClientDBGetNumWeaponSubclasses()
 !\"parrying object is not a weapon or armor..something is wrong here!\"
 item->m_classID == ITEM_WEAPON
+material
 weaponType
 itemPtr
 soundType < NUM_ITEMSOUNDS
@@ -1766,6 +1511,12 @@ terrainSoundID < theArray.Count()
 Usage: PlaySound(\"sound\")
 Usage: PlayMusic(\"music\")
 Usage: PlaySoundFile(\"soundfile\")
+!CMath::isnan_(pos.z)
+pos.z
+!CMath::isnan_(pos.y)
+pos.y
+!CMath::isnan_(pos.x)
+pos.x
 .?AUFOOTSTEPSNDCACHE@@
 ..\\..\\..\\storm\\h\\stpl.h
 C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterfaceGlueMusic.cpp
@@ -1878,6 +1629,7 @@ blockId < sizeof(CGContainerData)/sizeof(DWORD)
 blockId < sizeof(CGItemData)/sizeof(DWORD)
 blockId < sizeof(CGObjectData)/sizeof(DWORD)
 handlerList
+count > 0
 Unknown client update packet type (%d)!
 Updating unit data
 Creating corpse
@@ -1914,7 +1666,6 @@ dataOffset < CGItem::GetDataSize()
 dataOffset < CGContainer::GetDataSize()
 dataOffset < CGUnit::GetDataSize()
 dataOffset < CGPlayer::GetDataSize()
-object->IsObjectLocked()
 Illegal client GUID derefence at %s:%d!
 .?AVCGObject_C@@
 .?AV?$TSExplicitList@VCGObject_C@@$0?CCCCCCCD@@@
@@ -1960,10 +1711,11 @@ Error, cannot create WOWClient log file \"%s\"!
 ogs\\GlueXML.log
 Interface\\GlueXML\\GlueStrings.lua
 .?AVCSimpleTop@@
-GlueParent
 %d%c%d
 gxResolution
 widescreen
+GlueParent
+Interface\\Cursor\\Point.blp
 OKAY
 LOGIN_ENTER_NAME
 LOGIN_ENTER_PASSWORD
@@ -1977,6 +1729,7 @@ LOGIN_STATE_CHECKSUM
 LOGIN_STATE_PATCH_REQUIRED
 NET_CONNECTION_URL
 OKAY_WITH_URL
+GAME_SERVER_LOGIN
 CHAR_LIST_RETRIEVING
 REALM_LIST_IN_PROGRESS
 op == COP_CREATE_CHARACTER
@@ -1992,6 +1745,10 @@ CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
+GetMovieSubtitles
+SetMovieSubtitles
+HideCursor
+ShowCursor
 GetCursorPosition
 DeleteAddOn
 DeleteInterface
@@ -2016,7 +1773,6 @@ StatusDialogClick
 DefaultServerLogin
 AcceptTOS
 TOSAccepted
-TOSRead
 ShowTOSNotice
 GetLastAccountName
 LaunchURL
@@ -2051,8 +1807,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-3892
-0.10.0
+3925
+0.11.0
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -2135,7 +1891,6 @@ GetCharacterListUpdate
 SetCharSelectBackground
 SetCharSelectModelFrame
 .?AUCharacterSelectionDisplay@@
-Spells\\Sleep_State_Head.mdx
 C:\\build\\buildWoW\\WoW\\Source\\Glue\\CharacterSelection.cpp
 m_characterList.Count() < MAX_CHARACTERS_PER_REALM
 g_guildInfoCache.GetRecord(guildID)
@@ -2179,7 +1934,7 @@ sectionIndex < NUM_COMPONENT_VARIATIONS
 g_charSectionsDB.GetNumRecords() > 0
 g_chrRacesDB.GetNumRecords() > 0
 CharacterBaseSkin
-data->hModel
+data->model2
 userArg
 index >= 0 && index < NUM_COMPONENT_VARIATIONS
 dstMips
@@ -2189,8 +1944,6 @@ srcPos.x == 0
 **** Unable to Load Texture %s\n
 Item\\TextureComponents\\%s\\%s_%s.blp
 itemDisplayInfoID > 0
-modelData
-newTexture
 %s%s.blp
 %s%s_%s%s.mdx
 Item\\ObjectComponents\\Head\\
@@ -2200,7 +1953,7 @@ Item\\ObjectComponents\\Shoulder\\
 Item\\ObjectComponents\\Weapon\\
 Item\\ObjectComponents\\Ammo\\
 Item\\ObjectComponents\\Shield\\
-hModel
+model
 Textures\\GuildEmblems\\Background_%02d_TL_U
 Textures\\GuildEmblems\\Background_%02d_TU_U
 Textures\\GuildEmblems\\Emblem_%02d_%02d_TL_U
@@ -2212,6 +1965,7 @@ C:\\build\\buildWoW\\WoW\\Common\\TextureCache.cpp
 !\"Error, unrecognized cache mode!\"
 object->m_selfReference
 HMIPPEDTEXTURE
+info
 HTEXTURECACHE
 cachePtr
 .?AUCACHEENTRY@@
@@ -2219,72 +1973,73 @@ cachePtr
 C:\\build\\buildWoW\\WoW\\Source\\Object\\Movement.cpp
 .?AUCPlayerMoveEvent@@
 Mover at invalid position
-0x%016I64X: last update(0x%08X) falling for (%u) ms, current time(0x%08X) elapsed time(%u ms)\n
+last update(0x%08X) falling for (%u) ms, current time(0x%08X) elapsed time(%u ms)\n
 !initialized || (int(time - lastUpdateTime) >= 0)
 ___END IDLE EVENT\n
 ___IDLE EVENT: timeNow(0x%X)\n
 !m_moveQueue.HasEntries() || !MovementIsWorldServer()
 0x%016I64X: No more movement and player not in motion\n
-0x%016I64X: update time(0x%08X) last update(0x%08X) moving for (%u) ms, falling for (%u) ms, time used(%u)\n
-0x%016I64X: no events, consuming(%u)\n
-0x%016I64X: first event time(0x%08X), time to consume(%u)\n
+update time(0x%08X) last update(0x%08X) moving for (%u) ms, falling for (%u) ms, time used(%u)\n
+no events, consuming(%u)\n
+first event time(0x%08X), time to consume(%u)\n
 elapsedMS > 0
-0x%016I64X: current time(0x%08X) last update(0x%08X) time elapsed(%u)\n
+current time(0x%08X) last update(0x%08X) time elapsed(%u)\n
 timeDiff >= 0
 globals->initialized
 .?AUCMovementGlobals@@
 ((CMovementGlobals *)MovementGetGlobals()) == 0
-0x%016I64X: awaiting transport load\n
-0x%016I64X: done awaiting transport load\n
+awaiting transport load\n
+done awaiting transport load\n
 \"%s\"\nguid (0x%016I64X) (%s)\nloc (%.7g, %.7g, %.7g) facing (%g degrees)\ntransport (0x%016I64X)\ntime moved (%u), time fallen (%u), sim time (%d)\nfall start elevation (%.7g), jump velocity (%.7g)\n(0x%08X, 0x%08X, 0x%08X) (0x%08X)
 not active mover
 active mover
-0x%016I64X: Want to move (%g,%g,%g) straight for %g secs\n
-0x%016I64X: Turning for %g secs, from (%g) to (%g)\n
+Want to move (%g,%g,%g) straight for %g secs\n
+Turning for %g secs, from (%g) to (%g)\n
 IsTurning()
-0x%016I64X: Pitching for %g secs, from (%g) to (%g)\n
+Pitching for %g secs, from (%g) to (%g)\n
 IsPitching()
-0x%016I64X: Want to move (%g,%g,%g) arcing for %g secs\n
-0x%016I64X: Plotting move for %u ms\n
+Want to move (%g,%g,%g) arcing for %g secs\n
+Plotting move for %u ms\n
 move
-0x%016I64X: %g away from path, forcing to (%.7g,%.7g,%.7g)\n
-0x%016I64X: Bogus position (%g,%g,%g), teleporting\n
-0x%016I64X: Tried moving bogus speed (%g), from (%g,%g,%g), teleporting\n
-0x%016I64X: Tried moving bogus distance (%g) in zero time, from (%g,%g,%g), teleporting\n
-0x%016I64X: Falling %u ms, %g from %g to %g\n
-0x%016I64X: Moving for %u ms, (%g,%g) from (%g,%g) to (%g,%g)\n
+%g away from path, forcing to (%.7g,%.7g,%.7g)\n
+Bogus position (%g,%g,%g), teleporting\n
+Tried moving bogus speed (%g), from (%g,%g,%g), teleporting\n
+Tried moving bogus distance (%g) in zero time, from (%g,%g,%g), teleporting\n
+Falling %u ms, %g from %g to %g\n
+Moving for %u ms, (%g,%g) from (%g,%g) to (%g,%g)\n
 m_spline
 TP(%g,%g,%g)\n
-0x%016I64X: attaching to transport.  WP(%g,%g,%g)
+attaching to transport.  WP(%g,%g,%g)
 WP(%g,%g,%g)\n
-0x%016I64X: detaching from transport.  TP(%g,%g,%g)
-0x%016I64X: Updating Anchors, position(%g,%g) facing(%g degrees)\n
-0x%016I64X: setting move start time\n
-0x%016I64X: Move start %s from (%g,%g,%g), (%g)\n
-0x%016I64X: Move start %s is pending\n
+detaching from transport.  TP(%g,%g,%g)
+Updating Anchors, position(%g,%g) facing(%g degrees)\n
+setting move start time\n
+Move start %s from (%g,%g,%g), (%g)\n
+Move start %s is pending\n
 backward
 forward
 uint(eventType) < NUM_PMOVE_EVTS
-0x%016I64X: Strafe start %s from (%g,%g,%g), (%g)\n
-0x%016I64X: Strafe start %s is pending\n
+Strafe start %s from (%g,%g,%g), (%g)\n
+Strafe start %s is pending\n
 right
 left
-0x%016I64X: Jump started from (%g,%g,%g) (%g)\n
+Jump started from (%g,%g,%g) (%g)\n
 !IsSplineFlyer()
 !((CMovementGlobals *)MovementGetGlobals())->ignoreObstacles
-0x%016I64X: Move stop is pending\n
-0x%016I64X: Move stop at (%g,%g,%g), (%g degrees)\n
-0x%016I64X: Strafe stop at (%g,%g,%g), (%g degrees)\n
+Move stop is pending\n
+Move stop at (%g,%g,%g), (%g degrees)\n
+Strafe stop at (%g,%g,%g), (%g degrees)\n
 0x%016I64X: Strafe stop is pending\n
-0x%016I64X: Turn start %s from (%g,%g,%g), (%g)\n
-0x%016I64X: Turn stop at (%g,%g,%g), (%g)\n
-0x%016I64X: Switching to %s mode\n
+Turn start %s from (%g,%g,%g), (%g)\n
+Turn stop at (%g,%g,%g), (%g)\n
+Switching to %s mode\n
 walk
-0x%016I64X: Teleporting from (%g,%g,%g) (%g) to (%g,%g,%g)\n
+Teleporting from (%g,%g,%g) (%g) to (%g,%g,%g)\n
 0x%016I64X: Done receiving new spline path\n
 m_spline->time > 0
 count >= 4
-0x%016I64X: Receiving new spline path\n
+!IsRooted()
+Receiving new spline path\n
 IsSplineMover()
 int(status->timeFallen) >= 0
 (%g)\n
@@ -2295,28 +2050,26 @@ turning right from
 standing at
 moving forward from
 moving backward from
-0x%016I64X: Send move
-0x%016I64X: Updating current speed to (%g)\n
-0x%016I64X: Updating spline mover's current speed to (%g)\n
-0x%016I64X: Updating current speed to zero\n
+Send move
+Updating current speed to %g\n
 CMath::fnotequal_(turnRate,0)
 CMath::fnotequal_(swimBackSpeed,0)
 CMath::fnotequal_(swimSpeed,0)
 CMath::fnotequal_(walkSpeed,0)
 CMath::fnotequal_(runBackSpeed,0)
 CMath::fnotequal_(runSpeed,0)
-0x%016I64X: calc direction (%g,%g,%g) (%g,%g)\n
-0x%016I64X: setting time fallen (%d ms) from elevation (%g), jump velocity (%g)\n
+calc direction (%g,%g,%g) (%g,%g)\n
+setting time fallen (%d ms) from elevation (%g), jump velocity (%g)\n
 int(update.timeFallen) >= 0
-0x%016I64X: time (0x%08X) updating from (%g,%g,%g) (%g) to (%g,%g,%g) (%g)\n
+time (0x%08X) updating from (%g,%g,%g) (%g) to (%g,%g,%g) (%g)\n
 timeDelta >= 0
 (int((eventTime)-(globals->GetLastUpdateTime())) >= 0)
 eventTime=%d, lastUpdate=%d\n
 !IsSplineMover()
-0x%016I64X: Receive move
-0x%016I64X: ___INIT EVENT: time(0x%X) pos(%g,%g,%g)\n
+Receive move
+___INIT EVENT: time(0x%X) pos(%g,%g,%g)\n
 .?AUCMoveSpline@@
-0x%016I64X: resetting move time\n
+resetting move time\n
 CMath::fnotequal_(init.turnRate,0)
 CMath::fnotequal_(init.swimBackSpeed,0)
 CMath::fnotequal_(init.swimSpeed,0)
@@ -2324,24 +2077,25 @@ CMath::fnotequal_(init.walkSpeed,0)
 CMath::fnotequal_(init.runBackSpeed,0)
 CMath::fnotequal_(init.runSpeed,0)
 __fall
-0x%016I64X: Changing run speed from (%g) to (%g)\n
+0x%016I64X:
+Changing run speed from (%g) to (%g)\n
 CMath::fnotequal_(speed,0)
-0x%016I64X: Changing run backwards speed from (%g) to (%g)\n
-0x%016I64X: Changing walk speed from (%g) to (%g)\n
-0x%016I64X: Changing swim speed from (%g) to (%g)\n
-0x%016I64X: Changing swim backwards speed from (%g) to (%g)\n
-0x%016I64X: Changing turn rate from (%g) to (%g)\n
+Changing run backwards speed from (%g) to (%g)\n
+Changing walk speed from (%g) to (%g)\n
+Changing swim speed from (%g) to (%g)\n
+Changing swim backwards speed from (%g) to (%g)\n
+Changing turn rate from (%g) to (%g)\n
 CMath::fnotequal_(rate,0)
-0x%016I64X: Set Facing at (%g,%g,%g), (%g degrees), changed facing to (%g degrees)\n
-0x%016I64X: Set Pitch at (%g,%g,%g), (%g degrees), changed facing to (%g degrees)\n
+Set Facing at (%g,%g,%g), (%g degrees), changed facing to (%g degrees)\n
+Set Pitch at (%g,%g,%g), (%g degrees), changed facing to (%g degrees)\n
 !m_moveQueue.HasEntries()
-0x%016I64X: Swim start from (%g,%g,%g), (%g)\n
-0x%016I64X: Swim stop from (%g,%g,%g), (%g)\n
+Swim start from (%g,%g,%g), (%g)\n
+Swim stop from (%g,%g,%g), (%g)\n
 IsSwimming()
-0x%016I64X: Pitch start %s from (%g,%g,%g), (%g)\n
+Pitch start %s from (%g,%g,%g), (%g)\n
 down
-0x%016I64X: Pitch stop at (%g,%g,%g), (%g)\n
-0x%016I64X: %s feather fall (%g)\n
+Pitch stop at (%g,%g,%g), (%g)\n
+%s feather fall (%g)\n
 unsetting
 setting
 Mirror handler attempted to reference data not marked as mirrored in corpsemirror.h (index %u)
@@ -2554,74 +2308,76 @@ index < numVerts
 C:\\build\\buildWoW\\WoW\\Source\\Object\\Collide.cpp
 poly
 count < 9
-0x%016I64X:     (%g,%g,%g)\n
-0x%016I64X: Obstacle hit (%d) sides of box, (%g) away\n
+No obstacles hit\n
+    (%g,%g,%g)\n
+Obstacle hit (%d) sides of box, (%g) away\n
 m_transportGUID
-0x%016I64X: Started to fall from (%g elevation)\n
-0x%016I64X: Landed (%g)\n
-0x%016I64X: Hit ceiling (%g)\n
-0x%016I64X: Fallen far\n
-0x%016I64X: Found walkable surface close to apex, landing\n
+Started to fall from (%g elevation)\n
+Landed (%g)\n
+Hit ceiling (%g)\n
+Fallen far\n
+Hit obstacle overhead, cancelling step-up and requesting fall\n
+Found walkable surface close to apex, landing\n
 (mapPos.x >= 0.0f) && (mapPos.x < ((64*16)*((150.0f/36.0f)*8))) && (mapPos.y >= 0.0f) && (mapPos.y < ((64*16)*((150.0f/36.0f)*8)))
-0x%016I64X: Found %d facets in requested box\n
-0x%016I64X: CWorld::GetFacets() bombed out\n
-0x%016I64X: Requesting facets in b:(%g,%g,%g) t:(%g,%g,%g) AA box\n
-0x%016I64X: Falling for %u ms, start elevation (%g), sim time (%u)\n
-0x%016I64X: (0x%08X) Requesting fall facets: from (%g,%g,%g), wants to fall (%g), move vector (%g,%g,%g)\n
-0x%016I64X: ****| Completed move request\n
-0x%016I64X: move consumed (%d) ms\n
-0x%016I64X: lastUpdateTime (0x%08X), timeUsed (%d)\n
-0x%016I64X: requested move (%g), should be (%g) for (%u ms)\n
-0x%016I64X: ****| Received new move request: elapsed (%u), requested vector (%g,%g,%g)\n
-0x%016I64X: Executing pending strafe start at (%g,%g,%g)\n
-0x%016I64X: Executing pending move start at (%g,%g,%g)\n
-0x%016I64X: Executing pending unstrafe at (%g,%g,%g)\n
-0x%016I64X: Executing pending stop at (%g,%g,%g)\n
-0x%016I64X: Pushing (%g) up to redirect off of walkable slope\n
-0x%016I64X: ====| Swam for (%u) ms to (%.7g,%.7g,%.7g)\n
-0x%016I64X: ====| Starting new swim: from (%.7g,%.7g,%.7g), time to move (%u)\n
-0x%016I64X: Facet hit is walkable, but too far away from pyramid apex\n
-0x%016I64X: Facet hit is too steep\n
+Found %d facets in requested box\n
+CWorld::GetFacets() bombed out\n
+Requesting facets in b:(%g,%g,%g) t:(%g,%g,%g) AA box\n
+Falling for %u ms, start elevation (%g), sim time (%u)\n
+(0x%08X) Requesting fall facets: from (%g,%g,%g), wants to fall (%g), move vector (%g,%g,%g)\n
+****| Completed move request\n
+move consumed (%d) ms\n
+lastUpdateTime (0x%08X), timeUsed (%d)\n
+requested move (%g), should be (%g) for (%u ms)\n
+****| Received new move request: elapsed (%u), requested vector (%g,%g,%g)\n
+Executing pending strafe start at (%g,%g,%g)\n
+Executing pending move start at (%g,%g,%g)\n
+Executing pending unstrafe at (%g,%g,%g)\n
+Executing pending stop at (%g,%g,%g)\n
+Pushing (%g) up to redirect off of walkable slope\n
+====| Swam for (%u) ms to (%.7g,%.7g,%.7g)\n
+====| Starting new swim: from (%.7g,%.7g,%.7g), time to move (%u)\n
+Facet hit is walkable, but too far away from pyramid apex\n
+Facet hit is too steep\n
 numSidesHit > 0
-0x%016I64X: Fall push (%g,%g) away from obstacle\n
-0x%016I64X: To many simultaneous bumps, stopping fall\n
+Fall push (%g,%g) away from obstacle\n
+To many simultaneous bumps, stopping fall\n
 (%.7g,%.7g,%.7g)\n
-0x%016I64X: Moved (%g,%g,%g) (%g%% of intended) from (%.7g,%.7g,%.7g) to
-0x%016I64X: Trying to move (%g,%g,%g) (%g distance)\n
-0x%016I64X: ====| Fell (%u) ms (%g,%g,%g) to (%g,%g,%g)\n
-0x%016I64X: No facets to obstruct, falling full distance\n
-0x%016I64X: ====| Wanted to fall (%g) (%g,%g,%g)\n
-0x%016I64X: ====| Starting new fall: from (%.7g,%.7g,%.7g), time to move (%u), time fallen so far (%d)\n
-0x%016I64X: Pushing (%g) out along (%g,%g) to redirect off of unwalkable slope\n
-0x%016I64X: Stepping up (%g,%g,%g) high over obstacle to (%g,%g,%g)\n
-0x%016I64X: Step up not allowed\n
-0x%016I64X: 4) (%g,%g,%g)\n
-0x%016I64X: 3) (%g,%g,%g)\n
-0x%016I64X: 2) (%g,%g,%g)\n
-0x%016I64X: 1) (%g,%g,%g)\n
-0x%016I64X: Attempting step up\n
+Moved (%g,%g,%g) (%g%% of intended) from (%.7g,%.7g,%.7g) to
+Trying to move (%g,%g,%g) (%g distance)\n
+====| Fell (%u) ms (%g,%g,%g) to (%g,%g,%g)\n
+No facets to obstruct, falling full distance\n
+====| Wanted to fall (%g) (%g,%g,%g)\n
+====| Starting new fall: from (%.7g,%.7g,%.7g), time to move (%u), time fallen so far (%d)\n
+Pushing (%g) out along (%g,%g) to redirect off of unwalkable slope\n
+Stepping up (%g,%g,%g) high over obstacle to (%g,%g,%g)\n
+Step up not allowed\n
+4) (%g,%g,%g)\n
+3) (%g,%g,%g)\n
+2) (%g,%g,%g)\n
+2) UNABLE TO MOVE UPWARD!! Blocked by (%g,%g,%g),(%g,%g,%g),(%g,%g,%g) face, (%g,%g,%g) normal\n
+1) (%g,%g,%g)\n
+Attempting step up\n
 !IsSteppingUp()
-0x%016I64X: Unable to bump free of obstacles, stopping move\n
-0x%016I64X: consumed sufficient time, stopping move\n
-0x%016I64X: Too many simultaneous bumps, stopping move\n
-0x%016I64X: Moved (%g) to touch ground at (%g,%g,%g)\n
-0x%016I64X: ====| Moved (%g) ms, (%g,%g,%g) to (%g,%g,%g)\n
-0x%016I64X: Failed to reach walkable surface, cancelling step up\n
-0x%016I64X: Wanted to move (%g) in (%g,%g,%g) direction, actually moved (%g) to (%g,%g,%g)\n
-0x%016I64X: ====| Starting new move: from (%.7g,%.7g,%.7g), want to move (%g) in (%g,%g) direction, for (%u) ms\n
+Unable to bump free of obstacles, stopping move\n
+consumed sufficient time, stopping move\n
+Too many simultaneous bumps, stopping move\n
+Moved (%g) to touch ground at (%g,%g,%g)\n
+====| Moved (%g) ms, (%g,%g,%g) to (%g,%g,%g)\n
+Failed to reach walkable surface, cancelling step up\n
+Wanted to move (%g) in (%g,%g,%g) direction, actually moved (%g) to (%g,%g,%g)\n
+====| Starting new move: from (%.7g,%.7g,%.7g), want to move (%g) in (%g,%g) direction, for (%u) ms\n
 Interface\\SpellShadow\\Spell-Shadow-Unacceptable.blp
 Interface\\SpellShadow\\Spell-Shadow-Acceptable.blp
-.?AV?$TSExplicitList@UFADEOUTHASHOBJ@@$0?CCCCCCCD@@@
 FFX disabled
 FFX enabled
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\WorldFrame.cpp
-picked
 hitTestResult
 Spell_C_CanTargetItems() || Spell_C_WaitingForStringInput() || (hitFilter != HIT_TEST_NOTHING)
 ..\\Object/ObjectClient/Player_C.h
 .?AUCModelRecord@@
 s_currentWorldFrame->m_camera
 s_currentWorldFrame
+position
 Shaders\\Pixel\\FFXBlur_2.bls
 Shaders\\Pixel\\FFXGlow_2.bls
 tone
@@ -2635,21 +2391,15 @@ fade out rate for player mouseover
 PlayerFadeInRate
 fade in rate for player mouseover
 4096
-PlayerFadeMouseOver
-Controls fading of the local player when mousing over
 m_camera
 .?AVCGCamera@@
 !s_currentWorldFrame || !\"Error, why is there more than one world frame being created?\"
 debugobjectpathing
-s_playerFadeOutAlphaCVar
-s_playerFadeOutRateCVar
-s_playerFadeInRateCVar
-!\"Error, unrecognized player fade mode!\"
 pWorldFrame
 inputControl
 IDLE_MESSAGE
-curr->model
-.?AUFADEOUTHASHOBJ@@
+data
+rsStackOffset == GxRsStackOffset()
 ..\\WowServices/BitField.h
 bitNum < m_numBits
 DropItemOnUnit
@@ -2679,6 +2429,7 @@ InCinematic
 OpeningCinematic
 RandomRoll
 Stuck
+GetRefreshRates
 SetScreenResolution
 GetCurrentResolution
 GetScreenResolutions
@@ -2843,6 +2594,10 @@ INVTYPE_NECK
 INVTYPE_HEAD
 .?AV?$TSExplicitList@USAVEDVARIABLE@@$0?CCCCCCCD@@@
 .?AUNearestEnemyData@@
+ERR_NOT_IN_RAID
+ERR_LOOT_PLAYER_NOT_FOUND
+ERR_LOOT_ROLL_PENDING
+ERR_TOO_MANY_CHAT_CHANNELS
 ERR_CLICK_ON_ITEM_TO_FEED
 ERR_RAID_MEMBER_REMOVED_S
 ERR_RAID_MEMBER_ADDED_S
@@ -2943,13 +2698,13 @@ ERR_GUILDEMBLEM_INVALIDVENDOR
 ERR_GUILDEMBLEM_NOTENOUGHMONEY
 ERR_GUILDEMBLEM_NOTGUILDMASTER
 ERR_GUILDEMBLEM_COLORSPRESENT
-ERR_GUILDEMBLEM_NOGUILD
 ERR_GUILDEMBLEM_INVALID_TABARD_COLORS
 ERR_GUILDEMBLEM_SUCCESS
 ERR_INVALID_FOLLOW_TARGET
 ERR_UNIT_NOT_FOUND
 ERR_AUTOFOLLOW_TOO_FAR
 ERR_MOUNT_FORCEDDISMOUNT
+ERR_GUILDEMBLEM_NOGUILD
 ERR_LOOT_GONE
 ERR_OUT_OF_HEALTH
 ERR_OUT_OF_ENERGY
@@ -3007,6 +2762,9 @@ ERR_CHAT_WHILE_DEAD
 ERR_TAME_FAILED
 ERR_SPECIFY_MASTER_LOOTER
 ERR_NEW_LOOT_MASTER_S
+ERR_SET_LOOT_THRESHOLD_S
+ERR_SET_LOOT_NBG
+ERR_SET_LOOT_GROUP
 ERR_SET_LOOT_MASTER
 ERR_SET_LOOT_ROUNDROBIN
 ERR_SET_LOOT_FREEFORALL
@@ -3080,6 +2838,7 @@ ERR_HUNGER_MED
 ERR_HUNGER_LOW
 ERR_HUNGER_VERY_LOW
 ERR_ATTACK_DEAD
+ERR_ATTACK_CHARMED
 ERR_ATTACK_CONFUSED
 ERR_ATTACK_FLEEING
 ERR_ATTACK_PACIFIED
@@ -3110,8 +2869,8 @@ igQuestListComplete
 ERR_QUEST_COMPLETE_S
 QUESTADDED
 ERR_QUEST_ACCEPTED_S
-igQuestFailed
 ERR_LOOT_WHILE_INVULNERABLE
+igQuestFailed
 ERR_LOOT_NO_UI
 ERR_LOOT_STUNNED
 ERR_LOOT_NOTSTANDING
@@ -3176,8 +2935,8 @@ ERR_TARGET_NOT_IN_GROUP_S
 ERR_NOT_IN_GROUP
 ERR_BAD_PLAYER_NAME_S
 ERR_UNINVITE_YOU
-LEVELUP
 ERR_JOINED_GROUP_S
+LEVELUP
 igPlayerInviteDecline
 ERR_DECLINE_GROUP_S
 ERR_GROUP_DISBANDED
@@ -3195,6 +2954,7 @@ ERR_LEARN_ABILITY_S
 ERR_LEARN_SPELL_S
 ERR_SKILL_UP_SI
 ERR_SKILL_GAINED_S
+ERR_PROFICIENCY_GAINED_S
 ERR_SPELL_ALREADY_KNOWN_S
 ERR_ABILITY_COOLDOWN
 ERR_SPELL_COOLDOWN
@@ -3327,12 +3087,14 @@ Usage: GuildUninviteByName(\"name\")
 Usage: GuildPromoteByName(\"name\")
 Usage: GuildDemoteByName(\"name\")
 Usage: GuildSetLeaderByName(\"name\")
+target
 Usage: GuildSetMOTD(\"message\")
 Usage: SplitMoney(\"gold silver copper\")
 %.2f, %.2f, %.2f
 Usage: CheckInteractDistance(\"unit\", distIndex)
 .?AVC2iVector@NTempest@@
 gxRestart
+.?AUCGxMonitorMode@@
 Usage: RandomRoll(\"max\") or RandomRoll(\"min\", \"max\")
 Usage: NewGMTicket(type, text)
 Usage: UpdateGMTicket(type, text)
@@ -3345,7 +3107,6 @@ Usage: DropItemOnUnit(\"unit\")
 worldFramePtr
 !m_cinematic.sequenceMusic
 !m_cinematic.cameraMusic
-ModelIsLoaded(m_model)
 run worldexec.wtf
 !\"Unhandled GameUI network message\"
 scaleui
@@ -3428,7 +3189,6 @@ WorldFrame
 .?AVCGTooltip@@
 %s%s%d
 .?AUSAVEDVARIABLE@@
-.?AUCGxMonitorMode@@
 EnumerateServerChannels
 SetChatWindowShown
 SetChatWindowDocked
@@ -3708,6 +3468,8 @@ Interface\\WorldMap\\%s\\%s
 Usage: GetMapOverlayInfo(index)
 SetLookingForGroup
 GetLookingForGroup
+SetLootThreshold
+GetLootThreshold
 SetLootMethod
 GetLootMethod
 LeaveParty
@@ -3716,13 +3478,17 @@ GetPartyLeaderIndex
 GetPartyMember
 GetNumPartyMembers
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\PartyFrame.cpp
+ITEM_QUALITY%d_DESC
 Usage: GetPartyMember(1-4)
-roundrobin
-master
 ERROR!
+needbeforegreed
+group
+master
+roundrobin
 freeforall
 Invalid loot method
-Usage: SetLootMethod(\"method\" [,master])
+Usage: SetLootMethod(\"method\" [,master][,threshold])
+Usage: SetLooThreshold(threshold)
 HasNewMail
 InboxItemCanDelete
 DeleteInboxItem
@@ -3795,17 +3561,20 @@ PickupSpell
 GetSpellCooldown
 GetSpellName
 GetSpellTexture
+GetSpellTabInfo
+GetNumSpellTabs
+.PAUSpellBookSkillInfo@@
+.?AUSpellBookSkillInfo@@
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\SpellBookFrame.cpp
 info->m_effectMiscValue[0] < int(m_languageSpells.Count())
 slot < MAXIMUM_LEARNED_SPELLS
 slot >= 0
 igSpellBookSpellIconDrop
-igAbilityIconDrop
 igSpellBookSpellIconPickup
-igAbilityIconPickup
+Interface\\Icons\\Ability_Kick
+GENERAL
+Usage: GetSpellTabInfo(index)
 Invalid spell slot in GetSpellTexture
-ability
-spell
 Invalid spell slot in GetSpellName
 Invalid spell slot in GetSpellCooldown
 Invalid spell slot in PickupSpell
@@ -3903,7 +3672,8 @@ C:\\build\\buildWoW\\WoW\\Source\\Ui\\UIBindings.h
 .?AV?$TSExplicitList@UKEYCOMMAND@@$0?CCCCCCCD@@@
 GetPetIcon
 GetPetFoodTypes
-GetPetHappiness
+GetPe
+tHappiness
 GetPetExperience
 GetPetTrainingPoints
 GetPetLoyalty
@@ -3970,6 +3740,11 @@ Usage: GetTradePlayerItemInfo(index)
 Usage: GetTradePlayerItemLink(index)
 Usage: PickupTradeMoney(amount)
 Usage: SetTradeMoney(amount)
+RollOnLoot
+GetLootRollTimeLeft
+GetLootRollItemInfo
+GiveMasterLoot
+GetMasterLootCandidate
 IsFishingLoot
 CloseLoot
 LootSlot
@@ -3990,11 +3765,17 @@ stats
 %d %s
 INV_Misc_QuestionMark
 %d %s%s
+Loot item stats lookup failed for item id %d
 Usage: GetLootSlotInfo(slot)
 Usage: GetLootSlotLink(slot)
 Usage: LootSlotIsItem(slot)
 Usage: LootSlotIsCoin(slot)
 Usage: LootSlot(slot)
+Usage: GetMasterLootCandidate(index)
+Usage: GiveMasterLoot(slot, index)
+Usage: GetLootRollItemInfo(id)
+Usage: GetLootRollTimeLeft(id)
+Usage: RollOnLoot(id [,roll])
 .?AUFrameScriptObject_Variable@@
 DemoteAssistant
 PromoteToAssistant
@@ -4015,7 +3796,6 @@ PLAYER_OFFLINE
 Usage: GetRaidRosterInfo(index)
 Usage: SetRaidRosterSelection(index)
 zone
-group
 class
 level
 Usage: SortRaidRoster(\"type\")
@@ -4071,6 +3851,7 @@ C:\\build\\buildWoW\\WoW\\Source\\Ui\\AuctionHouse.cpp
 m_numItems <= MAX_AUCTION_LIST_RESULTS
 m_numOwned <= MAX_AUCTION_LIST_RESULTS
 m_numBid <= MAX_AUCTION_LIST_RESULTS
+.?AUAuctionStatsCallbackInfo@@
 Usage: CalculateAuctionDeposit(runTime)
 Usage: StartAuction(minBid, buyoutPrice, runTime)
 bidder
@@ -4083,6 +3864,7 @@ Usage: GetAuctionItemSubClasses(index)
 Usage: GetAuctionInvTypes(classIndex, subClassIndex)
 Usage: SortAuctionItems(\"type\", \"sort\")
 buyout
+duration
 quality
 Usage: SetSelectedAuctionItem(\"type\", index)
 Usage: GetSelectedAuctionItem(\"type\")
@@ -4188,6 +3970,7 @@ FactionToggleAtWar
 GetFactionInfo
 GetNumFactions
 .PAUReputationInfo@@
+.?AUPlayerForcedReaction@@
 .?AUReputationInfo@@
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\ReputationInfo.cpp
 numFactions == MAX_REPUTATION_FACTIONS
@@ -4379,6 +4162,7 @@ ItemTextGetMaterial
 ItemTextGetCreator
 ItemTextGetItem
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\ItemTextFrame.cpp
+GetTrackingTexture
 CancelPlayerBuff
 GetPlayerBuffTimeLeft
 GetPlayerBuffTexture
@@ -4421,14 +4205,15 @@ Usage: HasAction(slot)
 Usage: UseAction(slot, [checkCursor])
 Usage: PickupAction(slot)
 Usage: PlaceAction(slot)
-Usage: IsAttackAction(slot)
+Usage: I
+sAttackAction(slot)
 Usage: IsCurrentAction(slot)
 Usage: IsAutorepeatAction(slot)
 Usage: IsUsableAction(slot)
 GetMacroIndexByName
 PickupMacro
 GetMacroIconInfo
-GetNumMacroIcons
+umMacroIcons
 EditMacro
 DeleteMacro
 GetMacroInfo
@@ -4507,6 +4292,7 @@ GetCraftSelectionIndex
 SelectCraft
 GetCraftInfo
 GetNumCrafts
+GetCraftDisplaySkillLine
 GetCraftButtonToken
 GetCraftName
 CloseCraft
@@ -4672,7 +4458,6 @@ ITEM_BIND_ON_USE
 ITEM_BIND_ON_EQUIP
 ITEM_BIND_QUEST
 ITEM_BIND_ON_PICKUP
-ITEM_QUALITY%d_DESC
 Usage: GetTradeSkillItemStats(index)
 Usage: GetTradeSkillItemLink(index)
 Usage: GetTradeSkillNumReagents(index)
@@ -4727,9 +4512,9 @@ GetTitleText
 CloseQuest
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestFrame.cpp
 state < QUEST_STATE_NUM_TYPES
-(m_numQuests + m_numInProgress) < (MAXIMUM_NUM_QUESTS_DISPLAYED)
+(m_numQuests + m_numInProgress) < (QUESTGIVER_MAX_QUEST_COUNT)
 m_state == QUEST_GREETING
-(m_numQuests + m_numInProgress) < (MAXIMUM_NUM_QUESTS_DISPLAYED - 1)
+(m_numQuests + m_numInProgress) < (QUESTGIVER_MAX_QUEST_COUNT - 1)
 numReward <= 6
 numChoice <= 6
 numItems <= 6
@@ -4814,6 +4599,7 @@ Usage: GetLowerEmblemTexture(textureName)
 SetRotation
 UpdateModel
 SetUnit
+Duplicated model: %s\n
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\CharacterModelBase.cpp
 Usage: SetUnit(\"unit\")
 Usage: SetRotation(rotation (in radians))
@@ -4822,10 +4608,6 @@ PingLocation
 SetZoom
 GetZoom
 GetZoomLevels
-Arrow
-GuideArrow
-CorpseArrow
-GroupArrow
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -4863,6 +4645,7 @@ C:\\build\\buildWoW\\WoW\\Source\\Ui\\TaxiRouteFrame.cpp
 !s_routeFrame
 s_routeFrame == this
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestTextParser.cpp
+spell
 HOME_INN
 SPELL_DURATION_UNTIL_CANCELLED
 SPELL_DURATION
@@ -4903,6 +4686,7 @@ rect.r > rect.l
 rect.t > rect.b
 width >= 0
 height >= 0
+SetLootRollItem
 SetBuybackItem
 SetMerchantCompareItem
 SetAuctionCompareItem
@@ -4930,6 +4714,7 @@ SetQuestItem
 SetLootItem
 SetInventoryItem
 SetSpell
+SetTrackingSpell
 SetPlayerBuff
 SetShapeshift
 SetPetAction
@@ -5209,6 +4994,7 @@ Usage: SetAuctionItem(\"type\", index)
 Usage: SetMoneyWidth(width)
 Usage: SetAuctionCompareItem(\"type\", index [, offset])
 Usage: SetMerchantCompareItem(\"slot\" [, offset])
+Usage: SetLootRollItem(id)
 CMath::fnotequal_(direction.SquaredMag(),0)
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\CSimpleCamera.cpp
 THIRD_PERSON_D
@@ -5237,9 +5023,17 @@ MoveViewInStop
 MoveViewInStart
 CameraZoomOut
 CameraZoomIn
+0.75
+-1.0
+Absorb
+Taxi
+Swim
+Jump
+Fall
 Turn
 Strafe
 Move
+Track
 Stop
 Idle
 Always
@@ -5250,30 +5044,57 @@ Delay
 30.0
 13.88
 20.0
+10.0
 5.55
-Target
 Pitch
 Distance
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Camera.cpp
 newValue
 Value out of range (%f - %f)\n
 CGInputControl::GetActive()
-cameraCustomViewSmoothing
-cameraOffsetUnderflowFactor
-cameraOffsetOverflowFactor
+cameraSmoothTimeMax
+300.0
+cameraSmoothTimeMin
+0.001
+cameraYawSmoothMax
+cameraYawSmoothMin
+cameraTargetOffsetSmoothMax
+cameraTargetOffsetSmoothMin
+cameraPitchSmoothMax
+cameraPitchSmoothMin
+cameraGroundOffsetPitchMax
+60.0
+cameraGroundOffsetPitchMin
+-15.0
+cameraPivotDYMin
+0.00
+cameraPivotDXMax
+0.05
 cameraPivot
+cameraTerrainTiltTimeMax
+cameraTerrainTiltTimeMin
+cameraTerrainTilt
 cameraSmoothViewData
 cameraSmooth
+cameraCustomViewSmoothing
 cameraSmoothStyle
+camerasmooth
 camera
 cameraView
 cameraViewBlendStyle
-cameraAngularSpeed
+cameraYawSmoothSpeed
+cameraTargetSmoothSpeed
+cameraPitchSmoothSpeed
+cameraHeightSmoothSpeed
+cameraGroundSmoothSpeed
+cameraDistanceSmoothSpeed
+cameraYawMoveSpeed
 180.0
-cameraLinearSpeed
+cameraTargetMoveSpeed
+cameraPitchMoveSpeed
+90.0
+cameraDistanceMoveSpeed
 8.33
-cameraSmoothingRate
-camerasmooth
 mouseInvertPitch
 mouseInvertYaw
 nearclip
@@ -5285,11 +5106,20 @@ view < MAX_CAMERA_VIEWS
 move < NUM_CAMERA_MOTIONS
 Camera NORMAL
 Camera FREELOOK
+CMath::fnotequal_(bestTime, 0.0f)
 !\"Unknown smooth data\"
+!IsTracking()
+IsTracking()
 transport->IsTransport()
 transport->IsA(TYPE_GAMEOBJECT)
 transport
 m_relativeTo
+CMath::fnotequal_(m_zoomTime, 0.0f)
+CMath::fnotequal_(m_groundTime, 0.0f)
+CMath::fnotequal_(m_heightTime, 0.0f)
+CMath::fnotequal_(m_pitchTime, 0.0f)
+CMath::fnotequal_(m_targetTime, 0.0f)
+CMath::fnotequal_(m_yawTime, 0.0f)
 Camera view %s
 newView < MAX_CAMERA_VIEWS
 newView >= VIEW_FIRST_PERSON
@@ -5315,7 +5145,6 @@ MoveForwardStop
 MoveForwardStart
 ToggleAutoRun
 ToggleRun
-Jump
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.cpp
 control
 .?AVCGInputControl@@
@@ -5378,6 +5207,7 @@ UnitIsFriend
 UnitIsEnemy
 UnitReaction
 UnitFactionGroup
+UnitIsPVPFreeForAll
 UnitIsPVP
 UnitPlayerControlled
 UnitInParty
@@ -5405,6 +5235,7 @@ Unknown object name: %s
 Usage: ConsoleExec(\"console_command\")
 Usage: UnitIsUnit(\"unit\", \"otherUnit\")
 Usage: UnitIsPVP(\"unit\")
+Usage: UnitIsPVPFreeForAll(\"unit\")
 raceRec
 Usage: UnitFactionGroup(\"unit\")
 Usage: UnitReaction(\"unit\", \"otherUnit\")
@@ -5449,6 +5280,10 @@ Usage: SetPortraitTexture(texture, \"unit\")
 Usage: UnitCreatureType(\"unit\")
 Usage: UnitCreatureFamily(\"unit\")
 Usage: UnitFacing(\"unit\")
+CANCEL_LOOT_ROLL
+START_LOOT_ROLL
+UPDATE_MASTER_LOOT_LIST
+OPEN_MASTER_LOOT_LIST
 UPDATE_TRADESKILL_RECAST
 UPDATE_INVENTORY_ALERTS
 UPDATE_PENDING_MAIL
@@ -5661,8 +5496,7 @@ GUILD_INVITE_CANCEL
 GUILD_INVITE_REQUEST
 PARTY_INVITE_CANCEL
 PARTY_INVITE_REQUEST
-PLAYER_SIT
-PLAYER_STAND
+LOGOUT_CANCEL
 PLAYER_QUITING
 PLAYER_CAMPING
 PLAYER_DEAD
@@ -5799,6 +5633,7 @@ Loading add-on %s
 Interface\\FrameXML
 Interface\\AddOns\\%s
 .?AUUIADDON@@
+UnableItem
 UnableLootAll
 UnableMail
 UnablePickLock
@@ -5815,6 +5650,7 @@ UnableAttack
 UnableBuy
 UnableCast
 UnablePoint
+Item
 LootAll
 Mail
 PickLock
@@ -5822,7 +5658,6 @@ GatherHerbs
 Skin
 Mine
 Trainer
-Taxi
 Pickup
 Inspect
 Speak
@@ -5830,11 +5665,10 @@ Interact
 Attack
 Cast
 Point
-.?AVCGCursor@@
+Interface\\Cursor\\%s.blp
+height == 64
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Cursor.cpp
-s_cursorModel
-CursorGrabSpell
-Cursor model missing necessary attachment point
+width == 64
 .?AV?$TSExplicitList@UPLAYERPORTRAIT@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UUNITPORTRAIT@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UITEMPORTRAIT@@$0?CCCCCCCD@@@
@@ -6095,8 +5929,6 @@ bytesWritten == store.Size()
 file != HOSFILE_INVALID
 C:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
 %s/%s
-tag == m_fileTag
-bytesRead == HeaderSize
 .?AUDBCACHEHASH@?$DBCache@VGameObjectStats_C@@HVHASHKEY_INT@@@@
 ..\\..\\Object/GameObjectStats.h
 .?AV?$TSExplicitList@UDBCACHEHASH@?$DBCache@VGameObjectStats_C@@HVHASHKEY_INT@@@@$0?CCCCCCCD@@@
@@ -6543,6 +6375,9 @@ counter < GxPerfCounters_Last
 (enable & ~1) == 0
 state < GxMasterEnables_Last
 bone == 0
+count ? maxIndex < 0x10000 : 1
+..\\Gx/Gx.h
+count < 0x10000
 indices
 !\"GxPrimVertexPtr(): unhandled vertex format\"
 count <= Gx_MaxVertices
@@ -6578,6 +6413,41 @@ type == Type_Matrix34
 type == Type_Matrix44
 blitFormat < BlitFormats_Last
 texFormat < GxTexFormats_Last
+.?AVCGxDeviceD3d@@
+CGxDevice::DeviceAdapterID(): RET: %d, VID: %x, DID: %x, DVER: %x.%x
+CGxDevice::DeviceAdapterInfer(): RET: %d, DID: %x
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\W32\\CGxOglDeviceW32.cpp
+m_hPbuffer == 0 && m_hPbufferDC == 0
+m_hdc == 0 && m_hglrc == 0
+BlizzardCursor.cur
+BlizzardIcon.ico
+CGxDeviceOpenGl::DeviceSetFormat():
+m_ownhwnd
+A game in progress
+windowRect.Width() * windowRect.Height() > 1.0f
+VBO KB total = %d\n
+VBO broker created %d slots at size %d => %d bytes on row, %d running total\n
+rowcount >= 1
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxDeviceOpenGl.cpp
+mMaxBytesLg2 < 24
+CGxVboBroker::GetGLError(): stuck loop aborted
+CGxVboBroker::GetGLError(): %s
+mLastSelectedVbo != 0xFFFFFFFF
+row <= mMaxBytesLg2
+.?AVCGxDeviceOpenGl@@
+.?AVC2Vector@NTempest@@
+value >= CGxPixelShader::Target_nvrc && value <= CGxPixelShader::Target_arbfp1
+CGxDeviceOpenGl::GetGLError(): stuck loop aborted
+CGxDeviceOpenGl::GetGLError(): %s\n
+CGxDeviceOpenGl::CreatePoolAPI(): glGenBuffersARB() failed!\n
+pool->m_apiSpecific == 0
+CGxDeviceOpenGl::PoolSizeSet Tried to free NULL\n
+pool->m_mem != 0
+pool->m_usage == GxPoolUsage_Stream
+DsGet(s_gxBufTargetToDs[pool->m_target]) == (uint)pool->m_apiSpecific
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxDeviceOpenGl.h
+which < DeviceStates_Last
+buf->m_base == 0
 Ds320
 Ds248
 Ds24X
@@ -6602,7 +6472,7 @@ m_bufList.IsEmpty()
 !tex->m_apiSpecificData
 CGxDevice::DeviceOverride(): %d set to %d
 (buf->m_base / buf->m_itemSize) * buf->m_itemSize == buf->m_base
-m_bufLocked[GxPoolTarget_Index] == 0
+!indexed || m_bufLocked[GxPoolTarget_Index] == 0
 m_bufLocked[GxPoolTarget_Vertex] == 0
 m_inBeginEnd == 0
 m_indexLocked == 0 && m_vertexLocked == 0
@@ -6621,9 +6491,13 @@ pool->m_bufList.IsEmpty()
 .?AVCGxTex@@
 .?AVCGxShaderParam@@
 permutationCount == permutations
+%s:%d
+hotspot.y < 32
+hotspot.x < 32
 Logs\\gx.log
 CGxDevice::Log(): %s\n
 \tnumStreams: %d
+\tvertexShaderConstants: %d
 \tvertexShaderTarget: %d
 \tpixelShaderTarget: %d
 \trttFormat: %d, %d
@@ -6638,40 +6512,6 @@ Caps:
 .?AV?$TSExplicitList@VCGxPixelShader@@$0?CCCCCCCD@@@
 .?AVCGxVertexShader@@
 .?AV?$TSExplicitList@VCGxVertexShader@@$0?CCCCCCCD@@@
-.?AVCGxDeviceD3d@@
-CGxDevice::DeviceAdapterID(): RET: %d, VID: %x, DID: %x, DVER: %x.%x
-CGxDevice::DeviceAdapterInfer(): RET: %d, DID: %x
-C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\W32\\CGxOglDeviceW32.cpp
-m_hPbuffer == 0 && m_hPbufferDC == 0
-m_hdc == 0 && m_hglrc == 0
-BlizzardCursor.cur
-BlizzardIcon.ico
-CGxDeviceOpenGl::DeviceSetFormat():
-m_ownhwnd
-A game in progress
-windowRect.Width() * windowRect.Height() > 1.0f
-VBO KB total = %d\n
-VBO broker created %d slots at size %d => %d bytes on row, %d running total\n
-rowcount >= 1
-C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxDeviceOpenGl.cpp
-mMaxBytesLg2 < 24
-CGxVboBroker::GetGLError(): stuck loop aborted
-CGxVboBroker::GetGLError(): %s
-mLastSelectedVbo != 0xFFFFFFFF
-row <= mMaxBytesLg2
-.?AVCGxDeviceOpenGl@@
-value >= CGxPixelShader::Target_nvrc && value <= CGxPixelShader::Target_arbfp1
-CGxDeviceOpenGl::GetGLError(): stuck loop aborted
-CGxDeviceOpenGl::GetGLError(): %s\n
-CGxDeviceOpenGl::CreatePoolAPI(): glGenBuffersARB() failed!\n
-pool->m_apiSpecific == 0
-CGxDeviceOpenGl::PoolSizeSet Tried to free NULL\n
-pool->m_mem != 0
-pool->m_usage == GxPoolUsage_Stream
-DsGet(s_gxBufTargetToDs[pool->m_target]) == (uint)pool->m_apiSpecific
-C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxDeviceOpenGl.h
-which < DeviceStates_Last
-buf->m_base == 0
 .?AUGxVertexDecl@CGxDeviceD3d@@
 CGxDeviceD3d::ILoadD3dLib(): unable to d3dCreateProc()
 CGxDeviceD3d::ILoadD3dLib(): unable to GetProcAddress()
@@ -6767,6 +6607,7 @@ glFinalCombinerInputNV
 glCombinerOutputNV
 glCombinerInputNV
 GL_NV_register_combiners
+GL_ARB_texture_env_combine
 glDrawRangeElementsEXT
 GL_EXT_draw_range_elements
 glUnmapBufferARB
@@ -6813,8 +6654,7 @@ ChoosePixelFormat failed, color = %d, alpha = %d, depth = %d\n
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglShader.cpp
 glARBFragmentProgram
 PARAM c%u[%u]={program.env[%u..%u]}
- = { program.local
-PARAM c
+
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglTexture.cpp
 DsGet(Ds_ActiveTexture) == tmuToUse
 texId->m_needsFlagUpdate
@@ -6837,6 +6677,7 @@ Access violation in Gx silently handled. %s : %d\n
 Gx: (ERROR): Texture lock failure.\n
 lockRect.Width() > 0 && lockRect.Height() > 0
 Gx: (ERROR): Unable to get mip level.\n
+texels
 CGxDeviceD3d::PrimRender(): invalid buf!\n
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dXform.cpp
 m_viewportDirty
@@ -6847,7 +6688,6 @@ streamSub <= m_caps.m_numStreams
 .PAUCGxBuf@@
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxDeviceD3d.h
 state < DeviceStates_Last
-res == ((HRESULT)0x00000000L)
 C:\\build\\buildWoW\\ENGINE\\Source\\Images\\tga.cpp
 *filename
 m_image == 0
@@ -6918,6 +6758,7 @@ CHAR_LOGIN_IN_PROGRESS
 CHAR_DELETE_FAILED
 CHAR_DELETE_SUCCESS
 CHAR_DELETE_IN_PROGRESS
+CHAR_CREATE_PVP_TEAMS_VIOLATION
 CHAR_CREATE_DISABLED
 CHAR_CREATE_NAME_IN_USE
 CHAR_CREATE_FAILED
@@ -7001,6 +6842,7 @@ m_statusComplete == 1
 msgId == SMSG_AUTH_CHALLENGE
 msgId == SMSG_AUTH_RESPONSE
 password
+m_initialized
 accountName
 msgId == SMSG_CHAR_ENUM
 msgId == SMSG_CHAR_CREATE
@@ -7211,6 +7053,11 @@ No Name
 .?AUAddressListNode@@
 .PAUAddressListNode@@
 .?AUCLightList@@
+Grow()
+..\\Tempest/cdyntable.h
+IsValid()
+..\\Tempest/cpriorityq.h
+\"CPriorityQ<T, B>: construction of base class failed.\"
 .PAUCGxuLight@@
 .?AVCGxuLightLink@@
 .?AUCGxuLight@@
@@ -7290,6 +7137,7 @@ desc
 current->ValidTextureCoords()
 current->glyphStartPixel >= 1
 glyphWidth
+m_alloc >= m_count
 .?AUVERT@@
 .?AUTEXTLINETEXTURE@@
 batchDesc->face == currentFace
@@ -7378,7 +7226,7 @@ SPELLEFFECTNOAREAEFFECT|%d
 SPELLVISUALIDNOTFOUND|%d|%d
 NOSPELLIDFOUND|%d
 NOOBJECTFILENAME|%d|Dynamic
-UNKNOWNANIMEVENT|%s|CGDynamicObject_C|CGDynamicObject_C::HandleAnimEvent
+UNKNOWNANIMEVENT|%.4s|CGDynamicObject_C|CGDynamicObject_C::HandleAnimEvent
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Object_C.h
 corpsePtr
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Corpse_C.cpp
@@ -7388,6 +7236,7 @@ bytes < sizeof(*m_corpse)
 INVALIDPLAYERMODELRECORD|%d|%d|%d
 INVALIDPLAYERDISPLAYID|%d|%d|%d
 World\\Generic\\PassiveDoodads\\DeathSkeletons\\%s%sDeathSkeleton.mdx
+model == GetCharacterModel()
 IsClaimed()
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Container_C.cpp
 bytes <= sizeof(*m_cont)
@@ -7436,7 +7285,6 @@ DPS Scaler
 Creature Spell Scaler
 Base
 .?AUInitialSpellStruct@@
-.?AV?$TSExplicitList@UITEMEXPIRATION@@$0?CCCCCCCD@@@
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Player_C.h
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Player_C.cpp
 You can't shop while dead.
@@ -7446,14 +7294,8 @@ I don't think he likes you very much
 You are too far away
 count <= 128
 unit->IsA(TYPE_UNIT)
-Creating player guid (0x%016I64X)\n
-charModel
+rec->m_MountScale >= 0.0f
 Error, player %s has displayID 0!
-PlayerCombatModeHandler
-PlayerAttackBreakHandler
-playerPtr->IsActivePlayer()
-playerPtr
-s_attackBreakTimer
 unit == CGPlayer_C::GetActive()
 Skill %d increased from %d to %d
 offset < MAX_UNIT_SKILL_LINES
@@ -7479,15 +7321,12 @@ CombatModeMaxDistance
 Specifies the range outside of which combat mode is impossible
 30.0f
 number
-.?AUDEFERREDSPELLMISS@@
 RANDOM_ROLL_RESULT
 .?AURandomRollInfo@@
 %d%d%d%d%d%d%d%d%d
 Godmode disabled
 Godmode enabled
 [%d] %s: %s
-(slot >= 0) && (slot < (sizeof(itemNode->enchantmentTimeLeft) / sizeof(itemNode->enchantmentTimeLeft[0])))
-itemNode
 Unkown questID (%d) in QuestUpdate
 !quest
 .?AUQuestLootInfo@@
@@ -7504,23 +7343,6 @@ BREATH
 FEIGNDEATH
 %s_LABEL
 Proficiency in item class %d set to %08x
-CombatLogPeriodicSpells
-%d: \"%s\" triggered \"%s\" proc on %s (aura \"%s\") %s rolled/needed: %d/%d
-Unknown Caster
-Unknown Target
-[MISS]
-[HIT]
-SpellHit
-SpellHitSchool
-SpellCast
-Block
-Swing
-Parry
-Dodge
-Heartbeat
-Kill
-TakePhysicalDamage
-DealPhysicalDamage
 DMG: ==============================================
 DMG: (%s) '??? %d ?^=%8.2f, total=%f
 DMG: (%s) '%s'=%8.2f, total=%f
@@ -7540,14 +7362,12 @@ Error, unknown displayInfo %d specified for player race %d sex %d!
 Error, attempted to look up model for player with sex %d (UNITSEX_NONE), all players have sex! =D
 Error, unrecognized sex code %d!
 Error, race %d not found in race table!
-rec->m_MountScale >= 0.0f
-yawn
 CHAT_FLAG_AFK
 CHAT_FLAG_DND
 CHAT_FLAG_GM
 [%02d]: %s
-No taxi nodes for you!
 ERR_TOO_FAR_TO_ATTACK
+standState < UNIT_NUMSTANDSTATES
 VOICEMACRO_%d_%s_%d
 [MISSING VOICEMACRO STRING race %d nativesex %d category %d variation %d]
 UnwrapGift
@@ -7563,11 +7383,6 @@ victimPtr && victimPtr->IsA(TYPE_UNIT)
 .?AV?$TSExplicitList@UTRADESKILLLINE@@$0?CCCCCCCD@@@
 .?AUPROFICIENCYSPELL@@
 .?AV?$TSExplicitList@UPROFICIENCYSPELL@@$0?CCCCCCCD@@@
-.?AUITEMEXPIRATION@@
-ShipStop
-ShipMoving
-ShipStart
-Stand
 Custom3
 Custom2
 Custom1
@@ -7585,12 +7400,13 @@ Unknown Object Type
 newState < (sizeof(s_stateAnimInfo) / sizeof(s_stateAnimInfo[0]))
 Unhandled anim state: (%d)
 m_animState < (sizeof(s_statusString) / sizeof(s_statusString[0]))
+!m_objectId
 .?AULeg@?$ShipPath@V?$WowClientDB@VTaxiPathNodeRec@@@@@@
 m_leg[i].m_splineTime
-m_shipSpeed
-Found ship path with no points!  Path ID (%d)
 ../..\\Game/ShipPath.h
-0x%016I64X: Attaching to transport (0x%016I64X) at position(%g,%g).  Synced time is (0x%08X)
+m_shipSpeed
+Found ship path with no points! Path ID (%d)
+Attaching to transport (0x%016I64X) at position(%g,%g).  Synced time is (0x%08X)\n
 passenger
 No key frames found for transport (entry ID: %d)
 .?AVC4Plane@NTempest@@
@@ -7620,7 +7436,6 @@ BADBASEGAMEOBJECT|%d
 .?AVCGGameObject_C_Type_Button@@
 .?AVCGGameObject_C_Type_Door@@
 gameObj
-m_stats
 bytes <= sizeof(*m_gameObj)
 NOOBJECTFILENAME|%d|%d|Game
 m_baseObj && m_baseObj->CanUse()
@@ -7628,764 +7443,41 @@ m_baseObj && m_baseObj->CanUse()
 pathPoints.Count() > 0
 .?AUSegment@?$ShipPath@V?$WowClientDB@VTaxiPathNodeRec@@@@@@
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\GameObject_C.h
-NUM_MSG_TYPES
-SMSG_STANDSTATE_CHANGE_ACK
-SMSG_CANCEL_AUTO_REPEAT
-CMSG_CANCEL_GROWTH_AURA
-CMSG_GMTICKETSYSTEM_TOGGLE
-SMSG_SERVER_MESSAGE
-CMSG_BUYBACK_ITEM
-CMSG_GROUP_ASSISTANT_LEADER
-CMSG_GROUP_RAID_CONVERT
-SMSG_AUCTION_REMOVED_NOTIFICATION
-SMSG_PVP_CREDIT
-CMSG_DEL_PVP_MEDAL_CHEAT
-CMSG_ADD_PVP_MEDAL_CHEAT
-CMSG_SET_PVP_RANK_CHEAT
-CMSG_SET_PVP_TITLE
-CMSG_SET_DURABILITY_CHEAT
-SMSG_RAID_GROUP_ONLY
-SMSG_RECEIVED_MAIL
-MSG_QUERY_NEXT_MAIL_TIME
-CMSG_AUTOBANK_ITEM
-CMSG_AUTOSTORE_BANK_ITEM
-CMSG_RESET_FACTION_CHEAT
-CMSG_GROUP_SWAP_SUB_GROUP
-SMSG_RAID_MEMBER_STATS
-CMSG_GROUP_CHANGE_SUB_GROUP
-CMSG_ENABLE_DAMAGE_LOG
-SMSG_DAMAGE_CALC_LOG
-SMSG_SPELLDISPELLOG
-CMSG_FAR_SIGHT
-CMSG_REQUEST_PET_INFO
-SMSG_PLAY_OBJECT_SOUND
-SMSG_PLAY_MUSIC
-MSG_QUEST_PUSH_RESULT
-CMSG_STABLE_SWAP_PET
-CMSG_STABLE_REVIVE_PET
-SMSG_STABLE_RESULT
-CMSG_BUY_STABLE_SLOT
-CMSG_UNSTABLE_PET
-CMSG_STABLE_PET
-MSG_LIST_STABLED_PETS
-MSG_GM_ACCOUNT_ONLINE
-CMSG_CANCEL_AUTO_REPEAT_SPELL
-CMSG_PLAYER_AI_CHEAT
-CMSG_PET_CANCEL_AURA
-CMSG_SET_ACTIVE_MOVER
-SMSG_CORPSE_RECLAIM_DELAY
-CMSG_SET_AMMO
-SMSG_SET_PCT_SPELL_MODIFIER
-SMSG_SET_FLAT_SPELL_MODIFIER
-SMSG_AUCTION_BIDDER_LIST_RESULT
-CMSG_AUCTION_LIST_BIDDER_ITEMS
-SMSG_SPELLORDAMAGE_IMMUNE
-SMSG_DISPEL_FAILED
-SMSG_STANDSTATE_CHANGE_FAILURE
-SMSG_PROCRESIST
-SMSG_AUCTION_OWNER_NOTIFICATION
-SMSG_AUCTION_BIDDER_NOTIFICATION
-SMSG_AUCTION_OWNER_LIST_RESULT
-SMSG_AUCTION_LIST_RESULT
-SMSG_AUCTION_COMMAND_RESULT
-CMSG_AUCTION_PLACE_BID
-CMSG_AUCTION_LIST_OWNER_ITEMS
-CMSG_AUCTION_LIST_ITEMS
-CMSG_AUCTION_REMOVE_ITEM
-CMSG_AUCTION_SELL_ITEM
-MSG_AUCTION_HELLO
-SMSG_ZONE_UNDER_ATTACK
-CMSG_ENABLE_PVP
-SMSG_RESURRECT_FAILED
-CMSG_LEARN_TALENT
-SMSG_SPELLNONMELEEDAMAGELOG
-SMSG_SPELLDAMAGESHIELD
-SMSG_PERIODICAURALOG
-SMSG_DEBUGAURAPROC
-SMSG_SPELLLOGEXECUTE
-SMSG_SPELLLOGMISS
-CMSG_MAIL_CREATE_TEXT_ITEM
-CMSG_MAIL_DELETE
-CMSG_MAIL_RETURN_TO_SENDER
-CMSG_MAIL_MARK_AS_READ
-CMSG_MAIL_TAKE_ITEM
-CMSG_MAIL_TAKE_MONEY
-SMSG_ITEM_TEXT_QUERY_RESPONSE
-CMSG_ITEM_TEXT_QUERY
-CMSG_TAXIENABLENODE
-CMSG_TAXICLEARNODE
-SMSG_BATTLEFIELD_LOSE
-SMSG_BATTLEFIELD_WIN
-CMSG_BATTLEFIELD_JOIN
-SMSG_BATTLEFIELD_LIST
-CMSG_BATTLEFIELD_LIST
-SMSG_MAIL_LIST_RESULT
-CMSG_GET_MAIL_LIST
-SMSG_SEND_MAIL_RESULT
-CMSG_SEND_MAIL
-CMSG_CLEAR_EXPLORATION
-SMSG_LOGIN_VERIFY_WORLD
-CMSG_GUILD_SET_OFFICER_NOTE
-CMSG_GUILD_SET_PUBLIC_NOTE
-CMSG_GUILD_DEL_RANK
-CMSG_GUILD_ADD_RANK
-CMSG_GUILD_RANK
-SMSG_GM_PLAYER_INFO
-CMSG_GM_REQUEST_PLAYER_INFO
-CMSG_GM_UBERINVIS
-CMSG_GM_FREEZE
-CMSG_GM_MOVECORPSE
-CMSG_GM_SUMMONMOB
-CMSG_GM_RESURRECT
-CMSG_GM_REVEALTO
-CMSG_GM_SILENCE
-CMSG_SERVER_COMMAND
-CMSG_GM_VISION
-CMSG_CHAT_IGNORED
-SMSG_GOSSIP_POI
-CMSG_CHARACTER_POINT_CHEAT
-SMSG_SPIRIT_HEALER_CONFIRM
-CMSG_XP_CHEAT
-CMSG_SKILL_BUY_RANK
-CMSG_SKILL_BUY_STEP
-SMSG_SET_REST_START
-CMSG_SET_STAT_CHEAT
-CMSG_SPIRIT_HEALER_ACTIVATE
-SMSG_GMTICKET_SYSTEMSTATUS
-CMSG_GMTICKET_SYSTEMSTATUS
-SMSG_CHAT_WRONG_FACTION
-SMSG_GMTICKET_DELETETICKET
-CMSG_GMTICKET_DELETETICKET
-MSG_CORPSE_QUERY
-SMSG_GAMEOBJECT_DESPAWN_ANIM
-SMSG_GAMEOBJECT_SPAWN_ANIM
-CMSG_UNLEARN_TALENTS
-SMSG_GMTICKET_GETTICKET
-CMSG_GMTICKET_GETTICKET
-CMSG_GM_CREATE_ITEM_TARGET
-CMSG_GM_TEACH
-SMSG_POWERGAINLOG_OBSOLETE
-SMSG_CLEAR_FAR_SIGHT_IMMEDIATE
-SMSG_UPDATE_ACCOUNT_DATA
-CMSG_UPDATE_ACCOUNT_DATA
-CMSG_REQUEST_ACCOUNT_DATA
-SMSG_ACCOUNT_DATA_MD5
-SMSG_GMTICKET_UPDATETEXT
-CMSG_GMTICKET_UPDATETEXT
-SMSG_GMTICKET_CREATE
-CMSG_GMTICKET_CREATE
-CMSG_DECHARGE
-SMSG_REMOVED_SPELL
-CMSG_UNLEARN_SKILL
-CMSG_UNLEARN_SPELL
-CMSG_SET_LOOKING_FOR_GROUP
-MSG_LOOKING_FOR_GROUP
-SMSG_RWHOIS
-CMSG_RWHOIS
-SMSG_ENVIRONMENTALDAMAGELOG
-MSG_RANDOM_ROLL
-CMSG_GM_NUKE
-CMSG_GM_SET_SECURITY_GROUP
-SMSG_EXPLORATION_EXPERIENCE
-SMSG_OBSOLETE
-SMSG_COMPRESSED_UPDATE_OBJECT
-SMSG_PARTYKILLLOG
-CMSG_ZONEUPDATE
-SMSG_PLAY_SPELL_VISUAL
-MSG_TABARDVENDOR_ACTIVATE
-MSG_SAVE_GUILD_EMBLEM
-MSG_ADD_DYNAMIC_TARGET
-MSG_GM_SHOWLABEL
-SMSG_AUTH_RESPONSE
-CMSG_AUTH_SESSION
-SMSG_AUTH_CHALLENGE
-SMSG_ITEM_ENCHANT_TIME_UPDATE
-SMSG_ITEM_TIME_UPDATE
-MSG_GM_SUMMON
-MSG_GM_BIND_OTHER
-CMSG_SCREENSHOT
-CMSG_GM_INVIS
-CMSG_GHOST
-SMSG_PLAYER_MACRO
-CMSG_PLAYER_MACRO
-SMSG_SPELL_DELAYED
-SMSG_COOLDOWN_CHEAT
-CMSG_SETSHEATHED
-SMSG_GAMEOBJECT_PAGETEXT
-SMSG_CLEAR_COOLDOWN
-SMSG_PONG
-CMSG_PING
-SMSG_STOP_MIRROR_TIMER
-SMSG_PAUSE_MIRROR_TIMER
-SMSG_START_MIRROR_TIMER
-CMSG_SET_SKILL_CHEAT
-SMSG_ENCHANTMENTLOG
-SMSG_RESISTLOG
-MSG_MINIMAP_PING
-SMSG_LEVELUP_INFO
-CMSG_WRAP_ITEM
-CMSG_RECLAIM_CORPSE
-MSG_SPLIT_MONEY
-SMSG_LOG_XPGAIN
-SMSG_QUERY_TIME_RESPONSE
-CMSG_QUERY_TIME
-SMSG_PLAYED_TIME
-CMSG_PLAYED_TIME
-SMSG_NOTIFICATION
-CMSG_BUG
-SMSG_FISH_ESCAPED
-SMSG_FISH_NOT_HOOKED
-SMSG_PETITION_QUERY_RESPONSE
-CMSG_PETITION_QUERY
-SMSG_TURN_IN_PETITION_RESULTS
-CMSG_TURN_IN_PETITION
-CMSG_OFFER_PETITION
-MSG_PETITION_DECLINE
-SMSG_PETITION_SIGN_RESULTS
-CMSG_PETITION_SIGN
-SMSG_PETITION_SHOW_SIGNATURES
-CMSG_PETITION_SHOW_SIGNATURES
-CMSG_PETITION_BUY
-SMSG_PETITION_SHOWLIST
-CMSG_PETITION_SHOWLIST
-SMSG_BUY_BANK_SLOT_RESULT
-CMSG_BUY_BANK_SLOT
-SMSG_SHOW_BANK
-CMSG_BANKER_ACTIVATE
-SMSG_PLAYERBINDERROR
-CMSG_BINDER_ACTIVATE
-SMSG_TRAINER_BUY_FAILED
-SMSG_TRAINER_BUY_SUCCEEDED
-CMSG_TRAINER_BUY_SPELL
-SMSG_TRAINER_LIST
-CMSG_TRAINER_LIST
-SMSG_NEW_TAXI_PATH
-SMSG_ACTIVATETAXIREPLY
-CMSG_ACTIVATETAXI
-CMSG_TAXIQUERYAVAILABLENODES
-SMSG_TAXINODE_STATUS
-CMSG_TAXINODE_STATUS_QUERY
-SMSG_SHOWTAXINODES
-CMSG_TAXISHOWNODES
-CMSG_TAXIENABLEALLNODES
-CMSG_TAXICLEARALLNODES
-SMSG_BUY_FAILED
-SMSG_BUY_ITEM
-CMSG_BUY_ITEM_IN_SLOT
-CMSG_BUY_ITEM
-SMSG_SELL_ITEM
-CMSG_SELL_ITEM
-SMSG_LIST_INVENTORY
-CMSG_LIST_INVENTORY
-CMSG_PUSHQUESTTOPARTY
-SMSG_QUEST_CONFIRM_ACCEPT
-CMSG_QUEST_CONFIRM_ACCEPT
-SMSG_QUESTUPDATE_ADD_ITEM
-SMSG_QUESTUPDATE_ADD_KILL
-SMSG_QUESTUPDATE_COMPLETE
-SMSG_QUESTUPDATE_FAILEDTIMER
-SMSG_QUESTUPDATE_FAILED
-SMSG_QUESTLOG_FULL
-CMSG_QUESTLOG_REMOVE_QUEST
-CMSG_QUESTLOG_SWAP_QUEST
-SMSG_QUESTGIVER_QUEST_FAILED
-SMSG_QUESTGIVER_QUEST_COMPLETE
-CMSG_QUESTGIVER_CANCEL
-SMSG_QUESTGIVER_QUEST_INVALID
-CMSG_QUESTGIVER_CHOOSE_REWARD
-SMSG_QUESTGIVER_OFFER_REWARD
-CMSG_QUESTGIVER_REQUEST_REWARD
-SMSG_QUESTGIVER_REQUEST_ITEMS
-CMSG_QUESTGIVER_COMPLETE_QUEST
-CMSG_QUESTGIVER_ACCEPT_QUEST
-SMSG_QUESTGIVER_QUEST_DETAILS
-CMSG_QUESTGIVER_QUEST_AUTOLAUNCH
-CMSG_QUESTGIVER_QUERY_QUEST
-SMSG_QUESTGIVER_QUEST_LIST
-CMSG_QUESTGIVER_HELLO
-SMSG_QUESTGIVER_STATUS
-CMSG_QUESTGIVER_STATUS_QUERY
-SMSG_NPC_WONT_TALK
-SMSG_NPC_TEXT_UPDATE
-CMSG_NPC_TEXT_QUERY
-SMSG_GOSSIP_COMPLETE
-SMSG_GOSSIP_MESSAGE
-CMSG_GOSSIP_SELECT_OPTION
-CMSG_GOSSIP_HELLO
-CMSG_PET_CAST_SPELL_OBSOLETE
-SMSG_PET_SPELLS
-SMSG_PET_NAME_INVALID
-CMSG_PET_RENAME
-CMSG_PET_ABANDON
-CMSG_PET_ACTION
-CMSG_PET_SET_ACTION
-SMSG_PET_TAME_FAILURE
-SMSG_MOUNTSPECIAL_ANIM
-CMSG_MOUNTSPECIAL_ANIM
-SMSG_PUREMOUNT_CANCELLED_OBSOLETE
-SMSG_DISMOUNTRESULT
-SMSG_MOUNTRESULT
-CMSG_DUEL_CANCELLED
-CMSG_DUEL_ACCEPTED
-SMSG_DUEL_WINNER
-SMSG_DUEL_COMPLETE
-SMSG_DUEL_INBOUNDS
-SMSG_DUEL_OUTOFBOUNDS
-SMSG_DUEL_REQUESTED
-SMSG_ITEM_PUSH_RESULT
-SMSG_LOOT_CLEAR_MONEY
-SMSG_LOOT_ITEM_NOTIFY
-SMSG_LOOT_MONEY_NOTIFY
-SMSG_LOOT_REMOVED
-SMSG_LOOT_RELEASE_RESPONSE
-SMSG_LOOT_RESPONSE
-CMSG_LOOT_RELEASE
-CMSG_LOOT_MONEY
-CMSG_LOOT
-CMSG_RESURRECT_RESPONSE
-SMSG_RESURRECT_REQUEST
-CMSG_REPOP_REQUEST
-SMSG_DEATH_NOTIFY_OBSOLETE
-SMSG_PLAYERBOUND
-SMSG_BINDZONEREPLY
-CMSG_GETDEATHBINDZONE
-SMSG_BINDPOINTUPDATE
-CMSG_SETDEATHBINDPOINT
-CMSG_SAVE_PLAYER
-CMSG_SHEATHE_OBSOLETE
-SMSG_HEALSPELL_ON_PLAYERS_PET_OBSOLETE
-SMSG_HEALSPELL_ON_PLAYER_OBSOLETE
-SMSG_PLAYER_COMBAT_XP_GAIN_OBSOLETE
-SMSG_CANCEL_COMBAT
-SMSG_DAMAGE_TAKEN_OBSOLETE
-SMSG_DAMAGE_DONE_OBSOLETE
-SMSG_VICTIMSTATEUPDATE_OBSOLETE
-SMSG_ATTACKERSTATEUPDATE
-SMSG_ATTACKSWING_CANT_ATTACK
-SMSG_ATTACKSWING_DEADTARGET
-SMSG_ATTACKSWING_NOTSTANDING
-SMSG_ATTACKSWING_BADFACING
-SMSG_ATTACKSWING_NOTINRANGE
-SMSG_ATTACKSTOP
-SMSG_ATTACKSTART
-CMSG_ATTACKSTOP
-CMSG_ATTACKSWING
-CMSG_UNUSED2
-CMSG_UNUSED
-CMSG_SET_TARGET
-CMSG_SET_SELECTION
-SMSG_AI_REACTION
-CMSG_CANCEL_CHANNELLING
-MSG_CHANNEL_UPDATE
-MSG_CHANNEL_START
-SMSG_PET_CAST_FAILED
-SMSG_UPDATE_AURA_DURATION
-CMSG_CANCEL_AURA
-SMSG_COOLDOWN_EVENT
-SMSG_SPELL_COOLDOWN
-SMSG_SPELL_FAILURE
-SMSG_SPELL_GO
-SMSG_SPELL_START
-SMSG_CAST_RESULT
-CMSG_CANCEL_CAST
-CMSG_CAST_SPELL
-CMSG_NEW_SPELL_SLOT
-SMSG_SUPERCEDED_SPELL
-SMSG_LEARNED_SPELL
-SMSG_INITIAL_SPELLS
-SMSG_ACTION_BUTTONS
-CMSG_SET_ACTION_BUTTON
-SMSG_SET_PROFICIENCY
-CMSG_SET_FACTION_CHEAT
-CMSG_SET_FACTION_ATWAR
-SMSG_SET_FACTION_STANDING
-SMSG_SET_FACTION_VISIBLE
-SMSG_INITIALIZE_FACTIONS
-SMSG_TRADE_STATUS_EXTENDED
-SMSG_TRADE_STATUS
-CMSG_SET_TRADE_GOLD
-CMSG_CLEAR_TRADE_ITEM
-CMSG_SET_TRADE_ITEM
-CMSG_CANCEL_TRADE
-CMSG_UNACCEPT_TRADE
-CMSG_ACCEPT_TRADE
-CMSG_IGNORE_TRADE
-CMSG_BUSY_TRADE
-CMSG_BEGIN_TRADE
-CMSG_INITIATE_TRADE
-SMSG_INSPECT
-CMSG_INSPECT
-SMSG_OPEN_CONTAINER
-SMSG_INVENTORY_CHANGE_FAILURE
-CMSG_DESTROYITEM
-CMSG_DROP_ITEM
-CMSG_PICKUP_ITEM
-CMSG_SPLIT_ITEM
-CMSG_SWAP_INV_ITEM
-CMSG_SWAP_ITEM
-CMSG_AUTOSTORE_BAG_ITEM
-CMSG_AUTOEQUIP_ITEM
-CMSG_STORE_LOOT_IN_SLOT
-CMSG_AUTOSTORE_LOOT_ITEM
-CMSG_AUTOSTORE_GROUND_ITEM
-CMSG_AUTOEQUIP_GROUND_ITEM
-SMSG_TEXT_EMOTE
-CMSG_TEXT_EMOTE
-SMSG_EMOTE
-CMSG_EMOTE
-CMSG_STANDSTATECHANGE
-CMSG_TUTORIAL_RESET
-CMSG_TUTORIAL_CLEAR
-CMSG_TUTORIAL_FLAG
-SMSG_TUTORIAL_FLAGS
-CMSG_COMPLETE_CINEMATIC
-CMSG_NEXT_CINEMATIC_CAMERA
-SMSG_TRIGGER_CINEMATIC
-CMSG_OPENING_CINEMATIC
-CMSG_TRIGGER_CINEMATIC_CHEAT
-MSG_MOVE_HOVER
-CMSG_MOVE_HOVER_ACK
-SMSG_MOVE_UNSET_HOVER
-SMSG_MOVE_SET_HOVER
-SMSG_MOVE_NORMAL_FALL
-SMSG_MOVE_FEATHER_FALL
-MSG_MOVE_KNOCK_BACK
-CMSG_MOVE_KNOCK_BACK_ACK
-SMSG_MOVE_KNOCK_BACK
-MSG_MOVE_HEARTBEAT
-MSG_MOVE_UNROOT
-MSG_MOVE_ROOT
-CMSG_FORCE_MOVE_UNROOT_ACK
-SMSG_FORCE_MOVE_UNROOT
-CMSG_FORCE_MOVE_ROOT_ACK
-SMSG_FORCE_MOVE_ROOT
-CMSG_FORCE_SWIM_SPEED_CHANGE_ACK
-SMSG_FORCE_SWIM_SPEED_CHANGE
-CMSG_FORCE_SPEED_CHANGE_ACK
-SMSG_FORCE_SPEED_CHANGE
-CMSG_MOVE_SET_RAW_POSITION
-MSG_MOVE_SET_RAW_POSITION_ACK
-SMSG_MOVE_LAND_WALK
-SMSG_MOVE_WATER_WALK
-SMSG_MONSTER_MOVE
-MSG_MOVE_WORLDPORT_ACK
-MSG_MOVE_SET_PITCH
-MSG_MOVE_SET_FACING
-MSG_MOVE_TOGGLE_COLLISION_CHEAT
-MSG_MOVE_SET_TURN_RATE
-MSG_MOVE_SET_TURN_RATE_CHEAT
-MSG_MOVE_SET_ALL_SPEED_CHEAT
-MSG_MOVE_SET_SWIM_BACK_SPEED
-MSG_MOVE_SET_SWIM_BACK_SPEED_CHEAT
-MSG_MOVE_SET_SWIM_SPEED
-MSG_MOVE_SET_SWIM_SPEED_CHEAT
-MSG_MOVE_SET_WALK_SPEED
-MSG_MOVE_SET_WALK_SPEED_CHEAT
-MSG_MOVE_SET_RUN_BACK_SPEED
-MSG_MOVE_SET_RUN_BACK_SPEED_CHEAT
-MSG_MOVE_SET_RUN_SPEED
-MSG_MOVE_SET_RUN_SPEED_CHEAT
-MSG_MOVE_STOP_SWIM
-MSG_MOVE_START_SWIM
-MSG_MOVE_FALL_LAND
-MSG_MOVE_TOGGLE_FALL_LOGGING
-MSG_MOVE_TELEPORT_ACK
-MSG_MOVE_TELEPORT_CHEAT
-MSG_MOVE_TELEPORT
-MSG_MOVE_TOGGLE_LOGGING
-MSG_MOVE_SET_WALK_MODE
-MSG_MOVE_SET_RUN_MODE
-MSG_MOVE_STOP_PITCH
-MSG_MOVE_START_PITCH_DOWN
-MSG_MOVE_START_PITCH_UP
-MSG_MOVE_STOP_TURN
-MSG_MOVE_START_TURN_RIGHT
-MSG_MOVE_START_TURN_LEFT
-MSG_MOVE_JUMP
-MSG_MOVE_STOP_STRAFE
-MSG_MOVE_START_STRAFE_RIGHT
-MSG_MOVE_START_STRAFE_LEFT
-MSG_MOVE_STOP
-MSG_MOVE_START_BACKWARD
-MSG_MOVE_START_FORWARD
-CMSG_AREATRIGGER
-SMSG_GAMEOBJECT_CUSTOM_ANIM
-CMSG_GAMEOBJ_CHAIR_USE_OBSOLETE
-CMSG_GAMEOBJ_USE
-SMSG_ITEM_COOLDOWN
-SMSG_READ_ITEM_FAILED
-SMSG_READ_ITEM_OK
-CMSG_READ_ITEM
-CMSG_OPEN_ITEM
-CMSG_USE_ITEM
-SMSG_DESTROY_OBJECT
-SMSG_UPDATE_OBJECT
-CMSG_CHANNEL_MODERATE
-CMSG_CHANNEL_ANNOUNCEMENTS
-CMSG_CHANNEL_UNBAN
-CMSG_CHANNEL_BAN
-CMSG_CHANNEL_KICK
-CMSG_CHANNEL_INVITE
-CMSG_CHANNEL_UNMUTE
-CMSG_CHANNEL_MUTE
-CMSG_CHANNEL_UNMODERATOR
-CMSG_CHANNEL_MODERATOR
-CMSG_CHANNEL_OWNER
-CMSG_CHANNEL_SET_OWNER
-CMSG_CHANNEL_PASSWORD
-SMSG_CHANNEL_LIST
-CMSG_CHANNEL_LIST
-SMSG_CHANNEL_NOTIFY
-CMSG_LEAVE_CHANNEL
-CMSG_JOIN_CHANNEL
-SMSG_MESSAGECHAT
-CMSG_MESSAGECHAT
-UMSG_UPDATE_GUILD
-SMSG_GUILD_COMMAND_RESULT
-SMSG_GUILD_EVENT
-CMSG_GUILD_MOTD
-CMSG_GUILD_LEADER
-CMSG_GUILD_DISBAND
-CMSG_GUILD_REMOVE
-CMSG_GUILD_LEAVE
-CMSG_GUILD_DEMOTE
-CMSG_GUILD_PROMOTE
-SMSG_GUILD_ROSTER
-CMSG_GUILD_ROSTER
-SMSG_GUILD_INFO
-CMSG_GUILD_INFO
-SMSG_GUILD_DECLINE
-CMSG_GUILD_DECLINE
-CMSG_GUILD_ACCEPT
-SMSG_GUILD_INVITE
-CMSG_GUILD_INVITE
-CMSG_GUILD_CREATE
-UMSG_UPDATE_GROUP_MEMBERS
-SMSG_PARTY_COMMAND_RESULT
-SMSG_PARTY_MEMBER_STATS
-SMSG_GROUP_LIST
-SMSG_GROUP_DESTROYED
-CMSG_GROUP_DISBAND
-CMSG_LOOT_METHOD
-SMSG_GROUP_SET_LEADER
-CMSG_GROUP_SET_LEADER
-SMSG_GROUP_UNINVITE
-CMSG_GROUP_UNINVITE_GUID
-CMSG_GROUP_UNINVITE
-SMSG_GROUP_DECLINE
-CMSG_GROUP_DECLINE
-CMSG_GROUP_ACCEPT
-SMSG_GROUP_CANCEL
-CMSG_GROUP_CANCEL
-SMSG_GROUP_INVITE
-CMSG_GROUP_INVITE
-CMSG_DEL_IGNORE
-CMSG_ADD_IGNORE
-SMSG_IGNORE_LIST
-CMSG_DEL_FRIEND
-CMSG_ADD_FRIEND
-SMSG_FRIEND_STATUS
-SMSG_FRIEND_LIST
-CMSG_FRIEND_LIST
-SMSG_WHOIS
-CMSG_WHOIS
-SMSG_WHO
-CMSG_WHO
-SMSG_CREATURE_QUERY_RESPONSE
-CMSG_CREATURE_QUERY
-SMSG_GAMEOBJECT_QUERY_RESPONSE
-CMSG_GAMEOBJECT_QUERY
-SMSG_QUEST_QUERY_RESPONSE
-CMSG_QUEST_QUERY
-SMSG_PAGE_TEXT_QUERY_RESPONSE
-CMSG_PAGE_TEXT_QUERY
-SMSG_ITEM_QUERY_MULTIPLE_RESPONSE
-SMSG_ITEM_QUERY_SINGLE_RESPONSE
-CMSG_ITEM_QUERY_MULTIPLE
-CMSG_ITEM_QUERY_SINGLE
-SMSG_GUILD_QUERY_RESPONSE
-CMSG_GUILD_QUERY
-SMSG_PET_NAME_QUERY_RESPONSE
-CMSG_PET_NAME_QUERY
-SMSG_NAME_QUERY_RESPONSE
-CMSG_NAME_QUERY
-SMSG_LOGOUT_CANCEL_ACK
-CMSG_LOGOUT_CANCEL
-SMSG_LOGOUT_COMPLETE
-SMSG_LOGOUT_RESPONSE
-CMSG_LOGOUT_REQUEST
-CMSG_PLAYER_LOGOUT
-SMSG_SERVERTIME
-CMSG_SERVERTIME
-SMSG_GAMESPEED_SET
-CMSG_GAMESPEED_SET
-SMSG_GAMETIME_SET
-CMSG_GAMETIME_SET
-SMSG_GAMETIME_UPDATE
-SMSG_LOGIN_SETTIMESPEED
-SMSG_CHARACTER_LOGIN_FAILED
-SMSG_TRANSFER_ABORTED
-SMSG_TRANSFER_PENDING
-SMSG_NEW_WORLD
-CMSG_PLAYER_LOGIN
-SMSG_CHAR_DELETE
-SMSG_CHAR_ENUM
-SMSG_CHAR_CREATE
-SMSG_AUTH_SRP6_RESPONSE
-CMSG_CHAR_DELETE
-CMSG_CHAR_ENUM
-CMSG_CHAR_CREATE
-CMSG_AUTH_SRP6_RECODE
-CMSG_AUTH_SRP6_PROOF
-CMSG_AUTH_SRP6_BEGIN
-CMSG_PVP_PORT_OBSOLETE
-CMSG_ADVANCE_SPAWN_TIME
-CMSG_DISABLE_PVP_CHEAT
-SMSG_DEBUG_AISTATE
-CMSG_DEBUG_AISTATE
-CMSG_SEND_EVENT
-CMSG_CLEAR_QUEST
-CMSG_FLAG_QUEST_FINISH
-CMSG_FLAG_QUEST
-CMSG_USE_SKILL_CHEAT
-CMSG_COOLDOWN_CHEAT
-CMSG_LEVELUP_CHEAT_OBSOLETE
-CMSG_PET_LEVEL_CHEAT
-CMSG_LEVEL_CHEAT
-CMSG_CHEAT_SETMONEY
-SMSG_GODMODE
-CMSG_GODMODE
-CMSG_BEASTMASTER
-CMSG_UNDRESSPLAYER
-SMSG_DEBUG_PLAYER_RANGE_OBSOLETE
-SMSG_DEBUGINFOSPELLMISS_OBSOLETE
-SMSG_DEBUGINFOSPELL_OBSOLETE
-SMSG_ATTACKERSTATEUPDATEDEBUGINFO_OBSOLETE
-SMSG_FORCEACTIONSHOW
-CMSG_FORCEACTIONSHOW
-CMSG_FORCEACTIONONOTHER
-CMSG_FORCEACTION
-CMSG_ENABLEDEBUGCOMBATLOGGING_OBSOLETE
-CMSG_MAKEMONSTERATTACKGUID
-CMSG_MAKEMONSTERATTACKME
-CMSG_CREATEGAMEOBJECT
-CMSG_CREATEITEM
-CMSG_DESTROYMONSTER
-CMSG_CREATEMONSTER
-CMSG_LEARN_SPELL
-CMSG_RECHARGE
-CMSG_UNEMBLAZON_TABARD_OBSOLETE
-CMSG_EMBLAZON_TABARD_OBSOLETE
-CMSG_DEBUG_CHANGECELLZONE
-SMSG_ZONE_MAP
-CMSG_ZONE_MAP
-CMSG_TELEPORT_TO_UNIT
-CMSG_WORLD_TELEPORT
-SMSG_QUERY_OBJECT_ROTATION
-CMSG_QUERY_OBJECT_ROTATION
-SMSG_QUERY_OBJECT_POSITION
-CMSG_QUERY_OBJECT_POSITION
-SMSG_DBLOOKUP
-CMSG_DBLOOKUP
-CMSG_BOOTME
-MSG_NULL_ACTION
-ABSORB_CAPS
-RESIST_CAPS
-MISS_CAPS
-IMMUNE_CAPS
-DEFLECTED_CAPS
-BLOCK_CAPS
-PARRY_CAPS
-DODGE_CAPS
-EVADE_CAPS
-Drown
-KneelEnd
-KneelStart
-LoadThrown
-HoldThrown
-HoldRifle
-HoldBow
-LoadRifle
-LoadBow
-SleepUp
-SleepDown
-SitGroundUp
-SitGroundDown
-Mount
-HipSheath
-Sheath
-Loot
-JumpStart
-Death
+RESIST
+DEFLECTED
 StandHigh
-!rec || ( SPELL_PROCEDURE_CHAINEFFECT == rec->m_charProc[procIndex] )
-C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Unit_C.cpp
-!rec || ( procIndex < (sizeof(rec->m_charProc) / sizeof(rec->m_charProc[0])) )
-!rec || ( SPELL_PROCEDURE_SCALE == rec->m_charProc[procIndex] )
-!rec || ( SPELL_PROCEDURE_COLOR == rec->m_charProc[procIndex] )
-!rec || ( SPELL_PROCEDURE_EMISSIVE == rec->m_charProc[procIndex] )
-!rec || ( SPELL_PROCEDURE_WEAPONTRAIL == rec->m_charProc[procIndex] )
-!rec || ( SPELL_PROCEDURE_FISHINGLINE == rec->m_charProc[procIndex] )
-!rec || ( SPELL_PROCEDURE_FREEZEANIM == rec->m_charProc[procIndex] )
-!rec || ( SPELL_PROCEDURE_ALPHA == rec->m_charProc[procIndex] )
 Interface\\Buttons\\TalkToMeQuestionMark.mdx
 Interface\\Buttons\\TalkToMeBlue.mdx
 Interface\\Buttons\\TalkToMeGreen.mdx
 Interface\\Buttons\\TalkToMeGrey.mdx
 Interface\\Buttons\\TalkToMeQuestion_Grey.mdx
 Interface\\Buttons\\TalkToMe.mdx
-.?AUBOWSTRINGVIBRATE@@
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Unit_C.cpp
 GetOwnerGUID() != GetGUID()
-UNITMISSINGBONE|%s|%d
-SpellFizzleTimer
 mover
 unitptr
-MOUNTDISPLAYIDNOMOUNTATTACHMENT|%d
+mover && mover->IsA(TYPE_UNIT)
 Textures\\BakedNpcTextures\\
 textureName
-.?AUMISSILESTRUCT@@
-.?AUBLOODSPLATNODE@@
-!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",2200)) != 0
+GetCharacterModel()
+!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1580)) != 0
+.?AVCEffect@@
 s_showFootPrintParticles
 m_modelData
-modelScale > 0.0f
-**** %d \"%s\" \"%s\" playing
-*matchBone == -1
-**** %d \"%s\" \"%s\" playing on bone \"%s\"
-animBone != ANIMBONE_ROOT
-**** %d \"%s\" \"%s\" interrupting \"%s\" on bone \"%s\"\n
-**** %d \"%s\" \"%s\" queued, \"%s\" speeding up\n
-( ((uint)m_currentAnims[i]) <= MAXID_ANIMATIONDATAENUM )
-**** %d \"%s\" \"%s\"(%d) requested, lower priority than \"%s\"(%d). Queueing\n
-anim < g_animationDataDB.GetNumRecords()
 RestoreUnit() on %s, but unit has %d health!
-linkPoint != ATTACH_NONE
-!!highestPrioritySpellFoundByKit[UNITEFFECT_ATTACHBREATH] == !!highestPrioritiesByKit[UNITEFFECT_ATTACHBREATH]
-!!highestPrioritySpellFoundByKit[UNITEFFECT_ATTACHCHEST] == !!highestPrioritiesByKit[UNITEFFECT_ATTACHCHEST]
-!!highestPrioritySpellFoundByKit[UNITEFFECT_ATTACHRIGHTHAND] == !!highestPrioritiesByKit[UNITEFFECT_ATTACHRIGHTHAND]
-!!highestPrioritySpellFoundByKit[UNITEFFECT_ATTACHLEFTHAND] == !!highestPrioritiesByKit[UNITEFFECT_ATTACHLEFTHAND]
-!!highestPrioritySpellFoundByKit[UNITEFFECT_ATTACHHEAD] == !!highestPrioritiesByKit[UNITEFFECT_ATTACHHEAD]
-!!highestPrioritySpellFoundByKit[UNITEFFECT_ATTACHNONE] == !!highestPrioritiesByKit[UNITEFFECT_ATTACHNONE]
-!!highestPrioritySpellFoundByKit[UNITEFFECT_ATTACHBASE] == !!highestPrioritiesByKit[UNITEFFECT_ATTACHBASE]
-UNITMISSINGCONNECTION|%d|%d
-.?AUAuraDecayNode@@
-Spell record not found.  Your spell.dbc file is probably out of date!
-SPELLVISUALIDNOTFOUND|%d
-GetObjectModel()
-slot < (sizeof(m_unit->auras) / sizeof(m_unit->auras[0]))
-slot < sizeof(m_unit->auras)
-OBSOLETEANIMEVENT|%s
-ShowBreath
+UNHANDLEDANIMEVENT|%.4s
 INVALIDDISPLAYMODELRECORD|%d|%d
+Spells\\ErrorCube.mdx
 NOCREATUREDISPLAYIDFOUND|%d
 messageId < NUM_MSG_TYPES
 numPoints > 0
-0x%016I64X: Stunned\n
+Stunned\n
 !IsActiveMover()
 IsActiveMover()
 MOVEMENT|Movement heartbeat
 MoveHeartBeatHandler
 bytes <= sizeof(*m_unit)
+CombatLogPeriodicSpells
 AutoInteract
 Toggles auto-move to interact target
 PetNamePlates
@@ -8396,18 +7488,13 @@ PetMeleeDamage
 Toggle display of in-world pet melee damage feedback
 showfootprintparticles
 toggles rendering of footprint particles
-Toggle display of unit/player breath
 s_interactIconModelInfo[i].model
-0x%016I64X: Skipping move (0x%X) for unknown guid\n
-0x%016I64X: Skipping queued moves (0x%X) for invalid guid\n
 msgId == SMSG_AI_REACTION
 unitPtr->GetMaxHealth()
 unitPtr->IsA(HIER_TYPE_UNIT)
 prevValue
-.?AUIMPACTEFFECTDESC@@
-.?AUSPELLEFFECTDESC@@
 .?AVCGNamePlateFrame@@
-\nLocal target guid set (0x%016I64X)\n\n
+.?AUBLOODSPLATNODE@@
 reaction < NUM_AI_REACTIONS
 currentPlayer
 !IsA(TYPE_PLAYER)
@@ -8421,49 +7508,34 @@ status < QUEST_GIVER_NUMITEMS
 s_interactIconModelInfo[index].model
 index < INTERACTICON_NUMITEMS
 size
+modelData
 displayInfo
+mountModel
 UNITNAME_TITLE
 Unknown Being
 UNIT_PVP_NAME
+.?AVCMissile@@
 m_worldObject
-NOUNITDISPLAYID|%d|%s
-theModel
-ModelHasLinkPoint(mountModel,ATTACH_MOUNTMAIN)
-!mountShowing || GetWorldObject()
 m_bloodRec
+m_soundData
 m_displayInfo
+NOUNITDISPLAYID|%d|%s
 Error, NO creature display records found
 Error, unit %d has displayID 0!
 NOCOLLISIONBOX|%s
 ZEROSCALEUNIT|%d|%s
-oldState < UNIT_NUMSTANDSTATES
 talkAnim < TALKANIM_NUMTALKANIMS
-!( ( standState >= UNIT_FIRSTCHAIRSIT ) && ( standState <= UNIT_LASTCHAIRSIT ) )
-standState < UNIT_NUMSTANDSTATES
 m_displayInfoExtra
 ../..\\WowServices/BitField.h
-impactKit
-curr->victim
-curr->impactKit
-newDesc
-m_currentEmissive >= C3iVector(0,0,0)
+m_missleList->m_caster == GetGUID()
+MOUNTDISPLAYIDNOMOUNTATTACHMENT|%d
 spellRec
-!worldObj || !hModel
 CanMove()
 !IsStunned()
 msgId != MSG_NULL_ACTION
-!worldObj && !hModel
 shape
-~IMPACTEFFECTDESC %x
-!unitPtr || unitPtr->IsA(TYPE_UNIT)
-**** \"%s\" doesn't have \"%s\", falling back to \"%s\"\n
-!\"anim fallback loop guard tripped!\"
-oldAnim
-attach < NUM_UNITEFFECTATTACHPOINTS
-No anim debug target
-Debugging anims for %s
 ( type >= 0 ) && ( type < TRACKTYPE_NUMTRACKTYPES )
-.?AUDEFERREDPROCIMPACT@@
+slot < sizeof(m_unit->auras)
 Paperdoll
 Portrait
 Root
@@ -8498,9 +7570,8 @@ Destroyed
 Destroy
 Close
 Opened
+Stand
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Object_C.cpp
-Out of range animation (%d) for \"%s\"
-modelFileName
 OBJECTALREADYACTIVE|0x%016I64X
 i < CGCorpse::TotalFields()
 i < CGDynamicObject::TotalFields()
@@ -8517,16 +7588,46 @@ Model \"%s\" missing sequence \"%s\" (%d)
 Model \"%s\" missing %s: %s (%d)
 event object
 attachment point
-Model \"%s\" missing attachment point ID: %d
 bone
 Model \"%s\" has no animation!  Cannot set sequence \"%s\" (%d)!
 type < NUM_HIGHLIGHTTYPES
-m_model
 Textures\\UnitSelectTexture.blp
 DebugTargetPath
 ObjectSelectionCircle
+m_lockCount > 0
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Missile_C.cpp
+m_speed >= 0
+Spells\\Resist_Immune_Effect.M2
+.?AUPendingLootRoll@@
+LOOT_ROLL_ALL_PASSED
+LOOT_ROLL_WON
+LOOT_ROLL_YOU_WON
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\LootRoll.cpp
+LOOT_ROLL_ROLLED
+LOOT_ROLL_PASSED
+LOOT_ROLL_ROLLED_SELF
+LOOT_ROLL_PASSED_SELF
+count <= (sizeof(s_masterList) / sizeof(s_masterList[0]))
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\ZoneDebug.cpp
 next == &s_zoneIDMap[256 - 1][256 - 1] + 1
+HARDCODED PetLoyalty Down Head
+HARDCODED PetLoyalty Down Base
+HARDCODED PetLoyalty Up Head
+HARDCODED PetLoyalty Up Base
+HARDCODED Inebriated Bubbles
+HARDCODED Mount Poof
+HARDCODED Unit Level Up
+HARDCODED Loot Art
+HARDCODED Breath Cold
+HARDCODED Breath Underwater
+HARDCODED Footstep Water Walk Spray
+HARDCODED Footstep Water Run Spray
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Effect_C.cpp
+m_effectRec
+**** CEffect::AddEffect called with ATTACH_NONE\n
+pole
+**** %s doesn't have attachement point for effect %i\n
+Unknown Model
 Close + Lock
 Make Active
 Make Inert
@@ -8572,6 +7673,7 @@ ritualPersistent
 animSpell
 gossipID
 serverOnly
+moveSpeed
 taxiPathID
 casters
 startDelay
@@ -8613,35 +7715,12 @@ C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitSound_C.cpp
 soundType < NUM_UNITSOUNDTYPES
 soundType < 4
 FootstepSounds
-eventName && *eventName
 !attacker || attacker->IsA(TYPE_UNIT)
 attacker->GetEntryID()
 roundInfo
-attackerPtr->IsA(TYPE_UNIT)
-attackerPtr->GetEntryID()
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Movement_C.cpp
 !s_transports.IsLinked(transport)
 s_transports.IsLinked(transport)
-$DTH
-.?AV?$TSExplicitList@UUNITONESHOTEFFECTDESC@@$0?CCCCCCCD@@@
-C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitEffects.cpp
-target->IsA(TYPE_UNIT)
-hitLocation <= SPELL_VISUAL_ATTACH_BASE
-maxOneShotUnitEffects
-maximum number of one shot unit effects allowed to play at once
-.?AVONESHOTSTANDALONEEFFECTNODE@@
-.?AUMISSILENODE@@
-effectModel
-newEffectNode
-.?AVONESHOTEFFECTNODE@@
-attachPoint < (sizeof(g_attachmentPoints) / sizeof(g_attachmentPoints[0]))
-%s%s%s%s
-GimmeTheShaneCube
-( effectNumber >= 0 ) && ( effectNumber < UNITEFFECT_NUMEFFECTS )
-CMath::fequal_(scale, 1.0f)
-attach < (sizeof(g_attachmentPoints) / sizeof(g_attachmentPoints[0]))
-attach >= 0
-.?AUUNITONESHOTEFFECTDESC@@
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
 func
 slot < (int)NumSlots()
@@ -8685,9 +7764,11 @@ POWERGAIN_SELF
 PERIODICAURADAMAGEOTHEROTHER
 PERIODICAURADAMAGEOTHERSELF
 PERIODICAURADAMAGESELFOTHER
+PERIODICAURADAMAGESELFSELF
 PERIODICAURADAMAGEABSORBEDOTHEROTHER
 PERIODICAURADAMAGEABSORBEDOTHERSELF
 PERIODICAURADAMAGEABSORBEDSELFOTHER
+PERIODICAURADAMAGEABSORBEDSELFSELF
 SPELLLOGABSORBOTHEROTHER
 SPELLLOGABSORBOTHERSELF
 SPELLLOGABSORBSELFOTHER
@@ -8792,8 +7873,8 @@ SPELLFAILCASTOTHER
 SPELLFAILCASTSELF
 SPELLFAILPERFORMOTHER
 SPELLFAILPERFORMSELF
-FACTION_STANDING_INCREASED
 FACTION_STANDING_DECREASED
+FACTION_STANDING_INCREASED
 HEALEDOTHEROTHER
 HEALEDOTHERSELF
 HEALEDSELFOTHER
@@ -8832,19 +7913,11 @@ SPELLEXTRAATTACKSSELF
 SPELLPOWERDRAINOTHEROTHER
 SPELLPOWERDRAINOTHERSELF
 SPELLPOWERDRAINSELFOTHER
+OPEN_LOCK_OTHER
+OPEN_LOCK_SELF
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\GuildStats_C.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\PlayerSound_C.cpp
-C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombat_C.cpp
-victim
-type < ENVIRONMENTALDAMAGE_MAXTYPES
-attacker
-!DeathAnimPlayed()
-size < NUM_MONSTERSIZECLASSES
-size >= MONSTERSIZECLASS_SMALL
-victimPtr != this
-!\"Error, unrecognized message ID!\"
-attackerPtr
-unit->GetEntryID()
+SPELLVISUALIDNOTFOUND|%d
 ALWAYSCRUSH
 ALWAYSGLANCE
 NEVERBLOCKMELEE
@@ -8901,23 +7974,14 @@ SpellID %d] %s cast %s on %s for %d %s damage%s%s
 failed
 succeeded
 PROC Resisted: %s resisted %s's %s (rolled/needed = %g/%g)\n
-HARDCODED PetLoyalty Down Head
-HARDCODED PetLoyalty Down Base
-HARDCODED PetLoyalty Up Head
-HARDCODED PetLoyalty Up Base
-HARDCODED Inebriated Bubbles
-HARDCODED Mount Poof
-HARDCODED Unit Level Up
-HARDCODED Loot Art
-HARDCODED Breath Cold
-HARDCODED Breath Underwater
-HARDCODED Footstep Water Walk Spray
-HARDCODED Footstep Water Run Spray
-C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\IUnitEffects.cpp
-g_spellVisualEffectNameRecs[i]
-objectModelAttachmentPoint < NUM_ATTACH_SLOTS
-linkPoint < NUM_ATTACH_SLOTS
-objectModel && effectModel
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombat_C.cpp
+attacker
+size < NUM_MONSTERSIZECLASSES
+size >= MONSTERSIZECLASS_SMALL
+!\"Error, unrecognized message ID!\"
+attackerPtr
+victim
+unit->GetEntryID()
 COMBATLOG_XPGAIN_EXHAUSTION5
 COMBATLOG_XPGAIN_EXHAUSTION4
 COMBATLOG_XPGAIN_EXHAUSTION3
@@ -8972,10 +8036,11 @@ Invalid number of parameters
 Please specify how many lines to display
 .ttf
 %d %d %d %d
+World of Warcraft was unable to start up 3D acceleration.World of Warcraft
+World of Warcraft was unable to start up 3D acceleration.\n\nPlease make sure DirectX 9.0c is installed and your video drivers are up-to-date.
+ConsoleDeviceInitialize(): no output device available!
 Your 3D accelerator card is not supported by World of Warcraft. Please install a 3D accelerator card with dual-TMU support.
 ConsoleDeviceInitialize(): output device does not have dual TMUs!
-World of Warcraft was unable to start up 3D acceleration.
-ConsoleDeviceInitialize(): no output device available!
 OpenGl
 ConsoleDeviceInitialize(): hwDetect = %d, hwChanged = %d
 hwDetect
@@ -8989,6 +8054,8 @@ vsync on or off
 gxApi
 graphics api
 direct3d
+gxTripleBuffer
+triple buffer
 gxRefresh
 refresh rate
 resolution
@@ -9002,6 +8069,7 @@ invalid resolution, must be one of
 Color bits must be 16, 24, or 30
 Depth bits must be 16, 24, or 32
 unsupported refresh rate, must be one of
+TripleBuffer must be 0 or 1
 unsupported api, must be one of
 unable to set fallback mode
 unable to set default format
@@ -9010,7 +8078,6 @@ unable to set requested display mode
 ValidateFormatMonitor(): invalid refresh rate %d, set to %d
 ValidateFormatMonitor(): unable to find monitor refresh
 fmt.colorFormat < (sizeof(s_FormatTobpp) / sizeof(s_FormatTobpp[0]))
-curr->fontPointer
 Unknown command
 .?AV?$TSExplicitList@UCVar@@$0?CCCCCCCD@@@
 C:\\build\\buildWoW\\WoW\\Source\\Console\\ConsoleVar.cpp
@@ -9085,8 +8152,8 @@ The wtf files are :
 Unable to open wtfDir.txt
 wtfdir.txt
 .?AUCONSOLECOMMAND@@
-@d$|8
-tcsg
+UTXDT
+tcsg@
 ���>
 ?fff?
 HWSoundIdx
@@ -16145,13 +15212,11 @@ Vendor id = 0x%04X\nDevice id = 0x%04X\n\n
 Hardware changed.  Reload default settings?
 You must type 'y' to confirm overwrite. Process aborted!
 Canceled File Creation
-DEFLECTED
 TEMPIMMUNE
 BLOCKED
 PARRIED
 DODGED
 EVADED
-RESIST
 PHYSICAL
 flags >= 0 && flags <= ((1<<2)-1)
 year == -1 || year >= 0 && year <= ((1<<5)-1)
@@ -16285,6 +15350,7 @@ User initiated log -- The user held down Ctrl-Alt-Shift-PageDown
 C:\\build\\buildWoW\\Storm\\Source\\SStr.cpp
 string2
 string1
+source
 dest
 whitespace
 buffer || !bufferchars
@@ -16438,7 +15504,6 @@ numrects
 C:\\build\\buildWoW\\Storm\\Source\\SComp.cpp
 <unknown>
 bzip2Compress:%d
-bzip2Decompress:%d
 *destsize >= sourcesize
 destsize
 myTID != 0
@@ -16447,12 +15512,19 @@ destbuffersize >= sourcesize
 C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOFileUnit.cpp
 !\"IOFileUnit::Create: The File unit should be the last item in the IO chain.\"
 m_file != 0
+m_requiredAlignment <= 65535
+m_requiredAlignment
+freedVirtualBuffer
+readAmount < k_alignedBufferSize
+readAmount
+writeAmount < k_alignedBufferSize
+writeAmount
 C:\\build\\buildWoW\\Storm\\Source\\SBig.cpp
 !borrow
 m_used < SIZE
 count <= m_used
 d <= SMALL_BOUND
-c <= SMALL_BOUND
+<= SMALL_BOUND
 .?AVBigData@@
 SBIG
 C:\\build\\buildWoW\\Storm\\Source\\SMsg.cpp
@@ -16514,6 +15586,7 @@ CS =%04X      DS =%04X      ES =%04X      SS =%04X      FS =%04X      GS =%04X
 EDI=%08X  EBP=%08X  ESP=%08X  EIP=%08X  FLG=%08X
 EAX=%08X  EBX=%08X  ECX=%08X  EDX=%08X  ESI=%08X
 x86 Registers
+psapi.dll
 TryEnterCriticalSection
 kernel32.dll
 TryEnterCriticalSection not found on this OS.
@@ -16577,6 +15650,8 @@ wn>Jj
 @\a@\v@
 PKWARE Data Compression Library for Win32\r\nCopyright 1989-1995 PKWARE Inc.  All Rights Reserved.\r\nPatent No. 5,051,745\r\nPKWARE Data Compression Library Reg. U.S. Pat. and Tm. Off.\r\nVersion 1.11
 C:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
+(param.ioAlignMemoryTo & (param.ioAlignMemoryTo - 1)) == 0
+param.ioAlignMemoryTo
 C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOAlignUnit.cpp
 !\"IOAlignUnit::Create: The Align unit needs to be followed by another unit.\"
 .?AUIOCacheEntry@IOAlignUnit@@
@@ -16631,7 +15706,6 @@ farClip != 0.0f
 mapName
 mapRec
 entity->GetType() & CMapBaseObj::Type_Entity
-entity
 materialList != 0
 mtlId < materialCount
 polyList
@@ -16642,10 +15716,14 @@ b < nBatches
 doodadDef
 mapObjDef
 .wmo
-mapObj
+CMap::bActive
 baseObj
+mapObj
 ((CMapObjDef*)baseObj)->mapObj
 mapObjDef->mapObj
+entity
+missile
+effect
 doodad
 entity->GetType() & CMapBaseObj::Type_DoodadDef
 doodad->GetType() & CMapBaseObj::Type_DoodadDef
@@ -16713,12 +15791,12 @@ Total terrain textures:   \t\t%d
 Terrain Texture in Mbytes:\t\t%.2f
 Logs\\%s_%s.log
 Must specify log file name.
+!handler || handlerParam
 %s, %s
-C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\AreaList.cpp
-worldObject
 updateChunkList.Head() == 0
 nonVisEntityList.Head() == 0
 visEntityList.Head() == 0
+visMapObjDefGroupLiquidList.Head() == 0
 visMapObjDefGroupList.Head() == 0
 visChunkList.Head() == 0
 visAreaLowList.Head() == 0
@@ -16739,7 +15817,6 @@ camMapObj
 frustumIndex < (32 - 1)
 frustumIndex > 0
 sortEntry
-(uint)doodadDef->RenderCB != 0xdddddddd
 parentLink
 inGroups.Count() != 0
 mapObjDefGroup->frustumList.Head() == 0
@@ -16747,6 +15824,12 @@ mapObjDefGroup
 pointPool - sPointPool < (sizeof(sPointPool) / sizeof(sPointPool[0]))
 oframe->count < POOL_SIZE
 p_inCount < POOL_SIZE
+EmoteEatNoSheathe
+Deflect
+EmoteDanceOnce
+EmoteDead
+EmoteTrain
+SuccubusEntice
 Hover
 LiftOff
 Impact
@@ -16771,6 +15854,13 @@ DruidCatRake
 DruidCatRip
 DruidCatPounce
 Sway
+GuideArrow
+CorpseArrow
+Arrow
+GroupArrow
+ShipStop
+ShipMoving
+ShipStart
 Sprint
 SpellKneelEnd
 SpellKneelLoop
@@ -16782,6 +15872,7 @@ EmoteWorkNoSheathe
 FishingLoop
 FishingCast
 Drowned
+Drown
 CreatureSpecial
 UseStandingEnd
 UseStandingStart
@@ -16796,19 +15887,34 @@ StealthStand
 StealthWalk
 SpecialUnarmed
 AttackUnarmedOff
+KneelEnd
 KneelLoop
+KneelStart
 EmoteSalute
+LoadThrown
+HoldThrown
+HoldRifle
+HoldBow
 ReadyThrown
 AttackThrown
+LoadRifle
+LoadBow
 SitChairHigh
 SitChairMed
 SitChairLow
+SleepUp
 Sleep
+SleepDown
+SitGroundUp
 SitGround
+SitGroundDown
 Kick
 MountSpecial
 RunLeft
 RunRight
+Mount
+HipSheath
+Sheath
 AttackOffPierce
 AttackOff
 Attack2HLoosePierce
@@ -16847,6 +15953,7 @@ SpellCastOmni
 SpellCastDirected
 ReadySpellOmni
 ReadySpellDirected
+Loot
 AttackRifle
 ReadyRifle
 FireBow
@@ -16854,14 +15961,16 @@ AttackBow
 SwimBackwards
 SwimRight
 SwimLeft
-Swim
 SwimIdle
-Fall
 JumpEnd
+JumpStart
+Block
 NPCGoodbye
 NPCWelcome
 SpellCastArea
+SpellCast
 SpellPrecast
+Dodge
 ReadyBow
 Ready2HL
 Ready2H
@@ -16888,6 +15997,7 @@ Rise
 Dead
 Walk
 Spell
+Death
 triangleStrips
 Use triangle strips to render
 bspcache
@@ -16907,7 +16017,6 @@ waterLOD
 Water geometry LOD
 unitDrawDist
 Unit draw distance
-300.0
 particleDensity
 Video option: Particle density
 pixelShaders
@@ -17078,10 +16187,12 @@ entityList.Head() == 0
 chunkList.Head() == 0
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\Map.cpp
 areaList.Head() == 0
+layer
 area
 dist
 *t >= 0.0f && *t <= 1.0f
 scPtr
+queryFlags & (CWorld::WQF_doodadMask | CWorld::WQF_gameObjMask | CWorld::WQF_terrain)
 sub < (sizeof(corners) / sizeof(corners[0]))
 !(queryFlags & CWorld::WQF_liquid)
 Request for facets off edge of map: (%g,%g,%g,%g)
@@ -17113,10 +16224,9 @@ C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapLoad.cpp
 CMap::SafeRead() failed %s
 CMap::SafeRead() failed %s\n
 TextureAllLoaded()
-ModelAllLoaded()
 lights.lit
-mapObjDef == 0
-doodadDef == 0
+CMap::Load() mapObjDefHash not empty
+CMap::Load() doodadDefHash not empty
 %s\\%s.wdt
 World\\Maps\\
 mapAreaLow
@@ -17134,29 +16244,30 @@ iffChunk.token=='MAIN'
 iffChunk.token=='MPHD'
 iffChunk.token=='MVER'
 wdtFile
-doodadDef->model
+doodadDef == 0
+bActive
+mapObjDef == 0
 mapObjDefGroup->aaBox.b != mapObjDefGroup->aaBox.t
 mapObjGroup
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\CMapLight.h
 !CMath::fequalz_(start, end, 0.001f)
 Environments\\Stars\\stars.mdl
+CMap::Unload() mapObjDefHash not empty
+CMap::Unload() doodadDefHash not empty
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapUnload.cpp
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapUpdate.cpp
-C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapLight.cpp
-refCount==0
-lightColor
-Shaders\\Pixel\\ProjLight0.bls
-Textures\\PointAtten.blp
 .?AUCGxVertexPT0T1@@
 .?AVCMapFootprintTexture@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapQuery.cpp
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapEntity.cpp
 mapObjDef->GetType() & Type_MapObjDef
+refCount==0
+Used() > 0
 index < SMOGroup::NUM_FOGS
 ..\\..\\..\\engine\\source\\Tempest/cpriorityq.h
 index < fogCount
-dist < fog.end
 ..\\..\\..\\engine\\source\\Tempest/cdyntable.h
+IsValid() && i < iused
 .?AVFogQ@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapObjGroup.cpp
 testFaceSub < MAX_FACES
@@ -17174,6 +16285,7 @@ prev->clientPtr
 next->clientPtr
 vbb->Base() == next
 liquid != LIQUID_NONE
+.?AUVertArray@CMapObjGroup@@
 hitFaceSub < MAX_FACES
 .?AV?$TSExplicitList@VCMapDoodadDef@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@VCMapObjDef@@$0?CCCCCCCD@@@
@@ -17205,6 +16317,10 @@ mapObjDef->parentLinkList.Head() == 0
 soundEmitter
 .?AVCMapDoodadDef@@
 .?AVCMapObjDef@@
+sceneLink.IsLinked() == 0
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapObjDef.cpp
+entityLinkList.Head() == 0
+.PAVCMapLight@@
 World\\wmo\\Dungeon\\test\\missingwmo.wmo
 .?AV?$TSExplicitList@VCMapObj@@$0?CCCCCCCD@@@
 Shaders\\Pixel\\MapObjTransSpecular.bls
@@ -17225,11 +16341,8 @@ CMapObj::WaitLoadGroup(%d)\n
 group->asyncObject
 .?AUMinimapQuad@CWorld@@
 .?AVCMapObj@@
-sceneLink.IsLinked() == 0
-C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapObjDef.cpp
-entityLinkList.Head() == 0
-.PAVCMapLight@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapPurge.cpp
+.PAUHTEXTURE__@@
 adtFile
 neighbor[i]->neighbor[backwardsNeighbor] == this
 .PAVCGxTex@@
@@ -17246,7 +16359,6 @@ detailDoodadInst==0
 smChunk->indexY == (uint32)aIndex.y
 smChunk->indexX == (uint32)aIndex.x
 bLoaded == 0
-CMap::bActive
 iffChunk->token=='MCSE'
 iffChunk->token=='MCLQ'
 iffChunk->token=='MCAL'
@@ -17272,12 +16384,11 @@ doodadInfo
 .?AVCDetailDoodadInst@@
 inst
 geom
-detailDoodadData
-CDetailDoodadData::Load(): %s not found
-*((ULONG *) (data)) == 1
 geomData
-numTextures == 1
-geomData == 0
+data->bones.count == 1
+division->batches.count == 1
+data->divisions.count > 0
+data->textures.count == 1
 .?AVCDetailDoodadInstAdd@@
 .?AUCDetailDoodadVertex@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapObjRender.cpp
@@ -17299,6 +16410,7 @@ C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapRender.cpp
 list.IsEmpty()
 !freeList.IsEmpty()
 areaLow
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapLight.cpp
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapDoodadDef.cpp
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapChunkRender.cpp
 (GxBufValid(m_vtxBuf) ^ GxBufValid(m_idxBuf)) == 0
@@ -17362,8 +16474,13 @@ Failed to load texture: %s\n
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapTexture.cpp
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapLod.cpp
 primPtr
+BloodSpurtSmall01.blp
+BloodSpurtSmall01_Medium.blp
+BloodSpurtSmall01_Low.blp
 violenceLevel
 Sets the violence level of the game
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\ViolenceLevels.cpp
+newLevel >= 0 && newLevel < VIOLENCELEVEL_NUMVIOLENCELEVELS
 C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\GameTime_C.cpp
 Gamespeed set from %.03f to %.03f
 Malformed message recieved: Id = %d, Len = %d, Read = %d\n
@@ -17389,15 +16506,13 @@ INV_Misc_Coin_04
 INV_Misc_Coin_03
 INV_Misc_Coin_06
 INV_Misc_Coin_05
-.?AUVERTEX@@
-DiscontinueTimerHandler
-C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\WeaponTrails.cpp
-trail
-m_fadeOutRate < 0
+..\\..\\..\\..\\engine\\source\\Gx/Gx.h
+..\\..\\..\\..\\engine\\source\\Tempest/cmath.h
 .?AUSWING@@
-weapontrails
-Toggles weapon trails on or off
 .?AVWTOBJECT@@
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\WeaponTrails.cpp
+!s_count
+s_count
 Toggles showing units' owners in worldname
 UnitNameUnitSummonedBy
 Toggles showing units' titles in worldname
@@ -17412,53 +16527,25 @@ Toggles showing your guild in worldname
 UnitNamePlayerGuild
 Toggles showing your name in worldname
 UnitNamePlayerName
+..\\..\\Ui/WorldFrame.h
 C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\PlayerName.cpp
-m_characterModel
-elapsed >= 0
-m_unitGUID
-..\\..\\..\\..\\engine\\source\\Tempest/cmath.h
 UNIT_NAME_FONT
 index < (sizeof(s_cvarInfo) / sizeof(s_cvarInfo[0]))
 PlayerNames
-HPLAYERNAME
-type < NUM_WORLDTEXTTYPES
+.?AVPLAYERNAMEDESC@@
 s_unitShowMode
-C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\WorldText.cpp
-object || basePosition
-s_critHeights[i].startProgress <= s_critHeights[i].endProgress
-worldTextType < NUM_WORLDTEXTTYPES
-s_critFades[i].startProgress <= s_critFades[i].endProgress
-!s_worldTextFontHandles[i]
-DAMAGE_TEXT_FONT
-DamageFontConeAngle
-DamageFontCharSpacing
-character spacing for damage text
--0.001
-DamageFontAscendDistance
-world inches to make the damage text rise
-DamageFontTotalTime
-Total time to draw damage text
-1200
-DamageFontFadeInTime
-Fadein time for damage text
-DamageFontOutline
-outline the damage text
-DamageFontHeight
-Height to use for drawing damage text
-0.035
-color
-params->shrinkTime <= worldTextPtr->totalTime
-params->enlargeTime <= worldTextPtr->totalTime
-params->enlargeTime <= params->shrinkTime
-worldTextPtr->totalTime
-worldTextPtr
-HWORLDTEXT
-params->fadeOutTime <= params->totalTime
-params->fadeInTime <= params->totalTime
-params
 Warning: invalid profanity filter expression: \"%s\"\n
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\WorldText.cpp
+s_critHeights[i].startProgress <= s_critHeights[i].endProgress
+m_type < NUM_WORLDTEXTTYPES
+m_string
+fontName && *fontName
+DAMAGE_TEXT_FONT
+.?AUWORLDTEXTSTRING@@
+type < NUM_WORLDTEXTTYPES
 ?Yg`h
 s,+|^
+Environments\\Stars\\StratholmeSkybox.mdx
 .?AV?$TSExplicitList@UDNOverrideSky@@$0?CCCCCCCD@@@
 .?AULightData@@
 .?AULightDataFog@@
@@ -17493,17 +16580,21 @@ Sky enabled
 ..\\..\\..\\common\\MapDefs.h
 sub < NUM_FOGS
 amount >= 0.0f && amount <= 1.0f
+alpha >= 0.0f && alpha <= 1.0f
 .?AUDNOverrideSky@@
 .?AVLightQE@@
-..\\..\\..\\..\\engine\\source\\Gx/Gx.h
 ..\\..\\WorldClient/World.h
 i < indexCount
 vertexIndices
+shadowBias
+Unit shadow depth bias
 shadowLOD
-0=none, 1=blob
+Unit shadow LOD
 Textures\\ShadowBlob.blp
 Shadow LOD must be in the range (0, 1)
-Shadow LOD set
+Shadow LOD set to %d
+Shadow bias must be in the range (0, 1)
+Shadow bias set to %f
 %s_%03d_%02d_%02d.blp
 %s\\map%d_%d.blp
 Textures\\Minimap
@@ -17555,6 +16646,10 @@ MANA
 %s_PET
 ..\\..\\Object/ObjectClient/Player_C.h
 SPELL_FAILED_UNKNOWN
+SPELL_FAILED_NOT_IN_CONTROL
+SPELL_FAILED_POSSESSED
+SPELL_FAILED_FOOD_LOWLEVEL
+SPELL_FAILED_NOT_ON_TAXI
 SPELL_FAILED_IMMUNE
 SPELL_FAILED_WRONG_PET_FOOD
 SPELL_FAILED_UNIT_NOT_INFRONT
@@ -17588,6 +16683,7 @@ SPELL_FAILED_SPELL_IN_PROGRESS
 SPELL_FAILED_SILENCED
 SPELL_FAILED_ROOTED
 SPELL_FAILED_REQUIRES_SPELL_FOCUS
+SPELL_FAILED_REQUIRES_AREA
 SPELL_FAILED_REAGENTS
 SPELL_FAILED_PACIFIED
 SPELL_FAILED_OUT_OF_RANGE
@@ -17698,23 +16794,19 @@ caster->IsA(TYPE_UNIT)
 m_victim
 m_attacker
 .?AUITEMCOOLDOWNHASHNODE@@
+Spells\\StarShards_Impact_Base.mdx
 Spells\\ArcaneShot_Area.mdx
 Spells\\DeathAndDecay_Area_Base.mdx
 Spells\\FlamestrikeSmall_Impact_Base.mdx
 Spells\\CallLightning_Impact.mdx
 Spells\\RainOfFire_Impact_Base.mdx
 Spells\\Blizzard_Impact_Base.mdx
-.?AUShard@BlizzardObject@@
-C:\\build\\buildWoW\\WoW\\Source\\Magic\\MagicClient\\SpellVisuals.cpp
-.PBVSpellAuraNamesRec@@
-.?AUBlizzardObject@@
+.?AUShard@@
 .?AVCLightningManager@@
-s_auraNames[i]
-!s_auraNames[enumID]
-.?AUFishingLineObject@@
-.?AUDEFERREDLOCIMPACT@@
+.?AUBlizzardObject@@
 .?AULightningObject@@
 caster
+C:\\build\\buildWoW\\WoW\\Source\\Magic\\MagicClient\\SpellVisuals.cpp
 ( fadeRatio >= 0.0f ) && ( fadeRatio <= 1.0f )
 nameSub < (sizeof(modelNames) / sizeof(modelNames[0]))
 .?AUBolt@LightningObject@@
@@ -18078,147 +17170,147 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
 alnum
 [:>:]]
 [:<:]]
-C:\\build\\buildWoW\\ENGINE\\Source\\Anim\\Interp.h
-index < m_count
-C:\\build\\buildWoW\\ENGINE\\Source\\Anim\\Interface.cpp
-ptr->obj[i]
-callbackfcn
-boneNames
-table->Ptr(*names) == 0
-ordering[hash->index] == 0xffffffff
-shared->seqOrder.Count() < 0xfe
-sequenceNames
-.?AV?$TSGrowableArray@E@@
-cameraNames
-index < shared->modelObjs.Count()
-index < unique->modelStatus.Count()
-index < unique->cameraStatus.Count()
-objectId < unique->status.Count()
-objectId < shared->objectOrder.Count()
-unique->lookAtTarget.Count() < 0xff
-.?AUCAnimObjBlendStatus@@
-index < shared->seq.Count()
-objectId < shared->obj.Count()
-sequence < m_indices.Count()
-currobj->type == OBJ_TYPE_EVENT
-currobj
-objectId < positions.Count()
-shared->obj[objectId]->type == OBJ_TYPE_EVENT
-.?AUCAnimNameHash@@
-.?AV?$TSExplicitList@UCAnimNameHash@@$0?CCCCCCCD@@@
-.?AUCVariations@@
-.?AV?$TSExplicitList@UANIMHASH@@$0?CCCCCCCD@@@
-C:\\build\\buildWoW\\ENGINE\\Source\\Anim\\MdlAnim.cpp
-idConversion
-HANIM
-parentId != 0xffffffff
-setObjParent
-animobj
-data == (fileData + sectionLength)
-container
-.?AUANIMHASH@@
-..\\Services/MatrixStack.h
-m_stack.Count() == 1
-stackCount > 1
-(animptr->flags & 0x04) == 0
-animptr->flags & 0x01
-animptr
-C:\\build\\buildWoW\\ENGINE\\Source\\Anim\\Anim.cpp
-animInfo->shared
-animInfo->unique
-animInfo
-data.textureMtx || !data.numTexBones
-data.boneMtx || !data.numBones
-(shared->flags & 0x04) == 0
-shared->flags & 0x01
-animInfo.shared
-Unknown anim object type (%d)!
-ribbon->splitIndex < animInfo.data.ribbons->Count()
-currobj->type == OBJ_TYPE_RIBBON
-emitter->splitIndex < animInfo.data.emitters2->Count()
-currobj->type == OBJ_TYPE_EMITTER2
-currobj->type == OBJ_TYPE_LIGHT
-currobj->type == OBJ_TYPE_MODEL
-currbone->splitIndex < animInfo.data.numBones
-currobj->type == OBJ_TYPE_BONE
-modelObj->splitIndex < animInfo.data.numAttached
-(KeyFrameSize() == sizeof(CLinearKeyFrame<T>)) || (KeyFrameSize() == sizeof(CSplineKeyFrame<T>))
-transform
-currobj->splitIndex < animInfo.data.lights->Count()
-currobj->splitIndex < animInfo.data.emitters2->Count()
-currobj->splitIndex < animInfo.data.ribbons->Count()
-CMath::fnotequal_(cameraVector.SquaredMag(),0)
-i < animInfo->data.numTexBones
-texAnim
-KeyFrameSize() == sizeof(CSplineKeyFrame<T>)
-C:\\build\\buildWoW\\ENGINE\\Source\\Anim\\Transform.cpp
-index < uint8(0xff)
-geoStatus
-geoset
-currgeoset
-sourceSeqId != uint8(0xff)
-seqIndex < uint8(0xff)
-(seqIndex == 0) || (seqIndex < shared->seq.Count())
-!seqIndex || seqValid
-count
-sameAsObjectId < shared->obj.Count()
-sameAsObjectId < shared->objectOrder.Count()
-seqIndex < shared->seqOrder[unique->seqMapIndex].order.Count()
-newobj
-C:\\build\\buildWoW\\ENGINE\\Source\\Anim\\Init.cpp
-Object \"%s\" has a duplicate object ID %d\n
-Object \"%s\" has an ID (%d) that exceeds the number of objects (%d)\n
-objptr
-nodeIndex < shared->obj.Count()
-KeyFrameSize() == sizeof(CLinearKeyFrame<T>)
-interp
-mdlTrackType < NUM_TRACK_TYPES
-numKeys > 0
-.?AUCAnimModelObj@@
-.?AUCAnimLightObj@@
-.?AUCAnimBoneObj@@
-.?AUCAnimObj@@
-HANIMDATA
-oldUnique
-shared->obj[i]
-data == materialDone
-data == layerDone
-numLayers
-.?AUCAnimMaterialLayer@@
-.?AUCAnimLayerStatus@@
-geosetDone == data
-(data + numGlobalSeqs * sizeof(uint)) == seqDataDone
-(numGlobalSeqs * sizeof(MDLGLOBALSEQSECTION)) == sectionBytes
-.?AUCSeqInfo@@
-seqDataDone == data
-numSequences
-globalSeqs.Count() <= uint8(0xff)
-sequences.Count() <= uint8(0xff)
-.?AUCAnimObjStatus@@
-animDone == data
-.PAUCAnimObj@@
-.?AUCSeqOrdering@@
-.?AUCAnimGeoset@@
-.?AUCAnimEmitter2Obj@@
-.?AUCAnimRibbonObj@@
-.?AUCAnimCameraObj@@
-.?AUCAnimEventObj@@
-.PAUCAnimObjStatus@@
-.?AUCAnimGeosetObjStatus@@
-.?AUCAnimModelObjStatus@@
-.?AUCAnimLightObjStatus@@
-.?AUCAnimEmitter2ObjStatus@@
-.?AUCAnimRibbonObjStatus@@
-.?AUCAnimCameraObjStatus@@
-.?AUCAnimEventObjStatus@@
-.?AUCAnimSequence@@
-.?AUCAnimTransform@@
-C:\\build\\buildWoW\\ENGINE\\Source\\Anim\\Interp.cpp
-TotalKeys() > 0
-keyStat
-SequenceChanges()
-current
-.?AUCKeySeq@@
+Model2: Model destroyed before loading completed: %s\n
+shared
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Model.cpp
+scene
+.?AVCPlaneParticleEmitter@@
+.?AVCSphereParticleEmitter@@
+.?AVCSplineParticleEmitter@@
+.PAVCParticleEmitter2@@
+.?AUM2ModelParticle@@
+.?AVCRibbonEmitter@@
+.PAVCRibbonEmitter@@
+.?AUM2ModelRibbon@@
+.?AUM2ModelCamera@@
+.?AUM2ModelLight@@
+.?AUM2ModelEvent@@
+.?AUM2ModelTextureTransform@@
+.?AUM2ModelTextureFlipbook@@
+.?AUM2ModelTextureWeight@@
+.?AUM2ModelColor@@
+.?AUM2ModelRegion@@
+.?AUM2ModelBone@@
+.?AUM2ModelSequence@@
+.?AUM2ModelLoop@@
+.?AUCRibbonMat@@
+(int) m_refCount > 0
+Model2: CM2Model::%s stalled: %s\n
+m_loaded
+m_world.Row2AsVec3()->SquaredMag() > 0
+m_world.Row1AsVec3()->SquaredMag() > 0
+m_world.Row0AsVec3()->SquaredMag() > 0
+../../source\\Tempest/cmath.h
+color.z >= 0.0f && color.z <= 1.0f
+color.y >= 0.0f && color.y <= 1.0f
+color.x >= 0.0f && color.x <= 1.0f
+GetName
+GetFileName
+GetData
+textureIndex < data->textures.count
+HasTexture
+.?AUM2ModelCall@@
+HasGeometry
+optRegion->vertexStart + optRegion->vertexCount >= regionA->vertexStart + regionA->vertexCount
+optRegion->vertexStart <= regionA->vertexStart
+.?AVCiRange@NTempest@@
+.?AUM2Region@@
+.?AUM2Batch@@
+sequenceIndex < data->sequences.count
+HasSequence
+sequenceId < data->sequenceFallbackById.count
+GetSequenceVariationCount
+GetSequenceInfo
+boneIndex < data->bones.count
+HasBone
+GetBonePivot
+GetBonePosition
+GetBoneWorldViewTransform
+GetBoneFlags
+GetBoneSequenceInfo
+GetBoneSequenceId
+GetBoneSequenceTime
+GetBoneSequenceSpeed
+((0xffff) != data->bones[boneIndex].parentIndex) || (boneIndex > 0)
+GetBoneProceduralTransform
+attachmentIndex < data->attachments.count
+HasAttachment
+GetAttachmentPivot
+GetAttachmentPosition
+GetAttachmentWorldTransform
+model != this
+!m_attachParent
+m_attachParent
+HasEvent
+eventIndex < data->events.count
+GetEventPivot
+GetEventPosition
+GetEventWorldTransform
+GetNumLights
+lightIndex < m_shared->m_data->lights.count
+GetLightEnable
+GetNumCameras
+cameraIndex < data->cameras.count
+HasCamera
+GetCameraById
+cameraIndex < m_shared->m_data->cameras.count
+GetCameraByIndex
+GetNumEmitters
+particleIndex < m_shared->m_data->particles.count
+GetEmitter
+GetBoundingBox
+GetBoundingSphere
+GetCollisionBox
+GetCollisionSphere
+GetCollisionFacets
+m_scene->m_hitTest
+shared->parentIndex < boneIndex
+data->bones.count > 0
+(0xffffffff) != sequenceIndex
+model->m_loaded
+!((uint) boneMatrices & 0xf)
+.?AUM2Element@@
+.?AUM2SceneCallback@@
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Scene.cpp
+.?AVCM2Model@@
+!m_hitTest
+!m_hitList
+.?AUM2HitRec@@
+m_hitTest
+sequenceId != (0xffffffff)
+eventId != (0xffffffff)
+m_batch->textureCount < 2
+../../source\\Gx/Gx.h
+.?AVCM2Scene@@
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Light.cpp
+start < end
+.PAVCM2Light@@
+!m_lightPrev && !m_lightNext
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2DataInit.inl
+!m_freeNext
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Shared.cpp
+!m_freePrev
+m_callbackList != model
+!model->m_callbackNext
+!model->m_callbackPrev
+*model->m_callbackPrev == m_callbackList
+model->m_callbackPrev
+Failed to initialize model: %s
+Corrupt model data: %s
+Model2: M2Destroy never called\n
+.?AUCGxTexFlags@@
+shaders\\vertex\\Model2.bls
+.PAVCGxVertexShader@@
+Model2
+Model2: M2Initialize called mode than once\n
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Cache.cpp
+m_freeTail == &m_freeList
+.?AVCM2Shared@@
+Model2: File not found: %s\n
+.mdx
+.mdl
+6^\a@
+1\x1B\a@
 .?AUNodeBlock@CDataRecycler@@
 CDataAllocator@0x%08x: leaked %u: %s(%d) [%u][%u]
 C:\\build\\buildWoW\\engine\\Source\\Base\\CDataAllocator.cpp
@@ -18238,8 +17330,43 @@ frames.IsLinked(frame)
 event < NUM_SIMPLE_EVENTS
 frame->IsVisible()
 frame->IsInitialized()
+index < m_count
 renderList.IsLinked(batch)
 .PAVFRAMEPRIORITY@@
+Shaders\\Pixel\\Desaturate.bls
+$parent
+Texture named '%s' already registered
+alphaMode
+Gradient
+Color
+TexCoords
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRender.cpp
+m_texture
+rect.miny <= rect.maxy
+rect.minx <= rect.maxx
+CMath::fequal_(m_texCoord[1].y, m_texCoord[3].y)
+CMath::fequal_(m_texCoord[0].y, m_texCoord[2].y)
+CMath::fequal_(m_texCoord[2].x, m_texCoord[3].x)
+CMath::fequal_(m_texCoord[0].x, m_texCoord[1].x)
+FontString named '%s' already registered
+Offset
+Shadow
+wraponspaces
+justifyH
+justifyV
+bytes
+monochrome
+THICK
+outline
+Missing font height in %s element
+FontHeight
+okay
+height > 0
+!m_text || !*m_text
+m_font
+.?AUCSimpleBatchedTexture@@
+m_stringbatch
+.?AURENDERCALLBACKNODE@@
 %s:OnAnimFinished
 %s:OnUpdateModel
 FogColor
@@ -18250,31 +17377,6 @@ scale
 Bad model file: %s
 OnAnimFinished
 OnUpdateModel
-C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleModel.cpp
-modelLight
-Offset
-Frame anchored to itself: %s
-Couldn't find relative frame: %s
-relativeTo
-Invalid anchor point in frame: %s
-relativePoint
-point
-SETALLPOINTS set to true in frame with anchors (ignored)
-Anchors
-setAllPoints
-C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.cpp
-Size
-Couldn't find inherited node: %s
-inherits
-.?AVCFramePointAbsolute@@
-.?AVCFramePointRelative@@
-relative != this
-relative
-.?AUFRAMENODE@CLayoutFrame@@
-!IsResizeDependency( frame )
-C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.h
-whichPoint < (sizeof(m_points) / sizeof(m_points[0]))
-!\"Unhandled frame point\"
 %s:OnReceiveDrag
 %s:OnDragStop
 %s:OnDragStart
@@ -18291,7 +17393,6 @@ whichPoint < (sizeof(m_points) / sizeof(m_points[0]))
 C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleFrame.cpp
 m_drawlayers[i].IsEmpty()
 m_initialized_state != STATE_DELETED
-$parent
 Frame named '%s' already registered
 Frames
 An unnamed frame cannot have a 'Scripts' element
@@ -18361,6 +17462,28 @@ Button4
 RightButton
 MiddleButton
 LeftButton
+Frame anchored to itself: %s
+Couldn't find relative frame: %s
+relativeTo
+Invalid anchor point in frame: %s
+relativePoint
+point
+SETALLPOINTS set to true in frame with anchors (ignored)
+Anchors
+setAllPoints
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.cpp
+Size
+Couldn't find inherited node: %s
+inherits
+.?AVCFramePointAbsolute@@
+.?AVCFramePointRelative@@
+relative != this
+relative
+.?AUFRAMENODE@CLayoutFrame@@
+!IsResizeDependency( frame )
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.h
+whichPoint < (sizeof(m_points) / sizeof(m_points[0]))
+!\"Unhandled frame point\"
 SetBackdropBorderColor
 SetBackdropColor
 EnableKeyboard
@@ -18402,7 +17525,6 @@ UnregisterEvent
 RegisterEvent
 SetFrameLevel
 GetFrameLevel
-GetName
 GetParent
 ..\\FrameScript/FrameScript.h
 Usage: SetFrameLevel(level)
@@ -18425,39 +17547,6 @@ Error: %s is anchored to itself
 Couldn't find frame named '%s'
 Unknown frame point
 Usage: SetAllPoints(\"frame\")
-Shaders\\Pixel\\BlackAndWhite.bls
-Texture named '%s' already registered
-alphaMode
-Gradient
-Color
-TexCoords
-C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRender.cpp
-m_texture
-rect.miny <= rect.maxy
-rect.minx <= rect.maxx
-CMath::fequal_(m_texCoord[1].y, m_texCoord[3].y)
-CMath::fequal_(m_texCoord[0].y, m_texCoord[2].y)
-CMath::fequal_(m_texCoord[2].x, m_texCoord[3].x)
-CMath::fequal_(m_texCoord[0].x, m_texCoord[1].x)
-FontString named '%s' already registered
-Shadow
-wraponspaces
-justifyH
-justifyV
-bytes
-monochrome
-THICK
-outline
-Missing font height in %s element
-FontHeight
-okay
-height > 0
-!m_text || !*m_text
-m_font
-m_string
-.?AUCSimpleBatchedTexture@@
-m_stringbatch
-.?AURENDERCALLBACKNODE@@
 %s:OnDoubleClick
 %s:OnClick
 PushedTextOffset
@@ -18538,9 +17627,6 @@ BarColor
 BarTexture
 drawLayer
 OnValueChanged
-C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleStatusBar.cpp
-min <= max
-m_rangeSet
 BackgroundInsets
 EdgeSize
 TileSize
@@ -18627,6 +17713,7 @@ OnMessageScrollChanged
 valueStep
 ThumbTexture
 C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleSlider.cpp
+min <= max
 step >= 0.0f
 CMath::fnotequal_(GetLayoutScale(),0.0f)
 FontStringHeader3
@@ -18659,8 +17746,21 @@ OnMovieHideSubtitle
 OnMovieShowSubtitle
 %s:OnMovieFinished
 OnMovieFinished
-%s.raw
-%s.mp3
+audio_chunks && m_audioBytes
+video_chunks && m_videoBytes
+idx1_data && idx1_size
+strf
+auds
+vids
+strh
+hdrl_data
+idx1
+movi
+hdrl
+LIST
+AVI
+RIFF
+%s.avi
 %s.sbt
 Logs\\movies.log
 Total dropped frames: %d
@@ -18734,7 +17834,7 @@ SetJustifyH
 GetStringWidth
 SetTextHeight
 SetAlphaGradient
-SetBlackAndWhite
+SetDesaturated
 SetTexCoord
 SetTexture
 SetGradientAlpha
@@ -18756,463 +17856,6 @@ C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleHyperlinkedFrame.cpp
 OnHyperlinkClick
 OnHyperlinkLeave
 OnHyperlinkEnter
-extension
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\MDLFile.cpp
-path[0]
-..\\Base/MsgBuffer.h
-m_read == m_write
-%s: %s\n
-path && SStrLen(path)
-mdldata
-Error (line %d): %s\n
-Section failed after section '%c%c%c%c' starting at offset %u\n
-Section length was greater than bytes remaining in file.\n
-MDLFile overran total file size.\n
-File is not a binary model file.\n
-.mdx
-.mdl
-%s\nFile is not a binary model file.\n
-WrapWidth
-WrapHeight
-Wind
-Width
-Visibility
-Vertices
-VertexGroup
-VertexCount
-Variation
-Unshaded
-Unselectable
-Unfogged
-Type
-TwoSided
-TVertices
-TVertexAnimId
-TVertexAnim
-TriangleStrip
-TriangleFan
-Triangles
-Translation
-Time
-TFaces
-TextureSlot
-TextureID
-TeamColor
-TailUVAnim
-TailDecayUVAnim
-TailLength
-TailGrows
-Tail
-static
-Squirt
-Speed
-SortPrimsNearZ
-SortPrimsFarZ
-Spline
-SphereEnvMap
-Sphere
-ShaderSkin
-SelectionGroup
-SegmentColor
-Scaling
-Rows
-Rotation
-Roll
-Replay
-ReplaceableId
-QuadStrip
-Quads
-Project2D
-Project
-PriorityPlane
-Polygons
-Points
-Plane
-Path
-ParticleZVelOnly
-ParticleZSource
-ParticleXYQuads
-ParticleTwinkleScale
-ParticleTwinkleOnOff
-ParticleTumbleR
-ParticleTumble
-ParticleScaling
-ParticleRotation
-ParticleRecursionMdl
-ParticleProject
-ParticleGeometryMdl
-ParticleIVelScale
-ParticleIVelLin
-ParticleInheritScale
-ParticleFollowParams
-ParticleFollow
-ParticleExtrude
-Particle0XKill
-Parent
-OutTan
-Opacity
-Omnidirectional
-ObjectId
-NumRibbonEmitters
-NumParticleEmitters2
-NumParticleEmitters
-NumMeshes
-NumLights
-NumHelpers
-NumGeosetAnims
-NumGeosets
-NumEvents
-NumBones
-NumAttachments
-Normals
-NonLooping
-NoFallback
-NoDepthSet
-NoDepthTest
-NearClip
-Multiple
-MoveSpeed
-Modulate2x
-Modulate
-ModelSpace
-MinimumExtent
-MinimumDistance
-MaximumExtent
-MaximumDistance
-Matrices
-MaterialID
-Material
-LineStrip
-LineLoop
-LineEmitter
-Lines
-Linear
-LifeSpanUVAnim
-LifeSpan
-Length
-Longitude
-Latitude
-Interval
-Intensity
-InTan
-InitVelocity
-Image
-Hermite
-HeightBelow
-HeightAbove
-Height
-Groups
-Group
-GroundTrack
-Gravity
-GlobalSeqId
-GeosetAnimId
-GeosetId
-FullResolution
-Frequency
-FormatVersion
-FilterMode
-FieldOfView
-FarClip
-EventTrack
-EmitterUsesTGA
-EmitterUsesMDL
-EmissionRate
-Duration
-Duplicates
-Drag
-DontInterp
-DontInherit
-Directional
-DecayUVAnim
-Cylinder
-CoordId
-ConstantColor
-Connect
-ComponentSkin
-Columns
-BoundsRadius
-Both
-BoneWeights
-BoneIndices
-BlendTime
-BlendColors
-Blend
-Bitmap
-BillboardedLockZ
-BillboardedLockY
-BillboardedLockX
-Billboarded
-Bezier
-Batches
-AttenuationEnd
-AttenuationStart
-Attenuation
-AttachmentID
-AnimationFile
-Anim
-Ambient
-AmbIntensity
-AmbColor
-AlwaysAnimate
-AlphaKey
-AddAlpha
-Additive
-Collision
-RibbonEmitter
-CollisionShape
-HitTestShape
-EventObject
-Camera
-ParticleEmitter2
-ParticleEmitter
-PivotPoints
-Attachment
-Helper
-Light
-Mesh
-Bone
-GeosetAnim
-Geoset
-Materials
-Textures
-TextureAnims
-GlobalSequences
-Sequences
-Version
-Literal String
-Literal Float
-Literal Long
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\TokenText.cpp
-s_tokentext[token - MDLTOK_FIRST_TOKEN].token == token
-Warning: Unknown section tag found. Skipping section.\n
-Error: Found duplicate \"%s\"\n
-Error (line %d): Found duplicate \"%s\"\n
-Error: found %d \"%s\", but %d \"%s\", counts must match\n
-Error (line %d): found %d \"%s\", but %d \"%s\", counts must match\n
-Error: Expected \"%s\"\n
-Error (line %d): Expected \"%s\"\n
-Error: Unexpected token \"%s\"\n
-Error (line %d): Unexpected token \"%s\"\n
-Error: Expected \"%s\", but found \"%s\"\n
-Error (line %d): Expected \"%s\", but found \"%s\"\n
-Error: Unexpected end of file\n
-Error (line %d): Unexpected end of file\n
-Warning: Expected %d \"%s\", but found %d\n
-Warning (line %d): Expected %d \"%s\", but found %d\n
-Error: Section %s overran remaining buffer.\n
-Error (line %d): Section %s overran remaining buffer.\n
-Error: Could not create new %s section (out of memory?)\n
-Error (line %d): Could not create new %s section (out of memory?)\n
-Unrecognized file extension: \"%s\"\n
-No space for scanner!
-%d:
-Token buffer overflow
-Push-back buffer overflow
-end of file in comment
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\GenObject.cpp
-elements > 0
-Found gaps in sequence of object ID's. Unable to fix up object pointers.\n
- },\n
-, %g
-{ %g
-%g,\n
-, %u
-{ %u
-%u,\n
-key frames
-%s\t\t%s
-%s\t%d:
-%s\t%s %d,\n
-%s\t%s,\n
-%s%s %d {\n
-\t%s {
-\t%s %d,\t// \"%s\"\n
-\t%s %d,\n
-%s \"%s\" {\n
-\t%s,\n
-%s%s { %g, %g, %g },\n
-%s%s %g,\n
-Genobject keys
-Could not read scale keys in gen object.\n
-Could not read trans keys in gen object.\n
-Could not read rot keys in gen object.\n
-normals
-collision triangle indices
-%s {\n
-\t\t{ %hu, %hu, %hu },\n
-\t%s %u {\n
-Collision section overran read buffer.\n
-Invalid %s section.\n
-triangle index
-facet normal
-vertex
-\t%s %g,\n
-\t%s 1 {\n
-\t\t{ %g, %g, %g },\n
-\t%s 2 {\n
-Hit test section overran read buffer.\n
-Error reading gen object portion of hit test shape.\n
-Hit test
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\MDLTypes.h
-event key frames
-\t\t%d,\n
-\t\t%s %d,\n
-EventObject section overran read buffer.\n
-Error reading event keys portion of event object.\n
-Error reading gen object portion of event.\n
-Error reading visibility keys in camera section.\n
-Error reading target translation keys in camera section.\n
-Error reading roll keys in camera section.\n
-Error reading translation keys in camera section.\n
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Camera.cpp
-\t\t%s { %g, %g, %g },\n
-\t%s {\n
-\t%s { %g, %g, %g },\n
-Failure reading camera section.\n
-\t%s %u,\n
-%s%s %s
-RibbonEmitter Section
-Error reading RibbonEmitter.\n
-RibbonEmitters
-Error reading visibility keys portion of RibbonEmitter.\n
-Error reading color portion of RibbonEmitter.\n
-Error reading height above portion of RibbonEmitter.\n
-Error reading height below of RibbonEmitter.\n
-Error reading alpha portion of RibbonEmitter.\n
-Error reading texture slot keys portion of RibbonEmitter.\n
-Error reading gen object portion of RibbonEmitter.\n
-%s\t%d: %u,\n
-%s%s %u {\n
-\t%s { %f, %f, %f, %f },\n
-\t%s { { %f, %f, %f }, %f },\n
-\t%s {%f, %f, %f, %f, %f, %f},\n
-\t%s {%f, %f},\n
-\t%s %f,\n
-\t%s \"%s\",\n
-\t%s {%g, %g, %g},\n
-\t%s {%u, %u, %u},\n
-\t},\n
-%s%s
-\t%s\n
-ParticleEmitter2 Section
-Error reading ParticleEmitter2.\n
-ParticleEmitters2
-Error reading width keys portion of ParticleEmitter2.\n
-Error reading visibility keys portion of ParticleEmitter2.\n
-Error reading variation portion of ParticleEmitter2.\n
-Error reading speed portion of ParticleEmitter2.\n
-Error reading longitude portion of ParticleEmitter2.\n
-Error reading latitude portion of ParticleEmitter2.\n
-Error reading length keys portion of ParticleEmitter2.\n
-Error reading gravity portion of ParticleEmitter2.\n
-Error reading emission rate portion of ParticleEmitter2.\n
-Error reading zsource keys portion of ParticleEmitter2.\n
-Error reading gen object portion of ParticleEmitter2.\n
-\t\t%s \"%s\",\n
-ParticleEmitter Section
-Error reading particle emitter.\n
-ParticleEmitters
-Error reading particle speed portion of particle emitter.\n
-Error reading latitude portion of particle emitter.\n
-Error reading longitude portion of particle emitter.\n
-Error reading emission rate portion of particle emitter.\n
-Error reading gravity portion of particle emitter.\n
-Error reading visibility keys portion of particle emitter.\n
-Error reading particle life portion of particle emitter.\n
-Error reading gen object portion of particle emitter.\n
-pivot points
-\t{ %g, %g, %g },\n
-%s %d {\n
-Pivot
-Attachment visKeys
-Error reading visibility keys in attachment.\n
-Error reading gen object portion of attachment.\n
-Helper section overran read buffer.\n
-Error reading gen object portion of helper.\n
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Light.cpp
-Error reading light section.\n
-Lights
-Error reading light attenstart keys.\n
-Error reading light intensity keys.\n
-Error reading light attenend keys.\n
-Error reading light color keys.\n
-Error reading gen object portion of light.\n
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Bone.cpp
-%d,\n
-%s,\n
-\t%s
-Error reading gen object portion of bone.\n
-\t%s %d {\n
-Invalid %s section in Geoset.\n
-primitives
-primitive vertices
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Geoset.cpp
-vertlist
-an even number of entries
-at least two entries
-a multiple of three entries
-at least three entries
-matrices
-groups
-matrixIdList
-mtxCount
-Error (line %d): Vertex count doesn't match normals and group indices\n
-Error (line %d): Vertex count doesn't match texture coordinates\n
-\t\t{ %g, %g },\n
-\t\t%u,\n
-, %d
-\t\t%s { %d
-\t%s %d %d {\n
-\t\t%s {
-\t%s %u %u {\n
-\t\t0x%08X,\n
-Error reading Geoset anim section.\n
-GeosetAnim keys
-Geoset section overran read buffer.\n
-status != 0
-texture animations
-Error reading rotkeys of texanim.\n
-Error reading transkeys of texanim.\n
-TexAnim
-Error reading scalekeys of texanim.\n
-materials
-\t\t}\n
-\t\t\t%s %u,\n
-\t\t\t%s %s,\n
-\t\t%s {\n
-\t\t\t%s,\n
-MaterialSection
-TexLayer
-textures
-(numTextures > 0) || (data.bones.Count() == 0)
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Texture.cpp
-\t\t%s,\n
-Invalid TXTX section detected in model -- nonintegral number of textures.\n
-sequences
-\t\t%s %u,\n
-\t\t%s { %u, %u },\n
-\t%s \"%s\" {\n
-global sequences
-Invalid SEQX section detected in model -- nonintegral number of sequences.\n
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Sequences.cpp
-Invalid GLBX section detected in model -- nonintegral number of global sequences.\n
-\t%s { %s },\n
-\t%s { %s, %s },\n
-\t%s { %s, %s, %s },\n
-Invalid MODL section detected in model.\n
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Model.cpp
-Error: File version (%u) is newer than newest version (%u) supported by app\n
-Invalid VERX section detected in model.\n
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Version.cpp
-// SCENE_FILENAME \"%s\"\n
- by %s
-// Exported on %s
-// MDLFile version\tSep 17 2004 13:31:39\n
-C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\TSet.cpp
-count != 64
-TSet::Found: found unregistered token 0x%x
-TSet::NotFound: found unregistered token 0x%x
 Mono
 Low quality mono
 MMXP6
@@ -19255,6 +17898,7 @@ FSOUND_SetBufferSize
 FSOUND_SetMixer
 FSOUND_SetDriver
 FSOUND_SetOutput
+setupapi.dll
 Already Initialized
 Sound::Initialize()
 Logs\\Sound.log
@@ -19267,15 +17911,33 @@ Error: %s(%i) returned %i
 SoundDopplerFactor
 SoundDistanceFactor
 .?AUSound@@
+!_isnan(listenerPos.z)
+listenerPos.z
+!_isnan(listenerPos.y)
+listenerPos.y
+!_isnan(listenerPos.x)
+listenerPos.x
 sound->m_stream
 loopCount >= -1
 volume >= 0.0f && volume <= 1.0f
 m_channel == -1
 m_stream
+!_isnan(worldPosition.z)
+worldPosition.z
+!_isnan(worldPosition.y)
+worldPosition.y
+!_isnan(worldPosition.x)
+worldPosition.x
 m_flags & ISOUNDFLAG_POSITIONSET
 x <= 255.4999f
 x >= -0.5f
 volume >= 0 && volume <= 255
+!_isnan(soundPosition.z)
+soundPosition.z
+!_isnan(soundPosition.y)
+soundPosition.y
+!_isnan(soundPosition.x)
+soundPosition.x
 s_soundListFade.IsLinked(this)
 s_soundListUpdate.IsLinked(this)
 s_soundListPanning.IsLinked(this)
@@ -19310,6 +17972,7 @@ C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Profile.cpp
 stringBlock
 .?AUPROFILE@ProfileInternal@@
 [%s]\n
+section
 %I64d
 pSection
 profilePtr
@@ -19317,6 +17980,32 @@ profilePtr
 .?AUKEYVALUE@ProfileInternal@@
 .?AV?$TSExplicitList@UKEYVALUE@ProfileInternal@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USECTION@ProfileInternal@@$0?CCCCCCCD@@@
+cameraPtr
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Camera.cpp
+HCAMERA
+.PAVCBaseManaged@@
+srcPtr
+x >= 0 && x <= 1.0f
+y >= 0 && y <= 1.0f
+data == saved
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\DataMgrInt.h
+dataTypeId < CBaseManaged::DATATYPEIDS
+fieldId < m_managedArray.Count()
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\DataMgr.cpp
+manage
+typeId == mgrPtr->m_managedArray[fieldId]->m_dataTypeId
+mgrPtr->m_managedArray[fieldId]
+fieldId < mgrPtr->m_managedArray.Count()
+mgrPtr
+result
+!(mgrPtr->m_managedArray[fieldId]->m_flags & CBaseManaged::READONLY)
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\GfxSingletonManager.cpp
+manager
+.?AVParticleSystemManager@@
+.PAVCParticleEmitter@@
+.?AVCParticleEmitter@@
+emitter != 0
+.?AVRibbonManager@@
 .PAVCLightning@@
 .?AVCLightning@@
 src || dst
@@ -19330,7 +18019,85 @@ Ligh
 Ligh
 Ligh
 Ligh
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\RibbonEmitter.cpp
+m_writePos != m_readPos || advance == 0
+amount <= m_edges.Count()
+.?AUCRibbonVertex@@
+textures.Count() == replaces.Count()
+materials.Count() == textures.Count()
+edgeLifeSpanInSec > 0
+edgesPerSec >= 1
+m_initialized == 0
+slot < m_rows * m_cols
+above >= 0.0f
+below >= 0.0f
+.?AUCSortableParticleRecord@@
+..\\Services/IParticleMisc.h
+m_stackPointer < m_stack.Count()
+.?AVCParticle2@@
+.?AVCParticle2_Model@@
+.?AVCParticleKey@@
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleSystem2.cpp
+CMath::fnotequal_(m_frameScale,0.0f)
+rows && columns
+(columns & (columns - 1)) == 0
+(rows & (rows - 1)) == 0
+m_stackPointer != 0
+m_particleKeys.Count() == 2
+childIndex != MAX_CHILD_EMITTERS
+CMath::fnotequal_(normStartTime, normEndTime)
+normStartTime < normEndTime
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleMisc.cpp
+normStartTime >= 0.0f
+CMath::fnotequal_(m_ooSegLength,0.0f)
+m_ooSegLength
+CMath::fnotequal_(timeDelta,0.0f)
+timeDelta
+lifeSpan > (real(1.192092896e-07F * 2.0f))
+lifeSpan
+repeat >= 1.0f
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleSystem.cpp
+m_hmodel
+.?AVCParticle@@
+p.m_timeToLive >= 0
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c33matrix.cpp
+CMath::fequal_(det, 0.0f) == false
+CMath::fequal_(axis_.Mag(), 1.0f)
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c44matrix.cpp
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c34matrix.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmemblock.cpp
+(body & 0x3) == 0
+(size & 0x3) == 0
+mem_ != 0
+mem_ <= mem && size_ >= size
+Copy_(m) == size_
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmemblock.h
+m.mem_ <= m.mem && m.size_ >= m.size
+m.IsValid()
+IsValid() == false
+from.IsValid()
+to.IsValid()
+mem_ <= mem && with.mem_ <= with.mem
+size_ >= size && with.size_ >= with.size
+with.IsValid()
+this->size_ == this->size
+mem != 0
+mem == mem_ + (size_ - size)
+size_ >= size
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c4vector.h
+sub < eComponents
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c4quaternion.cpp
+CMath::fequal_(mag, 1.0f)
+\"C4Quaternion::Inverse(): cannot invert an invalid (zero-norm) quaternion.\"
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c4quaternion.h
+IsUnit()
+q2.IsUnit()
+q1.IsUnit()
+q0.IsUnit()
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\caabox.cpp
+vectors != 0
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cdyntable.h
+index.IsValid() && vects.IsValid()
 \"3DUfw
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cimvector.cpp
 !(\"HSVtoRGB(): invalid hue\")
@@ -19360,13 +18127,12 @@ INCOMING
 HELPME
 .?AUMACRODESC@@
 Usage: PlayVocalCategory(\"category\")
+C:\\build\\buildWoW\\WoW\\Source\\Object\\Combat.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\CreatureStats.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\GameObjectStats.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ItemStats.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\NPCText.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\GuildStats.cpp
-C:\\build\\buildWoW\\WoW\\Source\\Object\\Combat.cpp
-Interface\\TargetingFrame\\UI-TargetingFrame-Sheep
 Interface\\TargetingFrame\\UI-TargetingFrame-Skull
 NAMEPLATE_FONT
 Interface\\Tooltips\\Nameplate-Glow
@@ -19374,7 +18140,6 @@ Interface\\TargetingFrame\\UI-TargetingFrame-BarFill
 .?AVCGSimpleHealthBar@@
 Interface\\Tooltips\\Nameplate-Border
 ..\\..\\..\\engine\\source\\Frame/CSimpleRender.h
-LEVEL
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\NamePlateFrame.cpp
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\HealthBar.cpp
 parameter
@@ -20053,6 +18818,7 @@ AEacute
 Semibold
 Roman
 Medium
+Light
 Book
 Black
 001.003
@@ -20478,11 +19244,6 @@ invalid option in `format'
 invalid format (width or precision too long)
 [-+ #0]*(%d*)%.?(%d*)
 \\000
-C:\\build\\buildWoW\\engine\\Source\\Base\\MsgBuffer.cpp
-len <= CMB_TCHARSTR_MAX_LONG_LEN
-Bytes() >= sizeof(val)
-Bytes() >= count
-bytes <= (uint)Bytes()
 C:\\build\\buildWoW\\engine\\Source\\Base\\CUnreal.cpp
 (a.bits & (0xff << 23)) != 0
 %s%*d.%0*d
