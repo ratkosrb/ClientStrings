@@ -146,7 +146,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 4735 (Oct  6 2005 21:00:44)
+WoW [Release] Build 4769 (Oct 20 2005 18:08:53)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -155,7 +155,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 4735 (Oct  6 2005)
+WoW [Release] Build 4769 (Oct 20 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -253,6 +253,7 @@ CallWindowProcA
 GetClipboardData
 SetWindowTextW
 MessageBoxW
+WideCharToMultiByte
 CreateProcessW
 advapi32.dll
 RegQueryValueExW
@@ -286,7 +287,6 @@ IsValidCodePage
 lstrcatW
 lstrcpyW
 lstrlenW
-WideCharToMultiByte
 DdeConnect
 DdeConnectList
 DdeQueryConvInfo
@@ -462,8 +462,9 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo@
+ltuo0
 cinu
+ltuo0
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -616,7 +617,7 @@ Bad SMSG_NEW_WORLD\n
 Notification received: %s
 login
 charselect
-World of WarCraft (build 4735)
+World of WarCraft (build 4769)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -948,8 +949,8 @@ C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Oct  6 2005
-20:57:26
+Oct 20 2005
+18:06:31
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1457,8 +1458,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4735
-1.8.0
+4769
+1.8.1
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -3571,8 +3572,7 @@ GetBattlefieldEstimatedWaitTime
 GetBattlefieldInstanceRunTime
 GetBattlefieldInstanceExpiration
 GetBattlefieldPortExpiration
-GetBattlefieldSt
-atus
+GetBattlefieldStatus
 AcceptBattlefieldPort
 GetSelectedBattlefield
 SetSelectedBattlefield
@@ -7388,8 +7388,8 @@ CdThreadProc
 main
 Software\\Blizzard Entertainment\\
 Software\\Battle.net\\
-Missing Debu
-gging DLL
+Missing
+Debugging DLL
 Couldn't locate the \"DbgHelp.dll\" debugging DLL.\n\nSome debugging information will be missing from error log files. Press OK to continue, or press Cancel to terminate the program.
 written
 read
@@ -9138,6 +9138,7 @@ WORLD
 Usage: SetFrameStrata(level)
 %s:SetFrameStrata(): Unknown frame strata: %s
 Usage: SetFrameLevel(level)
+%s:SetFrameLevel(): Passed negative frame level: %d
 Usage: HasScript(\"type\")
 %s doesn't have a \"%s\" script
 Usage: GetScript(\"type\")

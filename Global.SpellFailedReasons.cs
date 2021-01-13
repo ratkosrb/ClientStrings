@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 1.8.0
-// Build: 4735
+// Patch: 1.8.1
+// Build: 4769
 
 Public Enum SpellFailedReason
 {
