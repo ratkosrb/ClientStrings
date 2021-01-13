@@ -148,7 +148,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release Assertions Enabled] Build 4341 (Apr 15 2005 12:35:28)
+WoW [Release Assertions Enabled] Build 4364 (Apr 25 2005 20:12:21)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -157,7 +157,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 4341 (Apr 15 2005)
+WoW [Release Assertions Enabled] Build 4364 (Apr 25 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -462,8 +462,11 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuoPi|
+ltuopn|
 cinu
+ltuop
+ltuo0
+ltuo0
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -631,7 +634,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 4341)
+World of WarCraft: Assertions Enabled Build (build 4364)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -747,10 +750,12 @@ culling
 DepthSet
 DepthTest
 light
+.PAD
 C:\\build\\buildWoW\\WoW\\Source\\WowServices/PatchFiles.h
 !\"Failed to open archive\"
 \"%s\", \"%s\"
 \"%s\", %s = \"%s\"
+_archiveNames[i]
 patch.MPQ
 patch-?.MPQ
 Data\\%s
@@ -768,7 +773,6 @@ Local Zone:
 %s %s
 WowErrorAE.exe
 InstallPath
-.PAD
 togglecloak
 togglehelm
 showplayer
@@ -1044,8 +1048,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Apr 15 2005
-12:33:24
+Apr 25 2005
+20:10:15
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1309,6 +1313,7 @@ string
 C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Profile.cpp
 stringBlock
 .?AUPROFILE@ProfileInternal@@
+path
 [%s]\n
 section
 %I64d
@@ -1829,8 +1834,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4341
-1.4.0
+4364
+1.4.1
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -7458,7 +7463,6 @@ School Damage Done
 Combo Point Damage
 Chain Reduction
 DPS Scaler
-Creature Spell Scaler
 Base
 .?AUInitialSpellStruct@@
 .?AUGUILDUPDATETIMESTAMP@@
@@ -8451,6 +8455,7 @@ Not Set
 C:\\build\\buildWoW\\WoW\\Source\\Game\\GameTime.cpp
 m_gameMinutesThisTick >= 0.0f
 GameTimeSync: delta=%d, differential=%d, HoursAndMinutes=%d
+GameTimeSync: skipping forwards %d game minutes, (current = %s, newtime = %s)
 HGAMETIMECALLBACK
 callback
 curr->callback
