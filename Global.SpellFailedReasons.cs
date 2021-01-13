@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 1.6.1
-// Build: 4544
+// Patch: 0.7.0
+// Build: 4579
 
 Public Enum SpellFailedReason
 {
@@ -132,6 +132,8 @@ Public Enum SpellFailedReason
     SPELL_FAILED_TARGET_FREEFORALL = 0x7D,                          // 0x07D
     SPELL_FAILED_NO_EDIBLE_CORPSES = 0x7E,                          // 0x07E
     SPELL_FAILED_ONLY_BATTLEGROUNDS = 0x7F,                         // 0x07F
-    SPELL_FAILED_UNKNOWN = 0x80,                                    // 0x080
+    SPELL_FAILED_TARGET_NOT_GHOST = 0x80,                           // 0x080
+    SPELL_FAILED_TOO_MANY_SKILLS = 0x81,                            // 0x081
+    SPELL_FAILED_UNKNOWN = 0x82,                                    // 0x082
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }
