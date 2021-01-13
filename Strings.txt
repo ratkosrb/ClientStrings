@@ -146,17 +146,16 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 4150 (Dec 20 2004 13:24:49)
+WoW [Release Assertions Enabled] Build 4196 (Jan 26 2005 17:14:54)
 \a\b\t\n\v
 COPPER
 SILVER
 GOLD
 ?fff?
-UU�@
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 4150 (Dec 20 2004)
+WoW [Release Assertions Enabled] Build 4196 (Jan 26 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -223,6 +222,7 @@ a $ a4A
  488888$$4
 \a\a\a\a\n\t
 kernel32.dll
+GetProcAddress
 CreateFileW
 GetFileAttributesW
 SetFileAttributesW
@@ -238,7 +238,6 @@ FindFirstFileW
 GetDiskFreeSpaceExW
 GetModuleFileNameW
 MultiByteToWideChar
-GetProcAddress
 user32.dll
 GetPropA
 SetPropA
@@ -461,7 +460,8 @@ SP\vPZ
 \b3OP\v
 ltuo0
 cinu
-ltuo0
+ltuopH{
+ltuopH{
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -619,7 +619,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 4150)
+World of WarCraft: Assertions Enabled Build (build 4196)
 SendErrorLogs
 Data\\
 World of Warcraft
@@ -965,6 +965,8 @@ fileTime
 localFileTime
 sysTime
 localSysTime
+GetPwrCapabilities
+powrprof.dll
 OsTime
 Internal
 CpuTicksPerSecond
@@ -1010,6 +1012,7 @@ charsCopied
 %s\\%s
 Fonts
 C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsIME.cpp
+values > 1
 .?AUOsIMECandidate@@
 mode < OS_MOUSE_MODES
 C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\Input.cpp
@@ -1031,8 +1034,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Dec 20 2004
-13:22:10
+Jan 26 2005
+17:12:55
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1468,6 +1471,8 @@ PlayMusic
 PlaySound
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUAISOUNDDESC@@
+.?AUTEXTEMOTELOOKUP@@
+.PAUTEXTEMOTELOOKUP@@
 MasterVolume
 (uint)rec->m_TerrainSoundID < numTerrains
 C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterface.cpp
@@ -1842,8 +1847,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4150
-1.2.1
+4196
+1.2.2
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -2266,7 +2271,6 @@ m_camera
 .?AVCGCamera@@
 !s_currentWorldFrame || !\"Error, why is there more than one world frame being created?\"
 debugobjectpathing
-player
 inputControl
 IDLE_MESSAGE
 data
@@ -3047,6 +3051,7 @@ FrameLevel:
 Frame:
 bytesRead == fileSize
 TargetNearestDistance must be between 1 and %f
+player
 worldFrame
 H: %d\n
 W: %d\n
@@ -4740,6 +4745,8 @@ SPELL_EFFECT_INSTAKILL
 |cffffffff
 |cff9d9d9d
 .PAVCSimpleFontString@@
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Tooltip.cpp
+tooltip
 %sStatusBar
 %sTextRight%d
 %sTextLeft%d
@@ -4752,7 +4759,6 @@ HP_TEMPLATE
 ARMOR_TEMPLATE
 DAMAGE_TEMPLATE
 SINGLE_DAMAGE_TEMPLATE
-C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Tooltip.cpp
 srec
 UNIT_SKINNABLE
 statusbar
@@ -4768,7 +4774,6 @@ CORPSE
 LOCKED_WITH_ITEM
 LOCKED_WITH_SPELL
 LOCKED_WITH_SPELL_KNOWN
-tooltip
 %s|Hitem:%d:%d:%d:%d|h[%s]|h%s
 CORPSE_TOOLTIP
 TOOLTIP_TALENT_LEARN
@@ -5657,7 +5662,7 @@ Interface\\Cursor\\%s.blp
 height == 64
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Cursor.cpp
 width == 64
-?0N}
+?0^}
 .?AV?$TSExplicitList@UPLAYERPORTRAIT@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UUNITPORTRAIT@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UITEMPORTRAIT@@$0?CCCCCCCD@@@
@@ -5785,6 +5790,7 @@ s_unarmedWeaponSubclass
 .PAVDurabilityQualityRec@@
 .PAVEmotesRec@@
 .PAVEmotesTextDataRec@@
+.PAVEmotesTextSoundRec@@
 .PAVEmotesTextRec@@
 .PAVEnvironmentalDamageRec@@
 .PAVExhaustionRec@@
@@ -6135,6 +6141,8 @@ DBFilesClient\\Emotes.dbc
 Error reading EmotesRec
 DBFilesClient\\EmotesTextData.dbc
 Error reading EmotesTextDataRec
+DBFilesClient\\EmotesTextSound.dbc
+Error reading EmotesTextSoundRec
 DBFilesClient\\EmotesText.dbc
 Error reading EmotesTextRec
 DBFilesClient\\EnvironmentalDamage.dbc
@@ -7465,7 +7473,7 @@ GetOwnerGUID() != GetGUID()
 Textures\\BakedNpcTextures\\
 textureName
 GetCharacterModel()
-!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1698)) != 0
+!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1716)) != 0
 s_showFootPrintParticles
 m_modelData
 RestoreUnit() on %s, but unit has %d health!
@@ -8644,7 +8652,6 @@ C:\\build\\buildWoW\\Storm\\Source\\SEvt.cpp
 !flags
 .?AUBREAKCMD@@
 .?AUSDIR@@
-.2.2
 incorrect length check
 incorrect data check
 invalid distance too far back
@@ -9320,7 +9327,7 @@ C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\CMapObj.h
 index < fogCount
 IsValid() && i < iused
 .?AVFogQ@@
-?0N}
+?0^}
 .?AV?$TSExplicitList@VCMapDoodadDef@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@VCMapObjDef@@$0?CCCCCCCD@@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapMem.cpp
@@ -9663,7 +9670,7 @@ CORPSE_RED
 ..\\..\\Ui/PartyFrame.h
 index >= 0
 .?AUMINIMAPMD5NAME@@
-?0N}
+?0^}
 .?AV?$TSExplicitList@URACECLASSINFO@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USKILLCOSTSINFO@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USKILLLINEREC@@$0?CCCCCCCD@@@
@@ -10364,7 +10371,7 @@ Failed to initialize model: %s
 Corrupt model data: %s
 6^\a@
 1\x1B\a@
-F0N}
+F0^}
 .?AUNodeBlock@CDataRecycler@@
 CDataAllocator@0x%08x: leaked %u: %s(%d) [%u][%u]
 C:\\build\\buildWoW\\engine\\Source\\Base\\CDataAllocator.cpp
