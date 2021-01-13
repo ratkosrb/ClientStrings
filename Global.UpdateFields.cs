@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 1.1.2
-// Build: 4125
+// Patch: 1.2.0
+// Build: 4147
 
 Public Enum EObjectFields
 {
@@ -167,8 +167,10 @@ Public Enum EPlayerFields
     PLAYER_FIELD_BUYBACK_RANDOM_PROPERTIES_ID = EUnitFields.UNIT_END + 0x2B8,     // 0x362 - Size: 1 - Type: INT - Flags: PRIVATE
     PLAYER_FIELD_BUYBACK_SEED = EUnitFields.UNIT_END + 0x2B9,                     // 0x363 - Size: 1 - Type: INT - Flags: PRIVATE
     PLAYER_FIELD_BUYBACK_PRICE = EUnitFields.UNIT_END + 0x2BA,                    // 0x364 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_PADDING = EUnitFields.UNIT_END + 0x2BB,                          // 0x365 - Size: 1 - Type: INT - Flags: NONE
-    PLAYER_END = EUnitFields.UNIT_END + 0x2BC                                     // 0x366
+    PLAYER_FIELD_BUYBACK_DURABILITY = EUnitFields.UNIT_END + 0x2BB,               // 0x365 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_BUYBACK_COUNT = EUnitFields.UNIT_END + 0x2BC,                    // 0x366 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_PADDING = EUnitFields.UNIT_END + 0x2BD,                          // 0x367 - Size: 1 - Type: INT - Flags: NONE
+    PLAYER_END = EUnitFields.UNIT_END + 0x2BE                                     // 0x368
 }
 Public Enum EGameObjectFields
 {
