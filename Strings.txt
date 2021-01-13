@@ -139,7 +139,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 4500 (Jul  7 2005 12:24:40)
+WoW [Release] Build 4544 (Jul 31 2005 19:33:06)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -148,7 +148,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 4500 (Jul  7 2005)
+WoW [Release] Build 4544 (Jul 31 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -459,7 +459,6 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuop
 cinu
    !
 } ~ % $ 0
@@ -612,7 +611,7 @@ Bad SMSG_NEW_WORLD\n
 Notification received: %s
 login
 charselect
-World of WarCraft (build 4500)
+World of WarCraft (build 4544)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -645,7 +644,7 @@ profanityFilter
 Toggle profanity filter
 scriptMemory
 Memory used by the scripting system (in Kb)
-32768
+49152
 readEULA
 Status of the EULA
 readTOS
@@ -725,10 +724,11 @@ DepthTest
 light
 .PAD
 C:\\build\\buildWoW\\WoW\\Source\\WowServices/PatchFiles.h
-Failed to open archive %s
+Failed to open archive %s: %s
 patch.MPQ
 patch-?.MPQ
 Data\\%s
+Failed to open archive %s
 Unknown Error
 Cursor Item
 Last Enemy Target
@@ -940,8 +940,8 @@ advapi32.dll
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jul  7 2005
-12:21:34
+Jul 31 2005
+19:30:10
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1447,8 +1447,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4500
-1.6.0
+4544
+1.6.1
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -3930,8 +3930,7 @@ Usage: GetPetitionNameInfo(index)
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\PetitionInfo.cpp
 Usage(RenamePetition(\"name\")
 GetTabardInfo
-TurnInGui
-ldCharter
+TurnInGuildCharter
 BuyGuildCharter
 GetGuildCharterCost
 CloseGuildRegistrar
@@ -6023,6 +6022,8 @@ Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
 intel
+signup.wowtaiwan.com.tw
+www.wowtaiwan.com.tw
 signup.wowchina.com
 www.wowchina.com
 signup.wow-europe.com
@@ -6306,9 +6307,9 @@ Unlocking session for account id [%d:%d]
 Cancel request %08x
 Unknown grunt result %d @ %d
 .PAVWowConnection@@
-Unabled to permit incoming connection attempts on socket
-Unabled to establish a connection to socket
-Unabled to associates local address with socket
+Unable to permit incoming connection attempts on socket
+Unable to establish a connection to socket
+Unable to associate local address with socket
 127.0.0.1
 Unable to establish TCP socket
 %s: %s
@@ -9222,8 +9223,7 @@ PageUp
 ScrollDown
 ScrollUp
 AddMessage
-Usage: S
-etFontHeight(pixelHeight)
+Usage: SetFontHeight(pixelHeight)
 ToggleInputLanguage
 GetInputLanguage
 GetNumLetters
