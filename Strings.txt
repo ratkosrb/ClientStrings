@@ -136,7 +136,7 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 3807 (Aug 15 2004 15:24:42)
+WoW [Release Assertions Enabled] Build 3810 (Aug 23 2004 17:47:56)
 \a\b\t\n\v
 NoName
 NoName
@@ -148,7 +148,7 @@ NoName
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 3807 (Aug 15 2004)
+WoW [Release Assertions Enabled] Build 3810 (Aug 23 2004)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -295,11 +295,8 @@ FreeContextBuffer
 true
 false
 \b3OP\v
-ltuo@
+ltuoP
 cinu
-ltuo@\"}
-ltuo
-ltuo
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -535,7 +532,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 3807)
+World of WarCraft: Assertions Enabled Build (build 3810)
 SendErrorLogs
 Data\\
 World of Warcraft
@@ -1170,8 +1167,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Aug 15 2004
-15:22:24
+Aug 23 2004
+17:45:32
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1462,7 +1459,6 @@ character
 .tga
 .?AUCTextureHash@@
 C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Texture.cpp
-Texture destroyed before loading completed: %s\n
 gxTexCache
 .?AVCGxTexCache@@
 gxTex
@@ -1990,8 +1986,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-3807
-0.9.0
+3810
+0.9.1
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -8560,9 +8556,11 @@ The wtf files are :
 Unable to open wtfDir.txt
 wtfdir.txt
 .?AUCONSOLECOMMAND@@
-==\a=d
-EQ10d
-3S1V8
+==\a=4
+EQ104
+3S1V\b
+UTXDl{
+tcsgX
 ���>
 ?fff?
 HWSoundIdx
@@ -18574,7 +18572,7 @@ C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\Version.cpp
 // SCENE_FILENAME \"%s\"\n
  by %s
 // Exported on %s
-// MDLFile version\tAug 15 2004 15:22:05\n
+// MDLFile version\tAug 23 2004 17:45:13\n
 C:\\build\\buildWoW\\ENGINE\\Source\\MDLFile\\TSet.cpp
 count != 64
 TSet::Found: found unregistered token 0x%x

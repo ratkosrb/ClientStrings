@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.9.0
-// Build: 3807
+// Patch: 0.9.1
+// Build: 3810
 
 Public Enum OPCODES
 {
