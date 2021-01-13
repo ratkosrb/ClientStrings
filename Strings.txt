@@ -148,7 +148,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 5195 (Mar 22 2006 19:13:30)
+WoW [Release] Build 5230 (Apr  5 2006 16:21:37)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -157,7 +157,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 5195 (Mar 22 2006)
+WoW [Release] Build 5230 (Apr  5 2006)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -464,11 +464,8 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo`Xz
+ltuop`z
 cinu
-ltuo`
-ltuo
-ltuo
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -611,7 +608,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5195)
+World of WarCraft (build 5230)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -937,8 +934,8 @@ C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Mar 22 2006
-19:11:28
+Apr  5 2006
+16:19:34
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1116,7 +1113,7 @@ UpdateBlpTextureAsync(): GxTex_Lock loading: %s\n
 .?AVCMipBitsCache@@
 Error loading texure file \"%s\": unsupported image format\n
 _mip%d.tga
-HTEXTURE
+TURE
 TextureAllocImage
 Unique Texture
 Unique Texture No Name
@@ -1248,8 +1245,7 @@ C:\\build\\buildWoW\\WoW\\Source\\ObjectAlloc\\ObjectAlloc.cpp
 %u total object bytes used, %u bytes allocated for heaps\n
     \"%s\" %u blocks, %u objs per block (%u bytes per block): %u objs allocated\n
 %u Heaps in use:\n
-C:\\build\\buildWoW\\WoW\\Source\\ObjectA
-lloc\\IObjectAlloc.h
+C:\\build\\buildWoW\\WoW\\Source\\ObjectAlloc\\IObjectAlloc.h
 CGCorpse_C
 CGDynamicObject_C
 CGGameObject_C
@@ -1455,8 +1451,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5195
-1.10.0
+5230
+1.10.1
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -2043,7 +2039,7 @@ DeclineGuild
 AcceptGuild
 DeclineGroup
 AcceptGroup
-CancelTr
+CancelTrade
 BeginTrade
 ResurrectHasTimer
 ResurrectHasSickness
@@ -3290,7 +3286,6 @@ Invalid spell slot in IsSpellPassive
 Usage: GetShapeshiftFormInfo(index)
 Usage: CastShapeshiftForm(index)
 Usage: GetShapeshiftFormCooldown(index)
-CastSpellByName(): Couldn't find spell named %s\n
 Usage: CastSpellByName(name [, onSelf])
 ResetTutorials
 ClearTutorials
@@ -5625,7 +5620,7 @@ questcache.wdb
 pagetextcache.wdb
 petnamecache.wdb
 petitioncache.wdb
-itemtextcaxhe.wdb
+itemtextcache.wdb
 wowcache.wdb
 .?AUDBCACHEHASH@?$DBCache@VCreatureStats_C@@HVHASHKEY_INT@@@@
 .?AUDBCACHECALLBACK@@
@@ -6519,7 +6514,9 @@ bindings-cache.wtf
 config-cache.wtf
 cache.md5
 SaveTimerHandler
-BackgroundDownloader.exe
+.\\BackgroundDownloader.exe
+Blizzard Downloader
+Disable Background Download
 BackgroundDownloader
 Launching Background Downloader...\n
 unicows.dll
@@ -6529,6 +6526,10 @@ fmod.dll
 WoW.exe
 C:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\ChecksumExecutables.cpp
 %s.partial
+o'6RX\r
+GcS68
+2\x1BpK@
+C:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\CheckExecutableSignature.cpp
 LOGIN_STATE_CONNECTED
 LOGIN_STATE_CHECKSUM
 C:\\build\\buildWoW\\WoW\\Source\\WowServices\\Login.cpp
@@ -7666,6 +7667,7 @@ bzip2Compress:%d
 0\aw,a
 Qkkbal
 wn>Jj
+C:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 .?AVBigData@@
 .?AUSDIR@@
 incorrect length check
@@ -7757,7 +7759,6 @@ EDI=%08X  EBP=%08X  ESP=%08X  EIP=%08X  FLG=%08X
 EAX=%08X  EBX=%08X  ECX=%08X  EDX=%08X  ESI=%08X
 x86 Registers
 psapi.dll
-C:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOAlignUnit.cpp
 .?AUIOCacheEntry@IOAlignUnit@@
 C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOARC4Unit.cpp
@@ -8895,6 +8896,7 @@ date
 xpcall
 pcall
 loadstring
+collectgarbage
 gcinfo
 assert
 rawset
@@ -9446,6 +9448,7 @@ Usage: %s:SetHighlightFontObject(font or \"font\" or nil)
 %s:SetHighlightFontObject(): Couldn't find 'this' in font object
 Usage: %s:SetFont(\"font\", fontHeight [, flags])
 Usage: %s:SetText(\"text\")
+Usage: %s:%s(texture or \"texture\" or nil)
 %s:%s(): Wrong object type, expected texture
 %s:%s(): Couldn't find 'this' in texture
 %s:SetHighlightTexture(): Wrong object type, expected texture
@@ -9564,6 +9567,10 @@ Usage: %s:SetValue(value)
 Usage: %s:SetStatusBarTexture(\"file\" [, \"layer\"])
 SetValueStep
 GetValueStep
+SetThumbTexture
+Usage: %s:SetThumbTexture(texture or \"texture\" or nil)
+%s:SetThumbTexture(): Wrong object type, expected texture
+%s:SetThumbTexture(): Couldn't find 'this' in texture
 Usage: %s:SetValueStep(value)
 UpdateScrollChildRect
 GetVerticalScrollRange
@@ -9646,13 +9653,19 @@ SetDisabledCheckedTexture
 SetCheckedTexture
 GetChecked
 SetChecked
-Usage: %s:SetCheckedTexture(\"texture\")
-Usage: %s:SetDisabledCheckedTexture(\"texture\")
+Usage: %s:SetCheckedTexture(texture or \"texture\" or nil)
+%s:SetCheckedTexture(): Wrong object type, expected texture
+%s:SetCheckedTexture(): Couldn't find 'this' in texture
+Usage: %s:SetDisabledCheckedTexture(texture or \"texture\" or nil)
+%s:SetDisabledCheckedTexture(): Wrong object type, expected texture
+%s:SetDisabledCheckedTexture(): Couldn't find 'this' in texture
 SetNonSpaceWrap
 GetStringWidth
 SetTextHeight
 SetAlphaGradient
 SetDesaturated
+GetTexCoordModifiesRect
+SetTexCoordModifiesRect
 SetTexCoord
 SetTexture
 GetTexture
