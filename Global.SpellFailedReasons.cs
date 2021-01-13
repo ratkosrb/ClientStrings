@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 1.2.4
-// Build: 4222
+// Patch: 1.3.0
+// Build: 4281
 
 Public Enum SpellFailedReason
 {
@@ -125,6 +125,8 @@ Public Enum SpellFailedReason
     SPELL_FAILED_NOT_WHILE_FATIGUED = 0x76,                         // 0x076
     SPELL_FAILED_TARGET_NOT_IN_INSTANCE = 0x77,                     // 0x077
     SPELL_FAILED_NOT_WHILE_TRADING = 0x78,                          // 0x078
-    SPELL_FAILED_UNKNOWN = 0x79,                                    // 0x079
+    SPELL_FAILED_TARGET_NOT_IN_RAID = 0x79,                         // 0x079
+    SPELL_FAILED_DISENCHANT_WHILE_LOOTING = 0x7A,                   // 0x07A
+    SPELL_FAILED_UNKNOWN = 0x7B,                                    // 0x07B
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }

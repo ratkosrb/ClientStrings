@@ -1,7 +1,7 @@
+CyrixInsteadCentaurHalls
 0\aw,a
 Qkkbal
 wn>Jj
-CyrixInsteadCentaurHalls
 WUAMOS
 true
 false
@@ -146,7 +146,8 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 4222 (Feb 15 2005 18:46:04)
+DXT1DXT3DXT5<
+WoW [Release Assertions Enabled] Build 4281 (Mar 16 2005 15:46:36)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -155,7 +156,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 4222 (Feb 15 2005)
+WoW [Release Assertions Enabled] Build 4281 (Mar 16 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -170,10 +171,6 @@ e\"d\" #!#
 cd>>\"\"
 ||rsik_`UVJK@A77//''!!\x1B
 \r\r\v\v\t\t\b\b\a\a
- deflate 1.2.2 Copyright 1995-2004 Jean-loup Gailly
-1.2.2
-1.0.2, 30-Dec-2001
- inflate 1.2.2 Copyright 1995-2004 Mark Adler
 0\aw,a
 Qkkbal
 wn>Jj
@@ -208,6 +205,10 @@ OZw3(?
 V_:X1:
 NJ2\"v
 O*9y]
+ deflate 1.2.2 Copyright 1995-2004 Jean-loup Gailly
+1.2.2
+1.0.2, 30-Dec-2001
+ inflate 1.2.2 Copyright 1995-2004 Mark Adler
 \a\a\a\a\b\b\b\b\b\b\b\b\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v
 \r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B\x1B
@@ -460,7 +461,7 @@ SP\vPZ
 \b3OP\v
 ltuo0
 cinu
-ltuo0;{
+ltuo0
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -569,6 +570,7 @@ uptodate
 1024x768
 800x600
 640x480
+Data\\speech2.MPQ
 Data\\dbc.MPQ
 Data\\speech.MPQ
 Data\\fonts.MPQ
@@ -601,9 +603,11 @@ No results
 Level: %s
 Total: %s
 Time played:
-%dd %dh %dm %ds
 World transfer pending...
 World transfer aborted...
+TRANSFER_ABORT_ERROR
+TRANSFER_ABORT_MAX_PLAYERS
+TRANSFER_ABORT_NOT_FOUND
 %04d.txt
 exten
 ClientMovement.txt
@@ -618,7 +622,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 4222)
+World of WarCraft: Assertions Enabled Build (build 4281)
 SendErrorLogs
 Data\\
 World of Warcraft
@@ -637,6 +641,8 @@ Region
 Wow.ini
 Config.wtf
 run autoexec.wtf
+M2BatchDoodads
+combine doodads to reduce batch count
 M2UsePixelShaders
 light models using pixel shaders
 M2UseShaders
@@ -653,6 +659,11 @@ Logs\\
 movie
 profanityFilter
 Toggle profanity filter
+scriptMemory
+Memory used by the scripting system (in Kb)
+32768
+readEULA
+Status of the EULA
 readTOS
 Status of the TOS
 realmAddress
@@ -728,7 +739,6 @@ culling
 DepthSet
 DepthTest
 light
-.PAD
 C:\\build\\buildWoW\\WoW\\Source\\WowServices/PatchFiles.h
 !\"Failed to open archive\"
 \"%s\", \"%s\"
@@ -751,49 +761,18 @@ Local Zone:
 %s %s
 WowErrorAE.exe
 InstallPath
+.PAD
 togglecloak
 togglehelm
-lootpass
-lootroll
-raidassistant
-raidconvert
-raidswapsubgroup
-raidsubgroup
-stableswap
-stablerevive
-buystableslot
-unstablepet
-stablepet
-stablelist
-setammo
-lootMethod
-played
 showplayer
-worldport
 setrawpos
+worldport
 port
-tloc
-showbounds
-dfacing
-facing
-rawdloc
-dloc
-player hidden
-player visible
-%g, %g, %g
-C:\\build\\buildWoW\\WoW\\Source\\ClientCommands.cpp
-%016I64X: Local Pos: %g, %g, %g, facing: %g distance: %g
-Error, no unit targeted!
-pos + bytes <= m_base + m_alloc
-..\\..\\engine\\source\\Tempest/cmath.h
-\"%s\", %s = %f
-x >= .0f
-%g degrees
 Coordinates out of range\n
 Bad world number: %i\n
 Usage: worldport <continentID> [x y z] [facing]
-Valid lootMethods are freeforall, roundrobin, and master
-reclaim
+player hidden
+player visible
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
 .?AUDYNAMICELEMENTVERT@@
@@ -806,10 +785,13 @@ verts > 16
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
 .?AVC3Vector@NTempest@@
+..\\..\\engine\\source\\Tempest/cmath.h
+\"%s\", %s = %f
 r >= .0f
 .?AVtype_info@@
-..\\Base/CDataStore.h
+C:\\build\\buildWoW\\engine\\Source\\Base\\CDataStore.h
 CDataStore::AssertFetchWrite(%u, %u) failed
+pos + bytes <= m_base + m_alloc
 pos + sizeof(val) <= m_size
 C:\\build\\buildWoW\\engine\\Source\\Base\\CDataStore.cpp
 pval
@@ -834,15 +816,9 @@ datadir
 .?AUSTATUSENTRY@CStatus@@
 format
 C:\\build\\buildWoW\\engine\\Source\\Base\\Status.cpp
-..\\Base/Status.h
+C:\\build\\buildWoW\\engine\\Source\\Base\\Status.h
 buffer
-.?AW4ACTIVITY@@
-s_activityStack.Count() <= MAX_STACK_DEPTH
-activity != ACTIVITY_OTHER
-C:\\build\\buildWoW\\engine\\Source\\Base\\Activity.cpp
-activity < ACTIVITIES
-activity == *s_activityStack.Top()
-..\\Base/Base.h
+C:\\build\\buildWoW\\engine\\Source\\Base\\Base.h
 m_refcount > 0
 C:\\build\\buildWoW\\engine\\Source\\Base\\Handle.cpp
 .?AV?$TSExplicitList@UPrefetchNode@@$0?CCCCCCCD@@@
@@ -873,7 +849,7 @@ pStringManager
 C:\\build\\buildWoW\\engine\\Source\\Base\\RCString.cpp
 pManager
 SStrLen(source)<(unsigned)MAX_RCSTRING_LENGTH
-..\\Base/RefCount.h
+C:\\build\\buildWoW\\engine\\Source\\Base\\RefCount.h
 m_ptr
 len<(unsigned short)-1
 .?AVCStringRep@@
@@ -932,6 +908,7 @@ pReg
 extrabytes == 0
 pCallbackReg
 pDispatchReg
+..\\Base/RefCount.h
 .?AV?$TSExplicitList@UEventReg@@$0?CCCCCCCD@@@
 timer->guidHandler
 id < m_allocArray.Count()
@@ -1018,6 +995,32 @@ C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\Input.cpp
 rect
 !(windowproc && s_windowProc)
 s_mouseMode
+Linux
+MacOSX
+MacOS9
+WinNT_Other
+Win9X_Other
+Win2003
+WinXP
+Win2000
+WinNT4
+WinME
+Win98SE
+Win98
+Win95OSR2
+Win95
+Unknown
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OSSystem.cpp
+retVal != OsType_Unknown
+%sTempHTMLFile%x.html
+file://
+open
+SStrLen(url) < (sizeof(fixedURL) / sizeof(fixedURL[0]))
+SetSecurityInfo
+AddAccessDeniedAce
+InitializeAcl
+AllocateAndInitializeSid
+advapi32.dll
 C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\Tls.cpp
 tlsIndex!=(DWORD)-1
 index<(64-1)
@@ -1033,8 +1036,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Feb 15 2005
-18:44:05
+Mar 16 2005
+15:44:14
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1123,27 +1126,6 @@ conn
 !extrabytes
 .?AV?$TSExplicitList@UNETSELSOCKPTR@OsNet@@$0?CCCCCCCD@@@
 .?AUNETCONNECT@OsNet@@
-Linux
-MacOSX
-MacOS9
-WinNT_Other
-Win9X_Other
-Win2003
-WinXP
-Win2000
-WinNT4
-WinME
-Win98SE
-Win98
-Win95OSR2
-Win95
-Unknown
-C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OSSystem.cpp
-retVal != OsType_Unknown
-%sTempHTMLFile%x.html
-file://
-open
-SStrLen(url) < (sizeof(fixedURL) / sizeof(fixedURL[0]))
 SCROLLBAR
 ToolbarWindow32
 SysListView32
@@ -1270,24 +1252,7 @@ poll
 Event Poll
 evnt
 Events
-calls per frame
-percentage CPU
-ms per frame
 C:\\build\\buildWoW\\ENGINE\\Source\\Scrn\\PERF.CPP
-s_perfInfo[i].perfId == i
-theFont
-currLine == (sizeof(line) / sizeof(line[0]))
-%4.1f totl @%4.0f,
-%4.1f %s @%4.0f,
-%4.1f |cffff0000%s @%4.0f|r,
-sound CPU %d%%
-tex:%3u, %4.2fMB   ren:%3u, %3.3fMB   upd:%3u, %2.4fMB
-%6u VB, %6u IB, %6u AGP, %6u BUS
-%2u batches, %5u verts, %5u prims, %s
-%3u FPS, %5.1f/%5.1fMB mem,  Displaying: %s
-OpenGL
-Direct3D
-<unknown 3D API>
 remain == 4
 len2 > 0
 Exiting perf-server thread
@@ -1378,7 +1343,7 @@ UpdateBlpTextureAsync(): GxTex_Lock loading: %s\n
 texture->mipBits
 texture
 format == GxTex_Argb8888
-systemCaps.m_maxTextureSize > 0
+systemCaps.m_texMaxSize[GxTex_2d] > 0
 g_textureMipBits
 s_asyncPending >= 0
 .?AVCMipBitsCache@@
@@ -1448,6 +1413,7 @@ C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\crandom.cpp
 password != 0
 buf != 0
 ..\\Tempest/cmath.h
+x >= .0f
 z >= -_1 && z <= _1
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\crandom.h
 sides > 0
@@ -1461,6 +1427,7 @@ s > (real(1.192092896e-07F))
 nPoints <= count
 CMath::fnotequal_((pts[i+1] - pts[i]).SquaredMag(), 0.0f)
 count > 3
+count
 s > (lreal(2.2204460492503131e-016))
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmath.cpp
 n >= 4
@@ -1476,6 +1443,7 @@ MasterVolume
 (uint)rec->m_TerrainSoundID < numTerrains
 C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterface.cpp
 numTerrains < sizeof(uint)*8
+SoundReverb
 EmoteSounds
 EnableMusic
 Enables music
@@ -1758,19 +1726,26 @@ LOGIN_STATE_CHECKSUM
 LOGIN_STATE_PATCH_REQUIRED
 CONNECTION_HELP
 GAME_SERVER_LOGIN
+CHAR_RENAME_IN_PROGRESS
+CHAR_RENAME_FAILED
+C:\\build\\buildWoW\\WoW\\Source\\Glue\\CGlueMgr.cpp
+result != RESPONSE_SUCCESS
+CHAR_RENAME_DESCRIPTION
 CHAR_LIST_RETRIEVING
 REALM_LIST_IN_PROGRESS
 op == COP_CREATE_CHARACTER
 op == COP_GET_REALMS
 op == COP_GET_CHARACTERS
-C:\\build\\buildWoW\\WoW\\Source\\Glue\\CGlueMgr.cpp
 op == COP_AUTHENTICATE || op == COP_WAIT_QUEUE
 OKAY_WITH_URL
 QUEUE_TIME_LEFT_UNKNOWN
+QUEUE_NAME_TIME_LEFT_UNKNOWN
 CHANGE_REALM
 %s\n%s
 QUEUE_TIME_LEFT_SECONDS
+QUEUE_NAME_TIME_LEFT_SECONDS
 QUEUE_TIME_LEFT
+QUEUE_NAME_TIME_LEFT
 CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
@@ -1781,6 +1756,8 @@ SetMovieSubtitles
 HideCursor
 ShowCursor
 GetCursorPosition
+SetScriptMemory
+GetScriptMemory
 DeleteAddOn
 DeleteInterface
 SetAddonVersionCheck
@@ -1807,6 +1784,9 @@ DisconnectFromServer
 GetServerName
 StatusDialogClick
 DefaultServerLogin
+AcceptEULA
+EULAAccepted
+ShowEULANotice
 AcceptTOS
 TOSAccepted
 ShowTOSNotice
@@ -1824,6 +1804,7 @@ INTERFACE_VERSION
 DISABLED
 MISSING
 LOADABLE
+FORCE_RENAME_CHARACTER
 FRAMES_LOADED
 SHOW_SERVER_ALERT
 SUGGEST_REALM_WRONG_CATEGORY
@@ -1846,8 +1827,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4222
-1.2.4
+4281
+1.3.0
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -1864,8 +1845,10 @@ Usage: GetAddOnDependencies(index)
 Usage: EnableAddOn(index)
 Usage: DisableAddOn(index)
 Usage: DeleteAddOn(index)
+Usage: SetScriptMemory(MB)
 ..\\..\\..\\engine\\source\\Frame/CSimpleTop.h
 s_instance
+RealmListDialogCancelled
 GetSelectedCategory
 SortRealms
 SetPreferredInfo
@@ -1928,6 +1911,7 @@ Usage: SetCharacterCreateFacing(degrees)
 SetCharacterSelectFacing
 GetCharacterSelectFacing
 UpdateSelectionCustomizationScene
+RenameCharacter
 DeleteCharacter
 SelectCharacter
 GetCharacterInfo
@@ -1944,6 +1928,8 @@ Usage: SetCharSelectBackground(\"filename\")
 Usage: GetCharacterInfo(index)
 Usage: SelectCharacter(index)
 Usage: DeleteCharacter(index)
+CHAR_CREATE_NAME_IN_USE
+Usage: RenameCharacter(index, name)
 Usage: SetCharacterSelectFacing(degrees)
 wow-patch.mpq
 Patch
@@ -2018,10 +2004,11 @@ cachePtr
 .?AV?$TSExplicitList@UCACHEENTRY@@$0?CCCCCCCD@@@
 __fall
 C:\\build\\buildWoW\\WoW\\Source\\Object\\MovementShared.cpp
+.?AUCMoveSpline@@
 int(status->timeFallen) >= 0
 int(update.timeFallen) >= 0
 m_spline
-m_spline->time > 0
+m_spline->duration > 0
 count >= 4
 Mirror handler attempted to reference data not marked as mirrored in corpsemirror.h (index %u)
 C:\\build\\buildWoW\\WoW\\Source\\Object\\Corpse.cpp
@@ -2114,7 +2101,6 @@ PLAYER_TRACK_RESOURCES
 PLAYER_TRACK_CREATURES
 PLAYER_CHARACTER_POINTS2
 PLAYER_CHARACTER_POINTS1
-PLAYER_QUEST_LOG_1_1
 PLAYER_SKILL_INFO_1_1
 PLAYER_NEXT_LEVEL_XP
 PLAYER_XP
@@ -2165,6 +2151,46 @@ PLAYER_VISIBLE_ITEM_2_PROPERTIES
 PLAYER_VISIBLE_ITEM_2_0
 PLAYER_VISIBLE_ITEM_1_PROPERTIES
 PLAYER_VISIBLE_ITEM_1_0
+PLAYER_QUEST_LOG_20_2
+PLAYER_QUEST_LOG_20_1
+PLAYER_QUEST_LOG_19_2
+PLAYER_QUEST_LOG_19_1
+PLAYER_QUEST_LOG_18_2
+PLAYER_QUEST_LOG_18_1
+PLAYER_QUEST_LOG_17_2
+PLAYER_QUEST_LOG_17_1
+PLAYER_QUEST_LOG_16_2
+PLAYER_QUEST_LOG_16_1
+PLAYER_QUEST_LOG_15_2
+PLAYER_QUEST_LOG_15_1
+PLAYER_QUEST_LOG_14_2
+PLAYER_QUEST_LOG_14_1
+PLAYER_QUEST_LOG_13_2
+PLAYER_QUEST_LOG_13_1
+PLAYER_QUEST_LOG_12_2
+PLAYER_QUEST_LOG_12_1
+PLAYER_QUEST_LOG_11_2
+PLAYER_QUEST_LOG_11_1
+PLAYER_QUEST_LOG_10_2
+PLAYER_QUEST_LOG_10_1
+PLAYER_QUEST_LOG_9_2
+PLAYER_QUEST_LOG_9_1
+PLAYER_QUEST_LOG_8_2
+PLAYER_QUEST_LOG_8_1
+PLAYER_QUEST_LOG_7_2
+PLAYER_QUEST_LOG_7_1
+PLAYER_QUEST_LOG_6_2
+PLAYER_QUEST_LOG_6_1
+PLAYER_QUEST_LOG_5_2
+PLAYER_QUEST_LOG_5_1
+PLAYER_QUEST_LOG_4_2
+PLAYER_QUEST_LOG_4_1
+PLAYER_QUEST_LOG_3_2
+PLAYER_QUEST_LOG_3_1
+PLAYER_QUEST_LOG_2_2
+PLAYER_QUEST_LOG_2_1
+PLAYER_QUEST_LOG_1_2
+PLAYER_QUEST_LOG_1_1
 PLAYER_GUILD_TIMESTAMP
 PLAYER_DUEL_TEAM
 PLAYER_BYTES_3
@@ -2281,8 +2307,6 @@ blockID < (sizeof(s_objDescriptors) / sizeof(s_objDescriptors[0]))
 %s: Mirror update dump: duration %dms
 Interface\\SpellShadow\\Spell-Shadow-Unacceptable.blp
 Interface\\SpellShadow\\Spell-Shadow-Acceptable.blp
-disabled
-enabled
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\WorldFrame.cpp
 hitTestResult
 Spell_C_CanTargetItems() || Spell_C_WaitingForStringInput() || (hitFilter != HIT_TEST_NOTHING)
@@ -2291,15 +2315,8 @@ pWorldFrame
 s_currentWorldFrame->m_camera
 s_currentWorldFrame
 position
-Shaders\\Pixel\\FFXBlur_2.bls
-Shaders\\Pixel\\FFXGlow_2.bls
-tone
-Shaders\\Pixel\\FFXMidtoneMap.bls
-ffxDeath
-full screen death effect
-ffxGlow
-full screen glow effect
-full screen effects
+.?AVEffectDeath@@
+.?AVEffectGlow@@
 s_spellShadowTexture[i] == 0
 PlayerFadeOutAlpha
 min fade out alpha for player mouseover
@@ -2362,9 +2379,6 @@ RunScript
 StopCinematic
 SitOrStand
 GetNetStats
-GetCurrentPosition
-GetBuildVersion
-GetDate
 SplitMoney
 ConfirmSummon
 GetSummonConfirmAreaName
@@ -2392,9 +2406,6 @@ ShowInspectCursor
 PickupPlayerMoney
 DropCursorMoney
 GetCursorMoney
-ReportNote
-ReportSuggestion
-ReportBug
 ForceQuit
 ForceLogout
 CancelLogout
@@ -2404,6 +2415,7 @@ DeclineGroup
 AcceptGroup
 CancelTrade
 BeginTrade
+ResurrectHasTimer
 ResurrectHasSickness
 DeclineResurrect
 AcceptResurrect
@@ -2523,7 +2535,12 @@ INVTYPE_SHOULDER
 INVTYPE_NECK
 INVTYPE_HEAD
 .?AV?$TSExplicitList@USAVEDVARIABLE@@$0?CCCCCCCD@@@
+.?AV?$TSExplicitList@UWORLDSTATE@@$0?CCCCCCCD@@@
 .?AUNearestEnemyData@@
+ERR_EQUIP_TRADE_ITEM
+ERR_GUILDEMBLEM_SAME
+ERR_MEETING_STONE_NO_RAID_GROUP
+ERR_MEETING_STONE_MUST_BE_LEADER
 ERR_MEETING_STONE_INVALID_LEVEL
 ERR_MEETING_STONE_NOT_LEADER
 ERR_MEETING_STONE_GROUP_FULL
@@ -2557,6 +2574,8 @@ ERR_SPELL_FAILED_ALREADY_AT_FULL_HEALTH
 ERR_PVP_KILL_DISHONORABLE
 ERR_PVP_KILL_HONORABLE
 ERR_RAID_GROUP_ONLY
+ERR_QUEST_PUSH_ALREADY_DONE_S
+ERR_QUEST_PUSH_ONQUEST_S
 ERR_QUEST_PUSH_LOG_FULL_S
 ERR_QUEST_PUSH_BUSY_S
 ERR_QUEST_PUSH_TOO_FAR_S
@@ -2610,6 +2629,7 @@ ERR_TICKET_UPDATE_ERROR
 ERR_TICKET_CREATE_ERROR
 ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
+ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
 ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
@@ -2627,18 +2647,18 @@ ERR_PETITION_SIGNED
 igPlayerInviteAccept
 ERR_PETITION_OFFERED_S
 ERR_SPELL_FAILED_NOTUNSHEATHED
-ERR_FISH_ESCAPED
 ERR_FISH_NOT_HOOKED
 ERR_IGNORING_YOU_S
 ERR_INVALID_ITEM_TARGET
+ERR_FISH_ESCAPED
 ERR_ZONE_EXPLORED_XP
 ERR_ZONE_EXPLORED
 ERR_NOEMOTEWHILERUNNING
+ERR_DEATHBIND_SUCCESS_S
 ERR_DEATHBINDALREADYBOUND
 ERR_DUEL_CANCELLED
 ERR_DUEL_REQUESTED
 ERR_TOOBUSYTOFOLLOW
-ERR_DEATHBIND_SUCCESS_S
 ERR_NOAMMO_S
 ERR_COMMAND_NEEDS_TARGET
 ERR_SPELL_OUT_OF_RANGE
@@ -2646,7 +2666,6 @@ ERR_EMBLEMERROR_NOTABARDGEOSET
 ERR_GUILDEMBLEM_INVALIDVENDOR
 ERR_GUILDEMBLEM_NOTENOUGHMONEY
 ERR_GUILDEMBLEM_NOTGUILDMASTER
-ERR_GUILDEMBLEM_COLORSPRESENT
 ERR_GUILDEMBLEM_NOGUILD
 ERR_GUILDEMBLEM_INVALID_TABARD_COLORS
 ERR_GUILDEMBLEM_SUCCESS
@@ -2684,7 +2703,7 @@ ERR_FRIEND_WRONG_FACTION
 ERR_FRIEND_NOT_FOUND
 ERR_FRIEND_OFFLINE_S
 FRIENDJOINGAME
-ERR_FRIEND_ONLINE_S
+ERR_FRIEND_ONLINE_SS
 ERR_FRIEND_ADDED_S
 ERR_FRIEND_LIST_FULL
 ERR_FRIEND_DB_ERROR
@@ -2777,16 +2796,6 @@ ERR_TAXINOTENOUGHMONEY
 ERR_TAXIUNSPECIFIEDSERVERERROR
 ERR_TAXINOSUCHPATH
 ERR_TAXISAMENODE
-ERR_THIRST_SATIATED
-ERR_THIRST_HIGH
-ERR_THIRST_MED
-ERR_THIRST_LOW
-ERR_THIRST_VERY_LOW
-ERR_HUNGER_SATIATED
-ERR_HUNGER_HIGH
-ERR_HUNGER_MED
-ERR_HUNGER_LOW
-ERR_HUNGER_VERY_LOW
 ERR_ATTACK_DEAD
 ERR_ATTACK_CHARMED
 ERR_ATTACK_CONFUSED
@@ -2821,10 +2830,10 @@ ERR_QUEST_COMPLETE_S
 QUESTADDED
 ERR_QUEST_ACCEPTED_S
 ERR_LOOT_WHILE_INVULNERABLE
-igQuestFailed
 ERR_LOOT_NO_UI
 ERR_LOOT_STUNNED
 ERR_LOOT_NOTSTANDING
+igQuestFailed
 ERR_LOOT_BAD_FACING
 ERR_LOOT_DIDNT_KILL
 ERR_LOOT_TOO_FAR
@@ -2834,6 +2843,8 @@ ERR_CLIENT_LOCKED_OUT
 ERR_PLAYER_DEAD
 ERR_OUT_OF_RANGE
 ERR_NO_GUILD_CHARTER
+ERR_GUILD_NAME_NAME_CONSECUTIVE_SPACES
+ERR_GUILD_NAME_INVALID_SPACE
 ERR_GUILD_NAME_RESERVED
 ERR_GUILD_NAME_PROFANE
 ERR_GUILD_NAME_MIXED_LANGUAGES
@@ -2887,9 +2898,9 @@ ERR_NOT_IN_GROUP
 ERR_BAD_PLAYER_NAME_S
 ERR_UNINVITE_YOU
 ERR_JOINED_GROUP_S
-LEVELUP
 igPlayerInviteDecline
 ERR_DECLINE_GROUP_S
+LEVELUP
 ERR_GROUP_DISBANDED
 ERR_LEFT_GROUP_YOU
 ERR_LEFT_GROUP_S
@@ -2906,6 +2917,7 @@ ERR_LEARN_SPELL_S
 ERR_SKILL_UP_SI
 ERR_SKILL_GAINED_S
 ERR_PROFICIENCY_GAINED_S
+ERR_PET_SPELL_ALREADY_KNOWN_S
 ERR_SPELL_ALREADY_KNOWN_S
 ERR_ABILITY_COOLDOWN
 ERR_SPELL_COOLDOWN
@@ -2979,6 +2991,7 @@ Attempted to register too many CVars
 Usage: RegisterCVar(\"cvar\" [, default])
 Couldn't find CVar named '%s'
 Usage: GetCVar(\"cvar\")
+\"%s\" is a protected cvar
 Usage: SetCVar(\"cvar\", value [, \"scriptCvar\")
 Usage: SetCVarDefault(\"cvar\")
 smallCull
@@ -3028,12 +3041,6 @@ Usage: UninviteFromRaid(index)
 Usage: UninviteByName(\"name\")
 Usage: PromoteToPartyLeader(\"unit\")
 Usage: PromoteByName(\"name\")
-BUG_SUBMIT_FAILED
-BUG_SUBMITTED
-SUGGEST_SUBMIT_FAILED
-SUGGEST_SUBMITTED
-NOTE_SUBMIT_FAILED
-NOTE_SUBMITTED
 Usage: PickupPlayerMoney(amount)
 Usage: GuildUninviteByName(\"name\")
 Usage: GuildPromoteByName(\"name\")
@@ -3042,7 +3049,6 @@ Usage: GuildSetLeaderByName(\"name\")
 target
 Usage: GuildSetMOTD(\"message\")
 Usage: SplitMoney(\"gold silver copper\")
-%.2f, %.2f, %.2f
 Usage: CheckInteractDistance(\"unit\", distIndex)
 .?AVC2iVector@NTempest@@
 gxRestart
@@ -3148,6 +3154,8 @@ WorldFrame
 .?AVCGTooltip@@
 %s%s%d
 .?AUSAVEDVARIABLE@@
+.?AUWORLDSTATE@@
+RequestRaidInfo
 EnumerateServerChannels
 SetChatWindowShown
 SetChatWindowDocked
@@ -3342,10 +3350,14 @@ YOU_CHANGED
 LAUGH_WORD%d
 ZONE_UNDER_ATTACK
 [%d]: %s
+RAID_INSTANCE_INFO_FMT
+RAID_INSTANCE_INFO_HDR
+NO_RAID_INSTANCES_SAVED
 SET_VOICE
 UNSET_VOICE
 SET_MODERATOR
 UNSET_MODERATOR
+%dd %dh %dm %ds
 Usage: SendChatMessage(text [,type] [,language] [,targetPlayer])
 Invalid escape code in chat message
 CLEARED_DND
@@ -3434,6 +3446,7 @@ IsPartyLeader
 GetPartyLeaderIndex
 GetPartyMember
 GetNumPartyMembers
+INSTANCE_SAVED
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\PartyFrame.cpp
 ITEM_QUALITY%d_DESC
 Usage: GetPartyMember(1-4)
@@ -3481,6 +3494,7 @@ CloseMail
 .?AUStationeryInfo@@
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\MailInfo.h
 m_pendingStationeryCallbacks
+AUCTION_REMOVED_MAIL_SUBJECT
 AUCTION_EXPIRED_MAIL_SUBJECT
 AUCTION_SOLD_MAIL_SUBJECT
 AUCTION_WON_MAIL_SUBJECT
@@ -3495,6 +3509,7 @@ Usage: GetPackageInfo(index)
 Usage: SelectPackage(index)
 Usage: SendMail(target, subject, body)
 COD_PAYMENT
+GM_EMAIL_NAME
 Usage: GetInboxHeaderInfo(index)
 Usage: GetInboxText(index)
 Usage: GetInboxItem(index)
@@ -3504,6 +3519,19 @@ Usage: TakeInboxTextItem(index)
 Usage: ReturnInboxItem(index)
 Usage: DeleteInboxItem(index)
 Usage: InboxItemCanDelete(index)
+NAMEPLATE_FONT
+.?AVCSimpleFontString@@
+Interface\\Tooltips\\ChatBubble-Tail
+.?AVCSimpleTexture@@
+..\\..\\..\\engine\\source\\Frame/CSimpleRender.h
+bytes <= s_allocator.BytesPerData()
+Interface\\Tooltips\\ChatBubble-Backdrop
+Interface\\Tooltips\\ChatBubble-Background
+.?AVCBackdropGenerator@@
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\ChatBubbleFrame.cpp
+s_chatBubbles.IsEmpty()
+.?AVCGChatBubbleFrame@@
+unitPtr
 CastSpellByName
 GetShapeshiftFormCooldown
 CastShapeshiftForm
@@ -3523,6 +3551,7 @@ GetSpellTabInfo
 GetNumSpellTabs
 .PAUSpellBookSkillInfo@@
 .?AUSpellBookSkillInfo@@
+%s (%s)
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\SpellBookFrame.cpp
 info->m_effectMiscValue[0] < int(m_languageSpells.Count())
 slot < MAXIMUM_LEARNED_SPELLS
@@ -3637,7 +3666,6 @@ PromoteToAssistant
 ConvertToRaid
 SwapRaidSubgroup
 SetRaidSubgroup
-SortRaidRoster
 IsRaidOfficer
 IsRaidLeader
 GetRaidRosterSelection
@@ -3650,10 +3678,6 @@ count <= (sizeof(m_members) / sizeof(m_members[0]))
 PLAYER_OFFLINE
 Usage: GetRaidRosterInfo(index)
 Usage: SetRaidRosterSelection(index)
-zone
-class
-level
-Usage: SortRaidRoster(\"type\")
 Usage: SetRaidSubgroup(index, subgroup)
 Usage: SwapRaidSubgroup(index1, index2)
 Usage: PromoteToAssistant(name)
@@ -3727,6 +3751,7 @@ Usage: GetTradePlayerItemInfo(index)
 Usage: GetTradePlayerItemLink(index)
 Usage: PickupTradeMoney(amount)
 Usage: SetTradeMoney(amount)
+ConfirmLootRoll
 RollOnLoot
 GetLootRollTimeLeft
 GetLootRollItemInfo
@@ -3763,6 +3788,7 @@ Usage: GiveMasterLoot(slot, index)
 Usage: GetLootRollItemInfo(id)
 Usage: GetLootRollTimeLeft(id)
 Usage: RollOnLoot(id [,roll])
+Usage: ConfirmLootRoll(id)
 .?AUFrameScriptObject_Variable@@
 GetMeetingStoneStatusText
 CancelMeetingStoneRequest
@@ -3834,6 +3860,7 @@ Usage: GetAuctionInvTypes(classIndex, subClassIndex)
 Usage: SortAuctionItems(\"type\", \"sort\")
 buyout
 duration
+level
 quality
 Usage: SetSelectedAuctionItem(\"type\", index)
 Usage: GetSelectedAuctionItem(\"type\")
@@ -3893,7 +3920,9 @@ Usage: GuildRosterSetPublicNote(index, note)
 Usage: GuildRosterSetOfficerNote(index, note)
 Usage: SetGuildRosterSelection(index)
 online
+zone
 rank
+class
 Usgae: SortGuildRoster(\"type\")
 Usage: GuildControlGetRankName(index)
 Usage: GuildControlSetRank(rank)
@@ -4003,7 +4032,6 @@ Usage: GetTrainerServiceCost(index)
 Usage: GetTrainerServiceLevelReq(index)
 Usage: GetTrainerServiceSkillReq(index)
 Usage: GetTrainerServiceAbilityReq(index)
-%s (%s)
 Usage: GetTrainerServiceStepReq(index)
 Usage: GetTrainerServiceDescription(index)
 Usage: IsTrainerServiceSkillStep(index)
@@ -4051,6 +4079,11 @@ Usage: TaxiNodeTaxiNodeLocation(slot)
 Usage: TaxiNodeCost(slot)
 Usage: TakeTaxiNode(slot)
 Usage: TaxiNodeGetType(slot)
+GetQuestIndexForWatch
+RemoveQuestWatch
+AddQuestWatch
+IsQuestWatched
+GetNumQuestWatches
 GetQuestGreenRange
 ExpandQuestHeader
 CollapseQuestHeader
@@ -4071,6 +4104,7 @@ GetQuestLogTimeLeft
 GetQuestLogLeaderBoard
 GetNumQuestLeaderBoards
 GetQuestLogQuestText
+IsUnitOnQuest
 AbandonQuest
 GetAbandonQuestName
 SetAbandonQuest
@@ -4088,6 +4122,7 @@ reward
 n < QUESTLOG_FLAGS_NUM_COUNTS
 Usage: GetQuestLogTitle(index)
 Usage: SelectQuestLogEntry(index)
+Usage: IsUnitOnQuest(index, \"unit\")
 reputation
 QUEST_FACTION_NEEDED
 FACTION_STANDING_LABEL%d
@@ -4103,6 +4138,8 @@ Usage: GetQuestLogItemLink(\"type\", index)
 Usage: GetQuestIndexForTimer(index)
 Usage: CollapseQuestHeader(index)
 Usage: ExpandQuestHeader(index)
+Usage: IsQuestWatched(index)
+Usage: GetQuestIndexForWatch(index)
 CloseGossip
 SelectGossipActiveQuest
 SelectGossipAvailableQuest
@@ -4156,6 +4193,8 @@ Usage: GetPlayerBuff(index [, \"filter\"])
 Usage: GetPlayerBuffTexture(buffIndex)
 Usage: GetPlayerBuffTimeLeft(buffIndex)
 Usage: CancelPlayerBuff(buffIndex)
+SetActionBarToggles
+GetActionBarToggles
 ChangeActionBarPage
 GetBonusBarOffset
 IsActionInRange
@@ -4180,7 +4219,7 @@ Usage: GetActionCount(slot)
 Usage: GetActionCooldown(slot)
 Usage: GetActionText(slot)
 Usage: HasAction(slot)
-Usage: UseAction(slot, [checkCursor])
+Usage: UseAction(slot, [, checkCursor] [, onSelf])
 Usage: PickupAction(slot)
 Usage: PlaceAction(slot)
 Usage: IsAttackAction(slot)
@@ -4233,6 +4272,7 @@ Usage: GetNumTalents(tabIndex)
 Usage: GetTalentInfo(tabIndex, talentIndex)
 Usage: GetTalentPrereqs(tabIndex, talentIndex)
 Usage: LearnTalent(tabIndex, talentIndex)
+RenamePetition
 OfferPetition
 SignPetition
 CanSignPetition
@@ -4244,6 +4284,7 @@ ClosePetition
 charter
 Usage: GetPetitionNameInfo(index)
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\PetitionInfo.cpp
+Usage(RenamePetition(\"name\")
 GetTabardInfo
 TurnInGuildCharter
 BuyGuildCharter
@@ -4318,6 +4359,7 @@ Usage: GetContainerItemInfo(index, slot)
 Usage: GetContainerItemLink(index, slot)
 Usage: GetContainerItemCooldown(index, slot)
 Usage: PickupContainerItem(index, slot)
+ITEM_REPAIR
 Usage: SplitContainerItem(index, slot, amount)
 Usage: UseContainerItem(index, slot)
 Usage: ShowContainerSellCursor(index, slot)
@@ -4557,6 +4599,7 @@ Invalid inventory slot in SetInventoryPortaitTexture
 Usage: SetInventoryPortaitTexture(texure, unit, slot)
 Usage: GetGuildInfo(\"unit\")
 Usage: GetInventoryAlertStatus(index)
+CanSaveTabardNow
 GetLowerEmblemTexture
 GetUpperEmblemTexture
 GetLowerEmblemFileName
@@ -4564,7 +4607,6 @@ GetUpperEmblemFileName
 GetLowerBackgroundFileName
 GetUpperBackgroundFileName
 CycleVariation
-CanSave
 Save
 InitializeTabardColors
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\TabardModelFrame.cpp
@@ -4786,11 +4828,11 @@ SPELL_EFFECT_INSTAKILL
 |cffffffff
 |cff9d9d9d
 .PAVCSimpleFontString@@
-C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Tooltip.cpp
-tooltip
 %sStatusBar
 %sTextRight%d
 %sTextLeft%d
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Tooltip.cpp
+tooltip
 NOT_TAMEABLE
 TAMEABLE
 PET_DIET_TEMPLATE
@@ -4804,7 +4846,6 @@ srec
 UNIT_SKINNABLE
 statusbar
 RESURRECTABLE
-PVP_DISABLED
 PVP_ENABLED
 TOOLTIP_UNIT_LEVEL
 TOOLTIP_UNIT_LEVEL_TYPE
@@ -4978,7 +5019,6 @@ Invalid craft in SetCraftSpell(index)
 Invalid merchant slot in SetMerchantItem
 Invalid trade slot in SetTradePlayerItem
 Invalid trade slot in SetTradeTargetItem
-Invalid bag slot in SetBagItem
 Usage: SetUnitBuff(\"unit\", index)
 Usage: SetUnitDebuff(\"unit\", index)
 Usage: SetTalent(tabIndex, talentIndex)
@@ -5164,7 +5204,6 @@ Joystick
 enable joystick control
 s_inputControl
 GetResSicknessDuration
-UnitFacing
 UnitCreatureFamily
 UnitCreatureType
 GetParryChance
@@ -5198,6 +5237,7 @@ UnitRace
 GetMoney
 UnitLevel
 UnitSex
+UnitAffectingCombat
 UnitIsConnected
 UnitIsDeadOrGhost
 UnitIsGhost
@@ -5245,6 +5285,7 @@ GetTime
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 Unknown unit name: %s
 mouseover
+raid
 party
 Usage: ConsoleExec(\"console_command\")
 Usage: UnitIsUnit(\"unit\", \"otherUnit\")
@@ -5271,6 +5312,8 @@ Usage: UnitOnTaxi(\"unit\")
 Usage: UnitIsDead(\"unit\")
 Usage: UnitIsGhost(\"unit\")
 Usage: UnitIsDeadOrGhost(\"unit\")
+Usage: UnitIsConnected(\"unit\")
+Usage: UnitAffectingCombat(\"unit\")
 Usage: UnitSex(\"unit\")
 Usage: UnitLevel(\"unit\")
 Usage: UnitRace(\"unit\")
@@ -5296,8 +5339,10 @@ Usage: UnitIsTappedByPlayer(\"unit\")
 Usage: SetPortraitTexture(texture, \"unit\")
 Usage: UnitCreatureType(\"unit\")
 Usage: UnitCreatureFamily(\"unit\")
-Usage: UnitFacing(\"unit\")
 GENERIC
+UNIT_QUEST_LOG_CHANGED
+TABARD_SAVE_PENDING
+PLAYER_SKINNED
 MEETINGSTONE_CHANGED
 BILLING_NAG_DIALOG
 CONFIRM_SUMMON
@@ -5308,6 +5353,7 @@ DISPLAY_SIZE_CHANGED
 LEARNED_SPELL_IN_TAB
 INSTANCE_BOOT_STOP
 INSTANCE_BOOT_START
+CONFIRM_LOOT_ROLL
 CANCEL_LOOT_ROLL
 START_LOOT_ROLL
 UPDATE_MASTER_LOOT_LIST
@@ -5376,6 +5422,7 @@ PET_STABLE_UPDATE
 PET_STABLE_SHOW
 STOP_AUTOREPEAT_SPELL
 START_AUTOREPEAT_SPELL
+MEMORY_RECOVERED
 MEMORY_EXHAUSTED
 VARIABLES_LOADED
 PET_UI_CLOSE
@@ -5648,6 +5695,9 @@ UNIT_ATTACK_SPEED
 UNIT_DAMAGE
 .?AV?$TSExplicitList@UUIADDON@@$0?CCCCCCCD@@@
 Interface\\AddOns\\
+disabled
+enabled
+DefaultState:
 SavedVariables:
 RequiredDep
 OptionalDep
@@ -5656,13 +5706,16 @@ Title
 Interface:
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\AddOns.cpp
 Interface\\AddOns\\%s\\%s.toc
+WTF\\Account\\%s\\AddOns.txt
  \r\n\"
 WTF\\Account\\%s\\DisabledAddOns.txt
 account
 Interface\\AddOns\\%s\\Bindings.xml
 Loading add-on %s
-\\DisabledAddOns.txt
+%s: %s\r\n
+\\AddOns.txt
 Interface\\FrameXML
+Interface\\FrameXML.old
 Interface\\AddOns\\%s
 .?AUUIADDON@@
 UnableItem
@@ -5703,31 +5756,10 @@ Interface\\Cursor\\%s.blp
 height == 64
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Cursor.cpp
 width == 64
-?0n}
+?(n~
 .?AV?$TSExplicitList@UPLAYERPORTRAIT@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UUNITPORTRAIT@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UITEMPORTRAIT@@$0?CCCCCCCD@@@
-PLightDirIntens
-PLightAmbIntens
-PLightDirColor
-PLightAmbColor
-PLightDirPos
-PLightOmni
-PLightEnable
-PLightInfo
-Directional intensity: %.2f, RGB: (%.2f, %.2f, %.2f)
-Ambient intensity: %.2f, RGB: (%.2f, %.2f, %.2f)
-%s: (%.2f, %.2f, %.2f)
-Direction
-Position
-Portrait light %d(%s) is %s
-directional
-omni
-Invalid index
-Invalid syntax
-%d %d
-%d %f %f %f
-%d %f
 .?AUDIRTYFACE@@
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\PortraitButton.cpp
 Portrait1
@@ -5883,7 +5915,6 @@ s_unarmedWeaponSubclass
 .PAVSkillRaceClassInfoRec@@
 .PAVSkillTiersRec@@
 .PAVSoundAmbienceRec@@
-.PAVSoundCharacterMacroLinesRec@@
 .PAVSoundEntriesRec@@
 .PAVSoundProviderPreferencesRec@@
 .PAVSoundSamplePreferencesRec@@
@@ -5944,6 +5975,7 @@ koKR
 enUS
 creaturecache.wdb
 gameobjectcache.wdb
+itemnamecache.wdb
 itemcache.wdb
 npccache.wdb
 namecache.wdb
@@ -5968,6 +6000,9 @@ DBCache::CancelCallback ignored for id %016I64X.
 .?AUDBCACHEHASH@?$DBCache@VGameObjectStats_C@@HVHASHKEY_INT@@@@
 ..\\..\\Object/GameObjectStats.h
 .?AV?$TSExplicitList@UDBCACHEHASH@?$DBCache@VGameObjectStats_C@@HVHASHKEY_INT@@@@$0?CCCCCCCD@@@
+.?AUDBCACHEHASH@?$DBCache@VItemName_C@@HVHASHKEY_INT@@@@
+..\\..\\Object/ItemName.h
+.?AV?$TSExplicitList@UDBCACHEHASH@?$DBCache@VItemName_C@@HVHASHKEY_INT@@@@$0?CCCCCCCD@@@
 .?AUDBCACHEHASH@?$DBCache@VItemStats_C@@HVHASHKEY_INT@@@@
 ..\\..\\Object/ItemStats.h
 .?AV?$TSExplicitList@UDBCACHEHASH@?$DBCache@VItemStats_C@@HVHASHKEY_INT@@@@$0?CCCCCCCD@@@
@@ -6288,8 +6323,6 @@ DBFilesClient\\SkillTiers.dbc
 Error reading SkillTiersRec
 DBFilesClient\\SoundAmbience.dbc
 Error reading SoundAmbienceRec
-DBFilesClient\\SoundCharacterMacroLines.dbc
-Error reading SoundCharacterMacroLinesRec
 DBFilesClient\\SoundEntries.dbc
 Error reading SoundEntriesRec
 DBFilesClient\\SoundProviderPreferences.dbc
@@ -6432,15 +6465,28 @@ width >= Gx_MinTexWidth
 userFunc != 0
 (flags.m_filter == GxTex_Anisotropic) ? GxCaps().m_texFilterAnisotropic : 1
 (flags.m_generateMipMaps) ? (GxCaps().m_generateMipMaps && !(format >= GxTex_Dxt1 && format <= GxTex_Dxt5)) : 1
-(format >= GxTex_Dxt1 && format <= GxTex_Dxt5) ? GxCaps().m_texFmtDxt : 1
 format <= GxTexFormats_Last
 float(width) <= Gx_MaxTexAspect * float(height)
 float(width) >= Gx_MinTexAspect * float(height)
-height <= Gx_MaxTexHeight
-width <= Gx_MaxTexWidth
+height <= GxCaps().m_texMaxSize[GxTex_2d]
+width <= GxCaps().m_texMaxSize[GxTex_2d]
 dataFormat <= GxTexFormats_Last
+(target == GxTex_Rectangle) ? flags.m_filter <= GxTex_Linear : 1
+(target != GxTex_Rectangle) ? (height & (height - 1)) == 0 : 1
+(target != GxTex_Rectangle) ? (width & (width - 1)) == 0 : 1
+height <= GxCaps().m_texMaxSize[target]
+width <= GxCaps().m_texMaxSize[target]
+GxCaps().m_texTarget[target] == 1
 target <= GxTexTargets_Last
 texId != 0
+texId->m_target == GxTex_CubeMap ? plane < GxTexCubeFaces_Last : 1
+texId->m_flags.m_renderTarget
+type < GxQueryTypes_Last
+query
+params != 0
+pname < GxQueryParams_Last
+query != 0
+data != 0
 minZ >= 0.0f && maxZ <= 1.0f
 minZ <= maxZ
 minY < maxY
@@ -6448,9 +6494,6 @@ minX < maxX
 xf <= GxXform_World
 xf < GxXforms_Last
 index < 6
-type == Type_Vector4
-type == Type_Matrix34
-type == Type_Matrix44
 blitFormat < BlitFormats_Last
 texFormat < GxTexFormats_Last
 .?AVCGxDeviceD3d@@
@@ -6459,6 +6502,19 @@ CGxDevice::DeviceAdapterInfer(): RET: %d, DID: %x
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\W32\\CGxOglDeviceW32.cpp
 m_hPbuffer == 0 && m_hPbufferDC == 0
 m_hdc == 0 && m_hglrc == 0
+hwacc
+wglSwapIntervalEXT
+WGL_EXT_swap_control
+wglQueryPbufferARB
+wglDestroyPbufferARB
+wglReleasePbufferDCARB
+wglGetPbufferDCARB
+wglCreatePbufferARB
+WGL_ARB_pbuffer
+wglChoosePixelFormatARB
+wglGetPixelFormatAttribivARB
+WGL_ARB_pixel_format
+wglGetExtensionsStringARB
 BlizzardCursor.cur
 BlizzardIcon.ico
 CGxDeviceOpenGl::DeviceSetFormat():
@@ -6524,6 +6580,7 @@ m_bufLocked[buf->m_pool->m_target] == 0
 m_bufLocked[buf->m_pool->m_target] == buf
 pool->m_bufList.IsEmpty()
 .?AVCGxTex@@
+.?AVCGxQuery@@
 .?AVCGxShaderParam@@
 permutationCount == permutations
 %s:%d
@@ -6536,11 +6593,10 @@ CGxDevice::Log(): %s\n
 \trttFormat: %d, %d
 \ttexFilterAnisotropic: %d, %d
 \tgenerateMipMaps: %d
-\ttexFmtDxt: %d
 \tnumTmus: %d
 Caps:
-\tFormat %d x %d @ %d Fullscreen, %s, %s
-\tFormat: %d x %d Window, %s
+\tFormat %d x %d @ %d Fullscreen, %s, %s, multisample %d
+\tFormat: %d x %d Window, %s, multisample %d
 .?AW4EGxRenderState@@
 .?AVCGxPixelShader@@
 .?AV?$TSExplicitList@VCGxPixelShader@@$0?CCCCCCCD@@@
@@ -6590,19 +6646,19 @@ CGxDeviceD3d::GetD3dError(): E_OUTOFMEMORY
 CGxDeviceD3d::GetD3dError(): E_NOTIMPL
 CGxDeviceD3d::GetD3dError(): E_NOINTERFACE
 CGxDeviceD3d::GetD3dError(): E_FAIL
-wglSwapIntervalEXT
-WGL_EXT_swap_control
-wglQueryPbufferARB
-wglDestroyPbufferARB
-wglReleasePbufferDCARB
-wglGetPbufferDCARB
-wglCreatePbufferARB
-WGL_ARB_pbuffer
-wglChoosePixelFormatARB
-wglGetPixelFormatAttribfvARB
-wglGetPixelFormatAttribivARB
-WGL_ARB_pixel_format
-wglGetExtensionsStringARB
+glGetQueryObjectuivARB
+glGetQueryObjectivARB
+glGetQueryivARB
+glEndQueryARB
+glBeginQueryARB
+glDeleteQueriesARB
+glGenQueriesARB
+GL_ARB_occlusion_query
+GL_NV_texture_rectangle
+GL_EXT_texture_rectangle
+GL_ARB_texture_rectangle
+GL_ARB_multisample
+GL_ARB_texture_cube_map
 glVertexAttribPointerNV
 GetProgramivNV
 glIsProgramNV
@@ -6627,6 +6683,7 @@ glProgramLocalParameter4fvARB
 glBindProgramARB
 glProgramStringARB
 GL_ARB_fragment_program
+GL_ATI_envmap_bumpmap
 GL_ATI_fragment_shader
 GL_NV_texture_shader3
 GL_NV_texture_shader2
@@ -6661,6 +6718,7 @@ glCompressedTexImage2DARB
 GL_ARB_texture_compression
 GL_EXT_texture_lod_bias
 GL_EXT_texture_edge_clamp
+GL_SGIS_texture_edge_clamp
 GL_EXT_bgra
 glClientActiveTextureARB
 glActiveTextureARB
@@ -6683,6 +6741,7 @@ m_primIndexBuf->m_base == 0
 SetPixelFormat failed, color = %d, alpha = %d, depth = %d, fmt = %d\n
 SetupPixelFormat(): pfd does not match requested
 ChoosePixelFormat failed, color = %d, alpha = %d, depth = %d\n
+SetupPixelFormatWGL(): pixelFormat does not match requested
 OPTION ARB_fog_exp2;\n
 OPTION ARB_fog_exp;\n
 OPTION ARB_fog_linear;\n
@@ -6771,6 +6830,8 @@ fileBits
 !\"CBLPFile::Lock2(): unhandled format\"
 width <= 1024
 BLPB
+signup.wowchina.com
+www.wowchina.com
 signup.wow-europe.com
 www.wow-europe.com
 payment.worldofwarcraft.co.kr
@@ -6782,6 +6843,8 @@ www.blizzard.com
 intel
 CHAR_NAME_SUCCESS
 CHAR_NAME_FAILURE
+CHAR_NAME_CONSECUTIVE_SPACES
+CHAR_NAME_INVALID_SPACE
 CHAR_NAME_THREE_CONSECUTIVE
 CHAR_NAME_MULTIPLE_APOSTROPHES
 CHAR_NAME_INVALID_APOSTROPHE
@@ -6792,6 +6855,7 @@ CHAR_NAME_INVALID_CHARACTER
 CHAR_NAME_TOO_LONG
 CHAR_NAME_TOO_SHORT
 CHAR_NAME_NO_NAME
+CHAR_LOGIN_NO_CHARACTER
 CHAR_LOGIN_DISABLED
 CHAR_LOGIN_FAILED
 CHAR_LOGIN_NO_INSTANCES
@@ -6806,7 +6870,6 @@ CHAR_CREATE_ACCOUNT_LIMIT
 CHAR_CREATE_SERVER_LIMIT
 CHAR_CREATE_PVP_TEAMS_VIOLATION
 CHAR_CREATE_DISABLED
-CHAR_CREATE_NAME_IN_USE
 CHAR_CREATE_FAILED
 CHAR_CREATE_ERROR
 CHAR_CREATE_SUCCESS
@@ -6990,6 +7053,9 @@ bytes == sizeof(s_accountData[i].cache_md5)
 bytesWritten == destSize
 type >= 0 && type < NUM_ACCOUNT_DATA_TYPES
 SaveTimerHandler
+BackgroundDownloader.exe
+BackgroundDownloader
+Launching Background Downloader...\n
 unicows.dll
 dbghelp.dll
 ijl15.dll
@@ -7186,6 +7252,7 @@ m_alloc >= m_count
 .?AUTEXTLINETEXTURE@@
 batchDesc->face == currentFace
 currentFace
+!( numVerts % 4 )
 GxuF
 GxuF
 C:\\build\\buildWoW\\engine\\Source\\Gxu\\GxuFontFont.cpp
@@ -7285,35 +7352,6 @@ bytes <= sizeof(*m_item)
 ../../../../storm/h\\stpl.h
 Victim force flags:
 Self force flags:
-JOKE
-FLIRT
-CONGRATULATE
-WELCOME
-THANK
-HELLO
-RASP
-OPENFIRE
-CHEER
-HEALME
-WAIT
-FOLLOW
-ATTACKMYTARGET
-FLEE
-CHARGE
-INCOMING
-HELP
-ONESHOT_TRAIN(DNR)
-ONESHOT_SHY(DNR)
-ONESHOT_EXCLAMATION(DNR)
-ONESHOT_NO(DNR)
-ONESHOT_YES(DNR)
-ONESHOT_WAVE(DNR)
-ONESHOT_RUDE(DNR)
-ONESHOT_CHEER(DNR)
-ONESHOT_TALK(DNR)
-ONESHOT_ROAR(DNR)
-STATE_POINT(DNR)
-ONESHOT_SHOUT(DNR)
 Base Includes Creature Multiplier
 Pet Happiness Mult
 Melee Crit/Glance/Crush
@@ -7345,6 +7383,7 @@ DPS Scaler
 Creature Spell Scaler
 Base
 .?AUInitialSpellStruct@@
+.?AUGUILDUPDATETIMESTAMP@@
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Player_C.cpp
 You can't shop while dead.
 Vendor is dead
@@ -7361,7 +7400,6 @@ Environments\\Stars\\DeathClouds.mdx
 CGPlayer_C::UpdateInventoryComponent prevGuid == currGuid, update ignored
 m_component
 inventory
-unitPtr
 slotB <= 0xff
 slotA <= 0xff
 .?AUITEMSWAP@@
@@ -7411,6 +7449,9 @@ Non-unit
 Unknown Unit
 None
 craftType < NUM_SPELL_CAST_UI_TYPES
+!unit->IsEnemy(this) && unit->IsQuestGiver()
+!unit->IsEnemy(this) && unit->IsTaxiNode()
+!unit->IsEnemy(this) && unit->IsBinder()
 MARKED_AFK_MESSAGE
 CLEARED_AFK
 slot < MAX_LOOT_ITEMS
@@ -7515,7 +7556,7 @@ GetOwnerGUID() != GetGUID()
 Textures\\BakedNpcTextures\\
 textureName
 GetCharacterModel()
-!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1715)) != 0
+!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1754)) != 0
 s_showFootPrintParticles
 m_modelData
 RestoreUnit() on %s, but unit has %d health!
@@ -7523,6 +7564,10 @@ UNHANDLEDANIMEVENT|%.4s
 INVALIDDISPLAYMODELRECORD|%d|%d
 Spells\\ErrorCube.mdx
 NOCREATUREDISPLAYIDFOUND|%d
+\"%s\", %s = %d, %s = %d
+(int((eventTime)-(lastSend)) >= 0)
+lastMessage
+msgId
 messageId < NUM_MSG_TYPES
 numPoints > 0
 !IsActiveMover()
@@ -7534,6 +7579,9 @@ TargetAnim
 Toggle display of player's target anims in the debug window
 PlayerAnim
 Toggle display of player anims in the debug window
+ChatBubblesParty
+ChatBubbles
+Toggles showing in-game chat bubbles
 PetNamePlates
 Toggles showing nameplates for your pets, guardians, and totems
 PetSpellDamage
@@ -7557,13 +7605,11 @@ currentPlayer
 rec->m_reputationIndex < MAX_REPUTATION_FACTIONS
 srec && drec
 player1->GetDuelTeam() != player2->GetDuelTeam()
-player1 && player2
 reason < (sizeof(s_worldTextInfo) / sizeof(s_worldTextInfo[0]))
 %s: %d
 status < QUEST_GIVER_NUMITEMS
 s_interactIconModelInfo[index].model
 index < INTERACTICON_NUMITEMS
-Model %s is missing Interact Icon attachment\n
 CMath::finite_(scaleSq)
 \n*** WARNING NAN in AnimEventCallback position\neventId %x eventData %d\nmodel %s unitname %s\nxyz = %x %x %x\n
 size
@@ -7658,11 +7704,11 @@ ObjectSelectionCircle
 .?AUCPlayerMoveEvent@@
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Movement.cpp
 Mover at invalid position
+!globals->heartBeatStarted
 ../..\\Object/MovementGlobals.h
 !initialized || (int(time - lastUpdateTime) >= 0)
 !(int((updateTime)-(globals->GetNextHeartBeatTime())) >= 0)
 elapsedMS > 0
-timeDiff >= 0
 globals->initialized
 .?AUCMovementGlobals@@
 ((CMovementGlobals *)MovementGetGlobals()) == 0
@@ -7674,13 +7720,13 @@ uint(eventType) < NUM_PMOVE_EVTS
 !IsRooted()
 IsSplineMover()
 eventTime=%d, lastUpdate=%d\n
-.?AUCMoveSpline@@
 CMath::fnotequal_(init.turnRate,0)
 CMath::fnotequal_(init.swimBackSpeed,0)
 CMath::fnotequal_(init.swimSpeed,0)
 CMath::fnotequal_(init.walkSpeed,0)
 CMath::fnotequal_(init.runBackSpeed,0)
 CMath::fnotequal_(init.runSpeed,0)
+uint(m_spline->elapsed) < m_spline->duration
 !IsInMotion()
 !m_moveQueue.HasEntries()
 IsSwimming()
@@ -7756,6 +7802,7 @@ chest
 questgiver
 button
 door
+castersGrouped
 areaID
 maxLevel
 minLevel
@@ -7814,6 +7861,7 @@ C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Movement_C.cpp
 !s_transports.IsLinked(transport)
 s_transports.IsLinked(transport)
 .?AUDEATTHUDSOUNDINFO@@
+SpiritWolf (DONOTRENAME)
 FootstepSounds
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitSound_C.cpp
 soundType < NUM_UNITSOUNDTYPES
@@ -7874,6 +7922,7 @@ DISPELFAILEDSELFOTHER
 SPELLREFLECTOTHEROTHER
 SPELLREFLECTOTHERSELF
 SPELLREFLECTSELFOTHER
+DURABILITYDAMAGE_DEATH
 ITEMENCHANTMENTREMOVEOTHER
 ITEMENCHANTMENTREMOVESELF
 ITEMENCHANTMENTADDOTHEROTHER
@@ -8102,8 +8151,6 @@ size < NUM_MONSTERSIZECLASSES
 size >= MONSTERSIZECLASS_SMALL
 !\"Error, unrecognized message ID!\"
 victim
-unit->IsA(TYPE_UNIT)
-unit->GetEntryID()
 numVerts < (3+6+6)
 index < numVerts
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Collide.cpp
@@ -8192,6 +8239,12 @@ hwDetect
 do hardware detection
 gxOverride
 gx overrides
+gxFixLag
+prevent cursor lag
+gxMultisampleQuality
+multisample antialiasing quality
+gxMultisample
+multisample antialiasing
 gxCursor
 toggle hardware cursor
 gxWindow
@@ -8278,12 +8331,12 @@ Writing memory dump to %s
 ���>
 ?fff?
 HWSoundIdx
-HWVideoIdx
+HWVideoID
 HWMemIdx
 HWCpuIdx
 \tmemIdx: %d
 \tsoundIdx: %d
-\tvideoIdx: %d
+\tvideoID: %d
 \tcpuIdx: %d
 DetectHardware():
 .PAVVideoHardwareRec@@
@@ -8501,6 +8554,7 @@ BLIZZARDKEY
 C:\\build\\buildWoW\\Storm\\Source\\SFile.cpp
 archiveptr != 0
 sleeptime <= 5000
+diskbuffer != buffer
 singleSectorFile
 location == 0 && bytes == file->block.sizefile
 !(location & (file->archive->sectorsize-1))
@@ -8522,7 +8576,6 @@ CryptDestroyKey
 CryptDestroyHash
 CryptCreateHash
 CryptAcquireContextA
-advapi32.dll
 (signature)
 token
 \"SFileCloseArchive-child archive file is closed!\"
@@ -8730,9 +8783,6 @@ c:\\boot.ini
 .?AV?$TSExplicitList@UZipFileDirEntry@@$0?CCCCCCCD@@@
 C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOCursorUnit.cpp
 !\"IOCursorUnit::Create: The Cursor unit needs to be followed by another unit.\"
-0\aw,a
-Qkkbal
-wn>Jj
 \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
 \n\b\a\a\b\t\a
 \a\a\a\a\b\a\a\b\b
@@ -8817,9 +8867,6 @@ entity->GetType() & (CMapBaseObj::Type_Entity | CMapBaseObj::Type_DoodadDef)
 CMath::fnotequal_(baseObj->scale,0.0f)
 baseObj->scale
 baseObj->GetType() & CMapBaseObj::Type_Entity
-doodadDef->GetType() & CMapBaseObj::Type_DoodadDef
-CMath::fnotequal_(doodadDef->scale,0.0f)
-doodadDef->scale
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\World.h
 b < nBatches
 *dist >= 0.0f && *dist <= 1.0f
@@ -9093,6 +9140,8 @@ Dead
 Walk
 Spell
 Death
+occlusion
+Use hardware occlusion test
 footstepBias
 Unit footstep depth bias
 0.125
@@ -9203,6 +9252,8 @@ Triangle strips disabled on restart.
 Triangle strips enabled on restart.
 Footstep bias must be in the range (0, 1)
 Footstep bias set to %f
+Disabled hardware occlusion test.
+Using hardware occlusion test.
 DBFilesClient\\VideoHardware.dbc
 Error reading VideoHardwareRec
 XTextures\\splash\\wake.blp
@@ -9333,7 +9384,6 @@ World\\Maps\\
 mapAreaLow
 .?AVCMapAreaLow@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\CMapArea.h
-bytes <= s_allocator.BytesPerData()
 iffChunk.token == 'MARE'
 iffChunk.token=='MAOF'
 version == 0x0012
@@ -9350,7 +9400,6 @@ bActive
 mapObjDef == 0
 mapObjDefGroup->aaBox.b != mapObjDefGroup->aaBox.t
 mapObjGroup
-Environments\\Stars\\stars.mdl
 CMap::Unload() mapObjDefHash not empty
 CMap::Unload() doodadDefHash not empty
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapUnload.cpp
@@ -9370,7 +9419,7 @@ C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\CMapObj.h
 index < fogCount
 IsValid() && i < iused
 .?AVFogQ@@
-?0n}
+?(n~
 .?AV?$TSExplicitList@VCMapDoodadDef@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@VCMapObjDef@@$0?CCCCCCCD@@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapMem.cpp
@@ -9633,6 +9682,31 @@ type < NUM_WORLDTEXTTYPES
 Warning: invalid reserved names filter expression: \"%s\" (record ID %d)\n
 Warning: invalid chat profanity filter expression: \"%s\" (record ID %d)\n
 Warning: invalid profane names filter expression: \"%s\" (record ID %d)\n
+Shaders\\Pixel\\FFXBox4.bls
+Shaders\\Pixel\\FFXGauss4.bls
+Shaders\\Pixel\\FFXGlow.bls
+blurMtx
+screenMtx
+Shaders\\Pixel\\FFXGlowWave.bls
+Shaders\\Pixel\\FFXDeath_nvts_2d.bls
+Shaders\\Pixel\\FFXDeath_nvts_rect.bls
+Shaders\\Pixel\\FFXDeath.bls
+Shaders\\Pixel\\FFXDeath_nvrc.bls
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\FFXEffects.cpp
+.?AVPassGlowWave@@
+.?AVPassGlow@@
+.?AVPassGauss4@@
+.?AVPassBox4@@
+ffxGlow
+full screen glow effect
+.PAVPass@FFX@@
+.?AVPassDeath@@
+.?AVPassDeathNVRC@@
+ffxDeath
+full screen death effect
+ffxRectangle
+use rectangle texture for full screen effects
+full screen effects
 ?Yg`h
 s,+|^
 Environments\\Stars\\StratholmeSkybox.mdx
@@ -9673,8 +9747,8 @@ amount >= 0.0f && amount <= 1.0f
 alpha >= 0.0f && alpha <= 1.0f
 .?AUDNOverrideSky@@
 .?AVLightQE@@
-..\\..\\WorldClient/World.h
 i < indexCount
+..\\..\\WorldClient/World.h
 vertexIndices
 shadowBias
 Unit shadow depth bias
@@ -9713,7 +9787,7 @@ CORPSE_RED
 ..\\..\\Ui/PartyFrame.h
 index >= 0
 .?AUMINIMAPMD5NAME@@
-?0n}
+?(n~
 .?AV?$TSExplicitList@URACECLASSINFO@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USKILLCOSTSINFO@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USKILLLINEREC@@$0?CCCCCCCD@@@
@@ -9736,6 +9810,8 @@ RAGE
 MANA
 %s_PET
 SPELL_FAILED_UNKNOWN
+SPELL_FAILED_DISENCHANT_WHILE_LOOTING
+SPELL_FAILED_TARGET_NOT_IN_RAID
 SPELL_FAILED_NOT_WHILE_TRADING
 SPELL_FAILED_TARGET_NOT_IN_INSTANCE
 SPELL_FAILED_NOT_WHILE_FATIGUED
@@ -9990,9 +10066,7 @@ MaxColor
 MinColor
 Unknown orientation %s in element %s
 orientation
-.?AVCSimpleTexture@@
 ..\\Frame/CSimpleRender.h
-.?AVCSimpleFontString@@
 C:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameXML\\XMLTree.cpp
 .?AVXMLNode@@
 no value
@@ -10136,6 +10210,10 @@ control structure too long
 function or expression too complex
 code size overflow
 arg0
+time
+date
+xpcall
+pcall
 unpack
 assert
 tostring
@@ -10179,6 +10257,14 @@ table: %p
 __tostring
 assertion failed!
 table too big to unpack
+`date' format too long
+isdst
+yday
+wday
+year
+month
+hour
+field `%s' missing in date table
 Error executing compat script
 compat.lua
 Interface\\FrameXML\\compat.lua
@@ -10414,7 +10500,7 @@ Failed to initialize model: %s
 Corrupt model data: %s
 6^\a@
 1\x1B\a@
-F0n}
+F(n~
 .?AUNodeBlock@CDataRecycler@@
 CDataAllocator@0x%08x: leaked %u: %s(%d) [%u][%u]
 C:\\build\\buildWoW\\engine\\Source\\Base\\CDataAllocator.cpp
@@ -10523,7 +10609,6 @@ An unnamed frame cannot have a 'Scripts' element
 Scripts
 Layers
 HitRectInsets
-.?AVCBackdropGenerator@@
 Backdrop
 maxResize
 minResize
@@ -10608,6 +10693,10 @@ IsUserPlaced
 StopMovingOrSizing
 StartSizing
 StartMoving
+SetResizable
+SetMovable
+IsResizable
+IsMovable
 SetMaxResize
 SetMinResize
 Lower
@@ -10698,6 +10787,17 @@ OnClick
 C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleButton.cpp
 state < NUM_BUTTONSTATES
 m_initialized_state != 0xDDDDDDDD
+BackgroundInsets
+EdgeSize
+TileSize
+tile
+edgeFile
+bgFile
+m_pieces == BACKDROPONLY || m_border[0]
+output
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CBackdropGenerator.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRegion.cpp
+m_frame
 UnlockHighlight
 LockHighlight
 Click
@@ -10763,17 +10863,6 @@ BarColor
 BarTexture
 drawLayer
 OnValueChanged
-BackgroundInsets
-EdgeSize
-TileSize
-tile
-edgeFile
-bgFile
-m_pieces == BACKDROPONLY || m_border[0]
-output
-C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CBackdropGenerator.cpp
-C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRegion.cpp
-m_frame
 DisabledCheckedTexture
 CheckedTexture
 checked
@@ -11238,29 +11327,18 @@ polygon
 verts
 C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\tempest_distance.cpp
 ray.dir.SquaredMag() > 0.00001f
-PlayVocalCategory
-CONGRATULATIONS
-YOUREWELCOME
-THANKYOU
-GOODBYE
-RASPBERRY
-WAITHERE
-OUTOFMANA
-.?AUMACRODESC@@
-Usage: PlayVocalCategory(\"category\")
 C:\\build\\buildWoW\\WoW\\Source\\Object\\Combat.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\CreatureStats.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\GameObjectStats.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ItemName.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ItemStats.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\NPCText.cpp
 C:\\build\\buildWoW\\WoW\\Source\\Object\\GuildStats.cpp
 Interface\\TargetingFrame\\UI-TargetingFrame-Skull
-NAMEPLATE_FONT
 Interface\\Tooltips\\Nameplate-Glow
 Interface\\TargetingFrame\\UI-TargetingFrame-BarFill
 .?AVCGSimpleHealthBar@@
 Interface\\Tooltips\\Nameplate-Border
-..\\..\\..\\engine\\source\\Frame/CSimpleRender.h
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\NamePlateFrame.cpp
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\HealthBar.cpp
 parameter
@@ -12292,6 +12370,7 @@ pqgjy
 xzroesc
 HEZLOCUS
 THEZOCQS
+Environments\\Stars\\stars.mdl
 XML_CONTEXT_BYTES
 XML_DTD
 sizeof(XML_LChar)
