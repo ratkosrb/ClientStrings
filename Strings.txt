@@ -92,7 +92,8 @@ SPELL_DAMAGESHIELDS_ON_OTHERS
 SPELL_AURA_GONE_SELF
 SPELL_AURA_GONE_PARTY
 SPELL_AURA_GONE_OTHER
-SPELL_ITEM_ENCHANTMENTS
+SPELL_ITE
+M_ENCHANTMENTS
 SPELL_BREAK_AURA
 SPELL_PERIODIC_SELF_DAMAGE
 SPELL_PERIODIC_SELF_BUFFS
@@ -146,7 +147,7 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 4062 (Nov 16 2004 16:07:04)
+WoW [Release Assertions Enabled] Build 4125 (Dec  6 2004 17:43:56)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -154,7 +155,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 4062 (Nov 16 2004)
+WoW [Release Assertions Enabled] Build 4125 (Dec  6 2004)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -457,9 +458,8 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo
+ltuo@
 cinu
-ltuo
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -581,7 +581,7 @@ Data\\model.MPQ
 delete
 .PAVSArchive@@
 index (0x%08X), array size (0x%08X)
-C:\\Projects\\WoW\\Source\\Client.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Client.cpp
 archive < NUM_DATA_ARCHIVES
 Bad zone ID %i
 realm
@@ -617,13 +617,13 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 4062)
+World of WarCraft: Assertions Enabled Build (build 4125)
 SendErrorLogs
 Data\\
 World of Warcraft
 .PAVStartup_StringsRec@@
 %s: Cannot read string table
-C:\\Projects\\WoW\\Source\\DB/WowClientDB.h
+C:\\build\\buildWoW\\WoW\\Source\\DB/WowClientDB.h
 %s has wrong row size (found %i, expected %i)
 %s has wrong number of columns (found %i, expected %i)
 Unable to open %s
@@ -659,7 +659,6 @@ Address of last realm
 172.16.9.12
 realmName
 Last realm connected to
-No Server Selected
 Gamma
 DesktopGamma
 showGUIDs
@@ -727,7 +726,7 @@ DepthSet
 DepthTest
 light
 .PAD
-C:\\Projects\\WoW\\Source\\WowServices/PatchFiles.h
+C:\\build\\buildWoW\\WoW\\Source\\WowServices/PatchFiles.h
 !\"Failed to open archive\"
 \"%s\", \"%s\"
 \"%s\", %s = \"%s\"
@@ -742,7 +741,7 @@ Interact Target
 Current Object Track
 Local Target
 Local Player
-C:\\Projects\\WoW\\Source\\Object/ObjectClient/Player_C.h
+C:\\build\\buildWoW\\WoW\\Source\\Object/ObjectClient/Player_C.h
 WoWBuild: %d\r\n
 Local Zone:
 %s: %s, %016I64X, (%g,%g,%g)\r\n
@@ -777,7 +776,7 @@ dloc
 player hidden
 player visible
 %g, %g, %g
-C:\\Projects\\WoW\\Source\\ClientCommands.cpp
+C:\\build\\buildWoW\\WoW\\Source\\ClientCommands.cpp
 %016I64X: Local Pos: %g, %g, %g, facing: %g distance: %g
 Error, no unit targeted!
 pos + bytes <= m_base + m_alloc
@@ -797,7 +796,7 @@ Interface\\Glues\\LoadingBar\\Loading-BarFill
 .?AULOADINGSCREENTAXIPATHINFO@?$CLoadingScreenShipInfo@VTaxiPathNodeRec@@@@
 Interface\\Glues\\loading
 ( verts % 4 ) == 0
-C:\\Projects\\WoW\\Source\\LoadingScreen.cpp
+C:\\build\\buildWoW\\WoW\\Source\\LoadingScreen.cpp
 verts > 16
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -807,7 +806,7 @@ r >= .0f
 ..\\Base/CDataStore.h
 CDataStore::AssertFetchWrite(%u, %u) failed
 pos + sizeof(val) <= m_size
-C:\\Projects\\engine\\Source\\Base\\CDataStore.cpp
+C:\\build\\buildWoW\\engine\\Source\\Base\\CDataStore.cpp
 pval
 result >= 0
 (int)bytes > 0
@@ -829,21 +828,21 @@ nolagfix
 datadir
 .?AUSTATUSENTRY@CStatus@@
 format
-C:\\Projects\\engine\\Source\\Base\\Status.cpp
+C:\\build\\buildWoW\\engine\\Source\\Base\\Status.cpp
 ..\\Base/Status.h
 buffer
 .?AW4ACTIVITY@@
 s_activityStack.Count() <= MAX_STACK_DEPTH
 activity != ACTIVITY_OTHER
-C:\\Projects\\engine\\Source\\Base\\Activity.cpp
+C:\\build\\buildWoW\\engine\\Source\\Base\\Activity.cpp
 activity < ACTIVITIES
 activity == *s_activityStack.Top()
 ..\\Base/Base.h
 m_refcount > 0
-C:\\Projects\\engine\\Source\\Base\\Handle.cpp
+C:\\build\\buildWoW\\engine\\Source\\Base\\Handle.cpp
 .?AV?$TSExplicitList@UPrefetchNode@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UUncachableNode@@$0?CCCCCCCD@@@
-C:\\Projects\\engine\\Source\\Base\\FileCache.cpp
+C:\\build\\buildWoW\\engine\\Source\\Base\\FileCache.cpp
 theFile->refCount >= 0
 ../../../Storm/h\\stpl.h
 theFile != 0
@@ -866,23 +865,23 @@ linktype
 .?AVCStringManager@@
 .?AV?$TSExplicitList@VCStringRep@@$0?CCCCCCCD@@@
 pStringManager
-C:\\Projects\\engine\\Source\\Base\\RCString.cpp
+C:\\build\\buildWoW\\engine\\Source\\Base\\RCString.cpp
 pManager
 SStrLen(source)<(unsigned)MAX_RCSTRING_LENGTH
 ..\\Base/RefCount.h
 m_ptr
 len<(unsigned short)-1
 .?AVCStringRep@@
-C:\\Projects\\ENGINE\\Source\\Event\\EvtInt.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Event\\EvtInt.h
 IsCurrentContext()
 handler
 id < EVENTIDS
 id >= 0
-C:\\Projects\\ENGINE\\Source\\Event\\EvtApi.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Event\\EvtApi.cpp
 mode < MOUSE_MODES
 .PAVSThread@@
 Engine %x
-C:\\Projects\\ENGINE\\Source\\Event\\EvtSched.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Event\\EvtSched.cpp
 context->SchedGetClosed()
 .?AUEvtThread@@
 .PAUEvtContext@@
@@ -907,9 +906,9 @@ m_timerIdTable[loop]
 .?AUEvtMessage@@
 .?AUEvtHandler@@
 context
-C:\\Projects\\ENGINE\\Source\\Event\\EvtInput.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Event\\EvtInput.cpp
 mode
-C:\\Projects\\ENGINE\\Source\\Event\\EvtQueue.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Event\\EvtQueue.cpp
 id >= 0 && id < EVENTIDS
 list->m_linkoffset == m_linkoffset
 list != this
@@ -920,7 +919,7 @@ scanner
 .?AUEVENTDISPATCHREG@EventReg@@
 .?AUEVENTCALLBACKREG@EventReg@@
 .?AUEventReg@@
-C:\\Projects\\ENGINE\\Source\\Event\\CObserver.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Event\\CObserver.cpp
 !m_pEventRegistry
 .?AVEventRegistry@@
 pReg
@@ -931,11 +930,11 @@ pDispatchReg
 .?AV?$TSExplicitList@UEventReg@@$0?CCCCCCCD@@@
 timer->guidHandler
 id < m_allocArray.Count()
-C:\\Projects\\ENGINE\\Source\\Event\\EvtTimer.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Event\\EvtTimer.cpp
 Error, attempt to kill eventID %d with mismatching handler (%s)!
 .?AUEvtTimer@@
 .?AV?$TSExplicitList@USIMPLECONTEXTHASHOBJ@@$0?CCCCCCCD@@@
-C:\\Projects\\ENGINE\\Source\\Frame\\SimpleFrameRegistry.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\SimpleFrameRegistry.cpp
 alreadyExisted
 Warning, trying to add duplicate frame \"%s\" in context %d!
 hash
@@ -955,7 +954,7 @@ Warning, trying to add duplicate string \"%s\" in context %d!
 createDisposition <= OS_TRUNCATE_EXISTING
 createDisposition >= OS_CREATE_NEW
 desiredAccess
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\OsFile.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsFile.cpp
 bytesRead
 bytesWritten
 newFileName
@@ -982,7 +981,7 @@ com2
 com1
 moduleHandle
 moduleId
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\Path.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\Path.cpp
 path && buffer && size
 string && buffer && size
 */:><|&+^?\"
@@ -993,21 +992,21 @@ charsCopied
 Fonts
 %m%d%y_%H%M%S
 filetime
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\Time.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\Time.cpp
 filetime2
 filetime1
 fileTime
 localFileTime
 sysTime
 localSysTime
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\OsIME.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsIME.cpp
 .?AUOsIMECandidate@@
 mode < OS_MOUSE_MODES
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\Input.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\Input.cpp
 rect
 !(windowproc && s_windowProc)
 s_mouseMode
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\Tls.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\Tls.cpp
 tlsIndex!=(DWORD)-1
 index<(64-1)
 GetLastError()==0
@@ -1015,15 +1014,15 @@ GetLastError()==0
 .?AUThreadData@@
 .?AUContextData@@
 threadData->m_contextData == 0
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\OsCall.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsCall.cpp
 contextData->m_threadData == 0
 contextData->m_threadData == threadData
 threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Nov 16 2004
-16:05:14
+Dec  6 2004
+17:41:57
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1053,7 +1052,7 @@ Internal error
 %s 5
 %s 6
 .?AUTCPNET@OsNet@@
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\OsTcp.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsTcp.cpp
 !s_pnet
 OsNet: (INFO): %s\n
 t[0x%08x] se[%u] we[%u]
@@ -1127,7 +1126,7 @@ Win98
 Win95OSR2
 Win95
 Unknown
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\OSSystem.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OSSystem.cpp
 retVal != OsType_Unknown
 %sTempHTMLFile%x.html
 file://
@@ -1149,16 +1148,16 @@ BUTTON
 OsGuiPointer
 .PAVCOsDialog@@
 .PAVCOsMenuBar@@
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\OsGui.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsGui.cpp
 success
 .?AUOsGuiMenuHotkey@@
 inPos >= 0 && inPos < (int) mHotkeys.Count()
 Right
-Left
 Down
 Delete
-Enter
+Left
 Backspace
+Enter
 Space
 F%1d
 Alt+
@@ -1197,7 +1196,7 @@ Screenshots
 HLAYER
 FRIZQT__.TTF
 id < SCRNSTOCKOBJECTS
-C:\\Projects\\ENGINE\\Source\\Scrn\\STOCK.CPP
+C:\\build\\buildWoW\\ENGINE\\Source\\Scrn\\STOCK.CPP
 fontTexturePath && *fontTexturePath
 stockID < SCRNSTOCKOBJECTS
 s_stockObjects[stockID]
@@ -1262,7 +1261,7 @@ Events
 calls per frame
 percentage CPU
 ms per frame
-C:\\Projects\\ENGINE\\Source\\Scrn\\PERF.CPP
+C:\\build\\buildWoW\\ENGINE\\Source\\Scrn\\PERF.CPP
 s_perfInfo[i].perfId == i
 theFont
 currLine == (sizeof(line) / sizeof(line[0]))
@@ -1298,7 +1297,7 @@ object->file
 !object->isProcessed
 !object->isRead
 !s_asyncCurrentObject
-C:\\Projects\\ENGINE\\Source\\Services\\AsyncFileRead.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\AsyncFileRead.cpp
 waitResult == OSWAIT_OBJECT_0
 s_asyncCurrentObject == 0
 s_asyncFileReadList.Head() == 0
@@ -1314,7 +1313,7 @@ WARNING
 INFO
 %s|%s|%s\r\n
 severity < SYSMSG_NUMTYPES
-C:\\Projects\\ENGINE\\Source\\Services\\SysMessage.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\SysMessage.cpp
 %c%c%c%c%c%c%c
 minSeverity < SYSMSG_NUMTYPES
 maxSeverity < SYSMSG_NUMTYPES
@@ -1323,7 +1322,7 @@ Error cannot create directory %s
 curDir
 .?AUSTRINGBLOCK@ProfileInternal@@
 string
-C:\\Projects\\ENGINE\\Source\\Services\\Profile.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Profile.cpp
 stringBlock
 .?AUPROFILE@ProfileInternal@@
 path
@@ -1359,7 +1358,7 @@ character
 .blp
 .tga
 .?AUCTextureHash@@
-C:\\Projects\\ENGINE\\Source\\Services\\Texture.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Texture.cpp
 gxTexCache
 .?AVCGxTexCache@@
 gxTex
@@ -1424,7 +1423,7 @@ fontObj->font
 %s-%d-%f
 *fontName
 fontName
-C:\\Projects\\ENGINE\\Source\\Services\\TextBlock.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\TextBlock.cpp
 fontHandle
 text
 fontPtr->font
@@ -1434,16 +1433,16 @@ font
 extent
 textPtr
 .?AUFONTHASHOBJ@@
-C:\\Projects\\ENGINE\\Source\\Tempest\\crandom.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\crandom.cpp
 password != 0
 buf != 0
 ..\\Tempest/cmath.h
 z >= -_1 && z <= _1
-C:\\Projects\\ENGINE\\Source\\Tempest\\crandom.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\crandom.h
 sides > 0
 (ulong(buf) & 3) == 0
 vtx != 0
-C:\\Projects\\ENGINE\\Source\\Tempest\\c3spline.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c3spline.cpp
 cachedSegLength[seg] > 0.0f
 x <= 255.9999f
 x >= 0.0f
@@ -1452,7 +1451,7 @@ nPoints <= count
 CMath::fnotequal_((pts[i+1] - pts[i]).SquaredMag(), 0.0f)
 count > 3
 s > (lreal(2.2204460492503131e-016))
-C:\\Projects\\ENGINE\\Source\\Tempest\\cmath.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmath.cpp
 n >= 4
 StopMusic
 PlaySoundFile
@@ -1462,7 +1461,7 @@ PlaySound
 .?AUAISOUNDDESC@@
 MasterVolume
 (uint)rec->m_TerrainSoundID < numTerrains
-C:\\Projects\\WoW\\Source\\SoundInterface\\SoundInterface.cpp
+C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterface.cpp
 numTerrains < sizeof(uint)*8
 EmoteSounds
 EnableMusic
@@ -1536,7 +1535,7 @@ Sound\\Music\\CityMusic\\Undercity\\undercityintro-moment.mp3
 Sound\\Music\\CityMusic\\Darnassus\\Darnassus Intro.mp3
 Sound\\Music\\CityMusic\\Orgrimmar\\orgrimmar_intro-moment.mp3
 Sound\\Music\\CityMusic\\Stormwind\\Stormwind_intro-moment.mp3
-C:\\Projects\\WoW\\Source\\SoundInterface\\SoundInterfaceGlueMusic.cpp
+C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterfaceGlueMusic.cpp
 !s_glueMusic
 enablemusic
 .?AUREVERBINFO@@
@@ -1549,7 +1548,7 @@ m_totalFrequency >= m_files[i].currentWeight
 i < m_numFiles
 ..\\..\\..\\engine\\source\\Tempest/crandom.h
 m_totalFrequency
-C:\\Projects\\WoW\\Source\\SoundInterface\\ISoundInterface.cpp
+C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\ISoundInterface.cpp
 m_numFiles
 %s%s%s
 def->m_files[f].name && def->m_files[f].name[0]
@@ -1561,7 +1560,7 @@ rec->m_WeaponSubClassID < (int)ClientDBGetNumWeaponSubclasses()
 .?AV?$TSExplicitList@USTRINGENTRY@FileNameBufferIndex@@$0?CCCCCCCD@@@
 .?AUSHEATHSOUNDHASH@@
 .?AUUISOUNDLOOKUP@@
-C:\\Projects\\WoW\\Source\\SoundInterface\\SoundInterfaceZoneMusic.cpp
+C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterfaceZoneMusic.cpp
 s_ghostMusic
 GhostMusic (DONOTRENAME)
 !s_sound
@@ -1571,26 +1570,26 @@ EnableAmbience
 Enable Ambience
 AmbienceVolume
 Ambience Volume (0.0 to 1.0)
-C:\\Projects\\WoW\\Source\\SoundInterface\\SoundInterfaceAmbience.cpp
+C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterfaceAmbience.cpp
 s_currentSoundID
 ..\\Object/ObjectClient/Player_C.h
-C:\\Projects\\WoW\\Source\\SoundInterface\\SoundInterfaceDoodad.cpp
+C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterfaceDoodad.cpp
 false
-C:\\Projects\\WoW\\Source\\SoundInterface\\SoundInterfaceWater.cpp
+C:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\Soun
+dInterfaceWater.cpp
 subType < (sizeof(m_subTypes) / sizeof(m_subTypes[0]))
 ..\\..\\..\\engine\\source\\Tempest/cmath.h
 MapWaterSounds
 sType < (sizeof(m_soundRecords) / sizeof(m_soundRecords[0]))
 HeapUsage
-%u total object
-bytes used, %u bytes allocated for heaps
+%u total object bytes used, %u bytes allocated for heaps
     \"%s\" %u blocks, %u objs per block (%u bytes per block): %u objs allocated (%d%%)
 %u Heaps in use:
-C:\\Projects\\WoW\\Source\\ObjectAlloc\\HeapUsage.cpp
+C:\\build\\buildWoW\\WoW\\Source\\ObjectAlloc\\HeapUsage.cpp
 globals
 .?AVCObjectHeapList@@
 .?AVCObjectHeap@@
-C:\\Projects\\WoW\\Source\\ObjectAlloc\\ObjectAlloc.cpp
+C:\\build\\buildWoW\\WoW\\Source\\ObjectAlloc\\ObjectAlloc.cpp
 index
 m_obj == 0
 m_obj != 0
@@ -1603,7 +1602,7 @@ memHandle
 %u total object bytes used, %u bytes allocated for heaps\n
     \"%s\" %u blocks, %u objs per block (%u bytes per block): %u objs allocated\n
 %u Heaps in use:\n
-C:\\Projects\\WoW\\Source\\ObjectAlloc\\IObjectAlloc.h
+C:\\build\\buildWoW\\WoW\\Source\\ObjectAlloc\\IObjectAlloc.h
 CGCorpse_C
 CGDynamicObject_C
 CGGameObject_C
@@ -1612,7 +1611,7 @@ CGUnit_C
 CGContainer_C
 CGItem_C
 CGObject_C
-C:\\Projects\\WoW\\Source\\ObjectMgrClient\\ObjectMgrClient.cpp
+C:\\build\\buildWoW\\WoW\\Source\\ObjectMgrClient\\ObjectMgrClient.cpp
 s_curMgr
 Remembering corpse
 Remembering dynamic object
@@ -1751,7 +1750,7 @@ REALM_LIST_IN_PROGRESS
 op == COP_CREATE_CHARACTER
 op == COP_GET_REALMS
 op == COP_GET_CHARACTERS
-C:\\Projects\\WoW\\Source\\Glue\\CGlueMgr.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Glue\\CGlueMgr.cpp
 op == COP_AUTHENTICATE || op == COP_WAIT_QUEUE
 OKAY_WITH_URL
 QUEUE_TIME_LEFT_UNKNOWN
@@ -1828,14 +1827,14 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4062
-1.1.1
+4125
+1.1.2
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
 Usage: PlayGlueMusic(\"filename\")
 %dx%d
-C:\\Projects\\WoW\\Source\\Glue\\GlueScriptEvents.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Glue\\GlueScriptEvents.cpp
 cvar && cvar->GetString()
 Usage: LaunchURL(\"URL\")
 Usage: DefaultServerLogin(\"accountName\", \"password\")
@@ -1858,7 +1857,7 @@ CancelRealmListQuery
 RequestRealmList
 .PAURealmCategory@@
 .?AURealmCategory@@
-C:\\Projects\\WoW\\Source\\Glue\\RealmList.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Glue\\RealmList.cpp
 Usage: GetRealmInfo(category, index)
 Usage: ChangeRealm(category, index)
 UNKNOWN
@@ -1894,7 +1893,7 @@ SetCharCustomizeFrame
 .?AUDictionaryRecord@@
 Horde
 Alliance
-C:\\Projects\\WoW\\Source\\Glue\\CharacterCreation.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Glue\\CharacterCreation.cpp
 (rec->m_Sex < UNITSEX_LAST) || (rec->m_Camera < CAMERA_LAST)
 Error, model name for player race %d and sex %d not found!
 Usage: SetCharCustomizeFrame(\"frameName\")
@@ -1917,7 +1916,7 @@ GetCharacterListUpdate
 SetCharSelectBackground
 SetCharSelectModelFrame
 .?AUCharacterSelectionDisplay@@
-C:\\Projects\\WoW\\Source\\Glue\\CharacterSelection.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Glue\\CharacterSelection.cpp
 m_characterList.Count() < MAX_CHARACTERS_PER_REALM
 g_guildInfoCache.GetRecord(guildID)
 Usage: SetCharSelectModelFrame(\"frameName\")
@@ -1936,7 +1935,7 @@ prepatch.lst
 PATCH_FAILED_DISK_FULL
 PATCH_FAILED_MESSAGE
 DISCONNECTED
-C:\\Projects\\WoW\\Source\\Glue\\NameGen.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Glue\\NameGen.cpp
 BowRelease
 BowPull
 InFlight
@@ -1953,7 +1952,7 @@ TorsoUpperTexture
 HandTexture
 ArmLowerTexture
 ArmUpperTexture
-C:\\Projects\\WoW\\Common\\ComponentCore\\CharacterComponent.cpp
+C:\\build\\buildWoW\\WoW\\Common\\ComponentCore\\CharacterComponent.cpp
 s_characterFacialHairStylesList
 sectionIndex <= NUM_COMPONENT_VARIATIONS
 variationIndex < count
@@ -1988,7 +1987,7 @@ Textures\\GuildEmblems\\Emblem_%02d_%02d_TU_U
 Textures\\GuildEmblems\\Border_%02d_%02d_TL_U
 Textures\\GuildEmblems\\Border_%02d_%02d_TU_U
 curr->m_selfReference
-C:\\Projects\\WoW\\Common\\TextureCache.cpp
+C:\\build\\buildWoW\\WoW\\Common\\TextureCache.cpp
 !\"Error, unrecognized cache mode!\"
 object->m_selfReference
 HMIPPEDTEXTURE
@@ -1998,31 +1997,31 @@ cachePtr
 .?AUCACHEENTRY@@
 .?AV?$TSExplicitList@UCACHEENTRY@@$0?CCCCCCCD@@@
 __fall
-C:\\Projects\\WoW\\Source\\Object\\MovementShared.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\MovementShared.cpp
 int(status->timeFallen) >= 0
 int(update.timeFallen) >= 0
 m_spline
 m_spline->time > 0
 count >= 4
 Mirror handler attempted to reference data not marked as mirrored in corpsemirror.h (index %u)
-C:\\Projects\\WoW\\Source\\Object\\Corpse.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\Corpse.cpp
 Mirror handler attempted to reference data not marked as mirrored in dynamicobjectmirror.h (index %u)
-C:\\Projects\\WoW\\Source\\Object\\DynamicObject.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\DynamicObject.cpp
 slots <= MAX_CHAIR_SLOTS
 slots
-C:\\Projects\\WoW\\Source\\Object\\GameObject.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\GameObject.cpp
 Mirror handler attempted to reference data not marked as mirrored in gameobjectmirror.h (index %u)
 Mirror handler attempted to reference data not marked as mirrored in playermirror.h (index %u)
-C:\\Projects\\WoW\\Source\\Object\\Player.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\Player.cpp
 count[i] <= QUESTLOG_FLAGS_COUNT_MASK
 flags <= QUESTLOG_FLAGS_FLAG_MASK
 Mirror handler attempted to reference data not marked as mirrored in unitmirror.h (index %u)
-C:\\Projects\\WoW\\Source\\Object\\Unit.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\Unit.cpp
 Mirror handler attempted to reference data not marked as mirrored in containermirror.h (index %u)
-C:\\Projects\\WoW\\Source\\Object\\Container.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\Container.cpp
 Mirror handler attempted to reference data not marked as mirrored in itemmirror.h (index %u)
-C:\\Projects\\WoW\\Source\\Object\\Item.cpp
-C:\\Projects\\WoW\\Source\\Object\\Object.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\Item.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\Object.cpp
 move.transport != 0
 Mirror handler attempted to reference data not marked as mirrored in objectmirror.h (index %u)
 CORPSE_FIELD_FLAGS
@@ -2206,7 +2205,7 @@ OBJECT_FIELD_SCALE_X
 OBJECT_FIELD_ENTRY
 OBJECT_FIELD_TYPE
 OBJECT_FIELD_GUID
-C:\\Projects\\WoW\\Source\\Object\\mirror.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\mirror.cpp
 d == destArraySize
 blockID < (sizeof(s_corpseDescriptors) / sizeof(s_corpseDescriptors[0]))
 blockID < (sizeof(s_dynamicObjectDescriptors) / sizeof(s_dynamicObjectDescriptors[0]))
@@ -2220,7 +2219,7 @@ Interface\\SpellShadow\\Spell-Shadow-Unacceptable.blp
 Interface\\SpellShadow\\Spell-Shadow-Acceptable.blp
 disabled
 enabled
-C:\\Projects\\WoW\\Source\\Ui\\WorldFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\WorldFrame.cpp
 hitTestResult
 Spell_C_CanTargetItems() || Spell_C_WaitingForStringInput() || (hitFilter != HIT_TEST_NOTHING)
 .?AUCModelRecord@@
@@ -2936,7 +2935,7 @@ BUY_CURSOR
 CAST_CURSOR
 POINT_CURSOR
 Usage: EquipCursorItem(slot)
-C:\\Projects\\WoW\\Source\\Ui\\GameUI.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\GameUI.cpp
 Usage: EquipPendingItem(index)
 Usage: CancelPendingEquip(index)
 Usage: TargetUnit(\"unit\")
@@ -3029,6 +3028,7 @@ Frame: %s\n
 WTF\\Account\\%s
 \n%s =
 ] =
+true
 LOOT_ITEM
 CREATED_ITEM
 LOOT_ITEM_SELF
@@ -3193,7 +3193,7 @@ SYSTEM
 .?AUChatColorInfo@@
 .?AV?$TSExplicitList@UWORDLIST@@$0?CCCCCCCD@@@
 CHANNEL%d
-C:\\Projects\\WoW\\Source\\Ui\\ChatFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\ChatFrame.cpp
 .?AUPENDINGCHAT@@
 rec->GetID() < 32
 SHOWN
@@ -3334,7 +3334,7 @@ GetMapContinents
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 Interface\\WorldMap\\%s.zmp
-C:\\Projects\\WoW\\Source\\Ui\\WorldMap.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\WorldMap.cpp
 WorldMapFrame
 Usage: GetMapZones(continentIndex)
 Usage: SetMapZoom(continentIndex [,zoneIndex])
@@ -3357,7 +3357,7 @@ IsPartyLeader
 GetPartyLeaderIndex
 GetPartyMember
 GetNumPartyMembers
-C:\\Projects\\WoW\\Source\\Ui\\PartyFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\PartyFrame.cpp
 ITEM_QUALITY%d_DESC
 Usage: GetPartyMember(1-4)
 ERROR!
@@ -3402,13 +3402,13 @@ CloseMail
 .PAUMailboxItemInfo@@
 .?AUMailboxItemInfo@@
 .?AUStationeryInfo@@
-C:\\Projects\\WoW\\Source\\Ui\\MailInfo.h
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\MailInfo.h
 m_pendingStationeryCallbacks
 AUCTION_EXPIRED_MAIL_SUBJECT
 AUCTION_SOLD_MAIL_SUBJECT
 AUCTION_WON_MAIL_SUBJECT
 AUCTION_OUTBID_MAIL_SUBJECT
-C:\\Projects\\WoW\\Source\\Ui\\MailInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\MailInfo.cpp
 mailID
 Usage: SetSendMailMoney(amount)
 Usage: SetSendMailCOD(amount)
@@ -3446,7 +3446,7 @@ GetSpellTabInfo
 GetNumSpellTabs
 .PAUSpellBookSkillInfo@@
 .?AUSpellBookSkillInfo@@
-C:\\Projects\\WoW\\Source\\Ui\\SpellBookFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\SpellBookFrame.cpp
 info->m_effectMiscValue[0] < int(m_languageSpells.Count())
 slot < MAXIMUM_LEARNED_SPELLS
 slot >= 0
@@ -3490,33 +3490,24 @@ SHIFT-
 bind
 s_bindings
 .?AVCGUIBindings@@
-C:\\Projects\\WoW\\Source\\Ui\\UIBindings.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\UIBindings.cpp
 !s_bindings
  ,;\"\t\n\r
 keybinding
 bindings
 DefaultBindings.wtf
 bind %s %s\n
-CAPSLOCK
 NUMPADEQUALS
-PERIOD
-COMMA
-APOSTROPHE
-SEMICOLON
-BACKSLASH
-SLASH
-RIGHTBRACKET
-LEFTBRACKET
+CAPSLOCK
 NUMPADDECIMAL
 NUMPADDIVIDE
 NUMPADMULTIPLY
 NUMPADMINUS
 NUMPADPLUS
 NUMPAD%d
-TILDE
 SPACE
-CTRL
 SHIFT
+CTRL
 *string
 BUTTON%d
 evt.button > MOUSE_BUTTON_RIGHT
@@ -3542,6 +3533,15 @@ Binding
 Couldn't parse XML in %s
 Couldn't open %s
 MOUSEWHEEL
+TILDE
+PERIOD
+COMMA
+APOSTROPHE
+SEMICOLON
+BACKSLASH
+SLASH
+RIGHTBRACKET
+LEFTBRACKET
 keystate
 down
 index >= 0 && index < GetNumCommands()
@@ -3552,7 +3552,7 @@ Usage: GetBindingKey(\"COMMAND\")
 Usage: GetBindingAction(\"KEY\")
 Usage: RunBinding(\"COMMAND\")
 .?AUKEYBINDING@@
-C:\\Projects\\WoW\\Source\\Ui\\UIBindings.h
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\UIBindings.h
 .?AV?$TSExplicitList@UKEYBINDING@@$0?CCCCCCCD@@@
 .?AUKEYCOMMAND@@
 .?AV?$TSExplicitList@UKEYCOMMAND@@$0?CCCCCCCD@@@
@@ -3569,7 +3569,7 @@ SetRaidRosterSelection
 GetRaidRosterInfo
 GetNumRaidMembers
 .?AURaidMemberInfo@@
-C:\\Projects\\WoW\\Source\\Ui\\RaidInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\RaidInfo.cpp
 count <= (sizeof(m_members) / sizeof(m_members[0]))
 PLAYER_OFFLINE
 Usage: GetRaidRosterInfo(index)
@@ -3608,7 +3608,7 @@ GetPetActionsUsable
 GetPetActionCooldown
 GetPetActionInfo
 PetHasActionBar
-C:\\Projects\\WoW\\Source\\Ui\\PetInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\PetInfo.cpp
 mode < 256
 orders < 256
 index < (sizeof(m_actions) / sizeof(m_actions[0]))
@@ -3642,7 +3642,7 @@ GetTradeTargetItemInfo
 ClickTargetTradeButton
 ClickTradeButton
 CloseTrade
-C:\\Projects\\WoW\\Source\\Ui\\TradeFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\TradeFrame.cpp
 Usage: ClickTradeButton(index)
 Usage: ClickTargetTradeButton(index)
 Usage: GetTradeTargetItemInfo(index)
@@ -3670,7 +3670,7 @@ Usage: SetSlot(index)
 ..\\..\\..\\engine\\source\\FrameScript/FrameScript.h
 Attempt to find 'this' in non-table object (used '.' instead of ':' ?)
 .?AV?$TSExplicitList@UFrameScriptObject_Variable@@$0?CCCCCCCD@@@
-C:\\Projects\\WoW\\Source\\Ui\\LootFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\LootFrame.cpp
 stats
 %s%s%s%s%s
 %d %s
@@ -3705,7 +3705,7 @@ Usage: UnstablePet(index)
 Usage: GetStablePetInfo(index)
 Usage: ClickStablePet(index)
 Usage: PickupStablePet(index)
-C:\\Projects\\WoW\\Source\\Ui\\StableInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\StableInfo.cpp
 Usage: SetPetStablePaperdoll(\"modelFrame\")
 CancelAuction
 IsAuctionSortReversed
@@ -3733,7 +3733,7 @@ CloseAuctionHouse
 .PAUOutbidItemInfo@@
 .?AUOutbidItemInfo@@
 .?AUAuctionItemInfo@@
-C:\\Projects\\WoW\\Source\\Ui\\AuctionHouse.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\AuctionHouse.cpp
 m_numItems <= MAX_AUCTION_LIST_RESULTS
 m_numOwned <= MAX_AUCTION_LIST_RESULTS
 m_numBid <= MAX_AUCTION_LIST_RESULTS
@@ -3764,7 +3764,7 @@ JoinBattlefield
 GetBattlefieldInfo
 GetNumBattlefields
 .?AUBattlefield@@
-C:\\Projects\\WoW\\Source\\Ui\\BattlefieldInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\BattlefieldInfo.cpp
 index < m_battlefields.Count()
 script message(\"PvP Won!\");
 script message(\"PvP Lost!\");
@@ -3803,7 +3803,7 @@ GetGuildRosterMOTD
 GetNumGuildMembers
 .PAUGuildMemberInfo@@
 .?AUGuildMemberInfo@@
-C:\\Projects\\WoW\\Source\\Ui\\GuildInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\GuildInfo.cpp
 looking
 Usage: GetGuildRosterInfo(index)
 Usage: GetGuildRosterLastOnline(index)
@@ -3835,7 +3835,7 @@ GetNumSkillLines
 .PAUSkillTypeInfo@@
 .?AUSkillTypeInfo@@
 .?AUSkillLineInfo@@
-C:\\Projects\\WoW\\Source\\Ui\\SkillInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\SkillInfo.cpp
 Usage: GetSkillLineInfo(index)
 Usage: AbandonSkill(index)
 Usage: CollapseSkillHeader(index)
@@ -3848,7 +3848,7 @@ CancelDuel
 AcceptDuel
 StartDuelUnit
 StartDuel
-C:\\Projects\\WoW\\Source\\Ui\\DuelInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\DuelInfo.cpp
 DUEL_WINNER_KNOCKOUT
 DUEL_WINNER_RETREAT
 Usage: StartDuelUnit(\"unit\")
@@ -3860,7 +3860,7 @@ GetNumFactions
 .PAUReputationInfo@@
 .?AUPlayerForcedReaction@@
 .?AUReputationInfo@@
-C:\\Projects\\WoW\\Source\\Ui\\ReputationInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\ReputationInfo.cpp
 numFactions == MAX_REPUTATION_FACTIONS
 (m_numFactions + 1) < m_visibleFactions.Count()
 m_numFactions < m_visibleFactions.Count()
@@ -3907,7 +3907,7 @@ KNOWN_TALENTS_HEADER
 .PAUTrainerSkillLineInfo@@
 .?AUTrainerSkillLineInfo@@
 .?AUTrainerServiceInfo@@
-C:\\Projects\\WoW\\Source\\Ui\\ClassTrainerFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\ClassTrainerFrame.cpp
 available
 used
 unavailable
@@ -3953,7 +3953,7 @@ SetTaxiMap
 .?AUTAXILINE@@
 s_numNodes <= ( 4 * sizeof(ULONGLONG) * 8 )
 s_currentNode->m_ID == (int)node
-C:\\Projects\\WoW\\Source\\Ui\\TaxiMapFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\TaxiMapFrame.cpp
 s_currentNode
 Interface\\TaxiFrame\\TAXIMAP%d.blp
 count == s_lines.Count()
@@ -3994,7 +3994,7 @@ GetQuestLogSelection
 SelectQuestLogEntry
 GetQuestLogTitle
 GetNumQuestLogEntries
-C:\\Projects\\WoW\\Source\\Ui\\QuestLog.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestLog.cpp
 j < (sizeof(m_sortTypes) / sizeof(m_sortTypes[0]))
 Invalid quest log entry
 Missing header! (quest designers)
@@ -4040,7 +4040,7 @@ vendor
 gossip
 .?AUQUESTGIVEREMOTENODE@@
 Missing gossip text!
-C:\\Projects\\WoW\\Source\\Ui\\GossipInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\GossipInfo.cpp
 count <= (sizeof(m_gossipQuests) / sizeof(m_gossipQuests[0]))
 Usage: SelectGossipOption(index)
 Usage: SelectGossipAvailableQuest(index)
@@ -4054,14 +4054,14 @@ ItemTextGetPage
 ItemTextGetMaterial
 ItemTextGetCreator
 ItemTextGetItem
-C:\\Projects\\WoW\\Source\\Ui\\ItemTextFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\ItemTextFrame.cpp
 CancelTrackingBuff
 GetTrackingTexture
 CancelPlayerBuff
 GetPlayerBuffTimeLeft
 GetPlayerBuffTexture
 GetPlayerBuff
-C:\\Projects\\WoW\\Source\\Ui\\BuffFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\BuffFrame.cpp
 buffIndex >= 0 && buffIndex < (sizeof(m_buffs) / sizeof(m_buffs[0]))
 NOT_CANCELABLE
 CANCELABLE
@@ -4087,7 +4087,7 @@ GetActionText
 GetActionCooldown
 GetActionCount
 GetActionTexture
-C:\\Projects\\WoW\\Source\\Ui\\ActionBarFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\ActionBarFrame.cpp
 id >= 0 && id < NUM_ACTION_BUTTONS
 id < NUM_ACTION_BUTTONS
 Interface\\Buttons\\Spell-Reset
@@ -4116,8 +4116,8 @@ CreateMacro
 Data\\Interface\\Icons\\
 Interface\\Icons\\
 .?AV?$TSExplicitList@UMACRONODE@@$0?CCCCCCCD@@@
-C:\\Projects\\WoW\\Source\\Ui\\UIMacros.cpp
-C:\\Projects\\WoW\\Source\\Ui\\UIMacros.h
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\UIMacros.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\UIMacros.h
 Spell_
 Ability_
  \"\r\n
@@ -4157,7 +4157,7 @@ ClosePetition
 .?AUPetitionSignerInfo@@
 charter
 Usage: GetPetitionNameInfo(index)
-C:\\Projects\\WoW\\Source\\Ui\\PetitionInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\PetitionInfo.cpp
 GetTabardInfo
 TurnInGuildCharter
 BuyGuildCharter
@@ -4192,7 +4192,7 @@ TRAIN
 .PAUCraftInfo@@
 .PAUCraftSkillLineInfo@@
 .?AUCraftSkillLineInfo@@
-C:\\Projects\\WoW\\Source\\Ui\\CraftInfo.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\CraftInfo.cpp
 .?AUCraftInfo@@
 Usage: GetCraftInfo(index)
 Usage: SelectCraft(index)
@@ -4226,7 +4226,7 @@ GetContainerItemLink
 GetContainerItemInfo
 GetContainerNumSlots
 ContainerIDToInventoryID
-C:\\Projects\\WoW\\Source\\Ui\\ContainerFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\ContainerFrame.cpp
 Usage: ContainerIDToInventoryID(containerID)
 Usage: GetContainerNumSlots(index)
 Usage: GetContainerItemInfo(index, slot)
@@ -4257,7 +4257,7 @@ GetBuybackItemInfo
 GetMerchantItemInfo
 GetMerchantNumItems
 CloseMerchant
-C:\\Projects\\WoW\\Source\\Ui\\MerchantFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\MerchantFrame.cpp
 Usage: GetMerchantItemInfo(index)
 Usage: GetMerchantItemLink(index)
 Usage: GetMerchantItemMaxStack(index)
@@ -4313,7 +4313,7 @@ HEADSLOT
 .PAUTradeSkillSubClassInfo@@
 .?AUTradeSkillInfo@@
 .?AUTradeSkillSubClassInfo@@
-C:\\Projects\\WoW\\Source\\Ui\\TradeSkillFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\TradeSkillFrame.cpp
 Usage: GetTradeSkillInfo(index)
 Usage: SelectTradeSkill(index)
 Usage: GetTradeSkillCooldown(index)
@@ -4405,7 +4405,7 @@ GetQuestText
 GetGreetingText
 GetTitleText
 CloseQuest
-C:\\Projects\\WoW\\Source\\Ui\\QuestFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestFrame.cpp
 state < QUEST_STATE_NUM_TYPES
 (m_numQuests + m_numInProgress) < (QUESTGIVER_MAX_QUEST_COUNT)
 m_state == QUEST_GREETING
@@ -4443,7 +4443,7 @@ GetInventoryItemBroken
 GetInventoryItemTexture
 GetInventorySlotInfo
 .?AW4INV_ALERT_STATUS@@
-C:\\Projects\\WoW\\Source\\Ui\\PaperDollInfoFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\PaperDollInfoFrame.cpp
 container
 ( ( ( slot >= INVSLOT_BAGFIRST ) && ( slot <= INVSLOT_BAGLAST ) ) || ( ( slot >= BANKBAG_FIRST ) && ( slot <= BANKBAG_LAST ) ) )
 Invalid inventory slot in GetInventorySlotInfo
@@ -4480,7 +4480,7 @@ CycleVariation
 CanSave
 Save
 InitializeTabardColors
-C:\\Projects\\WoW\\Source\\Ui\\TabardModelFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\TabardModelFrame.cpp
 index < TABARDVARS_NUMVARS
 Usage: CycleVariation(variationIndex, delta)
 Invalid variationIndex in CycleVariation
@@ -4500,7 +4500,7 @@ UpdateModel
 RefreshUnit
 SetUnit
 Duplicated model: %s\n
-C:\\Projects\\WoW\\Source\\Ui\\CharacterModelBase.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\CharacterModelBase.cpp
 Usage: SetUnit(\"unit\")
 Usage: SetRotation(rotation (in radians))
 GetPingPosition
@@ -4511,7 +4511,7 @@ GetZoomLevels
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
-C:\\Projects\\WoW\\Source\\Ui\\MinimapFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\MinimapFrame.cpp
 quad < MAX_QUADDATA
 |cffb0b0b0
 rect.maxy <= maskBox.maxy
@@ -4541,10 +4541,10 @@ minimapArrowModel
 party%d
 Usage: SetZoom(level)
 .?AUTAXIROUTELINE@@
-C:\\Projects\\WoW\\Source\\Ui\\TaxiRouteFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\TaxiRouteFrame.cpp
 !s_routeFrame
 s_routeFrame == this
-C:\\Projects\\WoW\\Source\\Ui\\QuestTextParser.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestTextParser.cpp
 spell
 SPELL_DURATION_UNTIL_CANCELLED
 SPELL_DURATION
@@ -4559,7 +4559,7 @@ Error, unknown smartscreenrect test direction %d!
 ( ptr->t >= ptr->b ) && ( ptr->r >= ptr->l )
 ( rect.t >= rect.b ) && ( rect.r >= rect.l )
 grid < NUM_SRECTGRIDS
-C:\\Projects\\WoW\\Source\\UIUtil\\SmartScreenRects.cpp
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\SmartScreenRects.cpp
 offset
 showsmartrects
 Toggle display of SmartScreenRects
@@ -4707,7 +4707,7 @@ HP_TEMPLATE
 ARMOR_TEMPLATE
 DAMAGE_TEMPLATE
 SINGLE_DAMAGE_TEMPLATE
-C:\\Projects\\WoW\\Source\\UIUtil\\Tooltip.cpp
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Tooltip.cpp
 srec
 UNIT_SKINNABLE
 statusbar
@@ -4896,7 +4896,7 @@ Usage: SetAuctionCompareItem(\"type\", index [, offset])
 Usage: SetMerchantCompareItem(\"slot\" [, offset])
 Usage: SetLootRollItem(id)
 CMath::fnotequal_(direction.SquaredMag(),0)
-C:\\Projects\\WoW\\Source\\UIUtil\\CSimpleCamera.cpp
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\CSimpleCamera.cpp
 THIRD_PERSON_D
 THIRD_PERSON_C
 THIRD_PERSON_B
@@ -4949,7 +4949,7 @@ Delay
 5.55
 Pitch
 Distance
-C:\\Projects\\WoW\\Source\\UIUtil\\Camera.cpp
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Camera.cpp
 newValue
 Value out of range (%f - %f)\n
 CGInputControl::GetActive()
@@ -5062,10 +5062,10 @@ MoveForwardStop
 MoveForwardStart
 ToggleAutoRun
 ToggleRun
-C:\\Projects\\WoW\\Source\\UIUtil\\InputControl.cpp
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.cpp
 control
 .?AVCGInputControl@@
-C:\\Projects\\WoW\\Source\\UIUtil\\InputControl.h
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.h
 !s_inputControl
 Joystick
 enable joystick control
@@ -5152,7 +5152,7 @@ GetTime
 Unknown unit name: %s
 mouseover
 party
-C:\\Projects\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 Unknown object name: %s
 Usage: ConsoleExec(\"console_command\")
 Usage: UnitIsUnit(\"unit\", \"otherUnit\")
@@ -5560,7 +5560,7 @@ OptionalDep
 Notes
 Title
 Interface:
-C:\\Projects\\WoW\\Source\\UIUtil\\AddOns.cpp
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\AddOns.cpp
 Interface\\AddOns\\%s\\%s.toc
  \r\n\"
 WTF\\Account\\%s\\DisabledAddOns.txt
@@ -5607,7 +5607,7 @@ Cast
 Point
 Interface\\Cursor\\%s.blp
 height == 64
-C:\\Projects\\WoW\\Source\\UIUtil\\Cursor.cpp
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Cursor.cpp
 width == 64
 .?AV?$TSExplicitList@UPLAYERPORTRAIT@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UUNITPORTRAIT@@$0?CCCCCCCD@@@
@@ -5634,7 +5634,7 @@ Invalid syntax
 %d %f %f %f
 %d %f
 .?AUDIRTYFACE@@
-C:\\Projects\\WoW\\Source\\UIUtil\\PortraitButton.cpp
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\PortraitButton.cpp
 Portrait1
 pixels.Count() == alphaMask.Count()
 image.Height() == size
@@ -5661,7 +5661,7 @@ m_serverConnection
 .?AVWowConnection@@
 m_netEventQueue
 .?AVNETEVENTQUEUE@@
-C:\\Projects\\WoW\\Source\\Net\\NetClient\\NetClient.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Net\\NetClient\\NetClient.cpp
 m_netState == NS_UNINITIALIZED
 Client net stats: %Lu bytes sent, %Lu bytes received, %Lu msec elapsed
 m_netState == NS_INITIALIZED
@@ -5679,18 +5679,18 @@ m_netState == NS_CONNECTING
 NetClient::HandleDisconnect()
 Received pong with old sequence
 .?AUNETEVENTQUEUENODE@@
-C:\\Projects\\WoW\\Source\\Net\\NetInternal.h
+C:\\build\\buildWoW\\WoW\\Source\\Net\\NetInternal.h
 newval >= 0
-C:\\Projects\\WoW\\Source\\Net\\NetClient.h
+C:\\build\\buildWoW\\WoW\\Source\\Net\\NetClient.h
 newval > 0
-C:\\Projects\\WoW\\Source\\Net\\NetInternal.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Net\\NetInternal.cpp
 ..\\..\\DB/WowClientDB.h
 .PBVResistancesRec@@
 .PBVItemSubClassRec@@
 Error, no physical damage class found in DamageClass table!
 Error, two physical damage types found in DamageClass table!
 Error, the DamageClass table isn't numbered consecutively!
-C:\\Projects\\WoW\\Source\\DB\\DBClient\\DBClient.cpp
+C:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBClient.cpp
 Warning: The Resistances table has the wrong number of entries
 !\"Error, weapon subclasses in the ItemSubClass table have to be contiguous!\"
 !\"Error, there has to be one weapon subclass that's marked as unarmed!\"
@@ -5864,7 +5864,7 @@ itemtextcaxhe.wdb
 bytesWritten == sizeof(endMarker)
 bytesWritten == sizeof(endMarkerKey)
 bytesWritten == r.Size()
-C:\\Projects\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
+C:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
 bytesWritten == store.Size()
 OsCreateFile failed for cache file: %s\n
 %s/%s
@@ -6285,9 +6285,9 @@ Error reading ZoneIntroMusicTableRec
 DBFilesClient\\ZoneMusic.dbc
 Error reading ZoneMusicRec
 s_itemSubClassList[rec->m_classID].Count() > (uint)rec->m_subClassID
-C:\\Projects\\WoW\\Source\\DB\\DBClient\\sdbItemSubclass.cpp
+C:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\sdbItemSubclass.cpp
 rec->m_classID < NUM_ITEMCLASSES
-C:\\Projects\\ENGINE\\Source\\gx\\GxApi\\GxApi.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\GxApi\\GxApi.cpp
 api < GxApis_Last
 .?AUCGxFormat@@
 format < GxVertexBufferFormats_Last
@@ -6356,7 +6356,7 @@ texFormat < GxTexFormats_Last
 .?AVCGxDeviceD3d@@
 CGxDevice::DeviceAdapterID(): RET: %d, VID: %x, DID: %x, DVER: %x.%x
 CGxDevice::DeviceAdapterInfer(): RET: %d, DID: %x
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\W32\\CGxOglDeviceW32.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\W32\\CGxOglDeviceW32.cpp
 m_hPbuffer == 0 && m_hPbufferDC == 0
 m_hdc == 0 && m_hglrc == 0
 BlizzardCursor.cur
@@ -6366,7 +6366,7 @@ m_ownhwnd
 VBO KB total = %d\n
 VBO broker created %d slots at size %d => %d bytes on row, %d running total\n
 rowcount >= 1
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxDeviceOpenGl.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxDeviceOpenGl.cpp
 mMaxBytesLg2 < 24
 CGxVboBroker::GetGLError(): stuck loop aborted
 CGxVboBroker::GetGLError(): %s
@@ -6383,7 +6383,7 @@ CGxDeviceOpenGl::PoolSizeSet Tried to free NULL\n
 pool->m_mem != 0
 pool->m_usage == GxPoolUsage_Stream
 DsGet(s_gxBufTargetToDs[pool->m_target]) == (uint)pool->m_apiSpecific
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxDeviceOpenGl.h
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxDeviceOpenGl.h
 which < DeviceStates_Last
 buf->m_base == 0
 Ds320
@@ -6394,7 +6394,7 @@ Argb2101010
 Argb8888
 ArgbX888
 Rgb565
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDevice\\CGxDevice.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDevice\\CGxDevice.cpp
 m_level == 0
 m_level < Gx_MaxMatrixStackDepth
 m_level > 0
@@ -6452,7 +6452,7 @@ CGxDeviceD3d::ILoadD3dLib(): unable to GetProcAddress()
 Direct3DCreate9
 CGxDeviceD3d::ILoadD3dLib(): unable to LoadLibrary()
 d3d9.dll
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dDevice.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dDevice.cpp
 newRefCount == 0
 CGxDeviceD3d::DeviceCreate(): WindowClassCreate() failed: %s
 !\"FIX ME\"
@@ -6568,7 +6568,7 @@ GL_ARB_multitexture
 glUnlockArraysEXT
 glLockArraysEXT
 GL_EXT_compiled_vertex_array
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\GlExtSupport.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\GlExtSupport.cpp
 %d.%d
 (uint)(which - Ds_TextureArray0) == DsGet(Ds_ActiveTexture)
 (uint)(which - Ds_TexEnvMode0) == DsGet(Ds_ActiveTexture)
@@ -6578,7 +6578,7 @@ C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\GlExtSupport.cpp
 (uint)(which - Ds_TexGenS0) == DsGet(Ds_ActiveTexture)
 (uint)(which - Ds_TexTarget0) == DsGet(Ds_ActiveTexture)
 newVal <= m_caps.m_numTmus
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglState.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglState.cpp
 m_primIndexBuf->m_base == 0
 SetPixelFormat failed, color = %d, alpha = %d, depth = %d, fmt = %d\n
 SetupPixelFormat(): pfd does not match requested
@@ -6587,11 +6587,11 @@ OPTION ARB_fog_exp2;\n
 OPTION ARB_fog_exp;\n
 OPTION ARB_fog_linear;\n
 !!ARBfp1.0
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglShader.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglShader.cpp
 glARBFragmentProgram
 PARAM c%u[%u]={program.env[%u..%u]}
 
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglTexture.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglTexture.cpp
 DsGet(Ds_ActiveTexture) == tmuToUse
 texId->m_needsFlagUpdate
 shortEdge >= 4
@@ -6604,8 +6604,8 @@ ps_1_4
 ps_1_3
 ps_1_2
 ps_1_1
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dShader.cpp
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dTexture.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dShader.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dTexture.cpp
 w == (texId->m_width >> startLevel) && h == (texId->m_height >> startLevel)
 Gx: (ERROR): Texture creation failure.\n
 gxTex->m_format != GxTex_Unknown
@@ -6616,16 +6616,16 @@ lockRect.Width() > 0 && lockRect.Height() > 0
 Gx: (ERROR): Unable to get mip level.\n
 texels
 CGxDeviceD3d::PrimRender(): invalid buf!\n
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dXform.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dXform.cpp
 m_viewportDirty
 tmu < m_caps.m_numTmus
 Gx: (WARN): Unsupported pipeline config expect graphical goo\n
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dState.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxD3dState.cpp
 streamSub <= m_caps.m_numStreams
 .PAUCGxBuf@@
-C:\\Projects\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxDeviceD3d.h
+C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceD3d\\CGxDeviceD3d.h
 state < DeviceStates_Last
-C:\\Projects\\ENGINE\\Source\\Images\\tga.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Images\\tga.cpp
 *filename
 m_image == 0
 pRLEData
@@ -6640,7 +6640,7 @@ compressed != 0
 uncompressed != 0
 m_colorMap
 m_addlHeaderData
-C:\\Projects\\ENGINE\\Source\\Images\\funcs.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Images\\funcs.cpp
 !\"GetBitDepth(): unhandled format\"
 offset == levelDataSize
 bits
@@ -6650,12 +6650,12 @@ destWidth * xScale == sourceWidth
 blit
 dstFmt < BlitFormats_Last
 srcFmt < BlitFormats_Last
-C:\\Projects\\ENGINE\\Source\\Images\\blit.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Images\\blit.cpp
 alpha < BlitAlphas_Last
 rowSize
 format >= BlitFormat_Argb8888 && format < BlitFormats_Last
 \"3DUfw
-C:\\Projects\\engine\\Source\\BLPFile\\blp.cpp
+C:\\build\\buildWoW\\engine\\Source\\BLPFile\\blp.cpp
 Tried to copy MIP %u from source image, but no such MIP exists.\n
 Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
@@ -6671,6 +6671,14 @@ fileBits
 !\"CBLPFile::Lock2(): unhandled format\"
 width <= 1024
 BLPB
+signup.wow-europe.com
+www.wow-europe.com
+payment.worldofwarcraft.co.kr
+pcbang.worldofwarcraft.co.kr
+www.worldofwarcraft.co.kr
+signup.worldofwarcraft.com
+www.worldofwarcraft.com
+www.blizzard.com
 intel
 CHAR_NAME_SUCCESS
 CHAR_NAME_FAILURE
@@ -6746,7 +6754,7 @@ RESPONSE_FAILURE
 RESPONSE_SUCCESS
 .?AUCHARACTER_INFO@@
 .?AUREALM_INFO@@
-C:\\Projects\\WoW\\Source\\WowSvcs\\WowSvcsClient\\ClientServices.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\ClientServices.cpp
 param
 result=FALSE
 ClientConnection %s: %s code=%s %s
@@ -6821,6 +6829,7 @@ Processor vendor:\t%s\n
 Processors:\t%u\n
 Computer:\t%s\n
 Username:\t%s\n
+http://
 SortWho
 SetWhoToUI
 GetWhoInfo
@@ -6840,8 +6849,8 @@ GetSelectedFriend
 SetSelectedFriend
 GetFriendInfo
 GetNumFriends
-C:\\Projects\\WoW\\Source\\WowSvcs\\WowSvcsClient\\FriendList.h
-C:\\Projects\\WoW\\Source\\WowSvcs\\WowSvcsClient\\FriendList.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\FriendList.h
+C:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\FriendList.cpp
 Usage: GetFriendInfo(index)
 Usage: SetSelectedFriend(index)
 Usage: AddFriend(\"name\")
@@ -6883,7 +6892,7 @@ bindings-cache.wtf
 config-cache.wtf
 cache.md5
 WTF\\Account\\%s\\%s
-C:\\Projects\\WoW\\Source\\WowSvcs\\WowSvcsClient\\AccountData.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\AccountData.cpp
 bytes == sizeof(s_accountData[i].cache_md5)
 bytesWritten == destSize
 type >= 0 && type < NUM_ACCOUNT_DATA_TYPES
@@ -6893,17 +6902,17 @@ dbghelp.dll
 ijl15.dll
 fmod.dll
 WoW.exe
-C:\\Projects\\WoW\\Source\\WowSvcs\\WowSvcsClient\\ChecksumExecutables.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\ChecksumExecutables.cpp
 ..\\..\\..\\..\\engine\\source\\SRP/HMAC.h
 length <= LENGTH
 %s.partial
-C:\\Projects\\WoW\\Source\\WowServices\\Login.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowServices\\Login.cpp
 us.logon.worldofwarcraft.com:3724
-C:\\Projects\\WoW\\Source\\WowServices\\WowConnection.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowServices\\WowConnection.cpp
 socket() returned %d, reason: %s
 can't create socket (No network connection available?)
 m_refCount == 0
-C:\\Projects\\WoW\\Source\\WowServices\\WowConnection.h
+C:\\build\\buildWoW\\WoW\\Source\\WowServices\\WowConnection.h
 s <= 0x7fffff
 m_sock >= 0
 m_sendDepth >= 0
@@ -6921,8 +6930,8 @@ WDataStoreLargeBuffer
 .?AV?$TObjectAlloc@V?$WDataStoreBuffer@$0EAAA@@@@@
 WDataStoreSmallBuffer
 .?AV?$TObjectAlloc@V?$WDataStoreBuffer@$0DAA@@@@@
-C:\\Projects\\WoW\\Source\\WowServices\\WDataStore.cpp
-C:\\Projects\\WoW\\Source\\WowServices\\../ObjectAlloc/ObjectAllocTemplate.h
+C:\\build\\buildWoW\\WoW\\Source\\WowServices\\WDataStore.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowServices\\../ObjectAlloc/ObjectAllocTemplate.h
 alloc == 0 || alloc == SMALL_BUFFER_SIZE || alloc >= LARGE_BUFFER_SIZE
 ServerLink::CMD_GRUNT_AUTH_CHALLENGE
 ClientLink::CMD_AUTH_LOGON_CHALLENGE
@@ -6942,7 +6951,7 @@ ServerLink::CMD_GRUNT_CONN_PONG
 ServerLink::CMD_GRUNT_CONN_PING
 ServerLink::CMD_GRUNT_AUTH_VERIFY
 Grunt Server link with server type %d created
-C:\\Projects\\WoW\\Source\\WowServices\\Grunt.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowServices\\Grunt.cpp
 serverName
 login.lst
 Sending HELLO to Grunt server at %s, I am an update server
@@ -6955,6 +6964,7 @@ My public address is %s
 Sending HELLO to Grunt at %s
 m_pos != (unsigned)-1
 Unable to get the information necessary to identify self to Grunt
+Unknown grunt result %d
 account id [%d] has passed authentication
 account id [%d:%d] unlock received, but it was out of date
 account id [%d:%d] unlocked
@@ -6975,9 +6985,10 @@ Establishing connection to Grunt server at %s
 Proving session for %s from %s [lock: %d]
 .?AUUnlock@ServerLink@Grunt@@
 Unlocking session for account id [%d:%d]
+Unknown grunt result %d @ %d
 .?AUInfo@CdKey@Grunt@@
 m_state == STATE_CONNECT_VERSION || m_state == STATE_RECONNECT_VERSION
-C:\\Projects\\WoW\\Source\\WowServices\\Linux\\WowConnectionNetSelect.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowServices\\Linux\\WowConnectionNetSelect.cpp
 ret == 0
 .PAVWowConnection@@
 l >= 0
@@ -6989,14 +7000,14 @@ Net Thread %d
 Network thread %d did not exit normally
 Main network thread did not exit normally
 m_workers[id].serviceConn->m_serviceCount == 1
-C:\\Projects\\WoW\\Source\\WowServices\\WowConnectionNet.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowServices\\WowConnectionNet.cpp
 m_workers[id].serviceConn
 i < m_numWorkers
 m_workers[i].serviceConn != conn
 conn->m_serviceCount == 0
 waitResult == SWAIT_OBJECT_0
 .?AUWowConnectionNetEvent@@
-C:\\Projects\\WoW\\Source\\WowServices\\AddressList.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WowServices\\AddressList.cpp
 nextpeer < m_max
 No Name
  \t\r\n
@@ -7011,13 +7022,13 @@ IsValid()
 .PAUCGxuLight@@
 .?AVCGxuLightLink@@
 .?AUCGxuLight@@
-C:\\Projects\\engine\\Source\\Gxu\\GxuLight.cpp
+C:\\build\\buildWoW\\engine\\Source\\Gxu\\GxuLight.cpp
 !CGxuLight::s_lights.Head()
 light->m_lockCount != 0
 bucketSize > 0.0f
 .?AV?$TSExplicitList@UCLightList@@$0?CCCCCCCD@@@
 g_FTLibrary
-C:\\Projects\\engine\\Source\\Gxu\\GxuFontMain.cpp
+C:\\build\\buildWoW\\engine\\Source\\Gxu\\GxuFontMain.cpp
 !error
 .?AUCGxStringBatch@@
 .?AUCGxFont@@
@@ -7041,7 +7052,7 @@ bufferSize
 fovyInRadians > 0.0f && fovyInRadians < PI
 minZ < maxZ
 aspect > 0.0f
-C:\\Projects\\engine\\Source\\Gxu\\Gxu.cpp
+C:\\build\\buildWoW\\engine\\Source\\Gxu\\Gxu.cpp
 minY != maxY
 minX != maxX
 up.SquaredMag() >= 0.01f
@@ -7059,11 +7070,11 @@ bones
 boneWeights
 boneIndices
 GxuT
-C:\\Projects\\engine\\Source\\Gxu\\GxuFontUtil.cpp
+C:\\build\\buildWoW\\engine\\Source\\Gxu\\GxuFontUtil.cpp
 widthIndex < widthArrayGuard
 size > 0
 newSize > 0
-C:\\Projects\\engine\\Source\\Gxu\\GxuFontMiscClasses.cpp
+C:\\build\\buildWoW\\engine\\Source\\Gxu\\GxuFontMiscClasses.cpp
 glyphSide
 next->ValidBlockEndPoints()
 ValidBlockEndPoints()
@@ -7082,7 +7093,7 @@ batchDesc->face == currentFace
 currentFace
 GxuF
 GxuF
-C:\\Projects\\engine\\Source\\Gxu\\GxuFontFont.cpp
+C:\\build\\buildWoW\\engine\\Source\\Gxu\\GxuFontFont.cpp
 pageNumber < 8
 m_pixelsPerUnit != 0.0f
 Error, font %s being created with height %g at screen res of %dx%d which is %d pixels!
@@ -7103,14 +7114,14 @@ m_pixSize
 m_currentFace->m_textureCache[textureNumber].GetTexturePtr()
 textureNumber < (sizeof(m_currentFace->m_textureCache) / sizeof(m_currentFace->m_textureCache[0]))
 texturePagesUsedFlag
-C:\\Projects\\engine\\Source\\Gxu\\GxuFontString.cpp
+C:\\build\\buildWoW\\engine\\Source\\Gxu\\GxuFontString.cpp
 currentText
 info.hyperlinkParseMode != HYPERLINKHREF
 GxuF
 .?AUGXUFONTHYPERLINKINFO@@
 GxuF
 .?AUGRADIENTINFO@@
-C:\\Projects\\engine\\Source\\Gxu\\GxuFontTextureCache.cpp
+C:\\build\\buildWoW\\engine\\Source\\Gxu\\GxuFontTextureCache.cpp
 cellHeight
 m_theFace
 pixelSize
@@ -7123,7 +7134,7 @@ glyph->bitmapData.m_data
 .?AV?$TSExplicitList@UFACEDATA@@$0?CCCCCCCD@@@
 faceData
 HFACE
-C:\\Projects\\engine\\Source\\Gxu\\GxuFontFace.cpp
+C:\\build\\buildWoW\\engine\\Source\\Gxu\\GxuFontFace.cpp
 faceData->selfReference
 !selfReference
 dataPtr->selfReference
@@ -7133,16 +7144,16 @@ refCount >= 1
 height <= pixelHeight
 dataPtr
 pixelHeight
-C:\\Projects\\engine\\Source\\Gxu\\IGxuFontGlyph.cpp
+C:\\build\\buildWoW\\engine\\Source\\Gxu\\IGxuFontGlyph.cpp
 glyphHeight
 glyphYStart
 yOffsetPtr
 ../../../../engine/source\\Base/CDataStore.h
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Trade_C.cpp
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Player_C.h
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Trade_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Player_C.h
 msg->IsRead() && msg->IsValid()
 whichPlayer == 0 || whichPlayer == 1
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\DynamicObject_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\DynamicObject_C.cpp
 ../../../../engine/source\\Tempest/cmath.h
 bytes <= sizeof(*m_dynamicObj)
 SPELLEFFECTIDNOTFOUND|%d
@@ -7151,9 +7162,9 @@ SPELLVISUALIDNOTFOUND|%d|%d
 NOSPELLIDFOUND|%d
 NOOBJECTFILENAME|%d|Dynamic
 UNKNOWNANIMEVENT|%.4s|CGDynamicObject_C|CGDynamicObject_C::HandleAnimEvent
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Object_C.h
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Object_C.h
 corpsePtr
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Corpse_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Corpse_C.cpp
 oldValue
 i < (CGCorpse::GetDataSize()/sizeof(DWORD))
 bytes < sizeof(*m_corpse)
@@ -7162,10 +7173,10 @@ INVALIDPLAYERDISPLAYID|%d|%d|%d
 World\\Generic\\PassiveDoodads\\DeathSkeletons\\%s%sDeathSkeleton.mdx
 model == GetCharacterModel()
 IsClaimed()
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Container_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Container_C.cpp
 bytes <= sizeof(*m_cont)
 .?AV?$TSExplicitList@UINVENTORYART@@$0?CCCCCCCD@@@
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Item_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Item_C.cpp
 g_itemDBCache.GetRecord(GetEntryID())
 stat
 NOINVENTORYICON|%d
@@ -7237,7 +7248,7 @@ DPS Scaler
 Creature Spell Scaler
 Base
 .?AUInitialSpellStruct@@
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Player_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Player_C.cpp
 You can't shop while dead.
 Vendor is dead
 Vendor has no inventory
@@ -7336,7 +7347,7 @@ Closing
 Open
 Opening
 Closed
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\GameObject_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\GameObject_C.cpp
 m_owner
 Unable%s
 lock
@@ -7388,7 +7399,7 @@ m_baseObj && m_baseObj->CanUse()
 .?AUPathPause@?$ShipPath@V?$WowClientDB@VTaxiPathNodeRec@@@@@@
 pathPoints.Count() > 0
 .?AUSegment@?$ShipPath@V?$WowClientDB@VTaxiPathNodeRec@@@@@@
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\GameObject_C.h
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\GameObject_C.h
 DEFLECTED
 RESIST
 StandHigh
@@ -7399,12 +7410,12 @@ Interface\\Buttons\\TalkToMeGrey.mdx
 Interface\\Buttons\\TalkToMeQuestion_Grey.mdx
 Interface\\Buttons\\TalkToMe.mdx
 .PAVCM2Model@@
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Unit_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Unit_C.cpp
 GetOwnerGUID() != GetGUID()
 Textures\\BakedNpcTextures\\
 textureName
 GetCharacterModel()
-!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\"C:\\\\Projects\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1676)) != 0
+!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1676)) != 0
 .?AVCEffect@@
 s_showFootPrintParticles
 m_modelData
@@ -7523,7 +7534,7 @@ Destroy
 Close
 Opened
 Stand
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Object_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Object_C.cpp
 OBJECTALREADYACTIVE|0x%016I64X
 i < CGCorpse::TotalFields()
 i < CGDynamicObject::TotalFields()
@@ -7546,7 +7557,7 @@ type < NUM_HIGHLIGHTTYPES
 Textures\\UnitSelectTexture.blp
 ObjectSelectionCircle
 .?AUCPlayerMoveEvent@@
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Movement.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Movement.cpp
 Mover at invalid position
 ../..\\Object/MovementGlobals.h
 !initialized || (int(time - lastUpdateTime) >= 0)
@@ -7574,7 +7585,7 @@ CMath::fnotequal_(init.runSpeed,0)
 !IsInMotion()
 !m_moveQueue.HasEntries()
 IsSwimming()
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Missile_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Missile_C.cpp
 m_speed >= 0
 m_model
 Spells\\Resist_Immune_Effect.M2
@@ -7582,13 +7593,13 @@ Spells\\Resist_Immune_Effect.M2
 LOOT_ROLL_ALL_PASSED
 LOOT_ROLL_WON
 LOOT_ROLL_YOU_WON
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\LootRoll.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\LootRoll.cpp
 LOOT_ROLL_ROLLED
 LOOT_ROLL_PASSED
 LOOT_ROLL_ROLLED_SELF
 LOOT_ROLL_PASSED_SELF
 count <= (sizeof(s_masterList) / sizeof(s_masterList[0]))
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\ZoneDebug.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\ZoneDebug.cpp
 next == &s_zoneIDMap[256 - 1][256 - 1] + 1
 HARDCODED PetLoyalty Down Head
 HARDCODED PetLoyalty Down Base
@@ -7602,7 +7613,7 @@ HARDCODED Breath Cold
 HARDCODED Breath Underwater
 HARDCODED Footstep Water Walk Spray
 HARDCODED Footstep Water Run Spray
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Effect_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Effect_C.cpp
 m_effectRec
 **** CEffect::AddEffect called with ATTACH_NONE\n
 m_fishingPoleModel
@@ -7645,7 +7656,6 @@ chest
 questgiver
 button
 door
-true
 casterTargetSpellTargets
 casterTargetSpell
 large
@@ -7693,19 +7703,19 @@ autoClose
 startDestroyed
 startOpen
 type
-C:\\Projects\\WoW\\Common\\GameObjectDefs.cpp
+C:\\build\\buildWoW\\WoW\\Common\\GameObjectDefs.cpp
 propId >= 0 && propId < NUM_PROP
 typeId >= 0 && typeId < NUM_GAMEOBJECT_TYPE
 propNum >= 0 && propNum < s_objectInfo[typeId].numProperties
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Movement_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Movement_C.cpp
 !s_transports.IsLinked(transport)
 s_transports.IsLinked(transport)
 .?AUDEATTHUDSOUNDINFO@@
 FootstepSounds
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\UnitSound_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitSound_C.cpp
 soundType < NUM_UNITSOUNDTYPES
 roundInfo
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
 func
 slot < (int)NumSlots()
 FIRE
@@ -7723,7 +7733,7 @@ CombatLogRangeFriendlyPlayers
 CombatLogRangePartyPet
 CombatLogRangeParty
 .?AUGENERICITEMCACHEDESC@@
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\UnitCombatLog_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombatLog_C.cpp
 Warning, string %s not found in stringfile.
 SPELLINTERRUPTOTHEROTHER
 SPELLINTERRUPTOTHERSELF
@@ -7913,8 +7923,8 @@ SPELLDURABILITYDAMAGEOTHERSELF
 SPELLDURABILITYDAMAGESELFOTHER
 SPELLDISMISSPETOTHER
 SPELLDISMISSPETSELF
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\GuildStats_C.cpp
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\PlayerSound_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\GuildStats_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\PlayerSound_C.cpp
 SPELLVISUALIDNOTFOUND|%d
 NEVERCRUSH
 NEVERGLANCE
@@ -7948,7 +7958,7 @@ Party Members
 Pets
 info.attacker != info.victim
 info.victim
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\UnitCombatLogDebug_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombatLogDebug_C.cpp
 info.attacker
 info.newVictimState < NUM_VICTIMSTATES
 %s (castlevel %d) %s the \"%s\" aura of %s (%s) (%g%%/%g%%)
@@ -7974,7 +7984,7 @@ SpellID %d] %s cast %s on %s for %d %s damage%s%s
 failed
 succeeded
 PROC Resisted: %s resisted %s's %s (rolled/needed = %g/%g)\n
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\UnitCombat_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombat_C.cpp
 attacker
 size < NUM_MONSTERSIZECLASSES
 size >= MONSTERSIZECLASS_SMALL
@@ -7984,7 +7994,7 @@ unit->IsA(TYPE_UNIT)
 unit->GetEntryID()
 numVerts < 9
 index < numVerts
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\Collide.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Collide.cpp
 poly
 m_transportGUID
 (mapPos.x >= 0.0f) && (mapPos.x < ((64*16)*((150.0f/36.0f)*8))) && (mapPos.y >= 0.0f) && (mapPos.y < ((64*16)*((150.0f/36.0f)*8)))
@@ -7995,7 +8005,7 @@ COMBATLOG_XPGAIN_EXHAUSTION4
 NULL
 COMBATLOG_XPGAIN_EXHAUSTION2
 COMBATLOG_XPGAIN_EXHAUSTION1
-C:\\Projects\\WoW\\Source\\Object\\ObjectClient\\UnitCombatLogXP_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombatLogXP_C.cpp
 %s_RAID
 %s_GROUP
 restState < (sizeof(s_strings) / sizeof(s_strings[0]))
@@ -8031,7 +8041,7 @@ highlightcolor
 bgcolor
 fontcolor
 ..\\DB/WowClientDB.h
-C:\\Projects\\WoW\\Source\\Console\\ConsoleClient.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Console\\ConsoleClient.cpp
 .?AUCONSOLELINE@@
 node->fontPointer
 Fonts\\ARIALN.ttf
@@ -8098,7 +8108,7 @@ unsupported api, must be one of
 s_currlineptr
 Unknown command
 .?AV?$TSExplicitList@UCVar@@$0?CCCCCCCD@@@
-C:\\Projects\\WoW\\Source\\Console\\ConsoleVar.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Console\\ConsoleVar.cpp
 cvarlist
 List cvars
 cvar_default
@@ -8130,7 +8140,7 @@ sound
 No help yet
 .?AV?$TSExplicitList@UCONSOLECOMMAND@@$0?CCCCCCCD@@@
 Executing ->%s
-C:\\Projects\\WoW\\Source\\Console\\ConsoleCommand.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Console\\ConsoleCommand.cpp
 Unknown command: %s
 Unable to load file %s
 verbose
@@ -8201,12 +8211,12 @@ month == -1 || (month >= 0 && month < 12)
 monthday == -1 || (monthday >= 0 && monthday < 32)
 weekday == -1 || (weekday >= 0 && weekday < 7)
 hour == -1 || (hour >= 0 && hour < 24)
-C:\\Projects\\WoW\\Common\\WowTime.cpp
+C:\\build\\buildWoW\\WoW\\Common\\WowTime.cpp
 minute == -1 || (minute >= 0 && minute < 60)
 %s/%s/%s (%s) %s:%s
 %2.2i
 Not Set
-C:\\Projects\\WoW\\Source\\Game\\GameTime.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameTime.cpp
 m_gameMinutesThisTick >= 0.0f
 GameTimeSync: delta=%d, differential=%d, HoursAndMinutes=%d
 HGAMETIMECALLBACK
@@ -8215,7 +8225,7 @@ curr->callback
 .?AUTIMESTAMPSTRUCT@@
 .?AUGAMETIMECBSTRUCT@@
 .?AV?$TSExplicitList@UTIMESTAMPSTRUCT@@$0?CCCCCCCD@@@
-C:\\Projects\\Storm\\Source\\SMem3.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SMem3.cpp
 SMem3: Memory was allocated and never released
 SMem3: Not initialized.  Verify linker entrypoint is set to 'StormStaticEntryPoint' (defined in StormStartup.h)
 SMem3: Pointer does not refer to a valid allocated block of memory
@@ -8288,7 +8298,7 @@ Crash
 Errors\\
  Log
 bufferchars
-C:\\Projects\\Storm\\Source\\SErr.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SErr.cpp
 0x%08X (%s) at %04X:%08X
 unknown exception
 ntdll.dll
@@ -8324,7 +8334,7 @@ Freeze Log: The game was frozen for at least %d seconds
 User initiated log -- The user held down Ctrl-Alt-Shift-PageDown
 .?AUHANDLER@@
 ..\\h\\stpl.h
-C:\\Projects\\Storm\\Source\\SStr.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SStr.cpp
 string2
 string1
 source
@@ -8332,7 +8342,7 @@ dest
 whitespace
 buffer || !bufferchars
 search
-C:\\Projects\\Storm\\Source\\W32\\SThread.cpp
+C:\\build\\buildWoW\\Storm\\Source\\W32\\SThread.cpp
 s_numthreads < s_maxthreads
 CdThreadProc
 main
@@ -8340,7 +8350,7 @@ main
 valuename
 *keyname
 keyname
-C:\\Projects\\Storm\\Source\\SReg.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SReg.cpp
 Software\\Blizzard Entertainment\\
 Software\\Battle.net\\
 bufferChars
@@ -8351,7 +8361,7 @@ baseKeyName
 numSubKeys
 keyName
 .MPQ
-C:\\Projects\\Storm\\Source\\SFile2.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SFile2.cpp
 toplen + SStrLen(sub) < 260 - 1
 basedir
 !m_asyncCount
@@ -8380,11 +8390,11 @@ archive && archive->m_type == SARCHIVE_MPQ
 .?AV?$TSExplicitList@UFILEMAP@@$0?CCCCCCCD@@@
 optlen
 optval
-C:\\Projects\\Storm\\Source\\SOption.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SOption.cpp
 Unable to open response file: %s
 The syntax of the command is incorrect.
 Invalid argument: %s
-C:\\Projects\\Storm\\Source\\SCmd.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SCmd.cpp
 cmdline
 listptr
 (((flags) & ((0 << 16) | (1 << 16) | (2 << 16))) != (0 << 16)) || (!variableptr) || (variablebytes == sizeof(DWORD))
@@ -8394,7 +8404,7 @@ listptr
 namelength < 16
 .?AUCMDDEF@@
 BLIZZARDKEY
-C:\\Projects\\Storm\\Source\\SFile.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SFile.cpp
 archiveptr != 0
 sleeptime <= 5000
 singleSectorFile
@@ -8444,7 +8454,7 @@ fileptr != 0
 .?AUFILEREC@SFile@Storm@@
 %s(%u) : CDebugSCritSect:%08x:Leave without Enter\n
 %s(%u) : CDebugSCritSect:DumpAllEntries\n
-C:\\Projects\\Storm\\Source\\W32\\SLock.cpp
+C:\\build\\buildWoW\\Storm\\Source\\W32\\SLock.cpp
 IInitialize: failed to create event [%u][%u]
 IFreeEvent: too many %s event frees
 SUMREVTYPE
@@ -8460,13 +8470,13 @@ SMutex::Create: CreateMutex failed
 %s(%u) : CDebugLock:%08x: tid:%03x %c %c t:%u\n
 %s(%u) : CDebugLock:%08x no free entries\n
 %s(%u) : CDebugLock:%08x: entry has bad next %u\n
-C:\\Projects\\Storm\\Source\\SLog.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SLog.cpp
 logptr->file != ((HANDLE)(LONG_PTR)-1)
 HSLOG
 %02x
 %04x:
 %u/%u %02u:%02u:%02u.%03u
-C:\\Projects\\Storm\\Source\\SRgn.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SRgn.cpp
 combinemode <= 6
 combinemode >= 1
 !reserved
@@ -8478,7 +8488,7 @@ numrects
 .?AURECTF@@
 .?AU_FOUNDPARAM@@
 .?AV?$TSExplicitList@URGN@@$0?CCCCCCCD@@@
-C:\\Projects\\Storm\\Source\\SComp.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SComp.cpp
 <unknown>
 bzip2Compress:%d
 *destsize >= sourcesize
@@ -8486,7 +8496,7 @@ destsize
 myTID != 0
 sourcesize >= sizeof(BYTE)
 destbuffersize >= sourcesize
-C:\\Projects\\Storm\\Source\\IOUnit\\IOFileUnit.cpp
+C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOFileUnit.cpp
 !\"IOFileUnit::Create: The File unit should be the last item in the IO chain.\"
 m_file != 0
 m_requiredAlignment <= 65535
@@ -8496,7 +8506,7 @@ readAmount < k_alignedBufferSize
 readAmount
 writeAmount < k_alignedBufferSize
 writeAmount
-C:\\Projects\\Storm\\Source\\SBig.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SBig.cpp
 !borrow
 m_used < SIZE
 count <= m_used
@@ -8504,7 +8514,7 @@ d <= SMALL_BOUND
 <= SMALL_BOUND
 .?AVBigData@@
 SBIG
-C:\\Projects\\Storm\\Source\\SMsg.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SMsg.cpp
 .?AUWNDREC@@
 MiniDumpWriteDump
 SymEnumerateSymbols
@@ -8567,8 +8577,8 @@ psapi.dll
 TryEnterCriticalSection
 kernel32.dll
 TryEnterCriticalSection not found on this OS.
-C:\\Projects\\Storm\\Source\\W32\\SServer.cpp
-C:\\Projects\\Storm\\Source\\SEvt.cpp
+C:\\build\\buildWoW\\Storm\\Source\\W32\\SServer.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SEvt.cpp
 .?AU_IDHASHTABLE@@
 .?AU_IDHASHENTRY@@
 .?AU_TYPEHASHENTRY@@
@@ -8593,7 +8603,7 @@ unknown header flags set
 incorrect header check
 invalid window size
 unknown compression method
-C:\\Projects\\Storm\\Source\\SZip.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SZip.cpp
 openFileCount == 0
 .?AUZipFileDirEntry@@
 localFileHeader.filenameSize < ZIPFILE_MAX_PATH
@@ -8609,7 +8619,7 @@ m_providerList == &provider
 c:\\boot.ini
 .?AUZipFileArchive@@
 .?AV?$TSExplicitList@UZipFileDirEntry@@$0?CCCCCCCD@@@
-C:\\Projects\\Storm\\Source\\IOUnit\\IOCursorUnit.cpp
+C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOCursorUnit.cpp
 !\"IOCursorUnit::Create: The Cursor unit needs to be followed by another unit.\"
 0\aw,a
 Qkkbal
@@ -8626,15 +8636,15 @@ wn>Jj
  \a \v
 @\a@\v@
 PKWARE Data Compression Library for Win32\r\nCopyright 1989-1995 PKWARE Inc.  All Rights Reserved.\r\nPatent No. 5,051,745\r\nPKWARE Data Compression Library Reg. U.S. Pat. and Tm. Off.\r\nVersion 1.11
-C:\\Projects\\Storm\\Source\\SSignature.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 (param.ioAlignMemoryTo & (param.ioAlignMemoryTo - 1)) == 0
 param.ioAlignMemoryTo
-C:\\Projects\\Storm\\Source\\IOUnit\\IOAlignUnit.cpp
+C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOAlignUnit.cpp
 !\"IOAlignUnit::Create: The Align unit needs to be followed by another unit.\"
 .?AUIOCacheEntry@IOAlignUnit@@
-C:\\Projects\\Storm\\Source\\IOUnit\\IOARC4Unit.cpp
+C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOARC4Unit.cpp
 !\"IOARC4Unit::Create: The ARC4 unit cannot be the last unit in the IO chain.\"
-C:\\Projects\\Storm\\Source\\IOUnit\\IOChainUnit.cpp
+C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOChainUnit.cpp
 !\"IOChainUnit::Create: The Chain unit must be the last unit in the IO chain.\"
 \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
 \n\b\a\a\b\t\a
@@ -8656,7 +8666,7 @@ stream error
 file error
 stream end
 need dictionary
-C:\\Projects\\Storm\\Source\\SARC4.cpp
+C:\\build\\buildWoW\\Storm\\Source\\SARC4.cpp
 ^\b[^Z
 -ZI\r\v
 US]CQ
@@ -8678,7 +8688,7 @@ showDetailDoodads
 Textures\\WaterPoop02.blp
 .?AVParticulate@@
 horizonFarClip != 0.0f
-C:\\Projects\\WoW\\Source\\WorldClient\\World.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\World.cpp
 farClip != 0.0f
 mapName
 mapRec
@@ -8701,7 +8711,7 @@ baseObj->GetType() & CMapBaseObj::Type_Entity
 doodadDef->GetType() & CMapBaseObj::Type_DoodadDef
 CMath::fnotequal_(doodadDef->scale,0.0f)
 doodadDef->scale
-C:\\Projects\\WoW\\Source\\WorldClient\\World.h
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\World.h
 b < nBatches
 *dist >= 0.0f && *dist <= 1.0f
 radius > 0.0f && radius < 16
@@ -8774,7 +8784,7 @@ visMapObjDefGroupList.Head() == 0
 visChunkList.Head() == 0
 visAreaLowList.Head() == 0
 frustumList.Head() == 0
-C:\\Projects\\WoW\\Source\\WorldClient\\WorldScene.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\WorldScene.cpp
 visDoodadList.Head() == 0
 .?AVCWFrustum@@
 frustum
@@ -9092,7 +9102,7 @@ XTextures\\ocean\\ocean_h.%d.blp
 XTextures\\river\\lake_a.%d.blp
 .?AULODArrays@@
 h == 64
-C:\\Projects\\WoW\\Source\\WorldClient\\MapWater.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapWater.cpp
 mipLevel == 0
 liquidTexBaseName[liquid]
 liquid < LIQUID_COUNT
@@ -9164,7 +9174,7 @@ mapObjDefGroupList.Head() == 0
 mapObjDefHash.Head() == 0
 entityList.Head() == 0
 chunkList.Head() == 0
-C:\\Projects\\WoW\\Source\\WorldClient\\Map.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\Map.cpp
 areaList.Head() == 0
 layer
 area
@@ -9182,7 +9192,7 @@ facet
 nodeFaceIndices
 nodes
 nodeFaceIndices == 0
-C:\\Projects\\WoW\\Common\\AaBsp.cpp
+C:\\build\\buildWoW\\WoW\\Common\\AaBsp.cpp
 nodes == 0
 buildFaceIndices
 nFaceVertexIndices < 0x40000
@@ -9199,7 +9209,7 @@ freecol >= 0
 idxVal != 0xFFFF
 CMap::SafeOpen() failed %s
 CMap::SafeOpen() failed %s\n
-C:\\Projects\\WoW\\Source\\WorldClient\\MapLoad.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapLoad.cpp
 CMap::SafeRead() failed %s
 CMap::SafeRead() failed %s\n
 TextureAllLoaded()
@@ -9210,7 +9220,7 @@ CMap::Load() doodadDefHash not empty
 World\\Maps\\
 mapAreaLow
 .?AVCMapAreaLow@@
-C:\\Projects\\WoW\\Source\\WorldClient\\CMapArea.h
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\CMapArea.h
 bytes <= s_allocator.BytesPerData()
 iffChunk.token == 'MARE'
 iffChunk.token=='MAOF'
@@ -9231,26 +9241,26 @@ mapObjGroup
 Environments\\Stars\\stars.mdl
 CMap::Unload() mapObjDefHash not empty
 CMap::Unload() doodadDefHash not empty
-C:\\Projects\\WoW\\Source\\WorldClient\\MapUnload.cpp
-C:\\Projects\\WoW\\Source\\WorldClient\\MapUpdate.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapUnload.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapUpdate.cpp
 mapObjDefGroup->parentLinkList.Head()->ref->GetType() & CMapBaseObj::Type_MapObjDef
 .?AUCGxVertexPT0T1@@
 .?AVCMapFootprintTexture@@
-C:\\Projects\\WoW\\Source\\WorldClient\\MapQuery.cpp
-C:\\Projects\\WoW\\Source\\WorldClient\\MapEntity.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapQuery.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapEntity.cpp
 mapObjDef->GetType() & Type_MapObjDef
 refCount==0
 Used() > 0
 ..\\..\\..\\engine\\source\\Tempest/cdyntable.h
 index < SMOGroup::NUM_FOGS
 ..\\..\\..\\engine\\source\\Tempest/cpriorityq.h
-C:\\Projects\\WoW\\Source\\WorldClient\\CMapObj.h
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\CMapObj.h
 index < fogCount
 IsValid() && i < iused
 .?AVFogQ@@
 .?AV?$TSExplicitList@VCMapDoodadDef@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@VCMapObjDef@@$0?CCCCCCCD@@@
-C:\\Projects\\WoW\\Source\\WorldClient\\MapMem.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapMem.cpp
 .?AUCChunkTex@@
 ..\\ObjectAlloc/ObjectAllocTemplate.h
 link
@@ -9279,7 +9289,7 @@ soundEmitter
 .?AVCMapDoodadDef@@
 .?AVCMapObjDef@@
 sceneLink.IsLinked() == 0
-C:\\Projects\\WoW\\Source\\WorldClient\\MapObjDef.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapObjDef.cpp
 entityLinkList.Head() == 0
 .PAVCMapLight@@
 materialList != 0
@@ -9295,7 +9305,7 @@ Shaders\\Pixel\\MapObjMetal.bls
 Shaders\\Pixel\\MapObjSpecular.bls
 Shaders\\Pixel\\MapObjOverbright.bls
 CMapObj::Create(): mapObj->Read(\"%s\") failed
-C:\\Projects\\WoW\\Source\\WorldClient\\MapObj.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapObj.cpp
 .PAVCMapObjGroup@@
 groupPtrList[index]
 group->asyncObject == 0
@@ -9306,13 +9316,13 @@ CMapObj::WaitLoadGroup(%d)\n
 group->asyncObject
 .?AUMinimapQuad@CWorld@@
 .?AVCMapObj@@
-C:\\Projects\\WoW\\Source\\WorldClient\\MapPurge.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapPurge.cpp
 .PAUHTEXTURE__@@
 adtFile
 neighbor[i]->neighbor[backwardsNeighbor] == this
-C:\\Projects\\WoW\\Source\\WorldClient\\MapDoodadDef.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapDoodadDef.cpp
 .PAVCGxTex@@
-C:\\Projects\\WoW\\Source\\WorldClient\\MapChunk.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapChunk.cpp
 gxTexture==0
 nVtxBufs == nIdxBufs
 layerList[i] == 0
@@ -9344,7 +9354,7 @@ World\\NoDXT\\Detail\\
 alphaRampTexture
 doodadList[doodadInfo->m_doodadIdTag]
 .?AVCDetailDoodadData@@
-C:\\Projects\\WoW\\Source\\WorldClient\\DetailDoodad.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\DetailDoodad.cpp
 doodadInfo
 .?AVCDetailDoodadGeom@@
 .?AVCDetailDoodadInst@@
@@ -9357,7 +9367,7 @@ data->divisions.count > 0
 data->textures.count == 1
 .?AVCDetailDoodadInstAdd@@
 .?AUCDetailDoodadVertex@@
-C:\\Projects\\WoW\\Source\\WorldClient\\MapObjRender.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapObjRender.cpp
 inGroups.Count()
 .?AUSPortalExt@@
 portal->count <= 12
@@ -9370,7 +9380,7 @@ group->transBatchCount == 0
 count ? minIndex < 0x10000 : 1
 (idxBase[i] - vtxSub) < (uint) (group->liquidVerts.x * group->liquidVerts.y)
 nVerts < Gx_MaxVertices
-C:\\Projects\\WoW\\Source\\WorldClient\\MapObjGroup.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapObjGroup.cpp
 testFaceSub < MAX_FACES
 z0 <= z1
 y0 <= y1
@@ -9390,15 +9400,15 @@ liquid != LIQUID_NONE
 hitFaceSub < MAX_FACES
 .?AUSGroupPtr@@
 .?AUBlock@FVBBList@@
-C:\\Projects\\WoW\\Source\\WorldClient\\MapRender.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapRender.cpp
 list.IsEmpty()
 !freeList.IsEmpty()
 areaLow
-C:\\Projects\\WoW\\Source\\WorldClient\\MapLight.cpp
-C:\\Projects\\WoW\\Source\\WorldClient\\MapChunkRender.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapLight.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapChunkRender.cpp
 (GxBufValid(m_vtxBuf) ^ GxBufValid(m_idxBuf)) == 0
 asyncObject == 0
-C:\\Projects\\WoW\\Source\\WorldClient\\MapArea.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapArea.cpp
 adtFile == 0
 rawAreaData == 0
 mIffChunk->token == 'MODF'
@@ -9413,14 +9423,14 @@ mIffChunk->token=='MHDR'
 mIffChunk->token=='MVER'
 SStrLen(&fileNames[i]) + SStrLen(specExt) < 260
 texNames
-C:\\Projects\\WoW\\Source\\WorldClient\\MapBaseObj.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapBaseObj.cpp
 parentLinkList.Head() == 0
 areaTable[index] == 0
-C:\\Projects\\WoW\\Source\\WorldClient\\MapPrepare.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapPrepare.cpp
 areaInfo[index].flags & SMAreaInfo::FLAG_EXISTS
 %s\\%s_%d_%d.adt
 area->chunkTable[index] == 0
-C:\\Projects\\WoW\\Source\\WorldClient\\MapObjRead.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapObjRead.cpp
 groupPtrList[n]
 groupPtrList.Count() == 0
 (pIffChunk->token==expectedToken)
@@ -9454,22 +9464,22 @@ pIffChunk->token=='MOBN'
 pIffChunk->token=='MODR'
 pIffChunk->token=='MOLR'
 Failed to load texture: %s\n
-C:\\Projects\\WoW\\Source\\WorldClient\\MapTexture.cpp
-C:\\Projects\\WoW\\Source\\WorldClient\\MapLod.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapTexture.cpp
+C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapLod.cpp
 primPtr
 BloodSpurtSmall01.blp
 BloodSpurtSmall01_Medium.blp
 BloodSpurtSmall01_Low.blp
 violenceLevel
 Sets the violence level of the game
-C:\\Projects\\WoW\\Source\\Game\\GameClient\\GameTime_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\GameTime_C.cpp
 Gamespeed set from %.03f to %.03f
 Malformed message recieved: Id = %d, Len = %d, Read = %d\n
 Time set to %s
 Server game time is %s
 !\"Warning, not enough free callback slots, add to MAX_GAMETIMECHANGECALLBACKS!\"
 denomination >= 0 && denomination < MAX_CURRENCY_TYPES
-C:\\Projects\\WoW\\Source\\Game\\GameClient\\Loot.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\Loot.cpp
 s_lootInitialized
 COPPER
 SILVER
@@ -9486,11 +9496,11 @@ INV_Misc_Coin_05
 ..\\..\\..\\..\\engine\\source\\Tempest/cmath.h
 .?AUSWING@@
 .?AVWTOBJECT@@
-C:\\Projects\\WoW\\Source\\Game\\GameClient\\WeaponTrails.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\WeaponTrails.cpp
 !s_count
 s_count
 ..\\..\\Ui/WorldFrame.h
-C:\\Projects\\WoW\\Source\\Game\\GameClient\\PlayerName.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\PlayerName.cpp
 UnitNamePlayerPVPTitle
 UnitNamePlayerGuild
 UnitNamePlayer
@@ -9498,7 +9508,7 @@ UnitNameNPC
 UNIT_NAME_FONT
 PlayerNames
 .?AVPLAYERNAMEDESC@@
-C:\\Projects\\WoW\\Source\\Game\\GameClient\\WorldText.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\WorldText.cpp
 s_critHeights[i].startProgress <= s_critHeights[i].endProgress
 m_type < NUM_WORLDTEXTTYPES
 m_string
@@ -9518,7 +9528,7 @@ sub < NUM_FOGS
 .?AULightDataFog@@
 .?AULightMarker@@
 .?AULightDataSky@@
-C:\\Projects\\WoW\\Common\\DayNight.cpp
+C:\\build\\buildWoW\\WoW\\Common\\DayNight.cpp
 origin.x == 0 && origin.y == 0 && origin.z == 0
 Textures\\moon02.blp
 Textures\\moon.blp
@@ -9568,7 +9578,7 @@ Textures\\Minimap
 dir:
 %s\\md5translate.trs
 minimapVisRadius > 0.0f
-C:\\Projects\\WoW\\Source\\Game\\GameClient\\Minimap.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\Minimap.cpp
 s_currentZoom < NUM_ZOOMS
 No minimap texture: \"%s\"
 SStrCmpI(wmoName, kWorld)
@@ -9602,7 +9612,7 @@ SpellCanTargetUnit
 SpellIsTargeting
 .?AV?$TSExplicitList@UITEMCOOLDOWNHASHNODE@@$0?CCCCCCCD@@@
 .?AUSPELLHISTORY@@
-C:\\Projects\\WoW\\Source\\Magic\\MagicClient\\Spell_C.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Magic\\MagicClient\\Spell_C.cpp
 HAPPINESS
 ENERGY
 FOCUS
@@ -9777,7 +9787,7 @@ Spells\\Blizzard_Impact_Base.mdx
 .?AUBlizzardObject@@
 .?AULightningObject@@
 caster
-C:\\Projects\\WoW\\Source\\Magic\\MagicClient\\SpellVisuals.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Magic\\MagicClient\\SpellVisuals.cpp
 ( fadeRatio >= 0.0f ) && ( fadeRatio <= 1.0f )
 nameSub < (sizeof(modelNames) / sizeof(modelNames[0]))
 .?AUBolt@LightningObject@@
@@ -9785,7 +9795,7 @@ s_lightningManager
 refCount > 0
 INVALID_SPELL_AURA_EFFECT
 ** Loading table of contents %s
-C:\\Projects\\ENGINE\\SOURCE\\FrameXML\\FrameXML.cpp
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameXML\\FrameXML.cpp
 Unnamed virtual node at top level
 virtual
 %s:<Scripts>
@@ -9865,7 +9875,7 @@ orientation
 .?AVCSimpleTexture@@
 ..\\Frame/CSimpleRender.h
 .?AVCSimpleFontString@@
-C:\\Projects\\ENGINE\\SOURCE\\FrameXML\\XMLTree.cpp
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameXML\\XMLTree.cpp
 .?AVXMLNode@@
 no value
 Lua 5.0
@@ -9893,7 +9903,7 @@ perform arithmetic on
 attempt to compare %s with %s
 attempt to compare two %s values
 %s:%d: %s
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\ldo.c
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\ldo.c
 stack overflow
 call
 stack overflow
@@ -9903,8 +9913,8 @@ cannot resume non-suspended coroutine
 cannot resume dead coroutine
 function
 attempt to yield across metamethod/C-call boundary
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\lstate.c
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\lgc.c
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lstate.c
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lgc.c
 __call
 __concat
 __le
@@ -9932,17 +9942,17 @@ next
 `for' limit must be a number
 `for' initial value must be a number
 `__pow' (`^' operator) is not a function
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\lstring.c
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\lfunc.c
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lstring.c
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lfunc.c
 invalid key for `next'
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\ltable.c
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\ltable.c
 table overflow
 table index is NaN
 table index is nil
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\lzio.c
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\lmem.c
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lzio.c
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lmem.c
 <eof> expected
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\lparser.c
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lparser.c
 too many syntax levels
 `%s' expected (to close `%s' at line %d)
 `%s' expected
@@ -9969,7 +9979,7 @@ binary string
 bad code in %s
 unexpected end of file in %s
 bad integer in %s
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\lundump.c
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lundump.c
 bad nupvalues in %s: read %d; expected %d
 bad constant type (%d) in %s
 unknown number format in %s
@@ -10000,7 +10010,7 @@ unfinished long string
 unfinished string
 escape sequence too large
 .?AUMemPool@@
-C:\\Projects\\ENGINE\\SOURCE\\lua\\src\\lmemPool.cpp
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lmemPool.cpp
 m_memchunks.Count() == 0
 .?AVMemChunk@@
 .PAVMemChunk@@
@@ -10021,7 +10031,7 @@ debuginfo
 getglobal
 setglobal
 _ERRORMESSAGE
-C:\\Projects\\ENGINE\\SOURCE\\FrameScript\\FrameScript.cpp
+C:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameScript\\FrameScript.cpp
 !lua_registered
 __framescript_meta
 lua_registered > 0
@@ -10145,7 +10155,7 @@ alnum
 [:<:]]
 Model2: Model destroyed before loading completed: %s\n
 shared
-C:\\Projects\\Engine\\Source\\Model2\\M2Model.cpp
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Model.cpp
 scene
 .?AVCPlaneParticleEmitter@@
 .?AVCSphereParticleEmitter@@
@@ -10249,7 +10259,7 @@ shaders\\vertex\\Model2.bls
 .PAVCGxVertexShader@@
 Model2
 Model2: M2Initialize called mode than once\n
-C:\\Projects\\Engine\\Source\\Model2\\M2Cache.cpp
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Cache.cpp
 m_freeTail == &m_freeList
 Model2: Invalid file extension: %s\n
 .?AVCM2Shared@@
@@ -10259,7 +10269,7 @@ Model2: File not found: %s\n
 .?AVCM2Scene@@
 .?AUM2Element@@
 .?AUM2SceneCallback@@
-C:\\Projects\\Engine\\Source\\Model2\\M2Scene.cpp
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Scene.cpp
 .?AVCM2Model@@
 !m_hitList
 !m_hitTest
@@ -10269,13 +10279,13 @@ sequenceId != (0xffffffff)
 eventId != (0xffffffff)
 m_batch->textureCount < 2
 ../../source\\Gx/Gx.h
-C:\\Projects\\Engine\\Source\\Model2\\M2Light.cpp
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Light.cpp
 start < end
 .PAVCM2Light@@
 !m_lightPrev && !m_lightNext
-C:\\Projects\\Engine\\Source\\Model2\\M2DataInit.inl
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2DataInit.inl
 !m_freeNext
-C:\\Projects\\Engine\\Source\\Model2\\M2Shared.cpp
+C:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Shared.cpp
 !m_freePrev
 m_callbackList != model
 !model->m_callbackNext
@@ -10288,16 +10298,16 @@ Corrupt model data: %s
 1\x1B\a@
 .?AUNodeBlock@CDataRecycler@@
 CDataAllocator@0x%08x: leaked %u: %s(%d) [%u][%u]
-C:\\Projects\\engine\\Source\\Base\\CDataAllocator.cpp
+C:\\build\\buildWoW\\engine\\Source\\Base\\CDataAllocator.cpp
 m_dataUsed > 0
-C:\\Projects\\engine\\Source\\Base\\CUnreal.cpp
+C:\\build\\buildWoW\\engine\\Source\\Base\\CUnreal.cpp
 (a.bits & (0xff << 23)) != 0
 %s%*d.%0*d
 -inf
 a >= u_n1_01 && a <= u_1_01
 %s%s%s_%s_mem.log
 unknown
-C:\\Projects\\engine\\Source\\Base\\MemLog.cpp
+C:\\build\\buildWoW\\engine\\Source\\Base\\MemLog.cpp
 logName
 .?AUSMemReportByCallerInfo@@
 Heaps containing %u subheap(s)
@@ -10322,9 +10332,9 @@ SMem memory changes
 nested == 1
 nested == 0
 .?AVCFrameStrata@@
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleTop.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleTop.cpp
 !s_instance
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleTop.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleTop.h
 m_eventqueue[i][strata].Count() == 0
 !frames.IsLinked(frame)
 .?AVCFrameStrataNode@@
@@ -10358,7 +10368,7 @@ point
 SETALLPOINTS set to true in frame with anchors (ignored)
 Anchors
 setAllPoints
-C:\\Projects\\ENGINE\\Source\\Frame\\CLayoutFrame.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.cpp
 Size
 Couldn't find inherited node: %s
 inherits
@@ -10368,7 +10378,7 @@ relative != this
 relative
 .?AUFRAMENODE@CLayoutFrame@@
 !IsResizeDependency( frame )
-C:\\Projects\\ENGINE\\Source\\Frame\\CLayoutFrame.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.h
 whichPoint < (sizeof(m_points) / sizeof(m_points[0]))
 !\"Unhandled frame point\"
 %s:OnReceiveDrag
@@ -10384,7 +10394,7 @@ whichPoint < (sizeof(m_points) / sizeof(m_points[0]))
 %s:OnUpdate
 %s:OnSizeChanged
 %s:OnLoad
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleFrame.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleFrame.cpp
 m_drawlayers[i].IsEmpty()
 m_initialized_state != STATE_DELETED
 $parent
@@ -10441,7 +10451,7 @@ OnLoad
 strata >= 0 && strata < NUM_FRAME_STRATA
 level >= 0
 backdrop
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleRender.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRender.h
 drawlayer < NUM_SIMPLEFRAME_DRAWLAYERS
 .?AUREGIONNODE@@
 region
@@ -10449,7 +10459,7 @@ region
 frame->frame
 region->region
 event < sizeof(m_eventmask)*8
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleFrame.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleFrame.h
 !m_loading
 layer < NUM_SIMPLEFRAME_DRAWLAYERS
 %f%f
@@ -10511,7 +10521,7 @@ Scale must be > 0
 Usage: SetID(ID)
 Usage: SetMinResize(minWidth, minHeight)
 Usage: SetMaxResize(maxWidth, maxHeight)
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleFrameScript.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleFrameScript.cpp
 Frame %s is not movable
 Frame %s is not resizable
 Usage: SetWidth(width)
@@ -10527,7 +10537,7 @@ alphaMode
 Gradient
 Color
 TexCoords
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleRender.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRender.cpp
 m_texture
 rect.miny <= rect.maxy
 rect.minx <= rect.maxx
@@ -10537,6 +10547,7 @@ CMath::fequal_(m_texCoord[2].x, m_texCoord[3].x)
 CMath::fequal_(m_texCoord[0].x, m_texCoord[1].x)
 FontString named '%s' already registered
 Shadow
+maxLines
 nonspacewrap
 justifyH
 justifyV
@@ -10565,7 +10576,7 @@ PushedTexture
 NormalTexture
 OnDoubleClick
 OnClick
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleButton.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleButton.cpp
 state < NUM_BUTTONSTATES
 m_initialized_state != 0xDDDDDDDD
 UnlockHighlight
@@ -10641,8 +10652,8 @@ edgeFile
 bgFile
 m_pieces == BACKDROPONLY || m_border[0]
 output
-C:\\Projects\\ENGINE\\Source\\Frame\\CBackdropGenerator.cpp
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleRegion.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CBackdropGenerator.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRegion.cpp
 m_frame
 DisabledCheckedTexture
 CheckedTexture
@@ -10651,7 +10662,7 @@ JAPANESE
 CHINESE
 KOREAN
 ROMAN
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleEditBox.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleEditBox.cpp
 %s:OnFocusLost
 %s:OnFocusGained
 %s:OnInputLanguageChanged
@@ -10701,7 +10712,7 @@ stringWidth > 0.0f
 .?AVCSimpleMessageFrameLine@@
 insertMode
 fadeDuration
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleMessageFrame.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleMessageFrame.cpp
 fontHeight
 .?AVCSimpleMessageFrameLineNode@@
 m_rows > 0
@@ -10715,20 +10726,19 @@ ScrollChild
 OnScrollRangeChanged
 OnVerticalScroll
 OnHorizontalScroll
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleMessageScrollFrame.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleMessageScrollFrame.cpp
 maxLines > 0
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleMessageScrollFrame.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleMessageScrollFrame.h
 .?AVCSimpleMessageScrollFrameLine@@
 .?AVCSimpleMessageScrollFrameDisplayNode@@
 %s:OnMessageScrollChanged
-maxLines
 fade
 displayDuration
 OnMessageScrollChanged
 .?AVCSimpleFontStringRecord@@
 valueStep
 ThumbTexture
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleSlider.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleSlider.cpp
 min <= max
 step >= 0.0f
 CMath::fnotequal_(GetLayoutScale(),0.0f)
@@ -10741,7 +10751,7 @@ Unknown element type: %s (expected HTML)
 HTML
 Unknown element type: %s
 href
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleHTML.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleHTML.cpp
 align
 %s:OnColorSelect
 ColorValueThumbTexture
@@ -10753,7 +10763,7 @@ WheelTexture
 ValueTexture
 %f%f%f
 h == data->data[1]
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleMovieFrame.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleMovieFrame.cpp
 w == data->data[0]
 .?AUMOVIECAPTION@@
 %s:OnMovieHideSubtitle
@@ -10864,7 +10874,7 @@ Usage: SetWidth(pixelWidth)
 Usage: SetHeight(pixelHeight)
 Usage(SetJustifyH(\"justify\")
 Usage(SetJustifyV(\"justify\")
-C:\\Projects\\ENGINE\\Source\\Frame\\CSimpleHyperlinkedFrame.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleHyperlinkedFrame.cpp
 %s:OnHyperlinkClick
 %s:OnHyperlinkLeave
 %s:OnHyperlinkEnter
@@ -10920,7 +10930,7 @@ Sound::Initialize()
 Logs\\Sound.log
 GetParamString
 GetParamFloat
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\OsSound.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsSound.cpp
 GetParamInt
 FMod
 Error: %s(%i) returned %i
@@ -10963,12 +10973,12 @@ index >= 0 && index < FSOUND_GetNumDrivers()
 index >= 0 && index < FSOUND_MIXER_MAX
 Blizzard Web Client
 .?AUW32Joystick@@
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\OsJoystick.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsJoystick.cpp
 (uint)index < s_joystick.Count()
 GlobalLock
 GetClipboardData
 OpenClipboard
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\OsClipboard.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsClipboard.cpp
 hWnd
 OsClipboard.cpp: %s failed: %s
 EmptyClipboard
@@ -10977,7 +10987,7 @@ GlobalAlloc
 .?AUSoundFileObjectCacheNode@@
 .?AUSoundFileObject@@
 i < MAX_FILE_INSTANCES
-C:\\Projects\\ENGINE\\Source\\Os\\W32\\OsISoundCache.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsISoundCache.cpp
 cacheBlock
 object->instances[instanceNumber].inUse
 instanceNumber < MAX_FILE_INSTANCES
@@ -10986,7 +10996,7 @@ baseHandle < MAX_FILES
 .?AV?$TSExplicitList@USoundFileObjectCacheNode@@$0?CCCCCCCD@@@
 dataTypeId < CBaseManaged::DATATYPEIDS
 fieldId < m_managedArray.Count()
-C:\\Projects\\ENGINE\\Source\\Services\\DataMgr.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\DataMgr.cpp
 manage
 typeId == mgrPtr->m_managedArray[fieldId]->m_dataTypeId
 mgrPtr->m_managedArray[fieldId]
@@ -10995,15 +11005,15 @@ mgrPtr
 result
 !(mgrPtr->m_managedArray[fieldId]->m_flags & CBaseManaged::READONLY)
 cameraPtr
-C:\\Projects\\ENGINE\\Source\\Services\\Camera.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Camera.cpp
 HCAMERA
 .PAVCBaseManaged@@
 srcPtr
 x >= 0 && x <= 1.0f
 y >= 0 && y <= 1.0f
 data == saved
-C:\\Projects\\ENGINE\\Source\\Services\\DataMgrInt.h
-C:\\Projects\\ENGINE\\Source\\Services\\GfxSingletonManager.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\DataMgrInt.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\GfxSingletonManager.cpp
 manager
 .?AVParticleSystemManager@@
 .PAVCParticleEmitter@@
@@ -11014,7 +11024,7 @@ emitter != 0
 .?AVCLightning@@
 src || dst
 0 == (NOTUSEDFLAG & (ulong)mLiveBolts[boltId])
-C:\\Projects\\ENGINE\\Source\\Services\\Lightning.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Lightning.cpp
 BADBOLT != boltId && boltId < mLiveBolts.Count()
 boltId < mLiveBolts.Count()
 BADBOLT != boltId
@@ -11023,7 +11033,7 @@ Ligh
 Ligh
 Ligh
 Ligh
-C:\\Projects\\ENGINE\\Source\\Services\\RibbonEmitter.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\RibbonEmitter.cpp
 m_writePos != m_readPos || advance == 0
 amount <= m_edges.Count()
 .?AUCRibbonVertex@@
@@ -11041,7 +11051,7 @@ m_stackPointer < m_stack.Count()
 .?AVCParticleKey@@
 .?AVCParticle2@@
 .?AVCParticle2_Model@@
-C:\\Projects\\ENGINE\\Source\\Services\\ParticleSystem2.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleSystem2.cpp
 CMath::fnotequal_(m_frameScale,0.0f)
 rows && columns
 (columns & (columns - 1)) == 0
@@ -11051,29 +11061,29 @@ m_particleKeys.Count() == 2
 childIndex != MAX_CHILD_EMITTERS
 CMath::fnotequal_(normStartTime, normEndTime)
 normStartTime < normEndTime
-C:\\Projects\\ENGINE\\Source\\Services\\ParticleMisc.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleMisc.cpp
 normStartTime >= 0.0f
 CMath::fnotequal_(m_ooSegLength,0.0f)
 m_ooSegLength
 CMath::fnotequal_(timeDelta,0.0f)
 timeDelta
 repeat >= 1.0f
-C:\\Projects\\ENGINE\\Source\\Services\\ParticleSystem.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleSystem.cpp
 m_hmodel
 .?AVCParticle@@
 p.m_timeToLive >= 0
-C:\\Projects\\ENGINE\\Source\\Tempest\\c34matrix.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c34matrix.cpp
 CMath::fequal_(axis_.Mag(), 1.0f)
-C:\\Projects\\ENGINE\\Source\\Tempest\\c44matrix.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c44matrix.cpp
 CMath::fequal_(det, 0.0f) == false
-C:\\Projects\\ENGINE\\Source\\Tempest\\c33matrix.cpp
-C:\\Projects\\ENGINE\\Source\\Tempest\\cmemblock.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c33matrix.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmemblock.cpp
 (body & 0x3) == 0
 (size & 0x3) == 0
 mem_ != 0
 mem_ <= mem && size_ >= size
 Copy_(m) == size_
-C:\\Projects\\ENGINE\\Source\\Tempest\\cmemblock.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmemblock.h
 m.mem_ <= m.mem && m.size_ >= m.size
 m.IsValid()
 IsValid() == false
@@ -11086,28 +11096,28 @@ this->size_ == this->size
 mem != 0
 mem == mem_ + (size_ - size)
 size_ >= size
-C:\\Projects\\ENGINE\\Source\\Tempest\\c4vector.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c4vector.h
 sub < eComponents
-C:\\Projects\\ENGINE\\Source\\Tempest\\c4quaternion.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c4quaternion.cpp
 CMath::fequal_(mag, 1.0f)
 \"C4Quaternion::Inverse(): cannot invert an invalid (zero-norm) quaternion.\"
-C:\\Projects\\ENGINE\\Source\\Tempest\\c4quaternion.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\c4quaternion.h
 IsUnit()
 q2.IsUnit()
 q1.IsUnit()
 q0.IsUnit()
-C:\\Projects\\ENGINE\\Source\\Tempest\\caabox.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\caabox.cpp
 vectors != 0
-C:\\Projects\\ENGINE\\Source\\Tempest\\cdyntable.h
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cdyntable.h
 index.IsValid() && vects.IsValid()
 \"3DUfw
-C:\\Projects\\ENGINE\\Source\\Tempest\\cimvector.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cimvector.cpp
 !(\"HSVtoRGB(): invalid hue\")
-C:\\Projects\\ENGINE\\Source\\Tempest\\tempest_intersect.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\tempest_intersect.cpp
 axis <= C3Vector::C3AXIS_Z
 polygon
 verts
-C:\\Projects\\ENGINE\\Source\\Tempest\\tempest_distance.cpp
+C:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\tempest_distance.cpp
 ray.dir.SquaredMag() > 0.00001f
 PlayVocalCategory
 CONGRATULATIONS
@@ -11121,12 +11131,12 @@ OUTOFMANA
 HELPME
 .?AUMACRODESC@@
 Usage: PlayVocalCategory(\"category\")
-C:\\Projects\\WoW\\Source\\Object\\Combat.cpp
-C:\\Projects\\WoW\\Source\\Object\\CreatureStats.cpp
-C:\\Projects\\WoW\\Source\\Object\\GameObjectStats.cpp
-C:\\Projects\\WoW\\Source\\Object\\ItemStats.cpp
-C:\\Projects\\WoW\\Source\\Object\\NPCText.cpp
-C:\\Projects\\WoW\\Source\\Object\\GuildStats.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\Combat.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\CreatureStats.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\GameObjectStats.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ItemStats.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\NPCText.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Object\\GuildStats.cpp
 Interface\\TargetingFrame\\UI-TargetingFrame-Skull
 NAMEPLATE_FONT
 Interface\\Tooltips\\Nameplate-Glow
@@ -11134,8 +11144,8 @@ Interface\\TargetingFrame\\UI-TargetingFrame-BarFill
 .?AVCGSimpleHealthBar@@
 Interface\\Tooltips\\Nameplate-Border
 ..\\..\\..\\engine\\source\\Frame/CSimpleRender.h
-C:\\Projects\\WoW\\Source\\Ui\\NamePlateFrame.cpp
-C:\\Projects\\WoW\\Source\\UIUtil\\HealthBar.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Ui\\NamePlateFrame.cpp
+C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\HealthBar.cpp
 parameter
 glyph_name
 get_sfnt
