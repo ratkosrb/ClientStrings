@@ -148,7 +148,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 4869 (Nov 29 2005 03:45:56)
+WoW [Release] Build 4937 (Dec 20 2005 19:39:41)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -157,7 +157,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 4869 (Nov 29 2005)
+WoW [Release] Build 4937 (Dec 20 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -466,7 +466,7 @@ SP\vPZ
 \b3OP\v
 ltuo
 cinu
-ltuo
+ltuo \by
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -609,7 +609,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 4869)
+World of WarCraft (build 4937)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -927,8 +927,8 @@ C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Nov 29 2005
-03:38:19
+Dec 20 2005
+19:36:59
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1119,6 +1119,7 @@ AsyncTextureWait(): %s\n
 TextureGetMips() Wait: %s\n
 .BLP
 .TGA
+TextureGetDimensions() Wait: %s\n
 TextureGetInfo() Wait: %s\n
 Total unused texture in Mbytes:\t\t%.2f
 Format: %s Size: %dx%d Filter: %s
@@ -1438,8 +1439,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4869
-0.9.0
+4937
+1.9.0
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -3539,8 +3540,7 @@ IsInMeetingStoneQueue
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\MeetingStoneInfo.cpp
 MEETINGSTONE_TOOLTIP
 .?AVCEffect@@
-GetStable
-PetFoodTypes
+GetStablePetFoodTypes
 SetPetStablePaperdoll
 GetSelectedStablePet
 PickupStablePet
@@ -4677,7 +4677,7 @@ Usage: UnitPVPRank(\"unit\")
 Usage: GetPVPRankInfo(rank [, unit])
 CHAT_MSG_COMBAT_FACTION_CHANGE
 UPDATE_LFG_LIST
-PDATE_LFG_TYPES
+UPDATE_LFG_TYPES
 PLAYTIME_CHANGED
 CONFIRM_PET_UNLEARN
 AREA_SPIRIT_HEALER_OUT_OF_RANGE
@@ -5034,7 +5034,7 @@ UNIT_MAXRAGE
 UNIT_MAXMANA
 UNIT_MAXHEALTH
 UNIT_HAPPINESS
-UNIT_ENERGY
+UNIT_ENE
 UNIT_FOCUS
 UNIT_RAGE
 UNIT_HEALTH
@@ -6919,6 +6919,8 @@ button
 door
 true
 false
+floatOnWater
+notInCombat
 returnSpell
 returnAura
 pickupSpell
@@ -6978,7 +6980,7 @@ autoClose
 startDestroyed
 startOpen
 type
-?X/{
+?XO{
 .?AUDEATTHUDSOUNDINFO@@
 SpiritWolf (DONOTRENAME)
 FootstepSounds
@@ -7559,7 +7561,7 @@ bzip2Compress:%d
 0\aw,a
 Qkkbal
 wn>Jj
--X/{
+-XO{
 .?AVBigData@@
 .?AUSDIR@@
 incorrect length check
@@ -8162,9 +8164,9 @@ CMap::LoadWdt() failed %s\n
 .PAVCMapLight@@
 .?AUCGxVertexPT0T1@@
 .?AVCMapFootprintTexture@@
-?X/{
+?XO{
 .?AVFogQ@@
-?X/{
+?XO{
 .?AUCChunkTex@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapMem.cpp
 .?AVCMapDoodadDef@@
@@ -8351,7 +8353,7 @@ NOCONTINENTNAME|%d
 CORPSE_RED
 C:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\Minimap.cpp
 .?AUMINIMAPMD5NAME@@
-?X/{
+?XO{
 .?AV?$TSExplicitList@URACECLASSINFO@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USKILLCOSTSINFO@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USKILLLINEREC@@$0?CCCCCCCD@@@
@@ -8788,6 +8790,7 @@ control structure too long
 function or expression too complex
 code size overflow
 -------------------------------------------------------------------\n-- Table library\nlocal tab = table\nforeach = tab.foreach\nforeachi = tab.foreachi\ngetn = tab.getn\ntinsert = tab.insert\ntremove = tab.remove\nsort = tab.sort\n\n-------------------------------------------------------------------\n-- math library\nlocal math = math\nabs = math.abs\nacos = function (x) return math.deg(math.acos(x)) end\nasin = function (x) return math.deg(math.asin(x)) end\natan = function (x) return math.deg(math.atan(x)) end\natan2 = function (x,y) return math.deg(math.atan2(x,y)) end\nceil = math.ceil\ncos = function (x) return math.cos(math.rad(x)) end\ndeg = math.deg\nexp = math.exp\nfloor = math.floor\nfrexp = math.frexp\nldexp = math.ldexp\nlog = math.log\nlog10 = math.log10\nmax = math.max\nmin = math.min\nmod = math.mod\nPI = math.pi\n--??? pow = math.pow\nrad = math.rad\nrandom = math.random\nrandomseed = math.randomseed\nsin = function (x) return math.sin(math.rad(x)) end\nsqrt = math.sqrt\ntan = function (x) r
+debugstack
 time
 date
 xpcall
@@ -8849,6 +8852,10 @@ year
 month
 hour
 field `%s' missing in date table
+ in function <%s:%d>
+ in main chunk
+ in function `%s'
+...\n
 compat.lua
 GetText
 GetPluralIndex
@@ -8996,7 +9003,7 @@ assertion expected after (?(
 .?AVCMinigameTicTacToe_C@@
 6^\a@
 1\x1B\a@
-FX/{
+FXO{
 .?AUNodeBlock@CDataRecycler@@
 C:\\build\\buildWoW\\engine\\Source\\Base\\CDataAllocator.cpp
 %s%*d.%0*d
@@ -9260,6 +9267,7 @@ SetNormalTexture
 SetHighlightTextColor
 SetDisabledTextColor
 SetTextColor
+GetFont
 SetFont
 SetButtonState
 GetButtonState
