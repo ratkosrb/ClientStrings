@@ -139,7 +139,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 4470 (Jun 23 2005 18:56:06)
+WoW [Release] Build 4500 (Jul  7 2005 12:24:40)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -148,7 +148,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 4470 (Jun 23 2005)
+WoW [Release] Build 4500 (Jul  7 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -612,7 +612,7 @@ Bad SMSG_NEW_WORLD\n
 Notification received: %s
 login
 charselect
-World of WarCraft (build 4470)
+World of WarCraft (build 4500)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -940,8 +940,8 @@ advapi32.dll
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jun 23 2005
-18:49:33
+Jul  7 2005
+12:21:34
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1447,8 +1447,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4470
-0.6.0
+4500
+1.6.0
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -2139,6 +2139,7 @@ INVTYPE_NECK
 INVTYPE_HEAD
 .?AV?$TSExplicitList@USAVEDVARIABLE@@$0?CCCCCCCD@@@
 .?AUNearestUnitData@@
+ERR_RESTRICTED_ACCOUNT
 ERR_INVALID_PROMOTION_CODE
 ERR_GROUP_JOIN_BATTLEGROUND_TOO_MANY
 ERR_GROUP_JOIN_BATTLEGROUND_FAIL
@@ -2807,7 +2808,7 @@ GetDefaultLanguage
 GetLanguageByIndex
 GetNumLaguages
 SendChatMessage
-_SYSTEM_GET
+CHAT_SYSTEM_GET
 CHAT_TEXT_EMOTE_GET
 CHAT_EMOTE_GET
 CHAT_WHISPER_INFORM_GET
@@ -3197,7 +3198,8 @@ CTRL-
 SHIFT-
 bind
 .?AVCGUIBindings@@
-DefaultBindings.wtf
+bind
+WTF\\DefaultBindings.wtf
 bind %s %s\n
 NUMPAD%d
 SHIFT
@@ -3928,10 +3930,10 @@ Usage: GetPetitionNameInfo(index)
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\PetitionInfo.cpp
 Usage(RenamePetition(\"name\")
 GetTabardInfo
-TurnInGuildCharter
+TurnInGui
+ldCharter
 BuyGuildCharter
-GetGu
-ildCharterCost
+GetGuildCharterCost
 CloseGuildRegistrar
 Usage: BuyGuildCharter(guildName)
 GetTabardCreationCost
@@ -4236,11 +4238,12 @@ party%d
 Usage: SetZoom(level)
 .?AUTAXIROUTELINE@@
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestTextParser.cpp
-%.1f
 SPELL_DURATION_UNTIL_CANCELLED
 SPELL_DURATION
 INT_SPELL_DURATION
+SPELL_POINTS_SPREAD_TEMPLATE
 INT_SPELL_POINTS_SPREAD_TEMPLATE
+%.1f
 TARGET_TOKEN_NOT_FOUND
  ...hic!
 .?AVCRect@NTempest@@
@@ -9219,7 +9222,8 @@ PageUp
 ScrollDown
 ScrollUp
 AddMessage
-Usage: SetFontHeight(pixelHeight)
+Usage: S
+etFontHeight(pixelHeight)
 ToggleInputLanguage
 GetInputLanguage
 GetNumLetters
