@@ -146,7 +146,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 4769 (Oct 20 2005 18:08:53)
+WoW [Release] Build 4807 (Nov  3 2005 15:35:05)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -155,7 +155,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 4769 (Oct 20 2005)
+WoW [Release] Build 4807 (Nov  3 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -464,7 +464,8 @@ SP\vPZ
 \b3OP\v
 ltuo0
 cinu
-ltuo0
+ltuop\tx
+ltuop\tx
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -617,7 +618,7 @@ Bad SMSG_NEW_WORLD\n
 Notification received: %s
 login
 charselect
-World of WarCraft (build 4769)
+World of WarCraft (build 4807)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -949,8 +950,8 @@ C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Oct 20 2005
-18:06:31
+Nov  3 2005
+15:32:40
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1452,14 +1453,15 @@ GET_PREFERRED_REALM_INFO
 OPEN_REALM_LIST
 UPDATE_SELECTED_CHARACTER
 CHARACTER_LIST_UPDATE
+ADDON_LIST_UPDATE
 CLOSE_STATUS_DIALOG
 UPDATE_STATUS_DIALOG
 OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4769
-1.8.1
+4807
+1.8.3
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -1707,7 +1709,8 @@ PLAYER_FIELD_PACK_SLOT_1
 PLAYER_FIELD_INV_SLOT_HEAD
 PLAYER_VISIBLE_ITEM_19_PAD
 PLAYER_VISIBLE_ITEM_19_PROPERTIES
-PLAYER_VISIBLE_ITEM_19_0
+PLAYER
+_VISIBLE_ITEM_19_0
 PLAYER_VISIBLE_ITEM_19_CREATOR
 PLAYER_VISIBLE_ITEM_18_PAD
 PLAYER_VISIBLE_ITEM_18_PROPERTIES
@@ -3572,7 +3575,8 @@ GetBattlefieldEstimatedWaitTime
 GetBattlefieldInstanceRunTime
 GetBattlefieldInstanceExpiration
 GetBattlefieldPortExpiration
-GetBattlefieldStatus
+GetBattl
+efieldStatus
 AcceptBattlefieldPort
 GetSelectedBattlefield
 SetSelectedBattlefield
@@ -6432,7 +6436,7 @@ My public address is %s
 Sending HELLO to Grunt at %s
 Unable to get the information necessary to identify self to Grunt
 Unknown grunt result %d
-account id [%d] has passed authentication, accountflags=0x%lx, timeOptions=0x%lx
+account id [%d] has passed authentication, accountflags=0x%lx, timeOptions=0x%lx, timePlayedMinutes=%d
 %d.%d.%d.%d
 received kick message for account id [%d:%d]
 Server name=%s
@@ -7387,9 +7391,8 @@ C:\\build\\buildWoW\\Storm\\Source\\W32\\SThread.cpp
 CdThreadProc
 main
 Software\\Blizzard Entertainment\\
-Software\\Battle.net\\
-Missing
-Debugging DLL
+ware\\Battle.net\\
+Missing Debugging DLL
 Couldn't locate the \"DbgHelp.dll\" debugging DLL.\n\nSome debugging information will be missing from error log files. Press OK to continue, or press Cancel to terminate the program.
 written
 read
