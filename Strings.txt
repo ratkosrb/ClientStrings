@@ -147,7 +147,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release Assertions Enabled] Build 4281 (Mar 16 2005 15:46:36)
+WoW [Release Assertions Enabled] Build 4284 (Mar 17 2005 15:08:00)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -156,7 +156,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 4281 (Mar 16 2005)
+WoW [Release Assertions Enabled] Build 4284 (Mar 17 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -622,7 +622,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 4281)
+World of WarCraft: Assertions Enabled Build (build 4284)
 SendErrorLogs
 Data\\
 World of Warcraft
@@ -1036,8 +1036,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Mar 16 2005
-15:44:14
+Mar 17 2005
+15:05:45
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1827,7 +1827,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4281
+4284
 1.3.0
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
@@ -6749,7 +6749,7 @@ OPTION ARB_fog_linear;\n
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglShader.cpp
 glARBFragmentProgram
 PARAM c%u[%u]={program.env[%u..%u]}
-PARAM c
+
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglTexture.cpp
 DsGet(Ds_ActiveTexture) == tmuToUse
 texId->m_needsFlagUpdate
@@ -8673,7 +8673,7 @@ C:\\build\\buildWoW\\Storm\\Source\\SBig.cpp
 m_used < SIZE
 count <= m_used
 d <= SMALL_BOUND
-c <= SMALL_BOUND
+<= SMALL_BOUND
 .?AVBigData@@
 SBIG
 C:\\build\\buildWoW\\Storm\\Source\\SMsg.cpp
