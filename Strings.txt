@@ -145,7 +145,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 4671 (Sep  9 2005 19:35:40)
+WoW [Release] Build 4695 (Sep 19 2005 19:15:01)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -154,7 +154,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 4671 (Sep  9 2005)
+WoW [Release] Build 4695 (Sep 19 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -616,7 +616,7 @@ Bad SMSG_NEW_WORLD\n
 Notification received: %s
 login
 charselect
-World of WarCraft (build 4671)
+World of WarCraft (build 4695)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -945,8 +945,8 @@ C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Sep  9 2005
-19:32:37
+Sep 19 2005
+19:11:58
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1450,8 +1450,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4671
-1.7.0
+4695
+1.7.1
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
