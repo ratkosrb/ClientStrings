@@ -415,7 +415,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 5595 (Aug 14 2006 13:38:51)
+WoW [Release] Build 5875 (Sep 19 2006 20:32:39)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -424,7 +424,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 5595 (Aug 14 2006)
+WoW [Release] Build 5875 (Sep 19 2006)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -727,10 +727,8 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo ^}
+ltuopg}
 cinu
-ltuo`
-ltuo`
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -872,7 +870,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5595)
+World of WarCraft (build 5875)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -1244,8 +1242,8 @@ E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Aug 14 2006
-13:36:17
+Sep 19 2006
+20:30:03
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1418,6 +1416,7 @@ Unique Texture
 Unique Texture No Name
 texture
 Error loading %s file \"%s\": %s\n
+Texture failure: \"%s\" allocating %dx%d texture failed.\n
 Texture failure: \"%s\" decompression failed.\n
 Texture failure: \"%s\" invalid file version\n
 Solid Texture
@@ -1757,8 +1756,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5595
-1.12.0
+5875
+1.12.1
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -4280,6 +4279,7 @@ GetNumQuestLeaderBoards
 GetQuestLogQuestText
 IsUnitOnQuest
 AbandonQuest
+GetAbandonQuestItems
 GetAbandonQuestName
 SetAbandonQuest
 GetQuestLogSelection
