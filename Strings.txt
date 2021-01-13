@@ -146,7 +146,7 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 4196 (Jan 26 2005 17:14:54)
+WoW [Release Assertions Enabled] Build 4211 (Feb  8 2005 14:19:00)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -155,7 +155,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 4196 (Jan 26 2005)
+WoW [Release Assertions Enabled] Build 4211 (Feb  8 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -458,10 +458,8 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo0
+ltuop
 cinu
-ltuopH{
-ltuopH{
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -619,7 +617,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 4196)
+World of WarCraft: Assertions Enabled Build (build 4211)
 SendErrorLogs
 Data\\
 World of Warcraft
@@ -1034,8 +1032,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jan 26 2005
-17:12:55
+Feb  8 2005
+14:17:02
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1847,8 +1845,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4196
-1.2.2
+4211
+1.2.3
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -2238,6 +2236,9 @@ blockID < (sizeof(s_unitDescriptors) / sizeof(s_unitDescriptors[0]))
 blockID < (sizeof(s_containerDescriptors) / sizeof(s_containerDescriptors[0]))
 blockID < (sizeof(s_itemDescriptors) / sizeof(s_itemDescriptors[0]))
 blockID < (sizeof(s_objDescriptors) / sizeof(s_objDescriptors[0]))
+%s:   %30s: %4d
+%s: ==>Object type %d mirror stats
+%s: Mirror update dump: duration %dms
 Interface\\SpellShadow\\Spell-Shadow-Unacceptable.blp
 Interface\\SpellShadow\\Spell-Shadow-Acceptable.blp
 disabled
@@ -5662,7 +5663,7 @@ Interface\\Cursor\\%s.blp
 height == 64
 C:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Cursor.cpp
 width == 64
-?0^}
+?0n}
 .?AV?$TSExplicitList@UPLAYERPORTRAIT@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UUNITPORTRAIT@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UITEMPORTRAIT@@$0?CCCCCCCD@@@
@@ -7022,6 +7023,7 @@ account id [%d] has passed authentication
 account id [%d:%d] unlock received, but it was out of date
 account id [%d:%d] unlocked
 received kick message for account id [%d:%d]
+Server name=%s
 Sending PING
 Closing connection - PING TIMEOUT
 Unlock timed out for account id [%d:%d]
@@ -8652,6 +8654,7 @@ C:\\build\\buildWoW\\Storm\\Source\\SEvt.cpp
 !flags
 .?AUBREAKCMD@@
 .?AUSDIR@@
+.2.2
 incorrect length check
 incorrect data check
 invalid distance too far back
@@ -9327,7 +9330,7 @@ C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\CMapObj.h
 index < fogCount
 IsValid() && i < iused
 .?AVFogQ@@
-?0^}
+?0n}
 .?AV?$TSExplicitList@VCMapDoodadDef@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@VCMapObjDef@@$0?CCCCCCCD@@@
 C:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapMem.cpp
@@ -9670,7 +9673,7 @@ CORPSE_RED
 ..\\..\\Ui/PartyFrame.h
 index >= 0
 .?AUMINIMAPMD5NAME@@
-?0^}
+?0n}
 .?AV?$TSExplicitList@URACECLASSINFO@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USKILLCOSTSINFO@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USKILLLINEREC@@$0?CCCCCCCD@@@
@@ -10371,7 +10374,7 @@ Failed to initialize model: %s
 Corrupt model data: %s
 6^\a@
 1\x1B\a@
-F0^}
+F0n}
 .?AUNodeBlock@CDataRecycler@@
 CDataAllocator@0x%08x: leaked %u: %s(%d) [%u][%u]
 C:\\build\\buildWoW\\engine\\Source\\Base\\CDataAllocator.cpp
