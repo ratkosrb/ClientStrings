@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.9.1
-// Build: 3810
+// Patch: 0.10.0
+// Build: 3892
 
 Public Enum OPCODES
 {
@@ -338,8 +338,8 @@ Public Enum OPCODES
     SMSG_DAMAGE_TAKEN_OBSOLETE=331,                                 // 0x14B
     SMSG_CANCEL_COMBAT=332,                                         // 0x14C
     SMSG_PLAYER_COMBAT_XP_GAIN_OBSOLETE=333,                        // 0x14D
-    SMSG_HEALSPELL_ON_PLAYER=334,                                   // 0x14E
-    SMSG_HEALSPELL_ON_PLAYERS_PET=335,                              // 0x14F
+    SMSG_HEALSPELL_ON_PLAYER_OBSOLETE=334,                          // 0x14E
+    SMSG_HEALSPELL_ON_PLAYERS_PET_OBSOLETE=335,                     // 0x14F
     CMSG_SHEATHE_OBSOLETE=336,                                      // 0x150
     CMSG_SAVE_PLAYER=337,                                           // 0x151
     CMSG_SETDEATHBINDPOINT=338,                                     // 0x152
@@ -638,5 +638,31 @@ Public Enum OPCODES
     CMSG_REQUEST_PET_INFO=631,                                      // 0x277
     CMSG_FAR_SIGHT=632,                                             // 0x278
     SMSG_SPELLDISPELLOG=633,                                        // 0x279
-    NUM_MSG_TYPES=634,                                              // 0x27A
+    SMSG_DAMAGE_CALC_LOG=634,                                       // 0x27A
+    CMSG_ENABLE_DAMAGE_LOG=635,                                     // 0x27B
+    CMSG_GROUP_CHANGE_SUB_GROUP=636,                                // 0x27C
+    SMSG_RAID_MEMBER_STATS=637,                                     // 0x27D
+    CMSG_GROUP_SWAP_SUB_GROUP=638,                                  // 0x27E
+    CMSG_RESET_FACTION_CHEAT=639,                                   // 0x27F
+    CMSG_AUTOSTORE_BANK_ITEM=640,                                   // 0x280
+    CMSG_AUTOBANK_ITEM=641,                                         // 0x281
+    MSG_QUERY_NEXT_MAIL_TIME=642,                                   // 0x282
+    SMSG_RECEIVED_MAIL=643,                                         // 0x283
+    SMSG_RAID_GROUP_ONLY=644,                                       // 0x284
+    CMSG_SET_DURABILITY_CHEAT=645,                                  // 0x285
+    CMSG_SET_PVP_TITLE=646,                                         // 0x286
+    CMSG_SET_PVP_RANK_CHEAT=647,                                    // 0x287
+    CMSG_ADD_PVP_MEDAL_CHEAT=648,                                   // 0x288
+    CMSG_DEL_PVP_MEDAL_CHEAT=649,                                   // 0x289
+    SMSG_PVP_CREDIT=650,                                            // 0x28A
+    SMSG_AUCTION_REMOVED_NOTIFICATION=651,                          // 0x28B
+    CMSG_GROUP_RAID_CONVERT=652,                                    // 0x28C
+    CMSG_GROUP_ASSISTANT_LEADER=653,                                // 0x28D
+    CMSG_BUYBACK_ITEM=654,                                          // 0x28E
+    SMSG_SERVER_MESSAGE=655,                                        // 0x28F
+    CMSG_GMTICKETSYSTEM_TOGGLE=656,                                 // 0x290
+    CMSG_CANCEL_GROWTH_AURA=657,                                    // 0x291
+    SMSG_CANCEL_AUTO_REPEAT=658,                                    // 0x292
+    SMSG_STANDSTATE_CHANGE_ACK=659,                                 // 0x293
+    NUM_MSG_TYPES=660,                                              // 0x294
 }
