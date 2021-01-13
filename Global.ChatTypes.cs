@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.6.0
-// Build: 3592
+// Patch: 0.7.0
+// Build: 3694
 
 Public Enum ChatMsg
 {
@@ -16,17 +16,18 @@ Public Enum ChatMsg
     CHAT_MSG_SYSTEM = 0x9,                                          // 0x009
     CHAT_MSG_MONSTER_SAY = 0xA,                                     // 0x00A
     CHAT_MSG_MONSTER_YELL = 0xB,                                    // 0x00B
-    CHAT_MSG_MONSTER_EMOTE = 0xC,                                   // 0x00C
-    CHAT_MSG_CHANNEL = 0xD,                                         // 0x00D
-    CHAT_MSG_CHANNEL_JOIN = 0xE,                                    // 0x00E
-    CHAT_MSG_CHANNEL_LEAVE = 0xF,                                   // 0x00F
-    CHAT_MSG_CHANNEL_LIST = 0x10,                                   // 0x010
-    CHAT_MSG_CHANNEL_NOTICE = 0x11,                                 // 0x011
-    CHAT_MSG_CHANNEL_NOTICE_USER = 0x12,                            // 0x012
-    CHAT_MSG_AFK = 0x13,                                            // 0x013
-    CHAT_MSG_DND = 0x14,                                            // 0x014
-    CHAT_MSG_COMBAT_LOG = 0x15,                                     // 0x015
-    CHAT_MSG_IGNORED = 0x16,                                        // 0x016
-    CHAT_MSG_SKILL = 0x17,                                          // 0x017
-    CHAT_MSG_LOOT = 0x18,                                           // 0x018
+    CHAT_MSG_MONSTER_WHISPER = 0xC,                                 // 0x00C
+    CHAT_MSG_MONSTER_EMOTE = 0xD,                                   // 0x00D
+    CHAT_MSG_CHANNEL = 0xE,                                         // 0x00E
+    CHAT_MSG_CHANNEL_JOIN = 0xF,                                    // 0x00F
+    CHAT_MSG_CHANNEL_LEAVE = 0x10,                                  // 0x010
+    CHAT_MSG_CHANNEL_LIST = 0x11,                                   // 0x011
+    CHAT_MSG_CHANNEL_NOTICE = 0x12,                                 // 0x012
+    CHAT_MSG_CHANNEL_NOTICE_USER = 0x13,                            // 0x013
+    CHAT_MSG_AFK = 0x14,                                            // 0x014
+    CHAT_MSG_DND = 0x15,                                            // 0x015
+    CHAT_MSG_COMBAT_LOG = 0x16,                                     // 0x016
+    CHAT_MSG_IGNORED = 0x17,                                        // 0x017
+    CHAT_MSG_SKILL = 0x18,                                          // 0x018
+    CHAT_MSG_LOOT = 0x19,                                           // 0x019
 }
