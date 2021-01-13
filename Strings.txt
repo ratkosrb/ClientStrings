@@ -12,8 +12,7 @@ R6027\r\n- not enough space for lowio initialization\r\n
 R6026\r\n- not enough space for stdio initialization\r\n
 R6025\r\n- pure virtual function call\r\n
 R6024\r\n- not enough space for _onexit/atexit table\r\n
-R6019\r\n- unable
-to open console device\r\n
+R6019\r\n- unable to open console device\r\n
 R6018\r\n- unexpected heap error\r\n
 R6017\r\n- unexpected multithread lock error\r\n
 R6016\r\n- not enough space for thread data\r\n
@@ -282,6 +281,8 @@ AUTH_DB_BUSY_URL
 AUTH_NO_TIME_URL
 AUTH_SUSPENDED_URL
 AUTH_PARENTAL_CONTROL_URL
+.\\Scan.dll
+Scan
 PARTY
 RAID
 GUILD
@@ -415,7 +416,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 6005 (Oct 10 2006 16:30:42)
+WoW [Release] Build 6141 (Nov 14 2006 14:56:16)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -424,7 +425,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 6005 (Oct 10 2006)
+WoW [Release] Build 6141 (Nov 14 2006)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -727,9 +728,8 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo0i}
+ltuoP
 cinu
-ltuo0
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -807,6 +807,7 @@ PCDATA
 PUBLIC
 REQUIRED
 SYSTEM
+GetModuleHandleW
 KERNEL32.dll
 ADVAPI32.dll
 COMCTL32.dll
@@ -818,6 +819,7 @@ GDI32.dll
 IMM32.dll
 DivxDecoder.dll
 WINMM.dll
+VERSION.dll
 fmod.dll
 WININET.dll
 gxoverride
@@ -871,7 +873,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6005)
+World of WarCraft (build 6141)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -1243,8 +1245,8 @@ E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Oct 10 2006
-16:28:09
+Nov 14 2006
+14:53:39
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1612,8 +1614,11 @@ LOGIN_STATE_SURVEY
 LOGIN_STATE_DISCONNECTED
 RESPONSE_CONNECTED
 LOGIN_STATE_CHECKINGVERSIONS
+LOGIN_STATE_MATRIX_WAIT
+LOGIN_STATE_MATRIX
 LOGIN_STATE_PIN_WAIT
 LOGIN_STATE_PIN
+LOGIN_STATE_FIRST_SECURITY
 LOGIN_STATE_DOWNLOADFILE
 LOGIN_STATE_FAILED
 LOGIN_STATE_AUTHENTICATED
@@ -1665,12 +1670,23 @@ QUEUE_TIME_LEFT
 QUEUE_NAME_TIME_LEFT
 Survey
 Patch
+%d%d%d%d
 %d%d%d%d%d%d%d%d%d%d
 CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
 .?AUREALM_INFO@@
+IsLinuxClient
+IsMacClient
+IsWindowsClient
+IsScanDLLFinished
+ScanDLLContinueAnyway
+ScanDLLStart
+GetMatrixCoordinates
+MatrixCommit
+MatrixRevert
+MatrixEntered
 PINEntered
 SurveyNotificationDone
 GetBillingTimeRested
@@ -1731,6 +1747,10 @@ SetSavedAccountName
 GetSavedAccountName
 GetLocale
 GetBuildInfo
+SCANDLL_FINISHED
+SCANDLL_DOWNLOADING
+SCANDLL_ERROR
+PLAYER_ENTER_MATRIX
 PLAYER_ENTER_PIN
 SHOW_SURVEY_NOTIFICATION
 FORCE_RENAME_CHARACTER
@@ -1757,8 +1777,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6005
-1.12.2
+6141
+1.12.3
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -1769,6 +1789,8 @@ Usage: LaunchURL(\"URL\")
 Usage: DefaultServerLogin(\"accountName\", \"password\")
 Usage: PINEntered(4-10 key positions) - bad number of args %d
 Usage: PINEntered(4-10 key positions) - non-numeric arg #%d
+MatrixEntered: number must be 0 to 9
+Usage: MatrixEntered(number)
 AddOn index must be in the range of 1 to %d
 Usage: GetAddOnInfo(index)
 Usage: LaunchAddOnURL(index)
@@ -1777,6 +1799,7 @@ Usage: GetAddOnEnableState(\"character\", index)
 Usage: EnableAddOn(\"character\", index)
 Usage: DisableAddOn(\"character\", index)
 Usage: SetScriptMemory(MB)
+Usage: ScanDLLStart(\"VersionURL\", \"DLLURL\")
 RealmListDialogCancelled
 GetSelectedCategory
 SortRealms
@@ -1859,6 +1882,11 @@ Usage: DeleteCharacter(index)
 CHAR_CREATE_NAME_IN_USE
 Usage: RenameCharacter(index, name)
 Usage: SetCharacterSelectFacing(degrees)
+E:\\build\\buildWoW\\WoW\\Source\\Glue\\ScanDLLGlue.cpp
+SCANDLL_MESSAGE_DOWNLOADING
+SCANDLL_MESSAGE_ERROR
+SCANDLL_MESSAGE_SCANNING
+ScanThread
 (\r0IW+2%
 x<h'R
 9q2Hg
@@ -2310,9 +2338,6 @@ DeleteGMTicket
 UpdateGMTicket
 NewGMTicket
 GetGMTicket
-IsLinuxClient
-IsMacClient
-IsWindowsClient
 InCinematic
 OpeningCinematic
 RandomRoll
@@ -6858,11 +6883,15 @@ cache.md5
 SaveTimerHandler
 %s.partial
 unicows.dll
-dbghelp.dll
-ijl15.dll
 fmod.dll
-WoW.exe
-E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\ChecksumExecutables.cpp
+DivxDecoder.dll
+%hu.%hu.%hu.%hu
+HACK
+TROJAN
+o'6RX\r
+GcS68
+2\x1BpK@
+E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\CheckExecutableSignature.cpp
 LOGIN_STATE_CONNECTED
 REALM_LIST_CANTCONNECT
 REALM_LIST_DISCONNECTED
@@ -8033,6 +8062,7 @@ bzip2Compress:%d
 0\aw,a
 Qkkbal
 wn>Jj
+E:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 E:\\build\\buildWoW\\Storm\\Source\\SBig.cpp
 E:\\build\\buildWoW\\Storm\\Source\\W32\\SDir.cpp
 .?AV?$TSExplicitList@UZipFileDirEntry@@$0?CCCCCCCD@@@
@@ -8058,6 +8088,7 @@ SymGetModuleBase
 SymGetLineFromAddr
 SymFunctionTableAccess
 StackWalk
+dbghelp.dll
 %s %s+%d %s(%d)
 <sym-%08X>
 <unknown symbol>
@@ -8103,7 +8134,6 @@ EDI=%08X  EBP=%08X  ESP=%08X  EIP=%08X  FLG=%08X
 EAX=%08X  EBX=%08X  ECX=%08X  EDX=%08X  ESI=%08X
 x86 Registers
 psapi.dll
-E:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 E:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOAlignUnit.cpp
 .?AUIOCacheEntry@IOAlignUnit@@
 E:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOARC4Unit.cpp
@@ -10275,6 +10305,11 @@ E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsURLDownload.cpp
 <unknown %08X>
 <null>
 .?AUW32Joystick@@
+E:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsVersionHash.cpp
+\\StringFileInfo\\%04x%04x\\%s
+\\VarFileInfo\\Translation
+E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsSecureRandom.cpp
+GlobalMemoryStatusEx
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsClipboard.cpp
 %02X
 Improper header received: [
