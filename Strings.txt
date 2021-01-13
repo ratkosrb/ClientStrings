@@ -148,7 +148,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 5195 (Mar 22 2006 19:16:16)
+WoW [Release] Build 5195 (Mar 22 2006 19:13:30)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -1456,7 +1456,7 @@ DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
 5195
-0.10.0
+1.10.0
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
