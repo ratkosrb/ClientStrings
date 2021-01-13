@@ -146,7 +146,7 @@ trivial
 ?=\nW?
 GxWindowClassOpenGl
 GxWindowClassD3d
-WoW [Release Assertions Enabled] Build 4211 (Feb  8 2005 14:19:00)
+WoW [Release Assertions Enabled] Build 4222 (Feb 15 2005 18:46:04)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -155,7 +155,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 4211 (Feb  8 2005)
+WoW [Release Assertions Enabled] Build 4222 (Feb 15 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -458,8 +458,9 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuop
+ltuo0
 cinu
+ltuo0;{
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -617,7 +618,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 4211)
+World of WarCraft: Assertions Enabled Build (build 4222)
 SendErrorLogs
 Data\\
 World of Warcraft
@@ -1032,8 +1033,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Feb  8 2005
-14:17:02
+Feb 15 2005
+18:44:05
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1845,8 +1846,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4211
-1.2.3
+4222
+1.2.4
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -2125,6 +2126,45 @@ PLAYER_FIELD_BANKBAG_SLOT_1
 PLAYER_FIELD_BANK_SLOT_1
 PLAYER_FIELD_PACK_SLOT_1
 PLAYER_FIELD_INV_SLOT_HEAD
+PLAYER_FIELD_PAD_0
+PLAYER_VISIBLE_ITEM_19_PROPERTIES
+PLAYER_VISIBLE_ITEM_19_0
+PLAYER_VISIBLE_ITEM_18_PROPERTIES
+PLAYER_VISIBLE_ITEM_18_0
+PLAYER_VISIBLE_ITEM_17_PROPERTIES
+PLAYER_VISIBLE_ITEM_17_0
+PLAYER_VISIBLE_ITEM_16_PROPERTIES
+PLAYER_VISIBLE_ITEM_16_0
+PLAYER_VISIBLE_ITEM_15_PROPERTIES
+PLAYER_VISIBLE_ITEM_15_0
+PLAYER_VISIBLE_ITEM_14_PROPERTIES
+PLAYER_VISIBLE_ITEM_14_0
+PLAYER_VISIBLE_ITEM_13_PROPERTIES
+PLAYER_VISIBLE_ITEM_13_0
+PLAYER_VISIBLE_ITEM_12_PROPERTIES
+PLAYER_VISIBLE_ITEM_12_0
+PLAYER_VISIBLE_ITEM_11_PROPERTIES
+PLAYER_VISIBLE_ITEM_11_0
+PLAYER_VISIBLE_ITEM_10_PROPERTIES
+PLAYER_VISIBLE_ITEM_10_0
+PLAYER_VISIBLE_ITEM_9_PROPERTIES
+PLAYER_VISIBLE_ITEM_9_0
+PLAYER_VISIBLE_ITEM_8_PROPERTIES
+PLAYER_VISIBLE_ITEM_8_0
+PLAYER_VISIBLE_ITEM_7_PROPERTIES
+PLAYER_VISIBLE_ITEM_7_0
+PLAYER_VISIBLE_ITEM_6_PROPERTIES
+PLAYER_VISIBLE_ITEM_6_0
+PLAYER_VISIBLE_ITEM_5_PROPERTIES
+PLAYER_VISIBLE_ITEM_5_0
+PLAYER_VISIBLE_ITEM_4_PROPERTIES
+PLAYER_VISIBLE_ITEM_4_0
+PLAYER_VISIBLE_ITEM_3_PROPERTIES
+PLAYER_VISIBLE_ITEM_3_0
+PLAYER_VISIBLE_ITEM_2_PROPERTIES
+PLAYER_VISIBLE_ITEM_2_0
+PLAYER_VISIBLE_ITEM_1_PROPERTIES
+PLAYER_VISIBLE_ITEM_1_0
 PLAYER_GUILD_TIMESTAMP
 PLAYER_DUEL_TEAM
 PLAYER_BYTES_3
@@ -7475,7 +7515,7 @@ GetOwnerGUID() != GetGUID()
 Textures\\BakedNpcTextures\\
 textureName
 GetCharacterModel()
-!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1716)) != 0
+!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1715)) != 0
 s_showFootPrintParticles
 m_modelData
 RestoreUnit() on %s, but unit has %d health!
