@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 1.0.1
-// Build: 3989
+// Patch: 1.1.0
+// Build: 4044
 
 Public Enum SpellFailedReason
 {
@@ -122,6 +122,9 @@ Public Enum SpellFailedReason
     SPELL_FAILED_UNIT_NOT_BEHIND = 0x73,                            // 0x073
     SPELL_FAILED_UNIT_NOT_INFRONT = 0x74,                           // 0x074
     SPELL_FAILED_WRONG_PET_FOOD = 0x75,                             // 0x075
-    SPELL_FAILED_UNKNOWN = 0x76,                                    // 0x076
+    SPELL_FAILED_NOT_WHILE_FATIGUED = 0x76,                         // 0x076
+    SPELL_FAILED_TARGET_NOT_IN_INSTANCE = 0x77,                     // 0x077
+    SPELL_FAILED_NOT_WHILE_TRADING = 0x78,                          // 0x078
+    SPELL_FAILED_UNKNOWN = 0x79,                                    // 0x079
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }
