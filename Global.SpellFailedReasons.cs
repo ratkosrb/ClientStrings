@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.5.5
-// Build: 3494
+// Patch: 0.6.0
+// Build: 3592
 
 Public Enum SpellFailedReason
 {
@@ -54,47 +54,50 @@ Public Enum SpellFailedReason
     SPELL_FAILED_NO_CHARGES_REMAIN = 0x2F,                          // 0x02F
     SPELL_FAILED_NO_COMBO_POINTS = 0x30,                            // 0x030
     SPELL_FAILED_NO_ENDURANCE = 0x31,                               // 0x031
-    SPELL_FAILED_NO_MOUNTS_ALLOWED = 0x32,                          // 0x032
-    SPELL_FAILED_NO_PET = 0x33,                                     // 0x033
-    SPELL_FAILED_NO_POWER = 0x34,                                   // 0x034
-    SPELL_FAILED_ONLY_ABOVEWATER = 0x35,                            // 0x035
-    SPELL_FAILED_ONLY_DAYTIME = 0x36,                               // 0x036
-    SPELL_FAILED_ONLY_INDOORS = 0x37,                               // 0x037
-    SPELL_FAILED_ONLY_MOUNTED = 0x38,                               // 0x038
-    SPELL_FAILED_ONLY_NIGHTTIME = 0x39,                             // 0x039
-    SPELL_FAILED_ONLY_OUTDOORS = 0x3A,                              // 0x03A
-    SPELL_FAILED_ONLY_SHAPESHIFT = 0x3B,                            // 0x03B
-    SPELL_FAILED_ONLY_STEALTHED = 0x3C,                             // 0x03C
-    SPELL_FAILED_ONLY_UNDERWATER = 0x3D,                            // 0x03D
-    SPELL_FAILED_OUT_OF_RANGE = 0x3E,                               // 0x03E
-    SPELL_FAILED_PACIFIED = 0x3F,                                   // 0x03F
-    SPELL_FAILED_REAGENTS = 0x40,                                   // 0x040
-    SPELL_FAILED_REQUIRES_SPELL_FOCUS = 0x41,                       // 0x041
-    SPELL_FAILED_SILENCED = 0x42,                                   // 0x042
-    SPELL_FAILED_SPELL_IN_PROGRESS = 0x43,                          // 0x043
-    SPELL_FAILED_SPELL_LEARNED = 0x44,                              // 0x044
-    SPELL_FAILED_SPELL_UNAVAILABLE = 0x45,                          // 0x045
-    SPELL_FAILED_STUNNED = 0x46,                                    // 0x046
-    SPELL_FAILED_TARGETS_DEAD = 0x47,                               // 0x047
-    SPELL_FAILED_TARGET_AFFECTING_COMBAT = 0x48,                    // 0x048
-    SPELL_FAILED_TARGET_AURASTATE = 0x49,                           // 0x049
-    SPELL_FAILED_TARGET_DUELING = 0x4A,                             // 0x04A
-    SPELL_FAILED_TARGET_ENEMY = 0x4B,                               // 0x04B
-    SPELL_FAILED_TARGET_ENRAGED = 0x4C,                             // 0x04C
-    SPELL_FAILED_TARGET_FRIENDLY = 0x4D,                            // 0x04D
-    SPELL_FAILED_TARGET_NOT_DEAD = 0x4E,                            // 0x04E
-    SPELL_FAILED_TARGET_NOT_IN_PARTY = 0x4F,                        // 0x04F
-    SPELL_FAILED_TARGET_NOT_LOOTED = 0x50,                          // 0x050
-    SPELL_FAILED_TARGET_NOT_PLAYER = 0x51,                          // 0x051
-    SPELL_FAILED_TARGET_NO_POCKETS = 0x52,                          // 0x052
-    SPELL_FAILED_TARGET_UNSKINNABLE = 0x53,                         // 0x053
-    SPELL_FAILED_THIRST_SATIATED = 0x54,                            // 0x054
-    SPELL_FAILED_TOO_CLOSE = 0x55,                                  // 0x055
-    SPELL_FAILED_TOO_MANY_OF_ITEM = 0x56,                           // 0x056
-    SPELL_FAILED_TOTEMS = 0x57,                                     // 0x057
-    SPELL_FAILED_TRY_AGAIN = 0x58,                                  // 0x058
-    SPELL_FAILED_UNIT_NOT_BEHIND = 0x59,                            // 0x059
-    SPELL_FAILED_UNIT_NOT_INFRONT = 0x5A,                           // 0x05A
-    SPELL_FAILED_UNKNOWN = 0x5B,                                    // 0x05B
+    SPELL_FAILED_NO_ITEMS_WHILE_SHAPESHIFTED = 0x32,                // 0x032
+    SPELL_FAILED_NO_MOUNTS_ALLOWED = 0x33,                          // 0x033
+    SPELL_FAILED_NO_PET = 0x34,                                     // 0x034
+    SPELL_FAILED_NO_POWER = 0x35,                                   // 0x035
+    SPELL_FAILED_ONLY_ABOVEWATER = 0x36,                            // 0x036
+    SPELL_FAILED_ONLY_DAYTIME = 0x37,                               // 0x037
+    SPELL_FAILED_ONLY_INDOORS = 0x38,                               // 0x038
+    SPELL_FAILED_ONLY_MOUNTED = 0x39,                               // 0x039
+    SPELL_FAILED_ONLY_NIGHTTIME = 0x3A,                             // 0x03A
+    SPELL_FAILED_ONLY_OUTDOORS = 0x3B,                              // 0x03B
+    SPELL_FAILED_ONLY_SHAPESHIFT = 0x3C,                            // 0x03C
+    SPELL_FAILED_ONLY_STEALTHED = 0x3D,                             // 0x03D
+    SPELL_FAILED_ONLY_UNDERWATER = 0x3E,                            // 0x03E
+    SPELL_FAILED_OUT_OF_RANGE = 0x3F,                               // 0x03F
+    SPELL_FAILED_PACIFIED = 0x40,                                   // 0x040
+    SPELL_FAILED_REAGENTS = 0x41,                                   // 0x041
+    SPELL_FAILED_ROOTED = 0x42,                                     // 0x042
+    SPELL_FAILED_REQUIRES_SPELL_FOCUS = 0x43,                       // 0x043
+    SPELL_FAILED_SILENCED = 0x44,                                   // 0x044
+    SPELL_FAILED_SPELL_IN_PROGRESS = 0x45,                          // 0x045
+    SPELL_FAILED_SPELL_LEARNED = 0x46,                              // 0x046
+    SPELL_FAILED_SPELL_UNAVAILABLE = 0x47,                          // 0x047
+    SPELL_FAILED_STUNNED = 0x48,                                    // 0x048
+    SPELL_FAILED_TARGETS_DEAD = 0x49,                               // 0x049
+    SPELL_FAILED_TARGET_AFFECTING_COMBAT = 0x4A,                    // 0x04A
+    SPELL_FAILED_TARGET_AURASTATE = 0x4B,                           // 0x04B
+    SPELL_FAILED_TARGET_DUELING = 0x4C,                             // 0x04C
+    SPELL_FAILED_TARGET_ENEMY = 0x4D,                               // 0x04D
+    SPELL_FAILED_TARGET_ENRAGED = 0x4E,                             // 0x04E
+    SPELL_FAILED_TARGET_FRIENDLY = 0x4F,                            // 0x04F
+    SPELL_FAILED_TARGET_NOT_DEAD = 0x50,                            // 0x050
+    SPELL_FAILED_TARGET_NOT_IN_PARTY = 0x51,                        // 0x051
+    SPELL_FAILED_TARGET_NOT_LOOTED = 0x52,                          // 0x052
+    SPELL_FAILED_TARGET_NOT_PLAYER = 0x53,                          // 0x053
+    SPELL_FAILED_TARGET_NO_POCKETS = 0x54,                          // 0x054
+    SPELL_FAILED_TARGET_NO_WEAPONS = 0x55,                          // 0x055
+    SPELL_FAILED_TARGET_UNSKINNABLE = 0x56,                         // 0x056
+    SPELL_FAILED_THIRST_SATIATED = 0x57,                            // 0x057
+    SPELL_FAILED_TOO_CLOSE = 0x58,                                  // 0x058
+    SPELL_FAILED_TOO_MANY_OF_ITEM = 0x59,                           // 0x059
+    SPELL_FAILED_TOTEMS = 0x5A,                                     // 0x05A
+    SPELL_FAILED_TRY_AGAIN = 0x5B,                                  // 0x05B
+    SPELL_FAILED_UNIT_NOT_BEHIND = 0x5C,                            // 0x05C
+    SPELL_FAILED_UNIT_NOT_INFRONT = 0x5D,                           // 0x05D
+    SPELL_FAILED_UNKNOWN = 0x5E,                                    // 0x05E
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }
