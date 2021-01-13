@@ -148,7 +148,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 4996 (Jan 10 2006 18:31:38)
+WoW [Release] Build 5059 (Jan 31 2006 16:28:05)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -157,7 +157,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 4996 (Jan 10 2006)
+WoW [Release] Build 5059 (Jan 31 2006)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -464,7 +464,9 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
+ltuoP
 cinu
+ltuoP
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -607,7 +609,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 4996)
+World of WarCraft (build 5059)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -622,6 +624,10 @@ WoW Config
 Region
 Wow.ini
 Config.wtf
+M2FasterDebug
+programmer control of scene optimization mode
+M2Faster
+end user control of scene optimization mode - (0-3)
 M2BatchDoodads
 combine doodads to reduce batch count
 M2UsePixelShaders
@@ -640,6 +646,8 @@ Toggle profanity filter
 scriptMemory
 Memory used by the scripting system (in Kb)
 49152
+readScanning
+Status of the Scanning notice
 readEULA
 Status of the EULA
 readTOS
@@ -925,8 +933,8 @@ C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jan 10 2006
-18:29:04
+Jan 31 2006
+16:26:05
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1396,6 +1404,9 @@ DisconnectFromServer
 GetServerName
 StatusDialogClick
 DefaultServerLogin
+AcceptScanning
+ScanningAccepted
+ShowScanningNotice
 AcceptEULA
 EULAAccepted
 ShowEULANotice
@@ -1437,8 +1448,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4996
-1.9.2
+5059
+1.9.3
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -1773,7 +1784,8 @@ PLAYER_QUEST_LOG_17_1
 PLAYER_QUEST_LOG_16_2
 PLAYER_QUEST_LOG_16_1
 PLAYER_QUEST_LOG_15_2
-PLAYER_QUEST_LOG_15_1
+PLAYER_QUEST
+_LOG_15_1
 PLAYER_QUEST_LOG_14_2
 PLAYER_QUEST_LOG_14_1
 PLAYER_QUEST_LOG_13_2
@@ -1784,7 +1796,7 @@ PLAYER_QUEST_LOG_11_2
 PLAYER_QUEST_LOG_11_1
 PLAYER_QUEST_LOG_10_2
 PLAYER_QUEST_LOG_10_1
-ER_QUEST_LOG_9_2
+PLAYER_QUEST_LOG_9_2
 PLAYER_QUEST_LOG_9_1
 PLAYER_QUEST_LOG_8_2
 PLAYER_QUEST_LOG_8_1
@@ -2153,6 +2165,7 @@ INVTYPE_NECK
 INVTYPE_HEAD
 .?AV?$TSExplicitList@USAVEDVARIABLE@@$0?CCCCCCCD@@@
 .?AUNearestUnitData@@
+ERR_MAIL_REACHED_CAP
 ERR_CHAT_RESTRICTED
 ERR_UNHEALTHY_TIME
 ERR_APPROACHING_NO_PLAY_TIME
@@ -2268,7 +2281,7 @@ ERR_TICKET_CREATE_ERROR
 ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
 ERR_PET_SPELL_NOPATH
-ERR_PET_SPELL_DEAD
+ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
 ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
@@ -2278,7 +2291,7 @@ ERR_PETITION_NOT_ENOUGH_SIGNATURES
 ERR_PETITION_CREATOR
 ERR_PETITION_IN_GUILD
 ERR_PETITION_ALREADY_SIGNED
-ERR_PET_SPELL_TARGETS_DEAD
+ERR_PET_SPELL_DEAD
 ERR_PETITION_DECLINED_S
 ERR_PETITION_SIGNED_S
 ERR_PETITION_SIGNED
@@ -6205,7 +6218,7 @@ OPTION ARB_fog_exp;\n
 OPTION ARB_fog_linear;\n
 !!ARBfp1.0
 PARAM c%u[%u]={program.env[%u..%u]}
-
+PARAM c
 CGxDeviceOpenGl::PrimRender(): invalid buf!\n
 vs_2_0
 vs_1_1
@@ -6266,6 +6279,8 @@ CHAR_LOGIN_IN_PROGRESS
 CHAR_DELETE_FAILED
 CHAR_DELETE_SUCCESS
 CHAR_DELETE_IN_PROGRESS
+CHAR_CREATE_ONLY_EXISTING
+CHAR_CREATE_SERVER_QUEUE
 CHAR_CREATE_ACCOUNT_LIMIT
 CHAR_CREATE_SERVER_LIMIT
 CHAR_CREATE_PVP_TEAMS_VIOLATION
@@ -7655,34 +7670,10 @@ EDI=%08X  EBP=%08X  ESP=%08X  EIP=%08X  FLG=%08X
 EAX=%08X  EBX=%08X  ECX=%08X  EDX=%08X  ESI=%08X
 x86 Registers
 psapi.dll
-\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
-\n\b\a\a\b\t\a
-\a\a\a\a\b\a\a\b\b
-\a\t\b\t\t\v\b\v\t
-\b\a\b\b\n\v\v
-\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-\r\r\r\r\r\r\r\r\r\r\r
-`\a`\v`
-\a`\b1
- \a \v
-@\a@\v@
-PKWARE Data Compression Library for Win32\r\nCopyright 1989-1995 PKWARE Inc.  All Rights Reserved.\r\nPatent No. 5,051,745\r\nPKWARE Data Compression Library Reg. U.S. Pat. and Tm. Off.\r\nVersion 1.11
 C:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOAlignUnit.cpp
 .?AUIOCacheEntry@IOAlignUnit@@
 C:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOARC4Unit.cpp
-\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
-\n\b\a\a\b\t\a
-\a\a\a\a\b\a\a\b\b
-\a\t\b\t\t\v\b\v\t
-\b\a\b\b\n\v\v
-\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-\r\r\r\r\r\r\r\r\r\r\r
-`\a`\v`
-\a`\b1
- \a \v
-@\a@\v@
-PKWARE Data Compression Library for Win32\r\nCopyright 1989-1995 PKWARE Inc.  All Rights Reserved\r\nPatent No. 5,051,745\r\nPKWARE Data Compression Library Reg. U.S. Pat. and Tm. Off.\r\nVersion 1.11
 incompatible version
 buffer error
 insufficient memory
