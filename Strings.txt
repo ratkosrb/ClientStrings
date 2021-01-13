@@ -147,7 +147,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release Assertions Enabled] Build 4284 (Mar 17 2005 15:08:00)
+WoW [Release Assertions Enabled] Build 4297 (Mar 22 2005 20:29:45)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -156,7 +156,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 4284 (Mar 17 2005)
+WoW [Release Assertions Enabled] Build 4297 (Mar 22 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -461,7 +461,8 @@ SP\vPZ
 \b3OP\v
 ltuo0
 cinu
-ltuo0
+ltuop;|
+ltuop;|
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -570,17 +571,19 @@ uptodate
 1024x768
 800x600
 640x480
-Data\\speech2.MPQ
-Data\\dbc.MPQ
-Data\\speech.MPQ
-Data\\fonts.MPQ
-Data\\interface.MPQ
-Data\\misc.MPQ
-Data\\sound.MPQ
-Data\\wmo.MPQ
-Data\\terrain.MPQ
-Data\\texture.MPQ
-Data\\model.MPQ
+speech2.MPQ
+dbc.MPQ
+speech.MPQ
+fonts.MPQ
+interface.MPQ
+misc.MPQ
+sound.MPQ
+wmo.MPQ
+terrain.MPQ
+texture.MPQ
+model.MPQ
+..\\Data\\
+Data\\
 delete
 .PAVSArchive@@
 index (0x%08X), array size (0x%08X)
@@ -622,9 +625,9 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 4284)
+World of WarCraft: Assertions Enabled Build (build 4297)
 SendErrorLogs
-Data\\
+%s%s
 World of Warcraft
 .PAVStartup_StringsRec@@
 %s: Cannot read string table
@@ -633,7 +636,6 @@ C:\\build\\buildWoW\\WoW\\Source\\DB/WowClientDB.h
 %s has wrong number of columns (found %i, expected %i)
 Unable to open %s
 %s already loaded! Aborting to prevent memory leak!
-%s%s
 Country
 Language
 WoW Config
@@ -743,7 +745,6 @@ C:\\build\\buildWoW\\WoW\\Source\\WowServices/PatchFiles.h
 !\"Failed to open archive\"
 \"%s\", \"%s\"
 \"%s\", %s = \"%s\"
-_archiveNames[i]
 patch-?.MPQ
 patch.MPQ
 Data\\%s
@@ -1036,8 +1037,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Mar 17 2005
-15:05:45
+Mar 22 2005
+20:27:39
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1301,7 +1302,6 @@ string
 C:\\build\\buildWoW\\ENGINE\\Source\\Services\\Profile.cpp
 stringBlock
 .?AUPROFILE@ProfileInternal@@
-path
 [%s]\n
 section
 %I64d
@@ -1827,8 +1827,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4284
-1.3.0
+4297
+1.3.1
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
@@ -4236,7 +4236,6 @@ GetMacroInfo
 GetNumMacros
 SaveMacros
 CreateMacro
-Data\\Interface\\Icons\\
 Interface\\Icons\\
 .?AV?$TSExplicitList@UMACRONODE@@$0?CCCCCCCD@@@
 CastSpellByName(
@@ -6749,7 +6748,7 @@ OPTION ARB_fog_linear;\n
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglShader.cpp
 glARBFragmentProgram
 PARAM c%u[%u]={program.env[%u..%u]}
-
+PARAM c
 C:\\build\\buildWoW\\ENGINE\\Source\\gx\\CGxDeviceOpenGL\\CGxOglTexture.cpp
 DsGet(Ds_ActiveTexture) == tmuToUse
 texId->m_needsFlagUpdate
@@ -6936,7 +6935,7 @@ COP_CONNECT
 COP_INIT
 COP_NONE
 telemetry.dat
-Data\\base.MPQ
+%sbase.MPQ
 .?AVLogin@@
 .?AVLoginResponseAdapter@@
 run realmlist.wtf
@@ -7104,7 +7103,6 @@ ClientLink::CMD_AUTH_RECONNECT_PROOF
 ClientLink::CMD_AUTH_RECONNECT_CHALLENGE
 ClientLink::CMD_AUTH_LOGON_PROOF
 ServerLink::CMD_GRUNT_KICK
-ServerLink::CMD_GRUNT_UNLOCKSESSION
 ServerLink::CMD_GRUNT_PROVESESSION
 ServerLink::CMD_GRUNT_HELLO
 ServerLink::CMD_GRUNT_CONN_PONG
@@ -7126,13 +7124,10 @@ m_pos != (unsigned)-1
 Unable to get the information necessary to identify self to Grunt
 Unknown grunt result %d
 account id [%d] has passed authentication
-account id [%d:%d] unlock received, but it was out of date
-account id [%d:%d] unlocked
 received kick message for account id [%d:%d]
 Server name=%s
 Sending PING
 Closing connection - PING TIMEOUT
-Unlock timed out for account id [%d:%d]
 Prove sesion timed out, expiring
 Closing connection - HANDSHAKE timeout
 !IsReadOnly()
@@ -7144,8 +7139,8 @@ Unable to locate a Grunt server!
 Establishing connection to Grunt server at %s
 !m_conn
 Proving session for %s from %s [lock: %d]
-.?AUUnlock@ServerLink@Grunt@@
 Unlocking session for account id [%d:%d]
+Cancel request %08x
 Unknown grunt result %d @ %d
 .?AUInfo@CdKey@Grunt@@
 m_state == STATE_CONNECT_VERSION || m_state == STATE_RECONNECT_VERSION
@@ -7556,7 +7551,7 @@ GetOwnerGUID() != GetGUID()
 Textures\\BakedNpcTextures\\
 textureName
 GetCharacterModel()
-!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1754)) != 0
+!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\"C:\\\\build\\\\buildWoW\\\\WoW\\\\Source\\\\Object\\\\ObjectClient\\\\Unit_C.cpp\",1758)) != 0
 s_showFootPrintParticles
 m_modelData
 RestoreUnit() on %s, but unit has %d health!
@@ -8673,7 +8668,7 @@ C:\\build\\buildWoW\\Storm\\Source\\SBig.cpp
 m_used < SIZE
 count <= m_used
 d <= SMALL_BOUND
-<= SMALL_BOUND
+c <= SMALL_BOUND
 .?AVBigData@@
 SBIG
 C:\\build\\buildWoW\\Storm\\Source\\SMsg.cpp
