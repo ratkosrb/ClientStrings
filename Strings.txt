@@ -105,6 +105,7 @@ COMBAT_HONOR_GAIN
 x\nBG_SYSTEM_ALLIANCE
 BG_SYSTEM_HORDE
 COMBAT_FACTION_CHANGE
+MONEY
 @#$%^&*
 PASSIVE
 DEFENSIVE
@@ -147,7 +148,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 4851 (Nov 21 2005 03:34:07)
+WoW [Release] Build 4869 (Nov 29 2005 03:45:56)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -156,7 +157,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 4851 (Nov 21 2005)
+WoW [Release] Build 4869 (Nov 29 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -463,10 +464,8 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo`
-cinu
-ltuo`
 ltuo
+cinu
 ltuo
    !
 } ~ % $ 0
@@ -610,7 +609,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 4851)
+World of WarCraft (build 4869)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -928,8 +927,8 @@ C:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 .?AUContextData@@
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Nov 21 2005
-03:26:19
+Nov 29 2005
+03:38:19
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1439,7 +1438,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4851
+4869
 0.9.0
 RELEASE_BUILD
 BETA_BUILD
@@ -2154,6 +2153,7 @@ INVTYPE_NECK
 INVTYPE_HEAD
 .?AV?$TSExplicitList@USAVEDVARIABLE@@$0?CCCCCCCD@@@
 .?AUNearestUnitData@@
+ERR_CHAT_RESTRICTED
 ERR_UNHEALTHY_TIME
 ERR_APPROACHING_NO_PLAY_TIME
 ERR_APPROACHING_PARTIAL_PLAY_TIME
@@ -2269,7 +2269,7 @@ ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
 ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
-ERR_PET_SPELL_TARGETS_DEAD
+ERR_PET_SPELL_NOT_BEHIND
 ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
 ERR_PET_SPELL_ROOTED
@@ -2277,8 +2277,8 @@ ERR_SPELL_UNLEARNED_S
 ERR_PETITION_NOT_ENOUGH_SIGNATURES
 ERR_PETITION_CREATOR
 ERR_PETITION_IN_GUILD
-ERR_PET_SPELL_NOT_BEHIND
 ERR_PETITION_ALREADY_SIGNED
+ERR_PET_SPELL_TARGETS_DEAD
 ERR_PETITION_DECLINED_S
 ERR_PETITION_SIGNED_S
 ERR_PETITION_SIGNED
@@ -2293,8 +2293,8 @@ ERR_ZONE_EXPLORED
 ERR_NOEMOTEWHILERUNNING
 ERR_DEATHBIND_SUCCESS_S
 ERR_DEATHBINDALREADYBOUND
-igPlayerInviteAccept
 ERR_DUEL_CANCELLED
+igPlayerInviteAccept
 ERR_DUEL_REQUESTED
 ERR_TOOBUSYTOFOLLOW
 ERR_NOAMMO_S
@@ -2476,8 +2476,8 @@ ERR_LOOT_NOTSTANDING
 ERR_LOOT_BAD_FACING
 ERR_LOOT_DIDNT_KILL
 ERR_LOOT_TOO_FAR
-igQuestFailed
 ERR_LOOT_LOCKED
+igQuestFailed
 ERR_KILLED_BY_S
 ERR_CLIENT_LOCKED_OUT
 ERR_PLAYER_DEAD
@@ -2543,8 +2543,8 @@ ERR_DECLINE_GROUP_S
 ERR_GROUP_DISBANDED
 ERR_LEFT_GROUP_YOU
 ERR_LEFT_GROUP_S
-LEVELUP
 ERR_NEW_LEADER_YOU
+LEVELUP
 ERR_NEW_LEADER_S
 ERR_PLAYER_BUSY_S
 ERR_ALREADY_IN_GROUP_S
@@ -2596,6 +2596,7 @@ ERR_WRONG_BAG_TYPE
 ERR_NO_SLOT_AVAILABLE
 ERR_AMMO_ONLY
 ERR_TRADE_EQUIPPED_BAG
+ERR_TOO_MANY_SPECIAL_BAGS
 ERR_BAG_IN_BAG
 ERR_DESTROY_NONEMPTY_BAG
 ERR_BAG_FULL
@@ -2846,6 +2847,7 @@ GetDefaultLanguage
 GetLanguageByIndex
 GetNumLaguages
 SendChatMessage
+MONEY
 COMBAT_FACTION_CHANGE
 COMBAT_HONOR_GAIN
 SPELL_FAILED_LOCALPLAYER
@@ -3340,8 +3342,8 @@ Usage: SetBinding(\"KEY\"[, \"COMMAND\"])
 Usage: GetBindingKey(\"COMMAND\")
 Usage: GetBindingAction(\"KEY\")
 Usage: RunBinding(\"COMMAND\")
-Usage: LoadBindings(0|1|2)
-Usage: SaveBindings(1|2)
+Usage: LoadBindings(0||1||2)
+Usage: SaveBindings(1||2)
 .?AUKEYCOMMAND@@
 .?AV?$TSExplicitList@UKEYCOMMAND@@$0?CCCCCCCD@@@
 .?AUKEYBINDING@@
@@ -3537,10 +3539,11 @@ IsInMeetingStoneQueue
 C:\\build\\buildWoW\\WoW\\Source\\Ui\\MeetingStoneInfo.cpp
 MEETINGSTONE_TOOLTIP
 .?AVCEffect@@
-GetStablePetFoodTypes
+GetStable
+PetFoodTypes
 SetPetStablePaperdoll
 GetSelectedStablePet
-ickupStablePet
+PickupStablePet
 ClickStablePet
 GetNextStableSlotCost
 GetStablePetInfo
@@ -4674,11 +4677,10 @@ Usage: UnitPVPRank(\"unit\")
 Usage: GetPVPRankInfo(rank [, unit])
 CHAT_MSG_COMBAT_FACTION_CHANGE
 UPDATE_LFG_LIST
-UPDATE_LFG_TYPES
+PDATE_LFG_TYPES
 PLAYTIME_CHANGED
 CONFIRM_PET_UNLEARN
-AREA_
-SPIRIT_HEALER_OUT_OF_RANGE
+AREA_SPIRIT_HEALER_OUT_OF_RANGE
 AREA_SPIRIT_HEALER_IN_RANGE
 UPDATE_WORLD_STATES
 INSPECT_HONOR_UPDATE
@@ -4945,6 +4947,7 @@ CURRENT_SPELL_CAST_CHANGED
 SPELLS_CHANGED
 TIME_PLAYED_MSG
 LANGUAGE_LIST_CHANGED
+CHAT_MSG_MONEY
 CHAT_MSG_LOOT
 CHAT_MSG_SKILL
 CHAT_MSG_IGNORED
@@ -5387,8 +5390,7 @@ NetClient::HandleDisconnect()
 Received pong with old sequence
 .?AUNETEVENTQUEUENODE@@
 C:\\build\\buildWoW\\WoW\\Source\\Net\\NetInternal.h
-C:\\build\\buildWoW\\WoW\\Source\\Net
-\\NetInternal.cpp
+C:\\build\\buildWoW\\WoW\\Source\\Net\\NetInternal.cpp
 ..\\..\\DB/WowClientDB.h
 .PBVResistancesRec@@
 .PBVItemSubClassRec@@
@@ -6839,8 +6841,6 @@ not active mover
 active mover
 eventTime=%d, lastUpdate=%d\n
 C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Movement.cpp
-C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Missile_C.cpp
-Spells\\Resist_Immune_Effect.M2
 .?AUPendingLootRoll@@
 LOOT_ROLL_ALL_PASSED
 LOOT_ROLL_WON_NO_SPAM_GREED
@@ -6857,6 +6857,8 @@ LOOT_ROLL_GREED
 LOOT_ROLL_NEED_SELF
 LOOT_ROLL_PASSED_SELF
 LOOT_ROLL_GREED_SELF
+C:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Missile_C.cpp
+Spells\\Resist_Immune_Effect.M2
 HARDCODED Reputation
 HARDCODED Meeting Stone Join
 HARDCODED PetLoyalty Down Head
@@ -9069,15 +9071,14 @@ SetFogNear
 SetFogColor
 ReplaceIconTexture
 AdvanceTime
-GetScale
+GetModelScale
 GetFacing
 GetPosition
 SetLight
 SetCamera
-SetAlpha
 SetSequenceTime
 SetSequence
-SetScale
+SetModelScale
 SetFacing
 SetPosition
 ClearModel
@@ -9088,7 +9089,6 @@ Usage: SetFacing(facing)
 Usage: SetScale(scale)
 Usage: SetSequence(sequence)
 Usage: SetSequenceTime(sequence, time)
-Usage: SetAlpha(alpha)
 Usage: SetCamera(index)
 Usage: SetLight(enabled[, omni, dirX, dirY, dirZ, ambIntensity[, ambR, ambG, ambB], dirIntensity[, dirR, dirG, dirB]])
 Usage: ReplaceIconTexture(\"texture\")
@@ -9171,7 +9171,12 @@ DisableDrawLayer
 EnableDrawLayer
 GetID
 SetID
+SetScale
+GetScale
+GetEffectiveScale
 GetAlpha
+SetAlpha
+UnregisterAllEvents
 UnregisterEvent
 RegisterEvent
 SetScript
@@ -9477,6 +9482,7 @@ SetGradient
 SetVertexColor
 Usage: SetGradient(\"orientation\", minR, minG, minB, maxR, maxG, maxB)
 Usage: SetGradientAlpha(\"orientation\", minR, minG, minB, minA, maxR, maxG, maxB, maxA)
+Usage: SetAlpha(alpha)
 Usage: SetTexCoord(minX, maxX, minY, maxY) or SetTexCoord(ULx, ULy, LLx, LLy, URx, URy, LRx, LRy)
 Usage: SetAlphaGradient(start, length)
 %s:SetText(): Font not set

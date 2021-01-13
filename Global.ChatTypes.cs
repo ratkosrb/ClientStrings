@@ -1,6 +1,6 @@
 // Auto generated file
 // Patch: 0.9.0
-// Build: 4851
+// Build: 4869
 
 Public Enum ChatMsg
 {
@@ -31,4 +31,5 @@ Public Enum ChatMsg
     CHAT_MSG_IGNORED = 0x18,                                        // 0x018
     CHAT_MSG_SKILL = 0x19,                                          // 0x019
     CHAT_MSG_LOOT = 0x1A,                                           // 0x01A
+    CHAT_MSG_MONEY = 0x1B,                                          // 0x01B
 }
