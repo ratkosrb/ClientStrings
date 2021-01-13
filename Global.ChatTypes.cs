@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 1.10.2
-// Build: 5302
+// Patch: 0.11.0
+// Build: 5344
 
 Public Enum ChatMsg
 {
@@ -32,4 +32,6 @@ Public Enum ChatMsg
     CHAT_MSG_SKILL = 0x19,                                          // 0x019
     CHAT_MSG_LOOT = 0x1A,                                           // 0x01A
     CHAT_MSG_MONEY = 0x1B,                                          // 0x01B
+    CHAT_MSG_RAID_LEADER = 0x1C,                                    // 0x01C
+    CHAT_MSG_RAID_WARNING = 0x1D,                                   // 0x01D
 }
