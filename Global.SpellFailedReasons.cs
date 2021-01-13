@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 0.8.0
-// Build: 4714
+// Patch: 1.8.0
+// Build: 4735
 
 Public Enum SpellFailedReason
 {
@@ -138,6 +138,7 @@ Public Enum SpellFailedReason
     SPELL_FAILED_WRONG_WEATHER = 0x83,                              // 0x083
     SPELL_FAILED_DAMAGE_IMMUNE = 0x84,                              // 0x084
     SPELL_FAILED_PREVENTED_BY_MECHANIC = 0x85,                      // 0x085
-    SPELL_FAILED_UNKNOWN = 0x86,                                    // 0x086
+    SPELL_FAILED_PLAY_TIME = 0x86,                                  // 0x086
+    SPELL_FAILED_UNKNOWN = 0x87,                                    // 0x087
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }
