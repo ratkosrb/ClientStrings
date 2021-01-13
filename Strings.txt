@@ -367,7 +367,11 @@ COMBAT_FACTION_CHANGE
 MONEY
 RAID_LEADER
 RAID_WARNING
+FOREIGN_TELL
 RAID_BOSS_EMOTE
+FILTERED
+BATTLEGROUND
+BATTLEGROUND_LEADER
 @#$%^&*
 PASSIVE
 DEFENSIVE
@@ -410,7 +414,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 5464 (Jun 27 2006 18:42:19)
+WoW [Release] Build 5496 (Jul 12 2006 11:05:42)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -419,7 +423,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 5464 (Jun 27 2006)
+WoW [Release] Build 5496 (Jul 12 2006)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -722,11 +726,9 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo`
+ltuo 2}
 cinu
-ltuo`
-ltuo 0}
-ltuo 0}
+ltuo r}
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -868,7 +870,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5464)
+World of WarCraft (build 5496)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -1232,8 +1234,8 @@ E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsGui.cpp
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jun 27 2006
-18:39:50
+Jul 12 2006
+11:00:18
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1745,8 +1747,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5464
-1.11.2
+5496
+0.12.0
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -1929,6 +1931,9 @@ DYNAMICOBJECT_RADIUS
 DYNAMICOBJECT_SPELLID
 DYNAMICOBJECT_BYTES
 DYNAMICOBJECT_CASTER
+GAMEOBJECT_PADDING
+GAMEOBJECT_ANIMPROGRESS
+GAMEOBJECT_ARTKIT
 GAMEOBJECT_LEVEL
 GAMEOBJECT_TYPE_ID
 GAMEOBJECT_FACTION
@@ -1937,12 +1942,12 @@ GAMEOBJECT_FACING
 GAMEOBJECT_POS_Z
 GAMEOBJECT_POS_Y
 GAMEOBJECT_POS_X
-GAMEOBJECT_TIMESTAMP
 GAMEOBJECT_STATE
 GAMEOBJECT_ROTATION
 GAMEOBJECT_FLAGS
 GAMEOBJECT_DISPLAYID
 OBJECT_FIELD_CREATED_BY
+PLAYER_FIELD_COMBAT_RATING_1
 PLAYER_FIELD_WATCHED_FACTION_INDEX
 PLAYER_FIELD_BYTES2
 PLAYER_FIELD_LAST_WEEK_RANK
@@ -2124,7 +2129,6 @@ PLAYER_GUILDRANK
 PLAYER_GUILDID
 PLAYER_FLAGS
 PLAYER_DUEL_ARBITER
-PLAYER_SELECTION
 UNIT_FIELD_PADDING
 UNIT_FIELD_POWER_COST_MULTIPLIER
 UNIT_FIELD_POWER_COST_MODIFIER
@@ -2390,7 +2394,10 @@ EquipCursorItem
 CursorHasMoney
 CursorHasSpell
 CursorHasItem
+ClearCursor
 SetCursor
+HideFriendNameplates
+ShowFriendNameplates
 HideNameplates
 ShowNameplates
 Quit
@@ -2434,6 +2441,9 @@ SetLayoutMode
 RegisterForSave
 ReloadUI
 FrameXML_Debug
+raid
+party
+none
 realmName
 realmList
 DEFLECT
@@ -2475,10 +2485,13 @@ INVTYPE_NECK
 INVTYPE_HEAD
 .?AV?$TSExplicitList@USAVEDVARIABLE@@$0?CCCCCCCD@@@
 .?AUNearestUnitData@@
+ERR_FILTERING_YOU_S
 ERR_LOOT_MASTER_OTHER
 ERR_LOOT_MASTER_UNIQUE_ITEM
 ERR_LOOT_MASTER_INV_FULL
 ERR_LOOT_CANT_LOOT_THAT_NOW
+ERR_CHAT_PLAYER_AMBIGUOUS_S
+ERR_TRADE_WRONG_REALM
 ERR_DUNGEON_DIFFICULTY_CHANGED_S
 ERR_DUNGEON_DIFFICULTY_FAILED
 ERR_READY_CHECK_IN_PROGRESS
@@ -2592,11 +2605,11 @@ ERR_EXHAUSTION_TIRED
 ERR_EXHAUSTION_NORMAL
 ERR_EXHAUSTION_RESTED
 ERR_EXHAUSTION_WELLRESTED
-ERR_OBJECT_IS_BUSY
 ERR_TICKET_NO_TEXT
-ERR_TICKET_UPDATE_ERROR
 ERR_TICKET_DB_ERROR
+ERR_TICKET_UPDATE_ERROR
 ERR_TICKET_CREATE_ERROR
+ERR_OBJECT_IS_BUSY
 ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
 ERR_PET_SPELL_NOPATH
@@ -2607,6 +2620,7 @@ ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
 ERR_PET_SPELL_ROOTED
 ERR_SPELL_UNLEARNED_S
+ERR_PETITION_NOT_SAME_SERVER
 ERR_PETITION_NOT_ENOUGH_SIGNATURES
 ERR_PETITION_CREATOR
 ERR_PETITION_IN_GUILD
@@ -3133,6 +3147,7 @@ LOOTWINDOWCOINSOUND
 INTERFACESOUND_CURSORGRABOBJECT
 PET_%s_TEXTURE
 INTERFACESOUND_CURSORDROPOBJECT
+%s%d
 BILLING_NAG_WARNING
 TaxiRouteFrame
 LootButton
@@ -3199,6 +3214,7 @@ DoEmote
 GetDefaultLanguage
 GetLanguageByIndex
 GetNumLaguages
+SendAddonMessage
 SendChatMessage
 OPTION_GUILD_RECRUITMENT_CHANNEL
 MONEY
@@ -3276,6 +3292,7 @@ Logs\\WoWChatLog.txt
 .?AURaidInstanceInfo@@
 .?AV?$TSExplicitList@UWORDLIST@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UPROFANITYCHECK@@$0?CCCCCCCD@@@
+.?AV?$TSExplicitList@USPAMCHECK@@$0?CCCCCCCD@@@
 CHANNEL%d
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\ChatFrame.cpp
 .?AUPENDINGCHAT@@
@@ -3316,11 +3333,14 @@ CHAT_%s_GET
 [%s]
 CHAT_%s_NOTICE
 CHAT_CHANNEL_LIST_GET
+CHAT_FILTERED
 CHAT_IGNORED
 UNIT_PVP_NAME
 PVP_RANK_%d_%d
 %d. %s
 CHAT_EMOTE_UNKNOWN
+%s%s%s%s
+RAID
 %s%s%s%s%s%s%d%d%s%d
 PLAYER_INVITE_BANNED
 PLAYER_INVITED
@@ -3364,6 +3384,8 @@ RAID_INSTANCE_WARNING_MIN
 RAID_INSTANCE_WARNING_HOURS
 INSTANCE_RESET_SUCCESS
 INSTANCE_RESET_FAILED
+.?AUregex_t@@
+Warning: invalid chat spam filter expression: \"%s\" (ID #: %d)\n
 SET_VOICE
 UNSET_VOICE
 SET_MODERATOR
@@ -3372,17 +3394,20 @@ UNSET_MODERATOR
 Usage: SendChatMessage(text [,type] [,language] [,targetPlayer])
 Invalid escape code in chat message
 CLEARED_DND
-MARKED_DND
-DEFAULT_DND_MESSAGE
 Channel send missing channel number
 DEFAULT_AFK_MESSAGE
+MARKED_DND
+DEFAULT_DND_MESSAGE
 Whisper message missing target player!
 Unknown language
 Unknown chat type
+BATTLEGROUND
 RAID_WARNING
 EMOTE
 OFFICER
-RAID
+Unknown addon chat type
+%s\t%s
+Usage: SendAddonMessage(\"prefix\", \"message\" [,\"type\"])
 Usage: GetLanguageByIndex(index)
 Usage: DoEmote(\"emote\"[, \"target\"])
 Usage: JoinChannelByName(\"name\")
@@ -3414,6 +3439,7 @@ Usage: GetSavedInstanceInfo(index)
 .?AUWORDLIST@@
 .PBVLanguageWordsRec@@
 .?AUPROFANITYCHECK@@
+.?AUSPAMCHECK@@
 ShowMiniWorldMapArrowFrame
 ShowWorldMapArrowFrame
 PositionMiniWorldMapArrowFrame
@@ -3478,8 +3504,6 @@ GetBattlefieldStatData
 GetBattlefieldStatInfo
 GetNumBattlefieldStats
 LeaveBattlefield
-GetBattlefieldWorldStateUIInfo
-GetNumBattlefieldWorldStateUI
 SetBattlefieldScoreFaction
 GetBattlefieldWinner
 GetBattlefieldScore
@@ -3503,6 +3527,7 @@ GetNumBattlefields
 HordeFlag
 AllianceFlag
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\BattlefieldInfo.cpp
+%s-%s
 Usage: GetBattlefieldInfo(index)
 Usage: JoinBattlefield(index)
 Usage: SetSelectedBattlefield(index)
@@ -3511,14 +3536,12 @@ error
 active
 confirm
 queued
-none
 Usage: GetBattlefieldStatus(index)
 Usage: GetBattlefieldPortExpiration(index)
 Usage: GetBattlefieldEstimatedWaitTime(index)
 Usage: GetBattlefieldTimeWaited(index)
 Usage: ShowBattlefieldList(index)
 Usage: GetBattlefieldScore(index)
-Usage: GetBattlefieldWorldStateUIInfo(index)
 Usage: GetBattlefieldStatInfo(index)
 Usage: GetBattlefieldStatData(playerIndex, statIndex)
 Usage: GetBattlefieldPosition(index)
@@ -3612,6 +3635,7 @@ GetSpellTexture
 GetSpellTabInfo
 GetNumSpellTabs
 .PAUSpellBookSkillInfo@@
+.?AUCombatFeedbackSpell@@
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\SpellBookFrame.cpp
 %s (%s)
 igSpellBookSpellIconDrop
@@ -3683,6 +3707,8 @@ Binding header %s is defined more than once in %s
 HEADER_%s
 header
 Binding %s is defined more than once in %s
+windows
+platform
 debug
 Unknown node type %s in %s
 Binding
@@ -3845,6 +3871,21 @@ Usage: GetLootRollTimeLeft(id)
 Usage: RollOnLoot(id, rollType)
 Usage: ConfirmLootRoll(id, rollType)
 .?AUFrameScriptObject_Variable@@
+GetPastDrawResult
+GetNumPastDrawResults
+GetNextDrawTime
+GetMoneyPrizes
+GetJackpotAmount
+GetLotteryPrizeInfo
+GetNumLotteryPrizes
+BuyRandomPicks
+IsVendorActive
+SubmitNumbers
+GetLastLotteryNumbers
+CloseLottery
+Invalid number of randompicks
+Invalid prize item in GetPrizeItemInfo(\"type\", index)
+Invalid index in GetPastDrawResults(\"type\", index)
 GetMinigameState
 MakeMinigameMove
 GetMinigameType
@@ -4365,6 +4406,7 @@ Raid
 Dungeon
 None
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\PartyFrame.cpp
+(Debug-Only Lock Notice) %s
 INSTANCE_SAVED
 ITEM_QUALITY%d_DESC
 DUNGEON_DIFFICULTY%d
@@ -5026,9 +5068,7 @@ GetTime
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 Unknown unit name: %s
 mouseover
-raid
 raidpet
-party
 partypet
 raidpet%d
 partypet%d
@@ -5089,6 +5129,13 @@ Usage: UnitCreatureFamily(\"unit\")
 GENERIC
 Usage: UnitPVPRank(\"unit\")
 Usage: GetPVPRankInfo(rank [, unit])
+LOTTERY_ITEM_UPDATE
+CHAT_MSG_BATTLEGROUND_LEADER
+CHAT_MSG_BATTLEGROUND
+QUEST_WATCH_UPDATE
+CHAT_MSG_FILTERED
+LOTTERY_SHOW
+COMBAT_TEXT_UPDATE
 CHAT_MSG_RAID_BOSS_EMOTE
 UPDATE_INSTANCE_INFO
 GMSURVEY_DISPLAY
@@ -5401,6 +5448,7 @@ CHAT_MSG_GUILD
 CHAT_MSG_RAID
 CHAT_MSG_PARTY
 CHAT_MSG_SAY
+CHAT_MSG_ADDON
 UPDATE_CHAT_COLOR
 UI_INFO_MESSAGE
 UI_ERROR_MESSAGE
@@ -5911,6 +5959,7 @@ OnLeaveCombat
 OnEnterCombat
 OnReaction
 -NONE-
+Trigger actions on nearest unit in combat
 Unit(s) perform a boss emote to the zone
 Unit(s) perform a boss emote
 Finish the current actions if expression is true
@@ -6135,6 +6184,8 @@ DBFilesClient\\FootprintTextures.dbc
 Error reading FootprintTexturesRec
 DBFilesClient\\FootstepTerrainLookup.dbc
 Error reading FootstepTerrainLookupRec
+DBFilesClient\\GameObjectArtKit.dbc
+Error reading GameObjectArtKitRec
 DBFilesClient\\GameObjectDisplayInfo.dbc
 Error reading GameObjectDisplayInfoRec
 DBFilesClient\\GameTips.dbc
@@ -6247,6 +6298,8 @@ DBFilesClient\\SoundSamplePreferences.dbc
 Error reading SoundSamplePreferencesRec
 DBFilesClient\\SoundWaterType.dbc
 Error reading SoundWaterTypeRec
+DBFilesClient\\SpamMessages.dbc
+Error reading SpamMessagesRec
 DBFilesClient\\SpellCastTimes.dbc
 Error reading SpellCastTimesRec
 DBFilesClient\\SpellCategory.dbc
@@ -6780,11 +6833,6 @@ bindings-cache.wtf
 config-cache.wtf
 cache.md5
 SaveTimerHandler
-.\\BackgroundDownloader.exe
-Blizzard Downloader
-Disable Background Download
-BackgroundDownloader
-Launching Background Downloader...\n
 %s.partial
 unicows.dll
 dbghelp.dll
@@ -6792,10 +6840,6 @@ ijl15.dll
 fmod.dll
 WoW.exe
 E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\ChecksumExecutables.cpp
-o'6RX\r
-GcS68
-2\x1BpK@
-E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\CheckExecutableSignature.cpp
 LOGIN_STATE_CONNECTED
 REALM_LIST_CANTCONNECT
 REALM_LIST_DISCONNECTED
@@ -6960,6 +7004,7 @@ E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Item_C.cpp
 NOINVENTORYICON|%d
 ITEM_SUFFIX_TEMPLATE
 .?AUINVENTORYART@@
+Maximum Attacker Damage
 Pet Happiness Mult
 Melee Crit/Glance/Crush
 Shield Block
@@ -7023,7 +7068,6 @@ GUILD_INFO_TEMPLATE
 GUILD_NAME_TEMPLATE
 %2d:%02d
 %s%d%d%d%d%s
-%s%d
 EXHAUSTION
 BREATH
 FEIGNDEATH
@@ -7067,6 +7111,7 @@ Unknown Object Type
 MEETINGSTONE_LEVEL
 BADBASEGAMEOBJECT|%d
 NOOBJECTFILENAME|%d|%d|Game
+Interface\\Cursor\\Unable%s.blp
 .?AUSegment@?$ShipPath@V?$WowClientDB@VTaxiPathNodeRec@@@@@@
 StandHigh
 Interface\\Buttons\\TalkToMeQuestion_LTBlue.mdx
@@ -7094,8 +7139,6 @@ ChatBubbles
 Toggles showing in-game chat bubbles
 CombatDamage
 Toggles all damage numbers over a creature
-PetNamePlates
-Toggles showing nameplates for your pets, guardians, and totems
 PetSpellDamage
 Toggle display of in-world pet spell damage feedback
 PetMeleeDamage
@@ -7208,6 +7251,10 @@ E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Effect_C.cpp
 *** trouble in facing: \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \nbadmask=%d - model \"%s\" caster 0x%016I64X type %d entryID %d
 **** %s doesn't have attachement point for effect %i\n
 Unknown Model
+Use ArtKit3
+Use ArtKit2
+Use ArtKit1
+Use ArtKit0
 Close + Lock
 Make Active
 Make Inert
@@ -7221,6 +7268,8 @@ Animate Custom3
 Animate Custom2
 Animate Custom1
 Animate Custom0
+capturePoint
+lotteryKiosk
 minigame
 flagDrop
 fishingHole
@@ -7249,6 +7298,14 @@ button
 door
 true
 false
+progressEventID2
+progressEventID1
+contestedEventID2
+contestedEventID1
+winEventID2
+winEventID1
+superiority
+quorum
 log loot
 stealthed
 gameType
@@ -7335,6 +7392,41 @@ CombatLogRangeFriendlyPlayersPets
 CombatLogRangeFriendlyPlayers
 CombatLogRangePartyPet
 CombatLogRangeParty
+HONOR_GAINED
+SPLIT_DAMAGE
+EXTRA_ATTACKS
+SPELL_DISPELLED
+DAMAGE_SHIELD
+HEAL_CRIT
+FACTION
+SPELL_ACTIVE
+SPELL_MISSED
+SPELL_REFLECTED
+SPELL_DEFLECTED
+SPELL_IMMUNE
+SPELL_EVADED
+SPELL_BLOCKED
+SPELL_PARRIED
+SPELL_DODGED
+SPELL_DAMAGE
+AURA_START_HARMFUL
+AURA_START
+AURA_END_HARMFUL
+AURA_END
+SPELL_CAST_START
+SPELL_CAST
+DISPEL_FAILED
+PROC_RESISTED
+SPELL_RESISTED
+SPELL_ABSORBED
+ENERGY
+FOCUS
+RAGE
+MANA
+PERIODIC_HEAL
+ENCHANTMENT_ADDED
+ENCHANTMENT_REMOVED
+DAMAGE_CRIT
 .?AUGENERICITEMCACHEDESC@@
 UKNOWNOBJECT
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombatLog_C.cpp
@@ -7347,6 +7439,7 @@ PERIODICAURAHEALOTHEROTHER
 PERIODICAURAHEALOTHERSELF
 PERIODICAURAHEALSELFOTHER
 PERIODICAURAHEALSELFSELF
+ENERY_POINTS
 POWERGAINOTHEROTHER
 POWERGAINOTHERSELF
 POWERGAINSELFOTHER
@@ -7520,6 +7613,8 @@ HEALEDCRITSELFSELF
 DAMAGESHIELDOTHEROTHER
 DAMAGESHIELDOTHERSELF
 DAMAGESHIELDSELFOTHER
+INSTAKILLOTHER
+INSTAKILLSELF
 SPELLLOGCRITOTHEROTHER
 SPELLLOGCRITOTHERSELF
 SPELLLOGCRITSELFOTHER
@@ -7544,6 +7639,10 @@ PET_LOYALTY_LOSS
 PET_LOYALTY_GAIN
 AURADISPELOTHER
 AURADISPELSELF
+AURASTOLENOTHEROTHER
+AURASTOLENOTHERSELF
+AURASTOLENSELFOTHER
+AURASTOLENSELFSELF
 _SINGULAR
 SPELLEXTRAATTACKSOTHER
 SPELLEXTRAATTACKSSELF
@@ -7899,7 +7998,6 @@ bzip2Compress:%d
 0\aw,a
 Qkkbal
 wn>Jj
-E:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 E:\\build\\buildWoW\\Storm\\Source\\SBig.cpp
 E:\\build\\buildWoW\\Storm\\Source\\W32\\SDir.cpp
 .?AV?$TSExplicitList@UZipFileDirEntry@@$0?CCCCCCCD@@@
@@ -7970,6 +8068,7 @@ EDI=%08X  EBP=%08X  ESP=%08X  EIP=%08X  FLG=%08X
 EAX=%08X  EBX=%08X  ECX=%08X  EDX=%08X  ESI=%08X
 x86 Registers
 psapi.dll
+E:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 E:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOAlignUnit.cpp
 .?AUIOCacheEntry@IOAlignUnit@@
 E:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOARC4Unit.cpp
@@ -8525,6 +8624,7 @@ UnitNamePlayerPVPTitle
 UnitNamePlayerGuild
 UnitNamePlayer
 UnitNameNPC
+UnitNameOwn
 UNIT_NAME_FONT
 PlayerNames
 .?AVPLAYERNAMEDESC@@
@@ -8546,7 +8646,7 @@ Interface\\PvPRankBadges\\PvPRank01.blp
 .?AUSWorldTextIcon@@
 DAMAGE_TEXT_FONT
 .?AUWORLDTEXTSTRING@@
-.?AUregex_t@@
+Warning: invalid chat spam filter expression: \"%s\" (record ID %d)\n
 Warning: invalid reserved names filter expression: \"%s\" (record ID %d)\n
 Warning: invalid chat profanity filter expression: \"%s\" (record ID %d)\n
 Warning: invalid profane names filter expression: \"%s\" (record ID %d)\n
@@ -8656,10 +8756,6 @@ SpellIsTargeting
 .?AV?$TSExplicitList@UITEMCOOLDOWNHASHNODE@@$0?CCCCCCCD@@@
 .?AUSPELLHISTORY@@
 HAPPINESS
-ENERGY
-FOCUS
-RAGE
-MANA
 %s_PET
 E:\\build\\buildWoW\\WoW\\Source\\Magic\\MagicClient\\Spell_C.cpp
 SPELL_FAILED_UNKNOWN
@@ -8674,6 +8770,7 @@ SPELL_FAILED_TARGET_NOT_GHOST
 SPELL_FAILED_ONLY_BATTLEGROUNDS
 SPELL_FAILED_NO_EDIBLE_CORPSES
 SPELL_FAILED_TARGET_FREEFORALL
+SPELL_FAILED_PROSPECT_WHILE_LOOTING
 SPELL_FAILED_DISENCHANT_WHILE_LOOTING
 SPELL_FAILED_TARGET_NOT_IN_RAID
 SPELL_FAILED_NOT_WHILE_TRADING
@@ -8725,6 +8822,7 @@ SPELL_FAILED_ONLY_MOUNTED
 SPELL_FAILED_ONLY_INDOORS
 SPELL_FAILED_ONLY_DAYTIME
 SPELL_FAILED_ONLY_ABOVEWATER
+SPELL_FAILED_NOTHING_TO_STEAL
 SPELL_FAILED_NOTHING_TO_DISPEL
 SPELL_FAILED_NO_POWER
 SPELL_FAILED_NO_PET
@@ -8790,6 +8888,7 @@ SPELL_FAILED_CANT_STEALTH
 SPELL_FAILED_CANT_DUEL_WHILE_STEALTHED
 SPELL_FAILED_CANT_DUEL_WHILE_INVISIBLE
 SPELL_FAILED_CANT_CAST_ON_TAPPED
+SPELL_FAILED_CANT_BE_PROSPECTED
 SPELL_FAILED_CANT_BE_DISENCHANTED
 SPELL_FAILED_CANT_BE_CHARMED
 SPELL_FAILED_BAD_TARGETS
@@ -8825,6 +8924,7 @@ PETTAME_TOOMANY
 PETTAME_INVALIDCREATURE
 Usage: SpellCanTargetUnit(\"unit\")
 Usage: SpellTargetUnit(\"unit\")
+autoSelfCast
 CHANNELING
 SPELLVISUALID_NOT_FOUND|%d
 .?AUITEMCOOLDOWNHASHNODE@@
@@ -9425,6 +9525,18 @@ E:\\build\\buildWoW\\engine\\Source\\Base\\CDataAllocator.cpp
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleTop.cpp
 .PAVCFrameStrataNode@@
 .PAVFRAMEPRIORITY@@
+Offset
+Frame anchored to itself: %s
+Couldn't find relative frame: %s
+relativeTo
+Invalid anchor point in frame: %s
+relativePoint
+point
+SETALLPOINTS set to true in frame with anchors (ignored)
+Anchors
+setAllPoints
+E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.cpp
+.?AUFRAMENODE@CLayoutFrame@@
 Scripts
 Layers
 HitRectInsets
@@ -9519,18 +9631,6 @@ Usage: %s:SetLight(enabled[, omni, dirX, dirY, dirZ, ambIntensity[, ambR, ambG, 
 Usage: %s:ReplaceIconTexture(\"texture\")
 Usage: %s:SetFogNear(value)
 Usage: %s:SetFogFar(value)
-Offset
-Frame anchored to itself: %s
-Couldn't find relative frame: %s
-relativeTo
-Invalid anchor point in frame: %s
-relativePoint
-point
-SETALLPOINTS set to true in frame with anchors (ignored)
-Anchors
-setAllPoints
-E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.cpp
-.?AUFRAMENODE@CLayoutFrame@@
 Shaders\\Pixel\\Desaturate.bls
 alphaMode
 Texture %s: Unable to load texture file %s
