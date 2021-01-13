@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 1.7.1
-// Build: 4695
+// Patch: 0.8.0
+// Build: 4714
 
 Public Enum SpellFailedReason
 {
@@ -134,6 +134,10 @@ Public Enum SpellFailedReason
     SPELL_FAILED_ONLY_BATTLEGROUNDS = 0x7F,                         // 0x07F
     SPELL_FAILED_TARGET_NOT_GHOST = 0x80,                           // 0x080
     SPELL_FAILED_TOO_MANY_SKILLS = 0x81,                            // 0x081
-    SPELL_FAILED_UNKNOWN = 0x82,                                    // 0x082
+    SPELL_FAILED_TRANSFORM_UNUSABLE = 0x82,                         // 0x082
+    SPELL_FAILED_WRONG_WEATHER = 0x83,                              // 0x083
+    SPELL_FAILED_DAMAGE_IMMUNE = 0x84,                              // 0x084
+    SPELL_FAILED_PREVENTED_BY_MECHANIC = 0x85,                      // 0x085
+    SPELL_FAILED_UNKNOWN = 0x86,                                    // 0x086
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }
