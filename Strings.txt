@@ -410,7 +410,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release] Build 5462 (Jun 27 2006 09:21:18)
+WoW [Release] Build 5464 (Jun 27 2006 18:42:19)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -419,7 +419,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release] Build 5462 (Jun 27 2006)
+WoW [Release] Build 5464 (Jun 27 2006)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -722,9 +722,11 @@ D\bGa%\b
 \r`?D\r`1
 SP\vPZ
 \b3OP\v
-ltuo0
+ltuo`
 cinu
-ltuo0\v}
+ltuo`
+ltuo 0}
+ltuo 0}
    !
 } ~ % $ 0
 [!\\!]!^!S!T!p t u v w x y
@@ -866,7 +868,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5462)
+World of WarCraft (build 5464)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -1231,7 +1233,7 @@ E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
 Jun 27 2006
-09:18:47
+18:39:50
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1743,8 +1745,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5462
-1.11.1
+5464
+1.11.2
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -1879,11 +1881,13 @@ TorsoUpperTexture
 HandTexture
 ArmLowerTexture
 ArmUpperTexture
-E:\\build\\buildWoW\\WoW\\Common\\ComponentCore\\CharacterComponent.cpp
 new[]
-CharacterBaseSkin
-**** Unable to Load Texture %s\n
+CCharacterComponent
+E:\\build\\buildWoW\\WoW\\Common\\ComponentCore\\CharacterComponent.cpp
 Item\\TextureComponents\\%s\\%s_%s.blp
+CharacterBaseSkin
+CCharacterComponent::RenderPrepAll()\n
+**** Unable to Load Texture %s\n
 %s%s.blp
 %s%s_%s%s.mdx
 Item\\ObjectComponents\\Head\\
@@ -1899,10 +1903,10 @@ Textures\\GuildEmblems\\Emblem_%02d_%02d_TL_U
 Textures\\GuildEmblems\\Emblem_%02d_%02d_TU_U
 Textures\\GuildEmblems\\Border_%02d_%02d_TL_U
 Textures\\GuildEmblems\\Border_%02d_%02d_TU_U
-HMIPPEDTEXTURE
-HTEXTURECACHE
-.?AUCACHEENTRY@@
-.?AV?$TSExplicitList@UCACHEENTRY@@$0?CCCCCCCD@@@
+.?AV?$TSExplicitList@VCACHEENTRY@@$0?CCCCCCCD@@@
+TCACHEENTRY
+E:\\build\\buildWoW\\WoW\\Common\\TextureCache.cpp
+.?AVCACHEENTRY@@
 CORPSE_FIELD_PAD
 CORPSE_FIELD_DYNAMIC_FLAGS
 CORPSE_FIELD_FLAGS
@@ -3330,6 +3334,7 @@ PLAYER_UNBANNED
 BANNED
 PLAYER_BANNED
 PLAYER_KICKED
+THROTTLED
 MUTED
 MODERATION_OFF
 MODERATION_ON
@@ -6604,6 +6609,7 @@ CHAR_NAME_INVALID_CHARACTER
 CHAR_NAME_TOO_LONG
 CHAR_NAME_TOO_SHORT
 CHAR_NAME_NO_NAME
+CHAR_LOGIN_LOCKED_FOR_TRANSFER
 CHAR_LOGIN_NO_CHARACTER
 CHAR_LOGIN_DISABLED
 CHAR_LOGIN_FAILED
@@ -6612,6 +6618,7 @@ CHAR_LOGIN_DUPLICATE_CHARACTER
 CHAR_LOGIN_NO_WORLD
 CHAR_LOGIN_SUCCESS
 CHAR_LOGIN_IN_PROGRESS
+CHAR_DELETE_FAILED_LOCKED_FOR_TRANSFER
 CHAR_DELETE_FAILED
 CHAR_DELETE_SUCCESS
 CHAR_DELETE_IN_PROGRESS
@@ -7981,6 +7988,7 @@ maxLOD
 showDetailDoodads
 Textures\\WaterPoop02.blp
 E:\\build\\buildWoW\\WoW\\Source\\WorldClient\\World.cpp
+.?AUSWModelFadeout@@
 .wmo
 Detail doodads enabled.
 Detail doodads disabled.
@@ -10114,6 +10122,8 @@ FSOUND_SetBufferSize
 FSOUND_SetMixer
 FSOUND_SetDriver
 FSOUND_SetOutput
+fmod.dll version %4.2f loaded
+Error: Wrong version of fmod.dll loaded (%4.2f, should be %4.2f)
 setupapi.dll
 Already Initialized
 Sound::Initialize()
