@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 1.4.2
-// Build: 4375
+// Patch: 1.5.0
+// Build: 4442
 
 Public Enum EObjectFields
 {
@@ -279,20 +279,21 @@ Public Enum EPlayerFields
 }
 Public Enum EGameObjectFields
 {
-    GAMEOBJECT_DISPLAYID = EObjectFields.OBJECT_END + 0x0,                        // 0x006 - Size: 1 - Type: INT - Flags: PUBLIC
-    GAMEOBJECT_FLAGS = EObjectFields.OBJECT_END + 0x1,                            // 0x007 - Size: 1 - Type: INT - Flags: PUBLIC
-    GAMEOBJECT_ROTATION = EObjectFields.OBJECT_END + 0x2,                         // 0x008 - Size: 4 - Type: FLOAT - Flags: PUBLIC
-    GAMEOBJECT_STATE = EObjectFields.OBJECT_END + 0x6,                            // 0x00C - Size: 1 - Type: INT - Flags: PUBLIC
-    GAMEOBJECT_TIMESTAMP = EObjectFields.OBJECT_END + 0x7,                        // 0x00D - Size: 1 - Type: INT - Flags: PUBLIC
-    GAMEOBJECT_POS_X = EObjectFields.OBJECT_END + 0x8,                            // 0x00E - Size: 1 - Type: FLOAT - Flags: PUBLIC
-    GAMEOBJECT_POS_Y = EObjectFields.OBJECT_END + 0x9,                            // 0x00F - Size: 1 - Type: FLOAT - Flags: PUBLIC
-    GAMEOBJECT_POS_Z = EObjectFields.OBJECT_END + 0xA,                            // 0x010 - Size: 1 - Type: FLOAT - Flags: PUBLIC
-    GAMEOBJECT_FACING = EObjectFields.OBJECT_END + 0xB,                           // 0x011 - Size: 1 - Type: FLOAT - Flags: PUBLIC
-    GAMEOBJECT_DYN_FLAGS = EObjectFields.OBJECT_END + 0xC,                        // 0x012 - Size: 1 - Type: INT - Flags: DYNAMIC
-    GAMEOBJECT_FACTION = EObjectFields.OBJECT_END + 0xD,                          // 0x013 - Size: 1 - Type: INT - Flags: PUBLIC
-    GAMEOBJECT_TYPE_ID = EObjectFields.OBJECT_END + 0xE,                          // 0x014 - Size: 1 - Type: INT - Flags: PUBLIC
-    GAMEOBJECT_LEVEL = EObjectFields.OBJECT_END + 0xF,                            // 0x015 - Size: 1 - Type: INT - Flags: PUBLIC
-    GAMEOBJECT_END = EObjectFields.OBJECT_END + 0x10                              // 0x016
+    OBJECT_FIELD_CREATED_BY = EObjectFields.OBJECT_END + 0x0,                     // 0x006 - Size: 2 - Type: GUID - Flags: PUBLIC
+    GAMEOBJECT_DISPLAYID = EObjectFields.OBJECT_END + 0x2,                        // 0x008 - Size: 1 - Type: INT - Flags: PUBLIC
+    GAMEOBJECT_FLAGS = EObjectFields.OBJECT_END + 0x3,                            // 0x009 - Size: 1 - Type: INT - Flags: PUBLIC
+    GAMEOBJECT_ROTATION = EObjectFields.OBJECT_END + 0x4,                         // 0x00A - Size: 4 - Type: FLOAT - Flags: PUBLIC
+    GAMEOBJECT_STATE = EObjectFields.OBJECT_END + 0x8,                            // 0x00E - Size: 1 - Type: INT - Flags: PUBLIC
+    GAMEOBJECT_TIMESTAMP = EObjectFields.OBJECT_END + 0x9,                        // 0x00F - Size: 1 - Type: INT - Flags: PUBLIC
+    GAMEOBJECT_POS_X = EObjectFields.OBJECT_END + 0xA,                            // 0x010 - Size: 1 - Type: FLOAT - Flags: PUBLIC
+    GAMEOBJECT_POS_Y = EObjectFields.OBJECT_END + 0xB,                            // 0x011 - Size: 1 - Type: FLOAT - Flags: PUBLIC
+    GAMEOBJECT_POS_Z = EObjectFields.OBJECT_END + 0xC,                            // 0x012 - Size: 1 - Type: FLOAT - Flags: PUBLIC
+    GAMEOBJECT_FACING = EObjectFields.OBJECT_END + 0xD,                           // 0x013 - Size: 1 - Type: FLOAT - Flags: PUBLIC
+    GAMEOBJECT_DYN_FLAGS = EObjectFields.OBJECT_END + 0xE,                        // 0x014 - Size: 1 - Type: INT - Flags: DYNAMIC
+    GAMEOBJECT_FACTION = EObjectFields.OBJECT_END + 0xF,                          // 0x015 - Size: 1 - Type: INT - Flags: PUBLIC
+    GAMEOBJECT_TYPE_ID = EObjectFields.OBJECT_END + 0x10,                         // 0x016 - Size: 1 - Type: INT - Flags: PUBLIC
+    GAMEOBJECT_LEVEL = EObjectFields.OBJECT_END + 0x11,                           // 0x017 - Size: 1 - Type: INT - Flags: PUBLIC
+    GAMEOBJECT_END = EObjectFields.OBJECT_END + 0x12                              // 0x018
 }
 Public Enum EDynamicObjectFields
 {
@@ -320,5 +321,7 @@ Public Enum ECorpseFields
     CORPSE_FIELD_BYTES_2 = EObjectFields.OBJECT_END + 0x1B,                       // 0x021 - Size: 1 - Type: BYTES - Flags: PUBLIC
     CORPSE_FIELD_GUILD = EObjectFields.OBJECT_END + 0x1C,                         // 0x022 - Size: 1 - Type: INT - Flags: PUBLIC
     CORPSE_FIELD_FLAGS = EObjectFields.OBJECT_END + 0x1D,                         // 0x023 - Size: 1 - Type: INT - Flags: PUBLIC
-    CORPSE_END = EObjectFields.OBJECT_END + 0x1E                                  // 0x024
+    CORPSE_FIELD_DYNAMIC_FLAGS = EObjectFields.OBJECT_END + 0x1E,                 // 0x024 - Size: 1 - Type: INT - Flags: DYNAMIC
+    CORPSE_FIELD_PAD = EObjectFields.OBJECT_END + 0x1F,                           // 0x025 - Size: 1 - Type: INT - Flags: NONE
+    CORPSE_END = EObjectFields.OBJECT_END + 0x20                                  // 0x026
 }
