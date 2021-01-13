@@ -148,7 +148,7 @@ trivial
 GxWindowClassOpenGl
 GxWindowClassD3d
 DXT1DXT3DXT5<
-WoW [Release Assertions Enabled] Build 4364 (Apr 25 2005 20:12:21)
+WoW [Release Assertions Enabled] Build 4375 (Apr 29 2005 15:27:48)
 \a\b\t\n\v
 COPPER
 SILVER
@@ -157,7 +157,7 @@ GOLD
 OpenGL
 Direct3D
  ,;\t\"\r\n
-WoW [Release Assertions Enabled] Build 4364 (Apr 25 2005)
+WoW [Release Assertions Enabled] Build 4375 (Apr 29 2005)
  ,;\t\"\r\n
 World of Warcraft\\Client
 2n)Beca
@@ -634,7 +634,7 @@ pos >= m_base
 Notification received: %s
 login
 charselect
-World of WarCraft: Assertions Enabled Build (build 4364)
+World of WarCraft: Assertions Enabled Build (build 4375)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -1048,8 +1048,8 @@ threadData->m_contextData == contextData
 (int)(contextData->m_turnIdComplete - contextData->m_turnId) <= 0
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Apr 25 2005
-20:10:15
+Apr 29 2005
+15:25:45
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1834,8 +1834,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-4364
-1.4.1
+4375
+1.4.2
 ASSERTIONS_ENABLED_BUILD
 BETA_BUILD
 Usage: SetCurrentScreen(\"screen\")
