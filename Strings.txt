@@ -15,6 +15,7 @@ uptodate
 ****\\expansion-locale-****.MPQ
 ****\\locale-****.MPQ
 common.MPQ
+expansionspeech.MPQ
 expansionloc.MPQ
 expansion.MPQ
 speech.MPQ
@@ -53,7 +54,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5921)
+World of WarCraft (build 5965)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -605,8 +606,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Sep 25 2006
-12:39:55
+Oct  2 2006
+13:24:25
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1082,7 +1083,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5921
+5965
 2.0.0
 RELEASE_BUILD
 BETA_BUILD
@@ -1586,6 +1587,14 @@ PlayerFadeInRate
 fade in rate for player mouseover
 4096
 IDLE_MESSAGE
+GetExistingLocales
+IsAutoLootKeyDown
+GetAutoLootToggleKey
+SetAutoLootToggleKey
+GetAutoLootDefault
+SetAutoLootDefault
+EquipItemByName
+UseItemByName
 GetTitleName
 IsTitleKnown
 SetCurrentTitle
@@ -1609,6 +1618,7 @@ IsAddOnLoaded
 IsAddOnLoadOnDemand
 ResetDisabledAddOns
 GetAddOnMetadata
+GetExtendedItemInfo
 GetItemInfo
 GetItemQualityColor
 GetRealmName
@@ -1845,6 +1855,8 @@ INVTYPE_BODY
 INVTYPE_SHOULDER
 INVTYPE_NECK
 INVTYPE_HEAD
+ERR_NOT_IN_BATTLEGROUND
+ERR_BATTLEGROUND_NOT_IN_TEAM
 ERR_VENDOR_MISSING_TURNINS
 ERR_CANT_SPEAK_LANGAGE
 ERR_ARENA_TEAM_LEVEL_TOO_LOW_I
@@ -2014,7 +2026,7 @@ ERR_EXHAUSTION_EXHAUSTED
 ERR_EXHAUSTION_TIRED
 ERR_EXHAUSTION_NORMAL
 ERR_EXHAUSTION_RESTED
-ERR_OBJECT_IS_BUSY
+ERR_EXHAUSTION_WELLRESTED
 ERR_TICKET_NO_TEXT
 ERR_TICKET_DB_ERROR
 ERR_TICKET_UPDATE_ERROR
@@ -2025,7 +2037,7 @@ ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
 ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
-ERR_EXHAUSTION_WELLRESTED
+ERR_OBJECT_IS_BUSY
 ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
 ERR_PET_SPELL_ROOTED
@@ -2434,6 +2446,7 @@ Usage: EquipCursorItem(slot)
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\GameUI.cpp
 Usage: EquipPendingItem(index)
 Usage: CancelPendingEquip(index)
+target
 Usage: InitiateTrade(\"unit\")
 Usage: CanInspect(unit [, showError])
 Usage: NotifyInspect(unit)
@@ -2471,6 +2484,7 @@ Usage: GetCoinIcon(amount)
 contested
 hostile
 friendly
+arena
 sanctuary
 SetPortraitToTexture(): Wrong object type, expected texture
 SetPortraitToTexture(): Couldn't find 'this' in texture object
@@ -2493,6 +2507,21 @@ UNKNOWN_ERROR
 Logs\\FrameXML.log
 ERROR: Invalid timer (Ex: \"BREATH\"
 Usage: GetMirrorTimerInfo(\"timer\")
+Usage: UseItemByName(name, target)
+Invalid destination slot number
+Usage: EquipItemByName(\"name\" [,slot])
+SetAutoLootToggleKey(): key must be one of: SHIFT, CTRL, ALT
+CTRL
+SHIFT
+NUMPADEQUALS
+CAPSLOCK
+NUMPADDECIMAL
+NUMPADDIVIDE
+NUMPADMULTIPLY
+NUMPADMINUS
+NUMPADPLUS
+NUMPAD%d
+SPACE
 Weather changed to %d, intensity %f\n
 GameTooltip
 UIParent
@@ -2562,7 +2591,6 @@ PET_%s_TEXTURE
 INTERFACESOUND_CURSORDROPOBJECT
 %s%d
 BILLING_NAG_WARNING
-UnitButton
 TaxiRouteFrame
 TabardModel
 DressUpModel
@@ -2575,7 +2603,6 @@ E:\\build\\buildWoW\\WoW\\Source\\Ui\\TaxiRouteFrame.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\CharacterModelBase.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\DressUpModelFrame.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\TabardModelFrame.h
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\UnitButton.h
 ..\\UIUtil/Tooltip.h
 DUNGEON_DIFFICULTY%d
 %s%s%d
@@ -2728,7 +2755,6 @@ SendAddonMessage
 SendChatMessage
 OPTION_GUILD_RECRUITMENT_CHANNEL
 MONEY
-COMBAT_FACTION_CHANGE
 COMBAT_HONOR_GAIN
 SPELL_FAILED_LOCALPLAYER
 SPELL_PERIODIC_CREATURE_BUFFS
@@ -2785,6 +2811,7 @@ COMBAT_PET_HITS
 COMBAT_SELF_MISSES
 COMBAT_SELF_HITS
 COMBAT_MISC_INFO
+COMBAT_FACTION_CHANGE
 LOOT
 SKILL
 CHANNEL
@@ -3147,7 +3174,7 @@ Invalid spell slot in IsSpellPassive
 Usage: GetShapeshiftFormInfo(index)
 Usage: CastShapeshiftForm(index)
 Usage: GetShapeshiftFormCooldown(index)
-Usage: CastSpellByName(name [, onSelf])
+Usage: CastSpellByName(name [, target])
 ResetTutorials
 ClearTutorials
 FlagTutorial
@@ -3161,19 +3188,13 @@ GetCurrentBindingSet
 RunBinding
 GetBindingAction
 GetBindingKey
+SetBindingClick
+SetBindingSpell
 SetBinding
 GetBinding
 GetNumBindings
 MOUSEWHEELUP
 MOUSEWHEELDOWN
-NUMPADEQUALS
-CAPSLOCK
-NUMPADDECIMAL
-NUMPADDIVIDE
-NUMPADMULTIPLY
-NUMPADMINUS
-NUMPADPLUS
-SPACE
 ALT-
 CTRL-
 SHIFT-
@@ -3182,9 +3203,6 @@ E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIBindings.cpp
 bind
 WTF\\DefaultBindings.wtf
 bind %s %s\r\n
-NUMPAD%d
-SHIFT
-CTRL
 BUTTON%d
 BUTTON5
 BUTTON4
@@ -3194,6 +3212,7 @@ BUTTON1
 Found binding with no name in %s
 Found binding %s with no script in %s
 runOnUp
+return function(keystate) %s end
 hidden
 Binding header %s is defined more than once in %s
 HEADER_%s
@@ -3215,10 +3234,18 @@ BACKSLASH
 SLASH
 RIGHTBRACKET
 LEFTBRACKET
-keystate
+RightButton
+MiddleButton
+LeftButton
+CLICK
+SPELL
 down
 Usage: GetBinding(index)
 Usage: SetBinding(\"KEY\"[, \"COMMAND\"|\"spellname\"])
+Usage: SetBindingSpell(\"KEY\", \"spellname\")
+SPELL %s
+Usage: SetBindingClick(\"KEY\", \"buttonName\"[, \"mouseButton\"])
+CLICK %s:%s
 Usage: GetBindingKey(\"COMMAND\")
 Usage: GetBindingAction(\"KEY\")
 Usage: RunBinding(\"COMMAND\")
@@ -3240,7 +3267,7 @@ E:\\build\\buildWoW\\WoW\\Source\\Ui\\PartyFrame.cpp
 ITEM_QUALITY%d_DESC
 RAID_MEMBER_NOT_READY
 READY_CHECK_START
-READY_CHECK_NO_AFK
+READY_CHECK_ALL_READY
 RAID_MEMBERS_AFK
 Usage: GetPartyMember(1-4)
 ERROR!
@@ -3270,7 +3297,6 @@ SetRaidRosterSelection
 GetRaidRosterInfo
 GetNumRaidMembers
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\RaidInfo.cpp
-READY_CHECK_ALL_READY
 Usage: GetRaidTargetIndex(unit)
 PLAYER_OFFLINE
 Usage: GetRaidRosterInfo(index)
@@ -3329,7 +3355,7 @@ Invalid slot in TogglePetAutocast
 Usage: TogglePetAutocast(index)
 GAMEABILITYACTIVATE
 Invalid slot in CastPetAction
-Usage: CastPetAction(index)
+Usage: CastPetAction(index, target)
 SetTradeMoney
 AddTradeMoney
 PickupTradeMoney
@@ -3408,6 +3434,7 @@ GetLFGTypes
 GetLFGPartyResults
 GetLFGResults
 GetNumLFGResults
+CanSendLFGQuery
 LFGQuery
 SetLFGComment
 ClearLookingForMore
@@ -3424,9 +3451,11 @@ LFG_TYPE_NONE
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\LFGInfo.cpp
 MEETINGSTONE_TOOLTIP
 Usage: SetLookingForGroup(slot, type, index)
-Usage: LFGQuery(param1 [, class])
-Usage: GetLFGResults(index)
-Usage: GetLFGPartyResults(index, partyIndex)
+Usage: LFGQuery(typeID, lfgNdx [, class])
+Usage: CanSendLFGQuery(typeID, lfgNdx
+Usage: GetLFGResults(type, lfgNdx)
+Usage: GetLFGResults(type, lfgNdx, index)
+Usage: GetLFGPartyResults(type, lfgNdx, index, partyIndex)
 Usage: GetLFGTypeEntries(type)
 ArenaTeamRoster
 CloseArenaTeamRoster
@@ -3787,6 +3816,7 @@ Usage: ExpandFactionHeader(index)
 Usage: IsFactionInactive(index)
 Usage: SetWatchedFactionIndex(index)
 Usage: SetSelectedFaction(index)
+GetTrainerServiceItemLink
 ExpandTrainerSkillLine
 CollapseTrainerSkillLine
 GetTrainerSkillLines
@@ -3854,6 +3884,7 @@ Bad skill line in CollapseTrainerSkillLine
 Usage: CollapseTrainerSkillLine(index)
 Bad skill line in ExpandTrainerSkillLine
 Usage: ExpandTrainerSkillLine(index)
+Usage: GetTrainerServiceItemLink(index)
 GetNumRoutes
 TaxiGetDestY
 TaxiGetDestX
@@ -3996,6 +4027,9 @@ Usage: GetPlayerBuffApplications(buffIndex)
 Usage: GetPlayerBuffTimeLeft(buffIndex)
 Usage: CancelPlayerBuff(buffIndex)
 Usage: CancelItemTempEnchantment(slot)
+IsActionSelfCastKeyDown
+GetActionSelfCastKey
+SetActionSelfCastKey
 SetActionBarToggles
 GetActionBarToggles
 GetActionBarPage
@@ -4026,7 +4060,7 @@ Usage: GetActionCooldown(slot)
 Usage: GetActionAutocast(slot)
 Usage: GetActionText(slot)
 Usage: HasAction(slot)
-Usage: UseAction(slot, [, checkCursor] [, onSelf])
+Usage: UseAction(slot, [, checkCursor] [, target])
 Usage: PickupAction(slot)
 Usage: PlaceAction(slot)
 Usage: IsAttackAction(slot)
@@ -4036,6 +4070,7 @@ Usage: IsUsableAction(slot)
 Usage: IsConsumableAction(slot)
 Usage: IsEquippedAction(slot)
 ChangeActionBarPage() needs a page in the range 1 to %d
+SetActionSelfCastKey(): key must be one of: SHIFT, CTRL, ALT
 GetPingPosition
 PingLocation
 SetZoom
@@ -4146,7 +4181,6 @@ GetNumPetitionNames
 GetPetitionInfo
 ClosePetition
 guild
-arena
 other
 Usage: GetPetitionNameInfo(index)
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\PetitionInfo.cpp
@@ -4242,7 +4276,6 @@ Usage: BankButtonIDToInvSlotID(buttonID)
 GetBagName
 SetBagPortaitTexture
 ShowContainerSellCursor
-SocketContainerItem
 UseContainerItem
 SplitContainerItem
 PickupContainerItem
@@ -4259,8 +4292,7 @@ Usage: GetContainerItemLink(index, slot)
 Usage: GetContainerItemCooldown(index, slot)
 Usage: PickupContainerItem(index, slot)
 Usage: SplitContainerItem(index, slot, amount)
-Usage: UseContainerItem(index, slot[, onSelf])
-Usage: SocketContainerItem(index, slot[, onSelf])
+Usage: UseContainerItem(index, slot[, target])
 Usage: ShowContainerSellCursor(index, slot)
 Invalid slot in SetBagPortaitTexture
 Usage: SetBagPortaitTexture(texture, slot)
@@ -4432,10 +4464,6 @@ Usage: SelectActiveQuest(index)
 Invalid reward choice in GetQuestReward([choice])
 Invalid quest item in GetQuestItemInfo(\"type\", index)
 Usage: GetQuestItemLink(\"type\", index)
-IsUnit
-GetUnit
-SetUnit
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\UnitButton.cpp
 CanSaveTabardNow
 GetLowerEmblemTexture
 GetUpperEmblemTexture
@@ -4462,6 +4490,7 @@ Undress
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\DressUpModelFrame.cpp
 SetRotation
 RefreshUnit
+SetUnit
 Duplicated model: %s\n
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\CharacterModelBase.cpp
 Usage: SetUnit(\"unit\")
@@ -4639,6 +4668,7 @@ E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.cpp
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.h
 Joystick
 enable joystick control
+IsFeignDeath
 UnitChannelInfo
 UnitCastingInfo
 GetInspectPVPRankProgress
@@ -4755,7 +4785,6 @@ E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 mouseover
 raidpet
 partypet
-target
 raidpet%d
 partypet%d
 Usage: ConsoleExec(\"console_command\")
@@ -4824,6 +4853,7 @@ Usage: GetPVPRankInfo(rank [, unit])
 Usage: UnitCastingInfo(\"unit\")
 CHANNELING
 Usage: UnitChannelInfo(\"unit\")
+COMBAT_RATING_UPDATE
 LFG_UPDATE
 LFG_PENDING_CANCEL
 LFG_PENDING_REQUEST
@@ -5284,10 +5314,10 @@ WTF\\Account\\%s\\AddOns.txt
 WTF\\Account\\%s\\%s\\%s\\AddOns.txt
 %s: %s\r\n
 \\AddOns.txt
-WTF\\Account\\%s\\%s\\SavedVariables\\%s.lua
+Loading add-on %s
 WTF\\Account\\%s\\%s\\%s\\SavedVariables\\%s.lua
 WTF\\Account\\%s\\SavedVariables\\%s.lua
-Loading add-on %s
+WTF\\Account\\%s\\%s\\SavedVariables\\%s.lua
 WTF\\Account\\%s\\%s\\%s\\SavedVariables
 WTF\\Account\\%s\\SavedVariables
 Blizzard*
@@ -5423,6 +5453,7 @@ UNITNAME_TITLE_PET
 |cffffffff
 |cff9d9d9d
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Tooltip.cpp
+return function(self,cost) %s end
 OnTooltipAddMoney
 OnTooltipCleared
 OnTooltipSetDefaultAnchor
@@ -6435,7 +6466,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 5921 (Sep 25 2006 12:42:37)
+WoW [Release] Build 5965 (Oct  2 2006 13:27:01)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -6875,11 +6906,7 @@ Interface\\Buttons\\TalkToMeGrey.mdx
 Interface\\Buttons\\TalkToMeQuestion_Grey.mdx
 Interface\\Buttons\\TalkToMe.mdx
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Unit_C.cpp
-LAND!!!!\n
-FLY!!!!\n
 Textures\\BakedNpcTextures\\
-done.\n
-interrupted!!!\n
 UNHANDLEDANIMEVENT|%.4s
 INVALIDDISPLAYMODELRECORD|%d|%d
 Spells\\ErrorCube.mdx
@@ -7652,7 +7679,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 5921 (Sep 25 2006)
+WoW [Release] Build 5965 (Oct  2 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -8378,6 +8405,7 @@ CMapChunk_vtx
 E:\\build\\buildWoW\\WoW\\Source\\WorldClient\\DetailDoodad.cpp
 CDetailDoodad_idx
 CDetailDoodad_vtx
+Water in chunk \"%s\" of object \"%s\" has no materialId.
 E:\\build\\buildWoW\\WoW\\Source\\WorldClient\\MapObjGroup.cpp
 VBBList_idx
 VBBList_vtx
@@ -8515,6 +8543,11 @@ HAPPINESS
 %s_PET
 E:\\build\\buildWoW\\WoW\\Source\\Magic\\MagicClient\\Spell_C.cpp
 SPELL_FAILED_UNKNOWN
+SPELL_FAILED_TOO_SHALLOW
+SPELL_FAILED_NOT_ON_MOUNTED
+SPELL_FAILED_NOT_ON_DAMAGE_IMMUNE
+SPELL_FAILED_NOT_ON_STEALTHED
+SPELL_FAILED_NOT_ON_SHAPESHIFT
 SPELL_FAILED_NOT_IN_ARENA
 SPELL_FAILED_MIN_SKILL
 SPELL_FAILED_REPUTATION
@@ -8649,6 +8682,7 @@ SPELL_FAILED_CANT_DUEL_WHILE_STEALTHED
 SPELL_FAILED_CANT_DUEL_WHILE_INVISIBLE
 SPELL_FAILED_CANT_CAST_ON_TAPPED
 SPELL_FAILED_CANT_BE_PROSPECTED
+SPELL_FAILED_CANT_BE_DISENCHANTED_SKILL
 SPELL_FAILED_CANT_BE_DISENCHANTED
 SPELL_FAILED_CANT_BE_CHARMED
 SPELL_FAILED_BAD_TARGETS
@@ -8795,9 +8829,11 @@ secure
 getglobal
 setglobal
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameScript\\FrameScript.cpp
-__framescript_meta
+__index
+return function(self,event,arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,...) %s end
 OnEvent
 %s:%s
+return function(self) %s end
 Usage: hooksecurefunc(\"function\", hookfunc)
 hooksecurefunc(): %s is not a function
 Usage: seterrorhandler(errfunc)
@@ -8814,7 +8850,6 @@ field '%s' missing in date table
  in function `%s'
 ...\n
 compat.lua
-__index
 GetText
 GetPluralIndex
 nil --[[ skipped %s ]]
@@ -9582,19 +9617,21 @@ OnKeyDown
 OnChar
 Frame %s: Unknown script element %s
 Frames
+return function(self,key) %s end
+return function(self,text) %s end
 OnReceiveDrag
 OnDragStop
+return function(self,delta) %s end
+return function(self,button) %s end
 OnHide
 OnShow
+return function(self,elapsed) %s end
 OnUpdate
+return function(self,w,h) %s end
 OnSizeChanged
 OnLoad
-%f%f
 Button5
 Button4
-RightButton
-MiddleButton
-LeftButton
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CScriptRegion.cpp
 $parent
 FogColor
@@ -9605,6 +9642,25 @@ scale
 Frame %s: Bad model file: %s
 OnAnimFinished
 OnUpdateModel
+Shaders\\Pixel\\Desaturate.bls
+alphaMode
+Texture %s: Unable to load texture file %s
+Gradient
+Color
+TexCoords
+E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRender.cpp
+Shadow
+justifyH
+justifyV
+FontString %s: Unable to load font file %s
+monochrome
+THICK
+outline
+FontString %s: Missing font height in %s element
+FontHeight
+maxLines
+bytes
+nonspacewrap
 ClearFog
 GetFogFar
 SetFogFar
@@ -9637,28 +9693,8 @@ Usage: %s:SetSequenceTime(sequence, time)
 Usage: %s:SetCamera(index)
 Usage: %s:SetLight(enabled[, omni, dirX, dirY, dirZ, ambIntensity[, ambR, ambG, ambB], dirIntensity[, dirR, dirG, dirB]])
 Usage: %s:ReplaceIconTexture(\"texture\")
-Usage: %s:SetFogNear
-value)
+Usage: %s:SetFogNear(value)
 Usage: %s:SetFogFar(value)
-Shaders\\Pixel\\Desaturate.bls
-alphaMode
-Texture %s: Unable to load texture file %s
-Gradient
-Color
-TexCoords
-E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRender.cpp
-Shadow
-justifyH
-justifyV
-FontString %s: Unable to load font file %s
-monochrome
-THICK
-outline
-FontString %s: Missing font height in %s element
-FontHeight
-maxLines
-bytes
-nonspacewrap
 SetBackdropBorderColor
 GetBackdropBorderColor
 SetBackdropColor
@@ -9706,6 +9742,8 @@ GetScale
 GetEffectiveScale
 SetAlpha
 GetAlpha
+SetAttribute
+GetAttribute
 UnregisterAllEvents
 RegisterAllEvents
 UnregisterEvent
@@ -9742,6 +9780,8 @@ Usage: %s:GetScript(\"type\")
 Usage: %s:SetScript(\"type\", function)
 Usage: %s:RegisterEvent(\"event\")
 Usage: %s:UnregisterEvent(\"event\")
+Usage: %s:GetAttribute(\"name\")
+Usage: %s:SetAttribute(\"name\", value)
 Usage: %s:SetAlpha(alpha 0 to 1)
 %s:SetScale(): Scale must be > 0
 Usage: %s:SetID(ID)
@@ -9791,9 +9831,12 @@ autoFocus
 blinkSpeed
 letters
 %s %s: Couldn't find font object named %s
+OnCharComposition
 OnEditFocusLost
 OnEditFocusGained
+return function(self,language) %s end
 OnInputLanguageChanged
+return function(self,x,y,w,h) %s end
 OnCursorChanged
 OnTextSet
 OnTextChanged
@@ -9804,71 +9847,10 @@ OnEnterPressed
 %d: %s
 > %d/%d
 
-%f%f%f%f
 BorderColor
 BackgroundInsets
 EdgeSize
 TileSize
-UnlockHighlight
-LockHighlight
-Click
-RegisterForClicks
-GetTextHeight
-GetTextWidth
-GetPushedTextOffset
-SetPushedTextOffset
-GetHighlightTexture
-SetHighlightTexture
-GetDisabledTexture
-SetDisabledTexture
-GetPushedTexture
-SetPushedTexture
-GetNormalTexture
-SetNormalTexture
-GetHighlightTextColor
-SetHighlightTextColor
-GetDisabledTextColor
-SetDisabledTextColor
-GetTextColor
-SetTextColor
-GetFontString
-SetFontString
-GetFont
-SetFont
-GetHighlightFontObject
-SetHighlightFontObject
-GetDisabledFontObject
-SetDisabledFontObject
-GetTextFontObject
-SetTextFontObject
-SetButtonState
-GetButtonState
-IsEnabled
-Disable
-Enable
-PUSHED
-Usage: %s:SetButtonState(\"state\", lock)
-Usage: %s:SetFontString(fontstring)
-%s:SetFontString(): Wrong object type, expected fontstring
-%s:SetFontString(): Couldn't find 'this' in fontstring
-Usage: %s:SetText(\"text\")
-Usage: %s:%s(texture or \"texture\" or nil)
-%s:%s(): Wrong object type, expected texture
-%s:%s(): Couldn't find 'this' in texture
-Usage: %s:SetHighlightTexture(texture or \"texture\" or nil [, \"blendmode\")
-%s:SetHighlightTexture(): Wrong object type, expected texture
-%s:SetHighlightTexture(): Couldn't find 'this' in texture
-Usage: %s:SetPushedTextOffset(x, y)
-Button5Up
-Button5Down
-Button4Up
-Button4Down
-RightButtonUp
-RightButtonDown
-MiddleButtonUp
-MiddleButtonDown
-LeftButtonUp
-LeftButtonDown
 Frame %s: Unknown orientation %s in element %s
 defaultValue
 maxValue
@@ -9876,6 +9858,7 @@ minValue
 BarColor
 BarTexture
 drawLayer
+return function(self,value) %s end
 OnValueChanged
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleFont.cpp
 Font %s: Unable to load font file %s
@@ -9892,8 +9875,10 @@ fade
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleMessageFrame.h
 Frame %s: Scroll frame created without scroll child
 ScrollChild
+return function(self,xrange,yrange) %s end
 OnScrollRangeChanged
 OnVerticalScroll
+return function(self,offset) %s end
 OnHorizontalScroll
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleMessageScrollFrame.cpp
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleMessageScrollFrame.h
@@ -9919,10 +9904,10 @@ ColorValueThumbTexture
 ColorValueTexture
 ColorWheelThumbTexture
 ColorWheelTexture
+return function(self,r,g,b) %s end
 OnColorSelect
 WheelTexture
 ValueTexture
-%f%f%f
 OnMovieHideSubtitle
 OnMovieShowSubtitle
 OnMovieFinished
@@ -10040,6 +10025,10 @@ GetShadowOffset
 SetShadowOffset
 GetShadowColor
 SetShadowColor
+GetTextColor
+SetTextColor
+GetFont
+SetFont
 GetFontObject
 SetFontObject
 Usage: %s:SetMaxLines(maxLines)
@@ -10051,6 +10040,7 @@ Usage: %s:SetInsertMode(\"TOP\" or \"BOTTOM\")
 GetHyperlinkFormat
 SetHyperlinkFormat
 Usage: %s:SetHyperlinkFormat(\"format\")
+IsInIMECompositionMode
 GetAltArrowKeyMode
 SetAltArrowKeyMode
 ToggleInputLanguage
@@ -10062,6 +10052,7 @@ GetMaxLetters
 SetMaxLetters
 GetMaxBytes
 SetMaxBytes
+HasFocus
 ClearFocus
 SetFocus
 GetTextInsets
@@ -10082,6 +10073,7 @@ SetMultiLine
 IsAutoFocus
 SetAutoFocus
 Usage: %s:SetBlinkSpeed(speed)
+Usage: %s:SetText(\"text\")
 Usage: %s:SetNumber(number)
 Usage: %s:AddHistoryLine(\"text\")
 Usage: %s:SetTextInsets(l, r, t, b)
@@ -10098,6 +10090,61 @@ Usage: %s:SetCheckedTexture(texture or \"texture\" or nil)
 Usage: %s:SetDisabledCheckedTexture(texture or \"texture\" or nil)
 %s:SetDisabledCheckedTexture(): Wrong object type, expected texture
 %s:SetDisabledCheckedTexture(): Couldn't find 'this' in texture
+UnlockHighlight
+LockHighlight
+Click
+RegisterForClicks
+GetTextHeight
+GetTextWidth
+GetPushedTextOffset
+SetPushedTextOffset
+GetHighlightTexture
+SetHighlightTexture
+GetDisabledTexture
+SetDisabledTexture
+GetPushedTexture
+SetPushedTexture
+GetNormalTexture
+SetNormalTexture
+GetHighlightTextColor
+SetHighlightTextColor
+GetDisabledTextColor
+SetDisabledTextColor
+GetFontString
+SetFontString
+GetHighlightFontObject
+SetHighlightFontObject
+GetDisabledFontObject
+SetDisabledFontObject
+GetTextFontObject
+SetTextFontObject
+SetButtonState
+GetButtonState
+IsEnabled
+Disable
+Enable
+PUSHED
+Usage: %s:SetButtonState(\"state\", lock)
+Usage: %s:SetFontString(fontstring)
+%s:SetFontString(): Wrong object type, expected fontstring
+%s:SetFontString(): Couldn't find 'this' in fontstring
+Usage: %s:%s(texture or \"texture\" or nil)
+%s:%s(): Wrong object type, expected texture
+%s:%s(): Couldn't find 'this' in texture
+Usage: %s:SetHighlightTexture(texture or \"texture\" or nil [, \"blendmode\")
+%s:SetHighlightTexture(): Wrong object type, expected texture
+%s:SetHighlightTexture(): Couldn't find 'this' in texture
+Usage: %s:SetPushedTextOffset(x, y)
+Button5Up
+Button5Down
+Button4Up
+Button4Down
+RightButtonUp
+RightButtonDown
+MiddleButtonUp
+MiddleButtonDown
+LeftButtonUp
+LeftButtonDown
 CanNonSpaceWrap
 SetNonSpaceWrap
 GetStringWidth
@@ -10181,8 +10228,10 @@ Usage: %s:SetPoint(\"point\" [, region or nil] [, \"relativePoint\"] [, offsetX,
 %s:SetAllPoints(): trying to anchor to itself
 %s:SetAllPoints(): Couldn't find region named '%s'
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleHyperlinkedFrame.cpp
+return function(self,link,text,button) %s end
 OnHyperlinkClick
 OnHyperlinkLeave
+return function(self,link,text) %s end
 OnHyperlinkEnter
 Mono
 Low quality mono
@@ -10323,12 +10372,8 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuop
 smooth
 cinu
-ltuop
-ltuo04
-ltuo04
 raster5
 raster1
    !
@@ -11638,6 +11683,8 @@ x<h'R
 .?AUKEYBINDING@@
 .?AV?$TSExplicitList@UKEYBINDING@@$0?CCCCCCCD@@@
 .?AVPetAction@@
+.?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
+.?AULFGLIST@@
 .PAUArenaTeamMemberInfo@@
 123456789ABCDEF
 .?AV?$TSExplicitList@UWORLDSTATE@@$0?CCCCCCCD@@@
@@ -11658,8 +11705,6 @@ x<h'R
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
-.?AV?$TSExplicitList@UFrameScriptObject_Variable@@$0?CCCCCCCD@@@
-.?AUFrameScriptObject_Variable@@
 .?AV?$TSExplicitList@UMACRONODE@@$0?CCCCCCCD@@@
 .?AUMACRONODE@@
 .PAUTalentTabInfo@@
@@ -12050,6 +12095,8 @@ tanh
 .?AUFRAMENODE@CLayoutFrame@@
 .?AUREGIONNODE@@
 .?AUSIMPLEFRAMENODE@@
+.?AUFRAMEATTR@@
+.?AV?$TSExplicitList@UFRAMEATTR@@$0?CCCCCCCD@@@
 .?AUCSimpleBatchedTexture@@
 .?AURENDERCALLBACKNODE@@
 .?AUEditHistory@CSimpleEditBox@@
