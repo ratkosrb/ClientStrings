@@ -68,6 +68,7 @@ Spam filter enabled
 timingInfo
 reloadUI
 Texture atlas disabled.
+Specified mask %08x is greater than the maximum allowable value of %08x
 ****
 %s%s
 ----
@@ -222,10 +223,13 @@ M2UseZFill
 z-fill transparent objects
 Desired method for game timing
 Error reported by the timing validation system
+processAffinityMask
+Sets which core(s) WoW may execute on - changes require restart to take effect
+coresDetected
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7229)
+World of WarCraft (build 7250)
 SendErrorLogs
 player hidden
 player visible
@@ -248,7 +252,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<ȝ�
+���<���
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1506,8 +1510,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Sep  7 2007
-7229
+Sep 13 2007
+7250
 0.2.0
 RELEASE_BUILD
 BETA_BUILD
@@ -7193,7 +7197,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7229 (Sep  7 2007 19:47:48)
+WoW [Release] Build 7250 (Sep 13 2007 07:21:04)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -8222,7 +8226,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7229 (Sep  7 2007)
+WoW [Release] Build 7250 (Sep 13 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8842,7 +8846,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token, [channel])
-WOWCOMSATCLIENT7229
+WOWCOMSATCLIENT7250
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -9858,26 +9862,6 @@ GetTickCount
 [Best Available]
 [Not Set]
 .\\W32\\TimeManager.cpp
-\\shell\\open\\command
-lpt9
-lpt8
-lpt7
-lpt6
-lpt5
-lpt4
-lpt3
-lpt2
-lpt1
-com9
-com8
-com7
-com6
-com5
-com4
-com3
-com2
-com1
-Fonts
 GenuineIntelAuthenticAMDCyrixInsteadCentaurHalls
 processor brand string= %s
 extended (%d): 1c=%08X 1d=%08x 8c=%08X
@@ -9912,6 +9896,26 @@ CallNtPowerInformation
 powrprof.dll
 %sTempHTMLFile%x.html
 file://
+\\shell\\open\\command
+lpt9
+lpt8
+lpt7
+lpt6
+lpt5
+lpt4
+lpt3
+lpt2
+lpt1
+com9
+com8
+com7
+com6
+com5
+com4
+com3
+com2
+com1
+Fonts
 SCROLLBAR
 ToolbarWindow32
 SysListView32
@@ -11565,14 +11569,9 @@ psnames
 truetype
 sfnt
 smooth
-ltuo Jx
-ltuopKx
 cinu
 raster5
 raster1
-ltuoP
-ltuo0
-ltuo0
 zeta
 zdotaccent
 zacute
@@ -13416,16 +13415,16 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>L��
+��u>$��
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
-��u>L��
+��u>$��
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u>L��
+��u>$��
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13476,7 +13475,7 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>L��
+��u>$��
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13486,7 +13485,7 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
-��u>L��
+��u>$��
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13514,7 +13513,7 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
-��u>L��
+��u>$��
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
@@ -13834,6 +13833,7 @@ UUe?
 .?AUREALMCONNECTIONNODE@RealmConnection@@
 .?AUData@Pending@Grunt@@
 .PAVWowConnection@@
+.PAVOutputChannel@Sound@ComSat@@
 .PAVCOsDialog@@
 .PAVCOsMenuBar@@
 .?AUOsIMECandidate@@
