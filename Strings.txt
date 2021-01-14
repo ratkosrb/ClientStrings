@@ -1512,7 +1512,7 @@ START_GLUE_MUSIC
 SET_GLUE_SCREEN
 Sep 26 2007
 7318
-0.2.2
+2.2.2
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -4016,6 +4016,9 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
+COPPER
+SILVER
+GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -7199,7 +7202,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7318 (Sep 26 2007 15:17:59)
+WoW [Release] Build 7318 (Sep 26 2007 15:16:59)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7402,9 +7405,6 @@ Error, unknown model record %d specified for player race %d sex %d!
 Error, unknown displayInfo %d specified for player race %d sex %d!
 CHAT_FLAG_GM
 UnwrapGift
-COPPER
-SILVER
-GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING

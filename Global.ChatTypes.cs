@@ -1,5 +1,5 @@
 // Auto generated file
-// Patch: 0.2.2
+// Patch: 2.2.2
 // Build: 7318
 
 Public Enum ChatMsg
