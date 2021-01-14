@@ -60,18 +60,18 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6108)
+World of WarCraft (build 6144)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
 %s has wrong row size (found %i, expected %i)
 %s has wrong number of columns (found %i, expected %i)
 Unable to open %s
-timeMode
-Selected mode for game timing
-timeModeDesired
-Desired mode for game timing
-timeError
+Timing test error: %d
+timingInfo
+timingMethod
+Desired method for game timing
+timingTestError
 Error reported by the timing validation system
 Country
 Language
@@ -100,8 +100,6 @@ use clip planes for sorting transparent objects
 M2UseZFill
 z-fill transparent objects
 movie
-timingModeOverride
-Select a specific timing mode (0=default 1=GetTickCount 2=RDTSC 3=QueryPerformanceCounter 4=timeGetTime)
 spamFilter
 Toggle spam filter
 profanityFilter
@@ -185,6 +183,10 @@ patch-%s-?.MPQ
 Data\\%s\\
 patch-?.MPQ
 Failed to open archive %s
+  %d - %s
+'%s' is not a valid timing method. Valid methods are:
+Timing method selected: %d - %s
+Timing method desired: %d - %s
 Unknown Error
 Add Ons:
 Cursor Item
@@ -586,6 +588,11 @@ fonts\\
 %s\\%s
 Fonts
 E:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\TimeManager.cpp
+[Unknown]
+QueryPerformanceCounter
+GetTickCount
+[Best Available]
+[Not Set]
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsIME.cpp
 %m%d%y_%H%M%S
 SCROLLBAR
@@ -623,8 +630,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Nov  7 2006
-14:05:07
+Nov 14 2006
+21:26:24
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -798,6 +805,8 @@ cvzl]
 ?UUUUUU
 ?\r'u_
 ?pY2L
+\n\t\t%02d %-1s [%02X-%02X-%02X-%02X] = %f
+%s FP value check; %d of %d bad, addr %08X :
 DBFilesClient\\Startup_Strings.dbc
 Error reading Startup_StringsRec
 StopMusic
@@ -997,6 +1006,7 @@ CONNECTION_HELP
 GAME_SERVER_LOGIN
 CHAR_RENAME_IN_PROGRESS
 CHAR_RENAME_FAILED
+%d%d%s
 showGameTips
 gameTip
 CHAR_RENAME_DESCRIPTION
@@ -1020,7 +1030,8 @@ CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
-SetServerSplitState
+RequestRealmSplitInfo
+SetRealmSplitState
 IsLinuxClient
 IsMacClient
 IsWindowsClient
@@ -1102,6 +1113,8 @@ ACCOUNT_MESSAGES_AVAILABLE
 TIMER_ALERT
 SERVER_SPLIT_NOTICE
 SCANDLL_FINISHED
+SCANDLL_DOWNLOADING
+SCANDLL_ERROR
 PLAYER_ENTER_MATRIX
 CLIENT_ACCOUNT_MISMATCH
 PLAYER_ENTER_PIN
@@ -1130,7 +1143,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6108
+6144
 2.0.2
 RELEASE_BUILD
 BETA_BUILD
@@ -1158,7 +1171,7 @@ Usage: ScanDLLStart(\"VersionURL\", \"DLLURL\")
 credits_BC.html
 credits.html
 Usage: Script_GetCreditText(versionIndex)
-Usage: Script_SetServerSplitState(1 or 2)
+Usage: SetRealmSplitState(1 or 2)
 RealmListDialogCancelled
 GetSelectedCategory
 SortRealms
@@ -1239,9 +1252,7 @@ Usage: SetCharacterSelectFacing(degrees)
 .\\Scan.dll
 Scan
 E:\\build\\buildWoW\\WoW\\Source\\Glue\\ScanDLLGlue.cpp
-SCANDLL_DOWNLOAD
 SCANDLL_MESSAGE_DOWNLOADING
-SCANDLL_ERROR
 SCANDLL_MESSAGE_ERROR
 SCANDLL_MESSAGE_SCANNING
 ScanThread
@@ -1717,6 +1728,7 @@ IsEquippedItem
 IsConsumableItem
 IsUsableItem
 GetItemCooldown
+GetItemSpell
 GetItemCount
 GetExtendedItemInfo
 GetItemInfo
@@ -1742,6 +1754,8 @@ DropItemOnUnit
 GetGMTicketCategories
 SetPortraitToTexture
 ConfirmBindOnUse
+GetPVPTimer
+SetPVP
 TogglePVP
 GetZonePVPInfo
 GetCoinIcon
@@ -1901,6 +1915,8 @@ TogglePerformanceValues
 TogglePerformanceDisplay
 GetFramerate
 SetConsoleKey
+GetMouseButtonName
+IsMouseButtonDown
 IsAltKeyDown
 IsControlKeyDown
 IsShiftKeyDown
@@ -2498,6 +2514,11 @@ Usage: RegisterForSave(\"variable\")
 RegisterForSave() is only available to Blizzard scripts
 Usage: RegisterForSavePerCharacter(\"variable\")
 RegisterForSavePerCharacter() is only available to Blizzard scripts
+Button5
+Button4
+MiddleButton
+RightButton
+LeftButton
 EQUALS
 DECIMAL
 DIVIDE
@@ -2674,6 +2695,8 @@ CRUSHING
 GLANCING
 CRITICAL
 HEAL
+mouseover
+SecureButton_GetModifiedUnit
 %s()
 %s:%s()
 <unnamed>
@@ -2787,7 +2810,7 @@ BG_SYSTEM_HORDE
 COMBAT_FACTION_CHANGE
 MONEY
 RAID_LEADER
-RAID_WARNING
+H\tRAID_WARNING
 FOREIGN_TELL
 RAID_BOSS_EMOTE
 FILTERED
@@ -3186,6 +3209,7 @@ AccountMsg_LoadBody
 AccountMsg_GetHeaderPriority
 AccountMsg_GetHeaderSubject
 AccountMsg_GetIndexHighestPriorityUnreadMsg
+AccountMsg_GetNumUnreadUrgentMsgs
 AccountMsg_GetNumUnreadMsgs
 AccountMsg_GetNumTotalMsgs
 AccountMsg_LoadHeaders
@@ -3352,6 +3376,8 @@ IsPassiveSpell
 IsCurrentCast
 CastSpell
 PickupSpell
+DisableSpellAutocast
+EnableSpellAutocast
 ToggleSpellAutocast
 GetSpellAutocast
 GetSpellCooldown
@@ -3413,6 +3439,10 @@ BUTTON4
 BUTTON3
 BUTTON2
 BUTTON1
+CLICK
+MACRO
+ITEM
+SPELL
 Found binding with no name in %s
 Found binding %s with no script in %s
 runOnUp
@@ -3438,13 +3468,6 @@ BACKSLASH
 SLASH
 RIGHTBRACKET
 LEFTBRACKET
-RightButton
-MiddleButton
-LeftButton
-CLICK
-MACRO
-ITEM
-SPELL
 down
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIBindings.h
 Usage: GetBinding(index)
@@ -3643,6 +3666,19 @@ Usage: GetLootRollItemLink(id)
 Usage: GetLootRollTimeLeft(id)
 Usage: RollOnLoot(id, rollType)
 Usage: ConfirmLootRoll(id, rollType)
+RenamePetition
+OfferPetition
+SignPetition
+CanSignPetition
+GetPetitionNameInfo
+GetNumPetitionNames
+GetPetitionInfo
+ClosePetition
+guild
+other
+Usage: GetPetitionNameInfo(index)
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\PetitionInfo.cpp
+Usage(RenamePetition(\"name\")
 SortLFG
 GetLFGStatusText
 IsInLFGQueue
@@ -3661,11 +3697,14 @@ GetNumLFGResults
 CanSendLFGQuery
 LFGQuery
 SetLFGComment
+SetLFMType
+SetLFGType
 ClearLookingForMore
 ClearLookingForGroup
 SetLookingForMore
 SetLookingForGroup
 GetLookingForGroup
+LFG_TYPE_HEROIC_DUNGEON
 LFG_TYPE_ZONE
 LFG_TYPE_QUEST
 LFG_TYPE_RAID
@@ -3676,6 +3715,7 @@ MEETINGSTONE_TOOLTIP
 PVPTHROUGHQUEUE
 MATCHMAKING_MATCH_S
 Usage: SetLookingForGroup(slot, type, index)
+Usage: SetLFGType(slot, type)
 Usage: LFGQuery(typeID, lfgNdx [, class])
 Usage: CanSendLFGQuery(typeID, lfgNdx
 Usage: GetLFGResults(type, lfgNdx)
@@ -4160,6 +4200,7 @@ GetPlayerBuffTimeLeft
 GetPlayerBuffApplications
 GetPlayerBuffDispelType
 GetPlayerBuffTexture
+GetPlayerBuffName
 GetPlayerBuff
 NOT_CANCELABLE
 CANCELABLE
@@ -4250,17 +4291,31 @@ Usage: %s:SetArrowModel(\"file\")
 %s:SetPlayerModel(): Couldn't load the file %s
 Usage: %s:SetPlayerModel(\"file\")
 Usage: SetZoom(level)
+GetRunningMacroButton
+GetRunningMacro
 GetMacroIndexByName
 PickupMacro
 GetMacroIconInfo
 GetNumMacroIcons
+SetMacroSpell
+SetMacroItem
 EditMacro
 DeleteMacro
 GetMacroInfo
 GetNumMacros
 CreateMacro
+StopMacro
+RunMacroText
 RunMacro
 Interface\\Icons\\
+reset=
+SHOW
+SLASH_EQUIP_TO_SLOT%d
+SLASH_EQUIP%d
+SLASH_USERANDOM%d
+SLASH_USE%d
+SLASH_CASTSEQUENCE%d
+SLASH_CASTRANDOM%d
 SLASH_CAST%d
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIMacros.cpp
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIMacros.h
@@ -4270,9 +4325,12 @@ Ability_
 MACRO
 END\r\n
 MACRO %d \"%s\" %s\r\n
+Usage: RunMacroText(\"text\" [, \"button\"])
 Usage: CreateMacro(name, iconIndex, body, local, perCharacter)
 CreateMacro() failed, no name specified
 CreateMacro() failed, already have %d macros
+Usage: SetMacroItem(macro, item)
+Usage: SetMacroSpell(macro, item)
 Usage: GetMacroIconInfo(index)
 Usage: GetMacroIndexByName(name)
 HasFilledPetition
@@ -4316,19 +4374,6 @@ Usage: GetNumTalents(tabIndex)
 Usage: GetTalentInfo(tabIndex, talentIndex)
 Usage: GetTalentPrereqs(tabIndex, talentIndex)
 Usage: LearnTalent(tabIndex, talentIndex)
-RenamePetition
-OfferPetition
-SignPetition
-CanSignPetition
-GetPetitionNameInfo
-GetNumPetitionNames
-GetPetitionInfo
-ClosePetition
-guild
-other
-Usage: GetPetitionNameInfo(index)
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\PetitionInfo.cpp
-Usage(RenamePetition(\"name\")
 GetTabardInfo
 TurnInGuildCharter
 BuyGuildCharter
@@ -4411,7 +4456,8 @@ Usage: CollapseCraftSkillLine(index)
 Bad skill line in ExpandCraftSkillLine
 Usage: ExpandCraftSkillLine(index)
 Usage: DoCraft(index)
-DoCraft(index) index out of range
+SetCraftFilter(index) index out of range
+Usage: SetCraftFilter(index)
 Bad inv type in GetCraftFilter
 Usage: GetCraftFilter(index)
 Usage: GetCraftCooldown(index)
@@ -4827,6 +4873,11 @@ GetUnitHealthModifier
 UnitIsSameServer
 IsFeignDeath
 IsStealthed
+IsMounted
+IsFlying
+IsSwimming
+IsOutdoors
+IsIndoors
 UnitChannelInfo
 UnitCastingInfo
 GetPVPRankProgress
@@ -4864,8 +4915,6 @@ UnitIsCivilian
 UnitIsTrivial
 UnitIsTappedByPlayer
 UnitIsTapped
-UnitHasDebuff
-UnitHasBuff
 UnitDebuff
 UnitBuff
 UnitCharacterPoints
@@ -4915,6 +4964,8 @@ UnitFactionGroup
 UnitIsPVPFreeForAll
 UnitIsPVPSanctuary
 UnitIsPVP
+UnitIsDND
+UnitIsAFK
 UnitPlayerControlled
 UnitPlayerOrPetInRaid
 UnitInRaid
@@ -4939,14 +4990,15 @@ GetGameTime
 GetTime
 Unknown unit token: %s
 focus
-E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
-mouseover
 raidpet
 partypet
+E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 raidpet%d
 partypet%d
 Usage: ConsoleExec(\"console_command\")
 Usage: UnitIsUnit(\"unit\", \"otherUnit\")
+Usage: UnitIsAFK(\"unit\")
+Usage: UnitIsDND(\"unit\")
 Usage: UnitIsPVP(\"unit\")
 Usage: UnitIsPVPFreeForAll(\"unit\")
 Usage: UnitFactionGroup(\"unit\")
@@ -5000,8 +5052,6 @@ Usage: UnitArmor(\"unit\")
 Usage: UnitCharacterPoints(\"unit\")
 Usage: UnitBuff(\"unit\", index [,raidFilter])
 Usage: UnitDebuff(\"unit\", index [,raidFilter])
-Usage: UnitHasBuff(\"unit\", \"name\"[, \"rank\"])
-Usage: UnitHasDebuff(\"unit\", \"name\"[, \"rank\"])
 Usage: UnitIsTapped(\"unit\")
 Usage: UnitIsTappedByPlayer(\"unit\")
 Usage: UnitIsTrivial(\"unit\")
@@ -5210,6 +5260,7 @@ PETITION_CLOSED
 PETITION_SHOW
 UPDATE_LFG
 WHO_LIST_UPDATE
+UPDATE_SHAPESHIFT_FORM
 UPDATE_SHAPESHIFT_FORMS
 UPDATE_BINDINGS
 PET_DISMISS_START
@@ -5875,7 +5926,7 @@ E:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBClient.cpp
 ..\\..\\Object/CreatureStats.h
 OsCreateFile failed for cache file: %s\n
 %s/%s
-Data/%s/%s
+Cache/%s/%s
 DBCache::CancelCallback ignored for id %016I64X.
 E:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
 ..\\..\\Object/GameObjectStats.h
@@ -6351,6 +6402,8 @@ DBFilesClient\\SpellItemEnchantmentCondition.dbc
 Error reading SpellItemEnchantmentConditionRec
 DBFilesClient\\SpellMechanic.dbc
 Error reading SpellMechanicRec
+DBFilesClient\\SpellMissileMotion.dbc
+Error reading SpellMissileMotionRec
 DBFilesClient\\SpellRadius.dbc
 Error reading SpellRadiusRec
 DBFilesClient\\SpellRange.dbc
@@ -6661,7 +6714,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6108 (Nov  7 2006 14:07:57)
+WoW [Release] Build 6144 (Nov 14 2006 21:29:30)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -6854,11 +6907,8 @@ cache.md5
 SaveTimerHandler
 %s.partial
 unicows.dll
-dbghelp.dll
-ijl15.dll
 fmod.dll
-WoW.exe
-E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\ChecksumExecutables.cpp
+DivxDecoder.dll
 %hu.%hu.%hu.%hu
 HACK
 TROJAN
@@ -7111,6 +7161,8 @@ UNHANDLEDANIMEVENT|%.4s
 INVALIDDISPLAYMODELRECORD|%d|%d
 NOCREATUREDISPLAYIDFOUND|%d
 Spells\\ErrorCube.mdx
+NamePlateDistance
+Toggle between varius distances to view name plates
 CombatLogPeriodicSpells
 AutoInteract
 Toggles auto-move to interact target
@@ -7211,6 +7263,33 @@ LOOT_ROLL_GREED
 LOOT_ROLL_NEED_SELF
 LOOT_ROLL_PASSED_SELF
 LOOT_ROLL_GREED_SELF
+local math = math\nabs = math.abs\nacos = function (x) return math.deg(math.acos(x)) end\nasin = function (x) return math.deg(math.asin(x)) end\natan = function (x) return math.deg(math.atan(x)) end\natan2 = function (x,y) return math.deg(math.atan2(x,y)) end\nceil = math.ceil\ncos = function (x) return math.cos(math.rad(x)) end\ndeg = math.deg\nexp = math.exp\nfloor = math.floor\nfrexp = math.frexp\nldexp = math.ldexp\nlog = math.log\nlog10 = math.log10\nmax = math.max\nmin = math.min\nmod = math.fmod\nPI = math.pi\nrad = math.rad\nrandom = math.random\nrandomseed = math.randomseed\nsin = function (x) return math.sin(math.rad(x)) end\nsqrt = math.sqrt\ntan = function (x) return math.tan(math.rad(x)) end\n
+scale
+speedOffset
+speedScalar
+speedAbs
+modelRoll
+modelPitch
+modelYaw
+transUp
+transFront
+transRight
+transMag
+transAngle
+spellID
+rand3
+rand2
+rand1
+totalDistance
+startDistance
+distanceToImpactPos
+distanceToFirePos
+missileCount
+missileIndex
+time
+progress
+MissileMathAliases
+math
 CMissile
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Missile_C.cpp
 HARDCODED Resist Spell
@@ -7745,6 +7824,13 @@ SPELLDISMISSPETSELF
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\PlayerSound_C.cpp
 SPELLVISUALIDNOTFOUND|%d
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Movement_C.cpp
+E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\SimpleScript.cpp
+\nend\n
+\nreturn
+ = \"\"\n
+ = 0.0\n
+local
+return function(
 COMBATLOG_XPGAIN_EXHAUSTION5
 COMBATLOG_XPGAIN_EXHAUSTION4
 NULL
@@ -7879,7 +7965,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6108 (Nov  7 2006)
+WoW [Release] Build 6144 (Nov 14 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -8088,6 +8174,7 @@ SymGetModuleBase
 SymGetLineFromAddr
 SymFunctionTableAccess
 StackWalk
+dbghelp.dll
 %s %s+%d %s(%d)
 <sym-%08X>
 <unknown symbol>
@@ -9030,7 +9117,6 @@ SavedVariables
 -------------------------------------------------------------------\n-- Table library\nlocal tab = table\nforeach = tab.foreach\nforeachi = tab.foreachi\ngetn = tab.getn\ntinsert = tab.insert\ntremove = tab.remove\nsort = tab.sort\n\n-------------------------------------------------------------------\n-- math library\nlocal math = math\nabs = math.abs\nacos = function (x) return math.deg(math.acos(x)) end\nasin = function (x) return math.deg(math.asin(x)) end\natan = function (x) return math.deg(math.atan(x)) end\natan2 = function (x,y) return math.deg(math.atan2(x,y)) end\nceil = math.ceil\ncos = function (x) return math.cos(math.rad(x)) end\ndeg = math.deg\nexp = math.exp\nfloor = math.floor\nfrexp = math.frexp\nldexp = math.ldexp\nlog = math.log\nlog10 = math.log10\nmax = math.max\nmin = math.min\nmod = math.fmod\nPI = math.pi\n--??? pow = math.pow\nrad = math.rad\nrandom = math.random\nrandomseed = math.randomseed\nsin = function (x) return math.sin(math.rad(x)) end\nsqrt = math.sqrt\ntan = function (x)
 debugstack
 difftime
-time
 date
 geterrorhandler
 seterrorhandler
@@ -9119,6 +9205,12 @@ Model2: Model destroyed before loading completed: %s\n
 E:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Model.cpp
 Model2: CM2Model::%s stalled: %s\n
 CM2Model_idx
+CM2Model::AnimateST: m_currentEmissive
+CM2Model::AnimateST: m_currentDiffuse
+CM2Model::AnimateST: m_scene->m_view
+AnimateST: rotated matrix
+AnimateST: shared->position
+AnimateST: m_boneMatrices[shared->boneIndex]
 E:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Light.cpp
 E:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Shared.cpp
 CM2Shared_idx
@@ -9324,7 +9416,6 @@ random
 interval is empty
 wrong number of arguments
 huge
-math
 sort
 setn
 remove
@@ -9859,15 +9950,12 @@ OnUpdate
 return function(self,w,h) %s end
 OnSizeChanged
 OnLoad
-Button5
-Button4
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CScriptRegion.cpp
 $parent
 FogColor
 fogFar
 fogNear
 Frame %s: Invalid model scale: %s
-scale
 Frame %s: Bad model file: %s
 OnAnimFinished
 OnUpdateModel
@@ -10520,6 +10608,7 @@ Blizzard Web Client
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsURLDownload.cpp
 <unknown %08X>
 <null>
+E:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\OsVersionHash.cpp
 \\StringFileInfo\\%04x%04x\\%s
 \\VarFileInfo\\Translation
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsSecureRandom.cpp
@@ -10533,6 +10622,15 @@ E:\\build\\buildWoW\\ENGINE\\Source\\Services\\GfxSingletonManager.cpp
 ..\\Services/RibbonEmitter.h
 E:\\build\\buildWoW\\ENGINE\\Source\\Services\\Lightning.cpp
 CParticleEmitter2_idx
+InitInterpDeltas: m_currPos
+InitInterpDeltas: m_prevPos
+SetPos: m_currVertical
+SetPos: m_currDir
+SetPos: m_currPos
+SetPos: pos
+SetPos: m_cameraPos
+SetPos: localOrient 2
+SetPos: localOrient 1
 E:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleSystem2.h
 E:\\build\\buildWoW\\ENGINE\\Source\\Tempest\\cmemblock.cpp
 __fall
@@ -10609,7 +10707,6 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo`
 smooth
 cinu
 raster5
@@ -11931,6 +12028,7 @@ GcS68
 .?AUOVERRIDEKEYBINDING@@
 .?AV?$TSExplicitList@UOVERRIDEKEYBINDING@@$0?CCCCCCCD@@@
 .?AVPetAction@@
+.?AUPetitionSignerInfo@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
 .?AULFGLIST@@
 .PAUArenaTeamMemberInfo@@
@@ -11955,7 +12053,6 @@ GcS68
 .?AV?$TSExplicitList@UMACRONODE@@$0?CCCCCCCD@@@
 .?AUMACRONODE@@
 .PAUTalentTabInfo@@
-.?AUPetitionSignerInfo@@
 .PAUCraftInfo@@
 .PAUCraftSkillLineInfo@@
 .PAUTradeSkillInfo@@
@@ -12080,6 +12177,7 @@ GcS68
 .?AUPendingLootRoll@@
 .?AUDEATTHUDSOUNDINFO@@
 .?AUGENERICITEMCACHEDESC@@
+.?AUSimpleScriptFunction@@
 .?AUCONSOLELINE@@
 .?AV?$TSExplicitList@UCVar@@$0?CCCCCCCD@@@
 .?AUCVar@@
