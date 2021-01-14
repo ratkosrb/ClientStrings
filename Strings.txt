@@ -229,7 +229,7 @@ coresDetected
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7318)
+World of WarCraft (build 7344)
 SendErrorLogs
 player hidden
 player visible
@@ -252,7 +252,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<�n�
+���<�^�
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1201,6 +1201,10 @@ e:\\build\\buildWoW\\WoW\\Source\\Object/ObjectClient/Player_C.h
 0: Off
 Modes:
 CHAOS!!
+Sound_EnableMode2
+test
+Sound_DSPBufferSize
+sound buffer size, default 0
 Primary Sound Driver
 Primary Sound Capture Driver
 number of sound channels
@@ -1510,9 +1514,9 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Sep 26 2007
-7318
-2.2.2
+Oct  3 2007
+7344
+0.2.3
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -4016,9 +4020,6 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
-COPPER
-SILVER
-GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -4121,7 +4122,6 @@ modifiedclick
 bind
 WTF\\DefaultBindings.wtf
 Found binding with no name in %s
-Found binding %s with no script in %s
 runOnUp
 return function(keystate) %s end
 Binding header %s is defined more than once in %s
@@ -7202,7 +7202,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7318 (Sep 26 2007 15:16:59)
+WoW [Release] Build 7344 (Oct  3 2007 05:05:28)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7289,8 +7289,6 @@ face
 *name
 horzJustification < GxHJ_Last
 vertJustification < GxVJ_Last
-blockHeight
-blockWidth
 fontHeight || ( flags & EGxStringFlags_FixedSize )
 .\\GxuFontUtil.cpp
 Error, font %s being created with height %g at screen res of %dx%d which is %d pixels!
@@ -7405,6 +7403,9 @@ Error, unknown model record %d specified for player race %d sex %d!
 Error, unknown displayInfo %d specified for player race %d sex %d!
 CHAT_FLAG_GM
 UnwrapGift
+COPPER
+SILVER
+GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -8230,7 +8231,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7318 (Sep 26 2007)
+WoW [Release] Build 7344 (Oct  3 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8850,7 +8851,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token, [channel])
-WOWCOMSATCLIENT7318
+WOWCOMSATCLIENT7344
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -10041,11 +10042,13 @@ FMod
  - Using [%d] %s for %s
 *** SoundEngine_CaptureWork : Lock failed! (%d, %d) %s
 Monitor DSP
+######## FMOD ERROR! (err %d) %s\n
 ##### ERROR IN CompleteNonBlockingLoad()! FAILED TO ABORT SOUND!!! [B]
 ##### ERROR IN CompleteNonBlockingLoad()! FAILED TO ABORT SOUND!!! [A]
 ##### ERROR IN CompleteNonBlockingLoad()! Aborting this sound! %s
 ##### ERROR! INVALID m_pFMODSound
 %-24d%s
+ ######## FMOD ERROR! (err %d) %s\n
 .mp3
 .wav
 => Voice Chat is ready.
@@ -10054,30 +10057,60 @@ Voice Chat Output
  - %d Input drivers detected
  --- [%d] %s
  - %d Output drivers detected
-######## ERROR! FMOD version mismatch! This program requires version %08x
+ -######## ERROR! FMOD version mismatch! This program requires version %08x
  - FMOD version %08x detected
-=> Voice Chat Init FAILED.
-######## FATAL ERROR INITIALIZING. VOICE CHAT DISABLED.
- - ERROR! SSE support is required for voice chat!
+=># Voice Chat Init FAILED.
+=>###########################################################################################
+ -######## ERROR INITIALIZING. VOICE CHAT DISABLED.
+ -# ERROR! SSE support is required for voice chat!
+ -###########################################################################################
 => Setting up Voice Chat:
 => Game Sound is ready.
 <master>
  - Reverb is %s
 ENABLED
- - Detected Control Panel SpeakerMode = %s
+ - FMOD System Init OK!
+ - Setting WoW Speaker Mode to STEREO
+ -#           SURROUND is actually 5.0 (no subwoofer).
+ -#           This most commonly happens when SURROUND is selected when the user wants 5.1.
+ -#           Reverting to STEREO
+ -#           Control Panel Speaker Mode %s is NOT supported by your sound driver!
+ -# NOTICE:   FMOD System Init failed!
+ - Setting WoW Speaker Mode to %s
+ - Detected Control Panel Speaker Mode = %s
+ -#            Using default DSPBufferSize 4
+ -# NOTICE:    DSPBufferSize out of range!! Valid range is 4 to 10
+ -#           Do not change this setting from default unless you really need to.
+ -#           but may affect sound timing.
+ -#           Higher settings may reduce sound stuttering and crackling,
+ -# NOTICE:   You are using a custom DSP Buffer size
+ -#           Also in EMULATED mode some speaker configurations like 5.1 may not be available.
+ -#           Using Max DSP Buffer size (10) to avoid stuttering.
+ -#           This may lead to poor sound performance.
+ -# NOTICE:   Your Sound Driver is running in EMULATED mode.
+ - DSPBufferSize = %d [Valid values are 0 = AUTO DETECT (default), 4 through 10]
 PROLOGIC
 SURROUND
 QUAD
 STEREO
 MONO
+ -#           This might lead to poor sound performance.
+ -# NOTICE:   You are using a very high number of channels.
+ -# NOTICE:   Mode 2 Support Not Detected. Reverting to default Engine Mode.
  - Using %d channels.
+ - Too many channels requested. Using max available instead
+ - System Reports: %d Channels.
+ - %d Channels Requested.
+ -# NOTICE:   Using Sound Engine Mode 2.
 Game Output
 => Game Sound Init Failed.
-######## FATAL ERROR INITIALIZING. ALL GAME SOUND DISABLED.
+ -######## ERROR INITIALIZING. ALL GAME SOUND DISABLED.
  - FMOD System Create
  - FMOD Memory Init
  - SESound Engine Init
 => Setting up Game Sound:
+=> Version %s (%s) %s
+Logs\\Sound.log
 Logs\\SESound.log
 SoundMemoryCache
 sound cache memory size (MB)
@@ -11535,10 +11568,11 @@ psnames
 truetype
 sfnt
 smooth
-ltuo0
 cinu
 raster5
 raster1
+ltuo
+ltuo
 zeta
 zdotaccent
 zacute
@@ -12913,9 +12947,6 @@ SYNC
 FSB3
 FSB2
 FMOD FSB Codec
-..\\src\\fmod_codec_cdda.cpp
-Track %d
-FMOD CDDA Codec
 GENRE
 TRACK
 COMMENT
@@ -12939,36 +12970,6 @@ FMOD WavWriter Output - Non real-time
 ..\\..\\src\\fmod_output_wavwriter.cpp
 FMOD WavWriter Output
 ..\\..\\src\\fmod_output.cpp
-The DLL or other components are installed wrong
-Call came to ASPI after PROCESS_DETACH
-Couldn't allocate resources needed to init
-No host adapters to manage
-The DLLs/EXEs of ASPI don't version check
-Buffer size too big to handle!
-No resources available to execute cmd
-ASPI for windows failed init
-No ASPI managers resident
-Unsupported Windows mode
-Buffer not aligned
-ASPI manager doesn't support Windows
-Invalid parameter set in SRB
-SCSI device not installed
-Invalid host adapter number
-Invalid ASPI command
-SRB completed with error
-Unable to abort SRB
-SRB aborted
-SRB completed without error
-SRB being processed
-wnaspi32.dll
-GetASPI32SupportInfo
-SendASPI32Command
-\\\\.\\%c:
-%c:\\
-..\\src\\fmod_os_cdda.cpp
-SCSI Adapter
-FMODASPI v1.0
-%02x:%02x:%02x
 ..\\..\\src\\fmod_dsp_filter.cpp
 ��L=ICY
 HTTP/1.1
@@ -13035,8 +13036,6 @@ Host: %s\r\n
 GET %s HTTP/1.1\r\n
 StreamUrl='
 StreamTitle='
-..\\src\\fmod_file_cdda.cpp
-CDTOC
 ..\\..\\src\\fmod_async.cpp
 FMOD thread for FMOD_NONBLOCKING
 ..\\..\\src\\fmod_output_emulated.cpp
@@ -13352,7 +13351,6 @@ AR&HW
 l`'\b
 +kEs\n
 fyLJ\b
-n~W$q
 .?AVCECC_LDPC@@
 .?AVCECC_Base@@
 GxTex_Unknown
@@ -13383,16 +13381,13 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>$q�
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
-��u>$q�
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u>$q�
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13443,7 +13438,6 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>$q�
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13453,7 +13447,6 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
-��u>$q�
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13481,7 +13474,6 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
-��u>$q�
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
@@ -13809,6 +13801,7 @@ UUe?
 .?AUW32Joystick@@
 .?AUSEChannelGroup@@
 .?AVSESoundInternal@@
+.?AUData@Chunk@@
 .?AV?$TSExplicitList@UCacheData@@$0?CCCCCCCD@@@
 .?AUCacheData@@
 sqrt
@@ -14082,14 +14075,12 @@ IL>\a_X>\vFe>X
 eW?=,d?
 .?AVOutput@FMOD@@
 .?AUFMOD_OUTPUT_STATE@@
-Unknown
 .?AVOutputSoftware@FMOD@@
 .?AVSample@FMOD@@
 .?AVStream@FMOD@@
 .?AVChannelReal@FMOD@@
 .?AVChannelStream@FMOD@@
 .?AVNetFile@FMOD@@
-.?AVCddaFile@FMOD@@
 .?AVOutputEmulated@FMOD@@
 .?AVOutputPolled@FMOD@@
 .?AVChannelOpenALEAX3@FMOD@@
