@@ -86,9 +86,13 @@ Texture filtering mode must be in range 0 to %d.
 SStrLen( localeName ) == 4
 %s%s
 ----
+Format version in %s file is not supported.
 NGIS
+Illegal scope string %s in %s: must be \"INTERNAL\" or \"RELEASE\".
 RELEASE
+Signature string (%s) in %s file does not match game's signature version (%d).
 Could not authenticate the %s file.
+file: %s
 signaturefile
 SStrCmp(locale, \"----\", 4) != 0
 800x600
@@ -116,7 +120,7 @@ Burning Crusade Closed Beta
 InstallPath
 Blizzard Entertainment World of Warcraft
 WoW.stor
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Gx/Gx.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Gx/Gx.h
 index (0x%08X), array size (0x%08X)
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\Object/ObjectClient/Player_C.h
 World transfer aborted...
@@ -174,6 +178,9 @@ accountName
 Saved account name
 showperf
 login
+Pixel shaders disabled.
+Pixel shaders unsupported on current hardware.
+Pixel shaders enabled.
   %d - %s
 '%s' is not a valid timing method. Valid methods are:
 userArg
@@ -237,6 +244,7 @@ RunOnce*.wtf
 %sWTF\\
 Unknown Error
 CacheUpdateHandler
+videoOptionsVersion
 UIFaster
 UI acceleration option
 M2FasterDebug
@@ -253,10 +261,13 @@ M2UseClipPlanes
 use clip planes for sorting transparent objects
 M2UseZFill
 z-fill transparent objects
+pixelShaders
+Pixel shaders enable
 textureFilteringMode
 Texture filtering mode
 ErrorFileLog
 EventIsContextInteractive()
+VIDEO_OPTIONS_RESET
 Desired method for game timing
 Error reported by the timing validation system
 processAffinityMask
@@ -266,7 +277,7 @@ enUS
 Set the game locale
 Config.wtf
 WoW.mfil
-World of WarCraft: Assertions Enabled Build (build 7441)
+World of WarCraft: Assertions Enabled Build (build 7468)
 SendErrorLogs
 m_rc
 player hidden
@@ -290,8 +301,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<�Ӊ
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Tempest/cmath.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Tempest/cmath.h
 \"%s\", %s = %f
 r >= .0f
 which < GxRenderStates_Last
@@ -500,6 +510,7 @@ unicows.dll
 security.dll
 ntdll.dll
 LdrUnloadDll
+GetFileAttributesW
 EnableWindow
 GetClipboardData
 GetPropA
@@ -515,7 +526,7 @@ refcountAfterAcquire
 \"%s\", %s = %ld (0x%08X, '%c%c%c%c')
 refcountAfterRelease >= 0
 refcountAfterRelease
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Storm\\h\\stpl.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Storm\\h\\stpl.h
 SoundMemoryCache
 sound cache memory size (MB)
 success
@@ -622,7 +633,7 @@ FMod
  - Using [%d] %s for %s
 *** SoundEngine_CaptureWork : Lock failed! (%d, %d) %s
 Monitor DSP
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\Source\\Tempest/crandom.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\Source\\Tempest/crandom.h
 sides > 0
 pSEDiskSound->m_file != 0
 !(m_bFadingIn && m_bFadingOut)
@@ -664,15 +675,19 @@ s_pChatSystem == 0
 => Game Sound is ready.
 <master>
  - Reverb is %s
-DISABLED
-ENABLED
  - FMOD System Init OK!
+ -#           Reverting to most compatible configuration (Hardware DISABLED,STEREO,MixMode2 DISABLED,Control Panel default output device)
  - Setting WoW Speaker Mode to STEREO
+ -#           Some speaker modes will fail to initialize if the sound driver is running in EMULATED mode.
+ -#           Many sound drivers do not support SURROUND even though you can select it in the control panel
  -#           SURROUND is actually 5.0 (no subwoofer).
- -#           This most commonly happens when SURROUND is selected when the user wants 5.1.
+ -#           This most commonly happens when SURROUND is selected.
  -#           Reverting to STEREO
- -#           Control Panel Speaker Mode %s is NOT supported by your sound driver!
+ -#           Control Panel Speaker Mode %s FAILED to initialize!
  -# NOTICE:   FMOD System Init failed!
+ -# 2 PCM24
+ -# 3 PCM32
+ -# 1 PCMFLOAT
  -# NOTICE:   Using Mix Mode 2.
 Sound_EnableMixMode2
  - Setting WoW Speaker Mode to %s
@@ -685,7 +700,6 @@ Sound_EnableMixMode2
  -# NOTICE:   You are using a custom DSP Buffer size
  -#           Also in EMULATED mode some speaker configurations like 5.1 may not be available.
  -#           Using Max DSP Buffer size (10) to avoid stuttering.
- -#           This may lead to poor sound performance.
  -# NOTICE:   Your Sound Driver is running in EMULATED mode.
  - DSPBufferSize = %d [Valid values are 0 = AUTO DETECT (default), 4 through 10]
 Sound_DSPBufferSize
@@ -694,14 +708,20 @@ SURROUND
 QUAD
 STEREO
 MONO
- -#           This might lead to poor sound performance.
+ -# NOTICE:   Hardware Channels Not Detected. Reverting to software channels.
+ -#           This may lead to poor sound performance.
  -# NOTICE:   You are using a very high number of channels.
  -# NOTICE:   Mode 2 Support Not Detected. Reverting to default Engine Mode.
  - Using %d channels.
  - Too many channels requested. Using max available instead
  - System Reports: %d Channels.
  - %d Channels Requested.
+ -# NOTICE:   Sound Engine Mode 2 DISABLED because Hardware is enabled.
  -# NOTICE:   Using Sound Engine Mode 2.
+ - Hardware is %s.
+DISABLED
+ENABLED
+Sound_EnableHardware
 Sound_EnableMode2
 Game Output
 => Game Sound Init Failed.
@@ -712,8 +732,8 @@ Game Output
 => Setting up Game Sound:
 => Version %s (%s) %s
 0.3.0
-7441
-Oct 18 2007
+7468
+Oct 23 2007
 Logs\\Sound.log
 Logs\\SESound.log
 Logs
@@ -894,7 +914,7 @@ name
 !m_text || !*m_text
 .\\CSimpleRender.cpp
 size > 0
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\Source\\Gx/Gx.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\Source\\Gx/Gx.h
 <unnamed>
 entry->m_texSort
 entry->m_indexCount > 0
@@ -1007,7 +1027,7 @@ SetBlendMode
 GetBlendMode
 SetDrawLayer
 GetDrawLayer
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\Source\\Tempest/cmath.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\Source\\Tempest/cmath.h
 Wrong object type for member function
 Attempt to find 'this' in non-framescript object
 Attempt to find 'this' in non-table object (used '.' instead of ':' ?)
@@ -1031,7 +1051,6 @@ Usage: %s:SetTexCoord(minX, maxX, minY, maxY) or SetTexCoord(ULx, ULy, LLx, LLy,
 Usage: %s:SetJustifyH(\"justify\")
 Usage: %s:SetJustifyV(\"justify\")
 Frame
-\n�#<
 return function(self,name,value) %s end
 OnAttributeChanged
 OnKeyUp
@@ -1657,7 +1676,7 @@ AMBIENCE
 CINEMATIC
 SCRIPTSOUND
 SCRIPTMUSIC
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Tempest/crandom.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Tempest/crandom.h
 rolls > 0
 !CMath::isnan_(pos.z)
 pos.z
@@ -1697,16 +1716,16 @@ Sound_ZoneMusicNoDelay
 pUserData
 <SCRIPT MUSIC>
 <SCRIPT SOUND>
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\storm\\h\\stpl.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\storm\\h\\stpl.h
 .\\SoundInterface2Internal.cpp
 .\\SoundInterface2Footsteps.cpp
 terrainSoundID < theArray.Count()
 Sound_ListenerAtCharacter
 rec->m_TerrainSoundID < numTerrains
 numTerrains < sizeof(int)*8
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Base/RLECompress.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Base/RLECompress.h
 pDestByte == pEnd
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/ObjectClient/Player_C.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/ObjectClient/Player_C.h
 (DONOTRENAME)WrappedItemPickup
 (DONOTRENAME)WrappedItemDrop
 itemPtr
@@ -1741,6 +1760,7 @@ weaponType < ClientDBGetNumWeaponSubclasses()
 Modes:
 CHAOS!!
 test
+Enables Hardware
 sound buffer size, default 0
 Primary Sound Driver
 Primary Sound Capture Driver
@@ -1812,7 +1832,7 @@ Creating unit
 Creating player
 s_savMgr == 0
 s_curMgr
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/Object.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/Object.h
 identity < NUM_OBJECT_TYPES
 Bogus object type!!
 blockId < sizeof(CGCorpseData)/sizeof(DWORD)
@@ -2076,7 +2096,7 @@ SetSavedAccountName
 GetSavedAccountName
 GetLocale
 GetBuildInfo
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Frame/CSimpleTop.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Frame/CSimpleTop.h
 ACCOUNT_MESSAGES_BODY_LOADED
 ACCOUNT_MESSAGES_HEADERS_LOADED
 ACCOUNT_MESSAGES_AVAILABLE
@@ -2291,7 +2311,7 @@ Textures\\GuildEmblems\\Emblem_%02d_%02d_TL_U
 Textures\\GuildEmblems\\Emblem_%02d_%02d_TU_U
 Textures\\GuildEmblems\\Border_%02d_%02d_TL_U
 Textures\\GuildEmblems\\Border_%02d_%02d_TU_U
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\ObjectAlloc/ObjectAllocTemplate.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\ObjectAlloc/ObjectAllocTemplate.h
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\common\\componentcore\\CharacterComponent.h
 compMip < 7
 dstMips
@@ -4739,7 +4759,7 @@ d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\sou
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\DressUpModelFrame.h
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\TabardModelFrame.h
 item:
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\UIUtil/Tooltip.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\UIUtil/Tooltip.h
 EQUALS
 DECIMAL
 DIVIDE
@@ -4829,16 +4849,6 @@ Usage: EnableAddOn(index or \"name\")
 Usage: DisableAddOn(index or \"name\")
 Usage: IsAddOnLoadOnDemand(index or \"name\")
 Usage: IsAddOnLoaded(index or \"name\")
-An action was blocked in combat because of taint from %s - %s
-An action was blocked because of taint from %s - %s
-Execution tainted by %s while reading %s - %s
-Global variable %s tainted by %s - %s
-MACRO_TAINT
-%s()
-%s:%d
-%s:%d %s()
-%s:%s
-Logs\\taint.log
 TargetNearestDistance must be between 1 and %f
 \\SavedVariables.lua
 WTF\\Account\\%s
@@ -4856,7 +4866,7 @@ bindings
 EXHAUSTION
 BREATH
 FEIGNDEATH
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\WowServices/BitField.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\WowServices/BitField.h
 bitNum < m_numBits
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\Cooldown.h
 merchant
@@ -4903,6 +4913,18 @@ FrameLevel:
 Frame:
 Version:
 worldFramePtr
+%s()
+%s:%d
+%s:%d %s()
+%s:%s
+method
+    %s
+An action was blocked in combat because of taint from %s - %s
+An action was blocked because of taint from %s - %s
+Execution tainted by %s while reading %s - %s
+Global variable %s tainted by %s - %s
+MACRO_TAINT
+Logs\\taint.log
 LOOT_ITEM_MULTIPLE
 CREATED_ITEM_MULTIPLE
 LOOT_ITEM
@@ -5570,6 +5592,7 @@ ERR_ARENA_TEAM_DISBANDED_S
 ERR_ARENA_TEAM_TARGET_TOO_LOW_S
 ERR_ARENA_TEAM_TOO_MANY_MEMBERS_S
 ERR_ARENA_TEAM_LEVEL_TOO_LOW_I
+ERR_ARENA_TEAM_NOT_FOUND
 ERR_CANT_SPEAK_LANGAGE
 ERR_VENDOR_MISSING_TURNINS
 ERR_BATTLEGROUND_NOT_IN_TEAM
@@ -5623,6 +5646,8 @@ Spell_C_CanTargetItems() || Spell_C_WaitingForStringInput() || (hitFilter != HIT
 !\"Unknown skinning type\"
 rsStackOffset == GxRsStackOffset()
 scene
+CGWorldFrame::FindClosestModel() returned a bogus value for objDist: %f
+CWorld::Intersect() returned a bogus value for terrDist: %f
 hitTestResult
 debugobjectpathing
 inputControl
@@ -5893,7 +5918,7 @@ cond
 !IsEmpty()
 !IsFull()
 ()[]^*/%+-#,
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/Unit.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/Unit.h
 statNumber < (sizeof(m_unit->stats) / sizeof(m_unit->stats[0]))
 ((index >= 0) && (index < 3))
 TARGET_TOKEN_NOT_FOUND
@@ -5961,7 +5986,7 @@ action
 slot < MAXIMUM_LEARNED_SPELLS
 .\\SpellBookFrame.cpp
 slot >= 0
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\DB/WowClientDB.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\DB/WowClientDB.h
 m_papRLErecordsByID
 g_spellDB.RecordExists(m_combatFeedbackSpells[i].spellID)
 Interface\\Icons\\Ability_Kick
@@ -6148,6 +6173,9 @@ stats
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
+COPPER
+SILVER
+GOLD
 INV_Misc_QuestionMark
 Loot item stats lookup failed for item id %d
 Usage: GetLootSlotInfo(slot)
@@ -6820,9 +6848,9 @@ buyoutthenbid
 buyout
 duration
 quality
-Usage: IsAuctionSortReversed(\"type\", \"sort\")
 bidder
 owner
+Usage: IsAuctionSortReversed(\"type\", \"sort\")
 Usage: GetAuctionSort(\"type\", \"index\")
 Usage: SortAuctionClearSort(\"type\")
 Usage: SortAuctionAddSort(\"type\", \"sort\", \"reverse\")
@@ -6831,9 +6859,7 @@ Usage: GetAuctionItemSubClasses(index)
 Usage: GetAuctionInvTypes(classIndex, subClassIndex)
 Usage: SortAuctionApplySort(\"type\")
 slot < NUM_ITEM_SPELLS
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/Item.h
-m_numOwned <= MAX_AUCTION_LIST_RESULTS
-m_numBid <= MAX_AUCTION_LIST_RESULTS
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/Item.h
 Usage: CalculateAuctionDeposit(runTime)
 Usage: StartAuction(minBid, buyoutPrice, runTime)
 Usage: GetAuctionItemInfo(\"type\", index)
@@ -7476,7 +7502,7 @@ Invalid creature in quest
 Invalid object in quest
 Usage: GetQuestLogItemLink(\"type\", index)
 Usage: IsQuestWatched(index)
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/Player.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/Player.h
 n < QUESTLOG_FLAGS_NUM_COUNTS
 .\\QuestLog.cpp
 Missing header! (quest designers)
@@ -7580,8 +7606,9 @@ Usage: GetActionText(slot)
 Usage: HasAction(slot)
 Usage: IsUsableAction(slot)
 ChangeActionBarPage() needs a page in the range 1 to %d
-Interface\\Buttons\\Spell-Reset
 .\\ActionBarFrame.cpp
+rec->m_bonusActionBar != TEMPORARY_ACTION_BAR_PAGE
+Interface\\Buttons\\Spell-Reset
 Usage: GetActionInfo(slot)
 Usage: GetActionCooldown(slot)
 Usage: GetActionAutocast(slot)
@@ -7845,7 +7872,7 @@ CMath::fnotequal_(m_targetTime, 0.0f)
 CMath::fnotequal_(m_yawTime, 0.0f)
 CMath::fnotequal_(m_flyingMountHeightTime, 0.0f)
 GetCollisionBox
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\WorldClient/World.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\WorldClient/World.h
 sub < (sizeof(corners) / sizeof(corners[0]))
 CGInputControl::GetActive()
 Usage: SaveView(viewModeIndex)
@@ -7875,6 +7902,7 @@ THIRD_PERSON_A
 THIRD_PERSON_B
 THIRD_PERSON_C
 THIRD_PERSON_D
+VIEW_COMMENTATOR
 Usage: SetView(viewModeIndex)
 view < MAX_CAMERA_VIEWS
 Usage: ResetView(viewModeIndex)
@@ -9057,12 +9085,13 @@ deDE
 frFR
 koKR
 m_nNumRecords > 0
+Blizzard::Using::GlobalUse
 Cache/%s/%s
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/CreatureStats.h
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/GameObjectStats.h
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/ItemName.h
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/ItemStats.h
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/NPCText.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/CreatureStats.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/GameObjectStats.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/ItemName.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/ItemStats.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/NPCText.h
 .\\DBCache.cpp
 !obj->m_cbInUse
 bytesWritten == sizeof(endMarker)
@@ -9722,7 +9751,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release Assertions Enabled] Build 7441 (Oct 18 2007 07:32:51)
+WoW [Release Assertions Enabled] Build 7468 (Oct 23 2007 05:07:41)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -9805,7 +9834,7 @@ type >= 0 && type < NUM_ACCOUNT_DATA_TYPES
 SaveTimerHandler
 %s.partial
 DivxDecoder.dll
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\SRP/HMAC.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\SRP/HMAC.h
 length <= LENGTH
 .\\ChecksumExecutables.cpp
 valid
@@ -9824,7 +9853,7 @@ whichLight < Gx_MaxLights
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\tempest\\cdyntable.h
 this->IsValid()
 this->Grow()
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\Source\\Tempest/cpriorityq.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\Source\\Tempest/cpriorityq.h
 \"CPriorityQ<T, B>: construction of base class failed.\"
 !CGxuLight::s_lights.Head()
 light->m_lockCount != 0
@@ -9912,7 +9941,7 @@ h == 256
 w == 256
 !m_texture
 pixelSize
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/MovementGlobals.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/MovementGlobals.h
 int(currUpdateTime - time) >= 0
 !initialized || (int(time - lastUpdateTime) >= 0)
 .\\Movement.cpp
@@ -10001,7 +10030,7 @@ Chain Reduction
 DPS Scaler
 Base
 index < (sizeof(m_remoteStats) / sizeof(m_remoteStats[0]))
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Ui/PartyFrame.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Ui/PartyFrame.h
 RANDOM_ROLL_RESULT
 .\\Player_C.cpp
 GUILD_INFO_TEMPLATE
@@ -10051,7 +10080,7 @@ srec
 REPORT_PVP_AFK_SENT
 !quest
 Unkown questID (%d) in QuestUpdate
-%I64u
+%016I64X
 %d%s%f%f%f%d%d
 inventory
 quantity > 0
@@ -10076,9 +10105,6 @@ Trainer service %d unavailable
 count < MAX_RAIDGROUP
 guid != CGPlayer_C::GetActive()
 COMBATLOG_HONORAWARD
-COPPER
-SILVER
-GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -10185,7 +10211,7 @@ Custom2
 Custom3
 m_baseObj
 m_baseObj && m_baseObj->CanUse()
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Game/ShipPath.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Game/ShipPath.h
 roll && pitch
 Unknown Object Type
 !\"FIXME: Unhandled display state\"
@@ -11078,10 +11104,6 @@ unable to set fallback mode
 unable to set default format
 unable to set last good mode
 unable to set requested display mode
-Unknown command
-SET videoOptionsVersion %d
-VIDEO_OPTIONS_RESET
-videoOptionsVersion
 Video options version
 maxFPSBk
 Set background FPS limit
@@ -11125,8 +11147,9 @@ ConsoleDeviceInitialize(): output device does not have dual TMUs!
 ConsoleDeviceInitialize(): hwDetect = %d, hwChanged = %d
 hwDetect
 do hardware detection
+Unknown command
 No help yet
-WoW [Release Assertions Enabled] Build 7441 (Oct 18 2007)
+WoW [Release Assertions Enabled] Build 7468 (Oct 23 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -11151,6 +11174,9 @@ WTF\\
 cvarlist
 cvar_default
 cvar_reset
+  pending value \"%s\"
+  reset value \"%s\"
+  default value \"%s\"
 CVar \"%s\" is \"%s\"
 cvar
 Resetting all cvars\n
@@ -11399,7 +11425,6 @@ SymGetLineFromAddr
 SymFunctionTableAccess
 StackWalk
 dbghelp.dll
-    %s
 <can't read from this address>
 %02X %02X %02X %02X
 %08X:
@@ -11509,9 +11534,11 @@ d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\
 %s%s/
 length < 256*1024
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\string\\String.cpp
+part
+\n#-----------------------------------------------------------\n# System started at %04d-%02d-%02d %02d:%02d:%02d.%04d\n# system: %s\n#-----------------------------------------------------------\n
+\n#-----------------------------------------------------------\n# %04d-%02d-%02d\n# system: %s\n#-----------------------------------------------------------\n
 /Assert.log
 %04d/%02d/%02d %02d:%02d:%02d  %s(%d) : Assertion failed: %s  \"%s\"\n
-part
 sector <= lastSector
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\mopaq\\IOMopaqSectorReadUnit.cpp
 Sector (%d) > last sector (%d)
@@ -11533,9 +11560,7 @@ result == WAIT_OBJECT_0
 mutex.debug != NULL
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\lock\\Mutex_Win32.cpp
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\log\\Log.cpp
-utf16Length >= 0
-d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\string\\StringConversion.cpp
-codepageChars >= 0
+logClass < MAX_CLASS
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\thread\\Thread.cpp
 Thread::TLSSlotIsAllocated( slot )
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\thread\\Thread_Win32.cpp
@@ -11572,13 +11597,18 @@ failed to open %s\n
 newFileName != NULL
 oldFileName != NULL
 0 == (mode & ~Blizzard::File::Mode::nocache)
+item != NULL
 FileManifest::ReadDirectFile - ReadDirectFileFromBuffer failed
 FileManifest::ReadDirectFile - LoadFile failed
+d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\SourceManifest.cpp
 len <= bufMax - 2
 String::Duplicate
 !\"Thread local storage could not be allocated\"
 !Thread::TLSSlotIsAllocated( slot )
 s_dependsCount < DEPENDS_MAX
+invalid map/set<T> iterator
+map/set<T> too long
+deque<T> too long
 alignMemoryTo > 0
 (alignMemoryTo & (alignMemoryTo - 1)) == 0
 Blizzard Web Client
@@ -11586,28 +11616,20 @@ Range: bytes=%lld-%lld\n
 If-Modified-Since: %s\n
 HEAD
 Blizzard::Memory
-item != NULL
-d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\SourceManifest.cpp
-\n#-----------------------------------------------------------\n# System started at %04d-%02d-%02d %02d:%02d:%02d.%04d\n# system: %s\n#-----------------------------------------------------------\n
-\n#-----------------------------------------------------------\n# %04d-%02d-%02d\n# system: %s\n#-----------------------------------------------------------\n
-logClass < MAX_CLASS
-Blizzard::Log
-Blizzard::ThreadLocalStorage
-Blizzard::File
-invalid map/set<T> iterator
-map/set<T> too long
-deque<T> too long
 Failed to read from url
 url=%s
+Blizzard::ThreadLocalStorage
+Blizzard::File
 uncname != NULL
 tasks[index]->TaskCycleIsComplete()
+!\"unable to create thread for TLS cleanup\"
+!\"unable to identify current thread\"
+!\"ran out of non-Core TLS entries\"
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\mopaq\\NewZerofill.h
 Transport::ReadDirectFile - GetItemTag failed
 version
 SourceManifest::ReadDirectfile - GetItemTag failed
-!\"unable to create thread for TLS cleanup\"
-!\"unable to identify current thread\"
-!\"ran out of non-Core TLS entries\"
+Blizzard::Log
 Transport::ReadIndirectFile - URL download error
 Transport::ReadIndirectFile - DownloadURL failed
 Transport::ReadDirectFile - failed to load file
@@ -11654,7 +11676,6 @@ subpath
 filename[0] != '\\0'
 d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\mopaq\\SFileFiles.cpp
 path[0] != '\\0'
-Blizzard::Using::GlobalUse
 .\\World.cpp
 baseObj
 *dist >= 0.0f && *dist <= 1.0f
@@ -11760,6 +11781,96 @@ textures\\Weather\\SnowMist01.blp
 Shaders\\Vertex\\snowpoint.bls
 Shaders\\Vertex\\sand.bls
 textures\\Weather\\WeatherMistGrainy01.blp
+Terrain LOD disabled.
+Terrain LOD enabled.
+Terrain shadows disabled.
+Terrain shadows enabled.
+DistCull must be in range 1.0 - %f.
+MaxLights must be in range 1 - %i.
+Shadow mip level changed upon restart.
+Shadow mip level must be in range 0 - 1.
+TexLodBias must be in range -1.0 - 1.0.
+FarClip must be in range (%f, %f).
+NearClip must be in range 0.01 - 0.33
+Value must be between 0.25 and 1.0.
+waterLOD fixed to 0
+Hiding foot prints.
+Showing foot prints.
+Triangle strips disabled on restart.
+Triangle strips enabled on restart.
+Footstep bias must be in the range (0, 1)
+Footstep bias set to %f
+Disabled hardware occlusion test.
+Using hardware occlusion test.
+Spell effect level set to %d.
+WorldPoolUsage must be Stream, Dynamic or Static.
+WorldPoolUsage set on restart.
+Dynamic
+Ground effect density must be in range %d to %d.
+Ground effect distance must be in range %0f to %0f.
+d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\worldclient\\CMapObj.h
+Specular disabled on restart.
+Specular not enabled.  Requires pixel shaders.
+Specular enabled on restart.
+MapObjOverbright disabled.
+MapObjOverbright not enabled.  Requires pixel shaders.
+MapObjOverbright enabled
+MapObjLightLOD must be 0-2
+BaseMip must be 0 or 1
+BaseMip level changed to %d
+HorizonFarClip must be in range %f - %f.
+BSP node cache already disabled.
+Disabling BSP node cache.
+.\\WorldParam.cpp
+Enabling BSP node cache (first time - starting up)
+Enabling BSP node cache (already enabled, so clearing content.)
+70.0
+groundEffectDist
+Ground effect dist
+Ground effect density
+worldPoolUsage
+CGxPool usage static/dynamic
+spellEffectLevel
+Video Option: Spell Effects
+occlusion
+Use hardware occlusion test
+footstepBias
+Unit footstep depth bias
+0.125
+triangleStrips
+Use triangle strips to render
+bspcache
+BSP node caching
+showfootprints
+toggles rendering of footprints
+horizonfarclip
+Far clip plane distance for horizon
+2112
+base mipmap level
+waterLOD
+Water geometry LOD
+particleDensity
+Video option: Particle density
+mapObjLightLOD
+Map object light LOD
+mapObjOverbright
+Map object overbright
+specular
+Specularity
+Near clip plane distance
+Far clip plane distance
+Texture LOD Bias
+Terrain shadow map mip level
+MaxLights
+Max number of hardware lights
+DistCull
+Object distance culling
+SmallCull
+Object size culling
+0.04
+mapShadows
+Video option: Toggle map shadows
+Video option: Toggle Lod
 **** Entered subzone with no name ****\n
 **** Entered %s subzone ****\n
 %s, %s
@@ -11790,112 +11901,6 @@ mapObjDefGroup->visLink.IsLinked() == 0
 mapObjDefGroup->frustumList.Head() == 0
 mapObjDefGroup
 inGroups.Count() != 0
-Terrain LOD disabled.
-Terrain LOD enabled.
-Full alpha on doodads disabled.
-Full alpha on doodads enabled.
-Doodad animation disabled.
-Doodad animation enabled.
-Terrain shadows disabled.
-Terrain shadows enabled.
-DistCull must be in range 1.0 - %f.
-MaxLights must be in range 1 - %i.
-Shadow mip level changed upon restart.
-Shadow mip level must be in range 0 - 1.
-TexLodBias must be in range -1.0 - 1.0.
-FarClip must be in range (%f, %f).
-NearClip must be in range 0.01 - 0.33
-Value must be between 0.25 and 1.0.
-Value must be between 100 and 300.
-waterLOD fixed to 0
-Hiding foot prints.
-Showing foot prints.
-Triangle strips disabled on restart.
-Triangle strips enabled on restart.
-Footstep bias must be in the range (0, 1)
-Footstep bias set to %f
-Disabled hardware occlusion test.
-Using hardware occlusion test.
-Spell effect level set to %d.
-WorldPoolUsage must be Stream, Dynamic or Static.
-WorldPoolUsage set on restart.
-Dynamic
-Ground effect density must be in range %d to %d.
-Ground effect distance must be in range %0f to %0f.
-d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\worldclient\\CMapObj.h
-Specular disabled.
-Specular unsupported on current API/HW.
-Specular enabled
-MapObjOverbright disabled.
-MapObjOverbright unsupported on current API/HW.
-MapObjOverbright enabled
-MapObjLightLOD must be 0-2
-Pixel shaders disabled.
-Pixel shaders unsupported on current API/HW.
-Pixel shaders enabled.
-BaseMip must be 0 or 1
-BaseMip level changed to %d
-HorizonFarClip must be in range %f - %f.
-BSP node cache already disabled.
-Disabling BSP node cache.
-.\\WorldParam.cpp
-Enabling BSP node cache (first time - starting up)
-Enabling BSP node cache (already enabled, so clearing content.)
-groundEffectDist
-Ground effect dist
-70.0
-Ground effect density
-worldPoolUsage
-CGxPool usage static/dynamic
-spellEffectLevel
-Video Option: Spell Effects
-occlusion
-Use hardware occlusion test
-footstepBias
-Unit footstep depth bias
-0.125
-triangleStrips
-Use triangle strips to render
-bspcache
-BSP node caching
-showfootprints
-toggles rendering of footprints
-horizonfarclip
-Far clip plane distance for horizon
-2112
-base mipmap level
-waterLOD
-Water geometry LOD
-unitDrawDist
-Unit draw distance
-300.0
-particleDensity
-Video option: Particle density
-pixelShaders
-Use pixel shaders
-mapObjLightLOD
-Map object light LOD
-mapObjOverbright
-Map object overbright
-specular
-Specularity
-Near clip plane distance
-Far clip plane distance
-Texture LOD Bias
-Terrain shadow map mip level
-MaxLights
-Max number of hardware lights
-DistCull
-Object distance culling
-SmallCull
-Object size culling
-0.04
-mapShadows
-Video option: Toggle map shadows
-Video option: Toggle doodad anim
-fullAlpha
-Video option: Toggle full alpha
-Video option: Toggle Lod
 ..\\..\\Common\\AaBsp.cpp
 faceIndices
 nodeList
@@ -11912,7 +11917,7 @@ XTextures\\ocean\\ocean_h.%d.blp
 XTextures\\river\\lake_a.%d.blp
 .\\MapWater.cpp
 liquid < LIQUID_COUNT
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\common\\MapDefs.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\common\\MapDefs.h
 pos.x >= 0 && pos.x < MD_LIQUID_NPOLY && pos.y >= 0 && pos.y < MD_LIQUID_NPOLY
 !\"CMapObjGroup::QueryLiquidSounds()\\n\"
 radius / (150.0f/36.0f) < 256.0f
@@ -11972,7 +11977,10 @@ areaMedList.Head() == 0
 areaList.Head() == 0
 layer
 area
+��u>
+CMap::VectorIntersectDX() to many iterations.  (%f,%f,%f) to (%f,%f,%f)
 .\\MapIntersect.cpp
+CMap::VectorIntersectDY() to many iterations.  (%f,%f,%f) to (%f,%f,%f)
 numFound < maxDoodadsToReturn
 scPtr
 queryFlags & (CWorld::WQF_doodadMask | CWorld::WQF_gameObjMask | CWorld::WQF_terrain | CWorld::WQF_allObjsAllGeo)
@@ -12075,7 +12083,7 @@ CMapChunk_vtx
 index < SMOGroup::NUM_FOGS
 index < fogCount
 this->IsValid() && i < iused
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Tempest/cpriorityq.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Tempest/cpriorityq.h
 this->Used() > 0
 .\\MapEntity.cpp
 mapObjDef->GetType() & Type_MapObjDef
@@ -12282,7 +12290,7 @@ INV_Misc_Coin_05
 .\\WeaponTrails.cpp
 !s_count
 s_count
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Ui/WorldFrame.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Ui/WorldFrame.h
 .\\PlayerName.cpp
 PlayerNames
 objPtr
@@ -12333,7 +12341,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 .\\ComSatClient.cpp
 !s_threadRunning
-WOWCOMSATCLIENT7441
+WOWCOMSATCLIENT7468
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
 COMSAT_STOP: NotifyLocalTalkerStop\r\n
@@ -12405,7 +12413,7 @@ origin.x == 0 && origin.y == 0 && origin.z == 0
 Textures\\sunGlare.blp
 Textures\\moonGlare.blp
 amount >= 0.0f && amount <= 1.0f
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Tempest/cdyntable.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Tempest/cdyntable.h
 SkyCloudLOD set to %i
 SkySunGlare
 0, 1
@@ -12866,8 +12874,8 @@ m_freeTail == &m_freeList
 !m_hitList
 .\\M2Scene.cpp
 !m_hitTest
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\source\\Tempest/cmath.h
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\source\\Gx/Gx.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\source\\Tempest/cmath.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Engine\\source\\Gx/Gx.h
 m_hitTest
 (int) m_refCount > 0
 CM2Scene::Animate: m_viewInv
@@ -13040,7 +13048,7 @@ BattlefieldStatusScreen
 BattlefieldAlertScreen
 PlayerInfoScreen
 WoWTitleScreen
-d:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Base/AVLTree.h
+d:\\buildserver\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\Base/AVLTree.h
 !\"Unknown compare type\"
 %d %s %d %s
 MINUTES_ABBR
@@ -13092,7 +13100,6 @@ no value
 stack overflow (%s)
 bad argument #%d to '%s' (%s)
 calling '%s' on bad self (%s)
-method
 bad argument #%d (%s)
 %s expected, got %s
 value expected
@@ -14343,6 +14350,7 @@ i9+=
 5SmT4
 *+xi(
 ?1-\nI
+�A�8�y�<
 ?ZEM-'^
 ?m}I\a
 <\"\x1BQ/
@@ -14461,6 +14469,22 @@ RegOpenKeyExW
 RegSetValueExW
 RegCreateKeyExW
 CreateFileW
+GetCurrentDirectoryW
+GetComputerNameW
+CreateEventW
+CreateSemaphoreW
+GetDiskFreeSpaceW
+GetFileAttributesExW
+SetCurrentDirectoryW
+FindNextFileW
+FindFirstFileW
+GetDiskFreeSpaceExW
+GetShortPathNameW
+CreateDirectoryW
+MoveFileW
+SetFileAttributesW
+DeleteFileW
+RemoveDirectoryW
 n?www?ff
 >fff?33s?
 ?fff?
@@ -15454,8 +15478,8 @@ d:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\
 .\\CSimpleMessageScrollFrame.cpp
 maxLines > 0
 .\\CSimpleSlider.cpp
-min <= max
 step >= 0.0f
+min <= max
 CMath::fnotequal_(GetLayoutScale(),0.0f)
 valueStep
 ThumbTexture
@@ -15879,10 +15903,12 @@ psnames
 truetype
 sfnt
 smooth
-ltuo
+ltuo@
 cinu
 raster5
 raster1
+ltuoPu
+ltuoPu
 zeta
 zdotaccent
 zacute
@@ -16981,7 +17007,6 @@ PCDATA
 PUBLIC
 REQUIRED
 SYSTEM
-GetDiskFreeSpaceExW
 DrawTextExW
 SOFTWARE\\Classes\\CLSID\\{FE750200-B72E-11d9-829B-0050DA1A72D3}\\ServerBinary
 GetInterface
@@ -17107,7 +17132,7 @@ GxTex_Anisotropic
 .PAUTEXTEMOTELOOKUP@@
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u>$׉
+��u>�\b�
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -17448,13 +17473,13 @@ tn.8q=
 .?AVIOCRCChecksumUnit@Blizzard@@
 .?AVIOMD5ChecksumUnit@Blizzard@@
 .?AVIOMopaqSectorReadUnitInternal@Blizzard@@
-.?AVIOCoreAlignedFileUnit@Blizzard@@
-.?AVIOMopaqUnitInternal@Blizzard@@
-.?AVTransportHttpCallback@Transport@File@Blizzard@@
 .?AVHttpCallback@Transport@File@Blizzard@@
 .?AVHttpCallback@FileManifest@File@Blizzard@@
 .?AVHttpCallback@SourceManifest@File@Blizzard@@
 .?AVout_of_range@std@@
+.?AVIOCoreAlignedFileUnit@Blizzard@@
+.?AVIOMopaqUnitInternal@Blizzard@@
+.?AVTransportHttpCallback@Transport@File@Blizzard@@
 .?AVIOMPQFileUnit@Blizzard@@
 .?AVIOReadOnlyMPQFileUnit@Blizzard@@
 .?AVIODiskFileUnit@Blizzard@@
