@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 2.4.1
-// Build: 8125
+// Patch: 0.4.2
+// Build: 8209
 
 Public Enum SpellFailedReason
 {
@@ -170,8 +170,9 @@ Public Enum SpellFailedReason
     SPELL_FAILED_PARTIAL_PLAYTIME = 0xA3,                           // 0x0A3
     SPELL_FAILED_NO_PLAYTIME = 0xA4,                                // 0x0A4
     SPELL_FAILED_NOT_IN_BATTLEGROUND = 0xA5,                        // 0x0A5
-    SPELL_FAILED_ONLY_IN_ARENA = 0xA6,                              // 0x0A6
-    SPELL_FAILED_TARGET_LOCKED_TO_RAID_INSTANCE = 0xA7,             // 0x0A7
-    SPELL_FAILED_UNKNOWN = 0xA8,                                    // 0x0A8
+    SPELL_FAILED_NOT_IN_RAID_INSTANCE = 0xA6,                       // 0x0A6
+    SPELL_FAILED_ONLY_IN_ARENA = 0xA7,                              // 0x0A7
+    SPELL_FAILED_TARGET_LOCKED_TO_RAID_INSTANCE = 0xA8,             // 0x0A8
+    SPELL_FAILED_UNKNOWN = 0xA9,                                    // 0x0A9
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }
