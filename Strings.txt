@@ -225,7 +225,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7195)
+World of WarCraft (build 7214)
 SendErrorLogs
 player hidden
 player visible
@@ -1506,8 +1506,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Aug 30 2007
-7195
+Sep  4 2007
+7214
 0.2.0
 RELEASE_BUILD
 BETA_BUILD
@@ -3696,7 +3696,6 @@ KBSetup_GetLanguageCount
 KBSetup_IsLoaded
 KBSetup_BeginLoading
 .\\KnowledgeBase.cpp
-Knowledge Base Error: Parent tag = %s
 &pageNumber=
 &numArticles=
 ?languageId=
@@ -7196,7 +7195,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7195 (Aug 30 2007 22:36:02)
+WoW [Release] Build 7214 (Sep  4 2007 22:36:31)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -8179,9 +8178,9 @@ unable to set fallback mode
 unable to set default format
 unable to set last good mode
 unable to set requested display mode
-gxMaxFPSBk
+maxFPSBk
 Set background FPS limit
-gxMaxFPS
+maxFPS
 Set FPS limit
 gxOverride
 gx overrides
@@ -8222,7 +8221,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7195 (Aug 30 2007)
+WoW [Release] Build 7214 (Sep  4 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8842,7 +8841,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token, [channel])
-WOWCOMSATCLIENT7195
+WOWCOMSATCLIENT7214
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -11565,10 +11564,10 @@ psnames
 truetype
 sfnt
 smooth
-ltuo Ix
 cinu
 raster5
 raster1
+ltuo
 ltuo
 zeta
 zdotaccent
@@ -13413,16 +13412,16 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>L��
+��u>T��
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
-��u>L��
+��u>T��
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u>L��
+��u>T��
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13473,7 +13472,7 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>L��
+��u>T��
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13483,7 +13482,7 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
-��u>L��
+��u>T��
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13511,7 +13510,7 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
-��u>L��
+��u>T��
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
