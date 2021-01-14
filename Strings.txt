@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6244)
+World of WarCraft (build 6282)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -635,8 +635,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Dec 15 2006
-14:02:15
+Dec 30 2006
+16:04:29
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1148,7 +1148,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6244
+6282
 2.0.3
 RELEASE_BUILD
 BETA_BUILD
@@ -1261,6 +1261,7 @@ SCANDLL_MESSAGE_DOWNLOADING
 SCANDLL_MESSAGE_ERROR
 SCANDLL_MESSAGE_SCANNING
 ScanThread
+%s%s%d
 Cache\\Survey.mpq
 E:\\build\\buildWoW\\WoW\\Source\\Glue\\SurveyDownloadGlue.cpp
 Cache
@@ -2772,7 +2773,6 @@ E:\\build\\buildWoW\\WoW\\Source\\Ui\\DressUpModelFrame.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\TabardModelFrame.h
 ..\\UIUtil/Tooltip.h
 DUNGEON_DIFFICULTY%d
-%s%s%d
 EXHAUSTION
 BREATH
 FEIGNDEATH
@@ -3353,6 +3353,7 @@ Usage: GetBattlefieldTeamInfo(index)
 stat
 healing
 damage
+class
 deaths
 kills
 Usgae: SortBattlefieldScoreData(\"type\")
@@ -3834,7 +3835,6 @@ Usage: GetLFGResults(type, lfgNdx, index)
 Usage: GetLFGPartyResults(type, lfgNdx, index, partyIndex)
 Usage: GetLFGTypeEntries(type)
 zone
-class
 level
 Usgae: SortLfg(\"type\")
 ArenaTeamRoster
@@ -5067,12 +5067,16 @@ ConsoleExec
 GetGameTime
 GetTime
 Unknown unit token: %s
+partypet%d
+raidpet%d
+-pet-
+-target-
+-pet
+-target
 focus
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 raidpet
 partypet
-raidpet%d
-partypet%d
 Usage: ConsoleExec(\"console_command\")
 Usage: UnitIsUnit(\"unit\", \"otherUnit\")
 Usage: UnitIsAFK(\"unit\")
@@ -6807,7 +6811,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6244 (Dec 15 2006 14:05:22)
+WoW [Release] Build 6282 (Dec 30 2006 16:07:30)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -6833,7 +6837,7 @@ CHAR_NAME_INVALID_CHARACTER
 CHAR_NAME_TOO_LONG
 CHAR_NAME_TOO_SHORT
 CHAR_NAME_NO_NAME
-CHAR_LOGIN_BY_BILLING
+CHAR_LOGIN_LOCKED_BY_BILLING
 CHAR_LOGIN_LOCKED_FOR_TRANSFER
 CHAR_LOGIN_NO_CHARACTER
 CHAR_LOGIN_DISABLED
@@ -6998,14 +7002,15 @@ macros-local.txt
 bindings-cache.wtf
 config-cache.wtf
 cache.md5
+E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\AccountData.cpp
 SaveTimerHandler
 %s.partial
 unicows.dll
 fmod.dll
 DivxDecoder.dll
 %hu.%hu.%hu.%hu
-HACK
 TROJAN
+HACK
 E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\CheckExecutableSignature.cpp
 LOGIN_STATE_CONNECTED
 REALM_LIST_CANTCONNECT
@@ -7366,11 +7371,11 @@ LOOT_ROLL_WON
 LOOT_ROLL_YOU_WON_NO_SPAM_GREED
 LOOT_ROLL_YOU_WON_NO_SPAM_NEED
 LOOT_ROLL_YOU_WON
-LOOT_ROLL_ROLLED_NEED
-LOOT_ROLL_ROLLED_GREED
 LOOT_ROLL_NEED
 LOOT_ROLL_PASSED
 LOOT_ROLL_GREED
+LOOT_ROLL_ROLLED_NEED
+LOOT_ROLL_ROLLED_GREED
 LOOT_ROLL_NEED_SELF
 LOOT_ROLL_PASSED_SELF
 LOOT_ROLL_GREED_SELF
@@ -8081,7 +8086,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6244 (Dec 15 2006)
+WoW [Release] Build 6282 (Dec 30 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -10844,7 +10849,7 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo@��
+ltuo@�
 smooth
 cinu
 raster5
