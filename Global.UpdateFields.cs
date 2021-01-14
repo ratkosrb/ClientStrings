@@ -1,6 +1,6 @@
 // Auto generated file
 // Patch: 2.0.3
-// Build: 6213
+// Build: 6244
 
 Public Enum EObjectFields
 {
@@ -313,7 +313,7 @@ Public Enum EPlayerFields
     PLAYER_FIELD_ARENA_CURRENCY = EUnitFields.UNIT_END + 0x4A6,                   // 0x582 - Size: 1 - Type: INT - Flags: PRIVATE
     PLAYER_FIELD_MOD_MANA_REGEN = EUnitFields.UNIT_END + 0x4A7,                   // 0x583 - Size: 1 - Type: FLOAT - Flags: PRIVATE
     PLAYER_FIELD_MOD_MANA_REGEN_INTERRUPT = EUnitFields.UNIT_END + 0x4A8,         // 0x584 - Size: 1 - Type: FLOAT - Flags: PRIVATE
-    PLAYER_FIELD_PADDING = EUnitFields.UNIT_END + 0x4A9,                          // 0x585 - Size: 1 - Type: INT - Flags: NONE
+    PLAYER_FIELD_MAX_LEVEL = EUnitFields.UNIT_END + 0x4A9,                        // 0x585 - Size: 1 - Type: INT - Flags: PRIVATE
     PLAYER_END = EUnitFields.UNIT_END + 0x4AA                                     // 0x586
 }
 Public Enum EGameObjectFields

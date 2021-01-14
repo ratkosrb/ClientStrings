@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6213)
+World of WarCraft (build 6244)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -183,8 +183,6 @@ patch-%s-?.MPQ
 Data\\%s\\
 patch-?.MPQ
 Failed to open archive %s
-Format version in %s file is not supported.
-base
 NGIS
 RELEASE
 %d.%d.%d
@@ -637,8 +635,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Dec  7 2006
-05:02:07
+Dec 15 2006
+14:02:15
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -841,15 +839,12 @@ SoundMemoryCache
 sound cache memory size (MB)
 SoundInitFlags
 sound initialization flags
-SoundSoftwareChannels
-sound software channels
+SoundUseHardware
+SoundNumChannels
+number of sound channels
 SoundMixRate
 sound mix rate (Hz)
 44100
-SoundMaxHardwareChannels
-sound maximum hardware channels
-SoundMinHardwareChannels
-sound minimum hardware channels
 SoundMixer
 sound mixer
 SoundDriver
@@ -888,7 +883,6 @@ INVALID GLUE SOUND KIT: \"%s\"
 %s%s%s
 E:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\ISoundInterface.cpp
 GhostMusic (DONOTRENAME)
-E:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterfaceZoneMusic.cpp
 Underwater (DONOTRENAME)
 Ghost (DONOTRENAME)
 EnableAmbience
@@ -1040,6 +1034,7 @@ CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
+CancelLogin
 RequestRealmSplitInfo
 SetRealmSplitState
 IsLinuxClient
@@ -1153,7 +1148,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6213
+6244
 2.0.3
 RELEASE_BUILD
 BETA_BUILD
@@ -1360,7 +1355,7 @@ GAMEOBJECT_ROTATION
 GAMEOBJECT_FLAGS
 GAMEOBJECT_DISPLAYID
 OBJECT_FIELD_CREATED_BY
-PLAYER_FIELD_PADDING
+PLAYER_FIELD_MAX_LEVEL
 PLAYER_FIELD_MOD_MANA_REGEN_INTERRUPT
 PLAYER_FIELD_MOD_MANA_REGEN
 PLAYER_FIELD_ARENA_CURRENCY
@@ -1694,6 +1689,7 @@ SPACE
 NONE
 SHIFT
 CTRL
+Dismount
 Sound_GetZoneAudioStats
 SetTaxiBenchmarkMode
 ShowTaxiBenchmarkMode
@@ -1886,10 +1882,10 @@ CancelPendingEquip
 EquipPendingItem
 DeleteCursorItem
 EquipCursorItem
+GetCursorInfo
 CursorHasMoney
-GetCursorSpell
+CursorHasMacro
 CursorHasSpell
-GetCursorItem
 CursorHasItem
 ClearCursor
 ResetCursor
@@ -1932,6 +1928,7 @@ TogglePerformanceValues
 TogglePerformanceDisplay
 GetFramerate
 SetConsoleKey
+GetMouseButtonClicked
 GetMouseButtonName
 IsMouseButtonDown
 IsAltKeyDown
@@ -1986,6 +1983,7 @@ INVTYPE_BODY
 INVTYPE_SHOULDER
 INVTYPE_NECK
 INVTYPE_HEAD
+ERR_SYSTEM_DISABLED
 ERR_ITEM_MAX_COUNT_SOCKETED
 ERR_SOCKETING_META_GEM_ONLY_IN_METASLOT
 ERR_SOCKETING_REQUIRES_META_GEM
@@ -2612,6 +2610,9 @@ ATTACK_CURSOR
 BUY_CURSOR
 CAST_CURSOR
 POINT_CURSOR
+money
+macro
+spell
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\GameUI.cpp
 Usage: EquipCursorItem(slot)
 Usage: EquipPendingItem(index)
@@ -3031,8 +3032,6 @@ CHAT_%s_NOTICE
 CHAT_CHANNEL_LIST_GET
 CHAT_FILTERED
 CHAT_IGNORED
-UNIT_PVP_NAME
-PVP_RANK_%d_%d
 %d. %s
 CHAT_EMOTE_UNKNOWN
 LAUGH_WORD%d
@@ -3352,7 +3351,6 @@ Usage: GetBattlefieldPosition(index)
 Usage: GetBattlefieldFlagPosition(index)
 Usage: GetBattlefieldTeamInfo(index)
 stat
-rank
 healing
 damage
 deaths
@@ -3608,9 +3606,11 @@ GetLootThreshold
 SetLootMethod
 GetLootMethod
 LeaveParty
+IsRealPartyLeader
 IsPartyLeader
 GetPartyLeaderIndex
 GetPartyMember
+GetRealNumPartyMembers
 GetNumPartyMembers
 (Debug-Only Lock Notice) %s
 INSTANCE_SAVED
@@ -3647,10 +3647,12 @@ ConvertToRaid
 SwapRaidSubgroup
 SetRaidSubgroup
 IsRaidOfficer
+IsRealRaidLeader
 IsRaidLeader
 GetRaidRosterSelection
 SetRaidRosterSelection
 GetRaidRosterInfo
+GetRealNumRaidMembers
 GetNumRaidMembers
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\RaidInfo.cpp
 Usage: GetRaidTargetIndex(unit)
@@ -4047,6 +4049,7 @@ Usage: GuildRosterSetOfficerNote(index, note)
 Usage: SetGuildRosterSelection(index)
 note
 online
+rank
 Usgae: SortGuildRoster(\"type\")
 Usage: GuildControlGetRankName(index)
 Usage: GuildControlSetRank(rank)
@@ -4348,8 +4351,6 @@ GetActionInfo
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\ActionBarFrame.cpp
 Interface\\Buttons\\Spell-Reset
 Usage: GetActionInfo(slot)
-macro
-spell
 Usage: GetActionTexture(slot)
 Usage: GetActionCount(slot)
 Usage: GetActionCooldown(slot)
@@ -4769,6 +4770,7 @@ clamp
 cond
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestTextParser.cpp
 INT_GENERAL_DURATION
+PVP_RANK_%d_%d
 SPELL_DURATION_UNTIL_CANCELLED
 SPELL_DURATION
 INT_SPELL_DURATION
@@ -5066,9 +5068,9 @@ GetGameTime
 GetTime
 Unknown unit token: %s
 focus
+E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 raidpet
 partypet
-E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 raidpet%d
 partypet%d
 Usage: ConsoleExec(\"console_command\")
@@ -5681,6 +5683,7 @@ Portrait2
 GetSpell
 GetItem
 GetUnit
+IsUnit
 SetExistingSocketGem
 SetSocketGem
 SetSocketedItem
@@ -5937,21 +5940,22 @@ ANCHOR_BOTTOMLEFT
 ANCHOR_BOTTOMRIGHT
 ANCHOR_RIGHT
 ANCHOR_LEFT
+%s:SetOwner(): Can't set owner to self
 %s:SetOwner(): Couldn't find 'this' in owner object
-Usage: SetText(\"text\" [, color])
-Usage: AppendText(\"text\")
-Usage: SetHyperlink(link)
-Unknown link type
+Usage: %s:SetText(\"text\" [, color])
+Usage: %s:AppendText(\"text\")
+Usage: %s:SetHyperlink(link)
+%s:SetHyperlink(): Unknown link type
 enchant:
-Usage: SetAction(slot)
+Usage: %s:SetAction(slot)
 ATTACK
-Usage: SetPetAction(slot)
-Usage: SetShapeshift(slot)
-Usage: SetPlayerBuff(buffIndex)
+Usage: %s:SetPetAction(slot)
+Usage: %s:SetShapeshift(slot)
+Usage: %s:SetPlayerBuff(buffIndex)
 SPELL_TIME_REMAINING
 Invalid spell slot in SetSpell
 Invalid inventory slot in SetInventoryItem
-Usage: SetInventoryItem(unit, slot [, nameOnly])
+Usage: %s:SetInventoryItem(unit, slot [, nameOnly])
 Invalid loot slot in SetInventoryItem
 Invalid quest item in SetQuestItem(\"type\", index)
 Invalid quest item in SetQuestLogItem(\"type\", index)
@@ -5963,17 +5967,19 @@ Invalid merchant slot in SetMerchantItem
 Invalid merchant slot in SetMerchantCostItem
 Invalid trade slot in SetTradePlayerItem
 Invalid trade slot in SetTradeTargetItem
-Usage: SetUnitBuff(\"unit\", index [,raidFilter])
-Usage: SetUnitDebuff(\"unit\", index [,raidFilter])
-Usage: SetTalent(tabIndex, talentIndex)
-Usage: SetInboxItem(index)
-Usage: SetAuctionItem(\"type\", index)
-Usage: SetAuctionCompareItem(\"type\", index [, offset])
-Usage: SetMerchantCompareItem(\"slot\" [, offset])
-Usage: SetBuybackItem(slot)
-Usage: SetLootRollItem(id)
-Usage: SetSocketGem(index)
-Usage: SetSocketGem(index, [toDestroy])
+Usage: %s:SetUnit(\"unit\")
+Usage: %s:SetUnitBuff(\"unit\", index [,raidFilter])
+Usage: %s:SetUnitDebuff(\"unit\", index [,raidFilter])
+Usage: %s:SetTalent(tabIndex, talentIndex)
+Usage: %s:SetInboxItem(index)
+Usage: %s:SetAuctionItem(\"type\", index)
+Usage: %s:SetAuctionCompareItem(\"type\", index [, offset])
+Usage: %s:SetMerchantCompareItem(\"slot\" [, offset])
+Usage: %s:SetBuybackItem(slot)
+Usage: %s:SetLootRollItem(id)
+Usage: %s:SetSocketGem(index)
+Usage: %s:SetSocketGem(index, [toDestroy])
+Usage: %s:IsUnit(\"unit\")
 E:\\build\\buildWoW\\WoW\\Source\\Net\\NetClient\\NetClient.cpp
 Client net stats: %Lu bytes sent, %Lu bytes received, %Lu msec elapsed
 Expected (m_netState == NS_INITIALIZED), got %d
@@ -6801,7 +6807,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6213 (Dec  7 2006 05:05:09)
+WoW [Release] Build 6244 (Dec 15 2006 14:05:22)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -7249,6 +7255,24 @@ UNHANDLEDANIMEVENT|%.4s
 INVALIDDISPLAYMODELRECORD|%d|%d
 NOCREATUREDISPLAYIDFOUND|%d
 Spells\\ErrorCube.mdx
+msgPoints[i-1]
+msgPoints[i]
+OnMonsterMove_pathPoints0
+OnMonsterMove_behindDir
+OnMonsterMove_pathPoints_n
+OnMonsterMove_pathPoints_compressed
+OnMonsterMove_endPoint1
+OnMonsterMove_point2
+OnMonsterMove_point1
+OnMonsterMove_behind2
+OnMonsterMove_position2
+OnMonsterMove_behind1
+OnMonsterMove_position1
+OnMonsterMove_final_facingAngle
+OnMonsterMove_final_facingSpot
+OnMonsterMove_squaredDist
+OnMonsterMove_rawpos
+OnMonsterMove_serverLoc
 CombatLogPeriodicSpells
 AutoInteract
 Toggles auto-move to interact target
@@ -7276,6 +7300,7 @@ FOREIGN_SERVER_LABEL
 \n<%s>
 Unknown Being
 Unknown Server
+UNIT_PVP_NAME
 NOUNITDISPLAYID|%d|%s
 NOCOLLISIONBOX|%s
 ZEROSCALEUNIT|%d|%s
@@ -7393,8 +7418,9 @@ HARDCODED Footstep Water Run Spray
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Effect_C.cpp
 **** CEffect::AddEffect called with ATTACH_NONE\n
 *** trouble in facing: \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \nbadmask=%d - model \"%s\" caster 0x%016I64X type %d entryID %d
-**** %s doesn't have attachement point for effect %i\n
+**** %s doesn't have attachment point %i\n
 Unknown Model
+**** CEffect::UpdateAttachment() called before %s finished loading\n
 Use ArtKit3
 Use ArtKit2
 Use ArtKit1
@@ -8055,7 +8081,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6213 (Dec  7 2006)
+WoW [Release] Build 6244 (Dec 15 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -8441,6 +8467,7 @@ Value out of range (%d - %d)\n
 **** Entered %s subzone ****\n
 %i, %i
 E:\\build\\buildWoW\\WoW\\Source\\WorldClient\\WorldScene.cpp
+EmoteDanceSpecial
 EmoteSaluteNoSheathe
 EmotePointNoSheathe
 EmoteTalkNoSheathe
@@ -9276,8 +9303,8 @@ nil --[[ skipped function %s (may be aliased) ]]
 ] =
 %s--[[ skipped entry with inf key ]]\r\n
 %s--[[ skipped entry with nan key ]]\r\n
+, -- [%d]\r\n
 nil --[[ skipped recursive table ]]
-nil --[[ unnamed object ]]
 %.16g
 nil --[[ inf ]]
 nil --[[ nan ]]
@@ -10817,11 +10844,9 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo���
-ltuo
+ltuo@��
 smooth
 cinu
-ltuo
 raster5
 raster1
    !
