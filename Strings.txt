@@ -225,7 +225,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7189)
+World of WarCraft (build 7195)
 SendErrorLogs
 player hidden
 player visible
@@ -248,7 +248,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<�̓
+���<�݃
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1506,8 +1506,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Aug 29 2007
-7189
+Aug 30 2007
+7195
 0.2.0
 RELEASE_BUILD
 BETA_BUILD
@@ -2298,7 +2298,7 @@ WINDOW %d\n
 COLORS\n
 ZONECHANNELS %d\n\n
 END\n\n
-%s %d\n
+%s %d %d\n
 CHANNELS\n
 %s %s\n\n
 STANDARD
@@ -2340,24 +2340,7 @@ target
 Usage: IsSilenced (token)
 Usage: UnitIsSilenced (token, [channel])
 Usage: GetMuteStatus (token, [channel])
-Usage: LeaveChannelByName(\"name\")
-SetGuildRecruitmentMode: invalid mode
-Usage: SetGuildRecruitmentMode(mode)
-SHOWN
-DOCKED
-LOCKED
-COLOR
-SIZE
-NAME
-MESSAGES
-ZONECHANNELS
-WINDOW
-COLORS
-CHANNELS
-ADDEDVERSION
-VERSION
 @#$%^&*
-AddChatNameToGUID:  %s = %I64d\n
 Usage: %s (\"name\")
 Usage: %s(\"name\", \"password\"), password cannot be more than %d characters
 Usage: %s(\"name\"), name cannot be more than %d characters
@@ -2441,7 +2424,23 @@ YOU_LEFT
 SUSPENDED
 YOU_JOINED
 YOU_CHANGED
+Usage: LeaveChannelByName(\"name\")
 Usage: ComplainChat(lineID) or ComplainChat(name) or ComplainChat(name, text)
+SetGuildRecruitmentMode: invalid mode
+Usage: SetGuildRecruitmentMode(mode)
+SHOWN
+DOCKED
+LOCKED
+COLOR
+SIZE
+NAME
+MESSAGES
+ZONECHANNELS
+WINDOW
+COLORS
+CHANNELS
+ADDEDVERSION
+VERSION
 VoicePushToTalkStop
 VoicePushToTalkStart
 Dismount
@@ -7197,7 +7196,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7189 (Aug 29 2007 22:35:09)
+WoW [Release] Build 7195 (Aug 30 2007 22:36:02)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -8223,7 +8222,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7189 (Aug 29 2007)
+WoW [Release] Build 7195 (Aug 30 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8843,7 +8842,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token, [channel])
-WOWCOMSATCLIENT7189
+WOWCOMSATCLIENT7195
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -11566,10 +11565,11 @@ psnames
 truetype
 sfnt
 smooth
+ltuo Ix
 cinu
 raster5
 raster1
-ltuo`
+ltuo
 zeta
 zdotaccent
 zacute
@@ -13110,10 +13110,9 @@ ADH~OqW/`
 FMOD ASIO Output
 ..\\src\\fmod_output_wasapi.cpp
 %S (%S)
-WASAPI mixer thread
-FMOD Record thread
 FMOD WASAPI Output
 ..\\src\\fmod_output_winmm.cpp
+FMOD Record thread
 FMOD WinMM Output
 DirectSoundCreate
 DirectSoundCaptureEnumerateA
@@ -13414,16 +13413,16 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>LЃ
+��u>L��
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
-��u>LЃ
+��u>L��
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u>LЃ
+��u>L��
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13455,12 +13454,14 @@ GcS68
 .?AV?$TSExplicitList@UPROFANITYCHECK@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USPAMCHECK@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UCHATNAME@@$0?CCCCCCCD@@@
+.?AV?$TSExplicitList@UCHANNEL_COUNT@@$0?CCCCCCCD@@@
 .?AUPENDINGWHISPER@@
 .?AUPENDINGCHAT@@
 .?AUPENDINGTEXTEMOTE@@
 .?AUPROFANITYCHECK@@
 .?AUSPAMCHECK@@
 .?AUCHATNAME@@
+.?AUCHANNEL_COUNT@@
 .?AUWORDLIST@@
 .?AUNearestUnitData@@
 .?AVC2iVector@NTempest@@
@@ -13472,7 +13473,7 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>LЃ
+��u>L��
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13482,7 +13483,7 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
-��u>LЃ
+��u>L��
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13510,7 +13511,7 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
-��u>LЃ
+��u>L��
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
