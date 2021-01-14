@@ -229,7 +229,7 @@ coresDetected
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7250)
+World of WarCraft (build 7261)
 SendErrorLogs
 player hidden
 player visible
@@ -252,7 +252,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<���
+���<�^�
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1510,8 +1510,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Sep 13 2007
-7250
+Sep 14 2007
+7261
 0.2.0
 RELEASE_BUILD
 BETA_BUILD
@@ -7197,7 +7197,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7250 (Sep 13 2007 07:21:04)
+WoW [Release] Build 7261 (Sep 14 2007 12:10:21)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -8226,7 +8226,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7250 (Sep 13 2007)
+WoW [Release] Build 7261 (Sep 14 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8846,7 +8846,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token, [channel])
-WOWCOMSATCLIENT7250
+WOWCOMSATCLIENT7261
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -9755,36 +9755,6 @@ Main network thread did not exit normally
 Main network thread did not send stop event normally
 Network
 Net Thread %d
-Unknown socket error %d
-A request to send or receive data was disallowed because the socket is not connected. The connection may have been reset.
-The specified socket type is not supported in this address family.
-The specified protocol is the wrong type for this socket.
-The specified protocol is not supported.
-The socket is marked as nonblocking and the connection cannot be completed immediately.
-The referenced socket is not a type that supports connection-oriented service.
-Attempt to connect timed out without establishing a connection.
-The descriptor is not a socket.
-No buffer space is available. The socket cannot be created/connected.
-No more socket descriptors are available.
-A blocking Windows Sockets 1.1 call is in progress, or the service provider is still processing a callback function.
-The attempt to connect was forcefully rejected.
-The specified address family is not supported.
-The network cannot be reached from this host at this time.
-The socket is already connected (connection-oriented sockets only).
-The socket is already bound to an address, or the parameter is a listening socket.
-A nonblocking connect call is in progress on the specified socket.
-The name or namelen parameter is not a valid part of the user address space, the namelen parameter is too small, the name parameter contains an incorrect address format for the associated address family, or the first two bytes of the memory block specified by name does not match the address family associated with the socket descriptor.
-The specified address is not a valid address for this machine.
-The blocking Windows Socket 1.1 call was canceled through WSACancelBlockingCall.
-A process on the machine is already bound to the same fully-qualified address and the socket has not been marked to allow address reuse.
-An attempt was made to access a socket in a way forbidden by its access permissions.
-The network subsystem or the associated service provider has failed.
-A successful WSAStartup call must occur before using this function.
-Unable to permit incoming connection attempts on socket
-Unable to establish a connection to socket
-Unable to associate local address with socket
-127.0.0.1
-Unable to establish TCP socket
 <Voice Chat>
 .\\ComSatSoundIOSoundEngine.cpp
 WSAIoctl
@@ -9949,24 +9919,14 @@ WSAStartup failed
 Internal error
 OsNet: (INFO): %s\n
 t[0x%08x] se[%u] we[%u]
-WSARecv
-WSASend
-GetAcceptExSockaddrs
-AcceptEx
-mswsock.dll
 %s 11
 %s 12
 %s:%u
 %s 1
 %s 2
-%s 3
-%s 4
 %s 13
 .\\W32\\OsTcp.cpp
 %s 7
-OsTcp_Base
-OsTcp_UdpPump
-OsTcp_Listen
 0\aw,a
 Qkkbal
 wn>Jj
@@ -11569,9 +11529,14 @@ psnames
 truetype
 sfnt
 smooth
+ltuo@
+ltuop
 cinu
 raster5
 raster1
+ltuoPmx
+ltuoPox
+ltuoPox
 zeta
 zdotaccent
 zacute
@@ -13312,12 +13277,12 @@ SOFTWARE\\Classes\\CLSID\\{FE750200-B72E-11d9-829B-0050DA1A72D3}\\ServerBinary
 GetInterface
 KERNEL32.dll
 WINMM.dll
-WSOCK32.dll
 OPENGL32.dll
 d3d9.dll
 VERSION.dll
 IMM32.dll
 WININET.dll
+WS2_32.dll
 USER32.dll
 GDI32.dll
 ADVAPI32.dll
@@ -13385,6 +13350,7 @@ AR&HW
 l`'\b
 +kEs\n
 fyLJ\b
+n~W$a
 .?AVCECC_LDPC@@
 .?AVCECC_Base@@
 GxTex_Unknown
@@ -13415,16 +13381,16 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>$��
+��u>$a�
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
-��u>$��
+��u>$a�
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u>$��
+��u>$a�
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13475,7 +13441,7 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>$��
+��u>$a�
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13485,7 +13451,7 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
-��u>$��
+��u>$a�
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13513,7 +13479,7 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
-��u>$��
+��u>$a�
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
@@ -13832,20 +13798,12 @@ UUe?
 .?AUCHARACTER_INFO@@
 .?AUREALMCONNECTIONNODE@RealmConnection@@
 .?AUData@Pending@Grunt@@
-.PAVWowConnection@@
 .PAVOutputChannel@Sound@ComSat@@
 .PAVCOsDialog@@
 .PAVCOsMenuBar@@
 .?AUOsIMECandidate@@
-.?ATNETADDR@@
 .?AV?$TSExplicitList@UNETSELSOCKPTR@OsNet@@$0?CCCCCCCD@@@
-.?AVNETCONN@OsNet@@
-.?AUNETCONNECT@OsNet@@
-.?AUINPUT@LOOPCONN@OsNet@@
 .?AUOUTPUT@OsNet@@
-.?AUNETSELSOCKPTR@OsNet@@
-.?AUTCPACCEPT@OsNet@@
-.?AUTCPLISTEN@OsNet@@
 .?AUW32Joystick@@
 .?AUSEChannelGroup@@
 .?AVSESoundInternal@@
