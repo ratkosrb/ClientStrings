@@ -1519,7 +1519,7 @@ START_GLUE_MUSIC
 SET_GLUE_SCREEN
 Oct  4 2007
 7359
-0.2.3
+2.2.3
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -7193,7 +7193,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7359 (Oct  4 2007 22:09:10)
+WoW [Release] Build 7359 (Oct  4 2007 22:08:12)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
