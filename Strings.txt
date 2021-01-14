@@ -215,7 +215,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6607)
+World of WarCraft (build 6624)
 SendErrorLogs
 player hidden
 player visible
@@ -1471,8 +1471,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Apr 23 2007
-6607
+Apr 26 2007
+6624
 0.1.0
 RELEASE_BUILD
 BETA_BUILD
@@ -2291,8 +2291,7 @@ ZONE_UNDER_ATTACK
 OLD_TITLE_LOST
 NEW_TITLE_EARNED
 [%d]: %s
-RAID_INSTANCE_WELCOME_HM
-RAID_INSTANCE_WELCOME_DH
+%s%d
 RAID_INSTANCE_WARNING_MIN_SOON
 RAID_INSTANCE_WARNING_MIN
 RAID_INSTANCE_WARNING_HOURS
@@ -2475,8 +2474,7 @@ GetRefreshRates
 SetScreenResolution
 GetCurrentResolution
 GetScreenResolutions
-CheckInteractD
-istance
+CheckInteractDistance
 RunScript
 StopCinematic
 SitStandOrDescendStart
@@ -2523,13 +2521,12 @@ BeginTrade
 ResurrectHasTimer
 ResurrectHasSickness
 DeclineResurrect
-AcceptResu
-rrect
+AcceptResurrect
 RepopMe
 RequestTimePlayed
 UninviteUnit
 InviteUnit
-NotifyInspect
+NotifyInsp
 CanInspect
 InitiateTrade
 GetMinimapZoneText
@@ -2839,7 +2836,6 @@ GAMEHIGHLIGHTHOSTILEUNIT
 INTERFACESOUND_CURSORDROPOBJECT
 %s_LABEL
 %s%d%d%d%d%s
-%s%d
 Usage: EquipCursorItem(slot)
 Usage: InitiateTrade(\"unit\")
 Usage: CanInspect(unit [, showError])
@@ -5471,6 +5467,8 @@ ConsoleExec
 GetGameTime
 GetTime
 Usage: ConsoleExec(\"console_command\")
+RAID_INSTANCE_WELCOME
+UPDATE_FLOATING_CHAT_WINDOWS
 CHAT_MSG_RESTRICTED
 CHAT_MSG_MONSTER_PARTY
 COMSAT_STOP
@@ -6927,7 +6925,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6607 (Apr 23 2007 11:10:45)
+WoW [Release] Build 6624 (Apr 26 2007 11:59:00)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7016,7 +7014,6 @@ HFACE
 .\\Movement.cpp
 SplineOpt
 toggles use of spline coll optimization
-CMovement_C::FlushMoveEvent encountered PMOVE_TIME_SYNC
 Mover at invalid position
 HARDCODED Resist Spell
 HARDCODED Reputation
@@ -7946,7 +7943,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6607 (Apr 23 2007)
+WoW [Release] Build 6624 (Apr 26 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -11205,9 +11202,14 @@ psnames
 truetype
 sfnt
 smooth
+ltuoP
+ltuoP
 cinu
 raster5
 raster1
+ltuo0\vv
+ltuo`\rv
+ltuo`\rv
 zeta
 zdotaccent
 zacute
