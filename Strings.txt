@@ -1474,7 +1474,7 @@ START_GLUE_MUSIC
 SET_GLUE_SCREEN
 May 15 2007
 6692
-0.1.0
+2.1.0
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -3884,6 +3884,9 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
+COPPER
+SILVER
+GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -6936,7 +6939,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6692 (May 15 2007 18:07:06)
+WoW [Release] Build 6692 (May 15 2007 18:06:04)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7127,9 +7130,6 @@ CHAT_FLAG_GM
 UnwrapGift
 BENCHMARK_TAXI_MODE_OFF
 BENCHMARK_TAXI_MODE_ON
-COPPER
-SILVER
-GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -11141,6 +11141,8 @@ ShuffleLeft
 CombatCritical
 CombatWound
 StandWound
+Rise      
+StandWound
 Rise
 Dead
 Walk
@@ -12872,5 +12874,3 @@ US]CQ
 .?AUCRibbonVertex@@
 .?AVCParticle@@
 \"3DUfw
-.?AULightningJoint@@
-.PAVCLightning@@
