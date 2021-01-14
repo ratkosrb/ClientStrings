@@ -215,7 +215,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6592)
+World of WarCraft (build 6607)
 SendErrorLogs
 player hidden
 player visible
@@ -236,7 +236,6 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<�+y
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -784,6 +783,7 @@ IsToplevel
 SetToplevel
 SetID
 GetID
+GetEffectiveAlpha
 SetScale
 GetScale
 GetEffectiveScale
@@ -827,9 +827,9 @@ Usage: %s:RegisterEvent(\"event\")
 Usage: %s:UnregisterEvent(\"event\")
 Usage: %s:GetAttribute(\"name\")
 Usage: %s:SetAttribute(\"name\", value)
-Usage: %s:SetAlpha(alpha 0 to 1)
 Usage: %s:SetScale(scale)
 %s:SetScale(): Scale must be > 0
+Usage: %s:SetAlpha(alpha 0 to 1)
 Usage: %s:SetID(ID)
 Usage: %s:SetHitRectInsets(left, right, top, bottom)
 Usage: %s:SetMinResize(minWidth, minHeight)
@@ -1471,8 +1471,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Apr 16 2007
-6592
+Apr 23 2007
+6607
 0.1.0
 RELEASE_BUILD
 BETA_BUILD
@@ -2475,7 +2475,8 @@ GetRefreshRates
 SetScreenResolution
 GetCurrentResolution
 GetScreenResolutions
-CheckInteractDistance
+CheckInteractD
+istance
 RunScript
 StopCinematic
 SitStandOrDescendStart
@@ -2522,7 +2523,8 @@ BeginTrade
 ResurrectHasTimer
 ResurrectHasSickness
 DeclineResurrect
-AcceptResurrect
+AcceptResu
+rrect
 RepopMe
 RequestTimePlayed
 UninviteUnit
@@ -2970,6 +2972,7 @@ ERR_UNINVITE_YOU
 ERR_BAD_PLAYER_NAME_S
 ERR_NOT_IN_GROUP
 ERR_TARGET_NOT_IN_GROUP_S
+ERR_TARGET_NOT_IN_INSTANCE_S
 ERR_GROUP_FULL
 ERR_NOT_LEADER
 ERR_PLAYER_DIED_S
@@ -3636,23 +3639,22 @@ Usage: GetPartyMember(1-4)
 MAINASSIST
 MAINTANK
 Invalid Party assignment
-Usage: GetPartyAssignment(\"assignment\")
+Usage: GetPartyAssignment(\"assignment\" [,\"raidmember\"] [,exactMatch])
 .\\PartyFrame.cpp
-READY_CHECK_ALL_READY
-RAID_MEMBERS_AFK
 ERROR!
 needbeforegreed
 group
 master
 roundrobin
 freeforall
-RAID_MEMBER_NOT_READY
 READY_CHECK_START
+READY_CHECK_ALL_READY
+RAID_MEMBERS_AFK
 Invalid loot method
 Usage: SetLootMethod(\"method\" [,master])
 Usage: SetLooThreshold(threshold)
-Usage: ClearPartyAssignment(\"assignment\", player)
-Usage: SetPartyAssignment(\"assignment\", player)
+Usage: %s(\"assignment\" [,\"raidmember\"] [,exactMatch])
+RAID_MEMBER_NOT_READY
 CheckReadyCheckTime
 ConfirmReadyCheck
 DoReadyCheck
@@ -4852,6 +4854,7 @@ Usage: UseContainerItem(index, slot[, target])
 Usage: ShowContainerSellCursor(index, slot)
 BACKPACK_TOOLTIP
 Usage: GetBagName(index)
+StopTradeSkillRepeat
 GetTradeSkillRecipeLink
 DoTradeSkill
 GetTradeskillRepeatCount
@@ -6141,6 +6144,56 @@ LOCKED_WITH_SPELL_KNOWN
 CORPSE_TOOLTIP
 TOOLTIP_TALENT_TIER_POINTS
 TOOLTIP_TALENT_PREREQ
+TOOLTIP_TALENT_LEARN
+SPELL_USE_ALL_HEALTH
+CHANCE_TO_CRIT
+CHANCE_TO_PARRY
+CHANCE_TO_BLOCK
+CHANCE_TO_DODGE
+ITEM_COOLDOWN_TIME
+%s (%d)
+SPELL_REAGENTS
+ITEM_REQ_REPUTATION
+SPELL_REQUIRED_FORM
+SPELL_REQUIRED_FORM_NOSPACE
+SPELL_EQUIPPED_ITEM
+SPELL_EQUIPPED_ITEM_NOSPACE
+SPELL_TOTEMS
+SPELL_RECAST_TIME_SEC
+SPELL_RECAST_TIME_MIN
+SPELL_CAST_TIME_INSTANT_NO_MANA
+SPELL_ON_NEXT_RANGED
+SPELL_ON_NEXT_SWING
+SPELL_CAST_TIME_INSTANT
+SPELL_CAST_CHANNELED
+SPELL_CAST_TIME_SEC
+SPELL_CAST_TIME_MIN
+SPELL_RANGE
+%d-%d
+MELEE_RANGE
+%s_PER_TIME
+HEALTH_COST
+TOOLTIP_TALENT_RANK
+%s: %s
+TOOLTIP_TALENT_NEXT_RANK
+MANA_COST
+RAGE_COST
+FOCUS_COST
+ENERGY_COST
+HAPPINESS_COST
+SPELL_USE_ALL_MANA
+SPELL_USE_ALL_RAGE
+SPELL_USE_ALL_FOCUS
+SPELL_USE_ALL_ENERGY
+SPELL_USE_ALL_HAPPINESS
+Usage: %s:SetPetAction(slot)
+Usage: %s:SetShapeshift(slot)
+Usage: %s:SetPlayerBuff(buffIndex)
+SPELL_TIME_REMAINING
+Invalid spell slot in SetSpell
+Usage: %s:SetUnit(\"unit\")
+Usage: %s:SetUnitBuff(\"unit\", index [,raidFilter])
+Usage: %s:SetUnitDebuff(\"unit\", index [,raidFilter])
 ITEM_UNSELLABLE
 ITEM_DISENCHANT_NOT_DISENCHANTABLE
 ITEM_DISENCHANT_ANY_SKILL
@@ -6152,7 +6205,6 @@ ITEM_WRAPPED_BY
 ITEM_CREATED_BY
 ITEM_WRITTEN_BY
 \"%s\"
-ITEM_COOLDOWN_TIME
 \t\t\t<setspelldesc_%d></setspelldesc_%d>\n
 </setspelldesc_%d>\n
 ITEM_SET_BONUS_GRAY
@@ -6160,7 +6212,6 @@ ITEM_SET_BONUS
 \t\t\t<setspelldesc_%d>
   %s
 ITEM_SET_NAME
-%s (%d)
 ITEM_SPELL_TRIGGER_ONUSE
 ITEM_SPELL_TRIGGER_ONPROC
 </spelldesc_%d>\n
@@ -6191,7 +6242,6 @@ ITEM_MOD_BLOCK_RATING
 ITEM_MOD_PARRY_RATING
 ITEM_MOD_DODGE_RATING
 ITEM_MOD_DEFENSE_SKILL_RATING
-ITEM_REQ_REPUTATION
 ITEM_SPELL_KNOWN
 ITEM_PROSPECTABLE
 ITEM_DURATION
@@ -6227,52 +6277,8 @@ PETITION_TITLE
 GUILD_CHARTER_TITLE
 CURRENTLY_EQUIPPED
 DESTROY_GEM
-TOOLTIP_TALENT_LEARN
-SPELL_USE_ALL_HEALTH
-CHANCE_TO_CRIT
-CHANCE_TO_PARRY
-CHANCE_TO_BLOCK
-CHANCE_TO_DODGE
-SPELL_REAGENTS
-SPELL_REQUIRED_FORM
-SPELL_REQUIRED_FORM_NOSPACE
-SPELL_EQUIPPED_ITEM
-SPELL_EQUIPPED_ITEM_NOSPACE
-SPELL_TOTEMS
-SPELL_RECAST_TIME_SEC
-SPELL_RECAST_TIME_MIN
-SPELL_CAST_TIME_INSTANT_NO_MANA
-SPELL_ON_NEXT_RANGED
-SPELL_ON_NEXT_SWING
-SPELL_CAST_TIME_INSTANT
-SPELL_CAST_CHANNELED
-SPELL_CAST_TIME_SEC
-SPELL_CAST_TIME_MIN
-SPELL_RANGE
-%d-%d
-MELEE_RANGE
-%s_PER_TIME
-HEALTH_COST
-TOOLTIP_TALENT_RANK
-%s: %s
-TOOLTIP_TALENT_NEXT_RANK
-MANA_COST
-RAGE_COST
-FOCUS_COST
-ENERGY_COST
-HAPPINESS_COST
-SPELL_USE_ALL_MANA
-SPELL_USE_ALL_RAGE
-SPELL_USE_ALL_FOCUS
-SPELL_USE_ALL_ENERGY
-SPELL_USE_ALL_HAPPINESS
 Usage: %s:SetHyperlink(link)
 %s:SetHyperlink(): Unknown link type
-Usage: %s:SetPetAction(slot)
-Usage: %s:SetShapeshift(slot)
-Usage: %s:SetPlayerBuff(buffIndex)
-SPELL_TIME_REMAINING
-Invalid spell slot in SetSpell
 Invalid inventory slot in SetInventoryItem
 Usage: %s:SetInventoryItem(unit, slot [, nameOnly])
 Invalid loot slot in SetInventoryItem
@@ -6286,9 +6292,7 @@ Invalid merchant slot in SetMerchantItem
 Invalid merchant slot in SetMerchantCostItem
 Invalid trade slot in SetTradePlayerItem
 Invalid trade slot in SetTradeTargetItem
-Usage: %s:SetUnit(\"unit\")
-Usage: %s:SetUnitBuff(\"unit\", index [,raidFilter])
-Usage: %s:SetUnitDebuff(\"unit\", index [,raidFilter])
+Usage: %s:SetTalent(tabIndex, talentIndex)
 Usage: %s:SetInboxItem(index)
 Usage: %s:SetAuctionItem(\"type\", index)
 Usage: %s:SetHyperlinkCompareItem(\"hyperlink\" [, offset])
@@ -6298,7 +6302,6 @@ Usage: %s:SetSocketGem(index)
 Usage: %s:SetSocketGem(index, [toDestroy])
 Usage: %s:SetAction(slot)
 ATTACK
-Usage: %s:SetTalent(tabIndex, talentIndex)
 UnableSkinAlliance
 UnableSkinHorde
 UnableItem
@@ -6924,7 +6927,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6592 (Apr 16 2007 15:00:55)
+WoW [Release] Build 6607 (Apr 23 2007 11:10:45)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7011,6 +7014,8 @@ BATCHEDRENDERFONTDESC_idx
 HFACE
 .\\IGxuFontGlyph.cpp
 .\\Movement.cpp
+SplineOpt
+toggles use of spline coll optimization
 CMovement_C::FlushMoveEvent encountered PMOVE_TIME_SYNC
 Mover at invalid position
 HARDCODED Resist Spell
@@ -7202,6 +7207,8 @@ Spells\\ErrorCube.mdx
 %s: %d
 Bow model '%s' equipped without proper events.  Bowstring won't draw.
 CombatLogPeriodicSpells
+autoDismountFlying
+autoDismount
 Toggles auto-move to interact target
 TargetAnim
 Toggle display of player's target anims in the debug window
@@ -7218,7 +7225,6 @@ PetSpellDamage
 Toggle display of in-world pet spell damage feedback
 PetMeleeDamage
 Toggle display of in-world pet melee damage feedback
-autoDismount
 Unknown Being
 Unknown Server
 UNIT_PVP_NAME
@@ -7940,7 +7946,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6592 (Apr 16 2007)
+WoW [Release] Build 6607 (Apr 23 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -9774,7 +9780,6 @@ f\a@=
 x\vI=
 V%A+=
 4';=
-�1&�3�
 b\aH=
 P'E=
 ls1=
@@ -12400,7 +12405,7 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>�.y
+��u>�>y
 .?AUAISOUNDDESC@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
@@ -12460,14 +12465,14 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>�.y
+��u>�>y
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
 .?AUTUTORIALTIMER@@
 .PAUSpellBookSkillInfo@@
 .?AUCombatFeedbackSpell@@
-��u>�.y
+��u>�>y
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
