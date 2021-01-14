@@ -114,7 +114,7 @@ Burning Crusade Closed Beta
 InstallPath
 Blizzard Entertainment World of Warcraft
 WoW.stor
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\Object/ObjectClient/Player_C.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\Object/ObjectClient/Player_C.h
 World transfer aborted...
 TRANSFER_ABORT_DIFFICULTY%d
 TRANSFER_ABORT_INSUF_EXPAN_LVL%d
@@ -198,14 +198,14 @@ BENCHMARK_TAXI_AVERAGE_FPS
 BENCHMARK_TAXI_MAX_FPS
 BENCHMARK_TAXI_MIN_FPS
 BENCHMARK_TAXI_RESULTS
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\DB/WowClientDB.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\DB/WowClientDB.h
 %s: Cannot read string table
 %s has wrong row size (found %i, expected %i)
 %s has wrong number of columns (found %i, expected %i)
 Unable to open %s
 %s already loaded! Aborting to prevent memory leak!
 Bad zone ID %i
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\WowServices/PatchFiles.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\WowServices/PatchFiles.h
 patch-%s-2.MPQ
 patch-2.MPQ
 patch-%s-3.MPQ
@@ -273,7 +273,7 @@ dbCompress
 Database compression
 Config.wtf
 WoW.mfil
-World of WarCraft (build 8268)
+World of WarCraft (build 8278)
 SendErrorLogs
 player hidden
 player visible
@@ -508,10 +508,10 @@ MessageBoxW
 RemovePropA
 SetPropA
 SetWindowLongA
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\Storm\\h\\stpl.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\Storm\\h\\stpl.h
 SoundMemoryCache
 sound cache memory size (MB)
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\soundengine\\SoundCache.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\soundengine\\SoundCache.h
 Blizzard::Mopaq
 .\\SoundCache.cpp
 Unknown error.
@@ -701,8 +701,8 @@ Sound_EnableMode2
 => Setting up Game Sound:
 => Version %s (%s) %s
 0.4.2
-8268
-Apr 29 2008
+8278
+May  1 2008
 Logs\\Sound.log
 Logs\\SESound.log
 Logs
@@ -1888,7 +1888,7 @@ SPELL_FAILED_ALREADY_AT_FULL_HEALTH
 SPELL_FAILED_AFFECTING_COMBAT
 player
 .\\Spell_C.cpp
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/ObjectClient/Player_C.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/ObjectClient/Player_C.h
 PETTAME_UNKNOWNERROR
 PETTAME_NOTDEAD
 PETTAME_DEAD
@@ -2034,7 +2034,7 @@ LeftButton
 CHAT_MSG_BATTLEGROUND
 CHAT_MSG_RAID
 CHAT_MSG_PARTY
-WOWCOMSATCLIENT8268
+WOWCOMSATCLIENT8278
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -2093,7 +2093,7 @@ StartTalkingTime
 StartTalkingDelay
 ���<��L=���=���=
 >333>
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\storm\\h\\stpl.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\storm\\h\\stpl.h
 SunGlare disabled
 SunGlare enabled.  Don't look directly at it.
 Textures\\moon02.blp
@@ -2105,7 +2105,7 @@ SkyCloudLOD set to %i
 SkySunGlare
 0, 1
 SkyCloudLOD
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\DB/WowClientDB.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\DB/WowClientDB.h
 Detail doodads enabled.
 Detail doodads disabled.
 Terrain culling enabled.
@@ -2610,24 +2610,24 @@ RwN8\b
 E+{ez
 GenuineIntelAuthenticAMDCyrixInsteadCentaurHalls
 GlobalMemoryStatusEx
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\memory\\StackedAllocator.cpp
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\iounit\\IOUnitContainer.cpp
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\mopaq\\SFile.cpp
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Filestack_Win32.cpp
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\memory\\StackedAllocator.cpp
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\iounit\\IOUnitContainer.cpp
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\mopaq\\SFile.cpp
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Filestack_Win32.cpp
 allocation failed
 get size failed
 SMemAlloc cannot allocate a block this big
 realloc cannot allocate a block this big
 MemFill currently cannot handle a block this big
 String::Duplicate
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\iounit\\IOAlignUnit.cpp
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\iounit\\IOAlignUnit.cpp
 (attributes)
 Blizzard Web Client
 %s.%d
 %s.%s
 %s%s/
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\string\\String.cpp
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\iounit\\IOFileUnit.cpp
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\string\\String.cpp
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\iounit\\IOFileUnit.cpp
 Range: bytes=%lld-%lld\n
 If-Modified-Since: %s\n
 HEAD
@@ -2641,13 +2641,13 @@ failed to open %s\n
 Blizzard::ThreadLocalStorage
 Blizzard::File
 Blizzard::Using::GlobalUse
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Filestack_Streaming.cpp
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Filestack_Streaming.cpp
 FileManifest::ReadDirectFile - ReadDirectFileFromBuffer failed
 FileManifest::ReadDirectFile - LoadFile failed
 invalid map/set<T> iterator
 map/set<T> too long
 deque<T> too long
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\mopaq\\NewZerofill.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\packages\\mopaq\\NewZerofill.h
 Transport::ReadDirectFile - GetItemTag failed
 version
 SourceManifest::ReadDirectfile - GetItemTag failed
@@ -2829,7 +2829,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 8268 (Apr 29 2008)
+WoW [Release] Build 8278 (May  1 2008)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -2973,7 +2973,7 @@ PVP_RANK_%d_%d
 REPORT_PVP_AFK_SENT
 NOCOLLISIONBOX|%s
 ZEROSCALEUNIT|%d|%s
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\object\\objectclient\\Player_C.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\object\\objectclient\\Player_C.h
 Unkown questID (%d) in QuestUpdate
 Not enough skill points for trainer service %d
 Not enough money for trainer service %d
@@ -3646,7 +3646,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 8268 (Apr 29 2008 23:05:10)
+WoW [Release] Build 8278 (May  1 2008 08:02:38)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -3655,7 +3655,7 @@ Processors:\t%u\n
 Computer:\t%s\n
 Username:\t%s\n
 intel
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\WowSvcs/WowSvcsClientServices.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\WowSvcs/WowSvcsClientServices.h
 %s#CN
 %s#KR
 %s#US
@@ -3690,7 +3690,7 @@ GetSelectedFriend
 SetSelectedFriend
 GetFriendInfo
 GetNumFriends
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\wowsvcs\\wowsvcsclient\\FriendList.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\wowsvcs\\wowsvcsclient\\FriendList.h
   %s\n
 Account: %s\n
 Not found\n
@@ -5006,14 +5006,14 @@ deDE
 frFR
 koKR
 Cache/%s/%s
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/CreatureStats.h
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/GameObjectStats.h
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/ItemName.h
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/ItemStats.h
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/NPCText.h
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Game/GameClient/NameCache.h
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/PageTextCache.h
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Game/GameClient/PetNameCache.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/CreatureStats.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/GameObjectStats.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/ItemName.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/ItemStats.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/NPCText.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Game/GameClient/NameCache.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Object/PageTextCache.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\Game/GameClient/PetNameCache.h
 OsCreateFile failed for cache file: %s\n
 %s/%s
 DBCache::CancelCallback ignored for id %016I64X.
@@ -5312,7 +5312,7 @@ Client net stats: %Lu bytes sent, %Lu bytes received, %Lu msec elapsed
 Expected (m_netState == NS_INITIALIZED), got %d
 Received pong with old sequence
 NetClient::HandleDisconnect()
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\net\\NetInternal.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\net\\NetInternal.h
 ..\\NetInternal.cpp
 Interface\\FrameXML\\FrameXML.toc
 .\\AddOns.cpp
@@ -5398,7 +5398,7 @@ DescendStop
 AscendStop
 JumpOrAscendStart
 .\\InputControl.cpp
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\uiutil\\InputControl.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\uiutil\\InputControl.h
 Joystick
 enable joystick control
 Usage: SetMouselookOverrideBinding(\"key\", \"binding\" or nil)
@@ -6841,7 +6841,7 @@ Usage: DoEmote(\"emote\"[, \"target\"])
 Usage: CanComplainChat(lineID) or CanComplainChat(name) or CanComplainChat(name, text)
 RAID_INSTANCE_INFO_FMT
 BATTLEFIELDS
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\ChatFrame.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\ChatFrame.h
 Warning: invalid chat spam filter expression: \"%s\" (ID #: %d)\n
 Usage: AddChatWindowChannel(index, \"channel\")
 CHANNEL%d
@@ -7302,13 +7302,13 @@ INVTYPE_BODY
 INVTYPE_SHOULDER
 INVTYPE_NECK
 INVTYPE_HEAD
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\WorldFrame.h
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\MinimapFrame.h
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\TaxiRouteFrame.h
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\CharacterModelBase.h
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\DressUpModelFrame.h
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\TabardModelFrame.h
-e:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\UIUtil/Tooltip.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\WorldFrame.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\MinimapFrame.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\TaxiRouteFrame.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\CharacterModelBase.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\DressUpModelFrame.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\TabardModelFrame.h
+c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_2-branch\\WoW\\Source\\UIUtil/Tooltip.h
 EQUALS
 DECIMAL
 DIVIDE
@@ -7410,7 +7410,7 @@ AUTOLOOTTOGGLE
 EXHAUSTION
 BREATH
 FEIGNDEATH
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\Cooldown.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\Cooldown.h
 \"%s\" is read-only
 Usage: SetCVar(\"cvar\", value [, \"scriptCvar\")
 merchant
@@ -7502,7 +7502,7 @@ GAMEHIGHLIGHTHOSTILEUNIT
 INTERFACESOUND_CURSORDROPOBJECT
 %s_LABEL
 %s%d%d%d%d%s
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\base\\Status.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\base\\Status.h
 Usage: EquipCursorItem(slot)
 Usage: CanInspect(unit [, showError])
 Usage: NotifyInspect(unit)
@@ -8553,7 +8553,7 @@ Usage: SecureCmdOptionParse(\"options\")
 Usage: GetMacroIconInfo(index)
 Usage: GetMacroItemIconInfo(index)
 .\\UIMacros.cpp
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\UIMacros.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\UIMacros.h
 .tga
 .blp
 INV_
@@ -8849,7 +8849,7 @@ BUTTON4
 BUTTON3
 BUTTON2
 BUTTON1
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\UIBindings.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\ui\\UIBindings.h
 Usage: GetBinding(index)
 Usage: GetBindingKey(\"COMMAND\")
 Usage: GetModifiedClickAction(index)
@@ -10184,7 +10184,7 @@ gameTip
 CHAR_RENAME_DESCRIPTION
 CHAR_RENAME_FAILED
 CHAR_DECLINE_FAILED
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\glue\\../WowSvcs/WowSvcsClientServices.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\glue\\../WowSvcs/WowSvcsClientServices.h
 GRUNT: state: %s result: %s %s
 Interface\\Cursor\\Point.blp
 GlueXML is modified or corrupt
@@ -10513,7 +10513,7 @@ Enables/disables allocation tracking & dumping in SMemMalloc
 HeapUsage2
 MemUsage
 .\\ObjectAlloc.cpp
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\objectalloc\\IObjectAlloc.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\wow\\source\\objectalloc\\IObjectAlloc.h
     \"%24s\" %3u blocks, %5u objs per block (%6u bytes per obj): %6u objs allocated (%2d%%)\n
 MUSIC
 AMBIENCE
@@ -10730,7 +10730,7 @@ HTEXTFONT
 fontName
 CParticleEmitter2_idx
 .\\GfxSingletonManager.cpp
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\services\\ParticleSystem2.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\services\\ParticleSystem2.h
 HCAMERA
 .\\LAYER.CPP
 %s\\WoWScrnShot_%s.jpg
@@ -10928,7 +10928,7 @@ NormalTexture
 DisabledCheckedTexture
 CheckedTexture
 checked
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\frame\\CSimpleEditBox.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\frame\\CSimpleEditBox.h
 return function(self,text) %s end
 OnCharComposition
 OnEditFocusLost
@@ -11018,7 +11018,7 @@ frameStrata
 resizable
 movable
 toplevel
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\frame\\CSimpleMessageFrame.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\frame\\CSimpleMessageFrame.h
 .\\CSimpleMessageFrame.cpp
 BOTTOM
 insertMode
@@ -11040,7 +11040,7 @@ OnHorizontalScroll
 Frame %s: Scroll frame created without scroll child
 ScrollChild
 OnMessageScrollChanged
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\frame\\CSimpleMessageScrollFrame.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\frame\\CSimpleMessageScrollFrame.h
 .\\CSimpleMessageScrollFrame.cpp
 return function(self,value) %s end
 OnValueChanged
@@ -11590,7 +11590,7 @@ Context: interactive = %u, idleTime = %u
 context
 Error, attempt to kill eventID %d with mismatching handler (%s)!
 .\\EvtTimer.cpp
-e:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\base\\CDataStore.h
+c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_2-branch\\engine\\source\\base\\CDataStore.h
 nowarnings
 22050
 fullscreen
