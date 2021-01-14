@@ -229,7 +229,7 @@ coresDetected
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7272)
+World of WarCraft (build 7286)
 SendErrorLogs
 player hidden
 player visible
@@ -252,7 +252,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<�^�
+���<�n�
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1510,9 +1510,9 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Sep 17 2007
-7272
-2.2.0
+Sep 19 2007
+7286
+0.2.2
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -3833,7 +3833,9 @@ cond
 TARGET_TOKEN_NOT_FOUND
 FOCUS_TOKEN_NOT_FOUND
 SLURRED_SPEECH
-INT_GENERAL_DURATION
+INT_GENERAL_DURATION_MIN
+INT_GENERAL_DURATION_HOURS
+INT_GENERAL_DURATION_DAYS
 PVP_RANK_%d_%d
 %.2f
 SPELL_DURATION_UNTIL_CANCELLED
@@ -7200,7 +7202,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7272 (Sep 17 2007 14:59:12)
+WoW [Release] Build 7286 (Sep 19 2007 18:21:06)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7318,10 +7320,10 @@ HARDCODED Footstep Water Walk Spray
 HARDCODED Footstep Water Run Spray
 .\\Effect_C.cpp
 *** trouble in facing: \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \n$%08x $%08x $%08x $%08x - \nbadmask=%d - model \"%s\" caster 0x%016I64X type %d entryID %d
-**** CEffect::AddEffect called with ATTACH_NONE\n
 **** %s doesn't have attachment point %i\n
 Unknown Model
 **** CEffect::UpdateAttachment() called before %s finished loading\n
+**** CEffect::AddEffect called with ATTACH_NONE\n
 Maximum Attacker Damage
 Pet Happiness Mult
 Melee Crit/Glance/Crush
@@ -8226,7 +8228,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7272 (Sep 17 2007)
+WoW [Release] Build 7286 (Sep 19 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8339,7 +8341,6 @@ AUDIOSTREAM
 (hash table)
 *archivename
 archivename
-.\\SSignature.cpp
 Missing Debugging DLL
 Couldn't locate the \"DbgHelp.dll\" debugging DLL.\n\nSome debugging information will be missing from error log files. Press OK to continue, or press Cancel to terminate the program.
 written
@@ -8411,6 +8412,7 @@ Original exception:\r\n
 Exception handler died\r\n
 Errors\\exception-failed.txt
 0x%08X (%s) at %04X:%08X
+.\\SSignature.cpp
 Unable to open response file: %s
 The syntax of the command is incorrect.
 Invalid argument: %s
@@ -8456,7 +8458,6 @@ bzip2Compress:%d
 .\\W32\\SDir.cpp
 .\\IOUnit\\IOAlignUnit.cpp
 .\\IOUnit\\IOARC4Unit.cpp
-.\\SBig.cpp
 MiniDumpWriteDump
 SymEnumerateSymbols
 SymEnumerateModules
@@ -8512,6 +8513,7 @@ EDI=%08X  EBP=%08X  ESP=%08X  EIP=%08X  FLG=%08X
 EAX=%08X  EBX=%08X  ECX=%08X  EDX=%08X  ESI=%08X
 x86 Registers
 psapi.dll
+.\\SBig.cpp
 TryEnterCriticalSection
 .\\SEvt.cpp
 Detail doodads enabled.
@@ -8846,7 +8848,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token, [channel])
-WOWCOMSATCLIENT7272
+WOWCOMSATCLIENT7286
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -11531,10 +11533,10 @@ psnames
 truetype
 sfnt
 smooth
-ltuo
 cinu
 raster5
 raster1
+ltuopxx
 zeta
 zdotaccent
 zacute
@@ -13348,7 +13350,7 @@ AR&HW
 l`'\b
 +kEs\n
 fyLJ\b
-n~W$a
+n~W$q
 .?AVCECC_LDPC@@
 .?AVCECC_Base@@
 GxTex_Unknown
@@ -13379,16 +13381,16 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>$a�
+��u>$q�
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
-��u>$a�
+��u>$q�
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u>$a�
+��u>$q�
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13439,7 +13441,7 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>$a�
+��u>$q�
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13449,7 +13451,7 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
-��u>$a�
+��u>$q�
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13477,7 +13479,7 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
-��u>$a�
+��u>$q�
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
