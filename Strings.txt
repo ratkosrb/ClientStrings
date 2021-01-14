@@ -14,6 +14,7 @@ uptodate
 640x480
 speech2
 speech2.MPQ
+expansionloc.MPQ
 expansion.MPQ
 dbc.MPQ
 speech.MPQ
@@ -51,7 +52,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5610)
+World of WarCraft (build 5665)
 SendErrorLogs
 %s%s
 World of Warcraft
@@ -598,8 +599,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Aug 16 2006
-22:04:57
+Aug 29 2006
+23:06:06
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -743,6 +744,7 @@ Unique Texture No Name
 texture
 Error loading %s file \"%s\": %s\n
 CreateBlpTexture() failed read: %s.\n
+Texture failure: \"%s\" allocating %dx%d texture failed.\n
 Texture failure: \"%s\" decompression failed.\n
 Texture failure: \"%s\" invalid file version\n
 Solid Texture
@@ -841,6 +843,7 @@ enablemusic
 %s%s%s
 E:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\ISoundInterface.cpp
 GhostMusic (DONOTRENAME)
+E:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterfaceZoneMusic.cpp
 Underwater (DONOTRENAME)
 Ghost (DONOTRENAME)
 EnableAmbience
@@ -984,6 +987,8 @@ CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
+StopGlueAmbience
+PlayGlueAmbience
 PINEntered
 SurveyNotificationDone
 GetBillingTimeRested
@@ -1070,13 +1075,14 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5610
+5665
 2.0.0
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
 Usage: SetCurrentScreen(\"screen\")
 Usage: PlayGlueMusic(\"filename\")
+Usage: PlayGlueAmbience(\"sound name\")
 %dx%d
 Usage: LaunchURL(\"URL\")
 Usage: DefaultServerLogin(\"accountName\", \"password\")
@@ -1312,6 +1318,7 @@ PLAYER_CHARACTER_POINTS1
 PLAYER_SKILL_INFO_1_1
 PLAYER_NEXT_LEVEL_XP
 PLAYER_XP
+PLAYER__FIELD_KNOWN_TITLES
 PLAYER__FIELD_COMBO_TARGET
 PLAYER_FARSIGHT
 PLAYER_FIELD_KEYRING_SLOT_1
@@ -1320,6 +1327,8 @@ PLAYER_FIELD_BANKBAG_SLOT_1
 PLAYER_FIELD_BANK_SLOT_1
 PLAYER_FIELD_PACK_SLOT_1
 PLAYER_FIELD_INV_SLOT_HEAD
+PLAYER_FIELD_PAD_0
+PLAYER_CHOSEN_TITLE
 PLAYER_VISIBLE_ITEM_19_PAD
 PLAYER_VISIBLE_ITEM_19_PROPERTIES
 PLAYER_VISIBLE_ITEM_19_0
@@ -1445,7 +1454,6 @@ PLAYER_GUILDRANK
 PLAYER_GUILDID
 PLAYER_FLAGS
 PLAYER_DUEL_ARBITER
-UNIT_FIELD_PADDING
 UNIT_FIELD_POWER_COST_MULTIPLIER
 UNIT_FIELD_POWER_COST_MODIFIER
 UNIT_FIELD_MAXRANGEDDAMAGE
@@ -1555,6 +1563,13 @@ PlayerFadeInRate
 fade in rate for player mouseover
 4096
 IDLE_MESSAGE
+GetTitleName
+IsTitleKnown
+SetCurrentTitle
+GetCurrentTitle
+GetNumTitles
+GetMirrorTimerProgress
+GetMirrorTimerInfo
 ReportSuggestion
 ReportBug
 SetDungeonDifficulty
@@ -1705,6 +1720,7 @@ AutoEquipCursorItem
 ClearTarget
 FollowByName
 FollowUnit
+FocusTarget
 TargetByName
 AssistByName
 AssistUnit
@@ -1813,6 +1829,32 @@ INVTYPE_BODY
 INVTYPE_SHOULDER
 INVTYPE_NECK
 INVTYPE_HEAD
+ERR_ARENA_TEAM_TOO_MANY_MEMBERS_S
+ERR_ARENA_TEAM_TARGET_TOO_LOW_S
+ERR_ARENA_TEAM_DISBANDED_S
+ERR_ARENA_TEAM_REMOVE_SSS
+ERR_ARENA_TEAM_LEADER_CHANGED_SSS
+ERR_ARENA_TEAM_LEADER_IS_SS
+ERR_ARENA_TEAM_LEAVE_SS
+ERR_ARENA_TEAM_JOIN_SS
+ERR_ARENA_TEAM_NOT_ALLIED
+ERR_ARENA_TEAM_PLAYER_NOT_FOUND_S
+ERR_ARENA_TEAM_PLAYER_NOT_IN_TEAM_SS
+ERR_ARENA_TEAM_PLAYER_NOT_IN_TEAM
+ERR_ARENA_TEAM_PERMISSIONS
+ERR_ARENA_TEAM_LEADER_LEAVE_S
+ERR_ARENA_TEAM_NAME_EXISTS_S
+ERR_ARENA_TEAM_NAME_INVALID
+ERR_ALREADY_INVITED_TO_ARENA_TEAM_S
+ERR_INVITED_TO_ARENA_TEAM
+ERR_ALREADY_IN_ARENA_TEAM_S
+ERR_ALREADY_IN_ARENA_TEAM
+ERR_ARENA_TEAM_INTERNAL
+ERR_ARENA_TEAM_FOUNDER_S
+ERR_ARENA_TEAM_QUIT_S
+ERR_ARENA_TEAM_INVITE_SS
+ERR_ARENA_TEAM_CREATE_S
+ERR_ARENA_NO_TEAM_II
 ERR_MATCHMAKING_NO_RAID_GROUP
 ERR_MATCHMAKING_NOT_LEADER
 ERR_MATCHMAKING_MEMBER_ADDED_S
@@ -1936,6 +1978,7 @@ ERR_MAIL_BAG
 ERR_MAIL_CONJURED_ITEM
 ERR_MAIL_BOUND_ITEM
 ERR_MAIL_QUEST_ITEM
+ERR_CANT_INTERACT_SHAPESHIFTED
 ERR_NO_ITEMS_WHILE_SHAPESHIFTED
 ERR_EXHAUSTION_EXHAUSTED
 ERR_EXHAUSTION_TIRED
@@ -1949,7 +1992,6 @@ ERR_TICKET_UPDATE_ERROR
 ERR_TICKET_CREATE_ERROR
 ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
-ERR_CANT_INTERACT_SHAPESHIFTED
 ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
 ERR_PET_SPELL_TARGETS_DEAD
@@ -1966,8 +2008,8 @@ ERR_PETITION_ALREADY_SIGNED
 ERR_PETITION_DECLINED_S
 ERR_PETITION_SIGNED_S
 ERR_PETITION_SIGNED
-igPlayerInviteAccept
 ERR_PETITION_OFFERED_S
+igPlayerInviteAccept
 ERR_SPELL_FAILED_NOTUNSHEATHED
 ERR_FISH_ESCAPED
 ERR_FISH_NOT_HOOKED
@@ -2134,6 +2176,7 @@ ERR_NO_ATTACK_TARGET
 ERR_2HSKILLNOTFOUND
 ERR_PASSIVE_ABILITY
 ERR_MUST_EQUIP_ITEM
+ERR_CANT_USE_ITEM_IN_ARENA
 ERR_CANT_USE_ITEM
 ERR_INSPECT_S
 ERR_COMBAT_DAMAGE_SSI
@@ -2414,6 +2457,7 @@ Usage: GetCoinIcon(amount)
 contested
 hostile
 friendly
+sanctuary
 SetPortraitToTexture(): Wrong object type, expected texture
 SetPortraitToTexture(): Couldn't find 'this' in texture object
 SetPortraitToTexture(): Couldn't find texture named '%s'
@@ -2433,6 +2477,8 @@ Usage: IsAddOnLoaded(index or \"name\")
 Usage: LoadAddOn(index or \"name\")
 UNKNOWN_ERROR
 Logs\\FrameXML.log
+ERROR: Invalid timer (Ex: \"BREATH\"
+Usage: GetMirrorTimerInfo(\"timer\")
 Weather changed to %d, intensity %f\n
 GameTooltip
 UIParent
@@ -2515,6 +2561,11 @@ E:\\build\\buildWoW\\WoW\\Source\\Ui\\TabardModelFrame.h
 ..\\UIUtil/Tooltip.h
 DUNGEON_DIFFICULTY%d
 %s%s%d
+EXHAUSTION
+BREATH
+FEIGNDEATH
+%s_LABEL
+%s%d%d%d%d%s
 PARTY
 RAID
 GUILD
@@ -2772,6 +2823,7 @@ UNIT_PVP_NAME
 PVP_RANK_%d_%d
 %d. %s
 CHAT_EMOTE_UNKNOWN
+LAUGH_WORD%d
 %s%s%s%s
 BATTLEGROUND
 RAID
@@ -2807,8 +2859,9 @@ YOU_LEFT
 SUSPENDED
 YOU_JOINED
 YOU_CHANGED
-LAUGH_WORD%d
 ZONE_UNDER_ATTACK
+OLD_TITLE_LOST
+NEW_TITLE_EARNED
 [%d]: %s
 RAID_INSTANCE_INFO_FMT
 RAID_INSTANCE_WELCOME
@@ -2916,6 +2969,8 @@ Error: %s is anchored to itself
 Couldn't find frame named '%s'
 Unknown frame point
 Usage: PositionMiniWorldMapArrowFrame(\"point\" \"frame\" [, relativePoint] [, offsetX, offsetY])
+GetBattlefieldArenaFaction
+GetBattlefieldTeamInfo
 GetBattlefieldMapIconScale
 CanJoinBattlefieldAsGroup
 GetBattlefieldFlagPosition
@@ -2944,6 +2999,7 @@ AcceptBattlefieldPort
 GetSelectedBattlefield
 SetSelectedBattlefield
 JoinBattlefield
+IsActiveBattlefieldArena
 IsBattlefieldArena
 GetBattlefieldInstanceInfo
 GetBattlefieldInfo
@@ -2970,6 +3026,7 @@ Usage: GetBattlefieldStatInfo(index)
 Usage: GetBattlefieldStatData(playerIndex, statIndex)
 Usage: GetBattlefieldPosition(index)
 Usage: GetBattlefieldFlagPosition(index)
+Usage: GetBattlefieldTeamInfo(index)
 HasNewMail
 InboxItemCanDelete
 DeleteInboxItem
@@ -3934,6 +3991,8 @@ Usage: EditMacro(index, name, icon, body, local)
 Usage: GetMacroIconInfo(index)
 Usage: PickupMacro(index)
 Usage: GetMacroIndexByName(name)
+HasArenaPetition
+TurnInArenaPetition
 TurnInPetition
 ClickPetitionButton
 BuyPetition
@@ -3943,6 +4002,7 @@ ClosePetitionVendor
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\PetitionVendor.cpp
 Usage: GetPetitionItemInfo(index)
 Usage: BuyPetition(index, name)
+Usage: TurnInArenaPetition(teamSize)
 GetSocketTypes
 AcceptSockets
 ClickSocketButton
@@ -3951,9 +4011,6 @@ GetExistingSocketInfo
 GetNumSockets
 GetSocketItemInfo
 CloseSocketInfo
-Blue
-Yellow
-Meta
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\ItemSocketInfo.cpp
 Usage: GetExistingSocketInfo(index)
 Usage: GetNewSocketInfo(index)
@@ -3979,7 +4036,9 @@ GetPetitionNameInfo
 GetNumPetitionNames
 GetPetitionInfo
 ClosePetition
-charter
+guild
+arena
+other
 Usage: GetPetitionNameInfo(index)
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\PetitionInfo.cpp
 Usage(RenamePetition(\"name\")
@@ -4284,6 +4343,7 @@ E:\\build\\buildWoW\\WoW\\Source\\Ui\\CharacterModelBase.cpp
 Usage: SetUnit(\"unit\")
 Usage: SetRotation(rotation (in radians))
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestTextParser.cpp
+INT_GENERAL_DURATION
 SPELL_DURATION_UNTIL_CANCELLED
 SPELL_DURATION
 INT_SPELL_DURATION
@@ -4464,6 +4524,7 @@ GetParryChance
 GetBlockChance
 GetDodgeChance
 IsResting
+IsArenaTeamCaptain
 IsGuildLeader
 IsInGuild
 GetComboPoints
@@ -4522,6 +4583,7 @@ UnitReaction
 UnitFactionGroup
 UnitIsPVPFreeForAll
 UnitIsPVP
+UnitIsImmunePC
 UnitPlayerControlled
 UnitPlayerOrPetInRaid
 UnitInRaid
@@ -4546,6 +4608,7 @@ GetGameTime
 GetTime
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 Unknown unit name: %s
+focus
 mouseover
 raidpet
 partypet
@@ -4562,6 +4625,7 @@ Usage: UnitIsFriend(\"unit\", \"otherUnit\")
 Usage: UnitCanCooperate(\"unit\", \"otherUnit\")
 Usage: UnitCanAssist(\"unit\", \"otherUnit\")
 Usage: UnitCanAttack(\"unit\", \"otherUnit\")
+Usage: IsArenaTeamCaptain(index)
 UNKNOWNOBJECT
 Usage: UnitName(\"unit\")
 Usage: UnitPVPName(\"unit\")
@@ -4608,6 +4672,7 @@ Usage: UnitCreatureFamily(\"unit\")
 GENERIC
 Usage: UnitPVPRank(\"unit\")
 Usage: GetPVPRankInfo(rank [, unit])
+KNOWN_TITLES_UPDATE
 HONOR_CURRENCY_UPDATE
 ARENA_TEAM_INVITE_REQUEST
 ARENA_TEAM_ROSTER_UPDATE
@@ -5201,7 +5266,9 @@ HP_TEMPLATE
 ARMOR_TEMPLATE
 DAMAGE_TEMPLATE
 SINGLE_DAMAGE_TEMPLATE
-UNIT_SKINNABLE
+UNIT_SKINNABLE_LEATHER
+UNIT_SKINNABLE_HERB
+UNIT_SKINNABLE_ROCK
 PVP_RANK_LEADER
 PVP_RANK_CIVILIAN
 RESURRECTABLE
@@ -5267,6 +5334,7 @@ ITEM_MOD_DODGE_RATING
 ITEM_MOD_DEFENSE_SKILL_RATING
 ITEM_REQ_REPUTATION
 ITEM_SPELL_KNOWN
+ITEM_PROSPECTABLE
 ITEM_DURATION
 DURABILITY_TEMPLATE
 ITEM_RANDOM_ENCHANT
@@ -5285,6 +5353,8 @@ PLUS_AMMO_DAMAGE_TEMPLATE
 AMMO_DAMAGE_TEMPLATE
 PLUS_DAMAGE_TEMPLATE_WITH_SCHOOL
 DAMAGE_TEMPLATE_WITH_SCHOOL
+PLUS_SINGLE_DAMAGE_TEMPLATE_WITH_SCHOOL
+SINGLE_DAMAGE_TEMPLATE_WITH_SCHOOL
 PLUS_AMMO_SCHOOL_DAMAGE_TEMPLATE
 AMMO_SCHOOL_DAMAGE_TEMPLATE
 ITEM_UNIQUE_EQUIPPABLE
@@ -5415,6 +5485,46 @@ E:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
 ..\\..\\Object/ItemName.h
 ..\\..\\Object/ItemStats.h
 ..\\..\\Object/NPCText.h
+Socketed into item
+Deleted Mail With Item
+Failed Split Item
+Failed Quest Reward Create
+Delete Zero Count Item
+Deleting Temporary Item
+Item Create Failure
+Item Disenchanted
+Error Loading Item
+ClusterFreeItemForBadTradeHandler
+Spell Use Resources
+Feed Pet Handler
+Trade Failure
+PlayerLaunchQuest
+Error Loading Mailed Item (NOT PERMANENT)
+Send Mail
+Wrap Item
+Burn Resurrect Item
+Sold to NPC(T)
+Sold to vendor(T)
+Purge buyback
+Auction Item Success
+Spell Resources
+DeleteWornItems
+Guild create success
+Quest Destroy Item
+Player Destroyed
+LootArray::LootMoney
+LootArray::Clear
+BurnCharge
+DoneBeingLooted
+CheckInstanceBoundItems
+CheckZoneBoundItems
+Expired
+InternalDestroyItemsOfType
+Combining Stacks
+Added to Stack
+Existing Item In Slot
+Unknown Reason
+Not Deleted
 OnEnergyRangeRandom
 OnHealthRangeRandom
 OnPathFailing
@@ -5437,6 +5547,7 @@ OnLeaveCombat
 OnEnterCombat
 OnReaction
 -NONE-
+Unit(s) cast a spell and report failure to owner
 Trigger actions on nearest unit in combat
 Unit(s) perform a boss emote to the zone
 Unit(s) perform a boss emote
@@ -5566,6 +5677,9 @@ Wander a certain radius of a point
 Teleport to a point in the world
 Move within a certain radius of a point
 Spawn
+Blue
+Yellow
+Meta
 HAPPINESS_POINTS
 ENERGY_POINTS
 FOCUS_POINTS
@@ -5606,6 +5720,8 @@ DBFilesClient\\CharSections.dbc
 Error reading CharSectionsRec
 DBFilesClient\\CharStartOutfit.dbc
 Error reading CharStartOutfitRec
+DBFilesClient\\CharTitles.dbc
+Error reading CharTitlesRec
 DBFilesClient\\CharVariations.dbc
 Error reading CharVariationsRec
 DBFilesClient\\CharacterFacialHairStyles.dbc
@@ -5700,6 +5816,8 @@ DBFilesClient\\ItemPetFood.dbc
 Error reading ItemPetFoodRec
 DBFilesClient\\ItemRandomProperties.dbc
 Error reading ItemRandomPropertiesRec
+DBFilesClient\\ItemRandomSuffix.dbc
+Error reading ItemRandomSuffixRec
 DBFilesClient\\ItemSet.dbc
 Error reading ItemSetRec
 DBFilesClient\\ItemSubClassMask.dbc
@@ -5756,6 +5874,8 @@ DBFilesClient\\QuestSort.dbc
 Error reading QuestSortRec
 DBFilesClient\\Resistances.dbc
 Error reading ResistancesRec
+DBFilesClient\\RandPropPoints.dbc
+Error reading RandPropPointsRec
 DBFilesClient\\ServerMessages.dbc
 Error reading ServerMessagesRec
 DBFilesClient\\SheatheSoundLookups.dbc
@@ -5864,6 +5984,8 @@ DBFilesClient\\WorldMapContinent.dbc
 Error reading WorldMapContinentRec
 DBFilesClient\\WorldMapOverlay.dbc
 Error reading WorldMapOverlayRec
+DBFilesClient\\WorldMapTransforms.dbc
+Error reading WorldMapTransformsRec
 DBFilesClient\\WorldSafeLocs.dbc
 Error reading WorldSafeLocsRec
 DBFilesClient\\WorldStateUI.dbc
@@ -5978,6 +6100,8 @@ CGxDeviceD3d::GetD3dError(): E_OUTOFMEMORY
 CGxDeviceD3d::GetD3dError(): E_NOTIMPL
 CGxDeviceD3d::GetD3dError(): E_NOINTERFACE
 CGxDeviceD3d::GetD3dError(): E_FAIL
+glBlendColorEXT
+GL_EXT_blend_color
 glFramebufferRenderbufferEXT
 glFramebufferTexture3DEXT
 glFramebufferTexture2DEXT
@@ -6114,7 +6238,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 5610 (Aug 16 2006 22:07:36)
+WoW [Release] Build 5665 (Aug 29 2006 23:08:49)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -6283,7 +6407,6 @@ Usage: AddOrDelIgnore(\"name\")
 Usage: AddIgnore(\"name\")
 Usage: DelIgnore(\"name\")
 Usage: GetWhoInfo(index)
-guild
 race
 Usgae: SortWho(\"type\")
 whois
@@ -6514,11 +6637,6 @@ Trainer service %d unavailable
 GUILD_INFO_TEMPLATE
 GUILD_NAME_TEMPLATE
 %2d:%02d
-%s%d%d%d%d%s
-EXHAUSTION
-BREATH
-FEIGNDEATH
-%s_LABEL
 Proficiency in item class %d set to %08x
 DMG: ==============================================
 DMG: (%s) '%d'=%8.2f, total=%f
@@ -7338,7 +7456,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 5610 (Aug 16 2006)
+WoW [Release] Build 5665 (Aug 29 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -7967,7 +8085,7 @@ Alpha mip level must be in range 0 - 1.
 TexLodBias must be in range -1.0 - 1.0.
 Trilinear filtering disabled upon restart.
 Trilinear filtering enabled upon restart.
-FarClip must be in range 177.0 - 777.0.
+FarClip must be in range (%f, %f).
 NearClip must be in range 0.01 - 0.33
 Frill Density must be in range 1 - 256.
 Specular disabled.
@@ -8196,6 +8314,7 @@ HAPPINESS
 %s_PET
 E:\\build\\buildWoW\\WoW\\Source\\Magic\\MagicClient\\Spell_C.cpp
 SPELL_FAILED_UNKNOWN
+SPELL_FAILED_NOT_IN_ARENA
 SPELL_FAILED_MIN_SKILL
 SPELL_FAILED_REPUTATION
 SPELL_FAILED_PLAY_TIME
@@ -9896,9 +10015,10 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuop2~
+ltuoP
 smooth
 cinu
+ltuoP
 raster5
 raster1
    !
@@ -11652,7 +11772,6 @@ E:\\build\\buildWoW\\Engine\\Source\\lgLCD\\LCDGfx.cpp
 US]CQ
 fmod
 asin
-sqrt
 acos
  \t-\r]
 sinh

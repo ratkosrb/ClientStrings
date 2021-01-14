@@ -1,6 +1,6 @@
 // Auto generated file
 // Patch: 2.0.0
-// Build: 5610
+// Build: 5665
 
 Public Enum SpellFailedReason
 {
@@ -150,6 +150,7 @@ Public Enum SpellFailedReason
     SPELL_FAILED_PLAY_TIME = 0x8F,                                  // 0x08F
     SPELL_FAILED_REPUTATION = 0x90,                                 // 0x090
     SPELL_FAILED_MIN_SKILL = 0x91,                                  // 0x091
-    SPELL_FAILED_UNKNOWN = 0x92,                                    // 0x092
+    SPELL_FAILED_NOT_IN_ARENA = 0x92,                               // 0x092
+    SPELL_FAILED_UNKNOWN = 0x93,                                    // 0x093
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }
