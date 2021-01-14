@@ -215,7 +215,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6655)
+World of WarCraft (build 6678)
 SendErrorLogs
 player hidden
 player visible
@@ -1471,8 +1471,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-May  4 2007
-6655
+May 11 2007
+6678
 0.1.0
 RELEASE_BUILD
 BETA_BUILD
@@ -2824,8 +2824,6 @@ Usage: EquipPendingItem(index)
 Usage: CancelPendingEquip(index)
 Usage: NotifyInspect(unit)
 Usage: CheckInteractDistance(\"unit\", distIndex)
-Usage: NewGMTicket(type, text)
-Usage: UpdateGMTicket(type, text)
 Usage: GMSurveyGetQuestion(index)
 contested
 hostile
@@ -2844,6 +2842,8 @@ INTERFACESOUND_CURSORDROPOBJECT
 Usage: EquipCursorItem(slot)
 Usage: InitiateTrade(\"unit\")
 Usage: CanInspect(unit [, showError])
+Usage: NewGMTicket(type, text)
+Usage: UpdateGMTicket(type, text)
 Usage: DropItemOnUnit(\"unit\")
 INTERFACESOUND_CURSORGRABOBJECT
 PET_%s_TEXTURE
@@ -6049,6 +6049,7 @@ AddTexture
 AddDoubleLine
 AddLine
 ClearLines
+SetAnchorType
 GetAnchorType
 SetOwner
 IsOwned
@@ -6098,8 +6099,8 @@ Usage: %s:SetMinimumWidth(width [,force])
 Usage: %s:IsOwned(frame)
 %s:IsOwned(): Wrong object type, expected frame
 %s:IsOwned(): Couldn't find 'this' in frame object
-ANCHOR_NONE
 ANCHOR_PRESERVE
+ANCHOR_NONE
 ANCHOR_CURSOR
 ANCHOR_TOPLEFT
 ANCHOR_TOPRIGHT
@@ -6107,6 +6108,7 @@ ANCHOR_BOTTOMLEFT
 ANCHOR_BOTTOMRIGHT
 ANCHOR_RIGHT
 ANCHOR_LEFT
+Usage: %s:SetAnchorType( anchorType [,Xoffset] [,Yoffset] )
 Usage: %s:IsUnit(\"unit\")
 Usage: %s:SetOwner(frame)
 %s:SetOwner(): Can't set owner to self
@@ -6936,7 +6938,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6655 (May  4 2007 15:21:30)
+WoW [Release] Build 6678 (May 11 2007 14:22:40)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7765,7 +7767,8 @@ AURASTOLENSELFOTHER
 AURASTOLENSELFSELF
 AURASTOLENOTHER
 AURASTOLENSELF
-Warning, string %s not found in stringfile.
+Warning, string %s not found in stringfile (%s)
+Unknown context
 ABSORB_TRAILER
 BLOCK_TRAILER
 VULNERABLE_TRAILER
@@ -7786,6 +7789,7 @@ FACTION_STANDING_INCREASED_GENERIC
 OPEN_LOCK_OTHER
 OPEN_LOCK_SELF
 CombatDeathLogRange
+Warning, string %s not found in stringfile.
 ITEMENCHANTMENTREMOVEOTHER
 ITEMENCHANTMENTREMOVESELF
 ITEMENCHANTMENTADDOTHEROTHER
@@ -7955,7 +7959,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6655 (May  4 2007)
+WoW [Release] Build 6678 (May 11 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -9879,6 +9883,7 @@ BC .=
 i9+=
 ?\r0\vH_
 4lkQg
+a���w��<
 ?ju!4
 ?!\aPO79
 ?V:e:
@@ -10385,8 +10390,10 @@ GetColorRGB
 SetColorRGB
 GetColorHSV
 SetColorHSV
-SetColorValueThumbTexture
-GetColorValueThumbTexture
+SetColorValueThu
+mbTexture
+GetCo
+lorValueThumbTexture
 SetColorValueTexture
 GetColorValueTexture
 SetColorWheelThumbTexture
@@ -10543,8 +10550,7 @@ GetPushedTexture
 SetPushedTexture
 GetNormalTexture
 SetNormalTexture
-GetHighlightT
-extColor
+GetHighlightTextColor
 SetHighlightTextColor
 GetDisabledTextColor
 SetDisabledTextColor
@@ -10893,7 +10899,8 @@ Error reading TalentTabRec
 DBFilesClient\\TaxiNodes.dbc
 Error reading TaxiNodesRec
 DBFilesClient\\TaxiPathNode.dbc
-Error reading TaxiPathNodeRec
+Error reading TaxiPathN
+odeRec
 DBFilesClient\\TaxiPath.dbc
 Error reading TaxiPathRec
 DBFilesClient\\TerrainType.dbc
@@ -11216,10 +11223,14 @@ psnames
 truetype
 sfnt
 smooth
-ltuo
+ltuo Nv
+ltuopOv
 cinu
 raster5
 raster1
+ltuoP
+ltuo0
+ltuo0
 zeta
 zdotaccent
 zacute
