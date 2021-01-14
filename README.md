@@ -1,2 +1,2 @@
 # ClientStrings
-patch by path diff of strings found in wow client
+patch by patch diff of strings found in wow client
