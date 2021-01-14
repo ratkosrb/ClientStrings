@@ -215,7 +215,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6577)
+World of WarCraft (build 6592)
 SendErrorLogs
 player hidden
 player visible
@@ -236,6 +236,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
+���<�+y
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -668,7 +669,9 @@ level
 Frame %s: Unknown child node in %s element: %s
 Layer
 Frames
+*:%s
 Frame %s: Unknown script element %s
+return function(self) %s end
 region
 number
 boolean
@@ -1468,8 +1471,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Apr 10 2007
-6577
+Apr 16 2007
+6592
 0.1.0
 RELEASE_BUILD
 BETA_BUILD
@@ -2127,8 +2130,7 @@ COMBAT_MISC_INFO
 MONSTER_WHISPER
 COMBAT_SELF_HITS
 COMBAT_SELF_MISSES
-COMBAT
-_PET_HITS
+COMBAT_PET_HITS
 COMBAT_PET_MISSES
 COMBAT_PARTY_HITS
 COMBAT_PARTY_MISSES
@@ -2408,6 +2410,7 @@ GetItemCooldown
 GetItemSpell
 GetItemCount
 GetExtendedItemInfo
+GetItemGem
 GetItemInfo
 GetItemQualityColor
 GetRealmName
@@ -2824,6 +2827,7 @@ contested
 hostile
 friendly
 sanctuary
+Usage: GetItemGem(\"name\"|\"itemlink\", index)
 Usage: GetItemCount(itemID|\"name\"|\"itemlink\" [, includeBank])
 Usage: IsEquippedItemType(\"type\")
 EquipItemByName(): Invalid inventory dstSlot
@@ -3801,6 +3805,7 @@ BuyMerchantItem
 PickupMerchantItem
 GetMerchantItemMaxStack
 GetMerchantItemLink
+GetBuybackItemLink
 GetBuybackItemInfo
 GetMerchantItemCostItem
 GetMerchantItemCostInfo
@@ -3814,6 +3819,7 @@ Usage: GetMerchantItemCostInfo(index)
 Usage: GetMerchantItemCostItem(index, itemIndex)
 Usage: GetMerchantItemInfo(index)
 Usage: GetBuybackItemInfo(slot)
+Usage: GetBuybackItemLink(slot)
 Usage: BuyMerchantItem(index)
 Usage: BuybackItem(slot)
 Usage: ShowMerchantSellCursor(index)
@@ -5424,6 +5430,7 @@ UnitPVPName
 UnitName
 UnitClassification
 UnitIsPlusMob
+UnitIsPossessed
 UnitIsCharmed
 UnitCanAttack
 UnitCanAssist
@@ -5442,6 +5449,7 @@ UnitPlayerOrPetInRaid
 UnitInRaid
 UnitPlayerOrPetInParty
 UnitInParty
+UnitIsRaidOfficer
 UnitIsPartyLeader
 UnitIsCorpse
 UnitIsPlayer
@@ -6390,6 +6398,7 @@ OsCreateFile failed for cache file: %s\n
 DBCache::CancelCallback ignored for id %016I64X.
 .\\DBCache.cpp
 Burning Crusade
+GM Delete
 Script DestroyItem()
 Warlock summoned item destroys upon arena end
 Arena Team Created
@@ -6915,7 +6924,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6577 (Apr 10 2007 17:21:30)
+WoW [Release] Build 6592 (Apr 16 2007 15:00:55)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7931,7 +7940,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6577 (Apr 10 2007)
+WoW [Release] Build 6592 (Apr 16 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8890,6 +8899,7 @@ strsplit
 strtrim
 getglobal
 setglobal
+self
 __index
 return function(self,event,...) %s end
 OnEvent
@@ -8927,8 +8937,6 @@ SavedVariables
 compat.lua
 -------------------------------------------------------------------\n-- Table library\nlocal tab = table\nforeach = tab.foreach\nforeachi = tab.foreachi\ngetn = tab.getn\ntinsert = tab.insert\ntremove = tab.remove\nsort = tab.sort\n\n-------------------------------------------------------------------\n-- math library\nlocal math = math\nabs = math.abs\nacos = function (x) return math.deg(math.acos(x)) end\nasin = function (x) return math.deg(math.asin(x)) end\natan = function (x) return math.deg(math.atan(x)) end\natan2 = function (x,y) return math.deg(math.atan2(x,y)) end\nceil = math.ceil\ncos = function (x) return math.cos(math.rad(x)) end\ndeg = math.deg\nexp = math.exp\nfloor = math.floor\nfrexp = math.frexp\nldexp = math.ldexp\nlog = math.log\nlog10 = math.log10\nmax = math.max\nmin = math.min\nmod = math.fmod\nPI = math.pi\n--??? pow = math.pow\nrad = math.rad\nrandom = math.random\nrandomseed = math.randomseed\nsin = function (x) return math.sin(math.rad(x)) end\nsqrt = math.sqrt\ntan = function (x)
 GetPluralIndex
-%s:%s
-return function(self) %s end
 this
 DBG:
 CreateFrame
@@ -9117,6 +9125,7 @@ value expected
 name conflict for module '%s'
 _LOADED
 invalid option '%s'
+(*temporary)
 =[C]
 tail
 =(tail call)
@@ -9341,7 +9350,6 @@ chunk has too many syntax levels
 constant table overflow
 items in a constructor
 <name> or '...' expected
-self
 ambiguous syntax (function call x new statement)
 function arguments expected
 unexpected symbol
@@ -9766,6 +9774,7 @@ f\a@=
 x\vI=
 V%A+=
 4';=
+�1&�3�
 b\aH=
 P'E=
 ls1=
@@ -11191,7 +11200,6 @@ psnames
 truetype
 sfnt
 smooth
-ltuop
 cinu
 raster5
 raster1
@@ -12516,6 +12524,7 @@ GcS68
 .?AUMOUSELOOKBINDING@@
 .?AUCFacet@NTempest@@
 .?AUCameraShake@@
+.?AUUniqueSignal@@
 .?AVCRect@NTempest@@
 .?AUBFSNODE@@
 .PAVCSimpleFontString@@
