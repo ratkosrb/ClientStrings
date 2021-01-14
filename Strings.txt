@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5991)
+World of WarCraft (build 6022)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -126,6 +126,8 @@ checkAddonVersion
 Check interface addon version number
 movieSubtitle
 Show movie subtitles
+expansionMovie
+Show expansion movie on startup
 Show movie on startup
 accountName
 Saved account name
@@ -615,8 +617,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Oct  7 2006
-18:49:47
+Oct 16 2006
+21:24:04
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1112,7 +1114,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5991
+6022
 2.0.0
 RELEASE_BUILD
 BETA_BUILD
@@ -1220,10 +1222,9 @@ Usage: SetCharacterSelectFacing(degrees)
 .\\Scan.dll
 Scan
 E:\\build\\buildWoW\\WoW\\Source\\Glue\\ScanDLLGlue.cpp
-SCANDLL_DOWNLOAD
-SCANDLL_MESSAGE_DOWNLOADING
 SCANDLL_ERROR
 SCANDLL_MESSAGE_ERROR
+SCANDLL_DOWNLOAD
 SCANDLL_MESSAGE_SCANNING
 ScanThread
 Cache\\Survey.mpq
@@ -1320,22 +1321,16 @@ GAMEOBJECT_ROTATION
 GAMEOBJECT_FLAGS
 GAMEOBJECT_DISPLAYID
 OBJECT_FIELD_CREATED_BY
+PLAYER_FIELD_PADDING
 PLAYER_FIELD_ARENA_CURRENCY
 PLAYER_FIELD_HONOR_CURRENCY
 PLAYER_FIELD_ARENA_TEAM_INFO_1_1
 PLAYER_FIELD_COMBAT_RATING_1
 PLAYER_FIELD_WATCHED_FACTION_INDEX
 PLAYER_FIELD_BYTES2
-PLAYER_FIELD_LAST_WEEK_RANK
-PLAYER_FIELD_LAST_WEEK_CONTRIBUTION
-PLAYER_FIELD_YESTERDAY_CONTRIBUTION
-PLAYER_FIELD_LIFETIME_DISHONORBALE_KILLS
 PLAYER_FIELD_LIFETIME_HONORBALE_KILLS
-PLAYER_FIELD_THIS_WEEK_CONTRIBUTION
-PLAYER_FIELD_THIS_WEEK_KILLS
-PLAYER_FIELD_LAST_WEEK_KILLS
 PLAYER_FIELD_YESTERDAY_KILLS
-PLAYER_FIELD_SESSION_KILLS
+PLAYER_FIELD_TODAY_KILLS
 PLAYER_FIELD_BUYBACK_TIMESTAMP_1
 PLAYER_FIELD_BUYBACK_PRICE_1
 PLAYER_FIELD_PVP_MEDALS
@@ -1363,6 +1358,7 @@ PLAYER_FIELD_COINAGE
 PLAYER_REST_STATE_EXPERIENCE
 PLAYER_EXPLORED_ZONES_1
 PLAYER_SPELL_CRIT_PERCENTAGE1
+PLAYER_OFFHAND_CRIT_PERCENTAGE
 PLAYER_RANGED_CRIT_PERCENTAGE
 PLAYER_CRIT_PERCENTAGE
 PLAYER_PARRY_PERCENTAGE
@@ -1629,6 +1625,10 @@ PlayerFadeInRate
 fade in rate for player mouseover
 4096
 IDLE_MESSAGE
+StopAttack
+StartAttack
+InCombatLockdown
+Sound_GetDoodadStats
 GetExistingLocales
 IsAutoLootKeyDown
 GetAutoLootToggleKey
@@ -1660,6 +1660,14 @@ IsAddOnLoaded
 IsAddOnLoadOnDemand
 ResetDisabledAddOns
 GetAddOnMetadata
+IsItemInRange
+ItemHasRange
+IsCurrentItem
+IsEquippedItem
+IsConsumableItem
+IsUsableItem
+GetItemCooldown
+GetItemCount
 GetExtendedItemInfo
 GetItemInfo
 GetItemQualityColor
@@ -2039,6 +2047,7 @@ ERR_AUCTION_WON_S
 ERR_AUCTION_OUTBID_S
 ERR_AUCTION_REMOVED
 ERR_AUCTION_STARTED
+ERR_AUCTION_USED_CHARGES
 ERR_AUCTION_REPAIR_ITEM
 ERR_AUCTION_MIN_BID
 ERR_AUCTION_HIGHER_BID
@@ -2535,8 +2544,10 @@ SetPortraitToTexture(): Couldn't find texture named '%s'
 Usage: DropItemOnUnit(\"unit\")
 HOME_INN
 Usage: GetItemQualityColor(index)
-Usage: GetItemInfo(itemID|\"itemlink\")
+Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")
 item:
+Usage: GetItemCount(itemID|\"name\"|\"itemlink\" [, includeBank])
+Usage: %s(itemID|\"name\"|\"itemlink\")
 Usage: GetAddOnInfo(index or \"name\")
 Usage: GetAddOnMetadata(index or \"name\", \"variable\")
 Usage: GetAddOnDependencies(index or \"name\")
@@ -2550,7 +2561,7 @@ Logs\\FrameXML.log
 ERROR: Invalid timer (Ex: \"BREATH\"
 Usage: GetMirrorTimerInfo(\"timer\")
 Usage: UseItemByName(name, target)
-Invalid destination slot number
+EquipItemByName(): Invalid inventory dstSlot
 Usage: EquipItemByName(\"name\" [,slot])
 SetAutoLootToggleKey(): key must be one of: SHIFT, CTRL, ALT
 CTRL
@@ -2653,6 +2664,7 @@ BREATH
 FEIGNDEATH
 %s_LABEL
 %s%d%d%d%d%s
+PVP_REQUIRED_FOR_CAPTURE
 PARTY
 RAID
 GUILD
@@ -3184,18 +3196,23 @@ GetShapeshiftFormCooldown
 CastShapeshiftForm
 GetShapeshiftFormInfo
 GetNumShapeshiftForms
-IsSpellPassive
 HasPetSpells
 PlayerHasSpells
 UpdateSpells
+IsSpellInRange
+SpellHasRange
+IsUsableSpell
+IsAutoRepeatSpell
+IsAttackSpell
+IsPassiveSpell
 IsCurrentCast
 CastSpell
 PickupSpell
 ToggleSpellAutocast
 GetSpellAutocast
 GetSpellCooldown
-GetSpellName
 GetSpellTexture
+GetSpellName
 GetSpellTabInfo
 GetNumSpellTabs
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\SpellBookFrame.cpp
@@ -3205,14 +3222,7 @@ igSpellBookSpellIconPickup
 Interface\\Icons\\Ability_Kick
 GENERAL
 Usage: GetSpellTabInfo(index)
-Invalid spell slot in GetSpellTexture
-Invalid spell slot in GetSpellName
-Invalid spell slot in GetSpellCooldown
-Invalid spell slot in GetSpellAutocast
-Invalid spell slot in PickupSpell
-Invalid spell slot in CastSpell
-Invalid spell slot in IsCurrentCast
-Invalid spell slot in IsSpellPassive
+%s(): Invalid spell slot
 Usage: GetShapeshiftFormInfo(index)
 Usage: CastShapeshiftForm(index)
 Usage: GetShapeshiftFormCooldown(index)
@@ -3230,6 +3240,10 @@ GetCurrentBindingSet
 RunBinding
 GetBindingAction
 GetBindingKey
+ClearOverrideBindings
+SetOverrideBindingClick
+SetOverrideBindingSpell
+SetOverrideBinding
 SetBindingClick
 SetBindingSpell
 SetBinding
@@ -3276,24 +3290,28 @@ BACKSLASH
 SLASH
 RIGHTBRACKET
 LEFTBRACKET
-RightButton
-MiddleButton
-LeftButton
 CLICK
 SPELL
 down
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIBindings.h
 Usage: GetBinding(index)
-Usage: SetBinding(\"KEY\"[, \"COMMAND\"|\"spellname\"])
+Usage: SetBinding(\"KEY\"[, \"COMMAND\"])
 Usage: SetBindingSpell(\"KEY\", \"spellname\")
 SPELL %s
 Usage: SetBindingClick(\"KEY\", \"buttonName\"[, \"mouseButton\"])
 CLICK %s:%s
+LeftButton
+Usage: SetOverrideBinding(owner, isPriority, \"KEY\"[, \"COMMAND\"])
+Usage: SetOverrideBindingSpell(owner, isPriority, \"KEY\", \"spellname\")
+Usage: SetOverrideBindingClick(owner, isPriority, \"KEY\", \"buttonName\"[, \"mouseButton\"])
+Usage: ClearOverrideBindings(owner)
 Usage: GetBindingKey(\"COMMAND\")
-Usage: GetBindingAction(\"KEY\")
+Usage: GetBindingAction(\"KEY\"[, checkOverride])
 Usage: RunBinding(\"COMMAND\")
 Usage: LoadBindings(0||1||2)
 Usage: SaveBindings(1||2)
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIBindings.h
+RightButton
+MiddleButton
 SetLootThreshold
 GetLootThreshold
 SetLootMethod
@@ -3462,6 +3480,7 @@ Usage: GetLootRollItemLink(id)
 Usage: GetLootRollTimeLeft(id)
 Usage: RollOnLoot(id, rollType)
 Usage: ConfirmLootRoll(id, rollType)
+SortLFG
 GetLFGStatusText
 IsInLFGQueue
 CancelPendingLFG
@@ -3499,6 +3518,10 @@ Usage: GetLFGResults(type, lfgNdx)
 Usage: GetLFGResults(type, lfgNdx, index)
 Usage: GetLFGPartyResults(type, lfgNdx, index, partyIndex)
 Usage: GetLFGTypeEntries(type)
+zone
+class
+level
+Usgae: SortLfg(\"type\")
 ArenaTeamRoster
 CloseArenaTeamRoster
 GetArenaTeamRosterShowOffline
@@ -3518,7 +3541,6 @@ Usage: GetArenaTeamRosterSelection(team)
 seasonwon
 seasonplayed
 played
-class
 Usgae: SortArenaTeamRoster(\"type\")
 Usage: ArenaTeamRoster(team)
 KBSystem_GetServerNotice
@@ -3586,6 +3608,7 @@ KBSetup_GetArticleHeaderData() failed because setup is not loaded
 KBSetup_GetTotalArticleCount() failed because setup is not loaded
 KNOWLEDGE_BASE_QUERY_URL
 KBQuery_BeginLoading() called with subcategory without category
+KBQuery_BeginLoading() called with a string > 128 bytes for search query
 KBQuery_BeginLoading() called with a null string for search query
 KBQuery_BeginLoading() failed because setup is not loaded
 KBQuery_GetArticleHeaderCount() failed because query is not loaded
@@ -3650,27 +3673,13 @@ E:\\build\\buildWoW\\WoW\\Source\\Ui\\PaperDollInfoFrame.cpp
 ITEM_REPAIR
 Usage: KeyRingButtonIDToInvSlotID(buttonID)
 Invalid inventory slot in GetInventorySlotInfo
-Invalid inventory slot in GetInventoryItemTexture
 Usage: GetInventoryItemTexture(unit, slot)
-Invalid inventory slot in GetInventoryItemBroken
+%s(): Invalid inventory slot
 Usage: GetInventoryItemBroken(unit, slot)
-Invalid inventory slot in GetInventoryItemCount
 Usage: GetInventoryItemCount(unit, slot)
-Invalid inventory slot in GetInventoryItemQuality
 Usage: GetInventoryItemQuality(unit, slot)
-Invalid inventory slot in GetInventoryItemCooldown
 Usage: GetInventoryItemCooldown(unit, slot)
-Invalid inventory slot in GetInventoryItemLink
 Usage: GetInventoryItemLink(unit, slot)
-Invalid inventory slot in PickupInventoryItem
-Invalid inventory slot in UseInventoryItem
-Invalid inventory slot in SocketInventoryItem
-Invalid inventory slot in IsInventoryItemLocked
-Invalid bag slot in PutItemInBag
-Invalid bag slot in PickupBagFromSlot
-Invalid inventory slot in CursorCanGoInSlot
-Invalid inventory slot in ShowInventorySellCursor
-Invalid inventory slot in SetInventoryPortaitTexture
 Usage: SetInventoryPortaitTexture(texure, unit, slot)
 Usage: GetGuildInfo(\"unit\")
 Usage: GetInventoryAlertStatus(index)
@@ -3750,7 +3759,6 @@ Usage: SortAuctionItems(\"type\", \"sort\")
 status
 buyout
 duration
-level
 quality
 Usage: SetSelectedAuctionItem(\"type\", index)
 Usage: GetSelectedAuctionItem(\"type\")
@@ -3801,7 +3809,6 @@ Usage: GuildRosterSetOfficerNote(index, note)
 Usage: SetGuildRosterSelection(index)
 note
 online
-zone
 rank
 Usgae: SortGuildRoster(\"type\")
 Usage: GuildControlGetRankName(index)
@@ -4069,11 +4076,7 @@ CANCELABLE
 HARMFUL
 HELPFUL
 Usage: GetPlayerBuff(index [, \"filter\"])
-Usage: GetPlayerBuffTexture(buffIndex)
-Usage: GetPlayerBuffDispelType(buffIndex)
-Usage: GetPlayerBuffApplications(buffIndex)
 Usage: GetPlayerBuffTimeLeft(buffIndex)
-Usage: CancelPlayerBuff(buffIndex)
 Usage: CancelItemTempEnchantment(slot)
 IsActionSelfCastKeyDown
 GetActionSelfCastKey
@@ -4083,8 +4086,8 @@ GetActionBarToggles
 GetActionBarPage
 ChangeActionBarPage
 GetBonusBarOffset
-ActionHasRange
 IsActionInRange
+ActionHasRange
 IsEquippedAction
 IsConsumableAction
 IsUsableAction
@@ -4100,8 +4103,12 @@ GetActionAutocast
 GetActionCooldown
 GetActionCount
 GetActionTexture
+GetActionInfo
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\ActionBarFrame.cpp
 Interface\\Buttons\\Spell-Reset
+Usage: GetActionInfo(slot)
+macro
+spell
 Usage: GetActionTexture(slot)
 Usage: GetActionCount(slot)
 Usage: GetActionCooldown(slot)
@@ -4118,7 +4125,7 @@ Usage: IsUsableAction(slot)
 Usage: IsConsumableAction(slot)
 Usage: IsEquippedAction(slot)
 ChangeActionBarPage() needs a page in the range 1 to %d
-SetActionSelfCastKey(): key must be one of: SHIFT, CTRL, ALT
+SetActionSelfCastKey(): key must be either CTRL or ALT
 GetPingPosition
 PingLocation
 SetZoom
@@ -4254,6 +4261,7 @@ GetCraftDescription
 GetCraftSpellFocus
 GetCraftReagentItemLink
 GetCraftReagentInfo
+GetCraftNumMade
 GetCraftNumReagents
 GetCraftItemLink
 GetCraftSkillLine
@@ -4317,6 +4325,7 @@ DoCraft(index) index out of range
 Bad inv type in GetCraftFilter
 Usage: GetCraftFilter(index)
 Usage: GetCraftCooldown(index)
+Usage: Script_GetCraftNumMade(index)
 CloseBankFrame
 PurchaseSlot
 GetBankSlotCost
@@ -4690,6 +4699,8 @@ Camera view %s
 IsMouselooking
 MouselookStop
 MouselookStart
+MoveAndSteerStop
+MoveAndSteerStart
 CameraOrSelectOrMoveStop
 CameraOrSelectOrMoveStart
 TurnOrActionStop
@@ -4718,21 +4729,20 @@ E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.cpp
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.h
 Joystick
 enable joystick control
+UnitIsSameServer
 IsFeignDeath
 UnitChannelInfo
 UnitCastingInfo
-GetInspectPVPRankProgress
 GetPVPRankProgress
 GetPVPRankInfo
 UnitPVPRank
 GetPVPLifetimeStats
-GetPVPLastWeekStats
-GetPVPThisWeekStats
 GetPVPYesterdayStats
 GetPVPSessionStats
 GetResSicknessDuration
 UnitCreatureFamily
 UnitCreatureType
+GetAttackPowerForStat
 GetSpellPenetration
 GetSpellBonusHealing
 GetSpellBonusDamage
@@ -4758,6 +4768,8 @@ UnitIsCivilian
 UnitIsTrivial
 UnitIsTappedByPlayer
 UnitIsTapped
+UnitHasDebuff
+UnitHasBuff
 UnitDebuff
 UnitBuff
 UnitCharacterPoints
@@ -4854,6 +4866,7 @@ Usage: GetCombatRating(ratingIndex)
 Usage: GetCombatRatingBonus(ratingIndex)
 Usage: GetSpellCritChance(school)
 Usage: GetSpellBonusDamage(school)
+Usage: Script_GetAttackPowerForStat(stat, value)
 UNKNOWNOBJECT
 Usage: UnitName(\"unit\")
 Usage: UnitPVPName(\"unit\")
@@ -4889,6 +4902,8 @@ Usage: UnitArmor(\"unit\")
 Usage: UnitCharacterPoints(\"unit\")
 Usage: UnitBuff(\"unit\", index [,raidFilter])
 Usage: UnitDebuff(\"unit\", index [,raidFilter])
+Usage: UnitHasBuff(\"unit\", \"name\"[, \"rank\"])
+Usage: UnitHasDebuff(\"unit\", \"name\"[, \"rank\"])
 Usage: UnitIsTapped(\"unit\")
 Usage: UnitIsTappedByPlayer(\"unit\")
 Usage: UnitIsTrivial(\"unit\")
@@ -4903,6 +4918,7 @@ Usage: GetPVPRankInfo(rank [, unit])
 Usage: UnitCastingInfo(\"unit\")
 CHANNELING
 Usage: UnitChannelInfo(\"unit\")
+Usage: UnitIsSameServer(\"unit\", \"otherUnit\")
 COMBAT_RATING_UPDATE
 LFG_UPDATE
 LFG_PENDING_CANCEL
@@ -6081,8 +6097,12 @@ DBFilesClient\\gtCombatRatings.dbc
 Error reading gtCombatRatingsRec
 DBFilesClient\\gtChanceToMeleeCrit.dbc
 Error reading gtChanceToMeleeCritRec
+DBFilesClient\\gtChanceToMeleeCritBase.dbc
+Error reading gtChanceToMeleeCritBaseRec
 DBFilesClient\\gtChanceToSpellCrit.dbc
 Error reading gtChanceToSpellCritRec
+DBFilesClient\\gtChanceToSpellCritBase.dbc
+Error reading gtChanceToSpellCritBaseRec
 DBFilesClient\\HelmetGeosetVisData.dbc
 Error reading HelmetGeosetVisDataRec
 DBFilesClient\\ItemBagFamily.dbc
@@ -6517,7 +6537,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 5991 (Oct  7 2006 18:52:47)
+WoW [Release] Build 6022 (Oct 16 2006 21:27:02)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -6996,6 +7016,7 @@ toggles rendering of footprint particles
 FOREIGN_SERVER_LABEL
 \n<%s>
 Unknown Being
+Unknown Server
 NOUNITDISPLAYID|%d|%s
 NOCOLLISIONBOX|%s
 ZEROSCALEUNIT|%d|%s
@@ -7215,7 +7236,6 @@ spellFocusType
 lootedEvent
 chairheight
 chairslots
-spell
 charges
 consumable
 chestRestockTime
@@ -7738,7 +7758,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 5991 (Oct  7 2006)
+WoW [Release] Build 6022 (Oct 16 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -8548,6 +8568,7 @@ c_fSampleOffs
 c_fBaseAngle
 Shaders\\Vertex\\FFXNetherBlur.bls
 Shaders\\Pixel\\FFXNetherBlur.bls
+vColorMul
 Shaders\\Pixel\\FFXNetherCombine.bls
 ffxGlow
 full screen glow effect
@@ -8595,11 +8616,15 @@ SPIRIT_HEALER_RELEASE_RED
 E:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\Minimap.cpp
 CombatRatings
 ChanceToMeleeCrit
+ChanceToMeleeCritBase
 ChanceToSpellCrit
+ChanceToSpellCritBase
 SpellStopCasting
 SpellStopTargeting
 SpellTargetUnit
 SpellCanTargetUnit
+SpellTargetItem
+SpellCanTargetItem
 SpellIsTargeting
 HAPPINESS
 %s_PET
@@ -8778,6 +8803,7 @@ PETTAME_NOTTAMEABLE
 PETTAME_CREATUREALREADYOWNED
 PETTAME_TOOMANY
 PETTAME_INVALIDCREATURE
+Usage: SpellTargetItem(itemID|\"name\"|\"itemlink\")
 Usage: SpellCanTargetUnit(\"unit\")
 Usage: SpellTargetUnit(\"unit\")
 autoSelfCast
@@ -8870,6 +8896,7 @@ MinColor
 Unknown orientation %s in element %s
 orientation
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameXML\\XMLTree.cpp
+SavedVariables
 -------------------------------------------------------------------\n-- Table library\nlocal tab = table\nforeach = tab.foreach\nforeachi = tab.foreachi\ngetn = tab.getn\ntinsert = tab.insert\ntremove = tab.remove\nsort = tab.sort\n\n-------------------------------------------------------------------\n-- math library\nlocal math = math\nabs = math.abs\nacos = function (x) return math.deg(math.acos(x)) end\nasin = function (x) return math.deg(math.asin(x)) end\natan = function (x) return math.deg(math.atan(x)) end\natan2 = function (x,y) return math.deg(math.atan2(x,y)) end\nceil = math.ceil\ncos = function (x) return math.cos(math.rad(x)) end\ndeg = math.deg\nexp = math.exp\nfloor = math.floor\nfrexp = math.frexp\nldexp = math.ldexp\nlog = math.log\nlog10 = math.log10\nmax = math.max\nmin = math.min\nmod = math.fmod\nPI = math.pi\n--??? pow = math.pow\nrad = math.rad\nrandom = math.random\nrandomseed = math.randomseed\nsin = function (x) return math.sin(math.rad(x)) end\nsqrt = math.sqrt\ntan = function (x)
 debugstack
 difftime
@@ -8887,7 +8914,11 @@ debuginfo
 debugload
 hooksecurefunc
 securecall
-secure
+issecurevariable
+issecure
+strconcat
+strjoin
+strsplit
 getglobal
 setglobal
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameScript\\FrameScript.cpp
@@ -8896,6 +8927,7 @@ return function(self,event,...) %s end
 OnEvent
 %s:%s
 return function(self) %s end
+Usage: issecurevariable([table,] \"variable\")
 Usage: hooksecurefunc([table,] \"function\", hookfunc)
 hooksecurefunc(): %s is not a function
 Usage: seterrorhandler(errfunc)
@@ -9679,12 +9711,15 @@ OnKeyDown
 OnChar
 Frame %s: Unknown script element %s
 Frames
+return function(self,name,value) %s end
+OnAttributeChanged
 return function(self,key) %s end
 return function(self,text) %s end
 OnReceiveDrag
 OnDragStop
 return function(self,delta) %s end
 return function(self,button) %s end
+return function(self,motion) %s end
 OnHide
 OnShow
 return function(self,elapsed) %s end
@@ -9806,6 +9841,7 @@ SetAlpha
 GetAlpha
 SetAttribute
 GetAttribute
+AllowAttributeChanges
 UnregisterAllEvents
 RegisterAllEvents
 UnregisterEvent
@@ -9860,6 +9896,23 @@ tile
 edgeFile
 bgFile
 Usage: %s:SetBackdrop(nil or {bgFile = \"bgFile\", edgeFile = \"edgeFile\", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 0, right = 0, top = 0, bottom = 0 }})
+BorderColor
+BackgroundInsets
+EdgeSize
+TileSize
+Frame %s: Unknown orientation %s in element %s
+defaultValue
+maxValue
+minValue
+BarColor
+BarTexture
+drawLayer
+return function(self,value) %s end
+OnValueChanged
+E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleFont.cpp
+Font %s: Unable to load font file %s
+Font %s: Missing font height in %s element
+Couldn't find inherited font: %s
 PushedTextOffset
 HighlightColor
 DisabledColor
@@ -9876,6 +9929,9 @@ OnDoubleClick
 PostClick
 OnClick
 PreClick
+DisabledCheckedTexture
+CheckedTexture
+checked
 JAPANESE
 CHINESE
 KOREAN
@@ -9909,26 +9965,6 @@ OnEnterPressed
 %d: %s
 > %d/%d
 
-BorderColor
-BackgroundInsets
-EdgeSize
-TileSize
-Frame %s: Unknown orientation %s in element %s
-defaultValue
-maxValue
-minValue
-BarColor
-BarTexture
-drawLayer
-return function(self,value) %s end
-OnValueChanged
-E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleFont.cpp
-Font %s: Unable to load font file %s
-Font %s: Missing font height in %s element
-Couldn't find inherited font: %s
-DisabledCheckedTexture
-CheckedTexture
-checked
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleMessageFrame.cpp
 insertMode
 fadeDuration
@@ -10281,11 +10317,11 @@ IsProtected
 %s:SetParent(): Couldn't find 'this' in parent object
 Usage: %s:SetWidth(width)
 Usage: %s:SetHeight(height)
-Usage: %s:SetPoint(\"point\" [, region or nil] [, \"relativePoint\"] [, offsetX, offsetY])
 %s:SetPoint(): %s is dependent on this
 %s:SetPoint(): trying to anchor to itself
 %s:SetPoint(): Couldn't find region named '%s'
 %s:SetPoint(): Unknown region point
+Usage: %s:SetPoint(\"point\" [, region or nil] [, \"relativePoint\"] [, offsetX, offsetY])
 %s:SetAllPoints(): %s is dependent on this
 %s:SetAllPoints(): trying to anchor to itself
 %s:SetAllPoints(): Couldn't find region named '%s'
@@ -10438,9 +10474,11 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuop
+ltuo
 smooth
 cinu
+ltuo@
+ltuo@
 raster5
 raster1
    !
@@ -11712,6 +11750,9 @@ GxTex_Anisotropic
 (\r0IW+2%
 x<h'R
 9q2Hg
+o'6RX\r
+GcS68
+2\x1BpK@
 .?AV?$TSExplicitList@VCACHEENTRY@@$0?CCCCCCCD@@@
 .?AVCACHEENTRY@@
 .?AV?$TSFixedArray@H@@
@@ -11748,10 +11789,13 @@ x<h'R
 .PAUSpellBookSkillInfo@@
 .?AUCombatFeedbackSpell@@
 .?AUTUTORIALTIMER@@
+.?AUOVERRIDEKEYBINDINGENTRY@@
 .?AUKEYCOMMAND@@
 .?AV?$TSExplicitList@UKEYCOMMAND@@$0?CCCCCCCD@@@
 .?AUKEYBINDING@@
 .?AV?$TSExplicitList@UKEYBINDING@@$0?CCCCCCCD@@@
+.?AUOVERRIDEKEYBINDING@@
+.?AV?$TSExplicitList@UOVERRIDEKEYBINDING@@$0?CCCCCCCD@@@
 .?AVPetAction@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
 .?AULFGLIST@@
@@ -12172,9 +12216,9 @@ tanh
 .?AV?$TSExplicitList@UFRAMEATTR@@$0?CCCCCCCD@@@
 .?AUCSimpleBatchedTexture@@
 .?AURENDERCALLBACKNODE@@
-.?AUEditHistory@CSimpleEditBox@@
 .?AV?$TSExplicitList@USIMPLEFONT@@$0?CCCCCCCD@@@
 .?AUSIMPLEFONT@@
+.?AUEditHistory@CSimpleEditBox@@
 .?AUMessageData@@
 .?AVCSimpleMessageFrameLine@@
 .?AVCSimpleMessageScrollFrameLine@@
