@@ -1,6 +1,6 @@
 // Auto generated file
 // Patch: 2.0.3
-// Build: 6282
+// Build: 6299
 
 Public Enum EObjectFields
 {
@@ -302,19 +302,21 @@ Public Enum EPlayerFields
     PLAYER_FIELD_PVP_MEDALS = EUnitFields.UNIT_END + 0x467,                       // 0x543 - Size: 1 - Type: INT - Flags: PRIVATE
     PLAYER_FIELD_BUYBACK_PRICE_1 = EUnitFields.UNIT_END + 0x468,                  // 0x544 - Size: 12 - Type: INT - Flags: PRIVATE
     PLAYER_FIELD_BUYBACK_TIMESTAMP_1 = EUnitFields.UNIT_END + 0x474,              // 0x550 - Size: 12 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_TODAY_KILLS = EUnitFields.UNIT_END + 0x480,                      // 0x55C - Size: 1 - Type: TWO_SHORT - Flags: PRIVATE
-    PLAYER_FIELD_YESTERDAY_KILLS = EUnitFields.UNIT_END + 0x481,                  // 0x55D - Size: 1 - Type: TWO_SHORT - Flags: PRIVATE
-    PLAYER_FIELD_LIFETIME_HONORBALE_KILLS = EUnitFields.UNIT_END + 0x482,         // 0x55E - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BYTES2 = EUnitFields.UNIT_END + 0x483,                           // 0x55F - Size: 1 - Type: BYTES - Flags: PRIVATE
-    PLAYER_FIELD_WATCHED_FACTION_INDEX = EUnitFields.UNIT_END + 0x484,            // 0x560 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_COMBAT_RATING_1 = EUnitFields.UNIT_END + 0x485,                  // 0x561 - Size: 23 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_ARENA_TEAM_INFO_1_1 = EUnitFields.UNIT_END + 0x49C,              // 0x578 - Size: 9 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_HONOR_CURRENCY = EUnitFields.UNIT_END + 0x4A5,                   // 0x581 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_ARENA_CURRENCY = EUnitFields.UNIT_END + 0x4A6,                   // 0x582 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_MANA_REGEN = EUnitFields.UNIT_END + 0x4A7,                   // 0x583 - Size: 1 - Type: FLOAT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_MANA_REGEN_INTERRUPT = EUnitFields.UNIT_END + 0x4A8,         // 0x584 - Size: 1 - Type: FLOAT - Flags: PRIVATE
-    PLAYER_FIELD_MAX_LEVEL = EUnitFields.UNIT_END + 0x4A9,                        // 0x585 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_END = EUnitFields.UNIT_END + 0x4AA                                     // 0x586
+    PLAYER_FIELD_KILLS = EUnitFields.UNIT_END + 0x480,                            // 0x55C - Size: 1 - Type: TWO_SHORT - Flags: PRIVATE
+    PLAYER_FIELD_TODAY_CONTRIBUTION = EUnitFields.UNIT_END + 0x481,               // 0x55D - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_YESTERDAY_CONTRIBUTION = EUnitFields.UNIT_END + 0x482,           // 0x55E - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_LIFETIME_HONORBALE_KILLS = EUnitFields.UNIT_END + 0x483,         // 0x55F - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_BYTES2 = EUnitFields.UNIT_END + 0x484,                           // 0x560 - Size: 1 - Type: BYTES - Flags: PRIVATE
+    PLAYER_FIELD_WATCHED_FACTION_INDEX = EUnitFields.UNIT_END + 0x485,            // 0x561 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_COMBAT_RATING_1 = EUnitFields.UNIT_END + 0x486,                  // 0x562 - Size: 23 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_ARENA_TEAM_INFO_1_1 = EUnitFields.UNIT_END + 0x49D,              // 0x579 - Size: 9 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_HONOR_CURRENCY = EUnitFields.UNIT_END + 0x4A6,                   // 0x582 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_ARENA_CURRENCY = EUnitFields.UNIT_END + 0x4A7,                   // 0x583 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_MANA_REGEN = EUnitFields.UNIT_END + 0x4A8,                   // 0x584 - Size: 1 - Type: FLOAT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_MANA_REGEN_INTERRUPT = EUnitFields.UNIT_END + 0x4A9,         // 0x585 - Size: 1 - Type: FLOAT - Flags: PRIVATE
+    PLAYER_FIELD_MAX_LEVEL = EUnitFields.UNIT_END + 0x4AA,                        // 0x586 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_PADDING = EUnitFields.UNIT_END + 0x4AB,                          // 0x587 - Size: 1 - Type: INT - Flags: NONE
+    PLAYER_END = EUnitFields.UNIT_END + 0x4AC                                     // 0x588
 }
 Public Enum EGameObjectFields
 {

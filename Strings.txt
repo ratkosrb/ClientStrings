@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6282)
+World of WarCraft (build 6299)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -635,8 +635,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Dec 30 2006
-16:04:29
+Jan  4 2007
+16:18:56
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1148,7 +1148,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6282
+6299
 2.0.3
 RELEASE_BUILD
 BETA_BUILD
@@ -1356,6 +1356,7 @@ GAMEOBJECT_ROTATION
 GAMEOBJECT_FLAGS
 GAMEOBJECT_DISPLAYID
 OBJECT_FIELD_CREATED_BY
+PLAYER_FIELD_PADDING
 PLAYER_FIELD_MAX_LEVEL
 PLAYER_FIELD_MOD_MANA_REGEN_INTERRUPT
 PLAYER_FIELD_MOD_MANA_REGEN
@@ -1366,8 +1367,9 @@ PLAYER_FIELD_COMBAT_RATING_1
 PLAYER_FIELD_WATCHED_FACTION_INDEX
 PLAYER_FIELD_BYTES2
 PLAYER_FIELD_LIFETIME_HONORBALE_KILLS
-PLAYER_FIELD_YESTERDAY_KILLS
-PLAYER_FIELD_TODAY_KILLS
+PLAYER_FIELD_YESTERDAY_CONTRIBUTION
+PLAYER_FIELD_TODAY_CONTRIBUTION
+PLAYER_FIELD_KILLS
 PLAYER_FIELD_BUYBACK_TIMESTAMP_1
 PLAYER_FIELD_BUYBACK_PRICE_1
 PLAYER_FIELD_PVP_MEDALS
@@ -3291,72 +3293,6 @@ AccountMsg_GetBody() failed because the body was not loaded
 Usage: AccountMsg_SetMsgRead(number) falied becuse the number is out of range
 Usage: AccountMsg_SetMsgRead(number)
 AccountMsg_SetMsgRead() failed because the headers are not loaded
-SortBattlefieldScoreData
-GetBattlefieldArenaFaction
-GetBattlefieldTeamInfo
-GetBattlefieldMapIconScale
-CanJoinBattlefieldAsGroup
-GetBattlefieldFlagPosition
-GetNumBattlefieldFlagPositions
-GetBattlefieldPosition
-GetNumBattlefieldPositions
-RequestBattlefieldPositions
-GetBattlefieldStatData
-GetBattlefieldStatInfo
-GetNumBattlefieldStats
-LeaveBattlefield
-SetBattlefieldScoreFaction
-GetBattlefieldWinner
-GetBattlefieldScore
-GetNumBattlefieldScores
-RequestBattlefieldScoreData
-ShowBattlefieldList
-CloseBattlefield
-GetBattlefieldTimeWaited
-GetBattlefieldEstimatedWaitTime
-GetBattlefieldInstanceRunTime
-GetBattlefieldInstanceExpiration
-GetBattlefieldPortExpiration
-GetBattlefieldStatus
-AcceptBattlefieldPort
-GetSelectedBattlefield
-SetSelectedBattlefield
-JoinBattlefield
-IsActiveBattlefieldArena
-IsBattlefieldArena
-GetBattlefieldInstanceInfo
-GetBattlefieldInfo
-GetNumBattlefields
-HordeFlag
-AllianceFlag
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\BattlefieldInfo.cpp
-%s-%s
-Usage: GetBattlefieldInfo(index)
-Usage: JoinBattlefield(index)
-Usage: SetSelectedBattlefield(index)
-Usage: AcceptBattlefieldPort(index, accept)
-error
-active
-confirm
-queued
-Usage: GetBattlefieldStatus(index)
-Usage: GetBattlefieldPortExpiration(index)
-Usage: GetBattlefieldEstimatedWaitTime(index)
-Usage: GetBattlefieldTimeWaited(index)
-Usage: ShowBattlefieldList(index)
-Usage: GetBattlefieldScore(index)
-Usage: GetBattlefieldStatInfo(index)
-Usage: GetBattlefieldStatData(playerIndex, statIndex)
-Usage: GetBattlefieldPosition(index)
-Usage: GetBattlefieldFlagPosition(index)
-Usage: GetBattlefieldTeamInfo(index)
-stat
-healing
-damage
-class
-deaths
-kills
-Usgae: SortBattlefieldScoreData(\"type\")
 HasNewMail
 InboxItemCanDelete
 DeleteInboxItem
@@ -3835,6 +3771,7 @@ Usage: GetLFGResults(type, lfgNdx, index)
 Usage: GetLFGPartyResults(type, lfgNdx, index, partyIndex)
 Usage: GetLFGTypeEntries(type)
 zone
+class
 level
 Usgae: SortLfg(\"type\")
 ArenaTeamRoster
@@ -4004,6 +3941,71 @@ Usage: SetSelectedAuctionItem(\"type\", index)
 Usage: GetSelectedAuctionItem(\"type\")
 Usage: IsAuctionSortReversed(\"type\", \"sort\")
 Usage: SetSelectedAuctionItem(index)
+SortBattlefieldScoreData
+GetBattlefieldArenaFaction
+GetBattlefieldTeamInfo
+GetBattlefieldMapIconScale
+CanJoinBattlefieldAsGroup
+GetBattlefieldFlagPosition
+GetNumBattlefieldFlagPositions
+GetBattlefieldPosition
+GetNumBattlefieldPositions
+RequestBattlefieldPositions
+GetBattlefieldStatData
+GetBattlefieldStatInfo
+GetNumBattlefieldStats
+LeaveBattlefield
+SetBattlefieldScoreFaction
+GetBattlefieldWinner
+GetBattlefieldScore
+GetNumBattlefieldScores
+RequestBattlefieldScoreData
+ShowBattlefieldList
+CloseBattlefield
+GetBattlefieldTimeWaited
+GetBattlefieldEstimatedWaitTime
+GetBattlefieldInstanceRunTime
+GetBattlefieldInstanceExpiration
+GetBattlefieldPortExpiration
+GetBattlefieldStatus
+AcceptBattlefieldPort
+GetSelectedBattlefield
+SetSelectedBattlefield
+JoinBattlefield
+IsActiveBattlefieldArena
+IsBattlefieldArena
+GetBattlefieldInstanceInfo
+GetBattlefieldInfo
+GetNumBattlefields
+HordeFlag
+AllianceFlag
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\BattlefieldInfo.cpp
+%s-%s
+Usage: GetBattlefieldInfo(index)
+Usage: JoinBattlefield(index)
+Usage: SetSelectedBattlefield(index)
+Usage: AcceptBattlefieldPort(index, accept)
+error
+active
+confirm
+queued
+Usage: GetBattlefieldStatus(index)
+Usage: GetBattlefieldPortExpiration(index)
+Usage: GetBattlefieldEstimatedWaitTime(index)
+Usage: GetBattlefieldTimeWaited(index)
+Usage: ShowBattlefieldList(index)
+Usage: GetBattlefieldScore(index)
+Usage: GetBattlefieldStatInfo(index)
+Usage: GetBattlefieldStatData(playerIndex, statIndex)
+Usage: GetBattlefieldPosition(index)
+Usage: GetBattlefieldFlagPosition(index)
+Usage: GetBattlefieldTeamInfo(index)
+stat
+healing
+damage
+deaths
+kills
+Usgae: SortBattlefieldScoreData(\"type\")
 SaveGuildRoster
 SetGuildInfoText
 GetGuildInfoText
@@ -6811,7 +6813,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6282 (Dec 30 2006 16:07:30)
+WoW [Release] Build 6299 (Jan  4 2007 16:21:57)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -7952,6 +7954,7 @@ SPELLDISMISSPETSELF
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\PlayerSound_C.cpp
 SPELLVISUALIDNOTFOUND|%d
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Movement_C.cpp
+Failed to dereference transport! Provided GUID 0x%016I64X
 COMBATLOG_XPGAIN_EXHAUSTION5
 COMBATLOG_XPGAIN_EXHAUSTION4
 NULL
@@ -8086,7 +8089,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6282 (Dec 30 2006)
+WoW [Release] Build 6299 (Jan  4 2007)
  ,;\t\"\r\n
 No help yet
 help
@@ -10849,7 +10852,7 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo@�
+ltuoP�
 smooth
 cinu
 raster5
