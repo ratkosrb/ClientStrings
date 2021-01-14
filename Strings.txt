@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6448)
+World of WarCraft (build 6546)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -637,8 +637,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Feb 27 2007
-15:24:00
+Mar 30 2007
+11:00:03
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1150,8 +1150,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6448
-2.0.10
+6546
+2.0.12
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -6849,7 +6849,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6448 (Feb 27 2007 15:27:06)
+WoW [Release] Build 6546 (Mar 30 2007 11:03:07)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -7046,7 +7046,7 @@ SaveTimerHandler
 unicows.dll
 fmod.dll
 DivxDecoder.dll
-%hu.%hu.%hu.%hu
+%u.%u.%u.%u
 TROJAN
 E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\CheckExecutableSignature.cpp
 LOGIN_STATE_CONNECTED
@@ -8125,7 +8125,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6448 (Feb 27 2007)
+WoW [Release] Build 6546 (Mar 30 2007)
  ,;\t\"\r\n
 No help yet
 help
@@ -10888,9 +10888,11 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo`ۃ
+ltuo�ۃ
+ltuo
 smooth
 cinu
+ltuo
 raster5
 raster1
    !
