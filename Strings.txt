@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6052)
+World of WarCraft (build 6080)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -617,8 +617,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Oct 24 2006
-20:49:23
+Oct 31 2006
+15:57:19
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1114,7 +1114,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6052
+6080
 2.0.0
 RELEASE_BUILD
 BETA_BUILD
@@ -1669,8 +1669,6 @@ GetCurrentTitle
 GetNumTitles
 GetMirrorTimerProgress
 GetMirrorTimerInfo
-ReportSuggestion
-ReportBug
 SetDungeonDifficulty
 GetCurrentDungeonDifficulty
 GetDefaultDungeonDifficulty
@@ -2517,10 +2515,6 @@ Usage: InitiateTrade(\"unit\")
 Usage: CanInspect(unit [, showError])
 Usage: NotifyInspect(unit)
 Usage: SetDungeonDifficulty(difficulty)
-Reporting failed
-Reported
-Usage: ReportBug(\"description\")
-Usage: ReportSuggestion(\"description\")
 Usage: PickupPlayerMoney(amount)
 Usage: GuildSetMOTD(\"message\")
 Usage: ArenaTeamInviteByName(team, name)
@@ -3248,9 +3242,13 @@ GetBindingAction
 GetBindingKey
 ClearOverrideBindings
 SetOverrideBindingClick
+SetOverrideBindingMacro
+SetOverrideBindingItem
 SetOverrideBindingSpell
 SetOverrideBinding
 SetBindingClick
+SetBindingMacro
+SetBindingItem
 SetBindingSpell
 SetBinding
 GetBinding
@@ -3296,7 +3294,12 @@ BACKSLASH
 SLASH
 RIGHTBRACKET
 LEFTBRACKET
+RightButton
+MiddleButton
+LeftButton
 CLICK
+MACRO
+ITEM
 SPELL
 down
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIBindings.h
@@ -3304,11 +3307,16 @@ Usage: GetBinding(index)
 Usage: SetBinding(\"KEY\"[, \"COMMAND\"])
 Usage: SetBindingSpell(\"KEY\", \"spellname\")
 SPELL %s
+Usage: SetBindingItem(\"KEY\", \"itemname\")
+ITEM %s
+Usage: SetBindingMacro(\"KEY\", \"macroname\"|macroid)
+MACRO %s
 Usage: SetBindingClick(\"KEY\", \"buttonName\"[, \"mouseButton\"])
 CLICK %s:%s
-LeftButton
 Usage: SetOverrideBinding(owner, isPriority, \"KEY\"[, \"COMMAND\"])
 Usage: SetOverrideBindingSpell(owner, isPriority, \"KEY\", \"spellname\")
+Usage: SetOverrideBindingItem(owner, isPriority, \"KEY\", \"itemname\")
+Usage: SetOverrideBindingMacro(owner, isPriority, \"KEY\", \"macroname\"|macroid)
 Usage: SetOverrideBindingClick(owner, isPriority, \"KEY\", \"buttonName\"[, \"mouseButton\"])
 Usage: ClearOverrideBindings(owner)
 Usage: GetBindingKey(\"COMMAND\")
@@ -3316,8 +3324,6 @@ Usage: GetBindingAction(\"KEY\"[, checkOverride])
 Usage: RunBinding(\"COMMAND\")
 Usage: LoadBindings(0||1||2)
 Usage: SaveBindings(1||2)
-RightButton
-MiddleButton
 SetLootThreshold
 GetLootThreshold
 SetLootMethod
@@ -5522,8 +5528,9 @@ UNITNAME_TITLE_PET
 |cffa335ee
 |cff0070dd
 |cff1eff00
-|cffffffff
 |cff9d9d9d
+|cff808080
+|cffffffff
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Tooltip.cpp
 return function(self,cost) %s end
 OnTooltipAddMoney
@@ -5647,6 +5654,8 @@ PETITION_TITLE
 GUILD_CHARTER_TITLE
 CURRENTLY_EQUIPPED
 DESTROY_GEM
+  %s%s%s%s
+ENCHANT_CONDITION_REQUIRES
 ENCHANT_CONDITION_MORE_COMPARE
 ENCHANT_CONDITION_MORE_EQUAL_COMPARE
 ENCHANT_CONDITION_NOT_EQUAL_COMPARE
@@ -5655,8 +5664,6 @@ ENCHANT_CONDITION_MORE_VALUE
 ENCHANT_CONDITION_LESS_VALUE
 ENCHANT_CONDITION_NOT_EQUAL_VALUE
 ENCHANT_CONDITION_EQUAL_VALUE
-ENCHANT_CONDITION_REQUIRES
-ENCHANT_CONDITION_AND
 SPELL_USE_ALL_HEALTH
 CHANCE_TO_CRIT
 CHANCE_TO_PARRY
@@ -6543,7 +6550,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6052 (Oct 24 2006 20:52:18)
+WoW [Release] Build 6080 (Oct 31 2006 16:00:12)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -7764,7 +7771,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6052 (Oct 24 2006)
+WoW [Release] Build 6080 (Oct 31 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -9934,6 +9941,7 @@ NormalTexture
 OnDoubleClick
 PostClick
 OnClick
+return function(self,button,down) %s end
 PreClick
 DisabledCheckedTexture
 CheckedTexture
@@ -10482,12 +10490,11 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuopT
+ltuo
 smooth
 cinu
-ltuop
-ltuo0
-ltuo0
+ltuo@
+ltuo@
 raster5
 raster1
    !
