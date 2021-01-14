@@ -293,7 +293,7 @@ dbCompress
 Database compression
 Config.wtf
 WoW.mfil
-World of WarCraft: Assertions Enabled Build (build 7994)
+World of WarCraft: Assertions Enabled Build (build 8016)
 SendErrorLogs
 m_rc
 player hidden
@@ -317,7 +317,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<P8�
+���<X8�
 f:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\Tempest/cmath.h
 \"%s\", %s = %f
 r >= .0f
@@ -828,8 +828,8 @@ s_pGameSystem == 0
 => Setting up Game Sound:
 => Version %s (%s) %s
 0.4.0
-7994
-Feb 28 2008
+8016
+Mar  4 2008
 Logs\\Sound.log
 Logs\\SESound.log
 Logs
@@ -2193,7 +2193,6 @@ PETTAME_INVALIDCREATURE
 Usage: SpellTargetItem(itemID|\"name\"|\"itemlink\")
 visRec
 itemID
-caster->IsA(TYPE_UNIT)
 msg->IsRead()
 target
 Usage: SpellCanTargetUnit(\"unit\")
@@ -2358,7 +2357,7 @@ CHAT_MSG_RAID
 CHAT_MSG_PARTY
 .\\ComSatClient.cpp
 !s_threadRunning
-WOWCOMSATCLIENT7994
+WOWCOMSATCLIENT8016
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
 COMSAT_STOP: NotifyLocalTalkerStop\r\n
@@ -3780,7 +3779,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release Assertions Enabled] Build 7994 (Feb 28 2008)
+WoW [Release Assertions Enabled] Build 8016 (Mar  4 2008)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -3972,6 +3971,7 @@ playerPtr
 HOME_INN
 slotB <= 0xff
 number
+!\"Unknown spell execute log effect\"
 gameObjPtr->IsPeaceful(this)
 unitPtr->IsPeaceful(this) && unitPtr->IsQuestGiver()
 object
@@ -4578,6 +4578,11 @@ CLightning::Render [3]
 CLightning::Render [2]
 CLightning::Render [1]
 mRec->m_AvgSegLen > 0.0f
+.\\Bag_C.cpp
+slot >= 0
+slot < NUM_ITEM_SPELLS
+f:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_0-branch\\WoW\\Source\\Object/Item.h
+func
 CombatLogClearEntries
 CombatLogAdvanceEntry
 CombatLogGetCurrentEntry
@@ -4642,6 +4647,8 @@ SPELL_DURABILITY_DAMAGE_ALL
 SPELL_DURABILITY_DAMAGE
 SPELL_EXTRA_ATTACKS
 SPELL_INTERRUPT
+SPELL_CREATE
+SPELL_SUMMON
 SPELL_INSTAKILL
 SPELL_LEECH
 SPELL_DRAIN
@@ -4668,20 +4675,16 @@ UKNOWNOBJECT
 BUFF
 DEBUFF
 %s,%s,%s,0x%x,%s,%s,0x%x
+\"%s\"
+\"%s-%s\"
 s_pendingCombatLogEntry && !s_pendingCombatLogEntry->IsPending()
 CombatLogAddFilter(): incomplete filter for dstMask
 CombatLogAddFilter(): incomplete filter for srcMask
 CombatLogSetCurrentEntry(): index must be positive or negative
 Usage: CombatLogSetCurrentEntry(index [,ignoreFilter])
 Usage: CombatLogAdvanceEntry(count [,ignoreFilter])
-casterPtr
 newDoses != oldDoses
 combatLogRetentionTime
-.\\Bag_C.cpp
-slot >= 0
-slot < NUM_ITEM_SPELLS
-f:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_0-branch\\WoW\\Source\\Object/Item.h
-func
 size < NUM_MONSTERSIZECLASSES
 size >= MONSTERSIZECLASS_SMALL
 .\\UnitCombat_C.cpp
@@ -4974,7 +4977,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release Assertions Enabled] Build 7994 (Feb 28 2008 20:22:40)
+WoW [Release Assertions Enabled] Build 8016 (Mar  4 2008 14:33:40)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -5130,12 +5133,10 @@ psnames
 truetype
 sfnt
 smooth
-ltuo0
 cinu
 raster5
 raster1
-ltuo@#d
-ltuo@#d
+ltuop
 zeta
 zdotaccent
 zacute
@@ -6378,11 +6379,8 @@ shortEdge >= 4
 texId
 .\\CGxDeviceOpenGL\\CGxOglShader.cpp
 !sh->loaded
-PARAM c[%d]={
-PARAM c[%d] = { %n
-[%d..%d]
- [%d..%d]%n
-.local
+PARAM c%u[%u]={program.env[%u..%u]}
+
 \nOPTION ARB_fog_exp2;\n
 \nOPTION ARB_fog_exp;\n
 \nOPTION ARB_fog_linear;\n
@@ -6497,7 +6495,10 @@ Added to Stack
 Existing Item In Slot
 Unknown Reason
 Not Deleted
-OnVehicleControlEnd
+OnVehicleAbandon
+OnVehicleRide
+OnVehicleRideRequest
+OnPassengerControlEnd
 OnCharmBreak
 OnSpellFailed
 OnDespawn
@@ -7856,6 +7857,10 @@ OnTooltipSetDefaultAnchor
 %s_MIN
 %s_HOURS
 %s_DAYS
+SECONDS_ABBR
+MINUTES_ABBR
+HOURS_ABBR
+DAYS_ABBR
 f:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\frame\\CSimpleRender.h
 .\\Tooltip.cpp
 statusbar
@@ -8008,7 +8013,6 @@ ITEM_OPENABLE
 ITEM_WRAPPED_BY
 ITEM_CREATED_BY
 ITEM_WRITTEN_BY
-\"%s\"
 \t\t\t<setspelldesc_%d></setspelldesc_%d>\n
 </setspelldesc_%d>\n
 ITEM_SET_BONUS_GRAY
@@ -8016,6 +8020,7 @@ ITEM_SET_BONUS
 \t\t\t<setspelldesc_%d>
   %s
 ITEM_SET_NAME
+ITEM_SPELL_CHARGES_NONE
 %s %s %s
 ITEM_SPELL_TRIGGER_ONUSE
 ITEM_COOLDOWN_TOTAL
@@ -11416,8 +11421,7 @@ Usage: DeleteInboxItem(index)
 Usage: InboxItemCanDelete(index)
 Usage: ComplainInboxItem(index)
 Usage: InboxItemCanComplain(index)
-f:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\wow\\source\\ui\\M
-ailInfo.h
+f:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\wow\\source\\ui\\MailInfo.h
 m_pendingStationeryCallbacks
 mailID
 AUCTION_REMOVED_MAIL_SUBJECT
@@ -11513,14 +11517,13 @@ cond
 ()[]^*/%+-#,
 ((index >= 0) && (index < 3))
 TARGET_TOKEN_NOT_FOUND
-FOCUS_TOKEN_NOT_FOUND
+S_TOKEN_NOT_FOUND
 SLURRED_SPEECH
 Formula evaluator error: stack not empty
 constantIndex < m_constantsCount
 spellIDIndex < m_otherSpellIDCount
 m_status == STATUS_OK
-INT_GENE
-RAL_DURATION_MIN
+INT_GENERAL_DURATION_MIN
 INT_GENERAL_DURATION_HOURS
 INT_GENERAL_DURATION_DAYS
 %.2f
@@ -14629,6 +14632,8 @@ Shaders\\Effects\\%s
 uCnt < SHADER_MAX_RS_VALUES
 .\\ShaderEffect.cpp
 !(m_uFlags&SHADER_FLAGS_HAS_HW_SHADER) || (m_pVtxShader && m_pPixShader)
+f:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_0-branch\\Engine\\Source\\ShaderEffect/CShaderEffect.h
+(index + count - 1) <= 255
 .\\ShaderEffect_HWShaders.cpp
 pThis
 .\\ShaderEffect_FixedFunc.cpp
@@ -15063,8 +15068,6 @@ WoWTitleScreen
 f:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\Base/AVLTree.h
 !\"Unknown compare type\"
 %d %s %d %s
-MINUTES_ABBR
-SECONDS_ABBR
 %d / %d
 !\"No Duplicate Keys Allowed\"
 Text element has unknown name: %s
