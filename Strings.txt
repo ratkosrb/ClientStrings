@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6022)
+World of WarCraft (build 6046)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -617,8 +617,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Oct 16 2006
-21:24:04
+Oct 22 2006
+11:06:10
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1114,7 +1114,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6022
+6046
 2.0.0
 RELEASE_BUILD
 BETA_BUILD
@@ -1990,6 +1990,8 @@ ERR_GUILDEMBLEM_SAME
 ERR_MEETING_STONE_NEED_PARTY
 ERR_MEETING_STONE_NO_RAID_GROUP
 ERR_MEETING_STONE_MUST_BE_LEADER
+ERR_MEETING_STONE_TARGET_INVALID_LEVEL
+ERR_MEETING_STONE_NOT_IN_PARTY
 ERR_MEETING_STONE_INVALID_LEVEL
 ERR_MEETING_STONE_NOT_LEADER
 ERR_MEETING_STONE_GROUP_FULL
@@ -2081,7 +2083,7 @@ ERR_EXHAUSTION_RESTED
 ERR_EXHAUSTION_WELLRESTED
 ERR_OBJECT_IS_BUSY
 ERR_TICKET_NO_TEXT
-ERR_TICKET_UPDATE_ERROR
+ERR_TICKET_DB_ERROR
 ERR_TICKET_CREATE_ERROR
 ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
@@ -2089,7 +2091,7 @@ ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
 ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
-ERR_TICKET_DB_ERROR
+ERR_TICKET_UPDATE_ERROR
 ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
 ERR_PET_SPELL_ROOTED
@@ -2503,9 +2505,10 @@ Usage: InitiateTrade(\"unit\")
 Usage: CanInspect(unit [, showError])
 Usage: NotifyInspect(unit)
 Usage: SetDungeonDifficulty(difficulty)
-Reporting failed.
+Reporting failed
 Reported
 Usage: ReportBug(\"description\")
+Usage: ReportSuggestion(\"description\")
 Usage: PickupPlayerMoney(amount)
 Usage: GuildSetMOTD(\"message\")
 Usage: ArenaTeamInviteByName(team, name)
@@ -2639,6 +2642,9 @@ CRUSHING
 GLANCING
 CRITICAL
 HEAL
+%s()
+%s:%s()
+<unnamed>
 INTERFACESOUND_CURSORGRABOBJECT
 PET_%s_TEXTURE
 INTERFACESOUND_CURSORDROPOBJECT
@@ -3503,7 +3509,6 @@ ClearLookingForGroup
 SetLookingForMore
 SetLookingForGroup
 GetLookingForGroup
-LFG_TYPE_BATTLEGROUND
 LFG_TYPE_ZONE
 LFG_TYPE_QUEST
 LFG_TYPE_RAID
@@ -4150,7 +4155,6 @@ minimapArrowModel
 raid%d
 party%d
 %s:SetMaskTexture(): Couldn't load the file %s
-<unnamed>
 Usage: %s:SetMaskTexture(\"file\")
 %s:SetIconTexture(): Couldn't load the file %s
 Usage: %s:SetIconTexture(\"file\")
@@ -4170,6 +4174,7 @@ DeleteMacro
 GetMacroInfo
 GetNumMacros
 CreateMacro
+RunMacro
 Interface\\Icons\\
 CastSpellByName(
 SLASH_CAST%d
@@ -4184,11 +4189,7 @@ MACRO %d \"%s\" %s\r\n
 Usage: CreateMacro(name, iconIndex, body, local, perCharacter)
 CreateMacro() failed, no name specified
 CreateMacro() failed, already have %d macros
-Usage: GetMacroInfo(index)
-Usage: DeleteMacro(index)
-Usage: EditMacro(index, name, icon, body, local)
 Usage: GetMacroIconInfo(index)
-Usage: PickupMacro(index)
 Usage: GetMacroIndexByName(name)
 HasFilledPetition
 TurnInArenaPetition
@@ -5058,6 +5059,8 @@ STOP_AUTOREPEAT_SPELL
 START_AUTOREPEAT_SPELL
 MEMORY_RECOVERED
 MEMORY_EXHAUSTED
+ADDON_ACTION_BLOCKED
+MACRO_ACTION_BLOCKED
 ADDON_ACTION_FORBIDDEN
 MACRO_ACTION_FORBIDDEN
 VARIABLES_LOADED
@@ -5433,6 +5436,7 @@ Interface\\Cursor\\%s.blp
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Cursor.cpp
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\PortraitButton.cpp
 Portrait1
+Model has no portrait camera
 Interface\\CharacterFrame\\TempPortraitAlphaMaskSmall.blp
 Interface\\CharacterFrame\\TempPortraitAlphaMask.blp
 Interface\\CharacterFrame\\TempPortraitAlphaMaskSmall.tga
@@ -6537,7 +6541,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6022 (Oct 16 2006 21:27:02)
+WoW [Release] Build 6046 (Oct 22 2006 11:09:10)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -7758,7 +7762,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6022 (Oct 16 2006)
+WoW [Release] Build 6046 (Oct 22 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -10474,11 +10478,9 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo
+ltuo`M�
 smooth
 cinu
-ltuo@
-ltuo@
 raster5
 raster1
    !
