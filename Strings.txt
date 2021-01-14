@@ -215,7 +215,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6729)
+World of WarCraft (build 6739)
 SendErrorLogs
 player hidden
 player visible
@@ -236,7 +236,6 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<��y
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1472,9 +1471,9 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-May 25 2007
-6729
-2.1.0
+May 29 2007
+6739
+2.1.1
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -6936,7 +6935,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6729 (May 25 2007 17:16:54)
+WoW [Release] Build 6739 (May 29 2007 17:12:03)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7960,7 +7959,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6729 (May 25 2007)
+WoW [Release] Build 6739 (May 29 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8479,6 +8478,7 @@ Shaders\\Pixel\\MapObjOverbright.bls
 .\\MapObj.cpp
 CMapObj::WaitLoadGroup(%d)\n
 CMapObj::Create(): mapObj->Read(\"%s\") failed
+CMapChunk::UpdatePools(): GxBufCreate() failed for vertex or index buffer.\n
 CMapChunk_idx
 CMapChunk_vtx
 CMap::SafeOpen() failed %s
@@ -9564,7 +9564,6 @@ com3
 com2
 com1
 Fonts
-.\\W32\\OsBotDetection.cpp
 SCROLLBAR
 ToolbarWindow32
 SysListView32
@@ -10537,9 +10536,10 @@ LockHighlight
 Click
 RegisterForClicks
 GetTextHeight
-GetTextWidth
-ushedTextOffset
-etPushedTextOffset
+extWidth
+GetPu
+shedTextOffset
+SetPushedTextOffset
 GetHighlightTexture
 SetHighlightTexture
 GetDisabledTexture
@@ -11220,10 +11220,14 @@ psnames
 truetype
 sfnt
 smooth
+ltuo Kv
+ltuo Lv
 cinu
 raster5
 raster1
-ltuo`
+ltuo
+ltuo0
+ltuo0
 zeta
 zdotaccent
 zacute
@@ -12716,6 +12720,7 @@ World\\NoDXT\\Detail\\
 .?AVCDetailDoodadInst@@
 .?AV?$TSExplicitList@VCMapObj@@$0?CCCCCCCD@@@
 .?AVCMapObj@@
+.?AVCMapChunkBuf@@
 .PAVCMapLight@@
 .?AVCMapAreaLow@@
 .?AV?$TSExplicitList@VCMapDoodadDef@@$0?CCCCCCCD@@@
