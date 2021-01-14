@@ -225,7 +225,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7175)
+World of WarCraft (build 7187)
 SendErrorLogs
 player hidden
 player visible
@@ -1505,8 +1505,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Aug 28 2007
-7175
+Aug 29 2007
+7187
 0.2.0
 RELEASE_BUILD
 BETA_BUILD
@@ -2330,18 +2330,13 @@ SetActiveVoiceChannel(displayIndex) .. invalid displayIndex
 Usage: SetActiveVoiceChannel(displayIndex)
 Usage: CanComplainChat(lineID) or CanComplainChat(name) or CanComplainChat(name, text)
 RAID_INSTANCE_INFO_FMT
-Battleground
-Raid
-Party
 e:\\build\\buildwow\\wow\\source\\ui\\ChatFrame.h
 Warning: invalid chat spam filter expression: \"%s\" (ID #: %d)\n
 Usage: AddChatWindowChannel(index, \"channel\")
 CHANNEL%d
 target
-GetChatNameGUID: NOT FOUND %s\n
-GetChatNameGUID: FOUND %s = %I64d\n
 Usage: IsSilenced (token)
-Usage: GetMuteStatus (token)
+Usage: GetMuteStatus (token, [channel])
 Usage: LeaveChannelByName(\"name\")
 SetGuildRecruitmentMode: invalid mode
 Usage: SetGuildRecruitmentMode(mode)
@@ -4014,9 +4009,6 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
-COPPER
-SILVER
-GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -7199,7 +7191,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7175 (Aug 28 2007 11:42:33)
+WoW [Release] Build 7187 (Aug 29 2007 13:53:57)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7402,6 +7394,9 @@ Error, unknown model record %d specified for player race %d sex %d!
 Error, unknown displayInfo %d specified for player race %d sex %d!
 CHAT_FLAG_GM
 UnwrapGift
+COPPER
+SILVER
+GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -8225,7 +8220,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7175 (Aug 28 2007)
+WoW [Release] Build 7187 (Aug 29 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8276,6 +8271,10 @@ REFLECT
 %s/%s/%s (%s) %s:%s
 %2.2i
 Not Set
+Raid
+Party
+Battleground
+Userlist
 GameTimeSync: delta=%d, differential=%d, HoursAndMinutes=%d
 GameTimeSync: skipping forwards %d game minutes, (current = %s, newtime = %s)
 SMem3: Memory was allocated and never released
@@ -8840,8 +8839,8 @@ VoiceSelectOutputDevice
 VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
-Usage: GetVoiceStatus (token)
-WOWCOMSATCLIENT7175
+Usage: GetVoiceStatus (token, [channel])
+WOWCOMSATCLIENT7187
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -8849,7 +8848,9 @@ COMSAT_STOP: NotifyLocalTalkerStop\r\n
 COMSAT_START: NotifyTalkerStart\r\n
 COMSAT_STOP: NotifyTalkerStop\r\n
 VoiceChatMode
+COMSAT_START: NotifyLocalTalkerStart from PopulateSession\r\n
 COMSAT_STOP: NotifyTalkerStop from RosterUpdate\r\n
+COMSAT_START: NotifyLocalTalkerStart from RosterUpdate\r\n
 COMSAT_STOP: NotifyTalkerStop from ComSatClient_SetCurrentSessionI(-1)\r\n
 Usage: IsPlayerTalking (token)
 PushToTalkButton
@@ -10072,6 +10073,9 @@ Monitor DSP
 ##### ERROR IN CompleteNonBlockingLoad()! FAILED TO ABORT SOUND!!! [A]
 ##### ERROR IN CompleteNonBlockingLoad()! Aborting this sound! %s
 ##### ERROR! INVALID m_pFMODSound
+%-24d%s
+.mp3
+.wav
 => Voice Chat is ready.
 Voice Chat Input
 Voice Chat Output
@@ -10084,9 +10088,6 @@ Voice Chat Output
 ######## FATAL ERROR INITIALIZING. VOICE CHAT DISABLED.
  - ERROR! SSE support is required for voice chat!
 => Setting up Voice Chat:
-%-24d%s
-.mp3
-.wav
 => Game Sound is ready.
 <master>
  - Reverb is %s
@@ -11562,9 +11563,11 @@ psnames
 truetype
 sfnt
 smooth
+ltuo@=x
 cinu
 raster5
 raster1
+ltuo
 zeta
 zdotaccent
 zacute
@@ -13409,16 +13412,16 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u><Ѓ
+��u>DЃ
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
-��u><Ѓ
+��u>DЃ
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u><Ѓ
+��u>DЃ
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13467,7 +13470,7 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u><Ѓ
+��u>DЃ
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13477,7 +13480,7 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
-��u><Ѓ
+��u>DЃ
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13505,7 +13508,7 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
-��u><Ѓ
+��u>DЃ
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
