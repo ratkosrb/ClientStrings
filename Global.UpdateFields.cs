@@ -1,5 +1,5 @@
 // Auto generated file
-// Patch: 0.2.0
+// Patch: 2.2.0
 // Build: 7272
 
 Public Enum EObjectFields
