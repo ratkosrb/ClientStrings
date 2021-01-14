@@ -60,13 +60,19 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6114)
+World of WarCraft (build 6108)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
 %s has wrong row size (found %i, expected %i)
 %s has wrong number of columns (found %i, expected %i)
 Unable to open %s
+timeMode
+Selected mode for game timing
+timeModeDesired
+Desired mode for game timing
+timeError
+Error reported by the timing validation system
 Country
 Language
 WoW Config
@@ -200,7 +206,6 @@ BENCHMARK_TAXI_AVERAGE_FPS
 BENCHMARK_TAXI_MAX_FPS
 BENCHMARK_TAXI_MIN_FPS
 BENCHMARK_TAXI_RESULTS
-taxibenchmark
 togglecloak
 togglehelm
 showplayer
@@ -249,6 +254,11 @@ Runtime Error!\n\nProgram:
 IsProcessorFeaturePresent
 KERNEL32
 e+000
+ (8PX\a\b
+700WP\a
+\b`h````
+ppxxxx\b\a\b
+(null)
 frexp
 fmod
 _hypot
@@ -427,8 +437,8 @@ GetEnvironmentStringsW
 GetProcAddress
 GetCPInfo
 MultiByteToWideChar
-LCMapStringW
 GetStringTypeW
+LCMapStringW
 IsValidCodePage
 GetLocaleInfoW
 CompareStringW
@@ -518,7 +528,6 @@ E:\\build\\buildWoW\\ENGINE\\Source\\Event\\CInputObserver.cpp
 E:\\build\\buildWoW\\ENGINE\\Source\\Event\\CObserver.cpp
 E:\\build\\buildWoW\\ENGINE\\Source\\Event\\EvtTimer.cpp
 \\shell\\open\\command
-%m%d%y_%H%M%S
 Linux
 MacOSX
 MacOS9
@@ -534,12 +543,11 @@ Win98
 Win95OSR2
 Win95
 Unknown
-GenuineIntel
-AuthenticAMDCyrixInsteadCentaurHalls
-s_CheckCpu
-extended (%d): 1c=%08X 1d=%08x 4a=%08X 8c=%08X
+GenuineIntelAuthenticAMDCyrixInsteadCentaurHalls
+processor brand string= %s
+extended (%d): 1c=%08X 1d=%08x 8c=%08X
 standard (%d): 1b=%08X 1d=%08x 4a=%08X
-chip = %s
+vendor id string= %s
 processors: %d
 cores: %d
 sockets: %d
@@ -552,6 +560,8 @@ open
 Invalid function pointer: %p
 Unable to find .text section
 .text
+CallNtPowerInformation
+powrprof.dll
 lpt9
 lpt8
 lpt7
@@ -576,12 +586,8 @@ fonts\\
 %s\\%s
 Fonts
 E:\\build\\buildWoW\\ENGINE\\Source\\Os\\W32\\TimeManager.cpp
-OsTime
-Internal
-CpuTicksPerSecond
-CallNtPowerInformation
-powrprof.dll
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsIME.cpp
+%m%d%y_%H%M%S
 SCROLLBAR
 ToolbarWindow32
 SysListView32
@@ -617,8 +623,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Nov  8 2006
-12:01:50
+Nov  7 2006
+14:05:07
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -851,6 +857,11 @@ Usage: PlaySound(\"sound\")
 Usage: PlayMusic(\"music\")
 Usage: PlaySoundFile(\"soundfile\")
 E:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterface.cpp
+*Screech!!*
+*Next screech in %f seconds*
+*Periodic Fidget Sound ERROR! Max seconds MUST be greater than Min seconds! Fix it!!*
+*No Periodic Fidget Specified*
+..\\Object/ObjectClient/Player_C.h
 INVALID CREDITS SOUND KIT: \"%s\"
 enablemusic
 INVALID AMBIENCE SOUND KIT: \"%s\"
@@ -865,7 +876,6 @@ EnableAmbience
 Enable Ambience
 AmbienceVolume
 Ambience Volume (0.0 to 1.0)
-..\\Object/ObjectClient/Player_C.h
 MapWaterSounds
 DBFilesClient\\ItemDisplayInfo.dbc
 Error reading ItemDisplayInfoRec
@@ -1010,6 +1020,7 @@ CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
+SetServerSplitState
 IsLinuxClient
 IsMacClient
 IsWindowsClient
@@ -1085,6 +1096,11 @@ SetSavedAccountName
 GetSavedAccountName
 GetLocale
 GetBuildInfo
+ACCOUNT_MESSAGES_BODY_LOADED
+ACCOUNT_MESSAGES_HEADERS_LOADED
+ACCOUNT_MESSAGES_AVAILABLE
+TIMER_ALERT
+SERVER_SPLIT_NOTICE
 SCANDLL_FINISHED
 PLAYER_ENTER_MATRIX
 CLIENT_ACCOUNT_MISMATCH
@@ -1114,8 +1130,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6114
-0.0.1
+6108
+2.0.2
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -1142,6 +1158,7 @@ Usage: ScanDLLStart(\"VersionURL\", \"DLLURL\")
 credits_BC.html
 credits.html
 Usage: Script_GetCreditText(versionIndex)
+Usage: Script_SetServerSplitState(1 or 2)
 RealmListDialogCancelled
 GetSelectedCategory
 SortRealms
@@ -1222,9 +1239,10 @@ Usage: SetCharacterSelectFacing(degrees)
 .\\Scan.dll
 Scan
 E:\\build\\buildWoW\\WoW\\Source\\Glue\\ScanDLLGlue.cpp
+SCANDLL_DOWNLOAD
+SCANDLL_MESSAGE_DOWNLOADING
 SCANDLL_ERROR
 SCANDLL_MESSAGE_ERROR
-SCANDLL_DOWNLOAD
 SCANDLL_MESSAGE_SCANNING
 ScanThread
 Cache\\Survey.mpq
@@ -1322,6 +1340,8 @@ GAMEOBJECT_FLAGS
 GAMEOBJECT_DISPLAYID
 OBJECT_FIELD_CREATED_BY
 PLAYER_FIELD_PADDING
+PLAYER_FIELD_MOD_MANA_REGEN_INTERRUPT
+PLAYER_FIELD_MOD_MANA_REGEN
 PLAYER_FIELD_ARENA_CURRENCY
 PLAYER_FIELD_HONOR_CURRENCY
 PLAYER_FIELD_ARENA_TEAM_INFO_1_1
@@ -1342,18 +1362,6 @@ PLAYER_FIELD_MOD_HEALING_DONE_POS
 PLAYER_FIELD_MOD_DAMAGE_DONE_PCT
 PLAYER_FIELD_MOD_DAMAGE_DONE_NEG
 PLAYER_FIELD_MOD_DAMAGE_DONE_POS
-PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE
-PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE
-PLAYER_FIELD_NEGSTAT4
-PLAYER_FIELD_NEGSTAT3
-PLAYER_FIELD_NEGSTAT2
-PLAYER_FIELD_NEGSTAT1
-PLAYER_FIELD_NEGSTAT0
-PLAYER_FIELD_POSSTAT4
-PLAYER_FIELD_POSSTAT3
-PLAYER_FIELD_POSSTAT2
-PLAYER_FIELD_POSSTAT1
-PLAYER_FIELD_POSSTAT0
 PLAYER_FIELD_COINAGE
 PLAYER_REST_STATE_EXPERIENCE
 PLAYER_EXPLORED_ZONES_1
@@ -1516,6 +1524,7 @@ PLAYER_GUILDRANK
 PLAYER_GUILDID
 PLAYER_FLAGS
 PLAYER_DUEL_ARBITER
+UNIT_FIELD_PADDING
 UNIT_FIELD_POWER_COST_MULTIPLIER
 UNIT_FIELD_POWER_COST_MODIFIER
 UNIT_FIELD_MAXRANGEDDAMAGE
@@ -1529,7 +1538,19 @@ UNIT_FIELD_ATTACK_POWER
 UNIT_FIELD_BYTES_2
 UNIT_FIELD_BASE_HEALTH
 UNIT_FIELD_BASE_MANA
+UNIT_FIELD_RESISTANCEBUFFMODSNEGATIVE
+UNIT_FIELD_RESISTANCEBUFFMODSPOSITIVE
 UNIT_FIELD_RESISTANCES
+UNIT_FIELD_NEGSTAT4
+UNIT_FIELD_NEGSTAT3
+UNIT_FIELD_NEGSTAT2
+UNIT_FIELD_NEGSTAT1
+UNIT_FIELD_NEGSTAT0
+UNIT_FIELD_POSSTAT4
+UNIT_FIELD_POSSTAT3
+UNIT_FIELD_POSSTAT2
+UNIT_FIELD_POSSTAT1
+UNIT_FIELD_POSSTAT0
 UNIT_FIELD_STAT4
 UNIT_FIELD_STAT3
 UNIT_FIELD_STAT2
@@ -1563,6 +1584,7 @@ UNIT_FIELD_AURAAPPLICATIONS
 UNIT_FIELD_AURALEVELS
 UNIT_FIELD_AURAFLAGS
 UNIT_FIELD_AURA
+UNIT_FIELD_FLAGS_2
 UNIT_FIELD_FLAGS
 UNIT_VIRTUAL_ITEM_INFO
 UNIT_VIRTUAL_ITEM_SLOT_DISPLAY
@@ -1650,6 +1672,8 @@ NUMPAD%d
 SPACE
 SHIFT
 CTRL
+SetTaxiBenchmarkMode
+ShowTaxiBenchmarkMode
 StopAttack
 StartAttack
 InCombatLockdown
@@ -1669,6 +1693,8 @@ GetCurrentTitle
 GetNumTitles
 GetMirrorTimerProgress
 GetMirrorTimerInfo
+ReportSuggestion
+ReportBug
 SetDungeonDifficulty
 GetCurrentDungeonDifficulty
 GetDefaultDungeonDifficulty
@@ -1964,6 +1990,7 @@ ERR_ARENA_TEAM_CREATE_S
 ERR_ARENA_NO_TEAM_II
 ERR_LFG_PENDING
 ERR_LFG_LEADER_IS_LFM_S
+ERR_MATCHMAKING_MADE_LEADER
 ERR_MATCHMAKING_MUST_BE_LEADER
 ERR_MATCHMAKING_NO_RAID_GROUP
 ERR_MATCHMAKING_NOT_LEADER
@@ -2003,6 +2030,9 @@ ERR_RESTRICTED_ACCOUNT
 ERR_BG_PLAYER_LEFT_S
 ERR_BG_PLAYER_JOINED_SS
 ERR_INVALID_PROMOTION_CODE
+ERR_BATTLEDGROUND_QUEUED_FOR_RATED
+ERR_BATTLEGROUND_CANNOT_QUEUE_FOR_RATED
+ERR_BATTLEGROUND_TOO_MANY_QUEUES
 ERR_GROUP_JOIN_BATTLEGROUND_TOO_MANY
 ERR_GROUP_JOIN_BATTLEGROUND_FAIL
 ERR_GROUP_JOIN_BATTLEGROUND_S
@@ -2027,6 +2057,7 @@ ERR_MEETING_STONE_PARTY_KICKED_FROM_QUEUE
 ERR_MEETING_STONE_OTHER_MEMBER_LEFT
 ERR_MEETING_STONE_LEFT_QUEUE_S
 ERR_MEETING_STONE_IN_QUEUE_S
+PVPENTERQUEUE
 ERR_FEIGN_DEATH_RESISTED
 ERR_TALENT_WIPE_ERROR
 ERR_PET_BROKEN
@@ -2108,14 +2139,14 @@ ERR_EXHAUSTION_WELLRESTED
 ERR_OBJECT_IS_BUSY
 ERR_TICKET_NO_TEXT
 ERR_TICKET_DB_ERROR
-ERR_TICKET_CREATE_ERROR
+ERR_TICKET_UPDATE_ERROR
 ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
 ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
 ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
-ERR_TICKET_UPDATE_ERROR
+ERR_TICKET_CREATE_ERROR
 ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
 ERR_PET_SPELL_ROOTED
@@ -2516,6 +2547,10 @@ Usage: InitiateTrade(\"unit\")
 Usage: CanInspect(unit [, showError])
 Usage: NotifyInspect(unit)
 Usage: SetDungeonDifficulty(difficulty)
+Reporting failed
+Reported
+Usage: ReportBug(\"description\")
+Usage: ReportSuggestion(\"description\")
 Usage: PickupPlayerMoney(amount)
 Usage: GuildSetMOTD(\"message\")
 Usage: ArenaTeamInviteByName(team, name)
@@ -3071,6 +3106,112 @@ Error: %s is anchored to itself
 Couldn't find frame named '%s'
 Unknown frame point
 Usage: PositionMiniWorldMapArrowFrame(\"point\" \"frame\" [, relativePoint] [, offsetX, offsetY])
+KBSystem_GetServerNotice
+KBSystem_GetServerStatus
+KBSystem_GetMOTD
+KBArticle_GetData
+KBArticle_IsLoaded
+KBArticle_BeginLoading
+KBQuery_GetTotalArticleCount
+KBQuery_GetArticleHeaderData
+KBQuery_GetArticleHeaderCount
+KBQuery_IsLoaded
+KBQuery_BeginLoading
+KBSetup_GetTotalArticleCount
+KBSetup_GetArticleHeaderData
+KBSetup_GetArticleHeaderCount
+KBSetup_GetSubCategoryData
+KBSetup_GetSubCategoryCount
+KBSetup_GetCategoryData
+KBSetup_GetCategoryCount
+KBSetup_GetLanguageData
+KBSetup_GetLanguageCount
+KBSetup_IsLoaded
+KBSetup_BeginLoading
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\KnowledgeBase.cpp
+true
+&pageNumber=
+&numArticles=
+?languageId=
+Languages
+caption
+Categories
+ArticleHeaders
+rowNum
+subject
+hotIssue
+updated
+articleCount
+SubCategories
+languageId=
+categoryId=
+searchQuery=
+&searchType=
+&languageId=
+?articleId=
+Article
+subjectAlt
+ArticleText
+keyword
+languageId
+MOTD
+KNOWLEDGE_BASE_SETUP_URL
+KBSetup_GetLanguageCount() failed because setup is not loaded
+KBSetup_GetLanguageData() called with invalid category index
+KBSetup_GetLanguageData() failed because setup is not loaded
+KBSetup_GetCategoryCount() failed because setup is not loaded
+KBSetup_GetCategoryData() called with invalid category index
+KBSetup_GetCategoryData() failed because setup is not loaded
+KBSetup_GetSubCategoryCount() failed because setup is not loaded
+KBSetup_GetSubCategoryData() called with invalid category or sub category index
+KBSetup_GetSubCategoryData() failed because setup is not loaded
+KBSetup_GetArticleHeaderCount() failed because setup is not loaded
+KBSetup_GetArticleHeaderData() called with invalid article header index
+KBSetup_GetArticleHeaderData() failed because setup is not loaded
+KBSetup_GetTotalArticleCount() failed because setup is not loaded
+KNOWLEDGE_BASE_QUERY_URL
+KBQuery_BeginLoading() called with subcategory without category
+KBQuery_BeginLoading() called with a string > 128 bytes for search query
+KBQuery_BeginLoading() called with a null string for search query
+KBQuery_BeginLoading() failed because setup is not loaded
+KBQuery_GetArticleHeaderCount() failed because query is not loaded
+KBQuery_GetArticleHeaderData() called with invalid article header index
+KBQuery_GetArticleHeaderData() failed because query is not loaded
+KBQuery_GetTotalArticleCount() failed because query is not loaded
+KNOWLEDGE_BASE_ARTICLE_URL
+KBArticle_GetData() failed because article is not loaded
+AccountMsg_SetMsgRead
+AccountMsg_GetBody
+AccountMsg_LoadBody
+AccountMsg_GetHeaderPriority
+AccountMsg_GetHeaderSubject
+AccountMsg_GetIndexHighestPriorityUnreadMsg
+AccountMsg_GetNumUnreadMsgs
+AccountMsg_GetNumTotalMsgs
+AccountMsg_LoadHeaders
+&sessionKeyHash=
+?accountName=
+ACCOUNT_MESSAGE_HEADERS_URL
+opened
+priority
+&messageId=
+ACCOUNT_MESSAGE_BODY_URL
+AccountMsg_LoadHeaders() failed
+AccountMsg_GetNumTotalMsgs() failed because the headers are not loaded
+AccountMsg_GetNumUnreadMsgs() failed because the headers are not loaded
+AccountMsg_GetHeaderSubject() failed because the headers are not loaded
+Usage: AccountMsg_GetHeaderSubject(number) falied becuse the number is out of range
+Usage: AccountMsg_GetHeaderSubject(number)
+Usage: AccountMsg_GetHeaderPriority(number) falied becuse the number is out of range
+Usage: AccountMsg_GetHeaderPriority(number)
+AccountMsg_GetHeaderPriority() failed because the headers are not loaded
+Usage: AccountMsg_LoadBody(number) falied becuse the number is out of range
+Usage: AccountMsg_LoadBody(number)
+AccountMsg_LoadBody() failed because the headers are not loaded
+AccountMsg_GetBody() failed because the body was not loaded
+Usage: AccountMsg_SetMsgRead(number) falied becuse the number is out of range
+Usage: AccountMsg_SetMsgRead(number)
+AccountMsg_SetMsgRead() failed because the headers are not loaded
 GetBattlefieldArenaFaction
 GetBattlefieldTeamInfo
 GetBattlefieldMapIconScale
@@ -3327,6 +3468,8 @@ Usage: GetBindingAction(\"KEY\"[, checkOverride])
 Usage: RunBinding(\"COMMAND\")
 Usage: LoadBindings(0||1||2)
 Usage: SaveBindings(1||2)
+GetPartyAssignment
+SetPartyAssignment
 SetLootThreshold
 GetLootThreshold
 SetLootMethod
@@ -3354,6 +3497,11 @@ freeforall
 Invalid loot method
 Usage: SetLootMethod(\"method\" [,master])
 Usage: SetLooThreshold(threshold)
+Usage: SetPartyAssignment(\"assignment\", player)
+Invalid Party assignment
+mainassist
+maintank
+Usage: GetPartyAssignment(\"assignment\")
 CheckReadyCheckTime
 ConfirmReadyCheck
 DoReadyCheck
@@ -3525,6 +3673,7 @@ LFG_TYPE_DUNGEON
 LFG_TYPE_NONE
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\LFGInfo.cpp
 MEETINGSTONE_TOOLTIP
+PVPTHROUGHQUEUE
 MATCHMAKING_MATCH_S
 Usage: SetLookingForGroup(slot, type, index)
 Usage: LFGQuery(typeID, lfgNdx [, class])
@@ -3558,80 +3707,6 @@ seasonplayed
 played
 Usgae: SortArenaTeamRoster(\"type\")
 Usage: ArenaTeamRoster(team)
-KBSystem_GetServerNotice
-KBSystem_GetServerStatus
-KBSystem_GetMOTD
-KBArticle_GetData
-KBArticle_IsLoaded
-KBArticle_BeginLoading
-KBQuery_GetTotalArticleCount
-KBQuery_GetArticleHeaderData
-KBQuery_GetArticleHeaderCount
-KBQuery_IsLoaded
-KBQuery_BeginLoading
-KBSetup_GetTotalArticleCount
-KBSetup_GetArticleHeaderData
-KBSetup_GetArticleHeaderCount
-KBSetup_GetSubCategoryData
-KBSetup_GetSubCategoryCount
-KBSetup_GetCategoryData
-KBSetup_GetCategoryCount
-KBSetup_GetLanguageData
-KBSetup_GetLanguageCount
-KBSetup_IsLoaded
-KBSetup_BeginLoading
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\KnowledgeBase.cpp
-true
-&pageNumber=
-&numArticles=
-?languageId=
-Languages
-caption
-Categories
-ArticleHeaders
-rowNum
-subject
-hotIssue
-updated
-articleCount
-SubCategories
-languageId=
-categoryId=
-searchQuery=
-&searchType=
-&languageId=
-?articleId=
-Article
-subjectAlt
-ArticleText
-keyword
-languageId
-MOTD
-KNOWLEDGE_BASE_SETUP_URL
-KBSetup_GetLanguageCount() failed because setup is not loaded
-KBSetup_GetLanguageData() called with invalid category index
-KBSetup_GetLanguageData() failed because setup is not loaded
-KBSetup_GetCategoryCount() failed because setup is not loaded
-KBSetup_GetCategoryData() called with invalid category index
-KBSetup_GetCategoryData() failed because setup is not loaded
-KBSetup_GetSubCategoryCount() failed because setup is not loaded
-KBSetup_GetSubCategoryData() called with invalid category or sub category index
-KBSetup_GetSubCategoryData() failed because setup is not loaded
-KBSetup_GetArticleHeaderCount() failed because setup is not loaded
-KBSetup_GetArticleHeaderData() called with invalid article header index
-KBSetup_GetArticleHeaderData() failed because setup is not loaded
-KBSetup_GetTotalArticleCount() failed because setup is not loaded
-KNOWLEDGE_BASE_QUERY_URL
-KBQuery_BeginLoading() called with subcategory without category
-KBQuery_BeginLoading() called with a string > 128 bytes for search query
-KBQuery_BeginLoading() called with a null string for search query
-KBQuery_BeginLoading() failed because setup is not loaded
-KBQuery_GetArticleHeaderCount() failed because query is not loaded
-KBQuery_GetArticleHeaderData() called with invalid article header index
-KBQuery_GetArticleHeaderData() failed because query is not loaded
-KBQuery_GetTotalArticleCount() failed because query is not loaded
-KNOWLEDGE_BASE_ARTICLE_URL
-KBArticle_GetData() failed because article is not loaded
 GetPastDrawResult
 GetNumPastDrawResults
 GetNextDrawTime
@@ -3772,7 +3847,6 @@ Usage: GetAuctionItemSubClasses(index)
 Usage: GetAuctionInvTypes(classIndex, subClassIndex)
 Usage: SortAuctionItems(\"type\", \"sort\")
 status
-buyout
 duration
 quality
 Usage: SetSelectedAuctionItem(\"type\", index)
@@ -4064,6 +4138,7 @@ vendor
 gossip
 Missing gossip text!
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\GossipInfo.cpp
+%d%s%d
 Usage: SelectGossipOption(index)
 Usage: SelectGossipAvailableQuest(index)
 Usage: SelectGossipActiveQuest(index)
@@ -4215,14 +4290,18 @@ Usage: TurnInArenaPetition(teamSize)
 GetSocketTypes
 AcceptSockets
 ClickSocketButton
+GetNewSocketLink
 GetNewSocketInfo
+GetExistingSocketLink
 GetExistingSocketInfo
 GetNumSockets
 GetSocketItemInfo
 CloseSocketInfo
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\ItemSocketInfo.cpp
 Usage: GetExistingSocketInfo(index)
+Usage: GetExistingSocketLink(index)
 Usage: GetNewSocketInfo(index)
+Usage: GetNewSocketLink(index)
 Usage: ClickSocketButton(index)
 Usage: GetSocketType(index)
 LearnTalent
@@ -4291,6 +4370,7 @@ easy
 trivial
 used
 NONEQUIPSLOT
+SHIELDSLOT
 BAGSLOT
 TABARDSLOT
 RANGEDSLOT
@@ -4739,6 +4819,11 @@ E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.cpp
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.h
 Joystick
 enable joystick control
+GetManaRegen
+GetUnitManaRegenRateFromSpirit
+GetUnitHealthRegenRateFromSpirit
+GetUnitPowerModifier
+GetUnitHealthModifier
 UnitIsSameServer
 IsFeignDeath
 IsStealthed
@@ -4854,10 +4939,10 @@ GetGameTime
 GetTime
 Unknown unit token: %s
 focus
+E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 mouseover
 raidpet
 partypet
-E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 raidpet%d
 partypet%d
 Usage: ConsoleExec(\"console_command\")
@@ -4875,6 +4960,8 @@ Usage: IsArenaTeamCaptain(index)
 ratingIndex is in the range 1 .. %d
 Usage: GetCombatRating(ratingIndex)
 Usage: GetCombatRatingBonus(ratingIndex)
+Usage: GetCritChanceFromAgility(\"unit\")
+Usage: GetSpellCritChanceFromIntellect(\"unit\")
 Usage: GetSpellCritChance(school)
 Usage: GetSpellBonusDamage(school)
 Usage: Script_GetAttackPowerForStat(stat, value)
@@ -4930,6 +5017,10 @@ Usage: UnitCastingInfo(\"unit\")
 CHANNELING
 Usage: UnitChannelInfo(\"unit\")
 Usage: UnitIsSameServer(\"unit\", \"otherUnit\")
+Usage: GetUnitHealthModifier(\"unit\")
+Usage: GetUnitPowerModifier(\"unit\")
+Usage: GetUnitHealthRegenRateFromSpirit(\"unit\")
+Usage: GetUnitManaRegenRateFromSpirit(\"unit\")
 UPDATE_STEALTH
 MODIFIER_STATE_CHANGED
 COMBAT_RATING_UPDATE
@@ -4987,6 +5078,7 @@ PLAYER_SKINNED
 MEETINGSTONE_CHANGED
 IGR_BILLING_NAG_DIALOG
 BILLING_NAG_DIALOG
+CANCEL_SUMMON
 CONFIRM_SUMMON
 CLOSE_INBOX_ITEM
 MAIL_FAILED
@@ -5209,6 +5301,8 @@ QUEST_DETAIL
 QUEST_GREETING
 GOSSIP_CLOSED
 GOSSIP_ENTER_CODE
+GOSSIP_CONFIRM_CANCEL
+GOSSIP_CONFIRM
 GOSSIP_SHOW
 ITEM_TEXT_CLOSED
 ITEM_TEXT_READY
@@ -5327,7 +5421,6 @@ UNIT_NAME_UPDATE
 UNIT_COMBAT
 UNIT_LOYALTY
 UNIT_PET_TRAINING_POINTS
-UNIT_FLAGS
 UNIT_LEVEL
 UNIT_FACTION
 UNIT_DISPLAYPOWER
@@ -5344,12 +5437,13 @@ UNIT_RAGE
 UNIT_HEALTH
 UNIT_TARGET
 UNIT_RANGED_ATTACK_POWER
-UNIT_RANGEDDAMAGE
 UNIT_MANA
+UNIT_RANGEDDAMAGE
 UNIT_PET_EXPERIENCE
 UNIT_ATTACK_POWER
 UNIT_RESISTANCES
 UNIT_STATS
+UNIT_FLAGS
 UNIT_AURA
 UNIT_ATTACK_SPEED
 UNIT_DAMAGE
@@ -5682,12 +5776,12 @@ SPELL_TOTEMS
 SPELL_RECAST_TIME_SEC
 SPELL_RECAST_TIME_MIN
 SPELL_CAST_TIME_INSTANT_NO_MANA
-SPELL_CAST_CHANNELED
 SPELL_ON_NEXT_RANGED
 SPELL_ON_NEXT_SWING
 SPELL_CAST_TIME_INSTANT
 SPELL_CAST_TIME_SEC
 SPELL_CAST_TIME_MIN
+SPELL_CAST_CHANNELED
 SPELL_RANGE
 %d-%d
 %s_PER_TIME
@@ -5788,6 +5882,8 @@ E:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
 ..\\..\\Object/ItemName.h
 ..\\..\\Object/ItemStats.h
 ..\\..\\Object/NPCText.h
+Warlock summoned item destroys upon arena end
+Arena Team Created
 Socketed into item
 Deleted Mail With Item
 Failed Split Item
@@ -5828,6 +5924,7 @@ Added to Stack
 Existing Item In Slot
 Unknown Reason
 Not Deleted
+OnGeneralTrigger
 OnEnergyRangeRandom
 OnHealthRangeRandom
 OnPathFailing
@@ -5850,6 +5947,8 @@ OnLeaveCombat
 OnEnterCombat
 OnReaction
 -NONE-
+Trigger actions on nearest unit
+Trigger actions on units
 Reset vendor lists for unit(s) in the group
 Unit(s) become a vendor
 Follow a flight spline path exactly, and loop forever
@@ -6120,6 +6219,14 @@ DBFilesClient\\gtChanceToSpellCrit.dbc
 Error reading gtChanceToSpellCritRec
 DBFilesClient\\gtChanceToSpellCritBase.dbc
 Error reading gtChanceToSpellCritBaseRec
+DBFilesClient\\gtOCTRegenHP.dbc
+Error reading gtOCTRegenHPRec
+DBFilesClient\\gtOCTRegenMP.dbc
+Error reading gtOCTRegenMPRec
+DBFilesClient\\gtRegenHPPerSpt.dbc
+Error reading gtRegenHPPerSptRec
+DBFilesClient\\gtRegenMPPerSpt.dbc
+Error reading gtRegenMPPerSptRec
 DBFilesClient\\HelmetGeosetVisData.dbc
 Error reading HelmetGeosetVisDataRec
 DBFilesClient\\ItemBagFamily.dbc
@@ -6554,7 +6661,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6114 (Nov  8 2006 12:07:48)
+WoW [Release] Build 6108 (Nov  7 2006 14:07:57)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -6975,9 +7082,7 @@ PVP_TOGGLE_ON_VERBOSE
 Petition error
 Reserved for future use
 BENCHMARK_TAXI_MODE_OFF
-Taxi benchmark mode OFF.
 BENCHMARK_TAXI_MODE_ON
-Taxi benchmark mode ON.
 Custom3
 Custom2
 Custom1
@@ -6989,7 +7094,6 @@ Closed
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\GameObject_C.cpp
 Unable%s
 Unknown Object Type
-MEETINGSTONE_LEVEL
 BADBASEGAMEOBJECT|%d
 NOOBJECTFILENAME|%d|%d|Game
 Interface\\Cursor\\Unable%s.blp
@@ -7005,8 +7109,8 @@ E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Unit_C.cpp
 Textures\\BakedNpcTextures\\
 UNHANDLEDANIMEVENT|%.4s
 INVALIDDISPLAYMODELRECORD|%d|%d
-Spells\\ErrorCube.mdx
 NOCREATUREDISPLAYIDFOUND|%d
+Spells\\ErrorCube.mdx
 CombatLogPeriodicSpells
 AutoInteract
 Toggles auto-move to interact target
@@ -7262,11 +7366,11 @@ autoClose
 startDestroyed
 startOpen
 type
-E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
 SpiritWolf (DONOTRENAME)
 FootstepSounds
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitSound_C.cpp
 INVALID DEATH THUD SOUND: DEFAULTING TO ID %d
+E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombat_C.cpp
 COMBATLOG_HONORAWARD
 COMBATLOG_HONORGAIN
@@ -7775,7 +7879,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6114 (Nov  8 2006)
+WoW [Release] Build 6108 (Nov  7 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -7810,6 +7914,7 @@ Not Set
 GameTimeSync: delta=%d, differential=%d, HoursAndMinutes=%d
 GameTimeSync: skipping forwards %d game minutes, (current = %s, newtime = %s)
 E:\\build\\buildWoW\\Storm\\Source\\SMem3.cpp
+Requested %u bytes of memory
 SMem3: Memory was allocated and never released
 SMem3: Not initialized.  Verify linker entrypoint is set to 'StormStaticEntryPoint' (defined in StormStartup.h)
 SMem3: Pointer does not refer to a valid allocated block of memory
@@ -7853,6 +7958,7 @@ File:\t%s\nLine:\t%d\n
 Program:\t%s\n
 This application has encountered a critical error:\n\n%s\n
 ERROR #%u (0x%08x) %s
+Internal
 No Minidumps
 Error
 Crash
@@ -8146,6 +8252,7 @@ Value out of range (%d - %d)\n
 **** Entered subzone with no name ****\n
 **** Entered %s subzone ****\n
 %i, %i
+E:\\build\\buildWoW\\WoW\\Source\\WorldClient\\WorldScene.cpp
 GuideArrowBirth
 CorpseArrowBirth
 GroupArrowBirth
@@ -8636,6 +8743,10 @@ ChanceToMeleeCrit
 ChanceToMeleeCritBase
 ChanceToSpellCrit
 ChanceToSpellCritBase
+OCTRegenHP
+OCTRegenMP
+RegenHPPerSpt
+RegenMPPerSpt
 SpellStopCasting
 SpellStopTargeting
 SpellTargetUnit
@@ -8825,6 +8936,8 @@ Usage: SpellCanTargetUnit(\"unit\")
 Usage: SpellTargetUnit(\"unit\")
 autoSelfCast
 SPELLVISUALID_NOT_FOUND|%d
+Spells\\HellfireRaid_Dust_Impact_Base.mdx
+Spells\\Fel_RainOfFire_Impact_Base.mdx
 Spells\\StarShards_Impact_Base.mdx
 Spells\\ArcaneShot_Area.mdx
 Spells\\DeathAndDecay_Area_Base.mdx
@@ -9186,7 +9299,6 @@ reopen
 cannot %s %s: %s
 PANIC: unprotected error in call to Lua API (%s)\n
 \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
-(null)
 (*temporary)
 =[C]
 tail
@@ -9448,10 +9560,6 @@ code size overflow
 .bat
 .cmd
 .exe
- (8PX\a\b
-700WP\a
-\b`h````
-ppxxxx\b\a\b
 Illegal byte sequence
 Directory not empty
 Function not implemented
@@ -10050,7 +10158,7 @@ RIFF
 EnableSubtitles
 StopMovie
 StartMovie
-Usage: %s:StartMovie(\"filename\")
+Usage: %s:StartMovie(\"filename\", volume_0_to_255)
 GetColorRGB
 SetColorRGB
 GetColorHSV
@@ -10501,11 +10609,9 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo0e
+ltuo`
 smooth
 cinu
-ltuop
-ltuop
 raster5
 raster1
    !
@@ -11808,6 +11914,7 @@ GcS68
 .?AUSPAMCHECK@@
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
+123456789ABCDEF
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .?AVCSimpleFontString@@
@@ -11827,7 +11934,6 @@ GcS68
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
 .?AULFGLIST@@
 .PAUArenaTeamMemberInfo@@
-123456789ABCDEF
 .?AV?$TSExplicitList@UWORLDSTATE@@$0?CCCCCCCD@@@
 .?AUWORLDSTATE@@
 .?AW4INV_ALERT_STATUS@@
