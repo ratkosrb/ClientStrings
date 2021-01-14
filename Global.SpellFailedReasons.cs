@@ -1,6 +1,6 @@
 // Auto generated file
 // Patch: 0.3.0
-// Build: 7382
+// Build: 7441
 
 Public Enum SpellFailedReason
 {
@@ -164,6 +164,8 @@ Public Enum SpellFailedReason
     SPELL_FAILED_BM_OR_INVISGOD = 0x9D,                             // 0x09D
     SPELL_FAILED_EXPERT_RIDING_REQUIREMENT = 0x9E,                  // 0x09E
     SPELL_FAILED_ARTISAN_RIDING_REQUIREMENT = 0x9F,                 // 0x09F
-    SPELL_FAILED_UNKNOWN = 0xA0,                                    // 0x0A0
+    SPELL_FAILED_NOT_IDLE = 0xA0,                                   // 0x0A0
+    SPELL_FAILED_NOT_INACTIVE = 0xA1,                               // 0x0A1
+    SPELL_FAILED_UNKNOWN = 0xA2,                                    // 0x0A2
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }
