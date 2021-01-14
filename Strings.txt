@@ -12,20 +12,21 @@ uptodate
 1024x768
 800x600
 640x480
-speech2
-speech2.MPQ
+****\\expansion-locale-****.MPQ
+****\\locale-****.MPQ
+common.MPQ
 expansionloc.MPQ
 expansion.MPQ
-dbc.MPQ
 speech.MPQ
+dbc.MPQ
 fonts.MPQ
-interface.MPQ
-misc.MPQ
 sound.MPQ
 wmo.MPQ
 terrain.MPQ
 texture.MPQ
 model.MPQ
+misc.MPQ
+interface.MPQ
 ..\\Data\\
 Data\\
 delete
@@ -52,10 +53,8 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5849)
+World of WarCraft (build 5894)
 SendErrorLogs
-----
-%s%s
 World of Warcraft
 %s: Cannot read string table
 %s has wrong row size (found %i, expected %i)
@@ -66,8 +65,10 @@ Language
 WoW Config
 Region
 Wow.ini
-disableOptionalSpeech
-Disables the optional speech packs (forces use of primary speech pack.)
+%s%s
+Set the game locale
+enUS
+locale
 RunOnce.wtf
 Config.wtf
 M2FasterDebug
@@ -165,8 +166,13 @@ CacheUpdateHandler
 E:\\build\\buildWoW\\WoW\\Source\\WowServices/PatchFiles.h
 Failed to open archive %s: %s
 patch.MPQ
+patch-%s.MPQ
+patch-%s-?.MPQ
+Data\\%s\\
 patch-?.MPQ
+----
 Failed to open archive %s
+****
 Unknown Error
 Add Ons:
 Cursor Item
@@ -599,8 +605,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Sep 16 2006
-15:39:06
+Sep 21 2006
+10:36:05
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -984,6 +990,7 @@ CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
+GetClientExpansionLevel
 GetAccountExpansionLevel
 GetCreditsText
 StopGlueAmbience
@@ -1075,7 +1082,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5849
+5894
 2.0.0
 RELEASE_BUILD
 BETA_BUILD
@@ -1873,6 +1880,7 @@ ERR_MATCHMAKING_MUST_BE_LEADER
 ERR_MATCHMAKING_GROUP_FULL
 ERR_MATCHMAKING_NO_RAID_GROUP
 ERR_MATCHMAKING_NOT_LEADER
+ERR_MATCHMAKING_NOT_FUNCTIONAL_S
 ERR_MATCHMAKING_PENDING_MATCH_S
 ERR_MATCHMAKING_PENDING_INVITE_S
 ERR_MATCHMAKING_AUTOJOIN_FAILED
@@ -2003,9 +2011,9 @@ ERR_MAIL_QUEST_ITEM
 ERR_CANT_INTERACT_SHAPESHIFTED
 ERR_NO_ITEMS_WHILE_SHAPESHIFTED
 ERR_EXHAUSTION_EXHAUSTED
+ERR_EXHAUSTION_TIRED
 ERR_EXHAUSTION_NORMAL
 ERR_EXHAUSTION_RESTED
-ERR_EXHAUSTION_WELLRESTED
 ERR_OBJECT_IS_BUSY
 ERR_TICKET_NO_TEXT
 ERR_TICKET_DB_ERROR
@@ -2015,13 +2023,14 @@ ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
 ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
-ERR_EXHAUSTION_TIRED
 ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
+ERR_EXHAUSTION_WELLRESTED
 ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
 ERR_PET_SPELL_ROOTED
 ERR_SPELL_UNLEARNED_S
+ERR_PETITION_FULL
 ERR_PETITION_NOT_SAME_SERVER
 ERR_PETITION_NOT_ENOUGH_SIGNATURES
 ERR_PETITION_CREATOR
@@ -2031,8 +2040,8 @@ ERR_PETITION_DECLINED_S
 ERR_PETITION_SIGNED_S
 ERR_PETITION_SIGNED
 ERR_PETITION_OFFERED_S
-igPlayerInviteAccept
 ERR_SPELL_FAILED_NOTUNSHEATHED
+igPlayerInviteAccept
 ERR_FISH_ESCAPED
 ERR_FISH_NOT_HOOKED
 ERR_IGNORING_YOU_S
@@ -2210,6 +2219,7 @@ ERR_QUEST_REWARD_EXP_I
 ERR_QUEST_ALREADY_ON
 ERR_QUEST_NEED_PREREQS
 ERR_QUEST_ONLY_ONE_TIMED
+ERR_QUEST_FAILED_EXPANSION
 ERR_QUEST_FAILED_NOT_ENOUGH_MONEY
 ERR_QUEST_FAILED_WRONG_RACE
 ERR_QUEST_FAILED_MISSING_ITEMS
@@ -2491,6 +2501,10 @@ FrameXML has corrupt signature
 FrameXML missing signature
 Interface\\FrameXML\\FrameXML.toc
 Interface\\FrameXML\\Bindings.xml
+ShowVKeyCastbar
+If the V key display is up for your current target, show the enemy cast bar with teh target's health bar in the game field
+ShowTargetCastbar
+Show the spell your current target is casting
 BlockTrades
 UberTooltips
 Toggles ubertips
@@ -2498,6 +2512,7 @@ UnitNameRenderMode
 sets unitname mode (0=none,1=lockedunits/lockedplayers, 2=playersalways+lockedunits, 3=all units always
 targetNearestDistance
 targetNearestDistanceRadius
+stopAutoAttackOnTargetChange
 showLootSpam
 deselectOnClick
 useUiScale
@@ -3255,6 +3270,7 @@ SetRaidRosterSelection
 GetRaidRosterInfo
 GetNumRaidMembers
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\RaidInfo.cpp
+READY_CHECK_ALL_READY
 Usage: GetRaidTargetIndex(unit)
 PLAYER_OFFLINE
 Usage: GetRaidRosterInfo(index)
@@ -3383,16 +3399,18 @@ IsInLFGQueue
 CancelPendingLFG
 DeclineLFGMatch
 AcceptLFGMatch
+ClearLFMAutofill
+SetLFMAutofill
 ClearLFGAutojoin
 SetLFGAutojoin
 GetLFGTypeEntries
 GetLFGTypes
 GetLFGPartyResults
 GetLFGResults
-GetNumLFGPartyResults
 GetNumLFGResults
-LFGPartyQuery
 LFGQuery
+SetLFGComment
+ClearLookingForMore
 ClearLookingForGroup
 SetLookingForMore
 SetLookingForGroup
@@ -3405,10 +3423,10 @@ LFG_TYPE_DUNGEON
 LFG_TYPE_NONE
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\LFGInfo.cpp
 MEETINGSTONE_TOOLTIP
+Usage: SetLookingForGroup(slot, type, index)
 Usage: LFGQuery(param1 [, class])
-Usage: LFGPartyQuery(index)
 Usage: GetLFGResults(index)
-Usage: GetLFGPartyResults(index)
+Usage: GetLFGPartyResults(index, partyIndex)
 Usage: GetLFGTypeEntries(type)
 ArenaTeamRoster
 CloseArenaTeamRoster
@@ -4142,6 +4160,11 @@ Usage: BuyGuildCharter(guildName)
 GetTabardCreationCost
 CloseTabardCreation
 DoCraft
+CraftOnlyShowMakeable
+CraftIsEnchanting
+GetCraftSlots
+GetCraftFilter
+SetCraftFilter
 ExpandCraftSkillLine
 CollapseCraftSkillLine
 GetCraftDescription
@@ -4166,6 +4189,27 @@ medium
 easy
 trivial
 used
+NONEQUIPSLOT
+BAGSLOT
+TABARDSLOT
+RANGEDSLOT
+ENCHSLOT_2HWEAPON
+ENCHSLOT_WEAPON
+BACKSLOT
+TRINKET1SLOT
+TRINKET0SLOT
+FINGER1SLOT
+FINGER0SLOT
+HANDSSLOT
+WRISTSLOT
+FEETSLOT
+LEGSSLOT
+WAISTSLOT
+CHESTSLOT
+SHIRTSLOT
+SHOULDERSLOT
+NECKSLOT
+HEADSLOT
 ENSCRIBE
 DISGUISE
 TRAIN
@@ -4186,6 +4230,9 @@ Usage: CollapseCraftSkillLine(index)
 Bad skill line in ExpandCraftSkillLine
 Usage: ExpandCraftSkillLine(index)
 Usage: DoCraft(index)
+DoCraft(index) index out of range
+Bad inv type in GetCraftFilter
+Usage: GetCraftFilter(index)
 CloseBankFrame
 PurchaseSlot
 GetBankSlotCost
@@ -4280,27 +4327,8 @@ optimal
 medium
 easy
 trivial
-NONEQUIPSLOT
-BAGSLOT
-TABARDSLOT
-RANGEDSLOT
 SECONDARYHANDSLOT
 MAINHANDSLOT
-BACKSLOT
-TRINKET1SLOT
-TRINKET0SLOT
-FINGER1SLOT
-FINGER0SLOT
-HANDSSLOT
-WRISTSLOT
-FEETSLOT
-LEGSSLOT
-WAISTSLOT
-CHESTSLOT
-SHIRTSLOT
-SHOULDERSLOT
-NECKSLOT
-HEADSLOT
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\TradeSkillFrame.cpp
 Usage: GetTradeSkillInfo(index)
 Usage: SelectTradeSkill(index)
@@ -4833,7 +4861,6 @@ READY_CHECK
 MINIGAME_UPDATE
 START_MINIGAME
 CHAT_MSG_COMBAT_FACTION_CHANGE
-UPDATE_LFG_PARTY
 UPDATE_LFG_LIST
 UPDATE_LFG_TYPES
 PLAYTIME_CHANGED
@@ -5204,10 +5231,10 @@ UNIT_ENERGY
 UNIT_FOCUS
 UNIT_RAGE
 UNIT_HEALTH
-UNIT_PET
+UNIT_TARGET
+UNIT_RANGED_ATTACK_POWER
 UNIT_RANGEDDAMAGE
 UNIT_MANA
-UNIT_RANGED_ATTACK_POWER
 UNIT_PET_EXPERIENCE
 UNIT_ATTACK_POWER
 UNIT_RESISTANCES
@@ -5215,6 +5242,7 @@ UNIT_STATS
 UNIT_AURA
 UNIT_ATTACK_SPEED
 UNIT_DAMAGE
+UNIT_PET
 SECURE
 INCOMPATIBLE
 INTERFACE_VERSION
@@ -5429,7 +5457,7 @@ CORPSE
 LOCKED_WITH_ITEM
 LOCKED_WITH_SPELL
 LOCKED_WITH_SPELL_KNOWN
-%s|Hitem:%d:%d:%d:%d|h[%s]|h%s
+%s|Hitem:%d:%d:%d:%d:%d:%d:%d:%d|h[%s]|h%s
 CORPSE_TOOLTIP
 TOOLTIP_TALENT_LEARN
 TOOLTIP_TALENT_NEXT_RANK
@@ -5437,6 +5465,9 @@ TOOLTIP_TALENT_RANK
 TOOLTIP_TALENT_TIER_POINTS
 TOOLTIP_TALENT_PREREQ
 ITEM_UNSELLABLE
+ITEM_DISENCHANT_NOT_DISENCHANTABLE
+ITEM_DISENCHANT_ANY_SKILL
+ITEM_DISENCHANT_MIN_SKILL
 ITEM_SOCKETABLE
 ITEM_READABLE
 ITEM_OPENABLE
@@ -5618,7 +5649,6 @@ zhCN
 deDE
 frFR
 koKR
-enUS
 creaturecache.wdb
 gameobjectcache.wdb
 itemnamecache.wdb
@@ -5973,8 +6003,6 @@ DBFilesClient\\ItemBagFamily.dbc
 Error reading ItemBagFamilyRec
 DBFilesClient\\ItemClass.dbc
 Error reading ItemClassRec
-DBFilesClient\\ItemDisenchantLoot.dbc
-Error reading ItemDisenchantLootRec
 DBFilesClient\\ItemDisplayInfo.dbc
 Error reading ItemDisplayInfoRec
 DBFilesClient\\ItemExtendedCost.dbc
@@ -6407,7 +6435,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 5849 (Sep 16 2006 15:41:49)
+WoW [Release] Build 5894 (Sep 21 2006 10:38:49)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -7623,7 +7651,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 5849 (Sep 16 2006)
+WoW [Release] Build 5894 (Sep 21 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -9526,6 +9554,7 @@ minResize
 ResizeBounds
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleFrame.cpp
 TitleRegion
+protected
 clampedToScreen
 enableKeyboard
 enableMouse
@@ -9691,6 +9720,7 @@ GetChildren
 GetNumChildren
 GetRegions
 GetNumRegions
+GetBoundsRect
 CreateFontString
 CreateTexture
 CreateTitleRegion
@@ -10130,10 +10160,11 @@ GetTop
 GetRight
 GetLeft
 GetCenter
+GetRect
 SetParent
 GetParent
 CanChangeProtectedState
-IsSecure
+IsProtected
 %s:SetParent(): Would create a loop parenting to %s
 %s:SetParent(): Couldn't find region named '%s'
 %s:SetParent(): Wrong parent object type, expected frame
