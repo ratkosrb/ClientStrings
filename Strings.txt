@@ -215,7 +215,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6624)
+World of WarCraft (build 6641)
 SendErrorLogs
 player hidden
 player visible
@@ -236,6 +236,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
+���<�Ky
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1471,8 +1472,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Apr 26 2007
-6624
+May  1 2007
+6641
 0.1.0
 RELEASE_BUILD
 BETA_BUILD
@@ -1982,6 +1983,8 @@ OBJECT_FIELD_SCALE_X
 OBJECT_FIELD_ENTRY
 OBJECT_FIELD_TYPE
 OBJECT_FIELD_GUID
+ComplainChat
+CanComplainChat
 ResetChatWindows
 GetSavedInstanceInfo
 GetNumSavedInstances
@@ -2235,7 +2238,7 @@ STANDARD
 AUTO
 ADDEDVERSION %d\n\n
 VERSION %d\n\n
-%s%s%s%s%s%s%d%d%s%d
+%s%s%s%s%s%s%d%d%s%d%d
 Usage: %s(\"channel\", \"name\")
 Usage: %s(\"channel\")
 Usage: SetChannelPassword(\"name\", \"password\")
@@ -2253,6 +2256,8 @@ Usage: SendAddonMessage(\"prefix\", \"message\" [,\"type\"] [,\"target\"])
 Usage: GetLanguageByIndex(index)
 Usage: DoEmote(\"emote\"[, \"target\"])
 Usage: LeaveChannelByName(\"name\")
+Usage: CanComplainChat(lineID) or CanComplainChat(name) or CanComplainChat(name, text)
+Usage: ComplainChat(lineID) or ComplainChat(name) or ComplainChat(name, text)
 RAID_INSTANCE_INFO_FMT
 e:\\build\\buildwow\\wow\\source\\ui\\ChatFrame.h
 Warning: invalid chat spam filter expression: \"%s\" (ID #: %d)\n
@@ -2526,7 +2531,7 @@ RepopMe
 RequestTimePlayed
 UninviteUnit
 InviteUnit
-NotifyInsp
+NotifyInspect
 CanInspect
 InitiateTrade
 GetMinimapZoneText
@@ -3445,6 +3450,7 @@ ERR_SYSTEM_DISABLED
 ERR_QUEST_FAILED_TOO_MANY_DAILY_QUESTS_I
 ERR_ITEM_MAX_COUNT_EQUIPPED_SOCKETED
 ERR_ITEM_UNIQUE_EQUIPPABLE_SOCKETED
+ERR_USER_SQUELCHED
 Interface\\SpellShadow\\Spell-Shadow-Unacceptable.blp
 Interface\\SpellShadow\\Spell-Shadow-Acceptable.blp
 .\\WorldFrame.cpp
@@ -4281,6 +4287,8 @@ MACRO
 Usage: CreateMacro(name, iconIndex, body, local, perCharacter)
 CreateMacro() failed, no name specified
 CreateMacro() failed, already have %d macros
+CanComplainInboxItem
+ComplainInboxItem
 HasNewMail
 InboxItemCanDelete
 DeleteInboxItem
@@ -4343,6 +4351,8 @@ Usage: TakeInboxItem(index)
 Usage: TakeInboxTextItem(index)
 Usage: ReturnInboxItem(index)
 Usage: DeleteInboxItem(index)
+Usage: ComplainInboxItem(index)
+Usage: InboxItemCanComplain(index)
 SortBattlefieldScoreData
 GetBattlefieldArenaFaction
 GetBattlefieldTeamInfo
@@ -6925,7 +6935,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6624 (Apr 26 2007 11:59:00)
+WoW [Release] Build 6641 (May  1 2007 17:52:32)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7117,6 +7127,7 @@ UnwrapGift
 BENCHMARK_TAXI_MODE_OFF
 BENCHMARK_TAXI_MODE_ON
 NO_DAILY_QUESTS_REMAINING
+ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
 Skill %d increased from %d to %d
 AreaTriggerCheck
@@ -7124,6 +7135,7 @@ PVP_TOGGLE_OFF_VERBOSE
 PVP_TOGGLE_ON_VERBOSE
 Error, player %s has displayID 0!
 NOSPELLIDFOUND|%d
+COMPLAINT_ADDED
 %d%d%d%d%d%d%d%d%d
 Godmode disabled
 Godmode enabled
@@ -7943,7 +7955,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6624 (Apr 26 2007)
+WoW [Release] Build 6641 (May  1 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -9113,10 +9125,10 @@ Gulim
 FZXiHeiI-Z08
 AR Heiti2 Medium B5
 Microsoft Sans Serif
-\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
 $Lua: Lua 5.1.1 Copyright (C) 1994-2006 Lua.org, PUC-Rio $\n$Authors: R. Ierusalimschy, L. H. de Figueiredo & W. Celes $\n$URL: www.lua.org $\n
 no calling environment
 no value
+\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
 %s:%d:
 stack overflow (%s)
 bad argument #%d to '%s' (%s)
@@ -9259,20 +9271,11 @@ attempt to yield across metamethod/C-call boundary
 stack overflow
 stack overflow
 cannot resume non-suspended coroutine
-%.14g
-loop in gettable
-index
-loop in settable
-string length overflow
-'for' step must be a number
-'for' limit must be a number
-'for' initial value must be a number
-get length of
-external abort
 __call
 __concat
 __le
 __lt
+__len
 __unm
 __pow
 __mod
@@ -9288,6 +9291,16 @@ proto
 thread
 function
 userdata
+%.14g
+loop in gettable
+index
+loop in settable
+string length overflow
+'for' step must be a number
+'for' limit must be a number
+'for' initial value must be a number
+get length of
+external abort
 invalid key to 'next'
 table overflow
 table index is NaN
@@ -9726,6 +9739,7 @@ uZEeu\b
 ?V:e:
 @g\t=
 5SmT4
+C�?ş\nܬ_�<
 *+xi(
 ?1-\nI
 ?ZEM-'^
@@ -10541,7 +10555,8 @@ SetHighlightFontObject
 GetDisabledFontObject
 SetDisabledFontObject
 GetTextFontObject
-SetTextFontObject
+SetTextFo
+ntObject
 SetButtonState
 GetButtonState
 IsEnabled
@@ -11202,14 +11217,14 @@ psnames
 truetype
 sfnt
 smooth
-ltuoP
-ltuoP
+ltuo`
+ltuo@
 cinu
 raster5
 raster1
-ltuo0\vv
-ltuo`\rv
-ltuo`\rv
+ltuo &v
+ltuop(v
+ltuop(v
 zeta
 zdotaccent
 zacute
@@ -12407,7 +12422,7 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>�>y
+��u>�Ny
 .?AUAISOUNDDESC@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
@@ -12467,14 +12482,14 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>�>y
+��u>�Ny
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
 .?AUTUTORIALTIMER@@
 .PAUSpellBookSkillInfo@@
 .?AUCombatFeedbackSpell@@
-��u>�>y
+��u>�Ny
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
