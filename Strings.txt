@@ -221,7 +221,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6803)
+World of WarCraft (build 6898)
 SendErrorLogs
 player hidden
 player visible
@@ -242,7 +242,6 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<P�y
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -878,8 +877,8 @@ perf
 Perf Display
 spel
 Spells
-foot
-Footprints
+scpt
+Script
 midi
 Midi Load
 wlod
@@ -910,8 +909,8 @@ aseq
 Animation Done Handlers
 aevt
 Animation Event Handlers
-anim
-Animate
+wrdn
+Warden
 pnt
 Event Paint
 idle
@@ -936,7 +935,8 @@ Invalid SOS parameters for sequential JPEG
 Corrupt JPEG data: found marker 0x%02x instead of RST%d
 Premature end of JPEG file
 Warning: unknown JFIF revision number %d.%02d
-Corrupt JPEG data: bad Huffman code
+Corrupt JP
+EG data: bad Huffman code
 Corrupt JPEG data: premature end of data segment
 Corrupt JPEG data: %u extraneous bytes before marker 0x%02x
 Inconsistent progression sequence for component %d coefficient %d
@@ -955,7 +955,8 @@ Start Of Scan: %d components
 Start of Image
     Component %d: %dhx%dv q=%d
 Start Of Frame 0x%02x: width=%u, height=%u, components=%d
-Smoothing not supported with nonstandard sampling ratios
+Smoothing not supported with nonstandard sampling
+ratios
 RST%d
 At marker 0x%02x, recovery action %d
 Selected %d colors for quantization
@@ -1041,8 +1042,7 @@ Invalid progressive parameters at scan script entry %d
 Invalid progressive parameters Ss=%d Se=%d Ah=%d Al=%d
 Unsupported JPEG data precision %d
 Invalid memory pool code %d
-Sampling factors too large for interleaved
- scan
+Sampling factors too large for interleaved scan
 Wrong JPEG library version: library is %d, caller expects %d
 Bogus marker length
 Bogus JPEG colorspace
@@ -1268,11 +1268,6 @@ SERVERALERT:
 PetAttachment
 CharacterAttachment
 .\\CGlueMgr.cpp
-.tmp
-.html
-\\tos
-\\eula
-data\\
 LOGIN_ENTER_NAME
 OKAY
 LOGIN_ENTER_PASSWORD
@@ -1361,8 +1356,6 @@ CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
-LATEST_EULA_URL
-LATEST_TOS_URL
 SERVER_ALERT_URL
 ModelFFX
 GetCVarDefault
@@ -1480,9 +1473,9 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Jun 12 2007
-6803
-2.1.2
+Jul  3 2007
+6898
+2.1.3
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -4281,6 +4274,10 @@ RunMacroText
 RunMacro
 Interface\\Icons\\
 Usage: GetMacroIconInfo(index)
+e:\\build\\buildwow\\wow\\source\\ui\\UIMacros.h
+Spell_
+Ability_
+.\\UIMacros.cpp
 reset=
 TOOLTIP
 SHOW
@@ -4291,10 +4288,6 @@ SLASH_USE%d
 SLASH_CASTSEQUENCE%d
 SLASH_CASTRANDOM%d
 SLASH_CAST%d
-e:\\build\\buildwow\\wow\\source\\ui\\UIMacros.h
-Spell_
-Ability_
-.\\UIMacros.cpp
 Usage: RunMacroText(\"text\" [, \"button\"])
 END\r\n
 MACRO %d \"%s\" %s\r\n
@@ -6952,7 +6945,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6803 (Jun 12 2007 22:49:35)
+WoW [Release] Build 6898 (Jul  3 2007 17:34:26)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7381,6 +7374,8 @@ questgiver
 button
 door
 false
+onlyCreatorUse
+when to pause (ms)
 use group loot rules
 allowMounted
 closeTextID
@@ -7972,7 +7967,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6803 (Jun 12 2007)
+WoW [Release] Build 6898 (Jul  3 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8064,6 +8059,9 @@ First ReadFileChecked() Failed
 Read not sector aligned
 No Error
 !(location & (file->archive->sectorsize-1))
+\nRaw Read    =
+\nCached Read =
+File        =
 buffer || soundbuffer
 ARCHIVE
 *filename
@@ -8867,7 +8865,6 @@ Unnamed virtual node at top level
 virtual
 Unnamed font node at top level
 %s:<Scripts>
-Script
 Element 'Include' without file attribute
 Include
 .lua
@@ -10770,7 +10767,7 @@ DBFilesClient\\ItemRandomProperties.dbc
 Error reading ItemRandomPropertiesRec
 DBFilesClient\\ItemRandomSuffix.dbc
 Error reading ItemRandomSuffixRec
-ilesClient\\ItemSet.dbc
+DBFilesClient\\ItemSet.dbc
 Error reading ItemSetRec
 DBFilesClient\\ItemSubClassMask.dbc
 Error reading ItemSubClassMaskRec
@@ -11236,9 +11233,14 @@ psnames
 truetype
 sfnt
 smooth
+ltuo`pv
+ltuo qv
 cinu
 raster5
 raster1
+ltuo
+ltuop
+ltuop
 zeta
 zdotaccent
 zacute
@@ -12436,7 +12438,6 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>��y
 .?AUAISOUNDDESC@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
@@ -12496,14 +12497,12 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>��y
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
 .?AUTUTORIALTIMER@@
 .PAUSpellBookSkillInfo@@
 .?AUCombatFeedbackSpell@@
-��u>��y
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -12656,7 +12655,9 @@ GcS68
 .?AUPendingLootRoll@@
 .?AW4MISS_REASON@@
 .?AV?$TSExplicitList@UINVENTORYART@@$0?CCCCCCCD@@@
+.?AV?$TSExplicitList@UITEMBYNAME@@$0?CCCCCCCD@@@
 .?AUINVENTORYART@@
+.?AUITEMBYNAME@@
 .?AULeg@?$ShipPath@V?$WowClientDB@VTaxiPathNodeRec@@@@@@
 .?AUTimeEvent@?$ShipPath@V?$WowClientDB@VTaxiPathNodeRec@@@@@@
 .?AUSegment@?$ShipPath@V?$WowClientDB@VTaxiPathNodeRec@@@@@@
