@@ -16,6 +16,7 @@ texture.MPQ
 model.MPQ
 misc.MPQ
 interface.MPQ
+alternate.MPQ
 ..\\Data\\
 Data\\
 movement
@@ -93,6 +94,7 @@ WowError.exe
 World of Warcraft
 Burning Crusade Closed Beta
 InstallPath
+Blizzard Entertainment World of Warcraft
 e:\\build\\buildwow\\wow\\source\\Object/ObjectClient/Player_C.h
 World transfer aborted...
 TRANSFER_ABORT_DIFFICULTY%d
@@ -186,6 +188,10 @@ WoW Config
 Region
 Wow.ini
 Failed to open archive %s: %s
+enTW
+zhTW
+enCN
+zhCN
 locale
 charselect
 RunOnce*.wtf
@@ -215,7 +221,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6739)
+World of WarCraft (build 6803)
 SendErrorLogs
 player hidden
 player visible
@@ -236,6 +242,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
+���<P�y
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1034,7 +1041,8 @@ Invalid progressive parameters at scan script entry %d
 Invalid progressive parameters Ss=%d Se=%d Ah=%d Al=%d
 Unsupported JPEG data precision %d
 Invalid memory pool code %d
-Sampling factors too large for interleaved scan
+Sampling factors too large for interleaved
+ scan
 Wrong JPEG library version: library is %d, caller expects %d
 Bogus marker length
 Bogus JPEG colorspace
@@ -1256,14 +1264,15 @@ Failed to update object movement.  Object (0x%016I64X) unknown to client!
 Updating unit movement
 Failed to update object data.  Object (0x%016I64X) unknown to client!
 Unknown client update packet type (%d)!
-data\\eula.tmp
-data\\eula.html
-data\\tos.tmp
-data\\tos.html
 SERVERALERT:
 PetAttachment
 CharacterAttachment
 .\\CGlueMgr.cpp
+.tmp
+.html
+\\tos
+\\eula
+data\\
 LOGIN_ENTER_NAME
 OKAY
 LOGIN_ENTER_PASSWORD
@@ -1471,9 +1480,9 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-May 29 2007
-6739
-2.1.1
+Jun 12 2007
+6803
+2.1.2
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -3372,7 +3381,9 @@ ERR_BG_PLAYER_LEFT_S
 ERR_RESTRICTED_ACCOUNT
 ERR_PLAY_TIME_EXCEEDED
 ERR_APPROACHING_PARTIAL_PLAY_TIME
+ERR_APPROACHING_PARTIAL_PLAY_TIME_2
 ERR_APPROACHING_NO_PLAY_TIME
+ERR_APPROACHING_NO_PLAY_TIME_2
 ERR_UNHEALTHY_TIME
 ERR_CHAT_RESTRICTED
 ERR_CHAT_THROTTLED
@@ -3451,6 +3462,9 @@ ERR_QUEST_FAILED_TOO_MANY_DAILY_QUESTS_I
 ERR_ITEM_MAX_COUNT_EQUIPPED_SOCKETED
 ERR_ITEM_UNIQUE_EQUIPPABLE_SOCKETED
 ERR_USER_SQUELCHED
+ERR_TOO_MUCH_GOLD
+ERR_QUEST_FAILED_CAIS
+ERR_INVITE_RESTRICTED
 Interface\\SpellShadow\\Spell-Shadow-Unacceptable.blp
 Interface\\SpellShadow\\Spell-Shadow-Acceptable.blp
 .\\WorldFrame.cpp
@@ -3520,6 +3534,7 @@ AccountMsg_GetBody
 AccountMsg_LoadBody
 AccountMsg_GetHeaderPriority
 AccountMsg_GetHeaderSubject
+AccountMsg_GetIndexNextUnreadMsg
 AccountMsg_GetIndexHighestPriorityUnreadMsg
 AccountMsg_GetNumUnreadUrgentMsgs
 AccountMsg_GetNumUnreadMsgs
@@ -3530,21 +3545,23 @@ priority
 &messageId=
 &sessionKeyHash=
 ?accountName=
-ACCOUNT_MESSAGE_BODY_URL
+ACCOUNT_MESSAGE_BODY_NO_READ_URL
 AccountMsg_GetNumTotalMsgs() failed because the headers are not loaded
-Usage: AccountMsg_GetHeaderSubject(number) falied becuse the number is out of range
+Usage: AccountMsg_GetHeaderSubject(number) failed because the number is out of range
 Usage: AccountMsg_GetHeaderSubject(number)
 AccountMsg_GetHeaderSubject() failed because the headers are not loaded
-Usage: AccountMsg_GetHeaderPriority(number) falied becuse the number is out of range
+Usage: AccountMsg_GetHeaderPriority(number) failed because the number is out of range
 Usage: AccountMsg_GetHeaderPriority(number)
 AccountMsg_GetHeaderPriority() failed because the headers are not loaded
-Usage: AccountMsg_LoadBody(number) falied becuse the number is out of range
+Usage: AccountMsg_LoadBody(number) failed because the number is out of range
 AccountMsg_LoadHeaders() failed
 Usage: AccountMsg_LoadBody(number)
 AccountMsg_LoadBody() failed because the headers are not loaded
 AccountMsg_GetBody() failed because the body was not loaded
+ACCOUNT_MESSAGE_READ_URL
 AccountMsg_GetNumUnreadMsgs() failed because the headers are not loaded
-Usage: AccountMsg_SetMsgRead(number) falied becuse the number is out of range
+Usage: AccountMsg_SetMsgRead(number) failed because the number is out of range
+Usage: AccountMsg_SetMsgRead(number) failed due to an URL error
 Usage: AccountMsg_SetMsgRead(number)
 AccountMsg_SetMsgRead() failed because the headers are not loaded
 ACCOUNT_MESSAGE_HEADERS_URL
@@ -3654,6 +3671,7 @@ READY_CHECK_ALL_READY
 RAID_MEMBERS_AFK
 Invalid loot method
 Usage: SetLootMethod(\"method\" [,master])
+SetLootThreshold(): threshold must be between %d and %d
 Usage: SetLooThreshold(threshold)
 Invalid Party assignment
 Usage: %s(\"assignment\" [,\"raidmember\"] [,exactMatch])
@@ -3883,6 +3901,9 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
+COPPER
+SILVER
+GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -4277,8 +4298,8 @@ Ability_
 Usage: RunMacroText(\"text\" [, \"button\"])
 END\r\n
 MACRO %d \"%s\" %s\r\n
-Usage: SetMacroItem(macro, item)
-Usage: SetMacroSpell(macro, item)
+Usage: SetMacroItem(macro, item [,target])
+Usage: SetMacroSpell(macro, spell [,target])
 Usage: GetMacroIndexByName(name)
  \"\r\n
 MACRO
@@ -6387,13 +6408,9 @@ petitioncache.wdb
 itemtextcache.wdb
 wowcache.wdb
 arenateamcache.wdb
-enTW
-enCN
 enGB
 xxYY
 esES
-zhTW
-zhCN
 deDE
 frFR
 koKR
@@ -6935,7 +6952,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6739 (May 29 2007 17:12:03)
+WoW [Release] Build 6803 (Jun 12 2007 22:49:35)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7126,9 +7143,6 @@ CHAT_FLAG_GM
 UnwrapGift
 BENCHMARK_TAXI_MODE_OFF
 BENCHMARK_TAXI_MODE_ON
-COPPER
-SILVER
-GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -7907,13 +7921,12 @@ Invalid number of parameters
 Please specify how many lines to display
 %d %d %d %d
 invalid resolution, must be one of
-Requested size is larger than desktop resolution.  Unable to set window size.
 set pending gxRestart
-GX failed to query the desktop resolution.  Unable to set window size.
 Color bits must be 16, 24, or 30
 Depth bits must be 16, 24, or 32
 unsupported refresh rate, must be one of
 TripleBuffer must be 0 or 1
+GxApi set pending gxRestart
 unsupported api, must be one of
 OpenGL
 Direct3D
@@ -7959,7 +7972,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6739 (May 29 2007)
+WoW [Release] Build 6803 (Jun 12 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8001,7 +8014,9 @@ Hardware changed.  Reload default settings?
 \tvideoID: %d
 \tcpuIdx: %d
 DetectHardware():
+Failed to find a suitable display device.  Exiting program.
 .\\ConsoleDetect.cpp
+Running World of Warcraft through a Remote Desktop connection is not supported.  Exiting program.
 Begin Typing the commands
 You must type 'y' to confirm overwrite. Process aborted!
 Canceled File Creation
@@ -8053,6 +8068,8 @@ buffer || soundbuffer
 ARCHIVE
 *filename
 buffer
+*pathPrefix
+pathPrefix
 handle
 HSARCHIVE
 HSFILE
@@ -9564,21 +9581,6 @@ com3
 com2
 com1
 Fonts
-SCROLLBAR
-ToolbarWindow32
-SysListView32
-SysTabControl32
-msctls_updown32
-SysTreeView32
-msctls_trackbar32
-msctls_progress32
-LISTBOX
-COMBOBOX
-EDIT
-STATIC
-OsGuiPointer
-%m%d%y_%H%M%S
-.\\W32\\OsIME.cpp
 GenuineIntelAuthenticAMDCyrixInsteadCentaurHalls
 processor brand string= %s
 extended (%d): 1c=%08X 1d=%08x 8c=%08X
@@ -9612,6 +9614,21 @@ CallNtPowerInformation
 powrprof.dll
 %sTempHTMLFile%x.html
 file://
+SCROLLBAR
+ToolbarWindow32
+SysListView32
+SysTabControl32
+msctls_updown32
+SysTreeView32
+msctls_trackbar32
+msctls_progress32
+LISTBOX
+COMBOBOX
+EDIT
+STATIC
+OsGuiPointer
+%m%d%y_%H%M%S
+.\\W32\\OsIME.cpp
 OsNetLog.txt
 AcceptEx failed
 Listen closed
@@ -10536,9 +10553,8 @@ LockHighlight
 Click
 RegisterForClicks
 GetTextHeight
-extWidth
-GetPu
-shedTextOffset
+GetTextWidth
+GetPushedTextOffset
 SetPushedTextOffset
 GetHighlightTexture
 SetHighlightTexture
@@ -10754,7 +10770,7 @@ DBFilesClient\\ItemRandomProperties.dbc
 Error reading ItemRandomPropertiesRec
 DBFilesClient\\ItemRandomSuffix.dbc
 Error reading ItemRandomSuffixRec
-DBFilesClient\\ItemSet.dbc
+ilesClient\\ItemSet.dbc
 Error reading ItemSetRec
 DBFilesClient\\ItemSubClassMask.dbc
 Error reading ItemSubClassMaskRec
@@ -11220,14 +11236,9 @@ psnames
 truetype
 sfnt
 smooth
-ltuo Kv
-ltuo Lv
 cinu
 raster5
 raster1
-ltuo
-ltuo0
-ltuo0
 zeta
 zdotaccent
 zacute
