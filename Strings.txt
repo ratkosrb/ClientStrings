@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6080)
+World of WarCraft (build 6082)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -618,7 +618,7 @@ E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
 Oct 31 2006
-15:57:19
+19:38:27
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -851,6 +851,11 @@ Usage: PlaySound(\"sound\")
 Usage: PlayMusic(\"music\")
 Usage: PlaySoundFile(\"soundfile\")
 E:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterface.cpp
+*Screech!!*
+*Next screech in %f seconds*
+*Periodic Fidget Sound ERROR! Max seconds MUST be greater than Min seconds! Fix it!!*
+*No Periodic Fidget Specified*
+..\\Object/ObjectClient/Player_C.h
 INVALID CREDITS SOUND KIT: \"%s\"
 enablemusic
 INVALID AMBIENCE SOUND KIT: \"%s\"
@@ -865,7 +870,6 @@ EnableAmbience
 Enable Ambience
 AmbienceVolume
 Ambience Volume (0.0 to 1.0)
-..\\Object/ObjectClient/Player_C.h
 MapWaterSounds
 DBFilesClient\\ItemDisplayInfo.dbc
 Error reading ItemDisplayInfoRec
@@ -1010,6 +1014,7 @@ CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
+SetServerSplitState
 IsLinuxClient
 IsMacClient
 IsWindowsClient
@@ -1085,6 +1090,7 @@ SetSavedAccountName
 GetSavedAccountName
 GetLocale
 GetBuildInfo
+SERVER_SPLIT_NOTICE
 SCANDLL_FINISHED
 PLAYER_ENTER_MATRIX
 CLIENT_ACCOUNT_MISMATCH
@@ -1114,8 +1120,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6080
-2.0.0
+6082
+2.0.1
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -1142,6 +1148,7 @@ Usage: ScanDLLStart(\"VersionURL\", \"DLLURL\")
 credits_BC.html
 credits.html
 Usage: Script_GetCreditText(versionIndex)
+Usage: Script_SetServerSplitState(1 or 2)
 RealmListDialogCancelled
 GetSelectedCategory
 SortRealms
@@ -1222,9 +1229,10 @@ Usage: SetCharacterSelectFacing(degrees)
 .\\Scan.dll
 Scan
 E:\\build\\buildWoW\\WoW\\Source\\Glue\\ScanDLLGlue.cpp
+SCANDLL_DOWNLOAD
+SCANDLL_MESSAGE_DOWNLOADING
 SCANDLL_ERROR
 SCANDLL_MESSAGE_ERROR
-SCANDLL_DOWNLOAD
 SCANDLL_MESSAGE_SCANNING
 ScanThread
 Cache\\Survey.mpq
@@ -1342,18 +1350,6 @@ PLAYER_FIELD_MOD_HEALING_DONE_POS
 PLAYER_FIELD_MOD_DAMAGE_DONE_PCT
 PLAYER_FIELD_MOD_DAMAGE_DONE_NEG
 PLAYER_FIELD_MOD_DAMAGE_DONE_POS
-PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE
-PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE
-PLAYER_FIELD_NEGSTAT4
-PLAYER_FIELD_NEGSTAT3
-PLAYER_FIELD_NEGSTAT2
-PLAYER_FIELD_NEGSTAT1
-PLAYER_FIELD_NEGSTAT0
-PLAYER_FIELD_POSSTAT4
-PLAYER_FIELD_POSSTAT3
-PLAYER_FIELD_POSSTAT2
-PLAYER_FIELD_POSSTAT1
-PLAYER_FIELD_POSSTAT0
 PLAYER_FIELD_COINAGE
 PLAYER_REST_STATE_EXPERIENCE
 PLAYER_EXPLORED_ZONES_1
@@ -1516,6 +1512,7 @@ PLAYER_GUILDRANK
 PLAYER_GUILDID
 PLAYER_FLAGS
 PLAYER_DUEL_ARBITER
+UNIT_FIELD_PADDING
 UNIT_FIELD_POWER_COST_MULTIPLIER
 UNIT_FIELD_POWER_COST_MODIFIER
 UNIT_FIELD_MAXRANGEDDAMAGE
@@ -1529,7 +1526,19 @@ UNIT_FIELD_ATTACK_POWER
 UNIT_FIELD_BYTES_2
 UNIT_FIELD_BASE_HEALTH
 UNIT_FIELD_BASE_MANA
+UNIT_FIELD_RESISTANCEBUFFMODSNEGATIVE
+UNIT_FIELD_RESISTANCEBUFFMODSPOSITIVE
 UNIT_FIELD_RESISTANCES
+UNIT_FIELD_NEGSTAT4
+UNIT_FIELD_NEGSTAT3
+UNIT_FIELD_NEGSTAT2
+UNIT_FIELD_NEGSTAT1
+UNIT_FIELD_NEGSTAT0
+UNIT_FIELD_POSSTAT4
+UNIT_FIELD_POSSTAT3
+UNIT_FIELD_POSSTAT2
+UNIT_FIELD_POSSTAT1
+UNIT_FIELD_POSSTAT0
 UNIT_FIELD_STAT4
 UNIT_FIELD_STAT3
 UNIT_FIELD_STAT2
@@ -1563,6 +1572,7 @@ UNIT_FIELD_AURAAPPLICATIONS
 UNIT_FIELD_AURALEVELS
 UNIT_FIELD_AURAFLAGS
 UNIT_FIELD_AURA
+UNIT_FIELD_FLAGS_2
 UNIT_FIELD_FLAGS
 UNIT_VIRTUAL_ITEM_INFO
 UNIT_VIRTUAL_ITEM_SLOT_DISPLAY
@@ -2002,6 +2012,9 @@ ERR_RESTRICTED_ACCOUNT
 ERR_BG_PLAYER_LEFT_S
 ERR_BG_PLAYER_JOINED_SS
 ERR_INVALID_PROMOTION_CODE
+ERR_BATTLEDGROUND_QUEUED_FOR_RATED
+ERR_BATTLEGROUND_CANNOT_QUEUE_FOR_RATED
+ERR_BATTLEGROUND_TOO_MANY_QUEUES
 ERR_GROUP_JOIN_BATTLEGROUND_TOO_MANY
 ERR_GROUP_JOIN_BATTLEGROUND_FAIL
 ERR_GROUP_JOIN_BATTLEGROUND_S
@@ -2107,14 +2120,14 @@ ERR_EXHAUSTION_WELLRESTED
 ERR_OBJECT_IS_BUSY
 ERR_TICKET_NO_TEXT
 ERR_TICKET_DB_ERROR
-ERR_TICKET_CREATE_ERROR
+ERR_TICKET_UPDATE_ERROR
 ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
 ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
 ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
-ERR_TICKET_UPDATE_ERROR
+ERR_TICKET_CREATE_ERROR
 ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
 ERR_PET_SPELL_ROOTED
@@ -3769,7 +3782,6 @@ Usage: GetAuctionItemSubClasses(index)
 Usage: GetAuctionInvTypes(classIndex, subClassIndex)
 Usage: SortAuctionItems(\"type\", \"sort\")
 status
-buyout
 duration
 quality
 Usage: SetSelectedAuctionItem(\"type\", index)
@@ -4061,6 +4073,7 @@ vendor
 gossip
 Missing gossip text!
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\GossipInfo.cpp
+%d%s%d
 Usage: SelectGossipOption(index)
 Usage: SelectGossipAvailableQuest(index)
 Usage: SelectGossipActiveQuest(index)
@@ -4289,6 +4302,7 @@ easy
 trivial
 used
 NONEQUIPSLOT
+SHIELDSLOT
 BAGSLOT
 TABARDSLOT
 RANGEDSLOT
@@ -4737,6 +4751,10 @@ E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.cpp
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.h
 Joystick
 enable joystick control
+GetUnitManaRegenRateFromSpirit
+GetUnitHealthRegenRateFromSpirit
+GetUnitPowerModifier
+GetUnitHealthModifier
 UnitIsSameServer
 IsFeignDeath
 UnitChannelInfo
@@ -4872,6 +4890,8 @@ Usage: IsArenaTeamCaptain(index)
 ratingIndex is in the range 1 .. %d
 Usage: GetCombatRating(ratingIndex)
 Usage: GetCombatRatingBonus(ratingIndex)
+Usage: GetCritChanceFromAgility(\"unit\")
+Usage: GetSpellCritChanceFromIntellect(\"unit\")
 Usage: GetSpellCritChance(school)
 Usage: GetSpellBonusDamage(school)
 Usage: Script_GetAttackPowerForStat(stat, value)
@@ -4927,6 +4947,10 @@ Usage: UnitCastingInfo(\"unit\")
 CHANNELING
 Usage: UnitChannelInfo(\"unit\")
 Usage: UnitIsSameServer(\"unit\", \"otherUnit\")
+Usage: GetUnitHealthModifier(\"unit\")
+Usage: GetUnitPowerModifier(\"unit\")
+Usage: GetUnitHealthRegenRateFromSpirit(\"unit\")
+Usage: GetUnitManaRegenRateFromSpirit(\"unit\")
 MODIFIER_STATE_CHANGED
 COMBAT_RATING_UPDATE
 LFG_UPDATE
@@ -5205,6 +5229,8 @@ QUEST_DETAIL
 QUEST_GREETING
 GOSSIP_CLOSED
 GOSSIP_ENTER_CODE
+GOSSIP_CONFIRM_CANCEL
+GOSSIP_CONFIRM
 GOSSIP_SHOW
 ITEM_TEXT_CLOSED
 ITEM_TEXT_READY
@@ -5323,7 +5349,6 @@ UNIT_NAME_UPDATE
 UNIT_COMBAT
 UNIT_LOYALTY
 UNIT_PET_TRAINING_POINTS
-UNIT_FLAGS
 UNIT_LEVEL
 UNIT_FACTION
 UNIT_DISPLAYPOWER
@@ -5340,12 +5365,13 @@ UNIT_RAGE
 UNIT_HEALTH
 UNIT_TARGET
 UNIT_RANGED_ATTACK_POWER
-UNIT_RANGEDDAMAGE
 UNIT_MANA
+UNIT_RANGEDDAMAGE
 UNIT_PET_EXPERIENCE
 UNIT_ATTACK_POWER
 UNIT_RESISTANCES
 UNIT_STATS
+UNIT_FLAGS
 UNIT_AURA
 UNIT_ATTACK_SPEED
 UNIT_DAMAGE
@@ -5678,12 +5704,12 @@ SPELL_TOTEMS
 SPELL_RECAST_TIME_SEC
 SPELL_RECAST_TIME_MIN
 SPELL_CAST_TIME_INSTANT_NO_MANA
-SPELL_CAST_CHANNELED
 SPELL_ON_NEXT_RANGED
 SPELL_ON_NEXT_SWING
 SPELL_CAST_TIME_INSTANT
 SPELL_CAST_TIME_SEC
 SPELL_CAST_TIME_MIN
+SPELL_CAST_CHANNELED
 SPELL_RANGE
 %d-%d
 %s_PER_TIME
@@ -5784,6 +5810,8 @@ E:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
 ..\\..\\Object/ItemName.h
 ..\\..\\Object/ItemStats.h
 ..\\..\\Object/NPCText.h
+Warlock summoned item destroys upon arena end
+Arena Team Created
 Socketed into item
 Deleted Mail With Item
 Failed Split Item
@@ -6116,6 +6144,14 @@ DBFilesClient\\gtChanceToSpellCrit.dbc
 Error reading gtChanceToSpellCritRec
 DBFilesClient\\gtChanceToSpellCritBase.dbc
 Error reading gtChanceToSpellCritBaseRec
+DBFilesClient\\gtOCTRegenHP.dbc
+Error reading gtOCTRegenHPRec
+DBFilesClient\\gtOCTRegenMP.dbc
+Error reading gtOCTRegenMPRec
+DBFilesClient\\gtRegenHPPerSpt.dbc
+Error reading gtRegenHPPerSptRec
+DBFilesClient\\gtRegenMPPerSpt.dbc
+Error reading gtRegenMPPerSptRec
 DBFilesClient\\HelmetGeosetVisData.dbc
 Error reading HelmetGeosetVisDataRec
 DBFilesClient\\ItemBagFamily.dbc
@@ -6550,7 +6586,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6080 (Oct 31 2006 16:00:12)
+WoW [Release] Build 6082 (Oct 31 2006 19:41:21)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -6985,7 +7021,6 @@ Closed
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\GameObject_C.cpp
 Unable%s
 Unknown Object Type
-MEETINGSTONE_LEVEL
 BADBASEGAMEOBJECT|%d
 NOOBJECTFILENAME|%d|%d|Game
 Interface\\Cursor\\Unable%s.blp
@@ -7001,8 +7036,8 @@ E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Unit_C.cpp
 Textures\\BakedNpcTextures\\
 UNHANDLEDANIMEVENT|%.4s
 INVALIDDISPLAYMODELRECORD|%d|%d
-Spells\\ErrorCube.mdx
 NOCREATUREDISPLAYIDFOUND|%d
+Spells\\ErrorCube.mdx
 CombatLogPeriodicSpells
 AutoInteract
 Toggles auto-move to interact target
@@ -7258,11 +7293,11 @@ autoClose
 startDestroyed
 startOpen
 type
-E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
 SpiritWolf (DONOTRENAME)
 FootstepSounds
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitSound_C.cpp
 INVALID DEATH THUD SOUND: DEFAULTING TO ID %d
+E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombat_C.cpp
 COMBATLOG_HONORAWARD
 COMBATLOG_HONORGAIN
@@ -7771,7 +7806,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6080 (Oct 31 2006)
+WoW [Release] Build 6082 (Oct 31 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -7806,6 +7841,7 @@ Not Set
 GameTimeSync: delta=%d, differential=%d, HoursAndMinutes=%d
 GameTimeSync: skipping forwards %d game minutes, (current = %s, newtime = %s)
 E:\\build\\buildWoW\\Storm\\Source\\SMem3.cpp
+Requested %u bytes of memory
 SMem3: Memory was allocated and never released
 SMem3: Not initialized.  Verify linker entrypoint is set to 'StormStaticEntryPoint' (defined in StormStartup.h)
 SMem3: Pointer does not refer to a valid allocated block of memory
@@ -8142,6 +8178,7 @@ Value out of range (%d - %d)\n
 **** Entered subzone with no name ****\n
 **** Entered %s subzone ****\n
 %i, %i
+E:\\build\\buildWoW\\WoW\\Source\\WorldClient\\WorldScene.cpp
 GuideArrowBirth
 CorpseArrowBirth
 GroupArrowBirth
@@ -8632,6 +8669,10 @@ ChanceToMeleeCrit
 ChanceToMeleeCritBase
 ChanceToSpellCrit
 ChanceToSpellCritBase
+OCTRegenHP
+OCTRegenMP
+RegenHPPerSpt
+RegenMPPerSpt
 SpellStopCasting
 SpellStopTargeting
 SpellTargetUnit
@@ -8821,6 +8862,8 @@ Usage: SpellCanTargetUnit(\"unit\")
 Usage: SpellTargetUnit(\"unit\")
 autoSelfCast
 SPELLVISUALID_NOT_FOUND|%d
+Spells\\HellfireRaid_Dust_Impact_Base.mdx
+Spells\\Fel_RainOfFire_Impact_Base.mdx
 Spells\\StarShards_Impact_Base.mdx
 Spells\\ArcaneShot_Area.mdx
 Spells\\DeathAndDecay_Area_Base.mdx
@@ -9689,6 +9732,7 @@ Anchors
 setAllPoints
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CLayoutFrame.cpp
 Scripts
+Attributes
 Layers
 HitRectInsets
 Backdrop
@@ -9713,6 +9757,11 @@ FontString
 Texture
 Frame %s: Unknown child node in %s element: %s
 Layer
+Frame %s: attribute element named %s missing value
+value
+Frame %s: unnamed attribute element
+Frame %s: Unknown attributes element %s
+Attribute
 OnMouseWheel
 OnDragStart
 OnMouseUp
@@ -10490,11 +10539,9 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo
+ltuop
 smooth
 cinu
-ltuo@
-ltuo@
 raster5
 raster1
    !
