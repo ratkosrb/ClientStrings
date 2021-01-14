@@ -1,6 +1,6 @@
 // Auto generated file
 // Patch: 0.4.0
-// Build: 8049
+// Build: 8089
 
 Public Enum EObjectFields
 {
