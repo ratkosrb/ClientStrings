@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6046)
+World of WarCraft (build 6052)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -617,8 +617,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Oct 22 2006
-11:06:10
+Oct 24 2006
+20:49:23
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1114,7 +1114,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6046
+6052
 2.0.0
 RELEASE_BUILD
 BETA_BUILD
@@ -1625,6 +1625,31 @@ PlayerFadeInRate
 fade in rate for player mouseover
 4096
 IDLE_MESSAGE
+%s%d
+NUMPADEQUALS
+PRINTSCREEN
+CAPSLOCK
+NUMLOCK
+PAGEDOWN
+PAGEUP
+HOME
+DELETE
+INSERT
+DOWN
+RIGHT
+LEFT
+BACKSPACE
+ENTER
+ESCAPE
+NUMPADDECIMAL
+NUMPADDIVIDE
+NUMPADMULTIPLY
+NUMPADMINUS
+NUMPADPLUS
+NUMPAD%d
+SPACE
+SHIFT
+CTRL
 StopAttack
 StartAttack
 InCombatLockdown
@@ -2443,19 +2468,6 @@ Usage: RegisterForSave(\"variable\")
 RegisterForSave() is only available to Blizzard scripts
 Usage: RegisterForSavePerCharacter(\"variable\")
 RegisterForSavePerCharacter() is only available to Blizzard scripts
-PRINTSCREEN
-NUMLOCK
-PAGEDOWN
-PAGEUP
-HOME
-DELETE
-INSERT
-DOWN
-RIGHT
-LEFT
-BACKSPACE
-ENTER
-ESCAPE
 EQUALS
 DECIMAL
 DIVIDE
@@ -2567,17 +2579,6 @@ Usage: UseItemByName(name, target)
 EquipItemByName(): Invalid inventory dstSlot
 Usage: EquipItemByName(\"name\" [,slot])
 SetAutoLootToggleKey(): key must be one of: SHIFT, CTRL, ALT
-CTRL
-SHIFT
-NUMPADEQUALS
-CAPSLOCK
-NUMPADDECIMAL
-NUMPADDIVIDE
-NUMPADMULTIPLY
-NUMPADMINUS
-NUMPADPLUS
-NUMPAD%d
-SPACE
 Weather changed to %d, intensity %f\n
 GameTooltip
 UIParent
@@ -2648,7 +2649,6 @@ HEAL
 INTERFACESOUND_CURSORGRABOBJECT
 PET_%s_TEXTURE
 INTERFACESOUND_CURSORDROPOBJECT
-%s%d
 BILLING_NAG_WARNING
 TaxiRouteFrame
 TabardModel
@@ -3516,6 +3516,7 @@ LFG_TYPE_DUNGEON
 LFG_TYPE_NONE
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\LFGInfo.cpp
 MEETINGSTONE_TOOLTIP
+MATCHMAKING_MATCH_S
 Usage: SetLookingForGroup(slot, type, index)
 Usage: LFGQuery(typeID, lfgNdx [, class])
 Usage: CanSendLFGQuery(typeID, lfgNdx
@@ -4920,6 +4921,7 @@ Usage: UnitCastingInfo(\"unit\")
 CHANNELING
 Usage: UnitChannelInfo(\"unit\")
 Usage: UnitIsSameServer(\"unit\", \"otherUnit\")
+MODIFIER_STATE_CHANGED
 COMBAT_RATING_UPDATE
 LFG_UPDATE
 LFG_PENDING_CANCEL
@@ -6541,7 +6543,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6046 (Oct 22 2006 11:09:10)
+WoW [Release] Build 6052 (Oct 24 2006 20:52:18)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -7762,7 +7764,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6046 (Oct 22 2006)
+WoW [Release] Build 6052 (Oct 24 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -10237,6 +10239,8 @@ Usage: %s:SetHighlightTexture(texture or \"texture\" or nil [, \"blendmode\")
 %s:SetHighlightTexture(): Wrong object type, expected texture
 %s:SetHighlightTexture(): Couldn't find 'this' in texture
 Usage: %s:SetPushedTextOffset(x, y)
+AnyUp
+AnyDown
 Button5Up
 Button5Down
 Button4Up
@@ -10478,9 +10482,12 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo`M�
+ltuopT
 smooth
 cinu
+ltuop
+ltuo0
+ltuo0
 raster5
 raster1
    !
