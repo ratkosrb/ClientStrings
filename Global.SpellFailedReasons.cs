@@ -1,5 +1,5 @@
 // Auto generated file
-// Patch: 0.4.3
+// Patch: 2.4.3
 // Build: 8606
 
 Public Enum SpellFailedReason
