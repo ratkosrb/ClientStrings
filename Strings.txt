@@ -229,7 +229,7 @@ coresDetected
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7261)
+World of WarCraft (build 7272)
 SendErrorLogs
 player hidden
 player visible
@@ -1510,8 +1510,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Sep 14 2007
-7261
+Sep 17 2007
+7272
 0.2.0
 RELEASE_BUILD
 BETA_BUILD
@@ -4014,6 +4014,9 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
+COPPER
+SILVER
+GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -7197,7 +7200,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7261 (Sep 14 2007 12:10:21)
+WoW [Release] Build 7272 (Sep 17 2007 15:00:10)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7400,9 +7403,6 @@ Error, unknown model record %d specified for player race %d sex %d!
 Error, unknown displayInfo %d specified for player race %d sex %d!
 CHAT_FLAG_GM
 UnwrapGift
-COPPER
-SILVER
-GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -8226,7 +8226,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7261 (Sep 14 2007)
+WoW [Release] Build 7272 (Sep 17 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8846,7 +8846,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token, [channel])
-WOWCOMSATCLIENT7261
+WOWCOMSATCLIENT7272
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -8858,8 +8858,10 @@ VoiceChatMode
 COMSAT_START: NotifyLocalTalkerStart from PopulateSession\r\n
 COMSAT_STOP: NotifyTalkerStop from RosterUpdate\r\n
 COMSAT_START: NotifyLocalTalkerStart from RosterUpdate\r\n
-COMSAT_STOP: NotifyTalkerStop from ComSatClient_SetCurrentSessionI(-1)\r\n
+COMSAT_STOP: NotifyTalkerStop from ComSatClient_OnSessionLeave()\r\n
+COMSAT_STOP: NotifyTalkerStop from ComSatClient_LeaveAllSessions()\r\n
 Usage: IsPlayerTalking (token)
+COMSAT_STOP: NotifyTalkerStop from ComSatClient_SetCurrentSessionI(-1)\r\n
 PushToTalkButton
 String representation of the Push-To-Talk button.
 Enables the voice chat feature.
@@ -11529,14 +11531,10 @@ psnames
 truetype
 sfnt
 smooth
-ltuo@
-ltuop
+ltuo
 cinu
 raster5
 raster1
-ltuoPmx
-ltuoPox
-ltuoPox
 zeta
 zdotaccent
 zacute
