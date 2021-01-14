@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 1.12.3
-// Build: 6141
+// Patch: 2.0.0
+// Build: 5610
 
 Public Enum SpellFailedReason
 {
@@ -124,31 +124,32 @@ Public Enum SpellFailedReason
     SPELL_FAILED_THIRST_SATIATED = 0x75,                            // 0x075
     SPELL_FAILED_TOO_CLOSE = 0x76,                                  // 0x076
     SPELL_FAILED_TOO_MANY_OF_ITEM = 0x77,                           // 0x077
-    SPELL_FAILED_TOTEMS = 0x78,                                     // 0x078
-    SPELL_FAILED_TRAINING_POINTS = 0x79,                            // 0x079
-    SPELL_FAILED_TRY_AGAIN = 0x7A,                                  // 0x07A
-    SPELL_FAILED_UNIT_NOT_BEHIND = 0x7B,                            // 0x07B
-    SPELL_FAILED_UNIT_NOT_INFRONT = 0x7C,                           // 0x07C
-    SPELL_FAILED_WRONG_PET_FOOD = 0x7D,                             // 0x07D
-    SPELL_FAILED_NOT_WHILE_FATIGUED = 0x7E,                         // 0x07E
-    SPELL_FAILED_TARGET_NOT_IN_INSTANCE = 0x7F,                     // 0x07F
-    SPELL_FAILED_NOT_WHILE_TRADING = 0x80,                          // 0x080
-    SPELL_FAILED_TARGET_NOT_IN_RAID = 0x81,                         // 0x081
-    SPELL_FAILED_DISENCHANT_WHILE_LOOTING = 0x82,                   // 0x082
-    SPELL_FAILED_PROSPECT_WHILE_LOOTING = 0x83,                     // 0x083
-    SPELL_FAILED_PROSPECT_NEED_MORE = 0x84,                         // 0x084
-    SPELL_FAILED_TARGET_FREEFORALL = 0x85,                          // 0x085
-    SPELL_FAILED_NO_EDIBLE_CORPSES = 0x86,                          // 0x086
-    SPELL_FAILED_ONLY_BATTLEGROUNDS = 0x87,                         // 0x087
-    SPELL_FAILED_TARGET_NOT_GHOST = 0x88,                           // 0x088
-    SPELL_FAILED_TOO_MANY_SKILLS = 0x89,                            // 0x089
-    SPELL_FAILED_TRANSFORM_UNUSABLE = 0x8A,                         // 0x08A
-    SPELL_FAILED_WRONG_WEATHER = 0x8B,                              // 0x08B
-    SPELL_FAILED_DAMAGE_IMMUNE = 0x8C,                              // 0x08C
-    SPELL_FAILED_PREVENTED_BY_MECHANIC = 0x8D,                      // 0x08D
-    SPELL_FAILED_PLAY_TIME = 0x8E,                                  // 0x08E
-    SPELL_FAILED_REPUTATION = 0x8F,                                 // 0x08F
-    SPELL_FAILED_MIN_SKILL = 0x90,                                  // 0x090
-    SPELL_FAILED_UNKNOWN = 0x91,                                    // 0x091
+    SPELL_FAILED_TOTEM_CATEGORY = 0x78,                             // 0x078
+    SPELL_FAILED_TOTEMS = 0x79,                                     // 0x079
+    SPELL_FAILED_TRAINING_POINTS = 0x7A,                            // 0x07A
+    SPELL_FAILED_TRY_AGAIN = 0x7B,                                  // 0x07B
+    SPELL_FAILED_UNIT_NOT_BEHIND = 0x7C,                            // 0x07C
+    SPELL_FAILED_UNIT_NOT_INFRONT = 0x7D,                           // 0x07D
+    SPELL_FAILED_WRONG_PET_FOOD = 0x7E,                             // 0x07E
+    SPELL_FAILED_NOT_WHILE_FATIGUED = 0x7F,                         // 0x07F
+    SPELL_FAILED_TARGET_NOT_IN_INSTANCE = 0x80,                     // 0x080
+    SPELL_FAILED_NOT_WHILE_TRADING = 0x81,                          // 0x081
+    SPELL_FAILED_TARGET_NOT_IN_RAID = 0x82,                         // 0x082
+    SPELL_FAILED_DISENCHANT_WHILE_LOOTING = 0x83,                   // 0x083
+    SPELL_FAILED_PROSPECT_WHILE_LOOTING = 0x84,                     // 0x084
+    SPELL_FAILED_PROSPECT_NEED_MORE = 0x85,                         // 0x085
+    SPELL_FAILED_TARGET_FREEFORALL = 0x86,                          // 0x086
+    SPELL_FAILED_NO_EDIBLE_CORPSES = 0x87,                          // 0x087
+    SPELL_FAILED_ONLY_BATTLEGROUNDS = 0x88,                         // 0x088
+    SPELL_FAILED_TARGET_NOT_GHOST = 0x89,                           // 0x089
+    SPELL_FAILED_TOO_MANY_SKILLS = 0x8A,                            // 0x08A
+    SPELL_FAILED_TRANSFORM_UNUSABLE = 0x8B,                         // 0x08B
+    SPELL_FAILED_WRONG_WEATHER = 0x8C,                              // 0x08C
+    SPELL_FAILED_DAMAGE_IMMUNE = 0x8D,                              // 0x08D
+    SPELL_FAILED_PREVENTED_BY_MECHANIC = 0x8E,                      // 0x08E
+    SPELL_FAILED_PLAY_TIME = 0x8F,                                  // 0x08F
+    SPELL_FAILED_REPUTATION = 0x90,                                 // 0x090
+    SPELL_FAILED_MIN_SKILL = 0x91,                                  // 0x091
+    SPELL_FAILED_UNKNOWN = 0x92,                                    // 0x092
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }
