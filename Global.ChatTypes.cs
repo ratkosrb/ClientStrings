@@ -1,6 +1,6 @@
 // Auto generated file
 // Patch: 0.2.0
-// Build: 7051
+// Build: 7091
 
 Public Enum ChatMsg
 {
