@@ -12,12 +12,14 @@ uptodate
 1024x768
 800x600
 640x480
+****\\expansion-speech-****.MPQ
 ****\\expansion-locale-****.MPQ
+****\\speech-****.MPQ
 ****\\locale-****.MPQ
 common.MPQ
+expansion.MPQ
 expansionspeech.MPQ
 expansionloc.MPQ
-expansion.MPQ
 speech.MPQ
 dbc.MPQ
 fonts.MPQ
@@ -33,6 +35,9 @@ Data\\
 delete
 delete[]
 E:\\build\\buildWoW\\WoW\\Source\\DB/WowClientDB.h
+----
+****
+%s%s
 E:\\build\\buildWoW\\WoW\\Source\\Client.cpp
 %d%d
 Level: %s
@@ -40,7 +45,8 @@ Total: %s
 Time played:
 World transfer pending...
 World transfer aborted...
-DUNGEON_DIFFICULTY_UNAVAILABLE%d
+TRANSFER_ABORT_DIFFICULTY%d
+TRANSFER_ABORT_INSUF_EXPAN_LVL%d
 TRANSFER_ABORT_ZONE_IN_COMBAT
 TRANSFER_ABORT_TOO_MANY_INSTANCES
 TRANSFER_ABORT_NOT_FOUND
@@ -54,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5965)
+World of WarCraft (build 5991)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -66,10 +72,9 @@ Language
 WoW Config
 Region
 Wow.ini
-%s%s
-Set the game locale
 enUS
 locale
+Set the game locale
 RunOnce.wtf
 Config.wtf
 M2FasterDebug
@@ -171,9 +176,7 @@ patch-%s.MPQ
 patch-%s-?.MPQ
 Data\\%s\\
 patch-?.MPQ
-----
 Failed to open archive %s
-****
 Unknown Error
 Add Ons:
 Cursor Item
@@ -189,7 +192,13 @@ Local Zone:
 %s: %s, %016I64X, (%g,%g,%g)\r\n
 %s %s
 WowError.exe
+Burning Crusade Closed Beta
 InstallPath
+BENCHMARK_TAXI_AVERAGE_FPS
+BENCHMARK_TAXI_MAX_FPS
+BENCHMARK_TAXI_MIN_FPS
+BENCHMARK_TAXI_RESULTS
+taxibenchmark
 togglecloak
 togglehelm
 showplayer
@@ -506,6 +515,7 @@ Context: interactive = %u, idleTime = %u
 E:\\build\\buildWoW\\ENGINE\\Source\\Event\\CInputObserver.cpp
 E:\\build\\buildWoW\\ENGINE\\Source\\Event\\CObserver.cpp
 E:\\build\\buildWoW\\ENGINE\\Source\\Event\\EvtTimer.cpp
+\\shell\\open\\command
 %m%d%y_%H%M%S
 Linux
 MacOSX
@@ -540,7 +550,6 @@ open
 Invalid function pointer: %p
 Unable to find .text section
 .text
-\\shell\\open\\command
 lpt9
 lpt8
 lpt7
@@ -606,8 +615,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Oct  2 2006
-13:24:25
+Oct  7 2006
+18:49:47
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -856,6 +865,10 @@ AmbienceVolume
 Ambience Volume (0.0 to 1.0)
 ..\\Object/ObjectClient/Player_C.h
 MapWaterSounds
+DBFilesClient\\ItemDisplayInfo.dbc
+Error reading ItemDisplayInfoRec
+DBFilesClient\\Spell.dbc
+Error reading SpellRec
 HeapUsage
 %u total object bytes used, %u bytes allocated for heaps
     \"%s\" %u blocks, %u objs per block (%u bytes per block): %u objs allocated (%d%%)
@@ -934,8 +947,11 @@ LOGIN_STATE_SURVEY
 LOGIN_STATE_DISCONNECTED
 RESPONSE_CONNECTED
 LOGIN_STATE_CHECKINGVERSIONS
+LOGIN_STATE_MATRIX_WAIT
+LOGIN_STATE_MATRIX
 LOGIN_STATE_PIN_WAIT
 LOGIN_STATE_PIN
+LOGIN_STATE_FIRST_SECURITY
 LOGIN_STATE_DOWNLOADFILE
 LOGIN_STATE_FAILED
 LOGIN_STATE_AUTHENTICATED
@@ -986,11 +1002,22 @@ QUEUE_TIME_LEFT
 QUEUE_NAME_TIME_LEFT
 Survey
 Patch
+%d%d%d%d
 %d%d%d%d%d%d%d%d%d%d
 CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
+IsLinuxClient
+IsMacClient
+IsWindowsClient
+IsScanDLLFinished
+ScanDLLContinueAnyway
+ScanDLLStart
+GetMatrixCoordinates
+MatrixCommit
+MatrixRevert
+MatrixEntered
 GetClientExpansionLevel
 GetAccountExpansionLevel
 GetCreditsText
@@ -1056,6 +1083,8 @@ SetSavedAccountName
 GetSavedAccountName
 GetLocale
 GetBuildInfo
+SCANDLL_FINISHED
+PLAYER_ENTER_MATRIX
 CLIENT_ACCOUNT_MISMATCH
 PLAYER_ENTER_PIN
 SHOW_SURVEY_NOTIFICATION
@@ -1083,7 +1112,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5965
+5991
 2.0.0
 RELEASE_BUILD
 BETA_BUILD
@@ -1097,6 +1126,8 @@ Usage: LaunchURL(\"URL\")
 Usage: DefaultServerLogin(\"accountName\", \"password\")
 Usage: PINEntered(4-10 key positions) - bad number of args %d
 Usage: PINEntered(4-10 key positions) - non-numeric arg #%d
+MatrixEntered: number must be 0 to 9
+Usage: MatrixEntered(number)
 AddOn index must be in the range of 1 to %d
 Usage: GetAddOnInfo(index)
 Usage: LaunchAddOnURL(index)
@@ -1105,6 +1136,7 @@ Usage: GetAddOnEnableState(\"character\", index)
 Usage: EnableAddOn(\"character\", index)
 Usage: DisableAddOn(\"character\", index)
 Usage: SetScriptMemory(MB)
+Usage: ScanDLLStart(\"VersionURL\", \"DLLURL\")
 credits_BC.html
 credits.html
 Usage: Script_GetCreditText(versionIndex)
@@ -1185,12 +1217,22 @@ Usage: DeleteCharacter(index)
 CHAR_CREATE_NAME_IN_USE
 Usage: RenameCharacter(index, name)
 Usage: SetCharacterSelectFacing(degrees)
-WDB\\Survey.mpq
+.\\Scan.dll
+Scan
+E:\\build\\buildWoW\\WoW\\Source\\Glue\\ScanDLLGlue.cpp
+SCANDLL_DOWNLOAD
+SCANDLL_MESSAGE_DOWNLOADING
+SCANDLL_ERROR
+SCANDLL_MESSAGE_ERROR
+SCANDLL_MESSAGE_SCANNING
+ScanThread
+Cache\\Survey.mpq
 E:\\build\\buildWoW\\WoW\\Source\\Glue\\SurveyDownloadGlue.cpp
+Cache
 Sending survey result\n
 ExtraWork
 Survey.dll
-WDB\\Survey.dll
+Cache\\Survey.dll
 wow-patch.mpq
 E:\\build\\buildWoW\\WoW\\Source\\Glue\\PatchDownloadGlue.cpp
 patchdownload
@@ -1668,9 +1710,6 @@ DeleteGMTicket
 UpdateGMTicket
 NewGMTicket
 GetGMTicket
-IsLinuxClient
-IsMacClient
-IsWindowsClient
 InCinematic
 OpeningCinematic
 RandomRoll
@@ -1747,7 +1786,7 @@ ToggleSheath
 AutoEquipCursorItem
 ClearTarget
 FollowUnit
-FocusTarget
+FocusUnit
 AssistUnit
 AttackTarget
 TargetLastEnemy
@@ -1855,6 +1894,11 @@ INVTYPE_BODY
 INVTYPE_SHOULDER
 INVTYPE_NECK
 INVTYPE_HEAD
+ERR_ITEM_MAX_COUNT_SOCKETED
+ERR_SOCKETING_META_GEM_ONLY_IN_METASLOT
+ERR_SOCKETING_REQUIRES_META_GEM
+ERR_NOT_ENOUGH_ARENA_POINTS
+ERR_NOT_ENOUGH_HONOR_POINTS
 ERR_NOT_IN_BATTLEGROUND
 ERR_BATTLEGROUND_NOT_IN_TEAM
 ERR_VENDOR_MISSING_TURNINS
@@ -1889,12 +1933,11 @@ ERR_ARENA_NO_TEAM_II
 ERR_LFG_PENDING
 ERR_LFG_LEADER_IS_LFM_S
 ERR_MATCHMAKING_MUST_BE_LEADER
-ERR_MATCHMAKING_GROUP_FULL
 ERR_MATCHMAKING_NO_RAID_GROUP
 ERR_MATCHMAKING_NOT_LEADER
-ERR_MATCHMAKING_NOT_FUNCTIONAL_S
 ERR_MATCHMAKING_PENDING_MATCH_S
 ERR_MATCHMAKING_PENDING_INVITE_S
+ERR_MATCHMAKING_AUTOJOIN_FAILED_NO_PLAYER
 ERR_MATCHMAKING_AUTOJOIN_FAILED
 ERR_MATCHMAKING_OTHER_TIMEDOUT
 ERR_MATCHMAKING_TIMEDOUT
@@ -2027,8 +2070,8 @@ ERR_EXHAUSTION_TIRED
 ERR_EXHAUSTION_NORMAL
 ERR_EXHAUSTION_RESTED
 ERR_EXHAUSTION_WELLRESTED
+ERR_OBJECT_IS_BUSY
 ERR_TICKET_NO_TEXT
-ERR_TICKET_DB_ERROR
 ERR_TICKET_UPDATE_ERROR
 ERR_TICKET_CREATE_ERROR
 ERR_TICKET_ALREADY_EXISTS
@@ -2037,7 +2080,7 @@ ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
 ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
-ERR_OBJECT_IS_BUSY
+ERR_TICKET_DB_ERROR
 ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
 ERR_PET_SPELL_ROOTED
@@ -2493,7 +2536,6 @@ Usage: DropItemOnUnit(\"unit\")
 HOME_INN
 Usage: GetItemQualityColor(index)
 Usage: GetItemInfo(itemID|\"itemlink\")
-item:%d:%d:%d:%d
 item:
 Usage: GetAddOnInfo(index or \"name\")
 Usage: GetAddOnMetadata(index or \"name\", \"variable\")
@@ -2567,6 +2609,7 @@ LOOT_ITEM_MULTIPLE
 CREATED_ITEM_MULTIPLE
 LOOT_ITEM
 CREATED_ITEM
+LOOTWINDOWCOINSOUND
 LOOT_ITEM_SELF_MULTIPLE
 LOOT_ITEM_PUSHED_SELF_MULTIPLE
 LOOT_ITEM_CREATED_SELF_MULTIPLE
@@ -2585,7 +2628,6 @@ CRUSHING
 GLANCING
 CRITICAL
 HEAL
-LOOTWINDOWCOINSOUND
 INTERFACESOUND_CURSORGRABOBJECT
 PET_%s_TEXTURE
 INTERFACESOUND_CURSORDROPOBJECT
@@ -2635,7 +2677,7 @@ SKILL
 LOOT
 COMBAT_MISC_INFO
 MONSTER_WHISPER
-COMBAT_SELF_HITS
+SSCOMBAT_SELF_HITS
 COMBAT_SELF_MISSES
 COMBAT_PET_HITS
 COMBAT_PET_MISSES
@@ -3473,8 +3515,10 @@ Usage: GetNumArenaTeamMembers(team [,showOffline])
 Usage: GetArenaTeamRosterInfo(team, index)
 Usage: SetArenaTeamRosterSelection(team, index)
 Usage: GetArenaTeamRosterSelection(team)
+seasonwon
+seasonplayed
+played
 class
-level
 Usgae: SortArenaTeamRoster(\"type\")
 Usage: ArenaTeamRoster(team)
 KBSystem_GetServerNotice
@@ -3541,6 +3585,9 @@ KBSetup_GetArticleHeaderData() called with invalid article header index
 KBSetup_GetArticleHeaderData() failed because setup is not loaded
 KBSetup_GetTotalArticleCount() failed because setup is not loaded
 KNOWLEDGE_BASE_QUERY_URL
+KBQuery_BeginLoading() called with subcategory without category
+KBQuery_BeginLoading() called with a null string for search query
+KBQuery_BeginLoading() failed because setup is not loaded
 KBQuery_GetArticleHeaderCount() failed because query is not loaded
 KBQuery_GetArticleHeaderData() called with invalid article header index
 KBQuery_GetArticleHeaderData() failed because query is not loaded
@@ -3703,6 +3750,7 @@ Usage: SortAuctionItems(\"type\", \"sort\")
 status
 buyout
 duration
+level
 quality
 Usage: SetSelectedAuctionItem(\"type\", index)
 Usage: GetSelectedAuctionItem(\"type\")
@@ -4194,6 +4242,7 @@ Usage: BuyGuildCharter(guildName)
 GetTabardCreationCost
 CloseTabardCreation
 DoCraft
+GetCraftCooldown
 CraftOnlyShowMakeable
 CraftIsEnchanting
 GetCraftSlots
@@ -4267,6 +4316,7 @@ Usage: DoCraft(index)
 DoCraft(index) index out of range
 Bad inv type in GetCraftFilter
 Usage: GetCraftFilter(index)
+Usage: GetCraftCooldown(index)
 CloseBankFrame
 PurchaseSlot
 GetBankSlotCost
@@ -4755,8 +4805,8 @@ UnitIsEnemy
 UnitReaction
 UnitFactionGroup
 UnitIsPVPFreeForAll
+UnitIsPVPSanctuary
 UnitIsPVP
-UnitIsImmunePC
 UnitPlayerControlled
 UnitPlayerOrPetInRaid
 UnitInRaid
@@ -4864,6 +4914,7 @@ HONOR_CURRENCY_UPDATE
 ARENA_TEAM_INVITE_REQUEST
 ARENA_TEAM_ROSTER_UPDATE
 ARENA_TEAM_UPDATE
+KNOWLEDGE_BASE_SERVER_MESSAGE
 KNOWLEDGE_BASE_SYSTEM_MOTD_UPDATED
 KNOWLEDGE_BASE_ARTICLE_LOAD_FAILURE
 KNOWLEDGE_BASE_ARTICLE_LOAD_SUCCESS
@@ -5218,7 +5269,6 @@ ACTIONBAR_SHOWGRID
 SCREENSHOT_FAILED
 SCREENSHOT_SUCCEEDED
 MINIMAP_UPDATE_ZOOM
-MINIMAP_ZONE_CHANGED
 ZONE_CHANGED_NEW_AREA
 ZONE_CHANGED_INDOORS
 ZONE_CHANGED
@@ -5545,7 +5595,6 @@ ITEM_SPELL_KNOWN
 ITEM_PROSPECTABLE
 ITEM_DURATION
 DURABILITY_TEMPLATE
-ITEM_RANDOM_ENCHANT
 ITEM_SOCKET_BONUS
 ITEM_ENCHANT_DISCLAIMER
 ITEM_PROPOSED_ENCHANT
@@ -5672,7 +5721,7 @@ Received pong with old sequence
 E:\\build\\buildWoW\\WoW\\Source\\Net\\NetInternal.h
 E:\\build\\buildWoW\\WoW\\Source\\Net\\NetInternal.cpp
 ..\\..\\DB/WowClientDB.h
-Warning: The Resistances table has the wrong number of entries
+enGB
 xxYY
 esES
 zhTW
@@ -5694,9 +5743,12 @@ petitioncache.wdb
 itemtextcache.wdb
 wowcache.wdb
 arenateamcache.wdb
+Warning: The Resistances table has the wrong number of entries
+E:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBClient.cpp
 ..\\..\\Object/CreatureStats.h
 OsCreateFile failed for cache file: %s\n
 %s/%s
+Data/%s/%s
 DBCache::CancelCallback ignored for id %016I64X.
 E:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
 ..\\..\\Object/GameObjectStats.h
@@ -5765,6 +5817,9 @@ OnLeaveCombat
 OnEnterCombat
 OnReaction
 -NONE-
+Reset vendor lists for unit(s) in the group
+Unit(s) become a vendor
+Follow a flight spline path exactly, and loop forever
 Reset \"No Reputation\" flag for unit(s) in the group
 Set \"No Reputation\" flag for unit(s) in the group
 Unit(s) cast a spell and report failure to owner
@@ -6034,8 +6089,6 @@ DBFilesClient\\ItemBagFamily.dbc
 Error reading ItemBagFamilyRec
 DBFilesClient\\ItemClass.dbc
 Error reading ItemClassRec
-DBFilesClient\\ItemDisplayInfo.dbc
-Error reading ItemDisplayInfoRec
 DBFilesClient\\ItemExtendedCost.dbc
 Error reading ItemExtendedCostRec
 DBFilesClient\\ItemGroupSounds.dbc
@@ -6158,8 +6211,6 @@ DBFilesClient\\SpellRadius.dbc
 Error reading SpellRadiusRec
 DBFilesClient\\SpellRange.dbc
 Error reading SpellRangeRec
-DBFilesClient\\Spell.dbc
-Error reading SpellRec
 DBFilesClient\\SpellShapeshiftForm.dbc
 Error reading SpellShapeshiftFormRec
 DBFilesClient\\SpellVisualEffectName.dbc
@@ -6466,7 +6517,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 5965 (Oct  2 2006 13:27:01)
+WoW [Release] Build 5991 (Oct  7 2006 18:52:47)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -6664,6 +6715,10 @@ ijl15.dll
 fmod.dll
 WoW.exe
 E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\ChecksumExecutables.cpp
+%hu.%hu.%hu.%hu
+HACK
+TROJAN
+E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\CheckExecutableSignature.cpp
 LOGIN_STATE_CONNECTED
 REALM_LIST_CANTCONNECT
 REALM_LIST_DISCONNECTED
@@ -6788,8 +6843,8 @@ E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Player_C.h
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\DynamicObject_C.cpp
 SPELLEFFECTIDNOTFOUND|%d
 SPELLEFFECTNOAREAEFFECT|%d
-SPELLVISUALIDNOTFOUND|%d|%d
 NOSPELLIDFOUND|%d
+SPELLVISUALIDNOTFOUND|%d|%d
 NOOBJECTFILENAME|%d|Dynamic
 UNKNOWNANIMEVENT|%.4s|CGDynamicObject_C|CGDynamicObject_C::HandleAnimEvent
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Corpse_C.cpp
@@ -6882,6 +6937,10 @@ PVP_TOGGLE_OFF_VERBOSE
 PVP_TOGGLE_ON_VERBOSE
 Petition error
 Reserved for future use
+BENCHMARK_TAXI_MODE_OFF
+Taxi benchmark mode OFF.
+BENCHMARK_TAXI_MODE_ON
+Taxi benchmark mode ON.
 Custom3
 Custom2
 Custom1
@@ -7679,7 +7738,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 5965 (Oct  2 2006)
+WoW [Release] Build 5991 (Oct  7 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -7702,6 +7761,7 @@ World of Warcraft\\Client
 \tvideoID: %d
 \tcpuIdx: %d
 DetectHardware():
+E:\\build\\buildWoW\\WoW\\Source\\Console\\ConsoleDetect.cpp
 Hardware changed.  Reload default settings?
 Begin Typing the commands
 You must type 'y' to confirm overwrite. Process aborted!
@@ -7720,6 +7780,8 @@ SMem3: Heap corrupt; block header has been overwritten
 SMem3: Break On AllocId
 SMemInitialize()\n
 SMemDestroy()\n
+2n)Beca
+E:\\build\\buildWoW\\Storm\\Source\\SStr.cpp
 ..\\h\\stpl.h
 .MPQ
 E:\\build\\buildWoW\\Storm\\Source\\SFile2.cpp
@@ -7729,8 +7791,6 @@ BZ00
 SFile read thread did not exit
 .mpq
 (listfile)
-2n)Beca
-E:\\build\\buildWoW\\Storm\\Source\\SStr.cpp
 E:\\build\\buildWoW\\Storm\\Source\\W32\\SThread.cpp
 CdThreadProc
 main
@@ -7864,6 +7924,7 @@ cd>>\"\"
 E:\\build\\buildWoW\\Storm\\Source\\SComp.cpp
 <unknown>
 bzip2Compress:%d
+E:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 E:\\build\\buildWoW\\Storm\\Source\\SBig.cpp
 E:\\build\\buildWoW\\Storm\\Source\\W32\\SDir.cpp
 E:\\build\\buildWoW\\Storm\\Source\\SZip.cpp
@@ -7929,7 +7990,6 @@ EDI=%08X  EBP=%08X  ESP=%08X  EIP=%08X  FLG=%08X
 EAX=%08X  EBX=%08X  ECX=%08X  EDX=%08X  ESI=%08X
 x86 Registers
 psapi.dll
-E:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 E:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOAlignUnit.cpp
 E:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOARC4Unit.cpp
 characterAmbient
@@ -8329,6 +8389,7 @@ Hiding foot prints.
 Showing foot prints.
 BSP node cache already disabled.
 Disabling BSP node cache.
+E:\\build\\buildWoW\\WoW\\Source\\WorldClient\\WorldParam.cpp
 Enabling BSP node cache (first time - starting up)
 Enabling BSP node cache (already enabled, so clearing content.)
 Triangle strips disabled on restart.
@@ -8342,6 +8403,7 @@ DBFilesClient\\VideoHardware.dbc
 Error reading VideoHardwareRec
 ���>XTextures\\splash\\wake.blp
 XTextures\\splash\\splash.blp
+XTextures\\LavaGreen\\lavagreen.%d.blp
 XTextures\\river\\fast_a.%d.blp
 XTextures\\slime\\slime.%d.blp
 XTextures\\lava\\lava.%d.blp
@@ -8830,11 +8892,11 @@ getglobal
 setglobal
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameScript\\FrameScript.cpp
 __index
-return function(self,event,arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,...) %s end
+return function(self,event,...) %s end
 OnEvent
 %s:%s
 return function(self) %s end
-Usage: hooksecurefunc(\"function\", hookfunc)
+Usage: hooksecurefunc([table,] \"function\", hookfunc)
 hooksecurefunc(): %s is not a function
 Usage: seterrorhandler(errfunc)
 'date' format too long
@@ -10287,6 +10349,10 @@ Blizzard Web Client
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsURLDownload.cpp
 <unknown %08X>
 <null>
+\\StringFileInfo\\%04x%04x\\%s
+\\VarFileInfo\\Translation
+E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsSecureRandom.cpp
+GlobalMemoryStatusEx
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsClipboard.cpp
 %02X
 Improper header received: [
@@ -10372,6 +10438,7 @@ set_mm_design
 get_mm
 truetype
 sfnt
+ltuop
 smooth
 cinu
 raster5
@@ -11468,6 +11535,7 @@ PCDATA
 PUBLIC
 REQUIRED
 SYSTEM
+GetModuleHandleW
 E:\\build\\buildWoW\\engine\\Source\\Base\\MsgBuffer.cpp
 KERNEL32.dll
 ADVAPI32.dll
@@ -11480,6 +11548,7 @@ GDI32.dll
 IMM32.dll
 DivxDecoder.dll
 WINMM.dll
+VERSION.dll
 fmod.dll
 WININET.dll
 .PAVSArchive@@
@@ -11653,6 +11722,7 @@ x<h'R
 .?AVC3iVector@NTempest@@
 .?AUCGxMonitorMode@@
 .?AUCGxFormat@@
+.?AUCapturePointUIManagerNode@@
 .?AUSAVEDVARIABLE@@
 .?AUChatChannel@@
 .?AUPENDINGUSERLIST@@
@@ -11736,9 +11806,9 @@ x<h'R
 .PAVCSimpleFontString@@
 .?AUNETCLIENTNODE@@
 .?AUNETEVENTQUEUENODE@@
+SUneRKokRFrfEDedNChzWThzSEseYYxx
 .PBVResistancesRec@@
 .PBVItemSubClassRec@@
-SUneRKokRFrfEDedNChzWThzSEseYYxx
 .?AUDBCACHEHASH@?$DBCache@VCreatureStats_C@@HVHASHKEY_INT@@@@
 .?AUDBCACHECALLBACK@@
 .?AV?$TSExplicitList@UDBCACHEHASH@?$DBCache@VCreatureStats_C@@HVHASHKEY_INT@@@@$0?CCCCCCCD@@@
@@ -11783,6 +11853,9 @@ SUneRKokRFrfEDedNChzWThzSEseYYxx
 .?AUGxVertexDecl@CGxDeviceD3d@@
 \"3DUfw
 .?AUInfo@CdKey@Grunt@@
+o'6RX\r
+GcS68
+2\x1BpK@
 .?AUREALMCONNECTIONNODE@RealmConnection@@
 .?AUCHARACTER_INFO@@
 .?AUData@Pending@Grunt@@
