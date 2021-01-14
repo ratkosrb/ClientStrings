@@ -215,7 +215,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6641)
+World of WarCraft (build 6655)
 SendErrorLogs
 player hidden
 player visible
@@ -236,7 +236,6 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<�Ky
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1472,8 +1471,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-May  1 2007
-6641
+May  4 2007
+6655
 0.1.0
 RELEASE_BUILD
 BETA_BUILD
@@ -2257,7 +2256,6 @@ Usage: GetLanguageByIndex(index)
 Usage: DoEmote(\"emote\"[, \"target\"])
 Usage: LeaveChannelByName(\"name\")
 Usage: CanComplainChat(lineID) or CanComplainChat(name) or CanComplainChat(name, text)
-Usage: ComplainChat(lineID) or ComplainChat(name) or ComplainChat(name, text)
 RAID_INSTANCE_INFO_FMT
 e:\\build\\buildwow\\wow\\source\\ui\\ChatFrame.h
 Warning: invalid chat spam filter expression: \"%s\" (ID #: %d)\n
@@ -2321,6 +2319,7 @@ SendChatMessage(): Unknown language
 SendChatMessage(): Chat message must be UTF-8 text
 SendChatMessage(): Unknown chat type
 [%d. %s]
+COMPLAINT_ADDED
 NOT_IN_LFG
 NOT_IN_AREA
 PLAYER_INVITE_BANNED
@@ -2354,6 +2353,7 @@ YOU_LEFT
 SUSPENDED
 YOU_JOINED
 YOU_CHANGED
+Usage: ComplainChat(lineID) or ComplainChat(name) or ComplainChat(name, text)
 Dismount
 Sound_GetZoneAudioStats
 SetTaxiBenchmarkMode
@@ -3640,8 +3640,6 @@ ITEM_QUALITY%d_DESC
 Usage: GetPartyMember(1-4)
 MAINASSIST
 MAINTANK
-Invalid Party assignment
-Usage: GetPartyAssignment(\"assignment\" [,\"raidmember\"] [,exactMatch])
 .\\PartyFrame.cpp
 ERROR!
 needbeforegreed
@@ -3649,12 +3647,15 @@ group
 master
 roundrobin
 freeforall
+GetPartyAssignment(): Invalid party assignment
+Usage: GetPartyAssignment(\"assignment\" [,\"raidmember\"] [,exactMatch])
 READY_CHECK_START
 READY_CHECK_ALL_READY
 RAID_MEMBERS_AFK
 Invalid loot method
 Usage: SetLootMethod(\"method\" [,master])
 Usage: SetLooThreshold(threshold)
+Invalid Party assignment
 Usage: %s(\"assignment\" [,\"raidmember\"] [,exactMatch])
 RAID_MEMBER_NOT_READY
 CheckReadyCheckTime
@@ -6497,8 +6498,8 @@ Unit(s) cast a spell and report failure to owner
 Trigger actions on nearest unit in combat
 Unit(s) boss emote something to the zone
 Unit(s) boss emote something
-Finish the current actions if expression is true
-Loop the current actions if expression is true
+Abort the current actions if expression is true
+Restart the current actions if expression is true
 Perform a random set of actions
 Reset \"Ignore combat\" flag for unit(s)
 Set \"Ignore combat\" flag for unit(s)
@@ -6935,7 +6936,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6641 (May  1 2007 17:52:32)
+WoW [Release] Build 6655 (May  4 2007 15:21:30)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7135,7 +7136,6 @@ PVP_TOGGLE_OFF_VERBOSE
 PVP_TOGGLE_ON_VERBOSE
 Error, player %s has displayID 0!
 NOSPELLIDFOUND|%d
-COMPLAINT_ADDED
 %d%d%d%d%d%d%d%d%d
 Godmode disabled
 Godmode enabled
@@ -7955,7 +7955,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6641 (May  1 2007)
+WoW [Release] Build 6655 (May  4 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -9739,7 +9739,6 @@ uZEeu\b
 ?V:e:
 @g\t=
 5SmT4
-C�?ş\nܬ_�<
 *+xi(
 ?1-\nI
 ?ZEM-'^
@@ -10544,7 +10543,8 @@ GetPushedTexture
 SetPushedTexture
 GetNormalTexture
 SetNormalTexture
-GetHighlightTextColor
+GetHighlightT
+extColor
 SetHighlightTextColor
 GetDisabledTextColor
 SetDisabledTextColor
@@ -10555,8 +10555,7 @@ SetHighlightFontObject
 GetDisabledFontObject
 SetDisabledFontObject
 GetTextFontObject
-SetTextFo
-ntObject
+SetTextFontObject
 SetButtonState
 GetButtonState
 IsEnabled
@@ -11217,14 +11216,10 @@ psnames
 truetype
 sfnt
 smooth
-ltuo`
-ltuo@
+ltuo
 cinu
 raster5
 raster1
-ltuo &v
-ltuop(v
-ltuop(v
 zeta
 zdotaccent
 zacute
@@ -12422,7 +12417,7 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>�Ny
+��u>��y
 .?AUAISOUNDDESC@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
@@ -12482,14 +12477,14 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>�Ny
+��u>��y
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
 .?AUTUTORIALTIMER@@
 .PAUSpellBookSkillInfo@@
 .?AUCombatFeedbackSpell@@
-��u>�Ny
+��u>��y
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
