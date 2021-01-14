@@ -225,7 +225,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7214)
+World of WarCraft (build 7229)
 SendErrorLogs
 player hidden
 player visible
@@ -248,7 +248,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<�݃
+���<ȝ�
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1506,8 +1506,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Sep  4 2007
-7214
+Sep  7 2007
+7229
 0.2.0
 RELEASE_BUILD
 BETA_BUILD
@@ -2341,9 +2341,9 @@ Usage: IsSilenced (token)
 Usage: UnitIsSilenced (token, [channel])
 Usage: GetMuteStatus (token, [channel])
 @#$%^&*
-Usage: %s (\"name\")
-Usage: %s(\"name\", \"password\"), password cannot be more than %d characters
-Usage: %s(\"name\"), name cannot be more than %d characters
+Usage: %s (\"name\", [\"password\"], [\"index\"], [\"create_session(1,0)\"])
+Usage: %s(\"name\", [\"password\"], [\"index\"], [\"create_session(1,0)\"]), password cannot be more than %d characters
+Usage: %s(\"name\", [\"password\"], [\"index\"], [\"create_session(1,0)\"]), name cannot be more than %d characters
 CHAT_%s_GET
 [%s]
 CHAT_%s_NOTICE
@@ -4010,9 +4010,6 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
-COPPER
-SILVER
-GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -5718,6 +5715,7 @@ ConsoleExec
 GetGameTime
 GetTime
 Usage: ConsoleExec(\"console_command\")
+VOICE_LEFT_SESSION
 VOICE_SESSIONS_UPDATE
 VOICE_CHAT_ENABLED_UPDATE
 CHANNEL_FLAGS_UPDATED
@@ -7195,7 +7193,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7214 (Sep  4 2007 22:36:31)
+WoW [Release] Build 7229 (Sep  7 2007 19:47:48)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7398,6 +7396,9 @@ Error, unknown model record %d specified for player race %d sex %d!
 Error, unknown displayInfo %d specified for player race %d sex %d!
 CHAT_FLAG_GM
 UnwrapGift
+COPPER
+SILVER
+GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -8221,7 +8222,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7214 (Sep  4 2007)
+WoW [Release] Build 7229 (Sep  7 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8841,13 +8842,14 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token, [channel])
-WOWCOMSATCLIENT7214
+WOWCOMSATCLIENT7229
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
 COMSAT_STOP: NotifyLocalTalkerStop\r\n
 COMSAT_START: NotifyTalkerStart\r\n
 COMSAT_STOP: NotifyTalkerStop\r\n
+VoiceActivationSensitivity
 VoiceChatMode
 COMSAT_START: NotifyLocalTalkerStart from PopulateSession\r\n
 COMSAT_STOP: NotifyTalkerStop from RosterUpdate\r\n
@@ -8858,7 +8860,6 @@ PushToTalkButton
 String representation of the Push-To-Talk button.
 Enables the voice chat feature.
 Enables the microphone so you can speak.
-VoiceActivationSensitivity
 Sensitivity of the microphone (0.0 - 1.0)
 Push to talk(0) or voice activation(1)
 InboundChatVolume
@@ -11564,11 +11565,14 @@ psnames
 truetype
 sfnt
 smooth
+ltuo Jx
+ltuopKx
 cinu
 raster5
 raster1
-ltuo
-ltuo
+ltuoP
+ltuo0
+ltuo0
 zeta
 zdotaccent
 zacute
@@ -13087,12 +13091,12 @@ EAX5.0
 Generic Software
 EAXSet
 EAXGet
-AL_FORMAT_71CHN16
-AL_FORMAT_61CHN16
-AL_FORMAT_51CHN16
-AL_FORMAT_QUAD16
-AL_FORMAT_STEREO16
 AL_FORMAT_MONO16
+AL_FORMAT_STEREO16
+AL_FORMAT_QUAD16
+AL_FORMAT_51CHN16
+AL_FORMAT_61CHN16
+AL_FORMAT_71CHN16
 FMOD OpenAL Output
 Xing
 smpl
@@ -13412,16 +13416,16 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>T��
+��u>L��
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
-��u>T��
+��u>L��
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u>T��
+��u>L��
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13472,7 +13476,7 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>T��
+��u>L��
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13482,7 +13486,7 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
-��u>T��
+��u>L��
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13510,7 +13514,7 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
-��u>T��
+��u>L��
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
