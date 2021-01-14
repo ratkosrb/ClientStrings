@@ -292,7 +292,7 @@ dbCompress
 Database compression
 Config.wtf
 WoW.mfil
-World of WarCraft: Assertions Enabled Build (build 7948)
+World of WarCraft: Assertions Enabled Build (build 7958)
 SendErrorLogs
 m_rc
 player hidden
@@ -316,7 +316,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<0ȋ
+���<0(�
 d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\Tempest/cmath.h
 \"%s\", %s = %f
 r >= .0f
@@ -453,10 +453,69 @@ __fastcall
 __thiscall
 __stdcall
 __pascal
-__cdecl
 __based(
+ ??
+{flat}
+{for
+`non-type-template-parameter
+unsigned
+long
+int
+short
+char
+void
+<ellipsis>
+,<ellipsis>
+,...
+ throw(
+`template-parameter
 NULL
+cli::pin_ptr<
+cli::array<
+void
+`anonymous namespace'
+generic-type-
+template-parameter-
+nknown ecsu'
+union
+struct
+class
+enum
+coclass
+cointerface
+extern \"C\"
+[thunk]:
+public:
+protected:
+private:
+virtual
+static
+`template static data member destructor helper'
+`template static data member constructor helper'
+`local static destructor helper'
+`adjustor{
+`vtordisp{
+`vtordispex{
+const
+volatile
+CV:
+volatile
+ volatile
+const
+signed
+double
+bool
+wchar_t
 UNKNOWN
+__int128
+__int32
+__int64
+__int16
+__w64
+__int8
+float
+long
+short
 char
 ('8PW
 700PP
@@ -660,6 +719,8 @@ sides > 0
 pSEDiskSound->m_file != 0
  - Using [%d] %s for %s
 !(m_bFadingIn && m_bFadingOut)
+self->m_pFMODChannel == 0
+pSEDiskSound->m_pFMODChannel == 0
 !\"sound has been nuked already\"
 m_pFMODChannel != 0
 s_aChannelGroups.Count() < 8192
@@ -668,11 +729,13 @@ pSEGroup != 0
 pSoundThatEnded
 this->m_pMySESound->m_pUserData
 ##### ERROR IN CompleteNonBlockingLoad()! FAILED TO ABORT SOUND!!! [B]
+this->m_pFMODChannel == 0
 ##### ERROR IN CompleteNonBlockingLoad()! FAILED TO ABORT SOUND!!! [A]
 ##### ERROR IN CompleteNonBlockingLoad()! Aborting this sound! %s
 ##### ERROR! INVALID m_pFMODSound
 pNewSESound->m_pUserData
 %-24d%s
+pNewSESound->m_pFMODChannel == 0
 .mp3
 .wav
 pSystem
@@ -766,8 +829,8 @@ s_pGameSystem == 0
 => Setting up Game Sound:
 => Version %s (%s) %s
 0.4.0
-7948
-Feb 19 2008
+7958
+Feb 21 2008
 Logs\\Sound.log
 Logs\\SESound.log
 Logs
@@ -2300,7 +2363,7 @@ CHAT_MSG_RAID
 CHAT_MSG_PARTY
 .\\ComSatClient.cpp
 !s_threadRunning
-WOWCOMSATCLIENT7948
+WOWCOMSATCLIENT7958
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
 COMSAT_STOP: NotifyLocalTalkerStop\r\n
@@ -3452,12 +3515,10 @@ RwN8\b
 E+{ez
 GenuineIntelAuthenticAMDCyrixInsteadCentaurHalls
 GlobalMemoryStatusEx
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\memory\\StackedAllocator.cpp
 fixedPathMax > 0
 d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\string\\Path.cpp
-%02d:%02d:%02d.%04d
 allocation failed
-free failed
-d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\memory\\StackedAllocator.cpp
 get size failed
 SMemAlloc cannot allocate a block this big
 realloc cannot allocate a block this big
@@ -3468,13 +3529,12 @@ MemFill currently cannot handle a block this big
 length < 256*1024
 d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\string\\String.cpp
 part
-\n#-----------------------------------------------------------\n# System started at %04d-%02d-%02d %02d:%02d:%02d.%04d\n# system: %s\n#-----------------------------------------------------------\n
-\n#-----------------------------------------------------------\n# %04d-%02d-%02d\n# system: %s\n#-----------------------------------------------------------\n
 /Assert.log
 %04d/%02d/%02d %02d:%02d:%02d  %s(%d) : Assertion failed: %s  \"%s\"\n
-amount != NULL
 file != NULL
 d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Filestack_Win32.cpp
+newFileName != NULL
+oldFileName != NULL
 buffer != NULL
 d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Transport.cpp
 d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\FileManifest.cpp
@@ -3487,10 +3547,9 @@ d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\
 result == WAIT_OBJECT_0
 mutex.debug != NULL
 d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\lock\\Mutex_Win32.cpp
-index >= 0 && index < MAX_OPEN
-d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\log\\Log.cpp
-logClass < MAX_CLASS
-Thread::TLSSlotIsAllocated( slot )
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\lock\\Semaphore_Win32.cpp
+Thread::TLSSlotIsAllocated(slot)
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\thread\\ThreadLocalStorage.cpp
 d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\thread\\Thread_Win32.cpp
 !\"TLS destructor thread not responding\"
 entry.destructorEvent != NULL
@@ -3499,82 +3558,82 @@ d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\
 String::Equal(name, use[ID].name)
 s_UsingNamesTail + String::Length(name) + 1 - s_UsingNames <= STRINGPOOL_SIZE
 s_NextUsingID < USING_MAX
-[%d] %s\n%s
-[%d] err=%d %s\n%s
+flatStrLen > String::Length(flatStr)
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\debug\\ErrorStack.cpp
+[%d] err=%d text=%s\n%s
 d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Filestack_Streaming.cpp
 failed to open %s\n
 %s\\*
-newFileName != NULL
-oldFileName != NULL
-0 == (mode & ~Blizzard::File::Mode::nocache)
-FALSE
 item != NULL
 FileManifest::ReadDirectFile - ReadDirectFileFromBuffer failed
 FileManifest::ReadDirectFile - LoadFile failed
 d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_4_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\SourceManifest.cpp
-d < expand + expandMax
-%02d%02d%02d-%02d%02d%02d
-%02d%02d%02d
-logPrefix[0] == 0 || logPrefix[String::Length(logPrefix) - 1] == '/'
-*logNameFile != 0
 len <= bufMax - 2
-!\"Thread local storage could not be allocated\"
-!Thread::TLSSlotIsAllocated( slot )
 s_dependsCount < DEPENDS_MAX
 invalid map/set<T> iterator
 vector<T> too long
 map/set<T> too long
 deque<T> too long
+list<T> too long
 Blizzard Web Client
 Range: bytes=%lld-%lld\n
 If-Modified-Since: %s\n
 HEAD
 Blizzard::Memory
+!\"failed to allocate TLS\"
+!System_Thread::TLSSlotIsAllocated(slot)
 Blizzard::ThreadLocalStorage
 Blizzard::File
 Blizzard::Using::GlobalUse
-!\"unable to create thread for TLS cleanup\"
-!\"unable to identify current thread\"
-!\"ran out of non-Core TLS entries\"
 Transport::ReadDirectFile - GetItemTag failed
 version
 SourceManifest::ReadDirectfile - GetItemTag failed
-Blizzard::Log
-Transport::ReadIndirectFile - URL download error
-Transport::ReadIndirectFile - DownloadURL failed
+Leaked %s %08X\n
 Transport::ReadDirectFile - failed to load file
-SourceManifest::ReadIndirectFile - URL download error
-SourceManifest::ReadIndirectFile - DownloadURL failed
 SourceManifest::ReadDirectfile - failed to load file
+Blizzard::Log
+Blizzard::Thread
+coreThread->threadHandle
+!\"unable to create thread for TLS cleanup\"
+!\"unable to identify current thread\"
+!\"ran out of non-Core TLS entries\"
+bytestoread == 0
+value != NULL
+!\"Unable to allocate thread-local storage\"
+amount != NULL
+0 == (mode & ~Blizzard::File::Mode::nocache)
+Failed to load transport manifest.
+Transport::ReadIndirectFile - URL download failed
+url=%s
+Transport::ReadIndirectFile - DownloadURL failed
 Copied smaller than expected
 MD5 check failed
-DownloadURL failed
+URL Download failed
 Downloaded smaller than expected
-DownloadURL failed immediately
-    %d != %d\n
-    %s %d (%d, %d)\n
-Logs/WoW_Error.log
-Copied smaller size then expected\n
+DownloadURL failed
 offset is %d\n
+Failed to load source manifest.
+SourceManifest::ReadIndirectFile - URL download failed
+SourceManifest::ReadIndirectFile - DownloadURL failed
+Storage::Initialize - MakeAbsolutePath failed
+Storage::Initialize - s_storageReady said we've been here
 uncname != NULL
+.part
+priority
 FileManifest::ReadDirectFileFromBuffer - GetItemTag failed
+bgpreloadsleep
 FileManifest::ReadDirectFileFromBuffer - Transport::Initialize failed
 transportmanifest
 FileManifest::ReadDirectFileFromBuffer - SourceManifest::Initialize failed
 sourcemanifest
 manifest
-FileManifest::ReadIndirectFile- URL download error
-url=%s
-FileManifest::ReadIndirectFile- DownloadURL failed
-bytestoread == 0
-FileManifest::Initialize failed- Transport
-Storage::Initialize - MakeAbsolutePath failed
-Storage::Initialize - s_storageReady said we've been here
-InitializeStreaming failed- storageFile was not named
-InitializeStreaming failed- could not initialize storage
-InitializeStreaming failed- could not load manifest
-priority
-.part
+Failed to load file manifest.
+FileManifest::ReadIndirectFile - URL download failed
+FileManifest::ReadIndirectFile - DownloadURL failed
+FileManifest::Initialize failed - Transport
+InitializeStreaming failed - storageFile was not named
+InitializeStreaming failed - could not initialize storage
+InitializeStreaming failed - could not load manifest
 Blizzard::File::Transport
 flags >= 0 && flags <= ((1<<2)-1)
 year == -1 || year >= 0 && year <= ((1<<5)-1)
@@ -3725,7 +3784,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release Assertions Enabled] Build 7948 (Feb 19 2008)
+WoW [Release Assertions Enabled] Build 7958 (Feb 21 2008)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -3910,9 +3969,6 @@ DRUNK_MESSAGE_ITEM_SELF%d
 COMBATLOG_HONORAWARD
 %s%s%s%s%s
 %d %s
-COPPER
-SILVER
-GOLD
 playerPtr
 HOME_INN
 slotB <= 0xff
@@ -3938,8 +3994,6 @@ PVP_RANK_%d_%d
 REPORT_PVP_AFK_SENT
 NOCOLLISIONBOX|%s
 ZEROSCALEUNIT|%d|%s
-CMath::fnotequal_(addlScale, 0.0f)
-addlScale
 !quest
 Unkown questID (%d) in QuestUpdate
 count < MAX_RAIDGROUP
@@ -4143,7 +4197,6 @@ origSize == destSize
 msgId == SMSG_AI_REACTION
 msgId == SMSG_PET_ACTION_SOUND
 msgId == SMSG_PET_DISMISS_SOUND
-msgId == SMSG_FORCE_DISPLAY_UPDATE
 INVALIDDISPLAYMODELRECORD|%d|%d
 NOCREATUREDISPLAYIDFOUND|%d
 !IsA(TYPE_PLAYER)
@@ -4179,6 +4232,7 @@ Gyro Start Forward! (FLYING)\n
 slot < sizeof(m_unit->auras)
 unitptr
 IsA(TYPE_PLAYER)
+transport
 prevValue
 slot < NUM_ITEM_SLOT
 \"%s\", %s = %d, %s = %d
@@ -4213,7 +4267,6 @@ PetMeleeDamage
 Toggle display of in-world pet melee damage feedback
 reason < MISS_NUMMISSTYPES
 size
-displayIDIndex < numDisplayIDs
 spellRec
 IsActiveMover()
 shape
@@ -4276,20 +4329,22 @@ OnMonsterMove_rawpos
 OnMonsterMove_serverLoc
 talkAnim < TALKANIM_NUMTALKANIMS
 MOUNTDISPLAYIDNOMOUNTATTACHMENT|%d
-unitPtr->GetMaxHealth()
-unitPtr->IsA(HIER_TYPE_UNIT)
-m_mountTransitionEffect
+mountModel
 msgId != MSG_NULL_ACTION
 addedAura
 (requiredAuraVisionBitmask >= 0) && (requiredAuraVisionBitmask <= 0xFF)
+m_mountTransitionEffect
+g_spellDB.RecordExists( m_shapeShiftPoofSpellID )
+m_displayInfo
+displayIDIndex < numDisplayIDs
+unitPtr->GetMaxHealth()
+unitPtr->IsA(HIER_TYPE_UNIT)
+GetCharacterModel()
+!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\".\\\\Unit_C.cpp\",2367)) != 0
+msgId == SMSG_FORCE_DISPLAY_UPDATE
 1200
 showfootprintparticles
 toggles rendering of footprint particles
-mountModel
-g_spellDB.RecordExists( m_shapeShiftPoofSpellID )
-m_displayInfo
-GetCharacterModel()
-!m_move.GetTransportGUID() || static_cast<CGGameObject_C *>(ClntObjMgrObjectPtr(m_move.GetTransportGUID(),CGGameObject::ImA(),\".\\\\Unit_C.cpp\",2367)) != 0
 Root
 $CCH
 $CHD
@@ -4394,7 +4449,6 @@ duelFlag
 moTransport
 mapobject
 areaDamage
-transport
 goober
 spellFocus
 chair
@@ -4923,7 +4977,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release Assertions Enabled] Build 7948 (Feb 19 2008 12:08:08)
+WoW [Release Assertions Enabled] Build 7958 (Feb 21 2008 09:15:05)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -5079,12 +5133,11 @@ psnames
 truetype
 sfnt
 smooth
-ltuoPmc
+ltuo`
 cinu
 raster5
 raster1
-ltuo`
-ltuo`
+ltuo@*d
 zeta
 zdotaccent
 zacute
@@ -9041,8 +9094,6 @@ removeChatDelay
 autoQuestWatch
 questFadingDisable
 buffDurations
-showHelm
-showCloak
 targetOfTargetMode
 showTargetOfTarget
 autoLootCorpse
@@ -9679,6 +9730,7 @@ ERR_VOICESESSION_FULL
 ERR_LOOT_CANT_LOOT_THAT
 ERR_ARENA_EXPIRED_CAIS
 ERR_GROUP_ACTION_THROTTLED
+ERR_ALREADY_PICKPOCKETED
 Interface\\SpellShadow\\Spell-Shadow-Unacceptable.blp
 Interface\\SpellShadow\\Spell-Shadow-Acceptable.blp
 .\\WorldFrame.cpp
@@ -10599,6 +10651,9 @@ Usage: ConfirmLootRoll(id, rollType)
 %d %s%s
 .\\LootFrame.cpp
 YOU_LOOT_MONEY
+COPPER
+SILVER
+GOLD
 Loot item stats lookup failed for item id %d
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -11565,7 +11620,7 @@ GetLowerEmblemTexture
 GetUpperEmblemTexture
 GetLowerEmblemFileName
 GetUpperEmblemFileName
-GetLowerBackgroundFileName
+owerBackgroundFileName
 GetUpperBackgroundFileName
 CycleVariation
 Save
@@ -12420,18 +12475,6 @@ Deleting unit
 Deleting container
 Deleting item
 Deleting object
-dataOffset < CGObject::GetDataSize()
-dataOffset < CGCorpse::GetDataSize()
-dataOffset < CGDynamicObject::GetDataSize()
-dataOffset < CGGameObject::GetDataSize()
-dataOffset < CGItem::GetDataSize()
-dataOffset < CGContainer::GetDataSize()
-dataOffset < CGUnit::GetDataSize()
-dataOffset < CGPlayer::GetDataSize()
-    Objects waiting to be freed: %u objects
-    Active objects:              %u objects (%u visible)
-Object manager list status:
-ObjUsage
 Forgetting corpse
 Forgetting dynamic object
 Forgetting game object
@@ -12448,6 +12491,18 @@ Remembering unit
 Remembering container
 Remembering item
 Remembering object
+dataOffset < CGObject::GetDataSize()
+dataOffset < CGCorpse::GetDataSize()
+dataOffset < CGDynamicObject::GetDataSize()
+dataOffset < CGGameObject::GetDataSize()
+dataOffset < CGItem::GetDataSize()
+dataOffset < CGContainer::GetDataSize()
+dataOffset < CGUnit::GetDataSize()
+dataOffset < CGPlayer::GetDataSize()
+    Objects waiting to be freed: %u objects
+    Active objects:              %u objects (%u visible)
+Object manager list status:
+ObjUsage
 Illegal client GUID dereference at %s:%d! Provided GUID 0x%016I64X
 mirror->handler
 handlerList
@@ -12458,8 +12513,7 @@ this != s_curMgr
 Updating unit data
 PostInitObject: unknown object type %d
 s_curMgr->m_movement == 0
-btype < NUM_CLIENT_O
-BJECT_TYPES
+btype < NUM_CLIENT_OBJECT_TYPES
 btype
 Failed to update object movement.  Object (0x%016I64X) unknown to client!
 Updating unit movement
@@ -17421,6 +17475,11 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvwxyz
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 `�y�!
+.?AVDNameNode@@
+.?AVcharNode@@
+.?AVpDNameNode@@
+.?AVDNameStatusNode@@
+.?AVpcharNode@@
 z?aUY
 zc%C1
 -64OS
@@ -17873,12 +17932,11 @@ tn.8q=
 .?AVexception@std@@
 .?AVDownloadCallback@URL@Blizzard@@
 .?AVlogic_error@std@@
-.?AVHttpCallback@Transport@File@Blizzard@@
-.?AVHttpCallback@FileManifest@File@Blizzard@@
-.?AVHttpCallback@SourceManifest@File@Blizzard@@
 .?AVlength_error@std@@
 .?AVout_of_range@std@@
 .?AVTransportHttpCallback@Transport@File@Blizzard@@
+.?AVHttpCallback@System_Streaming@@
+.?AUStreamRecord@File@Blizzard@@
 .P6AXXZ
 .?AUCGxMonitorMode@@
 .?AVC2iVector@NTempest@@
@@ -18173,8 +18231,8 @@ GcS68
 .?AUCMirrorHandler@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
-��u>l��
-��u>�ˋ
+��u>l\n�
+��u>�+�
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .PAVWorldStateZoneSoundOverride@@
