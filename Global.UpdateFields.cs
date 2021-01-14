@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 2.4.2
-// Build: 8278
+// Patch: 0.4.3
+// Build: 8600
 
 Public Enum EObjectFields
 {
@@ -111,7 +111,7 @@ Public Enum EUnitFields
     UNIT_FIELD_RESISTANCES = EObjectFields.OBJECT_END + 0xB4,                     // 0x0BA - Size: 7 - Type: INT - Flags: PRIVATE + OWNER_ONLY + UNK3
     UNIT_FIELD_RESISTANCEBUFFMODSPOSITIVE = EObjectFields.OBJECT_END + 0xBB,      // 0x0C1 - Size: 7 - Type: INT - Flags: PRIVATE + OWNER_ONLY
     UNIT_FIELD_RESISTANCEBUFFMODSNEGATIVE = EObjectFields.OBJECT_END + 0xC2,      // 0x0C8 - Size: 7 - Type: INT - Flags: PRIVATE + OWNER_ONLY
-    UNIT_FIELD_BASE_MANA = EObjectFields.OBJECT_END + 0xC9,                       // 0x0CF - Size: 1 - Type: INT - Flags: PRIVATE + OWNER_ONLY
+    UNIT_FIELD_BASE_MANA = EObjectFields.OBJECT_END + 0xC9,                       // 0x0CF - Size: 1 - Type: INT - Flags: PUBLIC
     UNIT_FIELD_BASE_HEALTH = EObjectFields.OBJECT_END + 0xCA,                     // 0x0D0 - Size: 1 - Type: INT - Flags: PRIVATE + OWNER_ONLY
     UNIT_FIELD_BYTES_2 = EObjectFields.OBJECT_END + 0xCB,                         // 0x0D1 - Size: 1 - Type: BYTES - Flags: PUBLIC
     UNIT_FIELD_ATTACK_POWER = EObjectFields.OBJECT_END + 0xCC,                    // 0x0D2 - Size: 1 - Type: INT - Flags: PRIVATE + OWNER_ONLY
@@ -343,36 +343,36 @@ Public Enum EPlayerFields
     PLAYER_OFFHAND_CRIT_PERCENTAGE = EUnitFields.UNIT_END + 0x441,                // 0x525 - Size: 1 - Type: FLOAT - Flags: PRIVATE
     PLAYER_SPELL_CRIT_PERCENTAGE1 = EUnitFields.UNIT_END + 0x442,                 // 0x526 - Size: 7 - Type: FLOAT - Flags: PRIVATE
     PLAYER_SHIELD_BLOCK = EUnitFields.UNIT_END + 0x449,                           // 0x52D - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_EXPLORED_ZONES_1 = EUnitFields.UNIT_END + 0x44A,                       // 0x52E - Size: 64 - Type: BYTES - Flags: PRIVATE
-    PLAYER_REST_STATE_EXPERIENCE = EUnitFields.UNIT_END + 0x48A,                  // 0x56E - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_COINAGE = EUnitFields.UNIT_END + 0x48B,                          // 0x56F - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_DAMAGE_DONE_POS = EUnitFields.UNIT_END + 0x48C,              // 0x570 - Size: 7 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_DAMAGE_DONE_NEG = EUnitFields.UNIT_END + 0x493,              // 0x577 - Size: 7 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_DAMAGE_DONE_PCT = EUnitFields.UNIT_END + 0x49A,              // 0x57E - Size: 7 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_HEALING_DONE_POS = EUnitFields.UNIT_END + 0x4A1,             // 0x585 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_TARGET_RESISTANCE = EUnitFields.UNIT_END + 0x4A2,            // 0x586 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_TARGET_PHYSICAL_RESISTANCE = EUnitFields.UNIT_END + 0x4A3,   // 0x587 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BYTES = EUnitFields.UNIT_END + 0x4A4,                            // 0x588 - Size: 1 - Type: BYTES - Flags: PRIVATE
-    PLAYER_AMMO_ID = EUnitFields.UNIT_END + 0x4A5,                                // 0x589 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_SELF_RES_SPELL = EUnitFields.UNIT_END + 0x4A6,                         // 0x58A - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_PVP_MEDALS = EUnitFields.UNIT_END + 0x4A7,                       // 0x58B - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BUYBACK_PRICE_1 = EUnitFields.UNIT_END + 0x4A8,                  // 0x58C - Size: 12 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BUYBACK_TIMESTAMP_1 = EUnitFields.UNIT_END + 0x4B4,              // 0x598 - Size: 12 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_KILLS = EUnitFields.UNIT_END + 0x4C0,                            // 0x5A4 - Size: 1 - Type: TWO_SHORT - Flags: PRIVATE
-    PLAYER_FIELD_TODAY_CONTRIBUTION = EUnitFields.UNIT_END + 0x4C1,               // 0x5A5 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_YESTERDAY_CONTRIBUTION = EUnitFields.UNIT_END + 0x4C2,           // 0x5A6 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_LIFETIME_HONORBALE_KILLS = EUnitFields.UNIT_END + 0x4C3,         // 0x5A7 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_BYTES2 = EUnitFields.UNIT_END + 0x4C4,                           // 0x5A8 - Size: 1 - Type: BYTES - Flags: PRIVATE
-    PLAYER_FIELD_WATCHED_FACTION_INDEX = EUnitFields.UNIT_END + 0x4C5,            // 0x5A9 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_COMBAT_RATING_1 = EUnitFields.UNIT_END + 0x4C6,                  // 0x5AA - Size: 24 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_ARENA_TEAM_INFO_1_1 = EUnitFields.UNIT_END + 0x4DE,              // 0x5C2 - Size: 18 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_HONOR_CURRENCY = EUnitFields.UNIT_END + 0x4F0,                   // 0x5D4 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_ARENA_CURRENCY = EUnitFields.UNIT_END + 0x4F1,                   // 0x5D5 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_MANA_REGEN = EUnitFields.UNIT_END + 0x4F2,                   // 0x5D6 - Size: 1 - Type: FLOAT - Flags: PRIVATE
-    PLAYER_FIELD_MOD_MANA_REGEN_INTERRUPT = EUnitFields.UNIT_END + 0x4F3,         // 0x5D7 - Size: 1 - Type: FLOAT - Flags: PRIVATE
-    PLAYER_FIELD_MAX_LEVEL = EUnitFields.UNIT_END + 0x4F4,                        // 0x5D8 - Size: 1 - Type: INT - Flags: PRIVATE
-    PLAYER_FIELD_DAILY_QUESTS_1 = EUnitFields.UNIT_END + 0x4F5,                   // 0x5D9 - Size: 25 - Type: INT - Flags: PRIVATE
-    PLAYER_END = EUnitFields.UNIT_END + 0x50E                                     // 0x5F2
+    PLAYER_EXPLORED_ZONES_1 = EUnitFields.UNIT_END + 0x44A,                       // 0x52E - Size: 128 - Type: BYTES - Flags: PRIVATE
+    PLAYER_REST_STATE_EXPERIENCE = EUnitFields.UNIT_END + 0x4CA,                  // 0x5AE - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_COINAGE = EUnitFields.UNIT_END + 0x4CB,                          // 0x5AF - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_DAMAGE_DONE_POS = EUnitFields.UNIT_END + 0x4CC,              // 0x5B0 - Size: 7 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_DAMAGE_DONE_NEG = EUnitFields.UNIT_END + 0x4D3,              // 0x5B7 - Size: 7 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_DAMAGE_DONE_PCT = EUnitFields.UNIT_END + 0x4DA,              // 0x5BE - Size: 7 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_HEALING_DONE_POS = EUnitFields.UNIT_END + 0x4E1,             // 0x5C5 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_TARGET_RESISTANCE = EUnitFields.UNIT_END + 0x4E2,            // 0x5C6 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_TARGET_PHYSICAL_RESISTANCE = EUnitFields.UNIT_END + 0x4E3,   // 0x5C7 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_BYTES = EUnitFields.UNIT_END + 0x4E4,                            // 0x5C8 - Size: 1 - Type: BYTES - Flags: PRIVATE
+    PLAYER_AMMO_ID = EUnitFields.UNIT_END + 0x4E5,                                // 0x5C9 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_SELF_RES_SPELL = EUnitFields.UNIT_END + 0x4E6,                         // 0x5CA - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_PVP_MEDALS = EUnitFields.UNIT_END + 0x4E7,                       // 0x5CB - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_BUYBACK_PRICE_1 = EUnitFields.UNIT_END + 0x4E8,                  // 0x5CC - Size: 12 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_BUYBACK_TIMESTAMP_1 = EUnitFields.UNIT_END + 0x4F4,              // 0x5D8 - Size: 12 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_KILLS = EUnitFields.UNIT_END + 0x500,                            // 0x5E4 - Size: 1 - Type: TWO_SHORT - Flags: PRIVATE
+    PLAYER_FIELD_TODAY_CONTRIBUTION = EUnitFields.UNIT_END + 0x501,               // 0x5E5 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_YESTERDAY_CONTRIBUTION = EUnitFields.UNIT_END + 0x502,           // 0x5E6 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_LIFETIME_HONORBALE_KILLS = EUnitFields.UNIT_END + 0x503,         // 0x5E7 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_BYTES2 = EUnitFields.UNIT_END + 0x504,                           // 0x5E8 - Size: 1 - Type: BYTES - Flags: PRIVATE
+    PLAYER_FIELD_WATCHED_FACTION_INDEX = EUnitFields.UNIT_END + 0x505,            // 0x5E9 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_COMBAT_RATING_1 = EUnitFields.UNIT_END + 0x506,                  // 0x5EA - Size: 24 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_ARENA_TEAM_INFO_1_1 = EUnitFields.UNIT_END + 0x51E,              // 0x602 - Size: 18 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_HONOR_CURRENCY = EUnitFields.UNIT_END + 0x530,                   // 0x614 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_ARENA_CURRENCY = EUnitFields.UNIT_END + 0x531,                   // 0x615 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_MANA_REGEN = EUnitFields.UNIT_END + 0x532,                   // 0x616 - Size: 1 - Type: FLOAT - Flags: PRIVATE
+    PLAYER_FIELD_MOD_MANA_REGEN_INTERRUPT = EUnitFields.UNIT_END + 0x533,         // 0x617 - Size: 1 - Type: FLOAT - Flags: PRIVATE
+    PLAYER_FIELD_MAX_LEVEL = EUnitFields.UNIT_END + 0x534,                        // 0x618 - Size: 1 - Type: INT - Flags: PRIVATE
+    PLAYER_FIELD_DAILY_QUESTS_1 = EUnitFields.UNIT_END + 0x535,                   // 0x619 - Size: 25 - Type: INT - Flags: PRIVATE
+    PLAYER_END = EUnitFields.UNIT_END + 0x54E                                     // 0x632
 }
 Public Enum EGameObjectFields
 {
@@ -410,16 +410,18 @@ Public Enum EDynamicObjectFields
 Public Enum ECorpseFields
 {
     CORPSE_FIELD_OWNER = EObjectFields.OBJECT_END + 0x0,                          // 0x006 - Size: 2 - Type: GUID - Flags: PUBLIC
-    CORPSE_FIELD_FACING = EObjectFields.OBJECT_END + 0x2,                         // 0x008 - Size: 1 - Type: FLOAT - Flags: PUBLIC
-    CORPSE_FIELD_POS_X = EObjectFields.OBJECT_END + 0x3,                          // 0x009 - Size: 1 - Type: FLOAT - Flags: PUBLIC
-    CORPSE_FIELD_POS_Y = EObjectFields.OBJECT_END + 0x4,                          // 0x00A - Size: 1 - Type: FLOAT - Flags: PUBLIC
-    CORPSE_FIELD_POS_Z = EObjectFields.OBJECT_END + 0x5,                          // 0x00B - Size: 1 - Type: FLOAT - Flags: PUBLIC
-    CORPSE_FIELD_DISPLAY_ID = EObjectFields.OBJECT_END + 0x6,                     // 0x00C - Size: 1 - Type: INT - Flags: PUBLIC
-    CORPSE_FIELD_ITEM = EObjectFields.OBJECT_END + 0x7,                           // 0x00D - Size: 19 - Type: INT - Flags: PUBLIC
-    CORPSE_FIELD_BYTES_1 = EObjectFields.OBJECT_END + 0x1A,                       // 0x020 - Size: 1 - Type: BYTES - Flags: PUBLIC
-    CORPSE_FIELD_BYTES_2 = EObjectFields.OBJECT_END + 0x1B,                       // 0x021 - Size: 1 - Type: BYTES - Flags: PUBLIC
-    CORPSE_FIELD_GUILD = EObjectFields.OBJECT_END + 0x1C,                         // 0x022 - Size: 1 - Type: INT - Flags: PUBLIC
-    CORPSE_FIELD_FLAGS = EObjectFields.OBJECT_END + 0x1D,                         // 0x023 - Size: 1 - Type: INT - Flags: PUBLIC
-    CORPSE_FIELD_DYNAMIC_FLAGS = EObjectFields.OBJECT_END + 0x1E,                 // 0x024 - Size: 1 - Type: INT - Flags: DYNAMIC
-    CORPSE_END = EObjectFields.OBJECT_END + 0x1F                                  // 0x025
+    CORPSE_FIELD_PARTY = EObjectFields.OBJECT_END + 0x2,                          // 0x008 - Size: 2 - Type: GUID - Flags: PUBLIC
+    CORPSE_FIELD_FACING = EObjectFields.OBJECT_END + 0x4,                         // 0x00A - Size: 1 - Type: FLOAT - Flags: PUBLIC
+    CORPSE_FIELD_POS_X = EObjectFields.OBJECT_END + 0x5,                          // 0x00B - Size: 1 - Type: FLOAT - Flags: PUBLIC
+    CORPSE_FIELD_POS_Y = EObjectFields.OBJECT_END + 0x6,                          // 0x00C - Size: 1 - Type: FLOAT - Flags: PUBLIC
+    CORPSE_FIELD_POS_Z = EObjectFields.OBJECT_END + 0x7,                          // 0x00D - Size: 1 - Type: FLOAT - Flags: PUBLIC
+    CORPSE_FIELD_DISPLAY_ID = EObjectFields.OBJECT_END + 0x8,                     // 0x00E - Size: 1 - Type: INT - Flags: PUBLIC
+    CORPSE_FIELD_ITEM = EObjectFields.OBJECT_END + 0x9,                           // 0x00F - Size: 19 - Type: INT - Flags: PUBLIC
+    CORPSE_FIELD_BYTES_1 = EObjectFields.OBJECT_END + 0x1C,                       // 0x022 - Size: 1 - Type: BYTES - Flags: PUBLIC
+    CORPSE_FIELD_BYTES_2 = EObjectFields.OBJECT_END + 0x1D,                       // 0x023 - Size: 1 - Type: BYTES - Flags: PUBLIC
+    CORPSE_FIELD_GUILD = EObjectFields.OBJECT_END + 0x1E,                         // 0x024 - Size: 1 - Type: INT - Flags: PUBLIC
+    CORPSE_FIELD_FLAGS = EObjectFields.OBJECT_END + 0x1F,                         // 0x025 - Size: 1 - Type: INT - Flags: PUBLIC
+    CORPSE_FIELD_DYNAMIC_FLAGS = EObjectFields.OBJECT_END + 0x20,                 // 0x026 - Size: 1 - Type: INT - Flags: DYNAMIC
+    CORPSE_FIELD_PAD = EObjectFields.OBJECT_END + 0x21,                           // 0x027 - Size: 1 - Type: INT - Flags: NONE
+    CORPSE_END = EObjectFields.OBJECT_END + 0x22                                  // 0x028
 }
