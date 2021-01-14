@@ -1,3 +1,4 @@
+development.MPQ
 ****\\expansion-speech-****.MPQ
 ****\\expansion-locale-****.MPQ
 ****\\speech-****.MPQ
@@ -107,7 +108,7 @@ Burning Crusade Closed Beta
 InstallPath
 Blizzard Entertainment World of Warcraft
 WoW.stor
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\Object/ObjectClient/Player_C.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\Object/ObjectClient/Player_C.h
 World transfer aborted...
 TRANSFER_ABORT_DIFFICULTY%d
 TRANSFER_ABORT_INSUF_EXPAN_LVL%d
@@ -188,14 +189,14 @@ BENCHMARK_TAXI_AVERAGE_FPS
 BENCHMARK_TAXI_MAX_FPS
 BENCHMARK_TAXI_MIN_FPS
 BENCHMARK_TAXI_RESULTS
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\DB/WowClientDB.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\DB/WowClientDB.h
 %s: Cannot read string table
 %s has wrong row size (found %i, expected %i)
 %s has wrong number of columns (found %i, expected %i)
 Unable to open %s
 %s already loaded! Aborting to prevent memory leak!
 Bad zone ID %i
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\WowServices/PatchFiles.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\WowServices/PatchFiles.h
 patch-%s-2.MPQ
 patch-2.MPQ
 patch-%s-3.MPQ
@@ -213,6 +214,7 @@ Language
 WoW Config
 Region
 Wow.ini
+Missing or corrupted data
 Failed to open archive %s: %s
 enTW
 zhTW
@@ -255,7 +257,7 @@ enUS
 Set the game locale
 Config.wtf
 WoW.mfil
-World of WarCraft (build 7561)
+World of WarCraft (build 7627)
 SendErrorLogs
 player hidden
 player visible
@@ -278,7 +280,6 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<`��
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -491,10 +492,10 @@ MessageBoxW
 RemovePropA
 SetPropA
 SetWindowLongA
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\Storm\\h\\stpl.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\Storm\\h\\stpl.h
 SoundMemoryCache
 sound cache memory size (MB)
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\soundengine\\SoundCache.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\engine\\source\\soundengine\\SoundCache.h
 Blizzard::Mopaq
 .\\SoundCache.cpp
 Unknown error.
@@ -590,9 +591,11 @@ Tried to call lock a second time before unlock was called.
 FMod
 SEDiskSound::SECachingReadCallback: Unable to stream \"%s\" (at %d, requested %d bytes)
 SEDiskSound::SECachingReadCallback: Unable to read \"%s\" (at %d, requested %d bytes)
- - Using [%d] %s for %s
+System Default
+SYSTEM_DEFAULT
 *** SoundEngine_CaptureWork : Lock failed! (%d, %d) %s
 Monitor DSP
+ - Using [%d] %s for %s
 Sound_VirtualPlayWindow
 ##### ERROR IN CompleteNonBlockingLoad()! FAILED TO ABORT SOUND!!! [B]
 ##### ERROR IN CompleteNonBlockingLoad()! FAILED TO ABORT SOUND!!! [A]
@@ -601,30 +604,8 @@ Sound_VirtualPlayWindow
 %-24d%s
 .mp3
 .wav
-=> Voice Chat is ready.
-Voice Chat Input
-Voice Chat Output
- -# 2 PCM24
- -# 3 PCM32
- -# 1 PCMFLOAT
- -# NOTICE:   Using Mix Mode 2.
-Sound_EnableMixMode2
- -#           You will be able to hear others chat, but you will not be able to talk to anyone!
- -# NOTICE:   No input devices detected!
- -#############################################################################################
-EnableMicrophone
- - %d Input drivers detected
- --- [%d] %s
- - %d Output drivers detected
- -######## ERROR! FMOD version mismatch! This program requires version %08x
- - FMOD version %08x detected
-=># Voice Chat Init FAILED.
-=>###########################################################################################
- -######## ERROR INITIALIZING. VOICE CHAT DISABLED.
- -# Voice Chat DISABLED.
- -# ERROR! SSE support is required for voice chat!
- -###########################################################################################
-=> Setting up Voice Chat:
+=> Done Shutting Down Voice Chat
+=> Shutting Down Voice Chat
 => Game Sound is ready.
  - FMOD System Init OK!
 <master>
@@ -637,6 +618,11 @@ EnableMicrophone
  -#           Reverting to STEREO
  -#           Control Panel Speaker Mode %s FAILED to initialize!
  -# NOTICE:   FMOD System Init failed!
+ -# 2 PCM24
+ -# 3 PCM32
+ -# 1 PCMFLOAT
+ -# NOTICE:   Using Mix Mode 2.
+Sound_EnableMixMode2
  - Setting WoW Speaker Mode to %s
  - Detected Control Panel Speaker Mode = %s
  -#            Using default DSPBufferSize
@@ -657,13 +643,12 @@ QUAD
 STEREO
 MONO
  -# NOTICE:   Hardware Channels Not Detected. Reverting to software channels.
-=> Game Sound Init Failed.
  -#           This may lead to poor sound performance.
  -# NOTICE:   You are using a very high number of channels.
  -# NOTICE:   Mode 2 Support Not Detected. Reverting to default Engine Mode.
  - Using %d channels.
  - Too many channels requested. Using max available instead
- - System Reports: %d Channels.
+ - Sound Driver Reports: %d Hardware Channels Available.
  - %d Channels Requested.
  -# NOTICE:   Sound Engine Mode 2 DISABLED because Hardware is enabled.
  -# NOTICE:   Using Sound Engine Mode 2.
@@ -674,18 +659,40 @@ ENABLED
 Sound_EnableHardware
 Sound_EnableMode2
 Game Output
+ --- [%d] %s
+ - %d Output drivers detected
+ -######## ERROR! FMOD version mismatch! This program requires version %08x
+ - FMOD version %08x detected
+=> Game Sound Init Failed.
  -######## ERROR INITIALIZING. ALL GAME SOUND DISABLED.
+ -###########################################################################################
  - FMOD System Create
  - FMOD Memory Init
  - SESound Engine Init
 => Setting up Game Sound:
 => Version %s (%s) %s
-2.3.0
-7561
-Nov  8 2007
+0.3.2
+7627
+Nov 20 2007
 Logs\\Sound.log
 Logs\\SESound.log
 Logs
+=> Done Shutting Down Game Sound
+=> Shutting Down Game Sound
+=> Voice Chat is ready.
+Voice Chat Input
+Voice Chat Output
+ -#           You will be able to hear others chat, but you will not be able to talk to anyone!
+ -# NOTICE:   No input devices detected!
+ -#############################################################################################
+EnableMicrophone
+ - %d Input drivers detected
+=># Voice Chat Init FAILED.
+=>###########################################################################################
+ -######## ERROR INITIALIZING. VOICE CHAT DISABLED.
+ -# Voice Chat DISABLED.
+ -# ERROR! SSE support is required for voice chat!
+=> Setting up Voice Chat:
 [Unknown]
 QueryPerformanceCounter
 GetTickCount
@@ -767,7 +774,7 @@ OsGuiPointer
 .\\W32\\OsIME.cpp
 DBFilesClient\\Startup_Strings.dbc
 Error reading Startup_StringsRec
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\base\\CDataStore.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\engine\\source\\base\\CDataStore.h
 nowarnings
 22050
 fullscreen
@@ -781,7 +788,7 @@ loadfile
 nolagfix
 datadir
 .\\Status.cpp
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\base\\Status.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\engine\\source\\base\\Status.h
 format
 .\\CDataRecycler.cpp
 .\\FileCache.cpp
@@ -1399,6 +1406,9 @@ SCRIPTMUSIC
 .\\SoundInterface2.cpp
 EnableVoiceChat
 Sound_EnableSoundWhenGameIsInBG
+Sound_VoiceChatOutputDriverIndex
+Sound_VoiceChatInputDriverIndex
+Sound_OutputDriverIndex
 <UNKNOWN ERROR>
 XXXX\nXXXX ERROR!! Sound Kit ID %d is a looping sound but there is no user handle! This sound will play forever!! \nXXXX\n
 Sound_EnableAmbience
@@ -1413,12 +1423,9 @@ Data\\Alert.mp3
 Sound_ChaosMode
 Sound_MasterVolume
 Sound_OutputDriverName
-Sound_OutputDriverIndex
 Sound_NumChannels
 Sound_EnableReverb
 .\\SoundInterface2VoiceChat.cpp
-Sound_VoiceChatInputDriverIndex
-Sound_VoiceChatOutputDriverIndex
 OutboundChatVolume
 Sound_VoiceChatInputDriverName
 Sound_VoiceChatOutputDriverName
@@ -1427,10 +1434,10 @@ Sound_ZoneMusicNoDelay
 <SCRIPT MUSIC>
 <SCRIPT SOUND>
 .\\SoundInterface2ZoneSounds.cpp
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\storm\\h\\stpl.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\storm\\h\\stpl.h
 .\\SoundInterface2Internal.cpp
 Sound_ListenerAtCharacter
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/ObjectClient/Player_C.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\WoW\\Source\\Object/ObjectClient/Player_C.h
 (DONOTRENAME)WrappedItemPickup
 (DONOTRENAME)WrappedItemDrop
 *Screech!!*
@@ -1519,7 +1526,7 @@ heapAllocTracking
 Enables/disables allocation tracking & dumping in SMemMalloc
 HeapUsage2
 .\\ObjectAlloc.cpp
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\objectalloc\\IObjectAlloc.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\objectalloc\\IObjectAlloc.h
     \"%24s\" %3u blocks, %5u objs per block (%6u bytes per obj): %6u objs allocated (%2d%%)\n
 CGCorpse_C
 CGDynamicObject_C
@@ -1567,6 +1574,7 @@ Remembering container
 Remembering item
 Remembering object
 Updating unit data
+PostInitObject: unknown object type %d
 Failed to update object movement.  Object (0x%016I64X) unknown to client!
 Updating unit movement
 Failed to update object data.  Object (0x%016I64X) unknown to client!
@@ -1634,7 +1642,7 @@ CHAR_RENAME_IN_PROGRESS
 showGameTips
 gameTip
 CHAR_RENAME_DESCRIPTION
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\glue\\../WowSvcs/WowSvcsClientServices.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\glue\\../WowSvcs/WowSvcsClientServices.h
 GRUNT: state: %s result: %s %s
 Interface\\Cursor\\Point.blp
 Error, cannot create WOWClient log file \"%s\"!
@@ -2302,6 +2310,7 @@ SetChannelWatch
 UnitIsSilenced
 GetMuteStatus
 IsSilenced
+IsVoiceChatAllowedByServer
 IsVoiceChatAllowed
 IsVoiceChatEnabled
 IsDisplayChannelModerator
@@ -2610,7 +2619,7 @@ Usage: DoEmote(\"emote\"[, \"target\"])
 Usage: CanComplainChat(lineID) or CanComplainChat(name) or CanComplainChat(name, text)
 RAID_INSTANCE_INFO_FMT
 BATTLEFIELDS
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\ChatFrame.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\ui\\ChatFrame.h
 Warning: invalid chat spam filter expression: \"%s\" (ID #: %d)\n
 Usage: AddChatWindowChannel(index, \"channel\")
 CHANNEL%d
@@ -2764,6 +2773,7 @@ UpdateAddOnMemoryUsage
 GetAddOnMetadata
 IsItemInRange
 ItemHasRange
+IsDressableItem
 IsEquippedItemType
 IsEquippedItem
 IsEquippableItem
@@ -3021,14 +3031,14 @@ INVTYPE_BODY
 INVTYPE_SHOULDER
 INVTYPE_NECK
 INVTYPE_HEAD
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\WorldFrame.h
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\MinimapFrame.h
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\TaxiRouteFrame.h
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\CharacterModelBase.h
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\DressUpModelFrame.h
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\TabardModelFrame.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\ui\\WorldFrame.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\ui\\MinimapFrame.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\ui\\TaxiRouteFrame.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\ui\\CharacterModelBase.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\ui\\DressUpModelFrame.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\ui\\TabardModelFrame.h
 item:
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\UIUtil/Tooltip.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\WoW\\Source\\UIUtil/Tooltip.h
 EQUALS
 DECIMAL
 DIVIDE
@@ -3056,6 +3066,7 @@ Usage: SetGamma(value)
 baseMip
 Usage: SetBaseMip(value)
 Usage: SetCursor(\"cursor\" or nil)
+QUEST_TURN_IN_ERROR_CURSOR
 REPAIRNPC_ERROR_CURSOR
 QUEST_ERROR_CURSOR
 INNKEEPER_ERROR_CURSOR
@@ -3079,6 +3090,7 @@ ATTACK_ERROR_CURSOR
 BUY_ERROR_CURSOR
 CAST_ERROR_CURSOR
 POINT_ERROR_CURSOR
+QUEST_TURN_IN_CURSOR
 REPAIRNPC_CURSOR
 QUEST_CURSOR
 INNKEEPER_CURSOR
@@ -3136,7 +3148,7 @@ AUTOLOOTTOGGLE
 EXHAUSTION
 BREATH
 FEIGNDEATH
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\Cooldown.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\ui\\Cooldown.h
 merchant
 guildbankmoney
 money
@@ -3792,6 +3804,7 @@ ERR_MAIL_REACHED_CAP
 ERR_INVALID_RAID_TARGET
 ERR_RAID_LEADER_READY_CHECK_START_S
 ERR_READY_CHECK_IN_PROGRESS
+ERR_READY_CHECK_THROTTLED
 ERR_DUNGEON_DIFFICULTY_FAILED
 ERR_DUNGEON_DIFFICULTY_CHANGED_S
 ERR_TRADE_WRONG_REALM
@@ -4090,6 +4103,7 @@ Usage: GetPartyMember(1-4)
 MAINASSIST
 MAINTANK
 .\\PartyFrame.cpp
+READY_CHECK_START
 ERROR!
 needbeforegreed
 group
@@ -4098,7 +4112,7 @@ roundrobin
 freeforall
 GetPartyAssignment(): Invalid party assignment
 Usage: GetPartyAssignment(\"assignment\" [,\"raidmember\"] [,exactMatch])
-READY_CHECK_START
+READY_CHECK_FINISHED
 READY_CHECK_ALL_READY
 RAID_MEMBERS_AFK
 Invalid loot method
@@ -4108,6 +4122,8 @@ Usage: SetLooThreshold(threshold)
 Invalid Party assignment
 Usage: %s(\"assignment\" [,\"raidmember\"] [,exactMatch])
 RAID_MEMBER_NOT_READY
+GetReadyCheckStatus
+GetReadyCheckTimeLeft
 CheckReadyCheckTime
 ConfirmReadyCheck
 DoReadyCheck
@@ -4132,6 +4148,9 @@ Usage: SetRaidRosterSelection(index)
 .\\RaidInfo.cpp
 PLAYER_OFFLINE
 Usage: GetRaidRosterInfo(index)
+notready
+ready
+waiting
 Usage: SetRaidSubgroup(index, subgroup)
 Usage: SwapRaidSubgroup(index1, index2)
 Usage: PromoteToLeader(name)
@@ -4171,7 +4190,6 @@ GetBankSlotCost
 GetNumBankSlots
 BankButtonIDToInvSlotID
 Usage: BankButtonIDToInvSlotID(buttonID)
-ClickSpellByName
 CastSpellByName
 GetShapeshiftFormCooldown
 CastShapeshiftForm
@@ -4215,7 +4233,6 @@ Usage: GetShapeshiftFormCooldown(index)
 Usage: GetShapeshiftFormInfo(index)
 Usage: CastShapeshiftForm(index)
 Usage: CastSpellByName(name [, target])
-Usage: ClickSpellByName(name [, target])
 %s(): Invalid spell slot
 %s (%s)
 GetTrackingTexture
@@ -4374,9 +4391,6 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
-COPPER
-SILVER
-GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -4425,7 +4439,7 @@ BUTTON4
 BUTTON3
 BUTTON2
 BUTTON1
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\UIBindings.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\ui\\UIBindings.h
 Usage: GetBinding(index)
 Usage: GetBindingKey(\"COMMAND\")
 Usage: GetModifiedClickAction(index)
@@ -4669,7 +4683,7 @@ Usage: GetTrainerServiceStepIncrease(index)
 Usage: BuyTrainerService(index)
 Missing on/off parameter in SetTrainerServiceTypeFilter
 Bad service type in SetTrainerServiceTypeFilter
-Usage: SetTrainerServiceTypeFilter(\"type\" [, on/off, exclusive])
+Usage: SetTrainerServiceTypeFilter(\"type\", on/off [, exclusive])
 Missing on//off parameter in SetTrainerSkillLineFilter
 Bad skill line in SetTrainerSkillLineFilter
 Usage: SetTrainerSkillLineFilter(index [, on\\off, exclusive])
@@ -4796,7 +4810,7 @@ Usage: SecureCmdOptionParse(\"options\")
 Usage: GetMacroIconInfo(index)
 Usage: GetMacroItemIconInfo(index)
 .\\UIMacros.cpp
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\ui\\UIMacros.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\ui\\UIMacros.h
 INV_
 Spell_
 Ability_
@@ -5291,6 +5305,7 @@ GuildControlGetNumRanks
 GetGuildRosterShowOffline
 SetGuildRosterShowOffline
 SortGuildRoster
+CanRepairOnly
 CanEditGuildInfo
 CanViewOfficerNote
 CanEditOfficerNote
@@ -5901,7 +5916,7 @@ DescendStop
 AscendStop
 JumpOrAscendStart
 .\\InputControl.cpp
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\uiutil\\InputControl.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\uiutil\\InputControl.h
 Joystick
 enable joystick control
 Usage: SetMouselookOverrideBinding(\"key\", \"binding\" or nil)
@@ -6172,6 +6187,7 @@ ConsoleExec
 GetGameTime
 GetTime
 Usage: ConsoleExec(\"console_command\")
+SOUND_DEVICE_UPDATE
 GUILDTABARD_UPDATE
 GUILD_EVENT_LOG_UPDATE
 ARENA_SEASON_WORLD_STATE
@@ -6253,6 +6269,7 @@ SOCKET_INFO_UPDATE
 UPDATE_INSTANCE_INFO
 GMSURVEY_DISPLAY
 RAID_TARGET_UPDATE
+READY_CHECK_CONFIRM
 READY_CHECK
 MINIGAME_UPDATE
 START_MINIGAME
@@ -7054,6 +7071,7 @@ Usage: %s:SetSocketGem(index, [toDestroy])
 Invalid tab or slot in SetGuildBankItem
 Usage: %s:SetAction(slot)
 ATTACK
+UnableQuestTurnIn
 UnableRepairNPC
 UnableQuest
 UnableInnkeeper
@@ -7077,6 +7095,7 @@ UnableAttack
 UnableBuy
 UnableCast
 UnablePoint
+QuestTurnIn
 RepairNPC
 Quest
 SkinAlliance
@@ -7114,7 +7133,7 @@ Client net stats: %Lu bytes sent, %Lu bytes received, %Lu msec elapsed
 Expected (m_netState == NS_INITIALIZED), got %d
 Received pong with old sequence
 NetClient::HandleDisconnect()
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\net\\NetInternal.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\net\\NetInternal.h
 ..\\NetInternal.cpp
 .\\DBClient.cpp
 Error, no physical damage class found in DamageClass table!
@@ -7142,14 +7161,14 @@ esES
 deDE
 frFR
 koKR
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\DB/WowClientDB.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\WoW\\Source\\DB/WowClientDB.h
 Blizzard::Using::GlobalUse
 Cache/%s/%s
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/CreatureStats.h
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/GameObjectStats.h
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/ItemName.h
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/ItemStats.h
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\Object/NPCText.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\WoW\\Source\\Object/CreatureStats.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\WoW\\Source\\Object/GameObjectStats.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\WoW\\Source\\Object/ItemName.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\WoW\\Source\\Object/ItemStats.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\WoW\\Source\\Object/NPCText.h
 OsCreateFile failed for cache file: %s\n
 %s/%s
 DBCache::CancelCallback ignored for id %016I64X.
@@ -7447,7 +7466,6 @@ CGxDeviceD3d::ILoadD3dLib(): unable to GetProcAddress()
 Direct3DCreate9
 CGxDeviceD3d::ILoadD3dLib(): unable to LoadLibrary()
 d3d9.dll
-Driver internal error on resource lock.  Check AGP aperture.
 CGxDeviceD3d::DeviceSetFormat(): unable to set format!
 CGxDeviceD3d::DeviceSetFormat():
 CGxDeviceD3d::DeviceCreate(): WindowClassCreate() failed: %s
@@ -7690,7 +7708,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7561 (Nov  8 2007 05:06:56)
+WoW [Release] Build 7627 (Nov 20 2007 15:39:55)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7699,7 +7717,7 @@ Processors:\t%u\n
 Computer:\t%s\n
 Username:\t%s\n
 intel
-c:\\BuildServer\\bs1\\work\\WoW-code\\branches\\wow-patch-2_3_0-branch\\WoW\\Source\\WowSvcs/WowSvcsClientServices.h
+d:\\BuildServer\\bs2\\work\\WoW-code\\branches\\wow-patch-2_3_2-branch\\WoW\\Source\\WowSvcs/WowSvcsClientServices.h
 SortWho
 SetWhoToUI
 GetWhoInfo
@@ -7729,7 +7747,7 @@ GetSelectedFriend
 SetSelectedFriend
 GetFriendInfo
 GetNumFriends
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\wowsvcs\\wowsvcsclient\\FriendList.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\wowsvcs\\wowsvcsclient\\FriendList.h
   %s\n
 Account: %s\n
 Not found\n
@@ -7874,7 +7892,7 @@ LOOT_MONEY_SPLIT
 , %d %s
 [%02d]: %s
 REPORT_PVP_AFK_SENT
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\wow\\source\\object\\objectclient\\Player_C.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\wow\\source\\object\\objectclient\\Player_C.h
 Unkown questID (%d) in QuestUpdate
 Not enough skill points for trainer service %d
 Not enough money for trainer service %d
@@ -7893,6 +7911,9 @@ Error, unknown displayInfo %d specified for player race %d sex %d!
 CHAT_FLAG_GM
 UnwrapGift
 COMBATLOG_HONORAWARD
+COPPER
+SILVER
+GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -8757,7 +8778,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7561 (Nov  8 2007)
+WoW [Release] Build 7627 (Nov 20 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -9060,13 +9081,13 @@ GenuineIntelAuthenticAMDCyrixInsteadCentaurHalls
 GlobalMemoryStatusEx
 allocation failed
 free failed
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\memory\\StackedAllocator.cpp
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\memory\\StackedAllocator.cpp
 get size failed
 SMemAlloc cannot allocate a block this big
 realloc cannot allocate a block this big
 MemFill currently cannot handle a block this big
 Blizzard Web Client
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Filestack_Win32.cpp
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Filestack_Win32.cpp
 %s.%d
 %s.%s
 %s%s/
@@ -9081,7 +9102,7 @@ failed to open %s\n
 %s\\*
 Blizzard::ThreadLocalStorage
 Blizzard::File
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Filestack_Streaming.cpp
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\engine\\source\\blizzardcore\\blizzardcore\\source\\system\\file\\Filestack_Streaming.cpp
 FileManifest::ReadDirectFile - ReadDirectFileFromBuffer failed
 FileManifest::ReadDirectFile - LoadFile failed
 invalid map/set<T> iterator
@@ -9434,7 +9455,7 @@ VoiceSelectCaptureDevice
 VoiceSelectOutputDevice
 VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
-WOWCOMSATCLIENT7561
+WOWCOMSATCLIENT7627
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -9554,6 +9575,8 @@ SpellTargetItem
 SpellCanTargetItem
 SpellIsTargeting
 SPELL_FAILED_UNKNOWN
+SPELL_FAILED_NO_PLAYTIME
+SPELL_FAILED_PARTIAL_PLAYTIME
 SPELL_FAILED_NOT_INACTIVE
 SPELL_FAILED_NOT_IDLE
 SPELL_FAILED_ARTISAN_RIDING_REQUIREMENT
@@ -9920,7 +9943,6 @@ CM2Shared_vtx
 .\\M2Shared.cpp
 Failed to initialize model: %s
 Corrupt model data: %s
-.\\M2.cpp
 match failed
 bad argument
 bad back reference
@@ -10776,6 +10798,7 @@ HTTP/1.0
 BCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ..\\..\\src\\fmod_output_software.cpp
 FMOD Software Output
+..\\..\\src\\fmod_dsp_resampler.cpp
 ..\\..\\src\\fmod_metadata.cpp
 ..\\..\\src\\fmod_codec.cpp
 ..\\..\\src\\fmod_file_net.cpp
@@ -10837,6 +10860,7 @@ StreamUrl='
 StreamTitle='
 ..\\src\\fmod_file_cdda.cpp
 CDTOC
+..\\..\\src\\fmod_DSPNet.cpp
 ..\\..\\src\\fmod_async.cpp
 FMOD thread for FMOD_NONBLOCKING
 ..\\..\\src\\fmod_output_emulated.cpp
@@ -10847,7 +10871,6 @@ FMOD mixer thread
 FMOD DSP Codec
 ..\\..\\lib\\sfx\\foreverb\\aSfxDsp.cpp
 >333?
-..\\..\\src\\fmod_dsp_resampler.cpp
 ..\\..\\src\\fmod_dsp_soundcard.cpp
 ..\\src\\fmod_output_openal.cpp
 EAX2.0
@@ -12270,7 +12293,7 @@ NormalTexture
 DisabledCheckedTexture
 CheckedTexture
 checked
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\frame\\CSimpleEditBox.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\engine\\source\\frame\\CSimpleEditBox.h
 OnCharComposition
 OnEditFocusLost
 OnEditFocusGained
@@ -12303,7 +12326,7 @@ autoFocus
 blinkSpeed
 letters
 %s %s: Couldn't find font object named %s
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\frame\\CSimpleMessageFrame.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\engine\\source\\frame\\CSimpleMessageFrame.h
 .\\CSimpleMessageFrame.cpp
 insertMode
 fadeDuration
@@ -12317,7 +12340,7 @@ OnHorizontalScroll
 Frame %s: Scroll frame created without scroll child
 ScrollChild
 OnMessageScrollChanged
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\frame\\CSimpleMessageScrollFrame.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\engine\\source\\frame\\CSimpleMessageScrollFrame.h
 .\\CSimpleMessageScrollFrame.cpp
 valueStep
 ThumbTexture
@@ -12574,7 +12597,7 @@ OnHyperlinkEnter
 .\\CSimpleHyperlinkedFrame.cpp
 .\\GfxSingletonManager.cpp
 CParticleEmitter2_idx
-c:\\buildserver\\bs1\\work\\wow-code\\branches\\wow-patch-2_3_0-branch\\engine\\source\\services\\ParticleSystem2.h
+d:\\buildserver\\bs2\\work\\wow-code\\branches\\wow-patch-2_3_2-branch\\engine\\source\\services\\ParticleSystem2.h
 .\\cmemblock.cpp
 VoiceChat_ActivatePrimaryCaptureCallback
 VoiceChat_GetCurrentMicrophoneSignalLevel
@@ -12675,9 +12698,11 @@ psnames
 truetype
 sfnt
 smooth
+ltuop:
 cinu
 raster5
 raster1
+ltuoP
 zeta
 zdotaccent
 zacute
@@ -13885,16 +13910,13 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>줆
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
-��u>줆
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u>줆
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13951,7 +13973,6 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>줆
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13961,7 +13982,6 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
-��u>줆
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13991,7 +14011,6 @@ GcS68
 .?AUAuctionItemInfo@@
 .PAUOutbidItemInfo@@
 .?AUGuildBankItem@@
-��u>줆
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
