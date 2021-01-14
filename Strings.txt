@@ -224,7 +224,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7091)
+World of WarCraft (build 7125)
 SendErrorLogs
 player hidden
 player visible
@@ -246,7 +246,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<|M�
+���<�]�
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1486,8 +1486,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Aug  8 2007
-7091
+Aug 15 2007
+7125
 0.2.0
 RELEASE_BUILD
 BETA_BUILD
@@ -2288,10 +2288,6 @@ Usage: %s(\"channel\")
 Usage: %s(\"displayIndex\")
 Usage: SetChannelPassword(\"name\", \"password\")
 Usage: GetChannelName([channelIndex] or [channelName])
-SetActiveVoiceChannel(%d) .. unable to find associated voice session (%d, %s)
-SetActiveVoiceChannel(%d) .. no voice session for that channel (%s)
-SetActiveVoiceChannel(displayIndex) .. invalid displayIndex
-Usage: SetActiveVoiceChannel(displayIndex)
 Usage(ChangeChatColor(chatType, r, g, b)
 %s%f%f%f
 Usage: GetChatTypeIndex(type)
@@ -2303,12 +2299,16 @@ CHAT_MSG_RAID
 CHAT_MSG_PARTY
 Usage: GetChannelDisplayInfo(index)
 Usage: IsSilenced (token)
+SCRIPT_CHANNEL_ROSTER_UPDATE - %d %d
 SendAddonMessage(): Whisper message missing target player!
 Unknown addon chat type
 %s\t%s
 Usage: SendAddonMessage(\"prefix\", \"message\" [,\"type\"] [,\"target\"])
 Usage: GetLanguageByIndex(index)
 Usage: DoEmote(\"emote\"[, \"target\"])
+SetActiveVoiceChannel(%d) .. no voice session for that channel (%s)
+SetActiveVoiceChannel(displayIndex) .. invalid displayIndex
+Usage: SetActiveVoiceChannel(displayIndex)
 Usage: CanComplainChat(lineID) or CanComplainChat(name) or CanComplainChat(name, text)
 RAID_INSTANCE_INFO_FMT
 e:\\build\\buildwow\\wow\\source\\ui\\ChatFrame.h
@@ -3667,6 +3667,7 @@ KBSetup_GetLanguageCount
 KBSetup_IsLoaded
 KBSetup_BeginLoading
 .\\KnowledgeBase.cpp
+Knowledge Base Error: Parent tag = %s
 &pageNumber=
 &numArticles=
 ?languageId=
@@ -5312,7 +5313,6 @@ Usage: IsAutorepeatAction(slot)
 Usage: IsConsumableAction(slot)
 Usage: IsCurrentAction(slot)
 Usage: PlaceAction(slot)
-GAMESPELLACTIVATE
 Usage: UseAction(slot, [, target] [, button])
 Usage: PickupAction(slot)
 SetReverse
@@ -5691,6 +5691,7 @@ GetTime
 Usage: ConsoleExec(\"console_command\")
 VOICE_SESSIONS_UPDATE
 VOICE_CHAT_ENABLED_UPDATE
+CHANNEL_INVITE_REQUEST
 CHANNEL_VOICE_UPDATE
 CHANNEL_ROSTER_UPDATE
 CHANNEL_COUNT_UPDATE
@@ -5699,6 +5700,7 @@ VOICE_PUSH_TO_TALK_STOP
 VOICE_PUSH_TO_TALK_START
 COMMENTATOR_PLAYER_UPDATE
 COMMENTATOR_MAP_UPDATE
+MOVIE_UNCOMPRESSED_MOVIE
 MOVIE_COMPRESSING_PROGRESS
 MOVIE_RECORDING_PROGRESS
 RAID_INSTANCE_WELCOME
@@ -7160,7 +7162,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7091 (Aug  8 2007 09:29:08)
+WoW [Release] Build 7125 (Aug 15 2007 14:38:56)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -8180,7 +8182,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7091 (Aug  8 2007)
+WoW [Release] Build 7125 (Aug 15 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8795,7 +8797,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token)
-WOWCOMSATCLIENT7091
+WOWCOMSATCLIENT7125
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -9086,6 +9088,7 @@ Active player not found
 Casting item not found in container
 Casting item's container not found
 Casting item not found
+GAMESPELLACTIVATE
 Usage: SpellTargetUnit(\"unit\")
 SPELLVISUALID_NOT_FOUND|%d
 secureAbilityToggle
@@ -11431,12 +11434,12 @@ StopMusic
 PlaySoundFile
 PlayMusic
 PlaySound
-Usage: PlaySound(\"sound\")
 Usage: PlayMusic(\"musicfile\")
 Usage: PlaySoundFile(\"soundfile\")
 Usage: Sound_GetInputDriverNameByIndex( int nInputDriverIndex )
 Usage: Sound_GetOutputDriverNameByIndex( int nOutputDriverIndex )
 Usage: VoiceChat_RecordLoopbackSound( float fMaxRecordTimeInSeconds )
+Usage: PlaySound(\"sound\")
 .\\CreatureStats.cpp
 .\\GameObjectStats.cpp
 .\\ItemName.cpp
@@ -11511,14 +11514,9 @@ psnames
 truetype
 sfnt
 smooth
-ltuo@
-ltuo@
 cinu
 raster5
 raster1
-ltuo Yx
-ltuoP[x
-ltuoP[x
 zeta
 zdotaccent
 zacute
@@ -13360,7 +13358,7 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>�8�
+��u>�H�
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
