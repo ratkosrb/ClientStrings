@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6337)
+World of WarCraft (build 6373)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -637,8 +637,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jan 18 2007
-12:47:03
+Feb  6 2007
+14:48:51
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1150,8 +1150,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6337
-2.0.6
+6373
+0.0.7
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -1264,6 +1264,8 @@ SCANDLL_MESSAGE_ERROR
 SCANDLL_MESSAGE_SCANNING
 ScanThread
 %s%s%d
+HACKNOCONTINUE
+HACK
 Cache\\Survey.mpq
 E:\\build\\buildWoW\\WoW\\Source\\Glue\\SurveyDownloadGlue.cpp
 Cache
@@ -2160,6 +2162,7 @@ ERR_CANT_BE_DISENCHANTED
 ERR_USE_CANT_IMMUNE
 ERR_NOT_HAPPY_ENOUGH
 ERR_MAIL_SENT
+ERR_MAIL_WRAPPED_COD
 ERR_MAIL_DATABASE_ERROR
 ERR_MAIL_TARGET_NOT_FOUND
 ERR_MAIL_TO_SELF
@@ -5829,13 +5832,18 @@ ITEM_CREATED_BY
 ITEM_WRITTEN_BY
 \"%s\"
 ITEM_COOLDOWN_TIME
+\t\t<setspelldesc_%d></setspelldesc_%d>\n
+</setspelldesc_%d>\n
 ITEM_SET_BONUS_GRAY
 ITEM_SET_BONUS
+\t\t<setspelldesc_%d>
   %s
 ITEM_SET_NAME
 %s (%d)
 ITEM_SPELL_TRIGGER_ONUSE
 ITEM_SPELL_TRIGGER_ONPROC
+</spelldesc_%d>\n
+\t\t<spelldesc_%d>
 ITEM_SPELL_TRIGGER_ONEQUIP
 ITEM_MOD_HASTE_RATING
 ITEM_MOD_RESILIENCE_RATING
@@ -5989,6 +5997,20 @@ Usage: %s:SetLootRollItem(id)
 Usage: %s:SetSocketGem(index)
 Usage: %s:SetSocketGem(index, [toDestroy])
 Usage: %s:IsUnit(\"unit\")
+</itemtooltipdump>\n
+\t</item>\n
+\t\t<resist_%d>%d</resist_%d>\n
+</dps>\n
+\t\t<dps>
+\t\t<mindamage_%d>%d</mindamage_%d>\n\t\t<maxdamage_%d>%d</maxdamage_%d>\n\t\t<damagetype_%d>%d</damagetype_%d>\n
+</speed>\n
+</shieldblock>\n\t\t<speed>
+\t\t<shieldblock>
+\t\t<itemid>%d</itemid>\n
+\t<item>\n
+<itemtooltipdump>\n
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n
+TooltipDump_%s.xml
 E:\\build\\buildWoW\\WoW\\Source\\Net\\NetClient\\NetClient.cpp
 Client net stats: %Lu bytes sent, %Lu bytes received, %Lu msec elapsed
 Expected (m_netState == NS_INITIALIZED), got %d
@@ -6817,7 +6839,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6337 (Jan 18 2007 12:50:07)
+WoW [Release] Build 6373 (Feb  6 2007 14:54:55)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -7016,7 +7038,6 @@ fmod.dll
 DivxDecoder.dll
 %hu.%hu.%hu.%hu
 TROJAN
-HACK
 E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\CheckExecutableSignature.cpp
 LOGIN_STATE_CONNECTED
 REALM_LIST_CANTCONNECT
@@ -8094,7 +8115,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6337 (Jan 18 2007)
+WoW [Release] Build 6373 (Feb  6 2007)
  ,;\t\"\r\n
 No help yet
 help
@@ -10857,11 +10878,13 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo
+ltuo�փ
+ltuo`
 smooth
 cinu
-ltuo@
-ltuo@
+ltuo`
+ltuo 5
+ltuo 5
 raster5
 raster1
    !
