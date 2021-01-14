@@ -91,6 +91,8 @@ windowed
 hwdetect
 console
 gxoverride
+Realm: ???
+Realm:
 %s %s
 WowError.exe
 World of Warcraft
@@ -229,7 +231,7 @@ coresDetected
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7344)
+World of WarCraft (build 7359)
 SendErrorLogs
 player hidden
 player visible
@@ -252,7 +254,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<�^�
+���<�N�
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1201,6 +1203,7 @@ e:\\build\\buildWoW\\WoW\\Source\\Object/ObjectClient/Player_C.h
 0: Off
 Modes:
 CHAOS!!
+Sound_EnableMixMode2
 Sound_EnableMode2
 test
 Sound_DSPBufferSize
@@ -1514,8 +1517,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Oct  3 2007
-7344
+Oct  4 2007
+7359
 0.2.3
 RELEASE_BUILD
 BETA_BUILD
@@ -4020,6 +4023,9 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
+COPPER
+SILVER
+GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -4813,21 +4819,6 @@ Usage: GetNewSocketLink(index)
 Usage: ClickSocketButton(index)
 Usage: GetExistingSocketInfo(index)
 Usage: GetExistingSocketLink(index)
-GetPastDrawResult
-GetNumPastDrawResults
-GetNextDrawTime
-GetMoneyPrizes
-GetJackpotAmount
-GetLotteryPrizeInfo
-GetNumLotteryPrizes
-BuyRandomPicks
-IsVendorActive
-SubmitNumbers
-GetLastLotteryNumbers
-CloseLottery
-Invalid index in GetPastDrawResults(\"type\", index)
-Invalid number of randompicks
-Invalid prize item in GetPrizeItemInfo(\"type\", index)
 GetMinigameState
 MakeMinigameMove
 GetMinigameType
@@ -7202,7 +7193,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7344 (Oct  3 2007 05:05:28)
+WoW [Release] Build 7359 (Oct  4 2007 22:09:10)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7403,9 +7394,6 @@ Error, unknown model record %d specified for player race %d sex %d!
 Error, unknown displayInfo %d specified for player race %d sex %d!
 CHAT_FLAG_GM
 UnwrapGift
-COPPER
-SILVER
-GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -8231,7 +8219,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7344 (Oct  3 2007)
+WoW [Release] Build 7359 (Oct  4 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8849,9 +8837,7 @@ VoiceSelectCaptureDevice
 VoiceSelectOutputDevice
 VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
-GetVoiceStatus: Invalid token %s
-Usage: GetVoiceStatus (token, [channel])
-WOWCOMSATCLIENT7344
+WOWCOMSATCLIENT7359
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -8865,7 +8851,6 @@ COMSAT_STOP: NotifyTalkerStop from RosterUpdate\r\n
 COMSAT_START: NotifyLocalTalkerStart from RosterUpdate\r\n
 COMSAT_STOP: NotifyTalkerStop from ComSatClient_OnSessionLeave()\r\n
 COMSAT_STOP: NotifyTalkerStop from ComSatClient_LeaveAllSessions()\r\n
-Usage: IsPlayerTalking (token)
 COMSAT_STOP: NotifyTalkerStop from ComSatClient_SetCurrentSessionI(-1)\r\n
 PushToTalkButton
 String representation of the Push-To-Talk button.
@@ -10042,13 +10027,11 @@ FMod
  - Using [%d] %s for %s
 *** SoundEngine_CaptureWork : Lock failed! (%d, %d) %s
 Monitor DSP
-######## FMOD ERROR! (err %d) %s\n
 ##### ERROR IN CompleteNonBlockingLoad()! FAILED TO ABORT SOUND!!! [B]
 ##### ERROR IN CompleteNonBlockingLoad()! FAILED TO ABORT SOUND!!! [A]
 ##### ERROR IN CompleteNonBlockingLoad()! Aborting this sound! %s
 ##### ERROR! INVALID m_pFMODSound
 %-24d%s
- ######## FMOD ERROR! (err %d) %s\n
 .mp3
 .wav
 => Voice Chat is ready.
@@ -10076,6 +10059,7 @@ ENABLED
  -#           Reverting to STEREO
  -#           Control Panel Speaker Mode %s is NOT supported by your sound driver!
  -# NOTICE:   FMOD System Init failed!
+ -# NOTICE:   Using Mix Mode 2.
  - Setting WoW Speaker Mode to %s
  - Detected Control Panel Speaker Mode = %s
  -#            Using default DSPBufferSize 4
@@ -11571,8 +11555,6 @@ smooth
 cinu
 raster5
 raster1
-ltuo
-ltuo
 zeta
 zdotaccent
 zacute
@@ -13351,6 +13333,7 @@ AR&HW
 l`'\b
 +kEs\n
 fyLJ\b
+n~W4Q
 .?AVCECC_LDPC@@
 .?AVCECC_Base@@
 GxTex_Unknown
@@ -13381,13 +13364,16 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
+��u>4Q�
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
+��u>4Q�
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
+��u>4Q�
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13438,6 +13424,7 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
+��u>4Q�
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13447,6 +13434,7 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
+��u>4Q�
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13474,6 +13462,7 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
+��u>4Q�
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
