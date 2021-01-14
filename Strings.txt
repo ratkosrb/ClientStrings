@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6144)
+World of WarCraft (build 6178)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -630,8 +630,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Nov 14 2006
-21:26:24
+Nov 27 2006
+16:55:19
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -762,6 +762,8 @@ character
 .blp
 .tga
 E:\\build\\buildWoW\\ENGINE\\Source\\Services\\Texture.cpp
+Texture %s not loaded.\n
+CTextureAtlas::Reload(): %s\n
 Texture %s not loaded -- replaced with default.\n
 UpdateBlpTextureAsync(): GxTex_Lock loading: %s\n
 Error loading texure file \"%s\": unsupported image format\n
@@ -1143,7 +1145,7 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6144
+6178
 2.0.2
 RELEASE_BUILD
 BETA_BUILD
@@ -1755,6 +1757,7 @@ GetGMTicketCategories
 SetPortraitToTexture
 ConfirmBindOnUse
 GetPVPTimer
+GetPVPDesired
 SetPVP
 TogglePVP
 GetZonePVPInfo
@@ -1856,6 +1859,7 @@ GetRealZoneText
 GetZoneText
 ToggleSheath
 AutoEquipCursorItem
+ClearFocus
 ClearTarget
 FollowUnit
 FocusUnit
@@ -1926,6 +1930,7 @@ RegisterForSavePerCharacter
 RegisterForSave
 ReloadUI
 FrameXML_Debug
+arena
 raid
 party
 none
@@ -2156,15 +2161,15 @@ ERR_OBJECT_IS_BUSY
 ERR_TICKET_NO_TEXT
 ERR_TICKET_DB_ERROR
 ERR_TICKET_UPDATE_ERROR
+ERR_TICKET_CREATE_ERROR
 ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
-ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
 ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
-ERR_TICKET_CREATE_ERROR
 ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
+ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_ROOTED
 ERR_SPELL_UNLEARNED_S
 ERR_PETITION_FULL
@@ -2178,9 +2183,9 @@ ERR_PETITION_SIGNED_S
 ERR_PETITION_SIGNED
 ERR_PETITION_OFFERED_S
 ERR_SPELL_FAILED_NOTUNSHEATHED
-igPlayerInviteAccept
 ERR_FISH_ESCAPED
 ERR_FISH_NOT_HOOKED
+igPlayerInviteAccept
 ERR_IGNORING_YOU_S
 ERR_INVALID_ITEM_TARGET
 ERR_ZONE_EXPLORED_XP
@@ -2222,6 +2227,7 @@ ERR_WRONG_BAG_TYPE_SUBCLASS
 ERR_SPELL_FAILED_EQUIPPED_SPECIFIC_ITEM
 ERR_ONLY_ONE_AMMO
 ERR_ONLY_ONE_BOLT
+ERR_IGNORE_DELETED
 ERR_IGNORE_AMBIGUOUS
 ERR_IGNORE_REMOVED_S
 ERR_IGNORE_ADDED_S
@@ -2229,6 +2235,7 @@ ERR_IGNORE_ALREADY_S
 ERR_IGNORE_NOT_FOUND
 ERR_IGNORE_SELF
 ERR_IGNORE_FULL
+ERR_FRIEND_DELETED
 ERR_FRIEND_SELF
 ERR_FRIEND_ALREADY_S
 ERR_FRIEND_ERROR
@@ -2602,7 +2609,6 @@ Usage: GetCoinIcon(amount)
 contested
 hostile
 friendly
-arena
 sanctuary
 SetPortraitToTexture(): Wrong object type, expected texture
 SetPortraitToTexture(): Couldn't find 'this' in texture object
@@ -2709,7 +2715,9 @@ TabardModel
 DressUpModel
 PlayerModel
 Minimap
+Cooldown
 WorldFrame
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\Cooldown.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\WorldFrame.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\MinimapFrame.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\TaxiRouteFrame.h
@@ -2749,7 +2757,7 @@ SKILL
 LOOT
 COMBAT_MISC_INFO
 MONSTER_WHISPER
-SSCOMBAT_SELF_HITS
+COMBAT_SELF_HITS
 COMBAT_SELF_MISSES
 COMBAT_PET_HITS
 COMBAT_PET_MISSES
@@ -3032,6 +3040,7 @@ INSTANCE_RESET_FAILED
 INSTANCE_RESET_FAILED_OFFLINE
 INSTANCE_RESET_FAILED_ZONING
 Warning: invalid chat spam filter expression: \"%s\" (ID #: %d)\n
+RESET_FAILED_NOTIFY
 SET_VOICE
 UNSET_VOICE
 SET_MODERATOR
@@ -3236,6 +3245,7 @@ AccountMsg_GetBody() failed because the body was not loaded
 Usage: AccountMsg_SetMsgRead(number) falied becuse the number is out of range
 Usage: AccountMsg_SetMsgRead(number)
 AccountMsg_SetMsgRead() failed because the headers are not loaded
+SortBattlefieldScoreData
 GetBattlefieldArenaFaction
 GetBattlefieldTeamInfo
 GetBattlefieldMapIconScale
@@ -3294,6 +3304,13 @@ Usage: GetBattlefieldStatData(playerIndex, statIndex)
 Usage: GetBattlefieldPosition(index)
 Usage: GetBattlefieldFlagPosition(index)
 Usage: GetBattlefieldTeamInfo(index)
+stat
+rank
+healing
+damage
+deaths
+kills
+Usgae: SortBattlefieldScoreData(\"type\")
 HasNewMail
 InboxItemCanDelete
 DeleteInboxItem
@@ -3491,6 +3508,49 @@ Usage: GetBindingAction(\"KEY\"[, checkOverride])
 Usage: RunBinding(\"COMMAND\")
 Usage: LoadBindings(0||1||2)
 Usage: SaveBindings(1||2)
+GetRunningMacroButton
+GetRunningMacro
+GetMacroIndexByName
+PickupMacro
+GetMacroIconInfo
+GetNumMacroIcons
+SetMacroSpell
+SetMacroItem
+EditMacro
+DeleteMacro
+GetMacroInfo
+GetNumMacros
+CreateMacro
+StopMacro
+RunMacroText
+RunMacro
+Interface\\Icons\\
+reset=
+SHOW
+SLASH_EQUIP_TO_SLOT%d
+SLASH_EQUIP%d
+SLASH_USERANDOM%d
+SLASH_USE%d
+SLASH_CASTSEQUENCE%d
+SLASH_CASTRANDOM%d
+SLASH_CAST%d
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIMacros.cpp
+INV_Misc_QuestionMark
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIMacros.h
+Spell_
+Ability_
+ \"\r\n
+MACRO
+END\r\n
+MACRO %d \"%s\" %s\r\n
+Usage: RunMacroText(\"text\" [, \"button\"])
+Usage: CreateMacro(name, iconIndex, body, local, perCharacter)
+CreateMacro() failed, no name specified
+CreateMacro() failed, already have %d macros
+Usage: SetMacroItem(macro, item)
+Usage: SetMacroSpell(macro, item)
+Usage: GetMacroIconInfo(index)
+Usage: GetMacroIndexByName(name)
 GetPartyAssignment
 SetPartyAssignment
 SetLootThreshold
@@ -3649,7 +3709,6 @@ E:\\build\\buildWoW\\WoW\\Source\\Ui\\LootFrame.cpp
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
-INV_Misc_QuestionMark
 %d %s%s
 Wrong object type for member function
 Attempt to find 'this' in non-framescript object
@@ -3938,7 +3997,6 @@ Usage: GuildRosterSetOfficerNote(index, note)
 Usage: SetGuildRosterSelection(index)
 note
 online
-rank
 Usgae: SortGuildRoster(\"type\")
 Usage: GuildControlGetRankName(index)
 Usage: GuildControlSetRank(rank)
@@ -4096,6 +4154,7 @@ Usage: TaxiNodeCost(slot)
 Usage: TakeTaxiNode(slot)
 Usage: TaxiNodeGetType(slot)
 Usage: TaxiNodeSetCurrent(slot)
+GetQuestLogGroupNum
 GetQuestIndexForWatch
 RemoveQuestWatch
 AddQuestWatch
@@ -4220,6 +4279,7 @@ GetBonusBarOffset
 IsActionInRange
 ActionHasRange
 IsEquippedAction
+IsStackableAction
 IsConsumableAction
 IsUsableAction
 IsAutoRepeatAction
@@ -4246,7 +4306,7 @@ Usage: GetActionCooldown(slot)
 Usage: GetActionAutocast(slot)
 Usage: GetActionText(slot)
 Usage: HasAction(slot)
-Usage: UseAction(slot, [, checkCursor] [, target])
+Usage: UseAction(slot, [, target] [, button])
 Usage: PickupAction(slot)
 Usage: PlaceAction(slot)
 Usage: IsAttackAction(slot)
@@ -4254,6 +4314,7 @@ Usage: IsCurrentAction(slot)
 Usage: IsAutorepeatAction(slot)
 Usage: IsUsableAction(slot)
 Usage: IsConsumableAction(slot)
+Usage: IsStackableAction(slot)
 Usage: IsEquippedAction(slot)
 ChangeActionBarPage() needs a page in the range 1 to %d
 SetActionSelfCastKey(): key must be either CTRL or ALT
@@ -4291,48 +4352,6 @@ Usage: %s:SetArrowModel(\"file\")
 %s:SetPlayerModel(): Couldn't load the file %s
 Usage: %s:SetPlayerModel(\"file\")
 Usage: SetZoom(level)
-GetRunningMacroButton
-GetRunningMacro
-GetMacroIndexByName
-PickupMacro
-GetMacroIconInfo
-GetNumMacroIcons
-SetMacroSpell
-SetMacroItem
-EditMacro
-DeleteMacro
-GetMacroInfo
-GetNumMacros
-CreateMacro
-StopMacro
-RunMacroText
-RunMacro
-Interface\\Icons\\
-reset=
-SHOW
-SLASH_EQUIP_TO_SLOT%d
-SLASH_EQUIP%d
-SLASH_USERANDOM%d
-SLASH_USE%d
-SLASH_CASTSEQUENCE%d
-SLASH_CASTRANDOM%d
-SLASH_CAST%d
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIMacros.cpp
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIMacros.h
-Spell_
-Ability_
- \"\r\n
-MACRO
-END\r\n
-MACRO %d \"%s\" %s\r\n
-Usage: RunMacroText(\"text\" [, \"button\"])
-Usage: CreateMacro(name, iconIndex, body, local, perCharacter)
-CreateMacro() failed, no name specified
-CreateMacro() failed, already have %d macros
-Usage: SetMacroItem(macro, item)
-Usage: SetMacroSpell(macro, item)
-Usage: GetMacroIconInfo(index)
-Usage: GetMacroIndexByName(name)
 HasFilledPetition
 TurnInArenaPetition
 TurnInPetition
@@ -4617,6 +4636,7 @@ Usage: CollapseTradeSkillSubClass(index)
 Bad skill line in ExpandTradeSkillSubClass
 Usage: ExpandTradeSkillSubClass(index)
 Usage: DoTradeSkill(index [, repeat])
+GetSuggestedGroupNum
 GetQuestBackgroundMaterial
 ConfirmAcceptQuest
 QuestChooseRewardError
@@ -4690,6 +4710,8 @@ Duplicated model: %s\n
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\CharacterModelBase.cpp
 Usage: SetUnit(\"unit\")
 Usage: SetRotation(rotation (in radians))
+SetCooldown
+Usage: %s:SetCooldown(start, duration)
 ()[]^*/%+-#,
 clamp
 cond
@@ -4835,6 +4857,7 @@ Camera view %s
 IsMouselooking
 MouselookStop
 MouselookStart
+SetMouselookOverrideBinding
 MoveAndSteerStop
 MoveAndSteerStart
 CameraOrSelectOrMoveStop
@@ -4862,6 +4885,7 @@ ToggleRun
 AscendStop
 JumpOrAscendStart
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.cpp
+Usage: SetMouselookOverrideBinding(\"key\", \"binding\" or nil)
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.h
 Joystick
 enable joystick control
@@ -5773,6 +5797,7 @@ ITEM_SPELL_KNOWN
 ITEM_PROSPECTABLE
 ITEM_DURATION
 DURABILITY_TEMPLATE
+ITEM_RANDOM_ENCHANT
 ITEM_SOCKET_BONUS
 ITEM_ENCHANT_DISCLAIMER
 ITEM_PROPOSED_ENCHANT
@@ -5933,6 +5958,7 @@ E:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
 ..\\..\\Object/ItemName.h
 ..\\..\\Object/ItemStats.h
 ..\\..\\Object/NPCText.h
+Burning Crusade
 Warlock summoned item destroys upon arena end
 Arena Team Created
 Socketed into item
@@ -5998,6 +6024,9 @@ OnLeaveCombat
 OnEnterCombat
 OnReaction
 -NONE-
+Unit(s) send an event to self (outside of combat)
+Unit(s) say something random to the zone
+Unit(s) say something to the zone
 Trigger actions on nearest unit
 Trigger actions on units
 Reset vendor lists for unit(s) in the group
@@ -6007,8 +6036,8 @@ Reset \"No Reputation\" flag for unit(s) in the group
 Set \"No Reputation\" flag for unit(s) in the group
 Unit(s) cast a spell and report failure to owner
 Trigger actions on nearest unit in combat
-Unit(s) perform a boss emote to the zone
-Unit(s) perform a boss emote
+Unit(s) boss emote something to the zone
+Unit(s) boss emote something
 Finish the current actions if expression is true
 Loop the current actions if expression is true
 Perform a random set of actions
@@ -6016,14 +6045,14 @@ Reset \"Ignore combat\" flag for unit(s)
 Set \"Ignore combat\" flag for unit(s)
 Object(s) play a sound to the zone
 Object(s) play music to the zone
-Object(s) emote something random to the zone
-Object(s) emote something to the zone
+Object(s) chat emote something random to the zone
+Object(s) chat emote something to the zone
 Unit(s) play a sound to the zone
 Unit(s) play music to the zone
 Unit(s) yell something random to the zone
 Unit(s) yell something to the zone
-Unit(s) emote something random to the zone
-Unit(s) emote something to the zone
+Unit(s) chat emote something random to the zone
+Unit(s) chat emote something to the zone
 Unit(s) unsheathe their range weapons
 Spawn (forced)
 Object(s) play a sound
@@ -6714,7 +6743,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6144 (Nov 14 2006 21:29:30)
+WoW [Release] Build 6178 (Nov 27 2006 16:58:31)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -6740,6 +6769,7 @@ CHAR_NAME_INVALID_CHARACTER
 CHAR_NAME_TOO_LONG
 CHAR_NAME_TOO_SHORT
 CHAR_NAME_NO_NAME
+CHAR_LOGIN_BY_BILLING
 CHAR_LOGIN_LOCKED_FOR_TRANSFER
 CHAR_LOGIN_NO_CHARACTER
 CHAR_LOGIN_DISABLED
@@ -7161,8 +7191,6 @@ UNHANDLEDANIMEVENT|%.4s
 INVALIDDISPLAYMODELRECORD|%d|%d
 NOCREATUREDISPLAYIDFOUND|%d
 Spells\\ErrorCube.mdx
-NamePlateDistance
-Toggle between varius distances to view name plates
 CombatLogPeriodicSpells
 AutoInteract
 Toggles auto-move to interact target
@@ -7263,7 +7291,6 @@ LOOT_ROLL_GREED
 LOOT_ROLL_NEED_SELF
 LOOT_ROLL_PASSED_SELF
 LOOT_ROLL_GREED_SELF
-local math = math\nabs = math.abs\nacos = function (x) return math.deg(math.acos(x)) end\nasin = function (x) return math.deg(math.asin(x)) end\natan = function (x) return math.deg(math.atan(x)) end\natan2 = function (x,y) return math.deg(math.atan2(x,y)) end\nceil = math.ceil\ncos = function (x) return math.cos(math.rad(x)) end\ndeg = math.deg\nexp = math.exp\nfloor = math.floor\nfrexp = math.frexp\nldexp = math.ldexp\nlog = math.log\nlog10 = math.log10\nmax = math.max\nmin = math.min\nmod = math.fmod\nPI = math.pi\nrad = math.rad\nrandom = math.random\nrandomseed = math.randomseed\nsin = function (x) return math.sin(math.rad(x)) end\nsqrt = math.sqrt\ntan = function (x) return math.tan(math.rad(x)) end\n
 scale
 speedOffset
 speedScalar
@@ -7288,8 +7315,6 @@ missileCount
 missileIndex
 time
 progress
-MissileMathAliases
-math
 CMissile
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Missile_C.cpp
 HARDCODED Resist Spell
@@ -7360,6 +7385,8 @@ questgiver
 button
 door
 false
+closeTextID
+openTextID
 difficulty
 mapID
 conditionID2
@@ -7453,6 +7480,16 @@ E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombat_C.cpp
 COMBATLOG_HONORAWARD
 COMBATLOG_HONORGAIN
+local math = math\nabs = math.abs\nacos = function (x) return math.deg(math.acos(x)) end\nasin = function (x) return math.deg(math.asin(x)) end\natan = function (x) return math.deg(math.atan(x)) end\natan2 = function (x,y) return math.deg(math.atan2(x,y)) end\nceil = math.ceil\ncos = function (x) return math.cos(math.rad(x)) end\ndeg = math.deg\nexp = math.exp\nfloor = math.floor\nfrexp = math.frexp\nldexp = math.ldexp\nlog = math.log\nlog10 = math.log10\nmax = math.max\nmin = math.min\nmod = math.fmod\nPI = math.pi\nrad = math.rad\nrandom = math.random\nrandomseed = math.randomseed\nsin = function (x) return math.sin(math.rad(x)) end\nsqrt = math.sqrt\ntan = function (x) return math.tan(math.rad(x)) end\n
+E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\SimpleScript.cpp
+MathAliases
+math
+\nend\n
+\nreturn
+ = \"\"\n
+ = 0.0\n
+local
+return function(
 FIRE
 SLIME
 LAVA
@@ -7824,13 +7861,6 @@ SPELLDISMISSPETSELF
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\PlayerSound_C.cpp
 SPELLVISUALIDNOTFOUND|%d
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Movement_C.cpp
-E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\SimpleScript.cpp
-\nend\n
-\nreturn
- = \"\"\n
- = 0.0\n
-local
-return function(
 COMBATLOG_XPGAIN_EXHAUSTION5
 COMBATLOG_XPGAIN_EXHAUSTION4
 NULL
@@ -7965,7 +7995,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6144 (Nov 14 2006)
+WoW [Release] Build 6178 (Nov 27 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -8107,6 +8137,17 @@ RwN8\b
 E+{ez
 BLIZZARDKEY
 E:\\build\\buildWoW\\Storm\\Source\\SFile.cpp
+ached Read =
+Unknown error
+Decompression failed
+Unrecognized compression scheme
+Uninteresting case failure
+Second ReadFileChecked() Failed
+ReadFileUnbuffered() Failed
+Disk Buffer Alloc Failed
+First ReadFileChecked() Failed
+Read not sector aligned
+No Error
 #256
 Blizzard_Storm
 Microsoft Base Cryptographic Provider v1.0
@@ -9201,10 +9242,13 @@ Model2: File not found: %s\n
 .mdx
 .mdl
 E:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Scene.cpp
+CM2Scene::Animate: m_viewInv
 Model2: Model destroyed before loading completed: %s\n
 E:\\build\\buildWoW\\Engine\\Source\\Model2\\M2Model.cpp
 Model2: CM2Model::%s stalled: %s\n
 CM2Model_idx
+CM2Model::Animate: matrix
+CM2Model::Animate: position
 CM2Model::AnimateST: m_currentEmissive
 CM2Model::AnimateST: m_currentDiffuse
 CM2Model::AnimateST: m_scene->m_view
@@ -9675,7 +9719,6 @@ No such device
 Improper link
 File exists
 Resource device
-Unknown error
 Bad address
 Permission denied
 Not enough space
@@ -9879,7 +9922,7 @@ D\bGa%\b
 SP\vPZ
 %s%*d.%0*d
 -inf
-E:\\build\\buildWoW\\ENGINE\\source\\Base\\DynamicString.cpp
+E:\\build\\buildWoW\\engine\\Source\\Base\\DynamicString.cpp
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleTop.cpp
 Offset
 Frame anchored to itself: %s
@@ -9965,6 +10008,7 @@ Texture %s: Unable to load texture file %s
 Gradient
 Color
 TexCoords
+interface\\icon
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleRender.cpp
 Shadow
 justifyH
@@ -10372,7 +10416,6 @@ SetMaxLetters
 GetMaxBytes
 SetMaxBytes
 HasFocus
-ClearFocus
 SetFocus
 GetTextInsets
 SetTextInsets
@@ -10629,6 +10672,8 @@ SetPos: m_currDir
 SetPos: m_currPos
 SetPos: pos
 SetPos: m_cameraPos
+SetPos: localOrient 3
+SetPos: frameOfReference
 SetPos: localOrient 2
 SetPos: localOrient 1
 E:\\build\\buildWoW\\ENGINE\\Source\\Services\\ParticleSystem2.h
@@ -10707,8 +10752,11 @@ set_mm_design
 get_mm
 truetype
 sfnt
+ltuo0_�
 smooth
 cinu
+ltuop
+ltuop
 raster5
 raster1
    !
@@ -12027,6 +12075,8 @@ GcS68
 .?AV?$TSExplicitList@UKEYBINDING@@$0?CCCCCCCD@@@
 .?AUOVERRIDEKEYBINDING@@
 .?AV?$TSExplicitList@UOVERRIDEKEYBINDING@@$0?CCCCCCCD@@@
+.?AV?$TSExplicitList@UMACRONODE@@$0?CCCCCCCD@@@
+.?AUMACRONODE@@
 .?AVPetAction@@
 .?AUPetitionSignerInfo@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
@@ -12050,8 +12100,6 @@ GcS68
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
-.?AV?$TSExplicitList@UMACRONODE@@$0?CCCCCCCD@@@
-.?AUMACRONODE@@
 .PAUTalentTabInfo@@
 .PAUCraftInfo@@
 .PAUCraftSkillLineInfo@@
@@ -12062,6 +12110,8 @@ GcS68
 .?AUBFSNODE@@
 .?AUCameraShake@@
 .?AUCFacet@NTempest@@
+.?AUMOUSELOOKBINDING@@
+.?AV?$TSExplicitList@UMOUSELOOKBINDING@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UUIADDON@@$0?CCCCCCCD@@@
 .?AUADDONSTATELIST@@
 .?AUADDONSTATE@@
@@ -12176,8 +12226,8 @@ GcS68
 .?AUCPlayerMoveEvent@@
 .?AUPendingLootRoll@@
 .?AUDEATTHUDSOUNDINFO@@
-.?AUGENERICITEMCACHEDESC@@
 .?AUSimpleScriptFunction@@
+.?AUGENERICITEMCACHEDESC@@
 .?AUCONSOLELINE@@
 .?AV?$TSExplicitList@UCVar@@$0?CCCCCCCD@@@
 .?AUCVar@@
@@ -12445,7 +12495,7 @@ tanh
 .?AUSIMPLEFRAMENODE@@
 .?AUFRAMEATTR@@
 .?AV?$TSExplicitList@UFRAMEATTR@@$0?CCCCCCCD@@@
-.?AUCSimpleBatchedTexture@@
+.?AUCSimpleBatchedMesh@@
 .?AURENDERCALLBACKNODE@@
 .?AV?$TSExplicitList@USIMPLEFONT@@$0?CCCCCCCD@@@
 .?AUSIMPLEFONT@@
