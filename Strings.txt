@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6383)
+World of WarCraft (build 6403)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -637,8 +637,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Feb  8 2007
-00:11:43
+Feb 14 2007
+13:55:41
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1150,8 +1150,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6383
-2.0.7
+6403
+2.0.8
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -5832,18 +5832,18 @@ ITEM_CREATED_BY
 ITEM_WRITTEN_BY
 \"%s\"
 ITEM_COOLDOWN_TIME
-\t\t<setspelldesc_%d></setspelldesc_%d>\n
+\t\t\t<setspelldesc_%d></setspelldesc_%d>\n
 </setspelldesc_%d>\n
 ITEM_SET_BONUS_GRAY
 ITEM_SET_BONUS
-\t\t<setspelldesc_%d>
+\t\t\t<setspelldesc_%d>
   %s
 ITEM_SET_NAME
 %s (%d)
 ITEM_SPELL_TRIGGER_ONUSE
 ITEM_SPELL_TRIGGER_ONPROC
 </spelldesc_%d>\n
-\t\t<spelldesc_%d>
+\t\t\t<spelldesc_%d>
 ITEM_SPELL_TRIGGER_ONEQUIP
 ITEM_MOD_HASTE_RATING
 ITEM_MOD_RESILIENCE_RATING
@@ -5997,18 +5997,26 @@ Usage: %s:SetLootRollItem(id)
 Usage: %s:SetSocketGem(index)
 Usage: %s:SetSocketGem(index, [toDestroy])
 Usage: %s:IsUnit(\"unit\")
-</itemtooltipdump>\n
-\t</item>\n
-\t\t<resist_%d>%d</resist_%d>\n
+</tooltipdump>\n
+\t</spellbuffdump>\n
+</spelldesc>\n\t\t</spell>\n
+</spellbuff>\n\t\t\t<spelldesc>
+\t\t\t<spellbuff>
+\t\t\t<id>%d</id>\n
+\t\t<spell>\n
+\t</itemtooltipdump>\n\t<spellbuffdump>\n
+\t\t</item>\n
+\t\t\t<resist_%d>%d</resist_%d>\n
 </dps>\n
-\t\t<dps>
-\t\t<mindamage_%d>%d</mindamage_%d>\n\t\t<maxdamage_%d>%d</maxdamage_%d>\n\t\t<damagetype_%d>%d</damagetype_%d>\n
+\t\t\t<dps>
+\t\t\t<mindamage_%d>%d</mindamage_%d>\n\t\t\t<maxdamage_%d>%d</maxdamage_%d>\n\t\t\t<damagetype_%d>%d</damagetype_%d>\n
 </speed>\n
-</shieldblock>\n\t\t<speed>
-\t\t<shieldblock>
-\t\t<itemid>%d</itemid>\n
-\t<item>\n
-<itemtooltipdump>\n
+</shieldblock>\n\t\t\t<speed>
+\t\t\t<shieldblock>
+\t\t\t<itemid>%d</itemid>\n
+\t\t<item>\n
+\t<itemtooltipdump>\n
+<tooltipdump>\n
 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n
 TooltipDump_%s.xml
 E:\\build\\buildWoW\\WoW\\Source\\Net\\NetClient\\NetClient.cpp
@@ -6839,7 +6847,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6383 (Feb  8 2007 00:14:54)
+WoW [Release] Build 6403 (Feb 14 2007 13:58:44)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -8115,7 +8123,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6383 (Feb  8 2007)
+WoW [Release] Build 6403 (Feb 14 2007)
  ,;\t\"\r\n
 No help yet
 help
@@ -10878,13 +10886,9 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo�փ
-ltuo`
+ltuo`ك
 smooth
 cinu
-ltuo`
-ltuo 5
-ltuo 5
 raster5
 raster1
    !
