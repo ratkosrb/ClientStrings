@@ -229,7 +229,7 @@ coresDetected
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7304)
+World of WarCraft (build 7318)
 SendErrorLogs
 player hidden
 player visible
@@ -1510,8 +1510,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Sep 24 2007
-7304
+Sep 26 2007
+7318
 0.2.2
 RELEASE_BUILD
 BETA_BUILD
@@ -4016,9 +4016,6 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
-COPPER
-SILVER
-GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -7202,7 +7199,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7304 (Sep 24 2007 14:59:33)
+WoW [Release] Build 7318 (Sep 26 2007 15:17:59)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7405,6 +7402,9 @@ Error, unknown model record %d specified for player race %d sex %d!
 Error, unknown displayInfo %d specified for player race %d sex %d!
 CHAT_FLAG_GM
 UnwrapGift
+COPPER
+SILVER
+GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -8111,7 +8111,9 @@ Failed to dereference transport! Provided GUID 0x%016I64X
 CClippedTriangle index violation: (0x%08x >= 0x%08x)
 CClippedTriangle::Add overflow: already has 0x%08x verts (limit is 0x%08x)
 CClippedTriangle() overflow: 0x%08x verts is too many (limit is 0x%08x)
-ClipPolygonToPlane: value error, dist=  (0x%08x -> %f)
+ClipPolygonToPlane: value error, dist=  (0x%08x -> %f) (%f,%f,%f,%f) (%f,%f,%f)
+ExtrudeTriangle: value error, mag=  (0x%08x -> %f) (%f,%f,%f)
+ExtrudeQuad: value error, mag=  (0x%08x -> %f) (%f,%f,%f)
 .\\Collide.cpp
 .\\PlayerSound_C.cpp
 SPELLVISUALIDNOTFOUND|%d
@@ -8228,7 +8230,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7304 (Sep 24 2007)
+WoW [Release] Build 7318 (Sep 26 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8848,7 +8850,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token, [channel])
-WOWCOMSATCLIENT7304
+WOWCOMSATCLIENT7318
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -11533,8 +11535,7 @@ psnames
 truetype
 sfnt
 smooth
-ltuop
-ltuo
+ltuo0
 cinu
 raster5
 raster1
