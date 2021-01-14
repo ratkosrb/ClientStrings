@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 2.0.5
-// Build: 6320
+// Patch: 2.0.6
+// Build: 6337
 
 Public Enum EObjectFields
 {

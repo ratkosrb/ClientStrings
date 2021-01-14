@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6320)
+World of WarCraft (build 6337)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -637,8 +637,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Jan 12 2007
-16:43:59
+Jan 18 2007
+12:47:03
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1150,8 +1150,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6320
-2.0.5
+6337
+2.0.6
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -3043,6 +3043,7 @@ LAUGH_WORD%d
 BATTLEGROUND
 RAID
 %s%s%s%s%s%s%d%d%s%d
+NOT_IN_AREA
 PLAYER_INVITE_BANNED
 PLAYER_INVITED
 NOT_MODERATED
@@ -6031,6 +6032,7 @@ E:\\build\\buildWoW\\WoW\\Source\\DB\\DBClient\\DBCache.cpp
 ..\\..\\Object/ItemStats.h
 ..\\..\\Object/NPCText.h
 Burning Crusade
+Script DestroyItem()
 Warlock summoned item destroys upon arena end
 Arena Team Created
 Socketed into item
@@ -6815,7 +6817,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6320 (Jan 12 2007 16:46:57)
+WoW [Release] Build 6337 (Jan 18 2007 12:50:07)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -7085,6 +7087,7 @@ Proving session for %s from %s [lock: %d]
 Unlocking session for account id [%d:%d]
 Cancel request %08x
 Grunt: Banning account %d, expiration=%d, reason=%d
+Unable to get the realmStateFlag
 Unknown grunt result %d @ %d
 Unable to permit incoming connection attempts on socket
 Unable to establish a connection to socket
@@ -8091,7 +8094,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6320 (Jan 12 2007)
+WoW [Release] Build 6337 (Jan 18 2007)
  ,;\t\"\r\n
 No help yet
 help
@@ -10854,9 +10857,11 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo�
+ltuo
 smooth
 cinu
+ltuo@
+ltuo@
 raster5
 raster1
    !
