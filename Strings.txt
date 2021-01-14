@@ -225,7 +225,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7153)
+World of WarCraft (build 7175)
 SendErrorLogs
 player hidden
 player visible
@@ -247,7 +247,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<�m�
+���<�̓
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1162,7 +1162,7 @@ Sound_MasterVolume
 Sound_OutputDriverName
 Sound_OutputDriverIndex
 Sound_NumChannels
-Sound_UseHardware
+Sound_EnableReverb
 .\\SoundInterface2VoiceChat.cpp
 Sound_VoiceChatInputDriverIndex
 Sound_VoiceChatOutputDriverIndex
@@ -1185,9 +1185,21 @@ e:\\build\\buildWoW\\WoW\\Source\\Object/ObjectClient/Player_C.h
 *No Periodic Fidget Specified*
 (DONOTRENAME)Combat Miss 2H
 (DONOTRENAME)Combat Miss 1H
+9: Restart sound engine (including input capture) every 5 seconds (breaks voice chat)
+7: Play the same random looping sound x20 (in 3d) every second
+6: Play the same random sound x20 (in 3d) every second
+5: Play the same random sound x20 (in 2d) every second
+4: Start and stop 2 2d and 2 3d sounds every frame
+3: Start and stop 1 2d and 1 3d sound every frame
+2: Generate 2 random 3d sounds per frame
+1: Generate 1 random 3d sound per frame
+0: Off
+Modes:
+CHAOS!!
 Primary Sound Driver
 Primary Sound Capture Driver
 number of sound channels
+Testing to break sound engine
 Enable Sound When Game Is In Background
 Sound_EnableEmoteSounds
 lock listener at character
@@ -1493,8 +1505,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Aug 23 2007
-7153
+Aug 28 2007
+7175
 0.2.0
 RELEASE_BUILD
 BETA_BUILD
@@ -1763,8 +1775,7 @@ PLAYER_CHOSEN_TITLE
 PLAYER_VISIBLE_ITEM_19_PAD
 PLAYER_VISIBLE_ITEM_19_PROPERTIES
 PLAYER_VISIBLE_ITEM_19_0
-PLAYER_
-VISIBLE_ITEM_19_CREATOR
+PLAYER_VISIBLE_ITEM_19_CREATOR
 PLAYER_VISIBLE_ITEM_18_PAD
 PLAYER_VISIBLE_ITEM_18_PROPERTIES
 PLAYER_VISIBLE_ITEM_18_0
@@ -2074,6 +2085,8 @@ GetChannelList
 ListChannels
 ListChannelByName
 LeaveChannelByName
+JoinPermanentChannel
+JoinTemporaryChannel
 JoinChannelByName
 LoggingCombat
 LoggingChat
@@ -2306,7 +2319,6 @@ CHAT_MSG_BATTLEGROUND
 CHAT_MSG_RAID
 CHAT_MSG_PARTY
 Usage: GetChannelDisplayInfo(index)
-SCRIPT_CHANNEL_ROSTER_UPDATE - %d %d
 SendAddonMessage(): Whisper message missing target player!
 Unknown addon chat type
 %s\t%s
@@ -2348,9 +2360,9 @@ ADDEDVERSION
 VERSION
 @#$%^&*
 AddChatNameToGUID:  %s = %I64d\n
-Usage: JoinChannelByName(\"name\")
-Usage: JoinChannelByName(\"name\", \"password\"), password cannot be more than %d characters
-Usage: JoinChannelByName(\"name\"), name cannot be more than %d characters
+Usage: %s (\"name\")
+Usage: %s(\"name\", \"password\"), password cannot be more than %d characters
+Usage: %s(\"name\"), name cannot be more than %d characters
 CHAT_%s_GET
 [%s]
 CHAT_%s_NOTICE
@@ -3554,12 +3566,15 @@ ERR_VOICE_IGNORE_REMOVED_S
 ERR_VOICE_IGNORE_AMBIGUOUS
 ERR_VOICE_IGNORE_DELETED
 ERR_UNKNOWN_MACRO_OPTION_S
+ERR_NOT_DURING_ARENA_MATCH
 ERR_PLAYER_SILENCED
 ERR_PLAYER_UNSILENCED
 ERR_COMSAT_DISCONNECT
 ERR_COMSAT_RECONNECT_ATTEMPT
 ERR_COMSAT_CONNECT_FAIL
 ERR_PROFANE_CHAT_NAME
+ERR_PLAYER_SILENCED_ECHO
+ERR_PLAYER_UNSILENCED_ECHO
 Interface\\SpellShadow\\Spell-Shadow-Unacceptable.blp
 Interface\\SpellShadow\\Spell-Shadow-Acceptable.blp
 .\\WorldFrame.cpp
@@ -5709,6 +5724,7 @@ GetTime
 Usage: ConsoleExec(\"console_command\")
 VOICE_SESSIONS_UPDATE
 VOICE_CHAT_ENABLED_UPDATE
+CHANNEL_FLAGS_UPDATED
 CHANNEL_PASSWORD_REQUEST
 CHANNEL_INVITE_REQUEST
 CHANNEL_VOICE_UPDATE
@@ -5725,10 +5741,10 @@ MOVIE_RECORDING_PROGRESS
 RAID_INSTANCE_WELCOME
 UPDATE_FLOATING_CHAT_WINDOWS
 CHAT_MSG_RESTRICTED
-COMSAT_VOICE_STATUS_UPDATE
+VOICE_STATUS_UPDATE
 CHAT_MSG_MONSTER_PARTY
-COMSAT_STOP
-COMSAT_START
+VOICE_STOP
+VOICE_START
 VOICE_TALKER_STOP_RAID
 VOICE_TALKER_START_RAID
 VOICE_TALKER_STOP_PARTY
@@ -7183,7 +7199,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7153 (Aug 23 2007 11:04:36)
+WoW [Release] Build 7175 (Aug 28 2007 11:42:33)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -8209,7 +8225,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7153 (Aug 23 2007)
+WoW [Release] Build 7175 (Aug 28 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8825,7 +8841,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token)
-WOWCOMSATCLIENT7153
+WOWCOMSATCLIENT7175
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -9973,7 +9989,7 @@ Specified Instance in FMOD_REVERB_PROPERTIES couldn't be set. Most likely becaus
 An error occured trying to initialize the recording device.
 A resource that the plugin requires cannot be found. (ie the DLS file for MIDI playback)
 A requested output, dsp unit type or codec was not available.
-The number of allowed instances of a plugin has been exceeded
+The number of allowed instances of a plugin has been exceeded.
 An unspecified error has been returned from a 3rd party plugin.
 Panning only works with mono or stereo sound sources.
 Attempted to create a software sound but no software channels were specified in System::init.
@@ -11549,8 +11565,6 @@ smooth
 cinu
 raster5
 raster1
-ltuo
-ltuo
 zeta
 zdotaccent
 zacute
@@ -13069,12 +13083,12 @@ EAX5.0
 Generic Software
 EAXSet
 EAXGet
-AL_FORMAT_MONO16
-AL_FORMAT_STEREO16
-AL_FORMAT_QUAD16
-AL_FORMAT_51CHN16
-AL_FORMAT_61CHN16
 AL_FORMAT_71CHN16
+AL_FORMAT_61CHN16
+AL_FORMAT_51CHN16
+AL_FORMAT_QUAD16
+AL_FORMAT_STEREO16
+AL_FORMAT_MONO16
 FMOD OpenAL Output
 Xing
 smpl
@@ -13365,7 +13379,6 @@ AR&HW
 l`'\b
 +kEs\n
 fyLJ\b
-n~W4p
 .?AVCECC_LDPC@@
 .?AVCECC_Base@@
 GxTex_Unknown
@@ -13396,16 +13409,16 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>4p�
+��u><Ѓ
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
-��u>4p�
+��u><Ѓ
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
-��u>4p�
+��u><Ѓ
 .?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
@@ -13454,7 +13467,7 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
-��u>4p�
+��u><Ѓ
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13464,7 +13477,7 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
-��u>4p�
+��u><Ѓ
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13492,7 +13505,7 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
-��u>4p�
+��u><Ѓ
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
@@ -13539,9 +13552,9 @@ GcS68
 .?AV?$TSExplicitList@UUNITPORTRAIT@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UITEMPORTRAIT@@$0?CCCCCCCD@@@
 .?AUDIRTYFACE@@
+.?AUITEMPORTRAIT@@
 .?AUPLAYERPORTRAIT@@
 .?AUUNITPORTRAIT@@
-.?AUITEMPORTRAIT@@
 .?AUNETCLIENTNODE@@
 .?AUNETEVENTQUEUENODE@@
 .PBVResistancesRec@@
