@@ -215,7 +215,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6692)
+World of WarCraft (build 6729)
 SendErrorLogs
 player hidden
 player visible
@@ -1472,8 +1472,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-May 15 2007
-6692
+May 25 2007
+6729
 2.1.0
 RELEASE_BUILD
 BETA_BUILD
@@ -3884,9 +3884,6 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
-COPPER
-SILVER
-GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -6939,7 +6936,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6692 (May 15 2007 18:06:04)
+WoW [Release] Build 6729 (May 25 2007 17:16:54)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7130,6 +7127,9 @@ CHAT_FLAG_GM
 UnwrapGift
 BENCHMARK_TAXI_MODE_OFF
 BENCHMARK_TAXI_MODE_ON
+COPPER
+SILVER
+GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -7960,7 +7960,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6692 (May 15 2007)
+WoW [Release] Build 6729 (May 25 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -9522,8 +9522,7 @@ OZw3(?
 V_:X1:
 NJ2\"v
 O*9y]
- deflate 1.2
-.2 Copyright 1995-2004 Jean-loup Gailly
+ deflate 1.2.2 Copyright 1995-2004 Jean-loup Gailly
 1.2.2
 incompatible version
 buffer error
@@ -10539,12 +10538,11 @@ Click
 RegisterForClicks
 GetTextHeight
 GetTextWidth
-GetPushedTextOffset
-SetPushedTextOffset
+ushedTextOffset
+etPushedTextOffset
 GetHighlightTexture
-SetHighlightText
-GetDisabledTe
-xture
+SetHighlightTexture
+GetDisabledTexture
 SetDisabledTexture
 GetPushedTexture
 SetPushedTexture
@@ -11141,8 +11139,6 @@ ShuffleLeft
 CombatCritical
 CombatWound
 StandWound
-Rise      
-StandWound
 Rise
 Dead
 Walk
@@ -11227,6 +11223,7 @@ smooth
 cinu
 raster5
 raster1
+ltuo`
 zeta
 zdotaccent
 zacute
@@ -12874,3 +12871,5 @@ US]CQ
 .?AUCRibbonVertex@@
 .?AVCParticle@@
 \"3DUfw
+.?AULightningJoint@@
+.PAVCLightning@@
