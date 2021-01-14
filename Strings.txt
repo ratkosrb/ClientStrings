@@ -215,7 +215,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 6678)
+World of WarCraft (build 6692)
 SendErrorLogs
 player hidden
 player visible
@@ -236,6 +236,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
+���<��y
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -1471,8 +1472,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-May 11 2007
-6678
+May 15 2007
+6692
 0.1.0
 RELEASE_BUILD
 BETA_BUILD
@@ -3883,9 +3884,6 @@ Usage: ConfirmLootRoll(id, rollType)
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
-COPPER
-SILVER
-GOLD
 INV_Misc_QuestionMark
 Usage: GetLootSlotInfo(slot)
 Usage: LootSlot(slot)
@@ -6804,7 +6802,7 @@ GL_EXT_compiled_vertex_array
 \nOPTION ARB_fog_linear;\n
 !!ARBfp1.0
 PARAM c%u[%u]={program.env[%u..%u]}
-PARAM c
+
 SetPixelFormat failed, color = %d, alpha = %d, depth = %d, fmt = %d\n
 SetupPixelFormat(): pfd does not match requested
 ChoosePixelFormat failed, color = %d, alpha = %d, depth = %d\n
@@ -6938,7 +6936,7 @@ Unknown
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 6678 (May 11 2007 14:22:40)
+WoW [Release] Build 6692 (May 15 2007 18:07:06)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7129,6 +7127,9 @@ CHAT_FLAG_GM
 UnwrapGift
 BENCHMARK_TAXI_MODE_OFF
 BENCHMARK_TAXI_MODE_ON
+COPPER
+SILVER
+GOLD
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -7767,8 +7768,6 @@ AURASTOLENSELFOTHER
 AURASTOLENSELFSELF
 AURASTOLENOTHER
 AURASTOLENSELF
-Warning, string %s not found in stringfile (%s)
-Unknown context
 ABSORB_TRAILER
 BLOCK_TRAILER
 VULNERABLE_TRAILER
@@ -7908,8 +7907,10 @@ Invalid number of parameters
 %s %d %d %d
 Please specify how many lines to display
 %d %d %d %d
-set pending gxRestart
 invalid resolution, must be one of
+Requested size is larger than desktop resolution.  Unable to set window size.
+set pending gxRestart
+GX failed to query the desktop resolution.  Unable to set window size.
 Color bits must be 16, 24, or 30
 Depth bits must be 16, 24, or 32
 unsupported refresh rate, must be one of
@@ -7934,8 +7935,6 @@ gxMaximize
 maximize game window
 gxAspect
 constrain window aspect ratio
-gxWindow
-toggle fullscreen/window
 gxVSync
 vsync on or off
 graphics api
@@ -7945,6 +7944,8 @@ triple buffer
 gxRefresh
 refresh rate
 resolution
+gxWindow
+toggle fullscreen/window
 depth bits
 color bits
 Allow widescreen support
@@ -7959,7 +7960,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 6678 (May 11 2007)
+WoW [Release] Build 6692 (May 15 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -9521,7 +9522,8 @@ OZw3(?
 V_:X1:
 NJ2\"v
 O*9y]
- deflate 1.2.2 Copyright 1995-2004 Jean-loup Gailly
+ deflate 1.2
+.2 Copyright 1995-2004 Jean-loup Gailly
 1.2.2
 incompatible version
 buffer error
@@ -9883,7 +9885,6 @@ BC .=
 i9+=
 ?\r0\vH_
 4lkQg
-a���w��<
 ?ju!4
 ?!\aPO79
 ?V:e:
@@ -10390,10 +10391,8 @@ GetColorRGB
 SetColorRGB
 GetColorHSV
 SetColorHSV
-SetColorValueThu
-mbTexture
-GetCo
-lorValueThumbTexture
+SetColorValueThumbTexture
+GetColorValueThumbTexture
 SetColorValueTexture
 GetColorValueTexture
 SetColorWheelThumbTexture
@@ -10543,8 +10542,9 @@ GetTextWidth
 GetPushedTextOffset
 SetPushedTextOffset
 GetHighlightTexture
-SetHighlightTexture
-GetDisabledTexture
+SetHighlightText
+GetDisabledTe
+xture
 SetDisabledTexture
 GetPushedTexture
 SetPushedTexture
@@ -10899,8 +10899,7 @@ Error reading TalentTabRec
 DBFilesClient\\TaxiNodes.dbc
 Error reading TaxiNodesRec
 DBFilesClient\\TaxiPathNode.dbc
-Error reading TaxiPathN
-odeRec
+Error reading TaxiPathNodeRec
 DBFilesClient\\TaxiPath.dbc
 Error reading TaxiPathRec
 DBFilesClient\\TerrainType.dbc
@@ -11223,14 +11222,9 @@ psnames
 truetype
 sfnt
 smooth
-ltuo Nv
-ltuopOv
 cinu
 raster5
 raster1
-ltuoP
-ltuo0
-ltuo0
 zeta
 zdotaccent
 zacute
