@@ -84,6 +84,7 @@ signaturefile
 16bit
 uptodate
 nosound
+soundchaos
 nofixlag
 windowed
 hwdetect
@@ -224,7 +225,7 @@ Error reported by the timing validation system
 enUS
 Set the game locale
 Config.wtf
-World of WarCraft (build 7125)
+World of WarCraft (build 7153)
 SendErrorLogs
 player hidden
 player visible
@@ -246,7 +247,7 @@ Fonts\\2002.TTF
 Fonts\\FRIZQT__.TTF
 Interface\\Glues\\LoadingBar\\Loading-BarBorder
 Interface\\Glues\\LoadingBar\\Loading-BarFill
-���<�]�
+���<�m�
 Interface\\Glues\\loading
 Interface\\WorldMap\\World\\World%d
 Interface\\Glues\\LoadingScreens\\DynamicElements
@@ -520,6 +521,7 @@ nonspacewrap
 text
 hidden
 Couldn't find inherited node: %s
+Recursively inherited node: %s
 inherits
 alphaMode
 Texture %s: Unable to load texture file %s
@@ -861,7 +863,9 @@ tile
 edgeFile
 bgFile
 Usage: %s:SetBackdrop(nil or {bgFile = \"bgFile\", edgeFile = \"edgeFile\", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 0, right = 0, top = 0, bottom = 0 }})
+%s:CreateTexture(): Recursively inherited node \"%s\"
 %s:CreateTexture(): Couldn't find inherited node \"%s\"
+%s:CreateFontString(): Recursively inherited node \"%s\"
 %s:CreateFontString(): Couldn't find inherited node \"%s\"
 Unknown child node in %s element: %s
 BorderColor
@@ -1142,12 +1146,8 @@ CINEMATIC
 SCRIPTSOUND
 SCRIPTMUSIC
 .\\SoundInterface2.cpp
+EnableVoiceChat
 Sound_EnableSoundWhenGameIsInBG
-Sound_MasterVolume
-Sound_OutputDriverName
-Sound_OutputDriverIndex
-Sound_NumChannels
-Sound_UseHardware
 <UNKNOWN ERROR>
 XXXX\nXXXX ERROR!! Sound Kit ID %d is a looping sound but there is no user handle! This sound will play forever!! \nXXXX\n
 Sound_EnableAmbience
@@ -1156,6 +1156,13 @@ SCRIPTMUSIC
 MUSIC
 Sound_EnableSFX
 Sound_EnableAllSound
+EnableMicrophone
+Sound_ChaosMode
+Sound_MasterVolume
+Sound_OutputDriverName
+Sound_OutputDriverIndex
+Sound_NumChannels
+Sound_UseHardware
 .\\SoundInterface2VoiceChat.cpp
 Sound_VoiceChatInputDriverIndex
 Sound_VoiceChatOutputDriverIndex
@@ -1168,9 +1175,16 @@ Sound_ZoneMusicNoDelay
 [SCRIPT SOUND]
 .\\SoundInterface2ZoneSounds.cpp
 e:\\build\\buildWoW\\storm\\h\\stpl.h
+Sound_ListenerAtCharacter
+e:\\build\\buildWoW\\WoW\\Source\\Object/ObjectClient/Player_C.h
+(DONOTRENAME)WrappedItemPickup
+(DONOTRENAME)WrappedItemDrop
+*Screech!!*
+*Next screech in %f seconds*
+*Periodic Fidget Sound ERROR! Max seconds MUST be greater than Min seconds! Fix it!!*
+*No Periodic Fidget Specified*
 (DONOTRENAME)Combat Miss 2H
 (DONOTRENAME)Combat Miss 1H
-Sound_ListenerAtCharacter
 Primary Sound Driver
 Primary Sound Capture Driver
 number of sound channels
@@ -1191,13 +1205,6 @@ ChatSoundVolume
 sound volume (0.0 to 1.0)
 ChatMusicVolume
 music volume (0.0 to 1.0)
-e:\\build\\buildWoW\\WoW\\Source\\Object/ObjectClient/Player_C.h
-(DONOTRENAME)WrappedItemPickup
-(DONOTRENAME)WrappedItemDrop
-*Screech!!*
-*Next screech in %f seconds*
-*Periodic Fidget Sound ERROR! Max seconds MUST be greater than Min seconds! Fix it!!*
-*No Periodic Fidget Specified*
 MapWaterSounds
 Heap tracking switched OFF
 Heap tracking switched ON
@@ -1486,8 +1493,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-Aug 15 2007
-7125
+Aug 23 2007
+7153
 0.2.0
 RELEASE_BUILD
 BETA_BUILD
@@ -1756,7 +1763,8 @@ PLAYER_CHOSEN_TITLE
 PLAYER_VISIBLE_ITEM_19_PAD
 PLAYER_VISIBLE_ITEM_19_PROPERTIES
 PLAYER_VISIBLE_ITEM_19_0
-PLAYER_VISIBLE_ITEM_19_CREATOR
+PLAYER_
+VISIBLE_ITEM_19_CREATOR
 PLAYER_VISIBLE_ITEM_18_PAD
 PLAYER_VISIBLE_ITEM_18_PROPERTIES
 PLAYER_VISIBLE_ITEM_18_0
@@ -2261,7 +2269,6 @@ Usage: SetChatWindowLocked(index, locked)
 Usage: SetChatWindowDocked(index, docked)
 Usage: SetChatWindowShown(index, shown)
 %d%d%d
-Usage: GetMuteStatus (token)
 %s-%s
 .\\ChatFrame.cpp
 MESSAGES\n
@@ -2276,6 +2283,7 @@ WINDOW %d\n
 COLORS\n
 ZONECHANNELS %d\n\n
 END\n\n
+%s %d\n
 CHANNELS\n
 %s %s\n\n
 STANDARD
@@ -2298,7 +2306,6 @@ CHAT_MSG_BATTLEGROUND
 CHAT_MSG_RAID
 CHAT_MSG_PARTY
 Usage: GetChannelDisplayInfo(index)
-Usage: IsSilenced (token)
 SCRIPT_CHANNEL_ROSTER_UPDATE - %d %d
 SendAddonMessage(): Whisper message missing target player!
 Unknown addon chat type
@@ -2311,14 +2318,18 @@ SetActiveVoiceChannel(displayIndex) .. invalid displayIndex
 Usage: SetActiveVoiceChannel(displayIndex)
 Usage: CanComplainChat(lineID) or CanComplainChat(name) or CanComplainChat(name, text)
 RAID_INSTANCE_INFO_FMT
+Battleground
+Raid
+Party
 e:\\build\\buildwow\\wow\\source\\ui\\ChatFrame.h
 Warning: invalid chat spam filter expression: \"%s\" (ID #: %d)\n
 Usage: AddChatWindowChannel(index, \"channel\")
 CHANNEL%d
 target
-Usage: JoinChannelByName(\"name\")
-Usage: JoinChannelByName(\"name\", \"password\"), password cannot be more than %d characters
-Usage: JoinChannelByName(\"name\"), name cannot be more than %d characters
+GetChatNameGUID: NOT FOUND %s\n
+GetChatNameGUID: FOUND %s = %I64d\n
+Usage: IsSilenced (token)
+Usage: GetMuteStatus (token)
 Usage: LeaveChannelByName(\"name\")
 SetGuildRecruitmentMode: invalid mode
 Usage: SetGuildRecruitmentMode(mode)
@@ -2336,6 +2347,10 @@ CHANNELS
 ADDEDVERSION
 VERSION
 @#$%^&*
+AddChatNameToGUID:  %s = %I64d\n
+Usage: JoinChannelByName(\"name\")
+Usage: JoinChannelByName(\"name\", \"password\"), password cannot be more than %d characters
+Usage: JoinChannelByName(\"name\"), name cannot be more than %d characters
 CHAT_%s_GET
 [%s]
 CHAT_%s_NOTICE
@@ -2420,8 +2435,8 @@ Usage: ComplainChat(lineID) or ComplainChat(name) or ComplainChat(name, text)
 VoicePushToTalkStop
 VoicePushToTalkStart
 Dismount
+GetTaxiBenchmarkMode
 SetTaxiBenchmarkMode
-ShowTaxiBenchmarkMode
 StopAttack
 StartAttack
 InCombatLockdown
@@ -3130,6 +3145,7 @@ ERR_QUEST_ALREADY_ON
 ERR_QUEST_ALREADY_DONE
 ERR_QUEST_REWARD_EXP_I
 ERR_QUEST_REWARD_ITEM_S
+ERR_QUEST_REWARD_ITEM_MULT_IS
 ERR_QUEST_REWARD_MONEY_S
 ERR_QUEST_MUST_CHOOSE
 ERR_QUEST_LOG_FULL
@@ -3543,6 +3559,7 @@ ERR_PLAYER_UNSILENCED
 ERR_COMSAT_DISCONNECT
 ERR_COMSAT_RECONNECT_ATTEMPT
 ERR_COMSAT_CONNECT_FAIL
+ERR_PROFANE_CHAT_NAME
 Interface\\SpellShadow\\Spell-Shadow-Unacceptable.blp
 Interface\\SpellShadow\\Spell-Shadow-Acceptable.blp
 .\\WorldFrame.cpp
@@ -4043,6 +4060,7 @@ bind %s %s\r\n
 down
 Usage: RunBinding(\"COMMAND\")
 Usage: SetModifiedClick(\"action\", \"binding\")
+SetModifiedClick(): Unknown action (%s) or binding (%s)
 Usage: GetModifiedClick(\"action\")
 Usage: ClearOverrideBindings(owner)
 .\\UIBindings.cpp
@@ -5691,6 +5709,7 @@ GetTime
 Usage: ConsoleExec(\"console_command\")
 VOICE_SESSIONS_UPDATE
 VOICE_CHAT_ENABLED_UPDATE
+CHANNEL_PASSWORD_REQUEST
 CHANNEL_INVITE_REQUEST
 CHANNEL_VOICE_UPDATE
 CHANNEL_ROSTER_UPDATE
@@ -5714,6 +5733,8 @@ VOICE_TALKER_STOP_RAID
 VOICE_TALKER_START_RAID
 VOICE_TALKER_STOP_PARTY
 VOICE_TALKER_START_PARTY
+DISABLE_TAXI_BENCHMARK
+ENABLE_TAXI_BENCHMARK
 UPDATE_STEALTH
 MODIFIER_STATE_CHANGED
 COMBAT_RATING_UPDATE
@@ -7162,7 +7183,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7125 (Aug 15 2007 14:38:56)
+WoW [Release] Build 7153 (Aug 23 2007 11:04:36)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
@@ -7365,8 +7386,6 @@ Error, unknown model record %d specified for player race %d sex %d!
 Error, unknown displayInfo %d specified for player race %d sex %d!
 CHAT_FLAG_GM
 UnwrapGift
-BENCHMARK_TAXI_MODE_OFF
-BENCHMARK_TAXI_MODE_ON
 NO_DAILY_QUESTS_REMAINING
 ONE_DAILY_QUEST_REMAINING
 DAILY_QUESTS_REMAINING
@@ -8070,6 +8089,10 @@ FEEDPET_LOG_THIRDPERSON
 FEEDPET_LOG_FIRSTPERSON
 .\\Movement_C.cpp
 Failed to dereference transport! Provided GUID 0x%016I64X
+CClippedTriangle index violation: (0x%08x >= 0x%08x)
+CClippedTriangle::Add overflow: already has 0x%08x verts (limit is 0x%08x)
+CClippedTriangle() overflow: 0x%08x verts is too many (limit is 0x%08x)
+ClipPolygonToPlane: value error, dist=  (0x%08x -> %f)
 .\\Collide.cpp
 .\\PlayerSound_C.cpp
 SPELLVISUALIDNOTFOUND|%d
@@ -8143,6 +8166,10 @@ unable to set fallback mode
 unable to set default format
 unable to set last good mode
 unable to set requested display mode
+gxMaxFPSBk
+Set background FPS limit
+gxMaxFPS
+Set FPS limit
 gxOverride
 gx overrides
 gxFixLag
@@ -8182,7 +8209,7 @@ hwDetect
 do hardware detection
 Unknown command
 No help yet
-WoW [Release] Build 7125 (Aug 15 2007)
+WoW [Release] Build 7153 (Aug 23 2007)
 Commands registered for the category %s:
      %s %s
 Help for command %s:
@@ -8783,6 +8810,7 @@ Interface\\PvPRankBadges\\PvPRank02.blp
 Interface\\PvPRankBadges\\PvPRank01.blp
 ���=���=
 DAMAGE_TEXT_FONT
+UnitIsTalking
 VoiceIsDisabledByClient
 SetActiveVoiceChannelBySessionID
 GetVoiceCurrentSessionID
@@ -8797,7 +8825,7 @@ VoiceEnumerateCaptureDevices
 VoiceEnumerateOutputDevices
 GetVoiceStatus: Invalid token %s
 Usage: GetVoiceStatus (token)
-WOWCOMSATCLIENT7125
+WOWCOMSATCLIENT7153
 .\\ComSatClient.cpp
 ComSatThread
 COMSAT_START: NotifyLocalTalkerStart\r\n
@@ -8805,11 +8833,12 @@ COMSAT_STOP: NotifyLocalTalkerStop\r\n
 COMSAT_START: NotifyTalkerStart\r\n
 COMSAT_STOP: NotifyTalkerStop\r\n
 VoiceChatMode
+COMSAT_STOP: NotifyTalkerStop from RosterUpdate\r\n
+COMSAT_STOP: NotifyTalkerStop from ComSatClient_SetCurrentSessionI(-1)\r\n
+Usage: IsPlayerTalking (token)
 PushToTalkButton
 String representation of the Push-To-Talk button.
-EnableVoiceChat
 Enables the voice chat feature.
-EnableMicrophone
 Enables the microphone so you can speak.
 VoiceActivationSensitivity
 Sensitivity of the microphone (0.0 - 1.0)
@@ -9237,6 +9266,7 @@ Usage: CreateFont(\"name\")
 EnumerateFrames: Wrong current object type, expected frame
 EnumerateFrames: Couldn't find 'this' in current object
 Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"])
+CreateFrame(): Recursively inherited node \"%s\"
 CreateFrame(): Couldn't find inherited node \"%s\"
 CreateFrame: Unknown frame type '%s'
 CreateFrame: Wrong parent object type, expected frame
@@ -10053,9 +10083,9 @@ STEREO
 MONO
  - Using %d channels.
 Game Output
- - FMOD System Create
 => Game Sound Init Failed.
 ######## FATAL ERROR INITIALIZING. ALL GAME SOUND DISABLED.
+ - FMOD System Create
  - FMOD Memory Init
  - SESound Engine Init
 => Setting up Game Sound:
@@ -11440,6 +11470,8 @@ Usage: Sound_GetInputDriverNameByIndex( int nInputDriverIndex )
 Usage: Sound_GetOutputDriverNameByIndex( int nOutputDriverIndex )
 Usage: VoiceChat_RecordLoopbackSound( float fMaxRecordTimeInSeconds )
 Usage: PlaySound(\"sound\")
+VoiceChatOff
+VoiceChatOn
 .\\CreatureStats.cpp
 .\\GameObjectStats.cpp
 .\\ItemName.cpp
@@ -11517,6 +11549,8 @@ smooth
 cinu
 raster5
 raster1
+ltuo
+ltuo
 zeta
 zdotaccent
 zacute
@@ -13168,6 +13202,9 @@ vorbis
 ..\\lib\\res0.c
 ..\\lib\\floor1.c
 ..\\lib\\floor0.c
+^\b[^Z
+-ZI\r\v
+US]CQ
 ..\\src\\framing.c
 FLAC__STREAM_DECODER_ERROR_STATUS_UNPARSEABLE_STREAM
 FLAC__STREAM_DECODER_ERROR_STATUS_FRAME_CRC_MISMATCH
@@ -13328,6 +13365,7 @@ AR&HW
 l`'\b
 +kEs\n
 fyLJ\b
+n~W4p
 .?AVCECC_LDPC@@
 .?AVCECC_Base@@
 GxTex_Unknown
@@ -13358,15 +13396,17 @@ GxTex_Anisotropic
 .?AV?$TSExplicitList@UFONTHASHOBJ@@$0?CCCCCCCD@@@
 .?AUFONTHASHOBJ@@
 .PAVCBaseManaged@@
-��u>�H�
+��u>4p�
 .PAVSOUNDKITDEF@@
 .?AV?$TSExplicitList@USOUNDKITLOOKUP@@$0?CCCCCCCD@@@
 .?AUSOUNDKITLOOKUP@@
-.?AUIMPACTSOUNDARRAY@@
 .?AUTEXTEMOTELOOKUP@@
 .PAUTEXTEMOTELOOKUP@@
+��u>4p�
 .?AV?$TSExplicitList@UFOOTSTEPSNDCACHE@@$0?CCCCCCCD@@@
 .?AUFOOTSTEPSNDCACHE@@
+��u>4p�
+.?AUIMPACTSOUNDARRAY@@
 .?AVCObjectHeap@@
 .?AVCObjectHeapList@@
 .?AV?$TSExplicitList@VCGObject_C@@$0?CCCCCCCD@@@
@@ -13396,11 +13436,13 @@ GcS68
 .?AV?$TSExplicitList@UWORDLIST@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UPROFANITYCHECK@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@USPAMCHECK@@$0?CCCCCCCD@@@
+.?AV?$TSExplicitList@UCHATNAME@@$0?CCCCCCCD@@@
 .?AUPENDINGWHISPER@@
 .?AUPENDINGCHAT@@
 .?AUPENDINGTEXTEMOTE@@
 .?AUPROFANITYCHECK@@
 .?AUSPAMCHECK@@
+.?AUCHATNAME@@
 .?AUWORDLIST@@
 .?AUNearestUnitData@@
 .?AVC2iVector@NTempest@@
@@ -13412,6 +13454,7 @@ GcS68
 .?AUSAVEDVARIABLE@@
 ��u>
 .?AUCModelRecord@@
+��u>4p�
 .?AUWorldMapContinentInfo@@
 .?AUWorldMapLandmarkInfo@@
 123456789ABCDEF
@@ -13421,6 +13464,7 @@ GcS68
 .?AV?$TSExplicitList@USPELLSBYNAME@@$0?CCCCCCCD@@@
 .?AUSPELLBYNAME@@
 .?AUSPELLSBYNAME@@
+��u>4p�
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
@@ -13448,6 +13492,7 @@ GcS68
 .PAUStationeryInfo@@
 .PAUMailboxItemInfo@@
 .PAUOutbidItemInfo@@
+��u>4p�
 .?AUMapInfo@CGCommentator@@
 .?AUInstanceInfo@CGCommentator@@
 .?AV?$TSExplicitList@ULFGLIST@@$0?CCCCCCCD@@@
@@ -13708,7 +13753,9 @@ F]{(-
 .?AUSWorldTextIcon@@
 .?AUComSatCallback@@
 .?AUComSatEvent@@
+.?AV?$TSExplicitList@UTALKINGPLAYER@@$0?CCCCCCCD@@@
 .?AV?$TSExplicitList@UMUTEDPLAYER@@$0?CCCCCCCD@@@
+.?AUTALKINGPLAYER@@
 .?AUMUTEDPLAYER@@
 .PAVPass@FFX@@
 .?AULightRef@@
@@ -14121,6 +14168,3 @@ G?{)D?
 ;?\\09?
 3?!]1?a
 )?5q'?
-^\b[^Z
--ZI\r\v
-US]CQ
