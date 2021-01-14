@@ -52,8 +52,9 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 5666)
+World of WarCraft (build 5849)
 SendErrorLogs
+----
 %s%s
 World of Warcraft
 %s: Cannot read string table
@@ -165,7 +166,6 @@ E:\\build\\buildWoW\\WoW\\Source\\WowServices/PatchFiles.h
 Failed to open archive %s: %s
 patch.MPQ
 patch-?.MPQ
-Data\\%s
 Failed to open archive %s
 Unknown Error
 Add Ons:
@@ -599,8 +599,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Sep  1 2006
-16:48:31
+Sep 16 2006
+15:39:06
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -781,6 +781,8 @@ PlaySoundFile
 PlayMusic
 PlaySound
 MasterVolume
+EnableSoundWhenGameIsInBG
+Enable Sound When Game Is In Background
 SoundReverb
 EmoteSounds
 EnableMusic
@@ -831,14 +833,9 @@ Usage: PlaySound(\"sound\")
 Usage: PlayMusic(\"music\")
 Usage: PlaySoundFile(\"soundfile\")
 E:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterface.cpp
-Sound\\Music\\CityMusic\\Ironforge\\tinkertownintro_moment.mp3
-Sound\\Music\\CityMusic\\Thunderbluff\\Thunderbluff Intro.mp3
-Sound\\Music\\CityMusic\\Ironforge\\IronForge Intro.mp3
-Sound\\Music\\CityMusic\\Undercity\\undercityintro-moment.mp3
-Sound\\Music\\CityMusic\\Darnassus\\Darnassus Intro.mp3
-Sound\\Music\\CityMusic\\Orgrimmar\\orgrimmar_intro-moment.mp3
-Sound\\Music\\CityMusic\\Stormwind\\Stormwind_intro-moment.mp3
+INVALID CREDITS SOUND KIT: \"%s\"
 enablemusic
+INVALID AMBIENCE SOUND KIT: \"%s\"
 ..\\..\\..\\storm\\h\\stpl.h
 %s%s%s
 E:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\ISoundInterface.cpp
@@ -987,6 +984,8 @@ CGlueMgr::NetDisconnectHandler: NOT displaying script
 CGlueMgr::NetDisconnectHandler: Displaying script
 CGlueMgr::NetDisconnectHandler: Invalid disconnect
 CGlueMgr::NetDisconnectHandler: Disconnect pending
+GetAccountExpansionLevel
+GetCreditsText
 StopGlueAmbience
 PlayGlueAmbience
 PINEntered
@@ -1049,6 +1048,7 @@ SetSavedAccountName
 GetSavedAccountName
 GetLocale
 GetBuildInfo
+CLIENT_ACCOUNT_MISMATCH
 PLAYER_ENTER_PIN
 SHOW_SURVEY_NOTIFICATION
 FORCE_RENAME_CHARACTER
@@ -1075,14 +1075,15 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-5666
+5849
 2.0.0
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
 Usage: SetCurrentScreen(\"screen\")
 Usage: PlayGlueMusic(\"filename\")
-Usage: PlayGlueAmbience(\"sound name\")
+Usage: PlayGlueAmbience(\"sound name\", \"(optional)fade in time\")
+Usage: PlayCreditsMusic( \"Sound kit name\" )
 %dx%d
 Usage: LaunchURL(\"URL\")
 Usage: DefaultServerLogin(\"accountName\", \"password\")
@@ -1096,6 +1097,9 @@ Usage: GetAddOnEnableState(\"character\", index)
 Usage: EnableAddOn(\"character\", index)
 Usage: DisableAddOn(\"character\", index)
 Usage: SetScriptMemory(MB)
+credits_BC.html
+credits.html
+Usage: Script_GetCreditText(versionIndex)
 RealmListDialogCancelled
 GetSelectedCategory
 SortRealms
@@ -1288,6 +1292,8 @@ PLAYER_FIELD_PVP_MEDALS
 PLAYER_SELF_RES_SPELL
 PLAYER_AMMO_ID
 PLAYER_FIELD_BYTES
+PLAYER_FIELD_MOD_TARGET_RESISTANCE
+PLAYER_FIELD_MOD_HEALING_DONE_POS
 PLAYER_FIELD_MOD_DAMAGE_DONE_PCT
 PLAYER_FIELD_MOD_DAMAGE_DONE_NEG
 PLAYER_FIELD_MOD_DAMAGE_DONE_POS
@@ -1306,6 +1312,7 @@ PLAYER_FIELD_POSSTAT0
 PLAYER_FIELD_COINAGE
 PLAYER_REST_STATE_EXPERIENCE
 PLAYER_EXPLORED_ZONES_1
+PLAYER_SPELL_CRIT_PERCENTAGE1
 PLAYER_RANGED_CRIT_PERCENTAGE
 PLAYER_CRIT_PERCENTAGE
 PLAYER_PARRY_PERCENTAGE
@@ -1327,7 +1334,6 @@ PLAYER_FIELD_BANKBAG_SLOT_1
 PLAYER_FIELD_BANK_SLOT_1
 PLAYER_FIELD_PACK_SLOT_1
 PLAYER_FIELD_INV_SLOT_HEAD
-PLAYER_FIELD_PAD_0
 PLAYER_CHOSEN_TITLE
 PLAYER_VISIBLE_ITEM_19_PAD
 PLAYER_VISIBLE_ITEM_19_PROPERTIES
@@ -1405,6 +1411,16 @@ PLAYER_VISIBLE_ITEM_1_PAD
 PLAYER_VISIBLE_ITEM_1_PROPERTIES
 PLAYER_VISIBLE_ITEM_1_0
 PLAYER_VISIBLE_ITEM_1_CREATOR
+PLAYER_QUEST_LOG_25_2
+PLAYER_QUEST_LOG_25_1
+PLAYER_QUEST_LOG_24_2
+PLAYER_QUEST_LOG_24_1
+PLAYER_QUEST_LOG_23_2
+PLAYER_QUEST_LOG_23_1
+PLAYER_QUEST_LOG_22_2
+PLAYER_QUEST_LOG_22_1
+PLAYER_QUEST_LOG_21_2
+PLAYER_QUEST_LOG_21_1
 PLAYER_QUEST_LOG_20_2
 PLAYER_QUEST_LOG_20_1
 PLAYER_QUEST_LOG_19_2
@@ -1671,11 +1687,11 @@ GuildInfo
 GuildDisband
 GuildLeave
 GuildSetMOTD
-GuildSetLeaderByName
-GuildDemoteByName
-GuildPromoteByName
-GuildUninviteByName
-GuildInviteByName
+GuildSetLeader
+GuildDemote
+GuildPromote
+GuildUninvite
+GuildInvite
 HasKey
 UseSoulstone
 HasSoulstone
@@ -1701,13 +1717,8 @@ DeclineResurrect
 AcceptResurrect
 RepopMe
 RequestTimePlayed
-PromoteByName
-PromoteToPartyLeader
-UninviteByName
-UninviteFromRaid
-UninviteFromParty
-InviteByName
-InviteToParty
+UninviteUnit
+InviteUnit
 NotifyInspect
 CanInspect
 InitiateTrade
@@ -1718,11 +1729,8 @@ GetZoneText
 ToggleSheath
 AutoEquipCursorItem
 ClearTarget
-FollowByName
 FollowUnit
 FocusTarget
-TargetByName
-AssistByName
 AssistUnit
 AttackTarget
 TargetLastEnemy
@@ -1782,6 +1790,7 @@ SetConsoleKey
 IsAltKeyDown
 IsControlKeyDown
 IsShiftKeyDown
+IsModifierKeyDown
 SetLayoutMode
 RegisterForSavePerCharacter
 RegisterForSave
@@ -1829,6 +1838,9 @@ INVTYPE_BODY
 INVTYPE_SHOULDER
 INVTYPE_NECK
 INVTYPE_HEAD
+ERR_VENDOR_MISSING_TURNINS
+ERR_CANT_SPEAK_LANGAGE
+ERR_ARENA_TEAM_LEVEL_TOO_LOW_I
 ERR_ARENA_TEAM_TOO_MANY_MEMBERS_S
 ERR_ARENA_TEAM_TARGET_TOO_LOW_S
 ERR_ARENA_TEAM_DISBANDED_S
@@ -1855,8 +1867,17 @@ ERR_ARENA_TEAM_QUIT_S
 ERR_ARENA_TEAM_INVITE_SS
 ERR_ARENA_TEAM_CREATE_S
 ERR_ARENA_NO_TEAM_II
+ERR_LFG_PENDING
+ERR_LFG_LEADER_IS_LFM_S
+ERR_MATCHMAKING_MUST_BE_LEADER
+ERR_MATCHMAKING_GROUP_FULL
 ERR_MATCHMAKING_NO_RAID_GROUP
 ERR_MATCHMAKING_NOT_LEADER
+ERR_MATCHMAKING_PENDING_MATCH_S
+ERR_MATCHMAKING_PENDING_INVITE_S
+ERR_MATCHMAKING_AUTOJOIN_FAILED
+ERR_MATCHMAKING_OTHER_TIMEDOUT
+ERR_MATCHMAKING_TIMEDOUT
 ERR_MATCHMAKING_MEMBER_ADDED_S
 ERR_MATCHMAKING_IN_PROGRESS
 ERR_MATCHMAKING_SUCCESS
@@ -1895,6 +1916,7 @@ ERR_PVP_TOGGLE_OFF
 ERR_PVP_TOGGLE_ON
 ERR_EQUIP_TRADE_ITEM
 ERR_GUILDEMBLEM_SAME
+ERR_MEETING_STONE_NEED_PARTY
 ERR_MEETING_STONE_NO_RAID_GROUP
 ERR_MEETING_STONE_MUST_BE_LEADER
 ERR_MEETING_STONE_INVALID_LEVEL
@@ -1981,7 +2003,6 @@ ERR_MAIL_QUEST_ITEM
 ERR_CANT_INTERACT_SHAPESHIFTED
 ERR_NO_ITEMS_WHILE_SHAPESHIFTED
 ERR_EXHAUSTION_EXHAUSTED
-ERR_EXHAUSTION_TIRED
 ERR_EXHAUSTION_NORMAL
 ERR_EXHAUSTION_RESTED
 ERR_EXHAUSTION_WELLRESTED
@@ -1994,6 +2015,7 @@ ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
 ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
+ERR_EXHAUSTION_TIRED
 ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
 ERR_PET_SPELL_OUT_OF_RANGE
@@ -2402,32 +2424,14 @@ Usage: EquipCursorItem(slot)
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\GameUI.cpp
 Usage: EquipPendingItem(index)
 Usage: CancelPendingEquip(index)
-Usage: TargetUnit(\"unit\")
-Usage: AssistUnit(\"unit\")
-Usage: AssistByName(\"name\")
-Usage: TargetByName(\"name\")
-Usage: FollowUnit(\"unit\")
-Usage: FollowByName(\"name\")
 Usage: InitiateTrade(\"unit\")
-Usage: CanInspect(unit)
+Usage: CanInspect(unit [, showError])
 Usage: NotifyInspect(unit)
-Usage: InviteToParty(\"unit\")
-Usage: InviteByName(\"name\")
-Usage: UninviteFromParty(\"unit\")
-Usage: UninviteFromRaid(index)
-Usage: UninviteByName(\"name\")
 Usage: SetDungeonDifficulty(difficulty)
 Reporting failed.
 Reported
 Usage: ReportBug(\"description\")
-Usage: PromoteToPartyLeader(\"unit\")
-Usage: PromoteByName(\"name\")
 Usage: PickupPlayerMoney(amount)
-Usage: GuildUninviteByName(\"name\")
-Usage: GuildPromoteByName(\"name\")
-Usage: GuildDemoteByName(\"name\")
-Usage: GuildSetLeaderByName(\"name\")
-target
 Usage: GuildSetMOTD(\"message\")
 Usage: ArenaTeamInviteByName(team, name)
 Usage: ArenaTeamLeave(team)
@@ -2503,7 +2507,6 @@ minimapInsideZoom
 minimapZoom
 assistAttack
 statusBarText
-debugTaint
 FrameLevel:
 Frame:
 TargetNearestDistance must be between 1 and %f
@@ -2544,8 +2547,8 @@ PET_%s_TEXTURE
 INTERFACESOUND_CURSORDROPOBJECT
 %s%d
 BILLING_NAG_WARNING
+UnitButton
 TaxiRouteFrame
-LootButton
 TabardModel
 DressUpModel
 PlayerModel
@@ -2553,11 +2556,11 @@ Minimap
 WorldFrame
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\WorldFrame.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\MinimapFrame.h
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\LootFrame.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\TaxiRouteFrame.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\CharacterModelBase.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\DressUpModelFrame.h
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\TabardModelFrame.h
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\UnitButton.h
 ..\\UIUtil/Tooltip.h
 DUNGEON_DIFFICULTY%d
 %s%s%d
@@ -2934,6 +2937,7 @@ GetNumMapOverlays
 GetWorldLocMapPosition
 GetMapLandmarkInfo
 GetNumMapLandmarks
+GetDeathReleasePosition
 GetCorpseMapPosition
 GetPlayerMapPosition
 UpdateMapHighlight
@@ -3206,6 +3210,33 @@ Usage: RunBinding(\"COMMAND\")
 Usage: LoadBindings(0||1||2)
 Usage: SaveBindings(1||2)
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\UIBindings.h
+SetLootThreshold
+GetLootThreshold
+SetLootMethod
+GetLootMethod
+LeaveParty
+IsPartyLeader
+GetPartyLeaderIndex
+GetPartyMember
+GetNumPartyMembers
+(Debug-Only Lock Notice) %s
+INSTANCE_SAVED
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\PartyFrame.cpp
+ITEM_QUALITY%d_DESC
+RAID_MEMBER_NOT_READY
+READY_CHECK_START
+READY_CHECK_NO_AFK
+RAID_MEMBERS_AFK
+Usage: GetPartyMember(1-4)
+ERROR!
+needbeforegreed
+group
+master
+roundrobin
+freeforall
+Invalid loot method
+Usage: SetLootMethod(\"method\" [,master])
+Usage: SetLooThreshold(threshold)
 CheckReadyCheckTime
 ConfirmReadyCheck
 DoReadyCheck
@@ -3213,6 +3244,7 @@ GetRaidTargetIndex
 SetRaidTarget
 DemoteAssistant
 PromoteToAssistant
+PromoteToLeader
 ConvertToRaid
 SwapRaidSubgroup
 SetRaidSubgroup
@@ -3223,60 +3255,16 @@ SetRaidRosterSelection
 GetRaidRosterInfo
 GetNumRaidMembers
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\RaidInfo.cpp
-RAID_MEMBER_NOT_READY
-READY_CHECK_START
-READY_CHECK_NO_AFK
-RAID_MEMBERS_AFK
 Usage: GetRaidTargetIndex(unit)
 PLAYER_OFFLINE
 Usage: GetRaidRosterInfo(index)
 Usage: SetRaidRosterSelection(index)
 Usage: SetRaidSubgroup(index, subgroup)
 Usage: SwapRaidSubgroup(index1, index2)
+Usage: PromoteToLeader(name)
 Usage: PromoteToAssistant(name)
 Usage: DemoteAssistant(name)
 Usage: SetRaidTarget(unit, index)
-ClearLFGAutojoin
-SetLFGAutojoin
-GetLFGTypeEntries
-GetLFGTypes
-GetLFGResults
-GetNumLFGResults
-LFGQuery
-SetLookingForGroup
-GetLookingForGroup
-SetLootThreshold
-GetLootThreshold
-SetLootMethod
-GetLootMethod
-LeaveParty
-IsPartyLeader
-GetPartyLeaderIndex
-GetPartyMember
-GetNumPartyMembers
-Battleground
-Zone
-Quest
-Raid
-Dungeon
-None
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\PartyFrame.cpp
-(Debug-Only Lock Notice) %s
-INSTANCE_SAVED
-ITEM_QUALITY%d_DESC
-Usage: GetPartyMember(1-4)
-ERROR!
-needbeforegreed
-group
-master
-roundrobin
-freeforall
-Invalid loot method
-Usage: SetLootMethod(\"method\" [,master][,threshold])
-Usage: SetLooThreshold(threshold)
-Usage: LFGQuery(param1 [, class])
-Usage: GetLFGResults(index)
-Usage: GetLFGTypeEntries(type)
 GetPetIcon
 GetPetFoodTypes
 GetPetHappiness
@@ -3358,6 +3346,7 @@ GiveMasterLoot
 GetMasterLootCandidate
 IsFishingLoot
 CloseLoot
+ConfirmLootSlot
 LootSlot
 LootSlotIsCoin
 LootSlotIsItem
@@ -3368,17 +3357,15 @@ SetLootPortrait
 COPPER
 SILVER
 GOLD
-SetSlot
-Usage: SetSlot(index)
-Wrong object type for member function
-Attempt to find 'this' in non-framescript object
-Attempt to find 'this' in non-table object (used '.' instead of ':' ?)
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\LootFrame.cpp
 YOU_LOOT_MONEY
 %s%s%s%s%s
 %d %s
 INV_Misc_QuestionMark
 %d %s%s
+Wrong object type for member function
+Attempt to find 'this' in non-framescript object
+Attempt to find 'this' in non-table object (used '.' instead of ':' ?)
 Usage: GetLootSlotInfo(slot)
 Usage: GetLootSlotLink(slot)
 Usage: LootSlotIsItem(slot)
@@ -3391,6 +3378,38 @@ Usage: GetLootRollItemLink(id)
 Usage: GetLootRollTimeLeft(id)
 Usage: RollOnLoot(id, rollType)
 Usage: ConfirmLootRoll(id, rollType)
+GetLFGStatusText
+IsInLFGQueue
+CancelPendingLFG
+DeclineLFGMatch
+AcceptLFGMatch
+ClearLFGAutojoin
+SetLFGAutojoin
+GetLFGTypeEntries
+GetLFGTypes
+GetLFGPartyResults
+GetLFGResults
+GetNumLFGPartyResults
+GetNumLFGResults
+LFGPartyQuery
+LFGQuery
+ClearLookingForGroup
+SetLookingForMore
+SetLookingForGroup
+GetLookingForGroup
+LFG_TYPE_BATTLEGROUND
+LFG_TYPE_ZONE
+LFG_TYPE_QUEST
+LFG_TYPE_RAID
+LFG_TYPE_DUNGEON
+LFG_TYPE_NONE
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\LFGInfo.cpp
+MEETINGSTONE_TOOLTIP
+Usage: LFGQuery(param1 [, class])
+Usage: LFGPartyQuery(index)
+Usage: GetLFGResults(index)
+Usage: GetLFGPartyResults(index)
+Usage: GetLFGTypeEntries(type)
 ArenaTeamRoster
 CloseArenaTeamRoster
 GetArenaTeamRosterShowOffline
@@ -3411,6 +3430,76 @@ class
 level
 Usgae: SortArenaTeamRoster(\"type\")
 Usage: ArenaTeamRoster(team)
+KBSystem_GetServerNotice
+KBSystem_GetServerStatus
+KBSystem_GetMOTD
+KBArticle_GetData
+KBArticle_IsLoaded
+KBArticle_BeginLoading
+KBQuery_GetTotalArticleCount
+KBQuery_GetArticleHeaderData
+KBQuery_GetArticleHeaderCount
+KBQuery_IsLoaded
+KBQuery_BeginLoading
+KBSetup_GetTotalArticleCount
+KBSetup_GetArticleHeaderData
+KBSetup_GetArticleHeaderCount
+KBSetup_GetSubCategoryData
+KBSetup_GetSubCategoryCount
+KBSetup_GetCategoryData
+KBSetup_GetCategoryCount
+KBSetup_GetLanguageData
+KBSetup_GetLanguageCount
+KBSetup_IsLoaded
+KBSetup_BeginLoading
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\KnowledgeBase.cpp
+true
+&pageNumber=
+&numArticles=
+?languageId=
+Languages
+caption
+Categories
+ArticleHeaders
+rowNum
+subject
+hotIssue
+updated
+articleCount
+SubCategories
+languageId=
+categoryId=
+searchQuery=
+&searchType=
+&languageId=
+?articleId=
+Article
+subjectAlt
+ArticleText
+keyword
+languageId
+MOTD
+KNOWLEDGE_BASE_SETUP_URL
+KBSetup_GetLanguageCount() failed because setup is not loaded
+KBSetup_GetLanguageData() called with invalid category index
+KBSetup_GetLanguageData() failed because setup is not loaded
+KBSetup_GetCategoryCount() failed because setup is not loaded
+KBSetup_GetCategoryData() called with invalid category index
+KBSetup_GetCategoryData() failed because setup is not loaded
+KBSetup_GetSubCategoryCount() failed because setup is not loaded
+KBSetup_GetSubCategoryData() called with invalid category or sub category index
+KBSetup_GetSubCategoryData() failed because setup is not loaded
+KBSetup_GetArticleHeaderCount() failed because setup is not loaded
+KBSetup_GetArticleHeaderData() called with invalid article header index
+KBSetup_GetArticleHeaderData() failed because setup is not loaded
+KBSetup_GetTotalArticleCount() failed because setup is not loaded
+KNOWLEDGE_BASE_QUERY_URL
+KBQuery_GetArticleHeaderCount() failed because query is not loaded
+KBQuery_GetArticleHeaderData() called with invalid article header index
+KBQuery_GetArticleHeaderData() failed because query is not loaded
+KBQuery_GetTotalArticleCount() failed because query is not loaded
+KNOWLEDGE_BASE_ARTICLE_URL
+KBArticle_GetData() failed because article is not loaded
 GetPastDrawResult
 GetNumPastDrawResults
 GetNextDrawTime
@@ -3437,6 +3526,7 @@ Usage: GetWorldStateUIInfo(index)
 HasWandEquipped
 GetWeaponEnchantInfo
 ClearInspectPlayer
+GetInspectArenaTeamData
 GetInspectHonorData
 RequestInspectHonorData
 HasInspectHonorData
@@ -3451,6 +3541,7 @@ PickupBagFromSlot
 PutItemInBackpack
 PutItemInBag
 IsInventoryItemLocked
+SocketInventoryItem
 UseInventoryItem
 PickupInventoryItem
 KeyRingButtonIDToInvSlotID
@@ -3479,6 +3570,7 @@ Invalid inventory slot in GetInventoryItemLink
 Usage: GetInventoryItemLink(unit, slot)
 Invalid inventory slot in PickupInventoryItem
 Invalid inventory slot in UseInventoryItem
+Invalid inventory slot in SocketInventoryItem
 Invalid inventory slot in IsInventoryItemLocked
 Invalid bag slot in PutItemInBag
 Invalid bag slot in PickupBagFromSlot
@@ -3488,11 +3580,7 @@ Invalid inventory slot in SetInventoryPortaitTexture
 Usage: SetInventoryPortaitTexture(texure, unit, slot)
 Usage: GetGuildInfo(\"unit\")
 Usage: GetInventoryAlertStatus(index)
-GetMeetingStoneStatusText
-CancelMeetingStoneRequest
-IsInMeetingStoneQueue
-E:\\build\\buildWoW\\WoW\\Source\\Ui\\MeetingStoneInfo.cpp
-MEETINGSTONE_TOOLTIP
+Usage: GetInspectArenaTeamData(index)
 GetStablePetFoodTypes
 SetPetStablePaperdoll
 GetSelectedStablePet
@@ -3651,14 +3739,12 @@ Usage: BuySkillTier(index)
 Usage: SetSelectedSkill(index)
 CancelDuel
 AcceptDuel
-StartDuelUnit
 StartDuel
 ProcessCountdown
 DUEL_COUNTDOWN
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\DuelInfo.cpp
 DUEL_WINNER_KNOCKOUT
 DUEL_WINNER_RETREAT
-Usage: StartDuelUnit(\"unit\")
 GetSelectedFaction
 SetSelectedFaction
 ExpandFactionHeader
@@ -3736,9 +3822,9 @@ Usage: IsTrainerServiceTradeSkill(index)
 INCREASE_POTENTIAL
 Usage: GetTrainerServiceStepIncrease(index)
 Usage: BuyTrainerService(index)
-Missing on//off parameter in SetTrainerServiceTypeFilter
+Missing on/off parameter in SetTrainerServiceTypeFilter
 Bad service type in SetTrainerServiceTypeFilter
-Usage: SetTrainerServiceTypeFilter(\"type\" [, on\\off, exclusive])
+Usage: SetTrainerServiceTypeFilter(\"type\" [, on/off, exclusive])
 Missing on//off parameter in SetTrainerSkillLineFilter
 Bad skill line in SetTrainerSkillLineFilter
 Usage: SetTrainerSkillLineFilter(index [, on\\off, exclusive])
@@ -3872,6 +3958,7 @@ ItemTextGetMaterial
 ItemTextGetCreator
 ItemTextGetItem
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\ItemTextFrame.cpp
+CancelItemTempEnchantment
 CancelTrackingBuff
 GetTrackingTexture
 CancelPlayerBuff
@@ -3887,10 +3974,13 @@ HELPFUL
 Usage: GetPlayerBuff(index [, \"filter\"])
 Usage: GetPlayerBuffTexture(buffIndex)
 Usage: GetPlayerBuffDispelType(buffIndex)
+Usage: GetPlayerBuffApplications(buffIndex)
 Usage: GetPlayerBuffTimeLeft(buffIndex)
 Usage: CancelPlayerBuff(buffIndex)
+Usage: CancelItemTempEnchantment(slot)
 SetActionBarToggles
 GetActionBarToggles
+GetActionBarPage
 ChangeActionBarPage
 GetBonusBarOffset
 ActionHasRange
@@ -3927,6 +4017,7 @@ Usage: IsAutorepeatAction(slot)
 Usage: IsUsableAction(slot)
 Usage: IsConsumableAction(slot)
 Usage: IsEquippedAction(slot)
+ChangeActionBarPage() needs a page in the range 1 to %d
 GetPingPosition
 PingLocation
 SetZoom
@@ -3991,7 +4082,7 @@ Usage: EditMacro(index, name, icon, body, local)
 Usage: GetMacroIconInfo(index)
 Usage: PickupMacro(index)
 Usage: GetMacroIndexByName(name)
-HasArenaPetition
+HasFilledPetition
 TurnInArenaPetition
 TurnInPetition
 ClickPetitionButton
@@ -4104,6 +4195,7 @@ Usage: BankButtonIDToInvSlotID(buttonID)
 GetBagName
 SetBagPortaitTexture
 ShowContainerSellCursor
+SocketContainerItem
 UseContainerItem
 SplitContainerItem
 PickupContainerItem
@@ -4121,6 +4213,7 @@ Usage: GetContainerItemCooldown(index, slot)
 Usage: PickupContainerItem(index, slot)
 Usage: SplitContainerItem(index, slot, amount)
 Usage: UseContainerItem(index, slot[, onSelf])
+Usage: SocketContainerItem(index, slot[, onSelf])
 Usage: ShowContainerSellCursor(index, slot)
 Invalid slot in SetBagPortaitTexture
 Usage: SetBagPortaitTexture(texture, slot)
@@ -4311,6 +4404,10 @@ Usage: SelectActiveQuest(index)
 Invalid reward choice in GetQuestReward([choice])
 Invalid quest item in GetQuestItemInfo(\"type\", index)
 Usage: GetQuestItemLink(\"type\", index)
+IsUnit
+GetUnit
+SetUnit
+E:\\build\\buildWoW\\WoW\\Source\\Ui\\UnitButton.cpp
 CanSaveTabardNow
 GetLowerEmblemTexture
 GetUpperEmblemTexture
@@ -4337,11 +4434,13 @@ Undress
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\DressUpModelFrame.cpp
 SetRotation
 RefreshUnit
-SetUnit
 Duplicated model: %s\n
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\CharacterModelBase.cpp
 Usage: SetUnit(\"unit\")
 Usage: SetRotation(rotation (in radians))
+()[]^*/%+-#,
+clamp
+cond
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\QuestTextParser.cpp
 INT_GENERAL_DURATION
 SPELL_DURATION_UNTIL_CANCELLED
@@ -4350,6 +4449,8 @@ INT_SPELL_DURATION
 SPELL_POINTS_SPREAD_TEMPLATE
 INT_SPELL_POINTS_SPREAD_TEMPLATE
 %.1f
+TomT
+%%.%df
 TARGET_TOKEN_NOT_FOUND
 SLURRED_SPEECH
 showsmartrects
@@ -4446,6 +4547,7 @@ camerasmooth
 camera
 cameraView
 cameraViewBlendStyle
+cameraFlyingMountHeightSmoothSpeed
 cameraYawSmoothSpeed
 cameraTargetSmoothSpeed
 cameraPitchSmoothSpeed
@@ -4468,6 +4570,7 @@ cameraBobbing
 mouseInvertPitch
 mouseInvertYaw
 nearclip
+pitchLimit
 cameraClip
 cameraPitch %f\n
 cameraDistance %f\n
@@ -4508,6 +4611,8 @@ E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.cpp
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\InputControl.h
 Joystick
 enable joystick control
+UnitChannelInfo
+UnitCastingInfo
 GetInspectPVPRankProgress
 GetPVPRankProgress
 GetPVPRankInfo
@@ -4520,9 +4625,19 @@ GetPVPSessionStats
 GetResSicknessDuration
 UnitCreatureFamily
 UnitCreatureType
+GetSpellPenetration
+GetSpellBonusHealing
+GetSpellBonusDamage
+GetSpellCritChance
+GetRangedCritChance
+GetCritChance
+GetSpellCritChanceFromIntellect
+GetCritChanceFromAgility
 GetParryChance
 GetBlockChance
 GetDodgeChance
+GetCombatRatingBonus
+GetCombatRating
 IsResting
 IsArenaTeamCaptain
 IsGuildLeader
@@ -4606,12 +4721,13 @@ ReadFile
 ConsoleExec
 GetGameTime
 GetTime
-E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
-Unknown unit name: %s
+Unknown unit token: %s
 focus
+E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\ScriptEvents.cpp
 mouseover
 raidpet
 partypet
+target
 raidpet%d
 partypet%d
 Usage: ConsoleExec(\"console_command\")
@@ -4626,6 +4742,11 @@ Usage: UnitCanCooperate(\"unit\", \"otherUnit\")
 Usage: UnitCanAssist(\"unit\", \"otherUnit\")
 Usage: UnitCanAttack(\"unit\", \"otherUnit\")
 Usage: IsArenaTeamCaptain(index)
+ratingIndex is in the range 1 .. %d
+Usage: GetCombatRating(ratingIndex)
+Usage: GetCombatRatingBonus(ratingIndex)
+Usage: GetSpellCritChance(school)
+Usage: GetSpellBonusDamage(school)
 UNKNOWNOBJECT
 Usage: UnitName(\"unit\")
 Usage: UnitPVPName(\"unit\")
@@ -4672,11 +4793,26 @@ Usage: UnitCreatureFamily(\"unit\")
 GENERIC
 Usage: UnitPVPRank(\"unit\")
 Usage: GetPVPRankInfo(rank [, unit])
+Usage: UnitCastingInfo(\"unit\")
+CHANNELING
+Usage: UnitChannelInfo(\"unit\")
+LFG_UPDATE
+LFG_PENDING_CANCEL
+LFG_PENDING_REQUEST
+LFG_MATCH_CANCEL
+LFG_MATCH_REQUEST
 KNOWN_TITLES_UPDATE
 HONOR_CURRENCY_UPDATE
 ARENA_TEAM_INVITE_REQUEST
 ARENA_TEAM_ROSTER_UPDATE
 ARENA_TEAM_UPDATE
+KNOWLEDGE_BASE_SYSTEM_MOTD_UPDATED
+KNOWLEDGE_BASE_ARTICLE_LOAD_FAILURE
+KNOWLEDGE_BASE_ARTICLE_LOAD_SUCCESS
+KNOWLEDGE_BASE_QUERY_LOAD_FAILURE
+KNOWLEDGE_BASE_QUERY_LOAD_SUCCESS
+KNOWLEDGE_BASE_SETUP_LOAD_FAILURE
+KNOWLEDGE_BASE_SETUP_LOAD_SUCCESS
 LOTTERY_ITEM_UPDATE
 CHAT_MSG_BATTLEGROUND_LEADER
 CHAT_MSG_BATTLEGROUND
@@ -4697,6 +4833,7 @@ READY_CHECK
 MINIGAME_UPDATE
 START_MINIGAME
 CHAT_MSG_COMBAT_FACTION_CHANGE
+UPDATE_LFG_PARTY
 UPDATE_LFG_LIST
 UPDATE_LFG_TYPES
 PLAYTIME_CHANGED
@@ -4884,14 +5021,16 @@ BANKFRAME_OPENED
 PLAYERBANKSLOTS_CHANGED
 QUEST_ACCEPT_CONFIRM
 PLAYER_GUILD_UPDATE
-SPELLCAST_CHANNEL_STOP
-SPELLCAST_CHANNEL_UPDATE
-SPELLCAST_CHANNEL_START
-SPELLCAST_DELAYED
-SPELLCAST_INTERRUPTED
-SPELLCAST_FAILED
-SPELLCAST_STOP
-SPELLCAST_START
+UNIT_SPELLCAST_CHANNEL_STOP
+UNIT_SPELLCAST_CHANNEL_UPDATE
+UNIT_SPELLCAST_CHANNEL_START
+UNIT_SPELLCAST_SUCCEEDED
+UNIT_SPELLCAST_DELAYED
+UNIT_SPELLCAST_INTERRUPTED
+UNIT_SPELLCAST_FAILED
+UNIT_SPELLCAST_STOP
+UNIT_SPELLCAST_START
+UNIT_SPELLCAST_SENT
 UPDATE_MOUSEOVER_UNIT
 PET_ATTACK_STOP
 PET_ATTACK_START
@@ -5033,6 +5172,7 @@ PLAYER_LEVEL_UP
 PLAYER_FARSIGHT_FOCUS_CHANGED
 PLAYER_CONTROL_GAINED
 PLAYER_CONTROL_LOST
+PLAYER_FOCUS_CHANGED
 PLAYER_TARGET_CHANGED
 PLAYER_LEAVE_COMBAT
 PLAYER_ENTER_COMBAT
@@ -5076,6 +5216,7 @@ UNIT_AURA
 UNIT_ATTACK_SPEED
 UNIT_DAMAGE
 SECURE
+INCOMPATIBLE
 INTERFACE_VERSION
 NOT_DEMAND_LOADED
 INSECURE
@@ -5196,6 +5337,7 @@ SetUnitBuff
 SetBagItem
 SetTradeTargetItem
 SetTradePlayerItem
+SetMerchantCostItem
 SetMerchantItem
 SetCraftSpell
 SetCraftItem
@@ -5215,6 +5357,7 @@ SetHyperlink
 FadeOut
 AppendText
 SetText
+AddTexture
 AddDoubleLine
 AddLine
 ClearLines
@@ -5236,6 +5379,10 @@ RAGE_COST
 MANA_COST
 BOSS
 ELITE
+BLUE_GEM
+YELLOW_GEM
+RED_GEM
+META_GEM
 UNITNAME_TITLE_CREATION
 UNITNAME_TITLE_GUARDIAN
 UNITNAME_TITLE_MINION
@@ -5270,7 +5417,6 @@ UNIT_SKINNABLE_LEATHER
 UNIT_SKINNABLE_HERB
 UNIT_SKINNABLE_ROCK
 PVP_RANK_LEADER
-PVP_RANK_CIVILIAN
 RESURRECTABLE
 PVP_ENABLED
 TOOLTIP_UNIT_LEVEL
@@ -5368,6 +5514,16 @@ PETITION_TITLE
 GUILD_CHARTER_TITLE
 CURRENTLY_EQUIPPED
 DESTROY_GEM
+ENCHANT_CONDITION_MORE_COMPARE
+ENCHANT_CONDITION_MORE_EQUAL_COMPARE
+ENCHANT_CONDITION_NOT_EQUAL_COMPARE
+ENCHANT_CONDITION_EQUAL_COMPARE
+ENCHANT_CONDITION_MORE_VALUE
+ENCHANT_CONDITION_LESS_VALUE
+ENCHANT_CONDITION_NOT_EQUAL_VALUE
+ENCHANT_CONDITION_EQUAL_VALUE
+ENCHANT_CONDITION_REQUIRES
+ENCHANT_CONDITION_AND
 SPELL_USE_ALL_HEALTH
 CHANCE_TO_CRIT
 CHANCE_TO_PARRY
@@ -5432,6 +5588,7 @@ Invalid trade skill item in SetTradeSkillItem(index [,reagent])
 Invalid craft item in SetCraftItem(index, reagent)
 Invalid craft in SetCraftSpell(index)
 Invalid merchant slot in SetMerchantItem
+Invalid merchant slot in SetMerchantCostItem
 Invalid trade slot in SetTradePlayerItem
 Invalid trade slot in SetTradeTargetItem
 Usage: SetUnitBuff(\"unit\", index [,raidFilter])
@@ -5547,6 +5704,8 @@ OnLeaveCombat
 OnEnterCombat
 OnReaction
 -NONE-
+Reset \"No Reputation\" flag for unit(s) in the group
+Set \"No Reputation\" flag for unit(s) in the group
 Unit(s) cast a spell and report failure to owner
 Trigger actions on nearest unit in combat
 Unit(s) perform a boss emote to the zone
@@ -5784,6 +5943,8 @@ DBFilesClient\\GameObjectArtKit.dbc
 Error reading GameObjectArtKitRec
 DBFilesClient\\GameObjectDisplayInfo.dbc
 Error reading GameObjectDisplayInfoRec
+DBFilesClient\\GameTables.dbc
+Error reading GameTablesRec
 DBFilesClient\\GameTips.dbc
 Error reading GameTipsRec
 DBFilesClient\\GemProperties.dbc
@@ -5800,12 +5961,20 @@ DBFilesClient\\GroundEffectDoodad.dbc
 Error reading GroundEffectDoodadRec
 DBFilesClient\\GroundEffectTexture.dbc
 Error reading GroundEffectTextureRec
+DBFilesClient\\gtCombatRatings.dbc
+Error reading gtCombatRatingsRec
+DBFilesClient\\gtChanceToMeleeCrit.dbc
+Error reading gtChanceToMeleeCritRec
+DBFilesClient\\gtChanceToSpellCrit.dbc
+Error reading gtChanceToSpellCritRec
 DBFilesClient\\HelmetGeosetVisData.dbc
 Error reading HelmetGeosetVisDataRec
 DBFilesClient\\ItemBagFamily.dbc
 Error reading ItemBagFamilyRec
 DBFilesClient\\ItemClass.dbc
 Error reading ItemClassRec
+DBFilesClient\\ItemDisenchantLoot.dbc
+Error reading ItemDisenchantLootRec
 DBFilesClient\\ItemDisplayInfo.dbc
 Error reading ItemDisplayInfoRec
 DBFilesClient\\ItemExtendedCost.dbc
@@ -6238,7 +6407,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 5666 (Sep  1 2006 16:51:08)
+WoW [Release] Build 5849 (Sep 16 2006 15:41:49)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -6398,14 +6567,10 @@ GetNumFriends
 E:\\build\\buildWoW\\WoW\\Source\\WowSvcs\\WowSvcsClient\\FriendList.h
 Usage: GetFriendInfo(index)
 Usage: SetSelectedFriend(index)
-Usage: AddFriend(\"name\")
 Usage: RemoveFriend([\"name\"] or [index])
 Usage: SendWho(\"filter\")
 Usage: GetIgnoreName(index)
 Usage: SetSelectedIgnore(index)
-Usage: AddOrDelIgnore(\"name\")
-Usage: AddIgnore(\"name\")
-Usage: DelIgnore(\"name\")
 Usage: GetWhoInfo(index)
 race
 Usgae: SortWho(\"type\")
@@ -6645,6 +6810,7 @@ DMG: NOT VALIDATED: Old=%f, New=%f
 DMG: '%s' attacks '%s' sourceType=%d, spell='%s'
 Non-unit
 Unknown Unit
+None
 MARKED_AFK_MESSAGE
 CLEARED_AFK
 LOOT_MONEY_SPLIT
@@ -6667,6 +6833,7 @@ Closed
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\GameObject_C.cpp
 Unable%s
 Unknown Object Type
+MEETINGSTONE_LEVEL
 BADBASEGAMEOBJECT|%d
 NOOBJECTFILENAME|%d|%d|Game
 Interface\\Cursor\\Unable%s.blp
@@ -6718,6 +6885,7 @@ NOUNITDISPLAYID|%d|%s
 NOCOLLISIONBOX|%s
 ZEROSCALEUNIT|%d|%s
 MOUNTDISPLAYIDNOMOUNTATTACHMENT|%d
+Bow model '%s' equipped without proper events.  Bowstring won't draw.
 Paperdoll
 Portrait
 Root
@@ -6788,7 +6956,7 @@ LOOT_ROLL_PASSED_SELF
 LOOT_ROLL_GREED_SELF
 CMissile
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Missile_C.cpp
-Spells\\Resist_Immune_Effect.M2
+HARDCODED Resist Spell
 HARDCODED Reputation
 HARDCODED Meeting Stone Join
 HARDCODED PetLoyalty Down Head
@@ -6855,7 +7023,6 @@ chest
 questgiver
 button
 door
-true
 false
 difficulty
 mapID
@@ -6947,9 +7114,9 @@ E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\Bag_C.cpp
 SpiritWolf (DONOTRENAME)
 FootstepSounds
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitSound_C.cpp
+INVALID DEATH THUD SOUND: DEFAULTING TO ID %d
 E:\\build\\buildWoW\\WoW\\Source\\Object\\ObjectClient\\UnitCombat_C.cpp
 COMBATLOG_HONORAWARD
-COMBATLOG_DISHONORGAIN
 COMBATLOG_HONORGAIN
 FIRE
 SLIME
@@ -7456,7 +7623,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 5666 (Sep  1 2006)
+WoW [Release] Build 5849 (Sep 16 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -7709,6 +7876,7 @@ psapi.dll
 E:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 E:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOAlignUnit.cpp
 E:\\build\\buildWoW\\Storm\\Source\\IOUnit\\IOARC4Unit.cpp
+characterAmbient
 detailDoodadAlpha
 showSimpleDoodads
 showLowDetail
@@ -7772,6 +7940,7 @@ show query disabled.
 Detail doodad debug test enabled.
 Detail doodad debug test disabled.
 Alpha ref range 0 - 255.
+Ambient multiply range 0.0 - 1.0.
 Rendering all visible groups (standard)
 Rendering only current group
 Terrain shadow enabled.
@@ -8022,9 +8191,6 @@ toggles rendering of footprints
 horizonfarclip
 Far clip plane distance for horizon
 2112
-textureLodDist
-Video option: texture detail
-777.0
 anisotropic
 Anisotropic texture filtering
 base mipmap level
@@ -8057,9 +8223,6 @@ Object distance culling
 SmallCull
 Object size culling
 0.04
-lodDist
-Video option: Set Lod distance
-100.0
 mapShadows
 Video option: Toggle map shadows
 Video option: Toggle doodad anim
@@ -8074,7 +8237,6 @@ Doodad animation disabled.
 Doodad animation enabled.
 Terrain shadows disabled.
 Terrain shadows enabled.
-Lod distance must be in range 50.0f - 250.0f.
 SmallCull must be in range 0.001 - 2.0.
 DistCull must be in range 1.0 - %f.
 MaxLights must be in range 1 - %i.
@@ -8107,7 +8269,6 @@ Anisotropy must be between 1 and 16 inclusive
 anisotropic disabled, set upon game restart
 anisotropic enabled, set upon game restart
 max anisotropy is %d, not set
-Texure Lod distance must be in range 80.0f - 777.0f.
 HorizonFarClip must be in range %f - %f.
 Hiding foot prints.
 Showing foot prints.
@@ -8264,10 +8425,17 @@ Shaders\\Pixel\\FFXDeath_nvts_rect.bls
 Shaders\\Pixel\\FFXDeath.bls
 Shaders\\Pixel\\FFXDeath_nvrc.bls
 E:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\FFXEffects.cpp
+c_fSampleOffs
+c_fBaseAngle
+Shaders\\Vertex\\FFXNetherBlur.bls
+Shaders\\Pixel\\FFXNetherBlur.bls
+Shaders\\Pixel\\FFXNetherCombine.bls
 ffxGlow
 full screen glow effect
 ffxDeath
 full screen death effect
+ffxNetherWorld
+full screen nether world effect (for invisibility)
 ffxRectangle
 use rectangle texture for full screen effects
 full screen effects
@@ -8304,7 +8472,11 @@ World\\
 MINIMAPCHUNKNOTFOUND|%d|%d
 NOCONTINENTNAME|%d
 CORPSE_RED
+SPIRIT_HEALER_RELEASE_RED
 E:\\build\\buildWoW\\WoW\\Source\\Game\\GameClient\\Minimap.cpp
+CombatRatings
+ChanceToMeleeCrit
+ChanceToSpellCrit
 SpellStopCasting
 SpellStopTargeting
 SpellTargetUnit
@@ -8484,7 +8656,6 @@ PETTAME_INVALIDCREATURE
 Usage: SpellCanTargetUnit(\"unit\")
 Usage: SpellTargetUnit(\"unit\")
 autoSelfCast
-CHANNELING
 SPELLVISUALID_NOT_FOUND|%d
 Spells\\StarShards_Impact_Base.mdx
 Spells\\ArcaneShot_Area.mdx
@@ -8506,8 +8677,8 @@ Element 'Include' without file attribute
 file
 Include
 .lua
-Unable to create frame type: %s
 Couldn't find frame parent: %s
+Unable to create frame type: %s
 inherits
 parent
 Unknown frame type: %s
@@ -8574,175 +8745,11 @@ MinColor
 Unknown orientation %s in element %s
 orientation
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameXML\\XMLTree.cpp
-$Lua: Lua 5.0 Copyright (C) 1994-2003 Tecgraf, PUC-Rio $\n$Authors: R. Ierusalimschy, L. H. de Figueiredo & W. Celes $\n$URL: www.lua.org $\n
-no value
-Lua 5.0
-bad argument #%d to `%s' (%s)
-calling `%s' on bad self (%s)
-method
-%s expected, got %s
-%s:%d:
-stack overflow (%s)
-value expected
-__mode
-=stdin
-cannot read %s: %s
-_ALERT
-\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
-(null)
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\ldo.c
-stack overflow
-call
-stack overflow
-error in error handling
-not enough memory
-cannot resume non-suspended coroutine
-cannot resume dead coroutine
-function
-attempt to yield across metamethod/C-call boundary
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lstate.c
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lgc.c
-__call
-__concat
-__le
-__lt
-__unm
-__pow
-__div
-__mul
-__sub
-__add
-__eq
-__gc
-__newindex
-__index
-thread
-function
-table
-string
-number
-userdata
-boolean
-%.14g
-loop in gettable
-index
-loop in settable
-string size overflow
-next
-`for' step must be a number
-`for' limit must be a number
-`for' initial value must be a number
-`__pow' (`^' operator) is not a function
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lstring.c
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lfunc.c
-invalid key for `next'
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\ltable.c
-table overflow
-table index is NaN
-table index is nil
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lmemPool.cpp
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lzio.c
-\x1BLua
-value for `lua_getinfo' is not a function
-tail
-=(tail call)
-=[C]
-field
-local
-attempt to %s a %s value
-attempt to %s %s `%s' (a %s value)
-concatenate
-perform arithmetic on
-attempt to compare %s with %s
-attempt to compare two %s values
-%s:%d: %s
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lmem.c
-<eof> expected
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lparser.c
-too many syntax levels
-`%s' expected (to close `%s' at line %d)
-`%s' expected
-`while' condition too complex
-items in a constructor
-<name> expected
-self
-local variables
-constant table overflow
-<name> or `...' expected
-parameters
-ambiguous syntax (function call x new statement)
-function arguments expected
-unexpected symbol
-upvalues
-`=' or `in' expected
-(for step)
-(for limit)
-(for state)
-(for generator)
-syntax error
-no loop to break
-binary string
-bad code in %s
-unexpected end of file in %s
-bad integer in %s
-E:\\build\\buildWoW\\ENGINE\\SOURCE\\lua\\src\\lundump.c
-bad nupvalues in %s: read %d; expected %d
-bad constant type (%d) in %s
-unknown number format in %s
-Instruction
-size_t
-%s too old: read version %d.%d; expected at least %d.%d
-%s too new: read version %d.%d; expected at most %d.%d
-bad signature in %s
-virtual machine mismatch in %s: size of %s is %d but read %d
-<eof>
-*string
-*number
-*name
-while
-until
-then
-return
-elseif
-else
-break
-too many %s (limit=%d)
-%s:%d: %s near `%s'
-invalid control char
-char(%d)
-lines in a chunk
-malformed number
-ambiguous syntax (decimal point x string concatenation)
-unfinished long comment
-unfinished long string
-unfinished string
-escape sequence too large
-a $ a4A
-control structure too long
-function or expression too complex
-code size overflow
--------------------------------------------------------------------\n-- Table library\nlocal tab = table\nforeach = tab.foreach\nforeachi = tab.foreachi\ngetn = tab.getn\ntinsert = tab.insert\ntremove = tab.remove\nsort = tab.sort\n\n-------------------------------------------------------------------\n-- math library\nlocal math = math\nabs = math.abs\nacos = function (x) return math.deg(math.acos(x)) end\nasin = function (x) return math.deg(math.asin(x)) end\natan = function (x) return math.deg(math.atan(x)) end\natan2 = function (x,y) return math.deg(math.atan2(x,y)) end\nceil = math.ceil\ncos = function (x) return math.cos(math.rad(x)) end\ndeg = math.deg\nexp = math.exp\nfloor = math.floor\nfrexp = math.frexp\nldexp = math.ldexp\nlog = math.log\nlog10 = math.log10\nmax = math.max\nmin = math.min\nmod = math.mod\nPI = math.pi\n--??? pow = math.pow\nrad = math.rad\nrandom = math.random\nrandomseed = math.randomseed\nsin = function (x) return math.sin(math.rad(x)) end\nsqrt = math.sqrt\ntan = function (x) r
+-------------------------------------------------------------------\n-- Table library\nlocal tab = table\nforeach = tab.foreach\nforeachi = tab.foreachi\ngetn = tab.getn\ntinsert = tab.insert\ntremove = tab.remove\nsort = tab.sort\n\n-------------------------------------------------------------------\n-- math library\nlocal math = math\nabs = math.abs\nacos = function (x) return math.deg(math.acos(x)) end\nasin = function (x) return math.deg(math.asin(x)) end\natan = function (x) return math.deg(math.atan(x)) end\natan2 = function (x,y) return math.deg(math.atan2(x,y)) end\nceil = math.ceil\ncos = function (x) return math.cos(math.rad(x)) end\ndeg = math.deg\nexp = math.exp\nfloor = math.floor\nfrexp = math.frexp\nldexp = math.ldexp\nlog = math.log\nlog10 = math.log10\nmax = math.max\nmin = math.min\nmod = math.fmod\nPI = math.pi\n--??? pow = math.pow\nrad = math.rad\nrandom = math.random\nrandomseed = math.randomseed\nsin = function (x) return math.sin(math.rad(x)) end\nsqrt = math.sqrt\ntan = function (x)
 debugstack
+difftime
 time
 date
-xpcall
-pcall
-loadstring
-collectgarbage
-gcinfo
-assert
-rawset
-rawget
-rawequal
-unpack
-tostring
-tonumber
-pairs
-ipairs
-setfenv
-getfenv
-setmetatable
-getmetatable
 geterrorhandler
 seterrorhandler
 debugprofilestop
@@ -8753,43 +8760,32 @@ debugdump
 debugprint
 debuginfo
 debugload
+hooksecurefunc
+securecall
+secure
 getglobal
 setglobal
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\FrameScript\\FrameScript.cpp
 __framescript_meta
 OnEvent
 %s:%s
+Usage: hooksecurefunc(\"function\", hookfunc)
+hooksecurefunc(): %s is not a function
 Usage: seterrorhandler(errfunc)
-__metatable
-cannot change a protected metatable
-nil or table expected
-no function environment for tail call at level %d
-invalid level
-level must be non-negative
-__fenv
-`setfenv' cannot change environment of given function
-`setfenv' cannot change a protected environment
-base out of range
-thread: %p
-userdata: %p
-function: %p
-table: %p
-__tostring
-table too big to unpack
-assertion failed!
-`date' format too long
+'date' format too long
 isdst
 yday
 wday
 year
 month
 hour
-field `%s' missing in date table
+field '%s' missing in date table
  in function <%s:%d>
  in main chunk
  in function `%s'
 ...\n
 compat.lua
+__index
 GetText
 GetPluralIndex
 nil --[[ skipped %s ]]
@@ -8815,8 +8811,8 @@ EnumerateFrames: Wrong current object type, expected frame
 EnumerateFrames: Couldn't find 'this' in current object
 Usage: CreateFont(\"name\")
 Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"])
-CreateFrame: Unknown frame type '%s'
 CreateFrame(): Couldn't find inherited node \"%s\"
+CreateFrame: Unknown frame type '%s'
 CreateFrame: Wrong parent object type, expected frame
 CreateFrame: Couldn't find 'this' in parent object
 Model2: M2Destroy never called\n
@@ -8995,6 +8991,283 @@ rt+rld
         %d pointers, %d sorted, %d scanned\n
         qsort [0x%x, 0x%x]   done %d   this %d\n
         main sort initialise ...\n
+$Lua: Lua 5.1.1 Copyright (C) 1994-2006 Lua.org, PUC-Rio $\n$Authors: R. Ierusalimschy, L. H. de Figueiredo & W. Celes $\n$URL: www.lua.org $\n
+no calling environment
+no value
+bad argument #%d to '%s' (%s)
+calling '%s' on bad self (%s)
+method
+bad argument #%d (%s)
+%s expected, got %s
+%s:%d:
+invalid option '%s'
+stack overflow (%s)
+value expected
+name conflict for module '%s'
+_LOADED
+reopen
+=stdin
+cannot %s %s: %s
+PANIC: unprotected error in call to Lua API (%s)\n
+\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b
+(null)
+(*temporary)
+=[C]
+tail
+=(tail call)
+upvalue
+field
+local
+attempt to %s a %s value
+attempt to %s %s '%s' (a %s value)
+concatenate
+perform arithmetic on
+attempt to compare %s with %s
+attempt to compare two %s values
+%s:%d: %s
+arshift
+rshift
+lshift
+bxor
+band
+bnot
+randomseed
+random
+interval is empty
+wrong number of arguments
+huge
+math
+sort
+setn
+remove
+insert
+maxn
+getn
+foreachi
+foreach
+concat
+'setn' is obsolete
+wrong number of arguments to 'insert'
+table contains non-strings
+invalid order function for sorting
+table
+reverse
+match
+gsub
+gmatch
+gfind
+format
+find
+dump
+char
+byte
+string slice too long
+invalid value
+unable to dump given function
+^$*+?.([%-
+missing '[' after '%%f' in pattern
+malformed pattern (ends with '%%')
+malformed pattern (missing ']')
+unbalanced pattern
+too many captures
+invalid pattern capture
+invalid capture index
+unfinished capture
+'string.gfind' was renamed to 'string.gmatch'
+string/function/table expected
+invalid replacement value (a %s)
+invalid option in `format'
+invalid format (width or precision too long)
+[-+ #0]*(%d*)%.?(%d*)
+\\000
+string
+yield
+wrap
+running
+resume
+create
+xpcall
+unpack
+tostring
+tonumber
+setmetatable
+setfenv
+select
+rawset
+rawget
+rawequal
+pcall
+next
+loadstring
+getmetatable
+getfenv
+gcinfo
+collectgarbage
+assert
+setstepmul
+setpause
+step
+count
+collect
+restart
+stop
+base out of range
+__metatable
+cannot change a protected metatable
+nil or table expected
+no function environment for tail call at level %d
+invalid level
+level must be non-negative
+'setfenv' cannot change environment of given object
+assertion failed!
+table too big to unpack
+index out of range
+%s: %p
+__tostring
+coroutine expected
+too many results to resume
+cannot resume dead coroutine
+too many arguments to resume
+Lua function expected
+suspended
+dead
+coroutine
+newproxy
+__mode
+pairs
+ipairs
+_VERSION
+Lua 5.1
+boolean or proxy expected
+not enough memory
+You must enable _DEBUG_LUA_MEM_USAGE in lmemPool.h
+E:\\build\\buildWoW\\Engine\\Source\\lua-5.1\\src\\lmemPool.cpp
+error in error handling
+stack overflow
+call
+stack overflow
+cannot resume non-suspended coroutine
+attempt to yield across metamethod/C-call boundary
+__call
+__concat
+__le
+__lt
+__len
+__unm
+__pow
+__mod
+__div
+__mul
+__sub
+__add
+__eq
+__gc
+__newindex
+upval
+proto
+thread
+function
+number
+userdata
+boolean
+%.14g
+loop in gettable
+index
+loop in settable
+string length overflow
+'for' step must be a number
+'for' limit must be a number
+'for' initial value must be a number
+get length of
+invalid key to 'next'
+table overflow
+table index is NaN
+table index is nil
+qT`Pql1
+<Tl||||||```h\"
+VARARG
+CLOSURE
+CLOSE
+SETLIST
+TFORLOOP
+FORPREP
+FORLOOP
+RETURN
+TAILCALL
+CALL
+TESTSET
+TEST
+CONCAT
+NEWTABLE
+SETTABLE
+SETUPVAL
+SETGLOBAL
+GETTABLE
+GETGLOBAL
+GETUPVAL
+LOADNIL
+LOADBOOL
+LOADK
+MOVE
+memory allocation error: block too big
+<eof>
+<string>
+<name>
+<number>
+while
+until
+then
+return
+elseif
+else
+break
+char(%d)
+%s near '%s'
+lexical element too long
+invalid long string delimiter
+chunk has too many lines
+malformed number
+nesting of [[...]] is deprecated
+unfinished long comment
+unfinished long string
+escape sequence too large
+unfinished string
+\a\a\a\a\a\a\n\t
+'%s' expected
+chunk has too many syntax levels
+'%s' expected (to close '%s' at line %d)
+no loop to break
+cannot use '...' outside a vararg function
+items in a constructor
+function at line %d has more than %d %s
+main function has more than %d %s
+self
+local variables
+too many local variables
+constant table overflow
+<name> or '...' expected
+ambiguous syntax (function call x new statement)
+function arguments expected
+unexpected symbol
+upvalues
+'=' or 'in' expected
+(for step)
+(for limit)
+(for index)
+(for control)
+(for state)
+(for generator)
+syntax error
+binary string
+bad code
+%s: %s in precompiled chunk
+unexpected end
+bad integer
+bad constant
+bad header
+control structure too long
+function or expression too complex
+code size overflow
 .com
 .bat
 .cmd
@@ -9231,6 +9504,7 @@ D\bGa%\b
 SP\vPZ
 %s%*d.%0*d
 -inf
+E:\\build\\buildWoW\\ENGINE\\source\\Base\\DynamicString.cpp
 E:\\build\\buildWoW\\ENGINE\\Source\\Frame\\CSimpleTop.cpp
 Offset
 Frame anchored to itself: %s
@@ -9453,9 +9727,6 @@ tile
 edgeFile
 bgFile
 Usage: %s:SetBackdrop(nil or {bgFile = \"bgFile\", edgeFile = \"edgeFile\", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 0, right = 0, top = 0, bottom = 0 }})
-DisabledText
-HighlightText
-NormalText
 PushedTextOffset
 HighlightColor
 DisabledColor
@@ -9469,7 +9740,9 @@ DisabledTexture
 PushedTexture
 NormalTexture
 OnDoubleClick
+PostClick
 OnClick
+PreClick
 JAPANESE
 CHINESE
 KOREAN
@@ -9763,6 +10036,7 @@ SetFocus
 GetTextInsets
 SetTextInsets
 AddHistoryLine
+HighlightText
 GetNumber
 SetNumber
 Insert
@@ -9858,6 +10132,8 @@ GetLeft
 GetCenter
 SetParent
 GetParent
+CanChangeProtectedState
+IsSecure
 %s:SetParent(): Would create a loop parenting to %s
 %s:SetParent(): Couldn't find region named '%s'
 %s:SetParent(): Wrong parent object type, expected frame
@@ -10015,10 +10291,10 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuoP
+ltuo
 smooth
 cinu
-ltuoP
+ltuo
 raster5
 raster1
    !
@@ -11113,50 +11389,6 @@ PCDATA
 PUBLIC
 REQUIRED
 SYSTEM
-arshift
-rshift
-lshift
-bxor
-band
-bnot
-randomseed
-random
-interval is empty
-wrong number of arguments
-math
-remove
-insert
-sort
-setn
-getn
-foreachi
-foreach
-concat
-table contains non-strings
-invalid order function for sorting
-gsub
-gfind
-find
-dump
-format
-byte
-char
-invalid value
-unable to dump given function
-^$*+?.([%-
-missing `[' after `%%f' in pattern
-malformed pattern (ends with `%')
-malformed pattern (missing `]')
-unbalanced pattern
-too many captures
-invalid pattern capture
-invalid capture index
-unfinished capture
-string or function expected
-invalid option in `format'
-invalid format (width or precision too long)
-[-+ #0]*(%d*)%.?(%d*)
-\\000
 E:\\build\\buildWoW\\engine\\Source\\Base\\MsgBuffer.cpp
 KERNEL32.dll
 ADVAPI32.dll
@@ -11372,9 +11604,8 @@ x<h'R
 .?AUKEYBINDING@@
 .?AV?$TSExplicitList@UKEYBINDING@@$0?CCCCCCCD@@@
 .?AVPetAction@@
-.?AV?$TSExplicitList@UFrameScriptObject_Variable@@$0?CCCCCCCD@@@
-.?AUFrameScriptObject_Variable@@
 .PAUArenaTeamMemberInfo@@
+123456789ABCDEF
 .?AV?$TSExplicitList@UWORLDSTATE@@$0?CCCCCCCD@@@
 .?AUWORLDSTATE@@
 .?AW4INV_ALERT_STATUS@@
@@ -11393,6 +11624,8 @@ x<h'R
 .?AUPOIINFO@@
 .?AUPOIDIRECTIONDATA@@
 .?AUOBJINFO@@
+.?AV?$TSExplicitList@UFrameScriptObject_Variable@@$0?CCCCCCCD@@@
+.?AUFrameScriptObject_Variable@@
 .?AV?$TSExplicitList@UMACRONODE@@$0?CCCCCCCD@@@
 .?AUMACRONODE@@
 .PAUTalentTabInfo@@
@@ -11586,7 +11819,6 @@ wn>Jj
 .?AVCMapObjDef@@
 .?AV?$TSExplicitList@VCMapObj@@$0?CCCCCCCD@@@
 .?AVCMapObj@@
-.PAVCGxTex@@
 World\\NoDXT\\Detail\\
 .PAVCDetailDoodadData@@
 .?AVCDetailDoodadInst@@
@@ -11658,7 +11890,6 @@ s,+|^
 .?AV?$TSExplicitList@UHashedNode@@$0?CCCCCCCD@@@
 .?AUFrameFactoryNode@@
 .?AV?$TSExplicitList@UFrameFactoryNode@@$0?CCCCCCCD@@@
-.PAVMemChunk@@
 .?AVFrameScript_EventObject@@
 .?AUEVENTLISTENERNODE@@
 .?AUM2Element@@
@@ -11770,6 +12001,7 @@ E:\\build\\buildWoW\\Engine\\Source\\lgLCD\\LCDGfx.cpp
 ^\b[^Z
 -ZI\r\v
 US]CQ
+.PAVMemChunk@@
 fmod
 asin
 acos
