@@ -1,6 +1,6 @@
 // Auto generated file
 // Patch: 0.2.0
-// Build: 6932
+// Build: 6983
 
 Public Enum EObjectFields
 {
@@ -365,5 +365,6 @@ Public Enum ECorpseFields
     CORPSE_FIELD_GUILD = EObjectFields.OBJECT_END + 0x1C,                         // 0x022 - Size: 1 - Type: INT - Flags: PUBLIC
     CORPSE_FIELD_FLAGS = EObjectFields.OBJECT_END + 0x1D,                         // 0x023 - Size: 1 - Type: INT - Flags: PUBLIC
     CORPSE_FIELD_DYNAMIC_FLAGS = EObjectFields.OBJECT_END + 0x1E,                 // 0x024 - Size: 1 - Type: INT - Flags: DYNAMIC
-    CORPSE_END = EObjectFields.OBJECT_END + 0x1F                                  // 0x025
+    CORPSE_FIELD_PAD = EObjectFields.OBJECT_END + 0x1F,                           // 0x025 - Size: 1 - Type: INT - Flags: NONE
+    CORPSE_END = EObjectFields.OBJECT_END + 0x20                                  // 0x026
 }
