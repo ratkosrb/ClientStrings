@@ -1,6 +1,6 @@
 // Auto generated file
-// Patch: 2.0.2
-// Build: 6178
+// Patch: 2.0.3
+// Build: 6213
 
 Public Enum SpellFailedReason
 {
@@ -157,6 +157,7 @@ Public Enum SpellFailedReason
     SPELL_FAILED_NOT_ON_DAMAGE_IMMUNE = 0x96,                       // 0x096
     SPELL_FAILED_NOT_ON_MOUNTED = 0x97,                             // 0x097
     SPELL_FAILED_TOO_SHALLOW = 0x98,                                // 0x098
-    SPELL_FAILED_UNKNOWN = 0x99,                                    // 0x099
+    SPELL_FAILED_TARGET_NOT_IN_SANCTUARY = 0x99,                    // 0x099
+    SPELL_FAILED_UNKNOWN = 0x9A,                                    // 0x09A
     SPELL_NO_ERROR = 0xFF                                           // 0x0FF
 }

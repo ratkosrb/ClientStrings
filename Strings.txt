@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6178)
+World of WarCraft (build 6213)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -183,6 +183,13 @@ patch-%s-?.MPQ
 Data\\%s\\
 patch-?.MPQ
 Failed to open archive %s
+Format version in %s file is not supported.
+base
+NGIS
+RELEASE
+%d.%d.%d
+Could not authenticate the %s file.
+signaturefile
   %d - %s
 '%s' is not a valid timing method. Valid methods are:
 Timing method selected: %d - %s
@@ -630,8 +637,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Nov 27 2006
-16:55:19
+Dec  7 2006
+05:02:07
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -874,8 +881,9 @@ E:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\SoundInterface.cpp
 *No Periodic Fidget Specified*
 ..\\Object/ObjectClient/Player_C.h
 INVALID CREDITS SOUND KIT: \"%s\"
-enablemusic
 INVALID AMBIENCE SOUND KIT: \"%s\"
+enablemusic
+INVALID GLUE SOUND KIT: \"%s\"
 ..\\..\\..\\storm\\h\\stpl.h
 %s%s%s
 E:\\build\\buildWoW\\WoW\\Source\\SoundInterface\\ISoundInterface.cpp
@@ -894,7 +902,7 @@ DBFilesClient\\Spell.dbc
 Error reading SpellRec
 HeapUsage
 %u total object bytes used, %u bytes allocated for heaps
-    \"%s\" %u blocks, %u objs per block (%u bytes per block): %u objs allocated (%d%%)
+    \"%s\" %u blocks, %u objs per block (%u bytes per obj): %u objs allocated (%d%%) - Total bytes: %u (%u)
 %u Heaps in use:
 E:\\build\\buildWoW\\WoW\\Source\\ObjectAlloc\\ObjectAlloc.cpp
 %u total object bytes used, %u bytes allocated for heaps\n
@@ -1145,8 +1153,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6178
-2.0.2
+6213
+2.0.3
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -1683,8 +1691,10 @@ NUMPADMINUS
 NUMPADPLUS
 NUMPAD%d
 SPACE
+NONE
 SHIFT
 CTRL
+Sound_GetZoneAudioStats
 SetTaxiBenchmarkMode
 ShowTaxiBenchmarkMode
 StopAttack
@@ -1727,6 +1737,7 @@ ItemHasRange
 IsCurrentItem
 IsEquippedItemType
 IsEquippedItem
+IsEquippableItem
 IsConsumableItem
 IsUsableItem
 GetItemCooldown
@@ -1761,6 +1772,7 @@ GetPVPDesired
 SetPVP
 TogglePVP
 GetZonePVPInfo
+IsSubZonePVPPOI
 GetCoinIcon
 GMRequestPlayerInfo
 GetTimeToWellRested
@@ -1826,8 +1838,6 @@ GuildInvite
 HasKey
 UseSoulstone
 HasSoulstone
-ResetCursor
-ShowInspectCursor
 PickupPlayerMoney
 DropCursorMoney
 GetCursorMoney
@@ -1877,9 +1887,12 @@ EquipPendingItem
 DeleteCursorItem
 EquipCursorItem
 CursorHasMoney
+GetCursorSpell
 CursorHasSpell
+GetCursorItem
 CursorHasItem
 ClearCursor
+ResetCursor
 SetCursor
 HideFriendNameplates
 ShowFriendNameplates
@@ -1990,6 +2003,7 @@ ERR_ARENA_TEAM_REMOVE_SSS
 ERR_ARENA_TEAM_LEADER_CHANGED_SSS
 ERR_ARENA_TEAM_LEADER_IS_SS
 ERR_ARENA_TEAM_LEAVE_SS
+ERR_ARENA_TEAM_YOU_JOIN_S
 ERR_ARENA_TEAM_JOIN_SS
 ERR_ARENA_TEAM_NOT_ALLIED
 ERR_ARENA_TEAM_PLAYER_NOT_FOUND_S
@@ -2164,13 +2178,13 @@ ERR_TICKET_UPDATE_ERROR
 ERR_TICKET_CREATE_ERROR
 ERR_TICKET_ALREADY_EXISTS
 ERR_ITEM_CANT_BE_DESTROYED
+ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_DEAD
-ERR_PET_SPELL_TARGETS_DEAD
 ERR_PET_SPELL_NOT_BEHIND
 ERR_PET_SPELL_OUT_OF_RANGE
 ERR_PET_SPELL_AFFECTING_COMBAT
-ERR_PET_SPELL_NOPATH
 ERR_PET_SPELL_ROOTED
+ERR_PET_SPELL_TARGETS_DEAD
 ERR_SPELL_UNLEARNED_S
 ERR_PETITION_FULL
 ERR_PETITION_NOT_SAME_SERVER
@@ -2185,8 +2199,8 @@ ERR_PETITION_OFFERED_S
 ERR_SPELL_FAILED_NOTUNSHEATHED
 ERR_FISH_ESCAPED
 ERR_FISH_NOT_HOOKED
-igPlayerInviteAccept
 ERR_IGNORING_YOU_S
+igPlayerInviteAccept
 ERR_INVALID_ITEM_TARGET
 ERR_ZONE_EXPLORED_XP
 ERR_ZONE_EXPLORED
@@ -2384,8 +2398,8 @@ ERR_LOOT_DIDNT_KILL
 ERR_LOOT_TOO_FAR
 ERR_LOOT_LOCKED
 ERR_KILLED_BY_S
-igQuestFailed
 ERR_CLIENT_LOCKED_OUT
+igQuestFailed
 ERR_PLAYER_DEAD
 ERR_OUT_OF_RANGE
 ERR_NO_GUILD_CHARTER
@@ -2451,8 +2465,8 @@ ERR_LEFT_GROUP_YOU
 ERR_LEFT_GROUP_S
 ERR_NEW_LEADER_YOU
 ERR_NEW_LEADER_S
-LEVELUP
 ERR_PLAYER_BUSY_S
+LEVELUP
 ERR_ALREADY_IN_GROUP_S
 ERR_INVITED_TO_GROUP_S
 ERR_INVITE_SELF
@@ -2490,6 +2504,7 @@ ERR_NO_BANK_SLOT
 ERR_ONLY_ONE_QUIVER
 ERR_NOT_OWNER
 ERR_NOT_A_BAG
+ERR_NO_SPLIT_WHILE_PROSPECTING
 ERR_SPLIT_FAILED
 ERR_TOO_FEW_TO_SPLIT
 ERR_ITEM_NOT_FOUND
@@ -2516,7 +2531,6 @@ ERR_CANT_EQUIP_SKILL
 ERR_CANT_EQUIP_LEVEL_I
 ERR_BANK_FULL
 ERR_INV_FULL
-NONE
 Usage: RegisterForSave(\"variable\")
 RegisterForSave() is only available to Blizzard scripts
 Usage: RegisterForSavePerCharacter(\"variable\")
@@ -2558,16 +2572,48 @@ Usage: SetGamma(value)
 baseMip
 Usage: SetBaseMip(value)
 Usage: SetCursor(\"cursor\" or nil)
+SKIN_ALLIANCE_ERROR_CURSOR
+SKIN_HORDE_ERROR_CURSOR
+ITEM_ERROR_CURSOR
+REPAIR_ERROR_CURSOR
+LOOT_ALL_ERROR_CURSOR
+MAIL_ERROR_CURSOR
+LOCK_ERROR_CURSOR
+GATHER_ERROR_CURSOR
+SKIN_ERROR_CURSOR
+MINE_ERROR_CURSOR
+TRAINER_ERROR_CURSOR
+TAXI_ERROR_CURSOR
+PICKUP_ERROR_CURSOR
+INSPECT_ERROR_CURSOR
+SPEAK_ERROR_CURSOR
+INTERACT_ERROR_CURSOR
 ATTACK_ERROR_CURSOR
 BUY_ERROR_CURSOR
 CAST_ERROR_CURSOR
 POINT_ERROR_CURSOR
+SKIN_ALLIANCE_CURSOR
+SKIN_HORDE_CURSOR
+ITEM_CURSOR
+REPAIR_CURSOR
+LOOT_ALL_CURSOR
+MAIL_CURSOR
+LOCK_CURSOR
+GATHER_CURSOR
+SKIN_CURSOR
+MINE_CURSOR
+TRAINER_CURSOR
+TAXI_CURSOR
+PICKUP_CURSOR
+INSPECT_CURSOR
+SPEAK_CURSOR
+INTERACT_CURSOR
 ATTACK_CURSOR
 BUY_CURSOR
 CAST_CURSOR
 POINT_CURSOR
-Usage: EquipCursorItem(slot)
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\GameUI.cpp
+Usage: EquipCursorItem(slot)
 Usage: EquipPendingItem(index)
 Usage: CancelPendingEquip(index)
 target
@@ -2575,8 +2621,7 @@ Usage: InitiateTrade(\"unit\")
 Usage: CanInspect(unit [, showError])
 Usage: NotifyInspect(unit)
 Usage: SetDungeonDifficulty(difficulty)
-Reporting failed
-Reported
+Reporting unavailable
 Usage: ReportBug(\"description\")
 Usage: ReportSuggestion(\"description\")
 Usage: PickupPlayerMoney(amount)
@@ -2636,7 +2681,7 @@ Usage: GetMirrorTimerInfo(\"timer\")
 Usage: UseItemByName(name, target)
 EquipItemByName(): Invalid inventory dstSlot
 Usage: EquipItemByName(\"name\" [,slot])
-SetAutoLootToggleKey(): key must be one of: SHIFT, CTRL, ALT
+SetAutoLootToggleKey(): key must be one of: CTRL, ALT, SHIFT, or NONE
 Weather changed to %d, intensity %f\n
 GameTooltip
 UIParent
@@ -2736,17 +2781,17 @@ PVP_REQUIRED_FOR_CAPTURE
 PARTY
 RAID
 GUILD
-@OFFICER
-@YELL
-@@WHISPER
+OFFICER
+YELL
+WHISPER
 WHISPER_INFORM
 EMOTE
-@TEXT_EMOTE
-@SYSTEM
+TEXT_EMOTE
+SYSTEM
 MONSTER_SAY
 MONSTER_YELL
-@@MONSTER_EMOTE
-@CHANNEL
+MONSTER_EMOTE
+CHANNEL
 CHANNEL_JOIN
 CHANNEL_LEAVE
 CHANNEL_LIST
@@ -2768,8 +2813,8 @@ COMBAT_FRIENDLYPLAYER_MISSES
 COMBAT_HOSTILEPLAYER_HITS
 COMBAT_HOSTILEPLAYER_MISSES
 COMBAT_CREATURE_VS_SELF_HITS
-//COMBAT_CREATURE_VS_SELF_MISSES
-//COMBAT_CREATURE_VS_PARTY_HITS
+COMBAT_CREATURE_VS_SELF_MISSES
+COMBAT_CREATURE_VS_PARTY_HITS
 COMBAT_CREATURE_VS_PARTY_MISSES
 COMBAT_CREATURE_VS_CREATURE_HITS
 COMBAT_CREATURE_VS_CREATURE_MISSES
@@ -2812,13 +2857,13 @@ SPELL_PERIODIC_CREATURE_DAMAGE
 SPELL_PERIODIC_CREATURE_BUFFS
 SPELL_FAILED_LOCALPLAYER
 COMBAT_HONOR_GAIN
-\nBG_SYSTEM_NEUTRAL
-x\nBG_SYSTEM_ALLIANCE
+BG_SYSTEM_NEUTRAL
+BG_SYSTEM_ALLIANCE
 BG_SYSTEM_HORDE
 COMBAT_FACTION_CHANGE
 MONEY
 RAID_LEADER
-H\tRAID_WARNING
+RAID_WARNING
 FOREIGN_TELL
 RAID_BOSS_EMOTE
 FILTERED
@@ -3047,18 +3092,20 @@ SET_MODERATOR
 UNSET_MODERATOR
 %dd %dh %dm %ds
 Usage: SendChatMessage(text [,type] [,language] [,targetPlayer])
-Invalid escape code in chat message
+SendChatMessage(): Invalid escape code in chat message
 CLEARED_DND
-Channel send missing channel number
+SendChatMessage(): Channel send missing channel number
 DEFAULT_AFK_MESSAGE
 MARKED_DND
 DEFAULT_DND_MESSAGE
-Whisper message missing target player!
-Unknown language
-Unknown chat type
+SendChatMessage(): Whisper message missing target player!
+SendChatMessage(): Unknown language
+SendChatMessage(): Chat message must be UTF-8 text
+SendChatMessage(): Unknown chat type
 RAID_WARNING
 EMOTE
 OFFICER
+Invalid escape code in chat message
 Unknown addon chat type
 %s\t%s
 Usage: SendAddonMessage(\"prefix\", \"message\" [,\"type\"])
@@ -3318,6 +3365,7 @@ ReturnInboxItem
 TakeInboxTextItem
 TakeInboxItem
 TakeInboxMoney
+GetInboxItemLink
 GetInboxItem
 GetInboxInvoiceInfo
 GetInboxText
@@ -3364,6 +3412,7 @@ seller
 %16I64X:%d:%d:%d:%d
 Usage: GetInboxInvoiceInfo(index)
 Usage: GetInboxItem(index)
+Usage: GetInboxItemLink(index)
 Usage: TakeInboxMoney(index)
 Usage: TakeInboxItem(index)
 Usage: TakeInboxTextItem(index)
@@ -3526,6 +3575,7 @@ RunMacroText
 RunMacro
 Interface\\Icons\\
 reset=
+TOOLTIP
 SHOW
 SLASH_EQUIP_TO_SLOT%d
 SLASH_EQUIP%d
@@ -4317,7 +4367,7 @@ Usage: IsConsumableAction(slot)
 Usage: IsStackableAction(slot)
 Usage: IsEquippedAction(slot)
 ChangeActionBarPage() needs a page in the range 1 to %d
-SetActionSelfCastKey(): key must be either CTRL or ALT
+SetActionSelfCastKey(): key must be either CTRL, ALT, SHIFT, or NONE
 GetPingPosition
 PingLocation
 SetZoom
@@ -4499,6 +4549,7 @@ GetContainerItemInfo
 GetContainerNumSlots
 ContainerIDToInventoryID
 E:\\build\\buildWoW\\WoW\\Source\\Ui\\ContainerFrame.cpp
+ContainerIDToInventoryID(): invalid container ID
 Usage: ContainerIDToInventoryID(containerID)
 Usage: GetContainerNumSlots(index)
 Usage: GetContainerItemInfo(index, slot)
@@ -4711,6 +4762,7 @@ E:\\build\\buildWoW\\WoW\\Source\\Ui\\CharacterModelBase.cpp
 Usage: SetUnit(\"unit\")
 Usage: SetRotation(rotation (in radians))
 SetCooldown
+interface\\cooldown\\star4.blp
 Usage: %s:SetCooldown(start, duration)
 ()[]^*/%+-#,
 clamp
@@ -5626,6 +5678,9 @@ Interface\\CharacterFrame\\TemporaryPortrait-%s-%s
 Interface\\CharacterFrame\\TemporaryPortrait-Pet
 Portrait2
 %s.blp
+GetSpell
+GetItem
+GetUnit
 SetExistingSocketGem
 SetSocketGem
 SetSocketedItem
@@ -5705,6 +5760,9 @@ UNITNAME_TITLE_PET
 |cff808080
 |cffffffff
 E:\\build\\buildWoW\\WoW\\Source\\UIUtil\\Tooltip.cpp
+OnTooltipSetSpell
+OnTooltipSetItem
+OnTooltipSetUnit
 return function(self,cost) %s end
 OnTooltipAddMoney
 OnTooltipCleared
@@ -6743,7 +6801,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6178 (Nov 27 2006 16:58:31)
+WoW [Release] Build 6213 (Dec  7 2006 05:05:09)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -7776,6 +7834,8 @@ SPELLFAILPERFORMOTHER
 SPELLFAILPERFORMSELF
 FACTION_STANDING_DECREASED
 FACTION_STANDING_INCREASED
+FACTION_STANDING_DECREASED_GENERIC
+FACTION_STANDING_INCREASED_GENERIC
 FACTION_STANDING_CHANGED
 HEALEDOTHEROTHER
 HEALEDOTHERSELF
@@ -7995,7 +8055,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6178 (Nov 27 2006)
+WoW [Release] Build 6213 (Dec  7 2006)
  ,;\t\"\r\n
 No help yet
 help
@@ -8127,11 +8187,6 @@ GUARD_PAGE
 DATATYPE_MISALIGNMENT
 Storm Error : handle never released -- %s\n
 Debug Memory
-Unable to open response file: %s
-The syntax of the command is incorrect.
-Invalid argument: %s
-E:\\build\\buildWoW\\Storm\\Source\\SCmd.cpp
- ,;\"\t\n\r
 'ocjs
 RwN8\b
 E+{ez
@@ -8169,6 +8224,12 @@ AUDIOSTREAM
 (block table)
 (hash table)
 (attributes)
+E:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
+Unable to open response file: %s
+The syntax of the command is incorrect.
+Invalid argument: %s
+E:\\build\\buildWoW\\Storm\\Source\\SCmd.cpp
+ ,;\"\t\n\r
 %s(%u) : CDebugLock:%08x: entry has bad next %u\n
 E:\\build\\buildWoW\\Storm\\Source\\W32\\SLock.cpp
 %s(%u) : CDebugLock:%08x: tid:%03x %c %c t:%u\n
@@ -8194,7 +8255,6 @@ cd>>\"\"
 E:\\build\\buildWoW\\Storm\\Source\\SComp.cpp
 <unknown>
 bzip2Compress:%d
-E:\\build\\buildWoW\\Storm\\Source\\SSignature.cpp
 E:\\build\\buildWoW\\Storm\\Source\\SBig.cpp
 E:\\build\\buildWoW\\Storm\\Source\\W32\\SDir.cpp
 E:\\build\\buildWoW\\Storm\\Source\\SZip.cpp
@@ -8381,6 +8441,9 @@ Value out of range (%d - %d)\n
 **** Entered %s subzone ****\n
 %i, %i
 E:\\build\\buildWoW\\WoW\\Source\\WorldClient\\WorldScene.cpp
+EmoteSaluteNoSheathe
+EmotePointNoSheathe
+EmoteTalkNoSheathe
 GuideArrowBirth
 CorpseArrowBirth
 GroupArrowBirth
@@ -8861,6 +8924,7 @@ dir:
 %s\\md5translate.trs
 No minimap texture: \"%s\"
 World\\
+Dont Crash!
 MINIMAPCHUNKNOTFOUND|%d|%d
 NOCONTINENTNAME|%d
 CORPSE_RED
@@ -8886,6 +8950,7 @@ HAPPINESS
 %s_PET
 E:\\build\\buildWoW\\WoW\\Source\\Magic\\MagicClient\\Spell_C.cpp
 SPELL_FAILED_UNKNOWN
+SPELL_FAILED_TARGET_NOT_IN_SANCTUARY
 SPELL_FAILED_TOO_SHALLOW
 SPELL_FAILED_NOT_ON_MOUNTED
 SPELL_FAILED_NOT_ON_DAMAGE_IMMUNE
@@ -9062,6 +9127,7 @@ PETTAME_INVALIDCREATURE
 Usage: SpellTargetItem(itemID|\"name\"|\"itemlink\")
 Usage: SpellCanTargetUnit(\"unit\")
 Usage: SpellTargetUnit(\"unit\")
+secureAbilityToggle
 autoSelfCast
 SPELLVISUALID_NOT_FOUND|%d
 Spells\\HellfireRaid_Dust_Impact_Base.mdx
@@ -9129,7 +9195,6 @@ CENTER
 BOTTOMRIGHT
 BOTTOMLEFT
 BOTTOM
-TOOLTIP
 FULLSCREEN_DIALOG
 FULLSCREEN
 DIALOG
@@ -9296,6 +9361,7 @@ Unknown LCD Element: %s
 LCDBitmap
 LCDText
 Screen declared with no name
+LCDSubscreen
 IDLE_LOGOUT_WARNING
 OUTBID_ON_SHORT
 WHISPER_FROM
@@ -9312,7 +9378,6 @@ Microsoft Sans Serif
 %d %s %d %s
 MINUTES_ABBR
 SECONDS_ABBR
-%.2f
 
 1.2.2
 incorrect length check
@@ -10752,11 +10817,11 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo0_�
+ltuo���
+ltuo
 smooth
 cinu
-ltuop
-ltuop
+ltuo
 raster5
 raster1
    !
@@ -11867,6 +11932,9 @@ WINMM.dll
 VERSION.dll
 fmod.dll
 WININET.dll
+o'6RX\r
+GcS68
+2\x1BpK@
 .PAVSArchive@@
 .PAD
 .?AUDYNAMICELEMENTVERT@@
@@ -12106,6 +12174,7 @@ GcS68
 .PAUTradeSkillInfo@@
 .PAUTradeSkillSubClassInfo@@
 .?AVCImVector@NTempest@@
+!?0{@?
 .?AVCRect@NTempest@@
 .?AUBFSNODE@@
 .?AUCameraShake@@
@@ -12249,12 +12318,12 @@ sound
 .?AVASYNCREAD@@
 .?AUFILEMAP@@
 .?AUHANDLER@@
-.?AUCMDDEF@@
 .?AUEVENTREC@@
 .?AUREQUEST@@
 .?AUARCHIVEREC@SFile@Storm@@
 .?AUAUDIOSTREAM@SFile@Storm@@
 .?AUFILEREC@SFile@Storm@@
+.?AUCMDDEF@@
 .?AURGN@@
 .?AU_SOURCE@@
 .?AU_FOUNDPARAM@@
