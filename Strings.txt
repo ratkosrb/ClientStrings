@@ -680,7 +680,7 @@ Game Output
  - SESound Engine Init
 => Setting up Game Sound:
 => Version %s (%s) %s
-0.3.0
+2.3.0
 7561
 Nov  8 2007
 Logs\\Sound.log
@@ -7690,7 +7690,7 @@ Character:\t%s (level %i %s %s %s)\n
 Account:\t%s\n
 Realm:\t%s\n
 Version:\t%s\n
-WoW [Release] Build 7561 (Nov  8 2007 05:05:23)
+WoW [Release] Build 7561 (Nov  8 2007 05:06:56)
 OS:\t\t
 Memory:\t%uMB\n
 Processor speed:\t%6.2f%cHz\n
