@@ -60,7 +60,7 @@ Bad SMSG_NEW_WORLD zoneID\n
 Bad SMSG_NEW_WORLD\n
 login
 charselect
-World of WarCraft (build 6403)
+World of WarCraft (build 6448)
 SendErrorLogs
 World of Warcraft
 %s: Cannot read string table
@@ -637,8 +637,8 @@ wn>Jj
 E:\\build\\buildWoW\\ENGINE\\SOURCE\\OS\\W32\\OsCall.cpp
 ;Couldn't dump thread: %s\r\n
 ;Call Trace Log %s, %s\r\n
-Feb 14 2007
-13:55:41
+Feb 27 2007
+15:24:00
 calldump.log
 %*s;data = 0x%08x = %f\r\n
 %*s%08x\r\n
@@ -1150,8 +1150,8 @@ OPEN_STATUS_DIALOG
 DISCONNECTED_FROM_SERVER
 START_GLUE_MUSIC
 SET_GLUE_SCREEN
-6403
-2.0.8
+6448
+2.0.10
 RELEASE_BUILD
 BETA_BUILD
 Usage: SetSavedAccountName(\"accountName\")
@@ -6027,6 +6027,8 @@ Received pong with old sequence
 E:\\build\\buildWoW\\WoW\\Source\\Net\\NetInternal.h
 E:\\build\\buildWoW\\WoW\\Source\\Net\\NetInternal.cpp
 ..\\..\\DB/WowClientDB.h
+enTW
+enCN
 enGB
 xxYY
 esES
@@ -6847,7 +6849,7 @@ Illegal source dimensions (%u,%u)\n
 Expected (%u,%u) size for MIP %u, but got (%u,%u)\n
 Illegal MIP level %u specified\n
 Failed to allocate MIP buffers\n
-WoW [Release] Build 6403 (Feb 14 2007 13:58:44)
+WoW [Release] Build 6448 (Feb 27 2007 15:27:06)
 intel
 *.wowtaiwan.com.tw
 *.wowchina.com
@@ -8123,7 +8125,7 @@ CVar Dump written successfully
 Error Writing CVar file.
 Name: %s Info: %s Current Value: %s\r\n
 Error trying to create the CVar dump.
-WoW [Release] Build 6403 (Feb 14 2007)
+WoW [Release] Build 6448 (Feb 27 2007)
  ,;\t\"\r\n
 No help yet
 help
@@ -10886,7 +10888,7 @@ set_mm_design
 get_mm
 truetype
 sfnt
-ltuo`ك
+ltuo`ۃ
 smooth
 cinu
 raster5
